@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwiftSlim
+
+  Created by 方君宇 on 2025/7/29.
+  
+*/
+
+"CFBundleName" = "輕學Swift";
+"CFBundleDisplayName" = "輕學Swift";
