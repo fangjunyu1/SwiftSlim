@@ -8,22 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let markdownText = """
-    # 标题
-    
-    这是 **粗体** 和 *斜体*。
-    
-    - 列表项 1
-    - 列表项 2
-    """
     
     var body: some View {
-        ScrollView {
-            if let attributedString = try? AttributedString(
-                markdown: markdownText) {
-                Text(attributedString)
-                    .padding()
-            }
+        NavigationView {
+            // 教学课程 - 视图
+            Education()
         }
     }
 }

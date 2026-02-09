@@ -114,19 +114,14 @@
 				bn,
 				bg,
 				ca,
-				"zh-HK",
 				"zh-Hans",
 				"zh-Hant",
 				hr,
 				cs,
 				da,
 				nl,
-				"en-AU",
-				"en-IN",
-				"en-GB",
 				fi,
 				fr,
-				"fr-CA",
 				de,
 				el,
 				gu,
@@ -147,14 +142,11 @@
 				te,
 				ta,
 				sv,
-				"es-US",
-				"es-419",
 				sl,
 				es,
 				sk,
 				ro,
 				ru,
-				"pt-PT",
 				pa,
 				lt,
 				ms,
@@ -163,7 +155,16 @@
 				nb,
 				or,
 				pl,
+				pt,
+				"zh-HK",
+				"es-US",
+				"en-GB",
+				"es-419",
+				"fr-CA",
+				"en-AU",
 				"pt-BR",
+				"pt-PT",
+				"en-IN",
 			);
 			mainGroup = 1D9CAEC82E38C51000A48D57;
 			minimizedProjectReferenceProxies = 1;
@@ -343,7 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

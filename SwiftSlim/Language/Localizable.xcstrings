@@ -1,7 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "..." : {
 
+    },
+    "%lld" : {
+
+    },
+    "List" : {
+
+    }
   },
   "version" : "1.0"
 }
