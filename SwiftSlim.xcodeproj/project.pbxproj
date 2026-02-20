@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D6FCE442F358AE3001A4DC2 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D6FCE432F358AE3001A4DC2 /* MarkdownUI */; };
+		1D02161A2F4328ED00E7446A /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D0216192F4328ED00E7446A /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6FCE442F358AE3001A4DC2 /* MarkdownUI in Frameworks */,
+				1D02161A2F4328ED00E7446A /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = SwiftSlim;
 			packageProductDependencies = (
-				1D6FCE432F358AE3001A4DC2 /* MarkdownUI */,
+				1D0216192F4328ED00E7446A /* MarkdownUI */,
 			);
 			productName = SwiftSlim;
 			productReference = 1D9CAED12E38C51000A48D57 /* SwiftSlim.app */;
@@ -156,20 +156,11 @@
 				or,
 				pl,
 				pt,
-				"zh-HK",
-				"es-US",
-				"en-GB",
-				"es-419",
-				"fr-CA",
-				"en-AU",
-				"pt-BR",
-				"pt-PT",
-				"en-IN",
 			);
 			mainGroup = 1D9CAEC82E38C51000A48D57;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1D6FCE422F358AE3001A4DC2 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				1D0216182F4328ED00E7446A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D9CAED22E38C51000A48D57 /* Products */;
@@ -333,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = RRMSD743UQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -364,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = RRMSD743UQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,7 +404,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1D6FCE422F358AE3001A4DC2 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+		1D0216182F4328ED00E7446A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
 			requirement = {
@@ -424,9 +415,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1D6FCE432F358AE3001A4DC2 /* MarkdownUI */ = {
+		1D0216192F4328ED00E7446A /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1D6FCE422F358AE3001A4DC2 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			package = 1D0216182F4328ED00E7446A /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */

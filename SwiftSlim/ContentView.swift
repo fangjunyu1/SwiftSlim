@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
         NavigationView {
             // 教学课程 - 视图

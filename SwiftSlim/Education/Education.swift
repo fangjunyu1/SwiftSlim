@@ -13,13 +13,11 @@ struct EducationModel:Identifiable,Equatable {
     let url: URL
 }
 
-struct Education: View {
-    
-    // Education对象
-    private var educationItems: [EducationModel] {
+class EducationViewModel {
+    // 获取当前语言环境下的 Markdown 文档
+    static var educationItems: [EducationModel] {
         // 批量获取某一类型的资源（这里加载Markdown文件）
         let mdFiles = Bundle.main.urls(forResourcesWithExtension: "md", subdirectory: nil) ?? []
-        
         return mdFiles
             .sorted { $0.lastPathComponent.localizedStandardCompare($1.lastPathComponent) == .orderedAscending}
             .compactMap { url -> EducationModel? in
@@ -30,18 +28,21 @@ struct Education: View {
                 return EducationModel(name: displayName, url: url)
             }
     }
-    
+}
+
+struct Education: View {
+    @State private var EducationVM = EducationViewModel()
     var body: some View {
         // 课程列表
         List {
-            ForEach(Array(educationItems.enumerated()), id: \.element.id) { index, item in
+            ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
                 NavigationLink(destination: EducationPage(url: item.url)) {
                     Text("\(index + 1)")
-                    Text(item.name)
+                    Text(LocalizedStringKey(item.name))
                 }
             }
         }
-        .navigationTitle("List")
+        .navigationTitle("Contents")
     }
 }
 
