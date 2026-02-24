@@ -21,6 +21,7 @@ struct EducationPage: View {
             ScrollView {
                 Markdown(content)
                     .markdownImageProvider(.asset)
+                    .markdownTheme(.docC)
                     .padding(.horizontal)
             }
         } else {

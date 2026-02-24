@@ -43,6 +43,14 @@ struct Education: View {
             }
         }
         .navigationTitle("Contents")
+        
+        // 默认占位视图（双栏布局时显示在右侧）
+        Image("placeholder")
+            .resizable()
+            .renderingMode(.template)
+            .foregroundColor(.gray)
+            .scaledToFit()
+            .frame(width: 100)
     }
 }
 
