@@ -17,15 +17,18 @@ struct EducationPage: View {
     }
     
     var body: some View {
-        if let content = content {
-            ScrollView {
-                Markdown(content)
-                    .markdownImageProvider(.asset)
-                    .markdownTheme(.docC)
-                    .padding(.horizontal)
+        VStack {
+            if let content = content {
+                ScrollView {
+                    Markdown(content)
+                        .markdownImageProvider(.asset)
+                        .markdownTheme(.docC)
+                        .padding(.horizontal)
+                    Spacer().frame(height: 50)
+                }
+            } else {
+                ProgressView("...")
             }
-        } else {
-            ProgressView("...")
         }
     }
 }

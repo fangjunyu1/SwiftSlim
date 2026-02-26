@@ -852,284 +852,284 @@
         }
       }
     },
-    "Select a Lesson" : {
-      "comment" : "选择课程",
-      "extractionState" : "stale",
+    "Start from ContentView" : {
+      "comment" : "从 ContentView 开始",
+      "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "اختر درسًا"
+            "value" : "ابدأ من ContentView"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Изберете урок"
+            "value" : "Започнете от ContentView"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "একটি পাঠ নির্বাচন করুন"
+            "value" : "ContentView থেকে শুরু করুন"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selecciona una lliçó"
+            "value" : "Comença des de ContentView"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vyberte lekci"
+            "value" : "Začněte od ContentView"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vælg en lektion"
+            "value" : "Start fra ContentView"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wählen Sie eine Lektion"
+            "value" : "Beginnen Sie mit ContentView"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Επιλέξτε ένα μάθημα"
+            "value" : "Ξεκινήστε από το ContentView"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selecciona una lección"
+            "value" : "Comienza desde ContentView"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Valitse oppitunti"
+            "value" : "Aloita ContentView’sta"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sélectionnez une leçon"
+            "value" : "Commencez par ContentView"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "એક પાઠ પસંદ કરો"
+            "value" : "ContentView થી શરૂઆત કરો"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "בחר שיעור"
+            "value" : "התחל מ-ContentView"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "एक पाठ चुनें"
+            "value" : "ContentView से शुरुआत करें"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Odaberite lekciju"
+            "value" : "Započnite od ContentView"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Válasszon egy leckét"
+            "value" : "Kezdje a ContentView-vel"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pilih pelajaran"
+            "value" : "Mulai dari ContentView"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seleziona una lezione"
+            "value" : "Inizia da ContentView"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "レッスンを選択"
+            "value" : "ContentView から始める"
           }
         },
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сабақты таңдаңыз"
+            "value" : "ContentView-тен бастаңыз"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಒಂದು ಪಾಠವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+            "value" : "ContentView ಇಂದ ಪ್ರಾರಂಭಿಸಿ"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "레슨 선택"
+            "value" : "ContentView부터 시작하기"
           }
         },
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pasirinkite pamoką"
+            "value" : "Pradėkite nuo ContentView"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ഒരു പാഠം തിരഞ്ഞെടുക്കുക"
+            "value" : "ContentView ൽ നിന്ന് ആരംഭിക്കുക"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "एक धडा निवडा"
+            "value" : "ContentView पासून सुरुवात करा"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pilih pelajaran"
+            "value" : "Mulakan dari ContentView"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Velg en leksjon"
+            "value" : "Start fra ContentView"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selecteer een les"
+            "value" : "Begin bij ContentView"
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ଏକ ପାଠ ବାଛନ୍ତୁ"
+            "value" : "ContentView ଠାରୁ ଆରମ୍ଭ କରନ୍ତୁ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਇੱਕ ਪਾਠ ਚੁਣੋ"
+            "value" : "ContentView ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wybierz lekcję"
+            "value" : "Zacznij od ContentView"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selecione uma lição"
+            "value" : "Comece pelo ContentView"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Selectați o lecție"
+            "value" : "Începeți de la ContentView"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Выберите урок"
+            "value" : "Начните с ContentView"
           }
         },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vyberte lekciu"
+            "value" : "Začnite od ContentView"
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Izberite lekcijo"
+            "value" : "Začnite z ContentView"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Välj en lektion"
+            "value" : "Börja från ContentView"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ஒரு பாடத்தைத் தேர்ந்தெடுக்கவும்"
+            "value" : "ContentView இலிருந்து தொடங்குங்கள்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ఒక పాఠాన్ని ఎంచుకోండి"
+            "value" : "ContentView నుండి ప్రారంభించండి"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "เลือกบทเรียน"
+            "value" : "เริ่มต้นจาก ContentView"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bir ders seçin"
+            "value" : "ContentView’den başlayın"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Виберіть урок"
+            "value" : "Почніть з ContentView"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ایک سبق منتخب کریں"
+            "value" : "ContentView سے شروع کریں"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chọn một bài học"
+            "value" : "Bắt đầu từ ContentView"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "选择课程"
+            "value" : "从 ContentView 开始"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "選擇課程"
+            "value" : "從 ContentView 開始"
           }
         }
       }
