@@ -79,6 +79,8 @@ Swift 中使用 // 进行单行注释：
 
 因此，在编写代码的过程中主动添加注释，是一个良好的开发习惯。利用注释记录代码逻辑，方便后续的代码维护。
 
+**临时屏蔽代码**
+
 注释还可以临时屏蔽代码，帮助我们排查问题。
 
 例如：
@@ -101,7 +103,7 @@ C
 
 如果注释掉 A 后，代码恢复正常，说明 A 代码存在问题。
 
-如果 A 注释掉后，仍然存在问题，我们再把 B 注释掉，以此类推，直到找出问题代码。
+如果 A 注释掉后，仍然存在问题，我们可以再把 B 注释掉，以此类推，直到找出问题代码。
 
 在开发过程中会遇到很多问题，我们大多需要通过注释代码排查问题原因，这可以帮助我们定位问题代码，找到 BUG。
 
@@ -123,7 +125,7 @@ import SwiftUI
 
 SwiftUI 中的 View、 Text、 Image、 VStack 等类型，都来自该框架。
 
-如果删除这一行，Xcode 就会报错：
+如果不导入 SwiftUI 框架，Xcode 就会报错：
 
 ```
 Cannot find type 'View' in scope
@@ -143,7 +145,7 @@ struct ContentView: View {
 
 第一次见到这个 View 结构，可能会感到陌生，因为它包含了 struct、View、var、body、some 等关键字。
 
-我们现在还没有学习，只需要知道这段代码的含义是，创建了一个名为 ContentView 的 View 视图。
+我们现在还没有学习这些关键字，只需要知道这段代码的含义是，创建了一个名为 ContentView 的 View 视图。
 
 你可以把 View 理解为一个画板/画纸，我们可以在上面进行绘画，绘画的工具就是 SwiftUI。
 
@@ -277,26 +279,28 @@ Image(systemName: "backpack")
 例如：
 
 ```
-"globe" // 地球
-"backpack"  // 背包
-"heart" // 心
+"globe"
+"backpack"
+"heart"
 ```
 
-将拷贝的图标名称，放入 Image(systemName:) 中，可以显示不同的图标。
+将拷贝的图标名称，放入 Image(systemName:) 中，就可以显示不同的图标。
 
 注意：每个 SF Symbols 图标都有最低支持系统版本。如果系统版本过低，图标可能无法显示。需在 SF Symbols App 中查看其兼容性信息。
 
-#### 视图修饰符
+#### 修饰符
 
-修饰符（modifier）在不改变视图本身结构的情况下，修改视图的外观或行为。
+在 SwiftUI 中，修饰符（modifier）是一种用于改变视图外观或行为的方法。
 
-可以将"修饰符"理解为衣服，穿着不同的衣服，展示的样貌也就不同。
+可以将修饰符理解为衣服，穿着不同的衣服，展示的样貌也就不同。
 
 ```
 Image(systemName: "globe")
     .imageScale(.large)
     .foregroundStyle(.tint)
 ```
+
+imageScale 和 foregroundStyle 就是 Image 视图的修饰符，在不改变 Image 内容的情况下，修饰 Image 视图。
 
 **1. imageScale**
 
@@ -310,11 +314,9 @@ Image(systemName: "globe")
 - .medium
 - .large
 
-我们可以修改不同的选项，让 SF Symbols 符号显示不同的大小。
+![Swift](002_view11.png)
 
-```
-.imageScale(.small) // 小
-```
+我们可以修改不同的选项，让 SF Symbols 符号显示不同的大小。
 
 **2. foregroundStyle**
 
@@ -345,7 +347,7 @@ Text("Hello, world!")
 例如，显示我的名字：
 
 ```
-Text("方君宇")
+Text("FangJunyu")
 ```
 
 注意：字符串必须使用 "" 双引号包裹。
@@ -354,6 +356,8 @@ Text("方君宇")
 
 #### padding 边距
 
+在 SwiftUI 中，padding 用于在视图内容与边界之间增加空白区域，它属于"内边距（internal spacing）"。
+
 ```
 HStack {
     ...
@@ -361,32 +365,92 @@ HStack {
 .padding()
 ```
 
-这段代码表示为 HStack 视图添加系统默认边距。
+上述代码表示为 HStack 视图添加系统默认边距。
 
-**边距是什么？**
+**什么是 padding？**
 
 padding 表示"视图内容与其边界之间的留白区域"。
 
-在下图中，第一个 HStack 周围有一个黑色的边框，我们可以把这个黑色的边框理解为 padding。
+在下图中，蓝色的 HStack 设置 padding 后，蓝色区域会向内收缩，看上去会"变小一圈"。
 
 ![Swift](002_view6.png)
 
-注意：这里的黑色 padding 为演示效果，用于帮助我们理解 padding 的范围。在实际应用中，padding 不是黑色，而是透明的。
+**默认边距**
 
-padding() 使用系统默认的标准间距，在 macOS 15 上，约等于 padding(16)。
+padding() 修饰符默认使用系统推荐的标准间距。
 
 ```
 .padding()
-.padding(16)
 ```
 
-SwiftUI 的默认 padding 取决于平台与上下文（例如 iOS、macOS、watchOS 的默认布局标准不同），其本质是使用系统推荐的标准间距（system spacing）。
+在不同的平台和上下文中，这个值会有所不同，例如：
 
-如果不想要设置边距，可以移除 padding 修饰符，或者设置为 0：
+- iOS 通常约为 16 pt。
+
+- 在 macOS 或 watchOS 上，系统的标准间距可能会不同，通常会更大或更小，具体取决于各平台的设计规范。
+
+**自定义边距**
+
+还可以为视图设置单独的边距。
+
+1. 设置单个方向
+
+```
+.padding(.top, 20)
+.padding(.leading, 20)
+.padding(.trailing, 20)
+.padding(.bottom, 20)
+```
+
+方向说明：
+
+- .top:上边距
+- .bottom:下边距
+- .leading: 前侧边距
+- .trailing: 后侧边距
+
+![Swift](002_view12.png)
+
+注意：leading 和 trailing 会根据语言方向自动适配。例如在阿拉伯语（RTL）环境中会自动翻转。
+
+2. 设置多个方向
+
+```
+.padding([.top, .leading], 20)
+```
+
+![Swift](002_view13.png)
+
+可以通过数组同时指定多个方向。数组的具体用法会在后续教程中详细讲解，这里只需了解这种写法即可。
+
+3. 设置水平方向或垂直方向
+
+```
+.padding(.horizontal, 20)
+.padding(.vertical, 20)
+```
+
+等价于：
+
+```
+.padding([.leading, .trailing], 20)
+.padding([.top, .bottom], 20)
+```
+
+![Swift](002_view14.png)
+
+**移除边距**
+
+如果不想要任何边距，可以使用 .padding(0) 来移除：
+
+```
+.padding(0)
+```
+
+或者直接删除 padding 修饰符：
 
 ```
 // .padding()
-.padding(0)
 ```
 
 ### 6. Preview 预览代码
@@ -421,9 +485,9 @@ Canvas 将不再显示可渲染内容。
 
 ## 总结
 
-虽然 ContentView.swift 文件代码不多，但实际上涵盖了 SwiftUI 的多个核心概念。对于初学者来讲，这段代码可能显得陌生，但通过拆解代码结构，可以对 SwiftUI 建立起初步认识。
+虽然 ContentView.swift 文件代码不多，但实际上涵盖了 SwiftUI 的多个核心概念。对于初学者来讲，这段代码可能显得陌生，但通过拆解代码结构，可以建立起 SwiftUI 的初步认识。
 
-回顾本节课的内容，我们首先学习了注释 //，我们可以使用注释说明代码逻辑或者临时屏蔽代码。
+回顾本节课的内容，我们首先学习了注释 //，可以使用注释说明代码逻辑或者临时屏蔽代码。
 
 接着，我们了解到 SwiftUI 文件必须导入 SwiftUI 框架：
 
@@ -443,7 +507,7 @@ struct ContentView: View {
 }
 ```
 
-ContentView 是我们的视图名称。
+其中 ContentView 是视图名称。
 
 我们还学习了三种常见布局容器：VStack、HStack 和 ZStack。
 
