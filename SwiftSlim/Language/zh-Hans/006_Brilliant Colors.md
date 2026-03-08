@@ -152,7 +152,7 @@ Text("FangJunyu.com")
 
 ![Color](006_color6.png)
 
-我们在 Word、Chrome 等中选择文字时，可以看到类似的背景色效果。
+我们在 Word、Chrome 等 App 中选择文字时，可以看到类似的背景色效果。
 
 ![Color](006_color16.png)
 

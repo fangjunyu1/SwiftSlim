@@ -17,7 +17,7 @@
 
 注意：每次打开项目时，Canvas 可能显示 "Preview paused"。点击刷新按钮即可恢复预览。
 
-![Swift](Resource/002_view7.png)
+![Swift](002_view7.png)
 
 ## 认识 ContentView
 
@@ -151,7 +151,7 @@ struct ContentView: View {
 
 例如：
 
-![Swift](Resource/002_view.png)
+![Swift](002_view.png)
 
 上图显示的是三个页面，实际上就是三个 View。
 
@@ -191,7 +191,7 @@ VStack {
 
 这段 SwiftUI 代码表示，这是一个垂直布局，显示一个图标和一个文本。
 
-![Swift](Resource/002_view1.png)
+![Swift](002_view1.png)
 
 #### VStack 布局
 
@@ -201,7 +201,7 @@ VStack { }  // 垂直布局
 
 VStack 表示垂直布局容器。内部视图从上到下排列。
 
-![Swift](Resource/002_view8.png)
+![Swift](002_view8.png)
 
 SwiftUI 常见三种布局：
 
@@ -216,7 +216,7 @@ ZStack { }  // 叠加排序
 
 各布局的排序示意图：
 
-![Swift](Resource/002_view2.png)
+![Swift](002_view2.png)
 
 例如：使用 HStack 进行水平排序。
 
@@ -232,7 +232,7 @@ HStack {
 
 可以看到，地球图标和文字被横向展示。
 
-![Swift](Resource/002_view3.png)
+![Swift](002_view3.png)
 
 当我们想要横向排序时，使用 HStack。当需要叠加排序时，使用 ZStack。
 
@@ -246,7 +246,7 @@ Image(systemName: "globe")
 
 这段代码显示一个地球图标，地球图标来自 Apple 的 SF Symbols 图标系统。
 
-![Swift](Resource/002_view9.png)
+![Swift](002_view9.png)
 
 代码的含义为显示一个地球图标，大尺寸，颜色为强调色。
 
@@ -258,7 +258,7 @@ Image(systemName: "globe")
 Image(systemName: "backpack")
 ```
 
-![Swift](Resource/002_view4.png)
+![Swift](002_view4.png)
 
 **如何显示其他图标呢？**
 
@@ -266,11 +266,11 @@ Image(systemName: "backpack")
 
 打开 Apple Developer 官方网站，下载 [SF Symbols](https://developer.apple.com/sf-symbols/)。
 
-![Swift](Resource/002_sf.png)
+![Swift](002_sf.png)
 
 打开 SF Symbols App。
 
-![Swift](Resource/002_sf1.png)
+![Swift](002_sf1.png)
 
 左侧为符号分类，右侧为对应的图标。
 

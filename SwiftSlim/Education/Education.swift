@@ -32,6 +32,7 @@ class EducationViewModel {
 
 struct Education: View {
     @State private var EducationVM = EducationViewModel()
+    
     var body: some View {
         // 课程列表
         List {
