@@ -23,7 +23,7 @@
 
 ContentView 代码：
 
-```
+```swift
 //
 //  ContentView.swift
 //  SwiftSlimTest
@@ -56,7 +56,7 @@ struct ContentView: View {
 
 文件顶部：
 
-```
+```swift
 //
 //  ContentView.swift
 //  SwiftSlimTest
@@ -69,7 +69,7 @@ struct ContentView: View {
 
 Swift 中使用 // 进行单行注释：
 
-```
+```swift
 // 这是注释
 ```
 
@@ -117,7 +117,7 @@ Command ⌘ + /
 
 ### 2. 导入 SwiftUI 框架
 
-```
+```swift
 import SwiftUI
 ```
 
@@ -135,7 +135,7 @@ Cannot find type 'View' in scope
 
 ### 3. View 结构
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         ...
@@ -155,7 +155,7 @@ struct ContentView: View {
 
 上图显示的是三个页面，实际上就是三个 View。
 
-```
+```swift
 struct View1: View {
     var body: some View {
         ...
@@ -179,7 +179,7 @@ struct View3: View {
 
 在 View 视图内，显示 SwiftUI 代码：
 
-```
+```swift
 VStack {
     Image(systemName: "globe")
         .imageScale(.large)
@@ -195,7 +195,7 @@ VStack {
 
 #### VStack 布局
 
-```
+```swift
 VStack { }  // 垂直布局
 ```
 
@@ -209,7 +209,7 @@ SwiftUI 常见三种布局：
 - HStack —— 水平排序
 - ZStack —— 叠加排序（Z轴）
 
-```
+```swift
 HStack { }  // 水平排序
 ZStack { }  // 叠加排序
 ```
@@ -220,7 +220,7 @@ ZStack { }  // 叠加排序
 
 例如：使用 HStack 进行水平排序。
 
-```
+```swift
 HStack {
     Image(systemName: "globe")
         .imageScale(.large)
@@ -238,7 +238,7 @@ HStack {
 
 #### Image 与 SF Symbols
 
-```
+```swift
 Image(systemName: "globe")
     .imageScale(.large)
     .foregroundStyle(.tint)
@@ -254,7 +254,7 @@ Image(systemName: "globe")
 
 例如，显示一个背包：
 
-```
+```swift
 Image(systemName: "backpack")
 ```
 
@@ -294,7 +294,7 @@ Image(systemName: "backpack")
 
 可以将修饰符理解为衣服，穿着不同的衣服，展示的样貌也就不同。
 
-```
+```swift
 Image(systemName: "globe")
     .imageScale(.large)
     .foregroundStyle(.tint)
@@ -304,7 +304,7 @@ imageScale 和 foregroundStyle 就是 Image 视图的修饰符，在不改变 Im
 
 **1. imageScale**
 
-```
+```swift
 .imageScale(.large)
 ```
 
@@ -320,7 +320,7 @@ imageScale 和 foregroundStyle 就是 Image 视图的修饰符，在不改变 Im
 
 **2. foregroundStyle**
 
-```
+```swift
 .foregroundStyle(.tint)
 ```
 
@@ -330,7 +330,7 @@ foregroundStyle 可以控制前景色。
 
 如果我们想要修改前景色为红色：
 
-```
+```swift
 .foregroundStyle(.red)
 ```
 
@@ -340,13 +340,13 @@ foregroundStyle 可以控制前景色。
 
 Text 是文本视图，用于显示字符串，
 
-```
+```swift
 Text("Hello, world!")
 ```
 
 例如，显示我的名字：
 
-```
+```swift
 Text("FangJunyu")
 ```
 
@@ -358,7 +358,7 @@ Text("FangJunyu")
 
 在 SwiftUI 中，padding 用于在视图内容与边界之间增加空白区域，它属于"内边距（internal spacing）"。
 
-```
+```swift
 HStack {
     ...
 }
@@ -379,7 +379,7 @@ padding 表示"视图内容与其边界之间的留白区域"。
 
 padding() 修饰符默认使用系统推荐的标准间距。
 
-```
+```swift
 .padding()
 ```
 
@@ -395,7 +395,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 1. 设置单个方向
 
-```
+```swift
 .padding(.top, 20)
 .padding(.leading, 20)
 .padding(.trailing, 20)
@@ -415,7 +415,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 2. 设置多个方向
 
-```
+```swift
 .padding([.top, .leading], 20)
 ```
 
@@ -425,14 +425,14 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 3. 设置水平方向或垂直方向
 
-```
+```swift
 .padding(.horizontal, 20)
 .padding(.vertical, 20)
 ```
 
 等价于：
 
-```
+```swift
 .padding([.leading, .trailing], 20)
 .padding([.top, .bottom], 20)
 ```
@@ -443,19 +443,19 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 如果不想要任何边距，可以使用 .padding(0) 来移除：
 
-```
+```swift
 .padding(0)
 ```
 
 或者直接删除 padding 修饰符：
 
-```
+```swift
 // .padding()
 ```
 
 ### 6. Preview 预览代码
 
-```
+```swift
 #Preview {
     ContentView()
 }
@@ -469,7 +469,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 如果注释掉 Preview：
 
-```
+```swift
 // #Preview {
 //    ContentView()
 // }
@@ -491,7 +491,7 @@ Canvas 将不再显示可渲染内容。
 
 接着，我们了解到 SwiftUI 文件必须导入 SwiftUI 框架：
 
-```
+```swift
 import SwiftUI
 ```
 
@@ -499,7 +499,7 @@ import SwiftUI
 
 然后，我们认识了 SwiftUI 视图的基本结构：
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         ...
@@ -511,7 +511,7 @@ struct ContentView: View {
 
 我们还学习了三种常见布局容器：VStack、HStack 和 ZStack。
 
-```
+```swift
 VStack {
     Image(systemName: "globe")
         .imageScale(.large)
@@ -544,7 +544,7 @@ padding 是边距，在视图的周围增加一个透明空间。
 
 例如，当我们修改 imageScale 修饰符时：
 
-```
+```swift
 .imageScale(.)
 ```
 

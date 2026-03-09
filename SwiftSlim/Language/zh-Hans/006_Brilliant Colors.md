@@ -17,7 +17,7 @@
 
 在 SwiftUI 中，可以设置文字的颜色。
 
-```
+```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
 ```
@@ -45,7 +45,7 @@ Text("Fang Junyu")
 
 在 SwiftUI 中，Color 也可以作为视图显示。
 
-```
+```swift
 Color.red
     .frame(width: 100,height:100)
     .cornerRadius(10)
@@ -57,7 +57,7 @@ Color.red
 
 也可以让整个界面显示为某种颜色：
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         Color.red
@@ -87,14 +87,14 @@ SwiftUI 默认会避开这些区域，这意味着视图不会贴边显示。
 
 如果想要颜色铺满整个屏幕，可以使用 ignoresSafeArea：
 
-```
+```swift
 Color.red
     .ignoresSafeArea()
 ```
 
 或者使用 edgesIgnoringSafeArea：
 
-```
+```swift
 Color.red
     .edgesIgnoringSafeArea(.all)
 ```
@@ -113,7 +113,7 @@ Color.red
 
 例如：
 
-```
+```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
 ```
@@ -126,7 +126,7 @@ foregroundStyle 是新的样式系统，支持颜色、渐变、材质等。
 
 foregroundColor 也可以设置颜色:
 
-```
+```swift
 Text("Fang Junyu")
     .foregroundColor(.blue)
 ```
@@ -139,13 +139,13 @@ Text("Fang Junyu")
 
 如果想要给视图添加背景色，可以使用 background：
 
-```
+```swift
 background(.red)
 ```
 
 例如，给文字添加背景色：
 
-```
+```swift
 Text("FangJunyu.com")
     .background(.orange)
 ```
@@ -158,7 +158,7 @@ Text("FangJunyu.com")
 
 如果想要扩大背景，需要配合 padding：
 
-```
+```swift
 Text("FangJunyu.com")
     .padding(10)
     .background(Color.orange)
@@ -172,7 +172,7 @@ SwiftUI 修饰符是从上到下构建视图的。写在后面的修饰符，会
 
 所以：
 
-```
+```swift
 .padding()
 .background()
 ```
@@ -181,7 +181,7 @@ SwiftUI 修饰符是从上到下构建视图的。写在后面的修饰符，会
 
 如果顺序写反：
 
-```
+```swift
 Text("FangJunyu.com")
     .background(Color.orange)
     .padding(10)
@@ -199,14 +199,14 @@ Text("FangJunyu.com")
 
 先制作一个 50 × 50 的白色方块：
 
-```
+```swift
 Color.white
     .frame(width: 50,height: 50)
 ```
 
 如果想要变成圆形，可以使用 cornerRadius：
 
-```
+```swift
 Color.white
     .frame(width: 50,height: 50)
     .cornerRadius(25)
@@ -216,7 +216,7 @@ Color.white
 
 现在，添加一个蓝色的背景：
 
-```
+```swift
 Color.white
     .frame(width: 50,height: 50)
     .cornerRadius(25)
@@ -236,7 +236,7 @@ Color.white
 
 前面学过 ZStack 可以实现叠加排序，四角螺母也可以理解为一个圆形和一个矩形叠加显示。
 
-```
+```swift
 ZStack {
     Color.blue
         .frame(width: 70,height: 70)
@@ -258,7 +258,7 @@ ZStack 会将视图按顺序叠加，后写的显示在上层。
 
 首先，创建两个圆：
 
-```
+```swift
 Color.red
     .frame(width: 50,height:50)
     .cornerRadius(25)
@@ -271,7 +271,7 @@ Color.orange
 
 因为需要让两个圆叠加显示，所以使用 ZStack 布局：
 
-```
+```swift
 ZStack {
     Color.red
         .frame(width: 50,height:50)
@@ -294,7 +294,7 @@ offset 可以改变显示位置，不改变父视图的布局计算。
 
 使用方法：
 
-```
+```swift
 .offset(x:y:)
 ```
 
@@ -304,7 +304,7 @@ x 为水平方向的偏移量，y 为垂直方向的偏移量。
 
 使用 offset 设置两个圆部分重叠：
 
-```
+```swift
 ZStack {
     Color.red
         .frame(width: 50, height: 50)
@@ -326,7 +326,7 @@ ZStack {
 
 基本用法：
 
-```
+```swift
 .opacity(0.5)
 ```
 
@@ -337,7 +337,7 @@ opacity 的参数范围为 0.0 ~ 1.0，其中：
 
 可以使用 opacity 设置橙色圆的透明度：
 
-```
+```swift
 ZStack {
     Color.red
         .frame(width: 50,height:50)
@@ -358,7 +358,7 @@ ZStack {
 
 在 SwiftUI 中，可以使用 blur 设置模糊效果：
 
-```
+```swift
 .blur(radius:10)
 ```
 
@@ -366,7 +366,7 @@ radius 定义模糊的半径，数值越大，模糊效果越明显。
 
 我们可以给两个圆添加模糊效果：
 
-```
+```swift
 ZStack {
     Color.red
         .frame(width: 50,height:50)

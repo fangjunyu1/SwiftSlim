@@ -61,7 +61,7 @@ name
 
 由于名称通常是可以修改的，因此我们应该使用变量。
 
-```
+```swift
 var name = "FangJunyu"
 ```
 
@@ -71,19 +71,19 @@ var name = "FangJunyu"
 
 变量使用 var 声明：
 
-```
+```swift
 var
 ```
 
 常量使用 let 声明：
 
-```
+```swift
 let
 ```
 
 例如：
 
-```
+```swift
 var name = "FangJunyu"
 let id = 123456
 ```
@@ -96,7 +96,7 @@ let id = 123456
 
 如果代码尝试修改常量的值：
 
-```
+```swift
 let name = "Sam"
 name = "Bob"
 ```
@@ -113,7 +113,7 @@ Cannot assign to property: 'name' is a 'let' constant
 
 打开 ContentView.swift 文件，在 View 内部声明变量：
 
-```
+```swift
 struct ContentView: View {
     var name = "FangJunyu"
 
@@ -127,7 +127,7 @@ struct ContentView: View {
 
 如果我们修改变量的内容：
 
-```
+```swift
 struct ContentView: View {
     var name = "Sam"
     var body: some View {
@@ -146,7 +146,7 @@ Text 显示的文本内容也会发生改变。
 
 在 SwiftUI 中，变量和常量通常写在 body 外部：
 
-```
+```swift
 struct ContentView: View {
     var name = "FangJunyu"
 
@@ -158,7 +158,7 @@ struct ContentView: View {
 
 当然，也可以把变量和常量写在 body 内部：
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         var name = "FangJunyu"
@@ -180,7 +180,7 @@ struct ContentView: View {
 
 例如，我们之前使用 Text 显示文本：
 
-```
+```swift
 Text("Hello, World")
 ```
 
@@ -190,7 +190,7 @@ Text("Hello, World")
 
 例如：
 
-```
+```swift
 var hello = "Hello, World"
 ```
 
@@ -220,7 +220,7 @@ Int 表示整数，也就是没有小数的整数。
 
 例如：
 
-```
+```swift
 var age = 26
 var count = 100
 ```
@@ -233,7 +233,7 @@ Double 表示带有小数的数字。
 
 例如：
 
-```
+```swift
 var weight = 74.5
 var height = 185.0
 ```
@@ -248,7 +248,7 @@ Bool 类型用于表示两种状态：true 和 false。
 
 例如：
 
-```
+```swift
 var isShowAlert = true
 var isLogin = false
 ```
@@ -261,7 +261,7 @@ Bool 类型常用于在条件判断。例如，是否显示提示框。
 
 当我们显示 String 类型时，可以直接使用 Text：
 
-```
+```swift
 Text(name)
 ```
 
@@ -269,7 +269,7 @@ Text(name)
 
 如果需要在 Text 中显示这些数据，可以使用字符串插值（String Interpolation）：
 
-```
+```swift
 \()
 ```
 
@@ -277,7 +277,7 @@ Text(name)
 
 例如：
 
-```
+```swift
 var num = 1
 
 Text("\(num)")
@@ -288,13 +288,13 @@ Text("DoubleNum: \(num * 2)")
 
 例如：
 
-```
+```swift
 "DoubleNum: \(num * 2)"
 ```
 
 显示的内容为：
 
-```
+```swift
 DoubleNum: 2
 ```
 
@@ -306,7 +306,7 @@ DoubleNum: 2
 
 在声明变量或者常量的时候，我们可以看到下面的写法：
 
-```
+```swift
 var num = 1
 ```
 
@@ -327,7 +327,7 @@ var num = 1
 
 例如：
 
-```
+```swift
 var age = 21 + 3 // 24
 var value = 30 - 2 // 28
 var num = 1 * 3    // 3

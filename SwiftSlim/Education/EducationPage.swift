@@ -22,6 +22,9 @@ struct EducationPage: View {
                 ScrollView {
                     Markdown(content)
                         .markdownImageProvider(.asset)
+                        .markdownBlockStyle(\.codeBlock) { configuration in
+                            CodeBlockWithCopyButton(configuration: configuration)
+                        }
                         .markdownTheme(.docC)
                         .padding(.horizontal)
                     Spacer().frame(height: 50)
