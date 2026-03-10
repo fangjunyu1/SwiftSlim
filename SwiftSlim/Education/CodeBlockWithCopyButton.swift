@@ -10,6 +10,7 @@ import MarkdownUI
 
 struct CodeBlockWithCopyButton: View {
     let configuration: CodeBlockConfiguration
+    @State private var isHovering = false
     @State private var copied = false
 
     var body: some View {
@@ -17,21 +18,24 @@ struct CodeBlockWithCopyButton: View {
 
             // 顶部栏：语言标签 + 复制按钮
             HStack {
+                if let language = configuration.language, !language.isEmpty { Text(language.capitalized) .font(.footnote) .foregroundColor(.secondary) .padding(.leading, 12)
+                }
+                Spacer()
                 Button(action: copyCode) {
                     HStack(spacing: 4) {
-                        Image(systemName: copied ? "checkmark" : "doc.on.doc")
-                        Text(copied ? "已复制" : "复制")
+                        Image(copied ? "checkmark" : "copy")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 12)
+                        Text(copied ? "Copied" : "Copy")
                     }
-                    .font(.caption)
-                    .foregroundColor(copied ? .green : .secondary)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 5)
-                    .background(Color(.systemGray5))
-                    .cornerRadius(6)
+                    .font(.footnote)
+                    .foregroundColor(copied ? Color(.systemGray) : .secondary)
                 }
                 .animation(.spring(response: 0.3), value: copied)
-                .padding(.trailing, 8)
-                .padding(.vertical, 6)
+                .padding(12)
+                .hoverEffect(.lift)
             }
             .background(Color(.systemGray5))
 
