@@ -65,7 +65,7 @@ name
 var name = "FangJunyu"
 ```
 
-这里声明了一个名为 name 的变量，它的值是 "FangJunyu"。
+这里声明了一个名为 name 的变量，变量类型为 String，值为 "FangJunyu"。
 
 ### 变量和常量的区别
 
@@ -209,8 +209,10 @@ var hello = "Hello, World"
 
 String 表示文本内容，例如：
 
+```swift
 var name = "FangJunyu"
 var city = "Rizhao"
+```
 
 字符串通常用于表示：用户名、标题、文字内容。
 
