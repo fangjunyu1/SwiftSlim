@@ -22,11 +22,19 @@ struct EducationPage: View {
                 ScrollView {
                     Markdown(content)
                         .markdownImageProvider(.asset)
+                        .markdownTextStyle(\.text) {
+                            // 非 iPhone 版本，均显示较大字体
+                            if UIDevice.current.userInterfaceIdiom != .phone {
+                                FontSize(20)
+                                FontWeight(.light)
+                            }
+                        }
                         .markdownBlockStyle(\.codeBlock) { configuration in
                             CodeBlockWithCopyButton(configuration: configuration)
                         }
                         .markdownTheme(.docC)
                         .padding(.horizontal)
+                    
                     Spacer().frame(height: 50)
                 }
             } else {
