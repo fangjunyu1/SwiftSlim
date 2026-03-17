@@ -126,52 +126,28 @@ Cannot assign to property: 'self' is immutable
 
 为什么会这样？
 
-## SwiftUI 的工作方式
+## SwiftUI 的工作原理
 
-在 SwiftUI 中：
+在 SwiftUI 中：**界面是由数据驱动的**，这意味着当数据变化时，界面会自动刷新。
 
-**界面是由数据驱动的。**
+但需要注意的是，只有在状态（如 @State、 @Binding）发生变化时，SwiftUI 才会监控变化并刷新视图。
 
-可以简单的理解为：当数据变化时，界面会自动刷新。
-
-例如：
-
-```swift
-num = 0   → Text 显示 0
-num = 1   → Text 显示 1
-```
-
-但是，只有 SwiftUI 在检测到状态变化时，才会刷新界面。
-
-如果只是普通变量，SwiftUI 不会监听它的变化。
-
-SwiftUI 只会在视图创建时读取一次变量的值，之后即使变量发生改变，界面也不会更新。
+如果使用普通变量，SwiftUI 只会在视图创建时读取一次变量的值，之后即使变量发生改变，界面也不会更新。
 
 例如：
 
 ```swift
-var num = 0
+var num = 0   → Text 显示 0
+num = 1   → Text 显示 0
 ```
 
-当 ContentView 创建时：
-
-```swift
-num = 0 → Text 显示 0
-```
-
-即使代码执行：
-
-```swift
-num += 1
-```
-
-SwiftUI 也不会刷新界面。
+在上面的例子中，num 是普通变量，虽然它的值发生了变化，但 SwiftUI 不会更新视图，界面依然会显示初始的 0。
 
 ![Num](009_state.png)
 
-因此，在 SwiftUI 视图中，普通变量不能直接作为可修改的界面数据。
+因此，只有当数据被标记为状态（如使用 @State、@Binding 等属性包装器）时，SwiftUI 才会自动监控它的变化并刷新界面。
 
-## 使用 @State 保存状态
+## @State 属性包装器
 
 在 SwiftUI 中，如果需要修改变量并刷新界面，就必须使用 @State。
 
@@ -235,8 +211,8 @@ SwiftUI 会检测到 num 发生变化，然后自动刷新界面。
 例如，输入框内容、开关状态。
 
 ```swift
-@State var isOn = false
-@State var text = ""
+@State private var isOn = false
+@State private var text = ""
 ```
 
 如果数据需要在多个视图之间共享，就需要使用其他状态类型，例如 @Binding 或 @Observable。
@@ -279,7 +255,7 @@ HStack {
 
 ### 重置按钮
 
-我们还可以添加一个 重置按钮，将数字变为 0。
+我们还可以添加一个重置按钮，将数字变为 0。
 
 ```swift
 Button("0") {
@@ -287,6 +263,8 @@ Button("0") {
 }
 .buttonStyle(.borderedProminent)
 ```
+
+当点击重置按钮时，num 被赋值为 0。
 
 效果：
 
@@ -296,7 +274,7 @@ Button("0") {
 
 ### 自定义按钮
 
-目前我们的按钮使用的是文本：
+目前我们的按钮还只能显示文本：
 
 ```swift
 Button("+") {

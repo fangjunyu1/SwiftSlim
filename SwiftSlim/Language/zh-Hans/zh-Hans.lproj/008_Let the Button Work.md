@@ -17,7 +17,9 @@
 基本用法：
 
 ```swift
-Button("") { }
+Button("") {
+    
+}
 ```
 
 结构可以分为两个部分：
@@ -71,7 +73,7 @@ buttonStyle 会使用系统提供的按钮样式。
 - .borderedProminent
 - .borderless
 
-![](008_button7.png)
+![Button](008_button7.png)
 
 不同样式的区别主要体现在，按钮是否有边框、背景和视觉强调程度。
 
@@ -109,7 +111,9 @@ Test 123
 
 ![](008_button3.png)
 
-注意：print 是 Swift 代码，不是界面控件。它不能直接放在 body 中，否则会报错。例如下面这样写就是错误的：
+注意：print 是 Swift 代码，不是界面控件。它不能直接放在 body 中，否则会报错。
+
+例如，下面这样写就是错误的：
 
 ```swift
 struct ContentView: View {
