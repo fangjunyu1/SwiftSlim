@@ -44,7 +44,7 @@ let markdown = try? String(contentsOf: url)
 
 **2. SwiftUI：声明和渲染界面**
 
-SwiftUI 则用于和构建用户界面的布局和内容，主要负责渲染界面和视图交互。
+SwiftUI 则用于构建用户界面的布局和内容，主要负责渲染界面和视图交互。
 
 例如，使用 SwiftUI 创建一个文本视图：
 
@@ -54,11 +54,9 @@ Text("SwiftSlim")
 
 这些都是用于构建和控制界面元素的代码，直接与用户界面交互。
 
-以下示例展示了 Swift 和 SwiftUI 的协作方式：
-
 ### 基础示例
 
-下面是一个简单的 SwiftUI 示例，用于理解 Swift 和 SwiftUI 的区别：
+下面是一个简单的 SwiftUI 示例：
 
 ```swift
 // ContentView.swift
@@ -130,6 +128,51 @@ Button("Print") {
 
 这种协作使得 Swift 和 SwiftUI 可以无缝结合，Swift 负责数据和逻辑处理，SwiftUI 负责用户界面的展示。
 
+## Swift 和 SwiftUI 代码通常写在什么位置？
+
+在 SwiftUI 中，界面是通过 body 属性返回的视图构建的。因此，所有用于描述界面的代码通常都写在 body 中。
+
+例如：
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        Text("Hello")
+    }
+}
+```
+
+在这个例子中，Text 是 SwiftUI 视图组件，因此必须写在 body 中，因为 SwiftUI 会通过 body 读取并生成界面。
+
+与界面无关的代码，例如变量、函数或数据处理逻辑，通常写在 body 外。例如：
+
+```swift
+struct ContentView: View {
+
+    // Swift：数据或逻辑
+    var name = "Fang"
+
+    func printName() {
+        print(name)
+    }
+
+    // SwiftUI：界面
+    var body: some View {
+        Text(name)
+    }
+}
+```
+
+需要注意的是，body 中仍然可以使用 Swift 语法，例如 if、for 等控制流语句，它们只是用来控制 SwiftUI 视图的生成：
+
+```
+if isLogin {
+    Text("Welcome")
+}
+```
+
+因此，在 SwiftUI 开发中可以简单理解为：视图代码（Text、Image、Button 等）通常写在 body 中；数据和逻辑代码（变量、函数等）通常写在 body 外。
+
 ## Swift 文件
 
 随着学习的深入，我们还会接触到 MVVM 架构，其中 ViewModel 和 Model 层通常由纯 Swift 代码构成，与视图层（SwiftUI）完全分离。
@@ -194,7 +237,9 @@ print("Hello，\(name)")
 
 虽然 Swift 是一种通用编程语言，能在 Apple 各平台上运行，但它并不能完全替代 UIKit 或 AppKit。对于一些复杂的界面需求，或者 SwiftUI 尚未覆盖的功能点，仍然需要借助 UIKit 或 AppKit 来实现。
 
-例如，UIKit 在处理复杂的视图控制器管理、动画效果、手势识别等方面已经非常成熟，积累了大量的生产实践验证。而 SwiftUI 在这些方面的能力虽然持续增强，但在某些边缘场景中仍存在局限。因此，许多开发者会在项目中混合使用 SwiftUI 与 UIKit（或 AppKit），充分发挥两者各自的优势。
+例如，UIKit 在处理复杂的视图控制器管理、动画效果、手势识别等方面已经非常成熟，积累了大量的生产实践验证。而 SwiftUI 在这些方面的能力虽然持续增强，但在某些边缘场景中仍存在局限。
+
+因此，许多开发者会在项目中混合使用 SwiftUI 与 UIKit（或 AppKit），充分发挥两者各自的优势。
 
 从这个角度理解，可以将 SwiftUI 视为对 UIKit / AppKit 的一种高级封装。学习 SwiftUI 的同时，适当了解 UIKit 和 AppKit 的基本概念，有助于在维护老旧项目或实现复杂功能时做出更合理的技术决策。
 
