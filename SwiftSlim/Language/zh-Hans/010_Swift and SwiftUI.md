@@ -4,7 +4,7 @@
 
 实际上，Swift 和 SwiftUI 是深度融合的整体：Swift 是编程语言，负责提供逻辑和数据；SwiftUI 则是基于 Swift 构建的用户界面框架，负责视图的渲染和交互。
 
-本节课将帮助你建立一个清晰的认知框架：什么是 Swift，什么是 SwiftUI，以它们如何在代码中相互协作。
+本节课将帮助你建立一个清晰的认知框架：什么是 Swift，什么是 SwiftUI，以及它们如何在代码中相互协作。
 
 ## 什么是 Swift?
 
@@ -12,7 +12,7 @@ Swift 是苹果公司推出的一种现代化的编程语言，它用于开发 i
 
 ![swift](010_swift.png)
 
-Swift 是一种强类型、静态类型的语言，设计上更注重安全性，减少了很多常见的编程错误（比如空指针、越界等），支持与 C 和 Objective-C 进行无缝集成。
+Swift 是一种强类型、静态语言，设计上更注重安全性，减少了很多常见的编程错误（比如空指针、越界等），支持与 C 和 Objective-C 进行无缝集成。
 
 在实际开发中，Swift 更多的是负责应用的逻辑部分，比如数据处理、网络请求、存储操作等。
 
@@ -22,7 +22,7 @@ SwiftUI 是苹果公司于 2019 年推出的一种新的界面构建框架。Swi
 
 ![swiftui](010_swiftui.png)
 
-声明式编程意味着开发者只需告诉系统希望显示什么，系统会根据数据的变化自动更新界面。而不再需要手动更新界面状态，这大大简化了 UI 开发的复杂性。
+声明式编程意味着开发者只需告诉系统希望显示什么，系统会根据数据的变化自动刷新视图。而不再需要手动更新界面状态，这大大简化了 UI 开发的复杂性。
 
 SwiftUI 的核心是视图组件（如 Text、Image、Button 等）和布局容器（如 VStack、HStack、ZStack）。这些组件通过数据绑定和状态管理来进行交互，使得界面能够响应数据变化并自动刷新。
 
@@ -84,7 +84,7 @@ struct ContentView: View {
 
 **SwiftUI 代码**：VStack、Image、Text、padding 都属于 SwiftUI，负责界面的展示和布局。
 
-**Swift 代码**：文件顶部的 // 注释和 import SwiftUI，以及底部的 #Preview，不参与视图渲染，属于 Swift，负责代码结构和功能。
+**Swift 代码**：文件顶部的 // 注释和 import SwiftUI 属于 Swift 代码结构；底部的 #Preview 是用于 Xcode 预览的宏，不参与实际界面渲染。
 
 ### 进阶示例
 
@@ -189,7 +189,7 @@ class AppStorage: ObservableObject {
 或者描述数据结构的结构体：
 
 ```
-struct SuponsorStruct: Identifiable{
+struct SponsorStruct: Identifiable {
     var id:String
     var icon: String
 }
@@ -216,7 +216,7 @@ NSLog(@"Hello，%@", name);
 ```swift
 // Swift 的写法
 let name = "Fang"
-print("Hello，\(name)")
+print("Hello, \(name)")
 ```
 
 但是，Objective-C 并未就此退出历史舞台，它在许多存量项目和底层框架中仍然被广泛使用。了解其基本语法，对于维护老旧项目和理解系统底层仍有价值。
@@ -231,7 +231,7 @@ print("Hello，\(name)")
 
 ![storyboard](010_xcode1.png)
 
-值得注意的是，SwiftUI 并非完全独立的底层实现。在各平台上，它本质上是对 UIKit（iOS）或 AppKit（macOS）的高层封装，底层仍然依赖这两个框架运行。
+值得注意的是，SwiftUI 并非完全独立的底层实现。在各平台上，它本质上是对 UIKit（iOS）或 AppKit（macOS）进行桥接和协作，底层仍然依赖这两个框架运行。
 
 ### Swift 与 UIKit/AppKit 的关系
 

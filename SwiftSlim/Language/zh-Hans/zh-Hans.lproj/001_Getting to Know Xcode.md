@@ -18,7 +18,7 @@ Xcode 目前有两种安装方式：
 
 2、通过 [Apple Developer 官方网站](https://developer.apple.com/xcode/)下载
 
-两种安装方式都可以下载 Xcode。区别在于 Apple Developer 官方网站除了正式版，还可以下载 [Beta](https://developer.apple.com/download/all/?q=Xcode) 版或历史版本。
+两种方式都可以下载 Xcode。区别在于 Apple Developer 官方网站除了正式版，还可以下载 [Beta](https://developer.apple.com/download/all/?q=Xcode) 版或历史版本。
 
 如果只是学习开发，建议使用正式版。Beta 版本主要用于测试新功能，可能存在不稳定情况。
 
@@ -28,7 +28,7 @@ Xcode 目前有两种安装方式：
 
 ![Swift](001_xcode1.png)
 
-左侧包含三个常用选项:
+左侧包含三个常用选项：
 
 - Create New Project —— 创建新项目  
 - Clone Git Repository —— 克隆 Git 仓库  
@@ -36,21 +36,21 @@ Xcode 目前有两种安装方式：
 
 右侧显示最近打开的 Xcode 项目。
 
-我们选择 "Create New Porject" 选项。
+我们选择 "Create New Project" 选项。
 
-### 选择项目模版
+### 选择项目模板
 
 ![Swift](001_xcode2.png)
 
-进入项目模板选择界面，这里显示多个平台（iOS、macOS等）以及不同类型的项目模版。
+进入项目模板选择界面，这里显示多个平台（iOS、macOS等）以及不同类型的项目模板。
 
-常见模版说明:
+常见模板说明：
 - App —— 最基础的应用类型（推荐）
 - Document App —— 基于文档模式的应用
 - Game —— 用于游戏开发
 - Framework —— 可复用模块
 
-在入门阶段，我们只选择 "iOS" - "App" 模版，因为这是最基础、最通用的 GUI 应用类型。
+在入门阶段，我们只选择 "iOS" - "App" 模板，因为这是界面应用类型。
 
 点击 "Next"。
 
@@ -62,7 +62,7 @@ Xcode 目前有两种安装方式：
 
 各字段的含义：
 
-- Product Name —— 项目名称，例如: SwiftSlimTest
+- Product Name —— 项目名称，例如：SwiftSlimTest
 - Team —— 开发者团队，如果没有付费 Apple Developer 账号，可以不选
 - Organization Identifier —— 组织标识符，通常采用反向域名格式，例如：
   - com.yourname
@@ -90,11 +90,11 @@ Xcode 目前有两种安装方式：
 
 ![Swift](001_xcode5.png)
 
-- Assets.xcassets —— 用于存放图片、App图标等资源的文件夹
+- Assets.xcassets —— 用于存放图片、App 图标等资源的文件夹
 
 - ContentView.swift —— 默认生成的 SwiftUI 视图文件，我们后续将在这里编写界面代码。
 
-- SwiftSlimTestApp.swift —— 应用的入口文件（App Entry Point），负责启动应用，我们暂时不需要了解它。
+- SwiftSlimTestApp.swift —— 应用入口文件（App Entry Point），负责启动应用，我们暂时不需要了解它。
 
 - SwiftSlimTest.xcodeproj —— Xcode 项目文件，双击该文件即可打开项目。
 
@@ -112,7 +112,7 @@ Xcode 界面主要由五个区域组成：
 
 ![Swift](001_xcode6.png)
 
-注意：Canvas 主要用于 SwiftUI 视图预览，从 Xcode 官方架构来讲，它属于 Editor 的辅助预览区域。只有在打开 SwiftUI 视图文件时，才可以启用 Canvas，其他类型文件不会显示预览功能。
+注意：Canvas 主要用于 SwiftUI 视图预览，从 Xcode 官方架构来讲，它是 Editor 的辅助预览面板（Preview Pane）。只有在打开 SwiftUI 视图文件时，才可以启用 Canvas，其他类型文件不会显示预览功能。
 
 在后面的课程中，我们主要在 Editor 区域编写 Swift 和 SwiftUI 代码。
 

@@ -11,7 +11,7 @@
 
 还会学习 Safe Area（安全区域）。
 
-这些都是界面开发中最常用的视觉修饰符。它们用于控制视图的外观表现，使界面更加清晰、有层次。
+这些修饰符用于控制视图的外观表现，使界面更加清晰、有层次。
 
 ## 颜色
 
@@ -22,7 +22,7 @@ Text("Fang Junyu")
     .foregroundStyle(.blue)
 ```
 
-.blue 表示蓝色，实际上是 Color.blue 的简写。
+.blue 表示蓝色，实际上是 Color.blue 的简化写法（类型推断）。
 
 常见颜色包括：
 
@@ -47,7 +47,7 @@ Text("Fang Junyu")
 
 ```swift
 Color.red
-    .frame(width: 100,height:100)
+    .frame(width: 100, height:100)
     .cornerRadius(10)
 ```
 
@@ -81,7 +81,7 @@ Safe Area 是系统为避免内容被遮挡而预留的区域，包括：
 
 ![Color](006_color3.png)
 
-SwiftUI 默认会避开这些区域，这意味着视图不会贴边显示。
+SwiftUI 默认会将内容限制在安全区域内，因此视图不会延伸到屏幕边缘。
 
 ### 忽略 Safe Area（安全区域）
 
@@ -103,7 +103,7 @@ Color.red
 
 这样视图就会延伸到整块屏幕。
 
-从 iOS 14 开始，推荐使用 ignoresSafeArea。
+需要注意的是，edgesIgnoringSafeArea 是较早的写法，从 iOS 14 开始，推荐使用 ignoresSafeArea。
 
 ## 前景色
 
@@ -201,14 +201,14 @@ Text("FangJunyu.com")
 
 ```swift
 Color.white
-    .frame(width: 50,height: 50)
+    .frame(width: 50, height: 50)
 ```
 
 如果想要变成圆形，可以使用 cornerRadius：
 
 ```swift
 Color.white
-    .frame(width: 50,height: 50)
+    .frame(width: 50, height: 50)
     .cornerRadius(25)
 ```
 
@@ -218,7 +218,7 @@ Color.white
 
 ```swift
 Color.white
-    .frame(width: 50,height: 50)
+    .frame(width: 50, height: 50)
     .cornerRadius(25)
     .padding(20)
     .background(.blue)
@@ -239,16 +239,16 @@ Color.white
 ```swift
 ZStack {
     Color.blue
-        .frame(width: 70,height: 70)
+        .frame(width: 70, height: 70)
     Color.white
-        .frame(width: 50,height: 50)
+        .frame(width: 50, height: 50)
         .cornerRadius(25)
 }
 ```
 
 ![Color](006_color8.png)
 
-ZStack 会将视图按顺序叠加，后写的显示在上层。
+ZStack 会将视图按顺序叠加，后添加的视图显示在上层。
 
 ## 示例 - 两个重叠的圆
 
@@ -260,10 +260,10 @@ ZStack 会将视图按顺序叠加，后写的显示在上层。
 
 ```swift
 Color.red
-    .frame(width: 50,height:50)
+    .frame(width: 50, height:50)
     .cornerRadius(25)
 Color.orange
-    .frame(width: 50,height:50)
+    .frame(width: 50, height:50)
     .cornerRadius(25)
 ```
 
@@ -274,10 +274,10 @@ Color.orange
 ```swift
 ZStack {
     Color.red
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
     Color.orange
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
 }
 ```
@@ -290,7 +290,7 @@ ZStack {
 
 ## 偏移
 
-offset 可以改变显示位置，不改变父视图的布局计算。
+offset 只改变视图的绘制位置，不影响父视图的布局计算。
 
 使用方法：
 
@@ -330,7 +330,7 @@ ZStack {
 .opacity(0.5)
 ```
 
-opacity 的参数范围为 0.0 ~ 1.0，其中：
+opacity 的参数范围为 0.0 到 1.0，其中：
 
 - 0 表示完全透明
 - 1 表示不透明
@@ -340,11 +340,11 @@ opacity 的参数范围为 0.0 ~ 1.0，其中：
 ```swift
 ZStack {
     Color.red
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
         .offset(x: -25)
     Color.orange
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
         .opacity(0.8)
 }
@@ -369,11 +369,11 @@ radius 定义模糊的半径，数值越大，模糊效果越明显。
 ```swift
 ZStack {
     Color.red
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
         .offset(x:-35)
     Color.orange
-        .frame(width: 50,height:50)
+        .frame(width: 50, height:50)
         .cornerRadius(25)
         .opacity(0.8)
 }
@@ -382,7 +382,7 @@ ZStack {
 
 ![Color](006_color15.png)
 
-最终，我们可以看到一个非常模糊的两个圆。
+最终，我们可以看到两个非常模糊的圆。
 
 ## 总结
 

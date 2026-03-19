@@ -178,7 +178,7 @@ VStack {
 ```swift
 Image("image")
     .resizable()
-    .frame(width: 160,height: 200)
+    .frame(width: 160, height: 200)
 ```
 
 这时我们会发现一个问题：
@@ -190,7 +190,7 @@ Image("image")
 ```swift
 Image("image")
     .resizable()
-    .frame(width: 160,height: 100)
+    .frame(width: 160, height: 100)
 ```
 
 ![Swift](004_img8.png)
@@ -201,7 +201,7 @@ Image("image")
 Image("image")
     .resizable()
     .scaledToFit()
-    .frame(width: 140,height: 200)
+    .frame(width: 140, height: 200)
 ```
 
 scaledToFit 的作用是：
@@ -452,7 +452,7 @@ VStack(alignment: .leading, spacing: 10) {
 VStack {
     Text("I am an iOS developer.")
     Text("I build apps with Swift.")
-    Text("I like to learn newthings.")
+    Text("I like to learn new things.")
     Text("I am a good person.")
     Text("I am a good developer.")
     Text("I work hard every day.")
@@ -468,7 +468,7 @@ VStack {
 因为它们都位于同一个外层容器中，可以在外层容器上控制整体间距：
 
 ```swift
-VStack(spacing:30) {
+VStack(spacing: 30) {
     ...
     HStack(spacing: 30) {
         ...
@@ -502,7 +502,7 @@ VStack(spacing:10) {
 
 ### 完成个人简历
 
-现在，我们个人简介的基本框架已经完成。
+现在，我们个人简历的基本框架已经完成。
 
 ![Swift](004_img.png)
 
@@ -553,7 +553,7 @@ ScrollView {
 struct ContentView: View {
     var body: some View {
         ScrollView {
-            VStack(spacing:30) {
+            VStack(spacing: 30) {
                 ...
             }
             .padding()
@@ -580,7 +580,7 @@ ScrollView(showsIndicators: false) {
 struct ContentView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(spacing:30) {
+            VStack(spacing: 30) {
                 Text("FangJunyu")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -605,7 +605,7 @@ struct ContentView: View {
                     Image("image")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 140,height:200)
+                        .frame(width: 140, height:200)
                         .cornerRadius(20)
                 }
                 VStack(spacing:10) {

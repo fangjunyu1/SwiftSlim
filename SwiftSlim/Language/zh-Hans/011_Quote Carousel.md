@@ -95,7 +95,7 @@ sayings[1]   // 102
 
 **索引越界**
 
-例如，当数组只有 5 个元素时，合法的索引范围是 0 到 4。如果我们尝试访问 sayings[5]，程序将无法找到对应的“车厢”，从而引发极为常见的“索引超出范围”严重错误，导致应用崩溃。
+例如，当数组只有 5 个元素时，合法的索引范围是 0 到 4。如果我们尝试访问 sayings[5]，程序将无法找到对应的“车厢”，从而引发“索引越界”错误，导致应用崩溃。
 
 ![Array](011_array3.png)
 
@@ -177,7 +177,7 @@ Text(sayings[1]) // "Difficult roads lead to beautiful destinations."
 
 ### 定义名言的索引
 
-为了实现名言的动态切换效果，我们不能在把索引"写死"在 Text 视图中。
+为了实现名言的动态切换效果，我们不能在把索引“写死”在 Text 视图中。
 
 我们需要创建一个变量，单独保存当前显示的索引值。
 
@@ -331,7 +331,7 @@ Button("Next") {
 完整代码：
 
 ```swift
-struct ContentView1: View {
+struct ContentView: View {
     @State private var index = 0
     let sayings = [
         "Slow progress is still progress.",

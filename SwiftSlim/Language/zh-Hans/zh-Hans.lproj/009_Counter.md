@@ -74,7 +74,7 @@ num += 1
 num = num + 1
 ```
 
-这种写法叫做复合赋值运算符。
+这种写法叫做“复合赋值运算符”。
 
 Swift 中常见的复合赋值运算符有：
 
@@ -137,19 +137,19 @@ Cannot assign to property: 'self' is immutable
 例如：
 
 ```swift
-var num = 0   → Text 显示 0
-num = 1   → Text 显示 0
+var num = 0   // 0
+num = 1   // 0
 ```
 
 在上面的例子中，num 是普通变量，虽然它的值发生了变化，但 SwiftUI 不会更新视图，界面依然会显示初始的 0。
 
 ![Num](009_state.png)
 
-因此，只有当数据被标记为状态（如使用 @State、@Binding 等属性包装器）时，SwiftUI 才会自动监控它的变化并刷新界面。
+因此，只有当数据被标记为状态（如使用 @State、@Binding 等属性包装器）时，SwiftUI 才会自动监控它的变化并更新视图。
 
 ## @State 属性包装器
 
-在 SwiftUI 中，如果需要修改变量并刷新界面，就必须使用 @State。
+在 SwiftUI 中，如果需要修改变量并更新视图，就必须使用 @State。
 
 ```swift
 @State var num = 0
@@ -157,7 +157,7 @@ num = 1   → Text 显示 0
 
 @State 会让 SwiftUI 监听这个变量。
 
-当变量发生变化时，SwiftUI 会重新计算视图，并更新界面。
+当变量发生变化时，SwiftUI 会重新计算视图，并更新视图。
 
 完整代码：
 
@@ -182,7 +182,7 @@ struct ContentView: View {
 num += 1
 ```
 
-SwiftUI 会检测到 num 发生变化，然后自动刷新界面。
+SwiftUI 会检测到 num 发生变化，然后自动更新视图。
 
 ![Num](009_state1.png)
 
@@ -192,7 +192,7 @@ SwiftUI 会检测到 num 发生变化，然后自动刷新界面。
 
 ### 1. @State 通常使用 private
 
-@State 变量通常只在当前视图内部使用，因此一般会写成：
+@State 变量通常只在当前类型（如当前 View 结构体）中使用，因此一般会写成：
 
 ```swift
 @State private var num = 0
@@ -357,11 +357,11 @@ Button(action: {
 
 本节课通过实现一个简单的计数器，综合练习了变量、Text 和 Button 的使用。我们使用变量保存数字，并通过按钮控制数字增加或减少，同时学习了复合赋值运算符，例如 num += 1 和 num -= 1。
 
-在实现过程中，我们了解了 SwiftUI 的工作方式：界面由数据驱动。当数据发生变化时，界面才会刷新。因此需要使用 @State 保存可变化的状态，当 @State 变量改变时，SwiftUI 会自动更新界面。
+在实现过程中，我们了解了 SwiftUI 的工作方式：界面由数据驱动。当数据发生变化时，界面才会刷新。因此需要使用 @State 保存可变化的状态，当 @State 变量改变时，SwiftUI 会自动更新视图。
 
 最后，我们对界面进行了简单优化，调整了 Text 的字体样式，并使用 Button(action:label:) 自定义按钮内容，使按钮可以显示图标，从而让计数器界面更加清晰和美观。
 
-现在，我们已经接触到了 SwiftUI 视图的基本使用方式。在 SwiftUI 中，大部分界面都是通过变量驱动的。当变量发生变化时，SwiftUI 会自动刷新界面。因此，在开发 SwiftUI 应用时，我们通常需要先设计好需要保存的数据，再通过这些数据来构建界面和交互逻辑。
+现在，我们已经接触到了 SwiftUI 视图的基本使用方式。在 SwiftUI 中，大部分界面都是通过变量驱动的。当变量发生变化时，SwiftUI 会自动更新视图。因此，在开发 SwiftUI 应用时，我们通常需要先设计好需要保存的数据，再通过这些数据来构建界面和交互逻辑。
 
 ## 完整代码
 

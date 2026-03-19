@@ -20,7 +20,7 @@ VStack {
 
 ![Swift](003_view.png)
 
-SwiftUI 在默认布局规则下居中显示，对齐方式是 center。
+在默认情况下，Stack 容器的对齐方式是 .center，因此子视图通常呈现为居中效果。
 
 ### Alignment 对齐方式
 
@@ -124,7 +124,7 @@ VStack {
 }
 ```
 
-当我们在 Image 和 Text 之间添加 Spacer 后，Spacer 就会自动填充剩余空间，将 Image 和 Text 推到两侧。
+当我们在 Image 和 Text 之间添加 Spacer 后，Spacer 会填充剩余空间，将 Image 和 Text 分别推向上下两端。
 
 ![Swift](003_view1.png)
 
@@ -145,7 +145,7 @@ VStack {
 
 ![Swift](003_spacer.png)
 
-## Imgae 的显示和尺寸控制
+## Image 的显示和尺寸控制
 
 Image 视图主要用于显示图片，上节课学习的 SF Symbols 图标只是 Image 的一个用法。
 
@@ -193,7 +193,7 @@ Image("image")
 
 ### resizable 修饰符
 
-resizable 修饰符允许图片内容根据布局空间缩放。
+resizable 修饰符允许图片在布局中参与缩放，而不是固定使用原始尺寸。
 
 ```swift
 .resizable()
@@ -356,7 +356,7 @@ Text("FangJunyu")
 
 ### 字体粗细
 
-如果想要让文字加醋，可以使用 fontWeight 修饰符：
+如果想要让文字加粗，可以使用 fontWeight 修饰符：
 
 ```swift
 .fontWeight(.bold)

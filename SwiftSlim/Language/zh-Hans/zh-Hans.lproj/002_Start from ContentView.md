@@ -73,7 +73,7 @@ Swift 中使用 // 进行单行注释：
 // 这是注释
 ```
 
-注释可以提高代码可读性，方便开发者阅读注释信息。
+注释可以提高代码可读性，帮助开发者理解代码逻辑。
 
 在实际开发中，代码可能晦涩难懂。如果不写注释，就会遇到三天后，看不懂自己代码的情况。
 
@@ -147,7 +147,7 @@ struct ContentView: View {
 
 我们现在还没有学习这些关键字，只需要知道这段代码的含义是，创建了一个名为 ContentView 的 View 视图。
 
-你可以把 View 理解为一个画板/画纸，我们可以在上面进行绘画，绘画的工具就是 SwiftUI。
+你可以把 View 理解为一个画板，我们可以在上面进行绘画，绘画的工具就是 SwiftUI。
 
 例如：
 
@@ -338,7 +338,7 @@ foregroundStyle 可以控制前景色。
 
 #### Text 视图
 
-Text 是文本视图，用于显示字符串，
+Text 是文本视图，用于显示字符串。
 
 ```swift
 Text("Hello, world!")
@@ -356,7 +356,7 @@ Text("FangJunyu")
 
 #### padding 边距
 
-在 SwiftUI 中，padding 用于在视图内容与边界之间增加空白区域，它属于"内边距（internal spacing）"。
+在 SwiftUI 中，padding 用于在视图内容与边界之间增加空白区域，它属于“内边距（padding / content inset）”。
 
 ```swift
 HStack {
@@ -461,7 +461,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 }
 ```
 
-这段代码表示在 Canvas 中生成 ConetenView 视图预览。
+这段代码表示在 Canvas 中生成 ContentView 视图预览。
 
 注意：#Preview 是 Swift 5.9 / Xcode 15 引入的新语法，在此之前，使用的是 PreviewProvider 结构。
 
