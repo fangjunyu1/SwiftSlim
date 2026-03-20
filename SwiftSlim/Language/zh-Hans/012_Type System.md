@@ -68,8 +68,8 @@ var age = 18         // Int
 var price = 9.9      // Double
 var name = "Sam"    // String
 var isLogin = false  // Bool
-var scores= [90, 85, 78]	// [Int]
-var tags = ["Swift", "iOS"]	// [String]
+var scores= [90, 85, 78]    // [Int]
+var tags = ["Swift", "iOS"]    // [String]
 ```
 
 这是因为，Swift 编译器会根据"初始值"自动推断类型。
@@ -103,7 +103,7 @@ Swift 是一门强类型语言（Strongly Typed Language）。
 ```swift
 var age: Int = 18
 
-age = 20	// Success
+age = 20    // Success
 age = "20"    // Error, Cannot assign value of type 'String' to type 'Int'
 
 var nums: [Int] = [1, 2, 3, "Hello"]  // Error
@@ -172,7 +172,7 @@ var users: [User] = []
 var a: Int = 10
 var b: Double = 12.5
 
-var result = a + b	// Error, Binary operator '+' cannot be applied to operands of type 'Int' and 'Double'
+var result = a + b    // Error, Binary operator '+' cannot be applied to operands of type 'Int' and 'Double'
 ```
 
 在这段代码中，a 是 Int 类型，b 是 Double 类型，类型不同，无法直接进行运算。
@@ -246,7 +246,7 @@ private 在之前提到过，表示这个变量只能在当前视图中使用，
 在 SwiftUI 中显示 age 变量：
 
 ```swift
-struct ContentView1: View {
+struct ContentView: View {
     @State private var age = 20
     var body: some View {
         VStack(spacing: 10) {
@@ -320,7 +320,7 @@ Cannot assign value of type 'String' to type 'Int'
 删除错误代码后：
 
 ```swift
-struct ContentView1: View {
+struct ContentView: View {
     @State private var age = 20
     var body: some View {
         VStack(spacing: 10) {
@@ -484,7 +484,7 @@ name ?? "FangJunyu"
 ```swift
 let input = "30"
 let pi = Double(input)
-print("pi:\(pi ?? 10)")	// 30
+print("pi:\(pi ?? 10)")    // 30
 ```
 
 输出：
