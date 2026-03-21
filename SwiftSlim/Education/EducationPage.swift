@@ -38,7 +38,9 @@ struct EducationPage: View {
                     Spacer().frame(height: 50)
                 }
             } else {
-                ProgressView("...")
+                ProgressView {
+                    Text(verbatim: "...")
+                }
             }
         }
     }
