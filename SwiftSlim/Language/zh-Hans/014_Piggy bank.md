@@ -8,7 +8,7 @@
 
 实现效果：
 
-![Piggy Bank](014_view.png)
+![Piggy Bank](../../RESOURCE/014_view.png)
 
 ## 显示总金额
 
@@ -85,7 +85,7 @@ TextField("input your name", text: $text)
 
 当输入框为空时，会显示一段灰色的提示文字。
 
-![textfield](014_textfield.png)
+![textfield](../../RESOURCE/014_textfield.png)
 
 #### 数据绑定
 
@@ -128,7 +128,7 @@ struct ContentView: View {
 
 在 TextField 中输入内容，上方的 Text 会实时同步显示。
 
-![textField](014_textfield1.png)
+![textField](../../RESOURCE/014_textfield1.png)
 
 ### 绑定数字类型
 
@@ -177,7 +177,7 @@ struct ContentView: View {
 
 效果如下：
 
-![textfield](014_textfield2.png)
+![textfield](../../RESOURCE/014_textfield2.png)
 
 这是因为，TextField 默认会占据父视图的全部宽度。
 
@@ -190,7 +190,7 @@ TextField("Amount", value: $number, format: .number)
 
 效果如下：
 
-![textfield](014_textfield3.png)
+![textfield](../../RESOURCE/014_textfield3.png)
 
 可以看到 TextField 实际上填充了整行宽度。
 
@@ -205,7 +205,7 @@ TextField("Amount", value: $number, format: .number)
 
 效果如下：
 
-![textfield](014_textfield4.png)
+![textfield](../../RESOURCE/014_textfield4.png)
 
 ### 添加边框和内边距
 
@@ -220,7 +220,7 @@ TextField("Amount", value: $number, format: .number)
 
 现在，这个输入框看上去更像一个“标准输入框”。
 
-![textfield](014_textfield5.png)
+![textfield](../../RESOURCE/014_textfield5.png)
 
 ## 边框
 
@@ -285,7 +285,7 @@ Button("Save") {
 
 ### 实现存钱逻辑
 
-我们想要实现用户输入金额，点击存钱按钮，金额会自动累计到总金额。
+我们想要实现用户输入金额，点击按钮，金额会自动累计到总金额。
 
 
 ```swift
@@ -304,7 +304,7 @@ Button("Save") {
 
 这是因为 TextField 绑定的是 number，我们点击按钮时，只修改了 amount，number 没有发生改变，所以输入框仍然显示旧值。
 
-我们需要添加一个清除逻辑，当点击存钱按钮后，先叠加存钱金额，再重置输入的金额：
+我们需要添加一个清除逻辑，当点击按钮后，先叠加存钱金额，再重置输入的金额：
 
 ```swift
 Button("Save") {
@@ -355,11 +355,8 @@ struct ContentView: View {
                 .padding(5)
                 .border(Color.black, width: 1)
             Button("Save") {
-                print("---Saving---")
                 amount += number
                 number = 0
-                print("amount:\(amount)")
-                print("number:\(number)")
             }
             .buttonStyle(.borderedProminent)
         }
@@ -372,7 +369,7 @@ struct ContentView: View {
 
 实现效果：
 
-![Piggy Bank](014_view.png)
+![Piggy Bank](../../RESOURCE/014_view.png)
 
 现在，我们可以尝试存入 100 或者更多的钱，来检测“存钱罐”逻辑是否存在问题。
 
