@@ -5,7 +5,7 @@
 
     },
     "Brilliant Colors" : {
-      "comment" : "绚丽的颜色",
+      "comment" : "006_绚丽的颜色",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -23,7 +23,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "রঙিন রঙ"
+            "value" : "চমৎকার রঙ"
           }
         },
         "ca" : {
@@ -287,25 +287,25 @@
       }
     },
     "Build a Personal Resume Page" : {
-      "comment" : "构建个人简历页面",
+      "comment" : "004_构建个人简历页面",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "إنشاء صفحة سيرة ذاتية شخصية"
+            "value" : "بناء صفحة سيرة ذاتية شخصية"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Създаване на страница с лична автобиография"
+            "value" : "Създаване на страница с лично CV"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "একটি ব্যক্তিগত জীবনবৃত্তান্ত পৃষ্ঠা তৈরি করা"
+            "value" : "ব্যক্তিগত জীবনবৃত্তান্ত পেজ তৈরি করা"
           }
         },
         "ca" : {
@@ -563,7 +563,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "構建個人履歷頁面"
+            "value" : "構建個人簡歷頁面"
           }
         }
       }
@@ -1414,13 +1414,13 @@
       }
     },
     "Counter" : {
-      "comment" : "计数器",
+      "comment" : "009_计数器",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "عداد"
+            "value" : "العدّاد"
           }
         },
         "bg" : {
@@ -1696,13 +1696,13 @@
       }
     },
     "Getting to Know Xcode" : {
-      "comment" : "认识Xcode",
+      "comment" : "001_认识Xcode",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "التعرّف على Xcode"
+            "value" : "التعرّف إلى Xcode"
           }
         },
         "bg" : {
@@ -1714,7 +1714,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode পরিচিতি"
+            "value" : "Xcode-এর সাথে পরিচিতি"
           }
         },
         "ca" : {
@@ -1978,7 +1978,7 @@
       }
     },
     "Introduction" : {
-      "comment" : "引言",
+      "comment" : "000_引言",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -2260,7 +2260,7 @@
       }
     },
     "Layout, Images, and Text" : {
-      "comment" : "布局、图片和文字",
+      "comment" : "003_布局、图片和文字",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -2272,13 +2272,13 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Оформление, изображения и текст"
+            "value" : "Подредба, изображения и текст"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "লেআউট, ছবি এবং লেখা"
+            "value" : "লেআউট, ছবি এবং টেক্সট"
           }
         },
         "ca" : {
@@ -2536,31 +2536,31 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "版面配置、圖片與文字"
+            "value" : "佈局、圖片和文字"
           }
         }
       }
     },
     "Let the Button Work" : {
-      "comment" : "让按钮开始工作",
+      "comment" : "008_让按钮开始工作",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "اجعل الزر يعمل"
+            "value" : "جعل الزر يبدأ بالعمل"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Накарайте бутона да работи"
+            "value" : "Нека бутонът започне да работи"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "বোতামটি কাজ করতে দিন"
+            "value" : "বাটনগুলো কাজ করানো"
           }
         },
         "ca" : {
@@ -2824,19 +2824,19 @@
       }
     },
     "Operator" : {
-      "comment" : "运算符",
+      "comment" : "013_运算符",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "عامل"
+            "value" : "العوامل"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "оператор"
+            "value" : "Оператори"
           }
         },
         "bn" : {
@@ -3106,25 +3106,25 @@
       }
     },
     "Piggy bank" : {
-      "comment" : "存钱罐",
+      "comment" : "014_存钱罐",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "حصالة"
+            "value" : "حصّالة النقود"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "касичка"
+            "value" : "Касичка"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সঞ্চয়পাত্র"
+            "value" : "সঞ্চয় বাক্স"
           }
         },
         "ca" : {
@@ -3388,25 +3388,25 @@
       }
     },
     "Quote Carousel" : {
-      "comment" : "名言轮播",
+      "comment" : "011_名言轮播",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "كاروسيل الاقتباسات"
+            "value" : "عرض الأقوال المتعاقب"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Карусел с цитати"
+            "value" : "Въртележка с цитати"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "উদ্ধৃতি ক্যারোসেল"
+            "value" : "উক্তি ক্যারোজেল"
           }
         },
         "ca" : {
@@ -3670,7 +3670,7 @@
       }
     },
     "Save Piggy Bank Amount" : {
-      "comment" : "保存存钱罐金额",
+      "comment" : "015_保存存钱罐金额",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -3688,7 +3688,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "পিগি ব্যাংকের পরিমাণ সংরক্ষণ করুন"
+            "value" : "সঞ্চয় বাক্সের পরিমাণ সংরক্ষণ করা"
           }
         },
         "ca" : {
@@ -3952,13 +3952,13 @@
       }
     },
     "Simulator and Physical Device" : {
-      "comment" : "模拟器与实体设备",
+      "comment" : "005_模拟器与实体设备",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "المحاكي والجهاز الفعلي"
+            "value" : "المحاكي والجهاز الحقيقي"
           }
         },
         "bg" : {
@@ -3970,7 +3970,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সিমুলেটর এবং বাস্তব ডিভাইস"
+            "value" : "সিমুলেটর এবং ফিজিক্যাল ডিভাইস"
           }
         },
         "ca" : {
@@ -4234,25 +4234,25 @@
       }
     },
     "Start from ContentView" : {
-      "comment" : "从 ContentView 开始",
+      "comment" : "002_从 ContentView 开始",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ابدأ من ContentView"
+            "value" : " البدء من ContentView"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Започнете от ContentView"
+            "value" : "Започваме от ContentView"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ContentView থেকে শুরু করুন"
+            "value" : "ContentView থেকে শুরু"
           }
         },
         "ca" : {
@@ -4516,13 +4516,13 @@
       }
     },
     "Swift and SwiftUI" : {
-      "comment" : "Swift 和 SwiftUI",
+      "comment" : "010_Swift 和 SwiftUI",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "سويفت وسويفت يو آي"
+            "value" : "Swift وSwiftUI"
           }
         },
         "bg" : {
@@ -4534,7 +4534,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সুইফট এবং সুইফটইউআই"
+            "value" : "Swift এবং SwiftUI"
           }
         },
         "ca" : {
@@ -4798,25 +4798,25 @@
       }
     },
     "SwiftUI View Lifecycle" : {
-      "comment" : "SwiftUI 视图生命周期",
+      "comment" : "016_SwiftUI 视图生命周期",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "دورة حياة عرض SwiftUI"
+            "value" : "دورة حياة واجهة SwiftUI"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Жизнен цикъл на SwiftUI изглед"
+            "value" : "Жизнен цикъл на SwiftUI изгледа"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ভিউ জীবনচক্র"
+            "value" : "SwiftUI ভিউ লাইফসাইকেল"
           }
         },
         "ca" : {
@@ -5080,7 +5080,7 @@
       }
     },
     "Type System" : {
-      "comment" : "类型系统",
+      "comment" : "012_类型系统",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -5092,7 +5092,7 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Типова система"
+            "value" : "Система на типовете"
           }
         },
         "bn" : {
@@ -5362,7 +5362,7 @@
       }
     },
     "Variables and Constants" : {
-      "comment" : "变量与常量",
+      "comment" : "007_变量与常量",
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
@@ -5380,7 +5380,7 @@
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ভেরিয়েবল এবং ধ্রুবক"
+            "value" : "ভেরিয়েবল এবং কনস্ট্যান্ট"
           }
         },
         "ca" : {
@@ -5638,7 +5638,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "變數與常數"
+            "value" : "變數和常量"
           }
         }
       }
