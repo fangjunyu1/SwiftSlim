@@ -1,78 +1,78 @@
-# 引言
+# प्रस्तावना
 
-## 什么是 Swift ?
+## Swift म्हणजे काय?
 
-在学习 Swift 之前，我们先谈论一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
+Swift शिकण्यापूर्वी, आपण आधी Swift प्रोग्रामिंग भाषेबद्दल थोडक्यात समजून घेऊया. Swift ही Apple ने विकसित केलेली एक आधुनिक प्रोग्रामिंग भाषा आहे, जी मुख्यतः iOS, macOS, iPadOS, watchOS अशा Apple प्लॅटफॉर्मवरील applications तयार करण्यासाठी वापरली जाते.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Swift 语言相比其他编程语言来讲，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
+इतर प्रोग्रामिंग भाषांच्या तुलनेत Swift ची syntax अधिक concise आहे आणि safety व readability वर अधिक भर देते. SwiftUI सोबत वापरल्यास ती शिकणे आणि समजून घेणे अधिक सोपे होते. नक्कीच, मी यापूर्वी इतर कोणतीही प्रोग्रामिंग भाषा शिकलो नव्हतो, त्यामुळे कदाचित ती HTML पेक्षा थोडी अधिक कठीण वाटू शकते.
 
-Swift 不仅可以开发 Apple 平台上的应用程序，Swift 社区正在努力将 Swift 移植到 [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) 平台，甚至运行在[服务器](https://github.com/awslabs/swift-aws-lambda-runtime)等其他环境。从长远发展的角度来看，Swift 的发展空间更大，未来有机会成为类似 Flutter、React Native 等跨平台编程语言。
+Swift फक्त Apple प्लॅटफॉर्म applications विकसित करण्यापुरती मर्यादित नाही. Swift समुदाय Swift ला [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) प्लॅटफॉर्मवर आणण्यासाठी प्रयत्न करत आहे, आणि ती [server](https://github.com/awslabs/swift-aws-lambda-runtime) सारख्या इतर environments मध्येही चालवली जात आहे. दीर्घकालीन विकासाच्या दृष्टीकोनातून पाहता, Swift साठी अधिक वाढीची जागा आहे आणि भविष्यात Flutter, React Native सारख्या cross-platform programming languages प्रमाणे विकसित होण्याची संधी आहे.
 
-## 学习内容
+## शिकण्याचा विषय
 
-本教程以 Swift 和 SwiftUI 基础知识为主。
+हा tutorial मुख्यतः Swift आणि SwiftUI च्या मूलभूत ज्ञानावर आधारित आहे.
 
-我们将从简单的变量和数据类型开始学习，使用 SwiftUI 构建界面，理解数据的存储和读取方式，最后可能还会深入学习 Swift Data、iCloud 同步等进阶内容。
+आपण साध्या variables आणि data types पासून सुरुवात करू, SwiftUI वापरून interface तयार करू, data कसे store आणि read केले जाते ते समजून घेऊ, आणि शेवटी SwiftData, iCloud sync सारख्या advanced विषयांपर्यंतही जाऊ शकतो.
 
-每一章节都会围绕一个实际案例展开，在实际应用中学习 Swift 知识。
+प्रत्येक chapter एखाद्या practical example भोवती उभा आहे, आणि आपण practical applications मधून Swift शिकू.
 
-有些教程可能会先集中讲解大量语法和 API，再进入项目实践。这对初学者来讲，就像孩童从字典中识字一样，在没有应用场景下记忆大量内容，最终只会让初学者失去兴趣。
+काही tutorials आधी मोठ्या प्रमाणात syntax आणि API समजावतात आणि नंतर project practice मध्ये जातात. हे beginners साठी dictionary मधून अक्षरे शिकण्यासारखे आहे. Practical application context नसताना खूप content पाठ केल्याने, शेवटी beginners चा रस कमी होतो.
 
-本教程将在实际开发场景中学习知识，用需求引出相关的知识点。
+हा tutorial practical development scenarios मध्ये ज्ञान शिकवेल आणि गरजेतून संबंधित knowledge points समोर आणेल.
 
-完成本教程后，你将能够独立开发并运行一个基础应用，并安装在自己的 iOS / macOS 设备上，也可以将应用发布到 App Store。
+हा tutorial पूर्ण झाल्यानंतर, तुम्ही एक basic application स्वतंत्रपणे विकसित करून चालवू शकाल, ती स्वतःच्या iOS / macOS devices वर install करू शकाल, आणि App Store वर publish देखील करू शकाल.
 
-## 零基础如何学习？
+## शून्य पायाभूत ज्ञान असल्यास कसे शिकावे?
 
-我之前也是一个零基础，起初只是浏览了几期 Youtube 上的 [Swift 教学视频](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3)，发现开发 iOS 应用并不复杂，让我产生了一定的兴趣。之后，我开始尝试获取更多的 Swift 知识。例如，游玩 [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) 上的编程游戏，阅读 [Swift 官方教程文档](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)，以及学习 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)。
+मीसुद्धा सुरुवातीला पूर्णपणे नवखा होतो. सुरुवातीला मी फक्त YouTube वरील काही [Swift शिकवणी व्हिडिओ](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3) पाहिले आणि iOS app development फार गुंतागुंतीचे नाही असे लक्षात आले. त्यामुळे माझी आवड वाढली. त्यानंतर मी Swift बद्दल आणखी शिकण्याचा प्रयत्न सुरू केला. उदाहरणार्थ, [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) मधील coding games वापरले, [Swift चे अधिकृत documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) वाचले, आणि [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) शिकले.
 
-现在看来，主要还是 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) 提供了一个学习框架，让我可以系统性的学习 SwiftUI。但是，因为教程是英文，加上自己缺乏编程基础，导致在理解的过程中存在非常多的困难。对此，我使用 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等 AI 辅助理解知识点。
+आता मागे वळून पाहताना, मला असे वाटते की मुख्यतः [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) ने शिकण्याची एक framework दिली, ज्यामुळे मी SwiftUI प्रणालीबद्ध पद्धतीने शिकू शकलो. पण tutorial इंग्रजीत असल्यामुळे आणि माझ्याकडे programming ची पायाभूत माहिती नसल्यामुळे, समजून घेण्याच्या प्रक्रियेत खूप अडचणी आल्या. यासाठी मी [ChatGPT](https://chatgpt.com/) आणि [Claude](https://claude.ai/?redirect=claude.com) सारखी AI साधने वापरून concepts समजून घेतले.
 
-在学习的过程中，难免出现一些理解起来比较困难的知识，我记得在学习 UserDefaults 的时候，只知道如何保存数据，不知道数据需要手动读取，以至于怀疑我的代码存在问题。即便是这样一个简单的知识点，也让我浪费了几天的时间。
+शिकण्याच्या प्रक्रियेत, काही concepts समजायला कठीण जाणे अपरिहार्य आहे. मला आठवते की UserDefaults शिकताना, मला data कसे save करायचे हेच माहीत होते; ते manually read करावे लागते हे माहीत नव्हते. त्यामुळे माझ्या code मध्ये काहीतरी बिघाड आहे असे मला वाटले. एवढ्या साध्या knowledge point मुळेही माझे काही दिवस वाया गेले.
 
-再比如闭包、主线程、泛型等知识点，我在前期学习的过程中，因为不能够深入理解它们，在实际开发中再次遇到这些知识时，又需要拿出精力重新学习。
+Closure, main thread, generics सारख्या knowledge points बाबतीतही असेच झाले. सुरुवातीच्या learning phase मध्ये त्यांना खोलवर समजून घेता आले नाही, त्यामुळे नंतर actual development मध्ये ते पुन्हा भेटल्यावर पुन्हा वेळ काढून शिकावे लागले.
 
-因此，我的建议是：
+म्हणून माझा सल्ला असा आहे:
 
-**1、补充基础知识**
+**1. पायाभूत ज्ञान भरा**
 
-中国有句话叫做“万事开头难”，对于零基础来讲，刚开始学习 Swift 时，一些知识点往往难以理解，这不是因为知识点本身复杂，而是在这个知识的金字塔下，还有更加基础的知识你没有学习或了解过。
+चीनमध्ये एक म्हण आहे: “सुरुवात नेहमी कठीण असते.” Swift शून्य पायाभूत ज्ञानातून शिकणाऱ्या beginners साठी, learning process मध्ये काही कठीण वाटणारे concepts येणे स्वाभाविक आहे. हे concepts स्वतः फार कठीण असतात म्हणून नव्हे; तर knowledge pyramid च्या तळाशी अजून काही अधिक मूलभूत concepts असतात ज्यांचा beginners ला आधी परिचय नसतो.
 
-这时应该询问 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等AI，补全基础知识。
+अशा वेळी [ChatGPT](https://chatgpt.com/) आणि [Claude](https://claude.ai/?redirect=claude.com) सारखी AI साधने वापरून missing fundamentals त्वरित भरून काढता येतात.
 
-**2、尽量理解每一个知识点**
+**2. प्रत्येक knowledge point समजून घ्या**
 
-在学习的过程中，应该尽量理解每一个知识点，哪怕需要耗费几天的时间来学习。
+शिकताना सर्वात महत्त्वाची गोष्ट म्हणजे प्रत्येक knowledge point शक्य तितका समजून घेण्याचा प्रयत्न करणे, जरी त्यासाठी काही दिवस लागले तरी.
 
-当你选择跳过不理解的内容时，只会在后续开发中再次遇到并阻碍开发进度，最终需要重新投入时间去学习。与其亡羊补牢，不如在学习的阶段把知识理解清楚。
+न समजलेला भाग skip केल्यास, तो पुढील development मध्ये पुन्हा भेटण्याची शक्यता खूप जास्त असते आणि progress अडवतो. शेवटी पुन्हा वेळ घालवून तो शिकावाच लागतो. नंतर दुरुस्ती करण्यापेक्षा शिकतानाच नीट समजून घेणे चांगले.
 
-每一个知识点本质上都是一件工具 —— 掌握的工具越多，解决问题的能力越强。
+प्रत्येक knowledge point प्रत्यक्षात एक tool आहे. जितकी जास्त tools तुम्हाला हाताळता येतील, तितकी समस्या सोडवण्याची क्षमता वाढेल.
 
-就像建造房屋一样，如果你手里只有一件工具，虽然勉强可以完成大部分工作，但在面对更高质量要求时，就会显得力不从心。掌握更多工具，才能建造出更稳固的房子。
+हे घर बांधण्यासारखे आहे. जर तुमच्या हातात एकच tool असेल, तर जेमतेम काही कामे पूर्ण होतील. पण higher quality अपेक्षित असताना ते अपुरे ठरेल. अधिक tools हाताळता आल्यासच अधिक मजबूत घर बांधता येते.
 
-**3、保持持续学习**
+**3. सातत्यपूर्ण शिक्षण ठेवा**
 
-学习需要从一而终。很少有人真正愿意拿出几个月的时间来认真学习一个教程。持续投入时间学习，比短期高强度更重要。
+शिकणे हे दीर्घकालीन सातत्य मागते. काही महिन्यांचा वेळ मनापासून देऊन एखादा tutorial पूर्णपणे शिकण्यास फार कमी लोक तयार असतात. थोड्या काळासाठी खूप जोर लावण्यापेक्षा, सतत वेळ देणे अधिक महत्त्वाचे आहे.
 
-即使每天只完成百分之一，一百天也可以完成整个学习目标。
+दररोज फक्त एक टक्का पूर्ण केले, तरी शंभर दिवसांत संपूर्ण learning goal पूर्ण होऊ शकते.
 
-## 教育愿景
+## शैक्षणिक दृष्टीकोन
 
-这个课程不会教授太多的 Swift 和 SwiftUI 知识，而是把初学者领到 Swift 这条编程的道路上。就像拼积木 —— 教程负责讲解拼接方法，剩下的时间就是你自己去拼搭属于你的积木。
+हा course Swift आणि SwiftUI बद्दल खूप मोठ्या प्रमाणावर ज्ञान देणार नाही; तर तो beginners ला Swift या programming च्या रस्त्यावर आणेल. हे जणू building blocks जोडण्यासारखे आहे — tutorial हे blocks कसे जोडायचे ते समजावेल, बाकीचा वेळ तुम्ही स्वतःची रचना उभारण्यासाठी वापराल.
 
-项目已在 [GitHub](https://github.com/fangjunyu1/SwiftSlim) 开源，可以免费下载、使用。同时也提供 App Store 版本用于体验。
+हा project [GitHub](https://github.com/fangjunyu1/SwiftSlim) वर open source म्हणून उपलब्ध आहे. तो free download करून वापरता येतो. अनुभव घेण्यासाठी App Store version देखील उपलब्ध आहे.
 
-我们希望帮助更多没有技术背景但渴望改变职业路径的人，通过学习编程、开发应用，获得新的可能性。
+आमची आशा आहे की, ज्यांना technical background नाही पण career path बदलायची इच्छा आहे अशा अधिक लोकांना, programming शिकून आणि applications विकसित करून नवी शक्यता मिळावी.
 
-## 内容更新
+## सामग्रीचे अद्यतन
 
-本教程基于当前版本的 Swift 与 SwiftUI 编写。
+हा tutorial सध्याच्या Swift आणि SwiftUI version वर आधारित लिहिला आहे.
 
-随着 Apple 平台和工具的更新，部分 API 可能发生变化。若发现问题或内容需要更新，可参考官方文档或开源仓库的最新版本。
+Apple platforms आणि tools अद्यतनित होत राहतात, त्यामुळे काही API बदलू शकतात. काही problem आढळल्यास किंवा content update करण्याची गरज असल्यास, अधिकृत documentation किंवा open-source repository मधील नवीन version पाहावी.
 
 ---
 方君宇
 
-2026-02-14
+2026-02-14  

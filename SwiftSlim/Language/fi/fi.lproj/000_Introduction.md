@@ -1,78 +1,78 @@
-# 引言
+# Johdanto
 
-## 什么是 Swift ?
+## Mitä Swift on?
 
-在学习 Swift 之前，我们先谈论一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
+Ennen kuin alamme opetella Swiftiä, tutustutaan ensin lyhyesti Swift-ohjelmointikieleen. Swift on Applen kehittämä moderni ohjelmointikieli, jota käytetään pääasiassa sovellusten rakentamiseen Apple-alustoille, kuten iOS:lle, macOS:lle, iPadOS:lle ja watchOS:lle.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Swift 语言相比其他编程语言来讲，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
+Moneen muuhun ohjelmointikieleen verrattuna Swiftin syntaksi on selkeämpi ja se painottaa enemmän turvallisuutta ja luettavuutta. Yhdessä SwiftUI:n kanssa sitä on myös helpompi oppia ja ymmärtää. Toki en itse ollut aiemmin opiskellut muita ohjelmointikieliä, joten se voi tuntua hieman HTML:ää vaikeammalta.
 
-Swift 不仅可以开发 Apple 平台上的应用程序，Swift 社区正在努力将 Swift 移植到 [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) 平台，甚至运行在[服务器](https://github.com/awslabs/swift-aws-lambda-runtime)等其他环境。从长远发展的角度来看，Swift 的发展空间更大，未来有机会成为类似 Flutter、React Native 等跨平台编程语言。
+Swiftillä ei voi kehittää vain Apple-alustojen sovelluksia. Swift-yhteisö tekee töitä sen eteen, että Swift saadaan siirrettyä myös [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) -alustalle, ja sitä voidaan ajaa jopa [palvelimilla](https://github.com/awslabs/swift-aws-lambda-runtime) ja muissa ympäristöissä. Pitkällä aikavälillä Swiftillä on laajempi kehityspotentiaali, ja tulevaisuudessa sillä voi olla mahdollisuus kasvaa Flutterin tai React Nativen kaltaiseksi monialustaiseksi ohjelmointikieleksi.
 
-## 学习内容
+## Mitä opimme
 
-本教程以 Swift 和 SwiftUI 基础知识为主。
+Tämä opas keskittyy Swiftin ja SwiftUI:n perusasioihin.
 
-我们将从简单的变量和数据类型开始学习，使用 SwiftUI 构建界面，理解数据的存储和读取方式，最后可能还会深入学习 Swift Data、iCloud 同步等进阶内容。
+Aloitamme yksinkertaisista muuttujista ja tietotyypeistä, käytämme SwiftUI:ta käyttöliittymien rakentamiseen, ymmärrämme miten dataa tallennetaan ja luetaan, ja lopuksi saatamme syventyä myös edistyneempiin aiheisiin, kuten SwiftDataan ja iCloud-synkronointiin.
 
-每一章节都会围绕一个实际案例展开，在实际应用中学习 Swift 知识。
+Jokainen luku rakentuu käytännön esimerkin ympärille, jotta Swiftin oppiminen tapahtuisi todellisissa sovellustilanteissa.
 
-有些教程可能会先集中讲解大量语法和 API，再进入项目实践。这对初学者来讲，就像孩童从字典中识字一样，在没有应用场景下记忆大量内容，最终只会让初学者失去兴趣。
+Jotkin oppaat esittelevät ensin suuren määrän syntaksia ja API-rajapintoja ja siirtyvät vasta sen jälkeen projekteihin. Aloittelijalle tämä on kuin lapsi yrittäisi opetella sanoja sanakirjasta: jos paljon asioita täytyy muistaa ilman käyttötilannetta, into oppimiseen katoaa helposti.
 
-本教程将在实际开发场景中学习知识，用需求引出相关的知识点。
+Tässä oppaassa opimme asioita todellisten kehitystilanteiden kautta, niin että tarpeet johdattavat meidät oikeiden tietokohtien äärelle.
 
-完成本教程后，你将能够独立开发并运行一个基础应用，并安装在自己的 iOS / macOS 设备上，也可以将应用发布到 App Store。
+Kun olet suorittanut tämän oppaan, pystyt kehittämään ja ajamaan itsenäisesti perussovelluksen, asentamaan sen omille iOS- tai macOS-laitteillesi ja julkaisemaan sen halutessasi myös App Storessa.
 
-## 零基础如何学习？
+## Miten oppia täysin alusta?
 
-我之前也是一个零基础，起初只是浏览了几期 Youtube 上的 [Swift 教学视频](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3)，发现开发 iOS 应用并不复杂，让我产生了一定的兴趣。之后，我开始尝试获取更多的 Swift 知识。例如，游玩 [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) 上的编程游戏，阅读 [Swift 官方教程文档](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)，以及学习 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)。
+Minäkin aloitin täysin nollasta. Aluksi selasin vain muutamia [Swift-opetusvideoita YouTubessa](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3) ja huomasin, ettei iOS-sovellusten kehittäminen ollutkaan kovin monimutkaista. Se herätti kiinnostukseni. Sen jälkeen aloin opetella lisää Swiftistä, esimerkiksi kokeilemalla [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) -sovelluksen ohjelmointipelejä, lukemalla [Swiftin virallista dokumentaatiota](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) ja opiskelemalla [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) -kurssia.
 
-现在看来，主要还是 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) 提供了一个学习框架，让我可以系统性的学习 SwiftUI。但是，因为教程是英文，加上自己缺乏编程基础，导致在理解的过程中存在非常多的困难。对此，我使用 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等 AI 辅助理解知识点。
+Nyt jälkikäteen ajatellen juuri [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) antoi minulle oppimisen rungon, jonka avulla pystyin opiskelemaan SwiftUI:ta järjestelmällisesti. Koska opas oli kuitenkin englanniksi ja minulta puuttui ohjelmointitausta, ymmärtämisessä oli paljon vaikeuksia. Siihen sain apua käyttämällä tekoälytyökaluja, kuten [ChatGPT](https://chatgpt.com/) ja [Claude](https://claude.ai/?redirect=claude.com), tukena eri käsitteiden ymmärtämisessä.
 
-在学习的过程中，难免出现一些理解起来比较困难的知识，我记得在学习 UserDefaults 的时候，只知道如何保存数据，不知道数据需要手动读取，以至于怀疑我的代码存在问题。即便是这样一个简单的知识点，也让我浪费了几天的时间。
+Oppimisen aikana tulee väistämättä vastaan asioita, joita on vaikea ymmärtää. Muistan esimerkiksi, että opetellessani UserDefaultsia tiesin vain, miten data tallennetaan, mutta en sitä, että data täytyy lukea myös käsin takaisin. Siksi epäilin pitkään, että koodissani oli jotain vialla. Näinkin yksinkertainen asia vei minulta useita päiviä.
 
-再比如闭包、主线程、泛型等知识点，我在前期学习的过程中，因为不能够深入理解它们，在实际开发中再次遇到这些知识时，又需要拿出精力重新学习。
+Sama tapahtui myös esimerkiksi closurejen, pääsäikeen ja genericsien kanssa. Koska en aluksi ymmärtänyt niitä syvällisesti, jouduin palaamaan niihin uudelleen aina, kun ne tulivat vastaan oikeassa kehitystyössä.
 
-因此，我的建议是：
+Siksi neuvoni ovat seuraavat:
 
-**1、补充基础知识**
+**1. Täydennä perustietoja**
 
-中国有句话叫做“万事开头难”，对于零基础来讲，刚开始学习 Swift 时，一些知识点往往难以理解，这不是因为知识点本身复杂，而是在这个知识的金字塔下，还有更加基础的知识你没有学习或了解过。
+Kiinassa sanotaan, että “kaikki alku on vaikeaa”. Swiftiä täysin alusta opetteleville on tavallista, että opiskelun aikana tulee vastaan vaikeasti ymmärrettäviä asioita. Usein kyse ei ole siitä, että itse aihe olisi erityisen monimutkainen, vaan siitä, että tiedon pyramidin pohjalta puuttuu vielä vielä perustavampia käsitteitä, joita aloittelija ei ole ehtinyt kohdata.
 
-这时应该询问 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等AI，补全基础知识。
+Tällaisissa tilanteissa voi olla hyödyllistä käyttää tekoälytyökaluja, kuten [ChatGPT](https://chatgpt.com/) ja [Claude](https://claude.ai/?redirect=claude.com), täydentämään puuttuvia perustietoja ajoissa.
 
-**2、尽量理解每一个知识点**
+**2. Pyri ymmärtämään jokainen tietokohta**
 
-在学习的过程中，应该尽量理解每一个知识点，哪怕需要耗费几天的时间来学习。
+Oppimisprosessissa tärkeintä on yrittää ymmärtää jokainen asia, vaikka siihen menisi useita päiviä.
 
-当你选择跳过不理解的内容时，只会在后续开发中再次遇到并阻碍开发进度，最终需要重新投入时间去学习。与其亡羊补牢，不如在学习的阶段把知识理解清楚。
+Jos päättää ohittaa kohdat, joita ei ymmärrä, ne tulevat todennäköisesti vastaan uudelleen myöhemmässä kehitystyössä ja hidastavat etenemistä. Lopulta niihin täytyy käyttää aikaa joka tapauksessa. On parempi ymmärtää asiat jo oppimisvaiheessa kuin paikata puutteita myöhemmin.
 
-每一个知识点本质上都是一件工具 —— 掌握的工具越多，解决问题的能力越强。
+Jokainen tietokohta on pohjimmiltaan työkalu. Mitä enemmän työkaluja hallitset, sitä paremmin pystyt ratkaisemaan ongelmia.
 
-就像建造房屋一样，如果你手里只有一件工具，虽然勉强可以完成大部分工作，但在面对更高质量要求时，就会显得力不从心。掌握更多工具，才能建造出更稳固的房子。
+Se on vähän kuin talon rakentaminen. Jos sinulla on vain yksi työkalu, saatat juuri ja juuri saada suurimman osan työstä tehtyä, mutta kun vaatimukset kasvavat, työ muuttuu vaikeaksi. Mitä enemmän työkaluja hallitset, sitä vakaamman talon pystyt rakentamaan.
 
-**3、保持持续学习**
+**3. Jatkuva oppiminen**
 
-学习需要从一而终。很少有人真正愿意拿出几个月的时间来认真学习一个教程。持续投入时间学习，比短期高强度更重要。
+Oppiminen vaatii pitkäjänteisyyttä. Harva on todella valmis käyttämään useita kuukausia yhden oppaan huolelliseen opiskeluun. Jatkuva ajankäyttö on tärkeämpää kuin lyhyen ajan korkea intensiteetti.
 
-即使每天只完成百分之一，一百天也可以完成整个学习目标。
+Vaikka etenisit vain yhden prosentin päivässä, sadassa päivässä koko tavoite voi silti valmistua.
 
-## 教育愿景
+## Koulutuksellinen visio
 
-这个课程不会教授太多的 Swift 和 SwiftUI 知识，而是把初学者领到 Swift 这条编程的道路上。就像拼积木 —— 教程负责讲解拼接方法，剩下的时间就是你自己去拼搭属于你的积木。
+Tämä kurssi ei opeta valtavaa määrää Swift- ja SwiftUI-tietoa, vaan johdattaa aloittelijan Swift-ohjelmoinnin polulle. Se on vähän kuin palikkaleikki: opas näyttää, miten palikat liitetään yhteen, ja loppu on sinun omaa rakenteluasi.
 
-项目已在 [GitHub](https://github.com/fangjunyu1/SwiftSlim) 开源，可以免费下载、使用。同时也提供 App Store 版本用于体验。
+Projekti on avoimen lähdekoodin projektina [GitHubissa](https://github.com/fangjunyu1/SwiftSlim), ja sen voi ladata ja ottaa käyttöön ilmaiseksi. Lisäksi tarjolla on myös App Store -versio kokeiltavaksi.
 
-我们希望帮助更多没有技术背景但渴望改变职业路径的人，通过学习编程、开发应用，获得新的可能性。
+Toivomme voivamme auttaa useampia ihmisiä, joilla ei ole teknistä taustaa mutta jotka haluavat muuttaa urapolkuaan. Ohjelmoinnin ja sovelluskehityksen kautta voi avautua uusia mahdollisuuksia.
 
-## 内容更新
+## Sisällön päivitykset
 
-本教程基于当前版本的 Swift 与 SwiftUI 编写。
+Tämä opas on kirjoitettu nykyisen Swift- ja SwiftUI-version pohjalta.
 
-随着 Apple 平台和工具的更新，部分 API 可能发生变化。若发现问题或内容需要更新，可参考官方文档或开源仓库的最新版本。
+Apple-alustojen ja työkalujen päivittyessä osa API-rajapinnoista voi muuttua. Jos huomaat ongelmia tai sisällön päivitystarpeita, voit tarkistaa uusimman tilanteen virallisesta dokumentaatiosta tai avoimen lähdekoodin varastosta.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14

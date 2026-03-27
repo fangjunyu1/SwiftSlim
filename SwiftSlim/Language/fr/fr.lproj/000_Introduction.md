@@ -1,78 +1,78 @@
-# 引言
+# Introduction
 
-## 什么是 Swift ?
+## Qu'est-ce que Swift ?
 
-在学习 Swift 之前，我们先谈论一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
+Avant d'apprendre Swift, commençons par découvrir brièvement ce langage de programmation. Swift est un langage moderne développé par Apple, principalement utilisé pour créer des applications sur les plateformes Apple comme iOS, macOS, iPadOS et watchOS.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Swift 语言相比其他编程语言来讲，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
+Comparé à d'autres langages, Swift possède une syntaxe plus concise et met davantage l'accent sur la sécurité et la lisibilité. Avec SwiftUI, il est aussi plus facile à apprendre et à comprendre. Bien sûr, je n'avais moi-même jamais appris d'autre langage auparavant, donc cela peut être un peu plus difficile que HTML.
 
-Swift 不仅可以开发 Apple 平台上的应用程序，Swift 社区正在努力将 Swift 移植到 [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) 平台，甚至运行在[服务器](https://github.com/awslabs/swift-aws-lambda-runtime)等其他环境。从长远发展的角度来看，Swift 的发展空间更大，未来有机会成为类似 Flutter、React Native 等跨平台编程语言。
+Swift ne sert pas seulement à développer des applications pour les plateformes Apple. La communauté Swift travaille aussi à porter Swift sur [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/), et même à l'utiliser sur des [serveurs](https://github.com/awslabs/swift-aws-lambda-runtime) ou dans d'autres environnements. À long terme, Swift dispose donc d'un plus grand potentiel de développement et pourrait devenir un langage multiplateforme comparable à Flutter ou React Native.
 
-## 学习内容
+## Contenu de l'apprentissage
 
-本教程以 Swift 和 SwiftUI 基础知识为主。
+Ce tutoriel se concentre principalement sur les bases de Swift et de SwiftUI.
 
-我们将从简单的变量和数据类型开始学习，使用 SwiftUI 构建界面，理解数据的存储和读取方式，最后可能还会深入学习 Swift Data、iCloud 同步等进阶内容。
+Nous commencerons par des notions simples comme les variables et les types de données, nous construirons des interfaces avec SwiftUI, nous comprendrons comment les données sont stockées et lues, puis nous pourrons aller plus loin vers des sujets avancés comme SwiftData ou la synchronisation iCloud.
 
-每一章节都会围绕一个实际案例展开，在实际应用中学习 Swift 知识。
+Chaque chapitre s'appuiera sur un cas concret afin d'apprendre Swift dans un contexte pratique.
 
-有些教程可能会先集中讲解大量语法和 API，再进入项目实践。这对初学者来讲，就像孩童从字典中识字一样，在没有应用场景下记忆大量内容，最终只会让初学者失去兴趣。
+Certains tutoriels choisissent d'abord d'expliquer une grande quantité de syntaxe et d'API avant de passer à la pratique sur projet. Pour un débutant, c'est un peu comme apprendre des mots dans un dictionnaire sans contexte d'utilisation : on finit facilement par perdre l'intérêt.
 
-本教程将在实际开发场景中学习知识，用需求引出相关的知识点。
+Dans ce tutoriel, nous apprendrons les connaissances directement dans des situations réelles de développement, en partant des besoins pour introduire les notions correspondantes.
 
-完成本教程后，你将能够独立开发并运行一个基础应用，并安装在自己的 iOS / macOS 设备上，也可以将应用发布到 App Store。
+À la fin de ce tutoriel, vous serez capable de développer et d'exécuter une application de base de manière autonome, de l'installer sur vos appareils iOS / macOS, et même de la publier sur l'App Store.
 
-## 零基础如何学习？
+## Comment apprendre en partant de zéro ?
 
-我之前也是一个零基础，起初只是浏览了几期 Youtube 上的 [Swift 教学视频](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3)，发现开发 iOS 应用并不复杂，让我产生了一定的兴趣。之后，我开始尝试获取更多的 Swift 知识。例如，游玩 [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) 上的编程游戏，阅读 [Swift 官方教程文档](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)，以及学习 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)。
+Au début, moi aussi je partais de zéro. J'ai d'abord regardé quelques vidéos de formation Swift sur YouTube, comme cette [playlist d'apprentissage Swift](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3), et j'ai découvert que développer des applications iOS n'était pas si compliqué, ce qui m'a donné envie d'aller plus loin. Ensuite, j'ai commencé à apprendre davantage sur Swift, par exemple en essayant les jeux de programmation dans [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), en lisant la [documentation officielle de Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/), et en étudiant [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
 
-现在看来，主要还是 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) 提供了一个学习框架，让我可以系统性的学习 SwiftUI。但是，因为教程是英文，加上自己缺乏编程基础，导致在理解的过程中存在非常多的困难。对此，我使用 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等 AI 辅助理解知识点。
+Avec le recul, c'est surtout [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) qui m'a fourni une structure d'apprentissage me permettant d'étudier SwiftUI de manière systématique. Mais comme le tutoriel est en anglais et que je manquais de bases en programmation, j'ai rencontré énormément de difficultés pour comprendre certains points. Pour cela, j'ai utilisé des IA comme [ChatGPT](https://chatgpt.com/) et [Claude](https://claude.ai/?redirect=claude.com) pour m'aider à assimiler les notions.
 
-在学习的过程中，难免出现一些理解起来比较困难的知识，我记得在学习 UserDefaults 的时候，只知道如何保存数据，不知道数据需要手动读取，以至于怀疑我的代码存在问题。即便是这样一个简单的知识点，也让我浪费了几天的时间。
+Pendant l'apprentissage, il est inévitable de rencontrer des notions difficiles à comprendre. Je me souviens par exemple qu'en apprenant `UserDefaults`, je savais seulement comment sauvegarder des données, sans savoir qu'il fallait ensuite les relire manuellement, au point de douter de mon code. Même pour une notion aussi simple, j'ai perdu plusieurs jours.
 
-再比如闭包、主线程、泛型等知识点，我在前期学习的过程中，因为不能够深入理解它们，在实际开发中再次遇到这些知识时，又需要拿出精力重新学习。
+On peut aussi citer des notions comme les closures, le thread principal ou les génériques. Au début, comme je ne les comprenais pas en profondeur, chaque fois que je les retrouvais dans le développement réel, je devais de nouveau investir du temps pour les réapprendre.
 
-因此，我的建议是：
+C'est pourquoi je recommande :
 
-**1、补充基础知识**
+**1. Compléter les connaissances de base**
 
-中国有句话叫做“万事开头难”，对于零基础来讲，刚开始学习 Swift 时，一些知识点往往难以理解，这不是因为知识点本身复杂，而是在这个知识的金字塔下，还有更加基础的知识你没有学习或了解过。
+En chinois, on dit : « le plus difficile, c'est de commencer ». Pour les débutants complets en Swift, il est normal de rencontrer des notions difficiles pendant l'apprentissage. Souvent, le problème ne vient pas de la complexité de la notion elle-même, mais du fait qu'à la base de cette pyramide de connaissances, il existe encore des concepts plus fondamentaux auxquels le débutant n'a pas encore été exposé.
 
-这时应该询问 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等AI，补全基础知识。
+Dans ce type de situation, vous pouvez envisager d'utiliser des outils d'IA comme [ChatGPT](https://chatgpt.com/) et [Claude](https://claude.ai/?redirect=claude.com) pour combler rapidement les bases manquantes.
 
-**2、尽量理解每一个知识点**
+**2. Comprendre chaque notion**
 
-在学习的过程中，应该尽量理解每一个知识点，哪怕需要耗费几天的时间来学习。
+Pendant l'apprentissage, le plus important est d'essayer de comprendre chaque notion, même si cela demande plusieurs jours.
 
-当你选择跳过不理解的内容时，只会在后续开发中再次遇到并阻碍开发进度，最终需要重新投入时间去学习。与其亡羊补牢，不如在学习的阶段把知识理解清楚。
+Si vous choisissez d'ignorer une partie que vous ne comprenez pas, il est très probable que vous la retrouviez plus tard dans le développement, où elle finira par bloquer votre progression. Vous devrez alors y revenir de toute façon. Mieux vaut comprendre les connaissances clairement dès la phase d'apprentissage.
 
-每一个知识点本质上都是一件工具 —— 掌握的工具越多，解决问题的能力越强。
+Chaque notion est en réalité un outil. Plus vous maîtrisez d'outils, plus vous êtes capable de résoudre des problèmes.
 
-就像建造房屋一样，如果你手里只有一件工具，虽然勉强可以完成大部分工作，但在面对更高质量要求时，就会显得力不从心。掌握更多工具，才能建造出更稳固的房子。
+C'est comme construire une maison : si vous n'avez qu'un seul outil, vous pourrez peut-être faire l'essentiel, mais face à des exigences de qualité plus élevées, vous vous sentirez vite limité. En maîtrisant plus d'outils, vous pouvez construire une maison plus solide.
 
-**3、保持持续学习**
+**3. Garder une continuité dans l'apprentissage**
 
-学习需要从一而终。很少有人真正愿意拿出几个月的时间来认真学习一个教程。持续投入时间学习，比短期高强度更重要。
+Apprendre demande de la persévérance sur le long terme. Peu de gens sont réellement prêts à consacrer plusieurs mois à suivre sérieusement un tutoriel. Il est plus important d'investir régulièrement du temps que de travailler très intensément sur une courte période.
 
-即使每天只完成百分之一，一百天也可以完成整个学习目标。
+Même si vous ne réalisez qu'un pour cent par jour, au bout de cent jours, vous aurez accompli l'ensemble de l'objectif.
 
-## 教育愿景
+## Vision éducative
 
-这个课程不会教授太多的 Swift 和 SwiftUI 知识，而是把初学者领到 Swift 这条编程的道路上。就像拼积木 —— 教程负责讲解拼接方法，剩下的时间就是你自己去拼搭属于你的积木。
+Ce cours n'a pas pour but d'enseigner énormément de connaissances Swift et SwiftUI d'un seul coup, mais plutôt de conduire les débutants sur la voie de la programmation avec Swift. C'est un peu comme assembler des briques : le tutoriel vous montre comment les emboîter, puis le reste du temps vous sert à construire vos propres créations.
 
-项目已在 [GitHub](https://github.com/fangjunyu1/SwiftSlim) 开源，可以免费下载、使用。同时也提供 App Store 版本用于体验。
+Le projet est déjà open source sur [GitHub](https://github.com/fangjunyu1/SwiftSlim) et peut être téléchargé et utilisé gratuitement. Une version App Store est également proposée pour l'essayer.
 
-我们希望帮助更多没有技术背景但渴望改变职业路径的人，通过学习编程、开发应用，获得新的可能性。
+Nous espérons aider davantage de personnes sans bagage technique mais désireuses de changer de trajectoire professionnelle à découvrir de nouvelles possibilités grâce à l'apprentissage de la programmation et au développement d'applications.
 
-## 内容更新
+## Mise à jour du contenu
 
-本教程基于当前版本的 Swift 与 SwiftUI 编写。
+Ce tutoriel est écrit sur la base de la version actuelle de Swift et SwiftUI.
 
-随着 Apple 平台和工具的更新，部分 API 可能发生变化。若发现问题或内容需要更新，可参考官方文档或开源仓库的最新版本。
+Avec les mises à jour des plateformes et des outils Apple, certaines API peuvent évoluer. Si vous constatez un problème ou si un contenu doit être actualisé, vous pouvez consulter la documentation officielle ou la dernière version du dépôt open source.
 
 ---
 方君宇
 
-2026-02-14
+2026-02-14  

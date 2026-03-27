@@ -17,7 +17,7 @@
 
 注意：每次打开项目时，Canvas 可能显示 "Preview paused"。点击刷新按钮即可恢复预览。
 
-![Swift](002_view7.png)
+![Swift](../../RESOURCE/002_view7.png)
 
 ## 认识 ContentView
 
@@ -151,7 +151,7 @@ struct ContentView: View {
 
 例如：
 
-![Swift](002_view.png)
+![Swift](../../RESOURCE/002_view.png)
 
 上图显示的是三个页面，实际上就是三个 View。
 
@@ -191,7 +191,7 @@ VStack {
 
 这段 SwiftUI 代码表示，这是一个垂直布局，显示一个图标和一个文本。
 
-![Swift](002_view1.png)
+![Swift](../../RESOURCE/002_view1.png)
 
 #### VStack 布局
 
@@ -201,7 +201,7 @@ VStack { }  // 垂直布局
 
 VStack 表示垂直布局容器。内部视图从上到下排列。
 
-![Swift](002_view8.png)
+![Swift](../../RESOURCE/002_view8.png)
 
 SwiftUI 常见三种布局：
 
@@ -216,7 +216,7 @@ ZStack { }  // 叠加排序
 
 各布局的排序示意图：
 
-![Swift](002_view2.png)
+![Swift](../../RESOURCE/002_view2.png)
 
 例如：使用 HStack 进行水平排序。
 
@@ -232,7 +232,7 @@ HStack {
 
 可以看到，地球图标和文字被横向展示。
 
-![Swift](002_view3.png)
+![Swift](../../RESOURCE/002_view3.png)
 
 当我们想要横向排序时，使用 HStack。当需要叠加排序时，使用 ZStack。
 
@@ -246,7 +246,7 @@ Image(systemName: "globe")
 
 这段代码显示一个地球图标，地球图标来自 Apple 的 SF Symbols 图标系统。
 
-![Swift](002_view9.png)
+![Swift](../../RESOURCE/002_view9.png)
 
 代码的含义为显示一个地球图标，大尺寸，颜色为强调色。
 
@@ -258,7 +258,7 @@ Image(systemName: "globe")
 Image(systemName: "backpack")
 ```
 
-![Swift](002_view4.png)
+![Swift](../../RESOURCE/002_view4.png)
 
 **如何显示其他图标呢？**
 
@@ -266,11 +266,11 @@ Image(systemName: "backpack")
 
 打开 Apple Developer 官方网站，下载 [SF Symbols](https://developer.apple.com/sf-symbols/)。
 
-![Swift](002_sf.png)
+![Swift](../../RESOURCE/002_sf.png)
 
 打开 SF Symbols App。
 
-![Swift](002_sf1.png)
+![Swift](../../RESOURCE/002_sf1.png)
 
 左侧为符号分类，右侧为对应的图标。
 
@@ -314,7 +314,7 @@ imageScale 和 foregroundStyle 就是 Image 视图的修饰符，在不改变 Im
 - .medium
 - .large
 
-![Swift](002_view11.png)
+![Swift](../../RESOURCE/002_view11.png)
 
 我们可以修改不同的选项，让 SF Symbols 符号显示不同的大小。
 
@@ -334,7 +334,7 @@ foregroundStyle 可以控制前景色。
 .foregroundStyle(.red)
 ```
 
-![Swift](002_view5.png)
+![Swift](../../RESOURCE/002_view5.png)
 
 #### Text 视图
 
@@ -373,7 +373,7 @@ padding 表示"视图内容与其边界之间的留白区域"。
 
 在下图中，蓝色的 HStack 设置 padding 后，蓝色区域会向内收缩，看上去会"变小一圈"。
 
-![Swift](002_view6.png)
+![Swift](../../RESOURCE/002_view6.png)
 
 **默认边距**
 
@@ -386,6 +386,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 在不同的平台和上下文中，这个值会有所不同，例如：
 
 - iOS 通常约为 16 pt。
+
 - 在 macOS 或 watchOS 上，系统的标准间距可能会不同，通常会更大或更小，具体取决于各平台的设计规范。
 
 **自定义边距**
@@ -408,7 +409,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 - .leading: 前侧边距
 - .trailing: 后侧边距
 
-![Swift](002_view12.png)
+![Swift](../../RESOURCE/002_view12.png)
 
 注意：leading 和 trailing 会根据语言方向自动适配。例如在阿拉伯语（RTL）环境中会自动翻转。
 
@@ -418,7 +419,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 .padding([.top, .leading], 20)
 ```
 
-![Swift](002_view13.png)
+![Swift](../../RESOURCE/002_view13.png)
 
 可以通过数组同时指定多个方向。数组的具体用法会在后续教程中详细讲解，这里只需了解这种写法即可。
 
@@ -436,7 +437,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 .padding([.top, .bottom], 20)
 ```
 
-![Swift](002_view14.png)
+![Swift](../../RESOURCE/002_view14.png)
 
 **移除边距**
 
@@ -476,7 +477,7 @@ padding() 修饰符默认使用系统推荐的标准间距。
 
 Canvas 将不再显示可渲染内容。
 
-![Swift](002_xcode.png)
+![Swift](../../RESOURCE/002_xcode.png)
 
 这是 #Preview 控制 Canvas 显示预览视图。
 
@@ -551,7 +552,7 @@ padding 是边距，在视图的周围增加一个透明空间。
 
 Xcode 就会显示可用的选项：
 
-![Swift](002_view10.png)
+![Swift](../../RESOURCE/002_view10.png)
 
 这属于代码补全机制（Code Completion），它是基于类型推断和枚举成员提示，可以提高输入效率并减少错误。
 

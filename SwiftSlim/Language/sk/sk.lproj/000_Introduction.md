@@ -1,76 +1,76 @@
-# 引言
+# Úvod
 
-## 什么是 Swift ?
+## Čo je Swift?
 
-在学习 Swift 之前，我们先谈论一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
+Predtým, než sa začneme učiť Swift, si najprv stručne predstavíme programovací jazyk Swift. Swift je moderný programovací jazyk vyvinutý spoločnosťou Apple a používa sa najmä na vytváranie aplikácií pre platformy Apple, ako sú iOS, macOS, iPadOS a watchOS.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Swift 语言相比其他编程语言来讲，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
+V porovnaní s inými programovacími jazykmi má Swift stručnejšiu syntax, viac zdôrazňuje bezpečnosť a čitateľnosť. V kombinácii so SwiftUI sa tiež ľahšie učí a chápe. Samozrejme, predtým som sa neučil žiadny iný programovací jazyk, takže môže byť o niečo náročnejší než HTML.
 
-Swift 不仅可以开发 Apple 平台上的应用程序，Swift 社区正在努力将 Swift 移植到 [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) 平台，甚至运行在[服务器](https://github.com/awslabs/swift-aws-lambda-runtime)等其他环境。从长远发展的角度来看，Swift 的发展空间更大，未来有机会成为类似 Flutter、React Native 等跨平台编程语言。
+Swift sa nepoužíva len na vývoj aplikácií pre platformy Apple. Komunita Swift sa usiluje preniesť Swift aj na platformu [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) a dokonca ho spúšťať aj v iných prostrediach, napríklad na [serveroch](https://github.com/awslabs/swift-aws-lambda-runtime). Z dlhodobého hľadiska má Swift väčší priestor na rozvoj a v budúcnosti sa môže stať multiplatformovým programovacím jazykom podobne ako Flutter alebo React Native.
 
-## 学习内容
+## Obsah učenia
 
-本教程以 Swift 和 SwiftUI 基础知识为主。
+Tento kurz sa zameriava najmä na základy Swiftu a SwiftUI.
 
-我们将从简单的变量和数据类型开始学习，使用 SwiftUI 构建界面，理解数据的存储和读取方式，最后可能还会深入学习 Swift Data、iCloud 同步等进阶内容。
+Začneme jednoduchými premennými a dátovými typmi, budeme pomocou SwiftUI vytvárať používateľské rozhranie, porozumieme spôsobom ukladania a čítania dát a neskôr sa možno dostaneme aj k pokročilejším témam, ako sú SwiftData či synchronizácia cez iCloud.
 
-每一章节都会围绕一个实际案例展开，在实际应用中学习 Swift 知识。
+Každá kapitola bude postavená na konkrétnom praktickom príklade a znalosti Swiftu sa budeme učiť priamo v reálnom použití.
 
-有些教程可能会先集中讲解大量语法和 API，再进入项目实践。这对初学者来讲，就像孩童从字典中识字一样，在没有应用场景下记忆大量内容，最终只会让初学者失去兴趣。
+Niektoré kurzy najprv sústredene vysvetľujú veľké množstvo syntaxe a API a až potom prechádzajú k praktickým projektom. Pre začiatočníka je to podobné, ako keby sa dieťa učilo slová zo slovníka — ak chýba reálny kontext použitia, memorovanie veľkého množstva obsahu nakoniec len vedie k strate záujmu.
 
-本教程将在实际开发场景中学习知识，用需求引出相关的知识点。
+Tento kurz bude učiť poznatky priamo v kontexte skutočných vývojových scenárov a jednotlivé potreby budú prirodzene uvádzať súvisiace znalostné body.
 
-完成本教程后，你将能够独立开发并运行一个基础应用，并安装在自己的 iOS / macOS 设备上，也可以将应用发布到 App Store。
+Po dokončení tohto kurzu budete schopní samostatne vyvinúť a spustiť jednoduchú aplikáciu, nainštalovať ju na svoje zariadenie s iOS / macOS a prípadne ju aj publikovať v App Store.
 
-## 零基础如何学习？
+## Ako sa učiť od úplných základov?
 
-我之前也是一个零基础，起初只是浏览了几期 Youtube 上的 [Swift 教学视频](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3)，发现开发 iOS 应用并不复杂，让我产生了一定的兴趣。之后，我开始尝试获取更多的 Swift 知识。例如，游玩 [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) 上的编程游戏，阅读 [Swift 官方教程文档](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)，以及学习 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)。
+Aj ja som na začiatku začínal úplne od nuly. Najprv som si len pozrel niekoľko dielov [výučbových videí Swiftu](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3) na YouTube a zistil som, že vývoj aplikácií pre iOS nie je až taký zložitý, čo vo mne vzbudilo určitý záujem. Potom som sa začal pokúšať naučiť viac o Swifte. Napríklad som si vyskúšal programovacie hry v [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), čítal [oficiálnu príručku Swiftu](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) a učil sa z [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
 
-现在看来，主要还是 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) 提供了一个学习框架，让我可以系统性的学习 SwiftUI。但是，因为教程是英文，加上自己缺乏编程基础，导致在理解的过程中存在非常多的困难。对此，我使用 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等 AI 辅助理解知识点。
+Keď sa na to pozerám teraz, práve [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) mi poskytlo rámec učenia, vďaka ktorému som sa mohol SwiftUI učiť systematicky. Keďže však bol tento kurz v angličtine a zároveň som nemal programátorské základy, pri porozumení som narážal na množstvo ťažkostí. Preto som využíval AI nástroje ako [ChatGPT](https://chatgpt.com/) a [Claude](https://claude.ai/?redirect=claude.com), aby mi pomohli lepšie pochopiť jednotlivé poznatky.
 
-在学习的过程中，难免出现一些理解起来比较困难的知识，我记得在学习 UserDefaults 的时候，只知道如何保存数据，不知道数据需要手动读取，以至于怀疑我的代码存在问题。即便是这样一个简单的知识点，也让我浪费了几天的时间。
+Počas učenia sa nevyhnutne objavia témy, ktorým je ťažšie porozumieť. Pamätám si napríklad, že keď som sa učil UserDefaults, vedel som len, ako dáta uložiť, ale nevedel som, že ich treba načítať ručne, a tak som dokonca začal pochybovať, či v mojom kóde nie je chyba. Aj takýto jednoduchý poznatok ma stál niekoľko dní času.
 
-再比如闭包、主线程、泛型等知识点，我在前期学习的过程中，因为不能够深入理解它们，在实际开发中再次遇到这些知识时，又需要拿出精力重新学习。
+Napríklad pri témach ako closures, hlavné vlákno alebo generiká som im v počiatočnej fáze učenia nedokázal porozumieť do hĺbky. Keď som sa s nimi potom znova stretol pri reálnom vývoji, musel som opäť investovať energiu do ich štúdia.
 
-因此，我的建议是：
+Preto odporúčam:
 
-**1、补充基础知识**
+**1. Doplňte si základné poznatky**
 
-中国有句话叫做“万事开头难”，对于零基础来讲，刚开始学习 Swift 时，一些知识点往往难以理解，这不是因为知识点本身复杂，而是在这个知识的金字塔下，还有更加基础的知识你没有学习或了解过。
+V Číne existuje príslovie: „Začať je najťažšie.“ Pre nováčikov, ktorí sa učia Swift úplne od nuly, je prirodzené, že sa počas učenia stretnú s ťažko pochopiteľnými témami — často to však neznamená, že samotná téma je veľmi zložitá, ale skôr to, že na spodku tejto pyramídy znalostí sa nachádzajú ešte základnejšie pojmy, s ktorými sa začiatočník zatiaľ nestretol.
 
-这时应该询问 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等AI，补全基础知识。
+Ak sa ocitnete v takejto situácii, môžete zvážiť použitie AI nástrojov, ako sú [ChatGPT](https://chatgpt.com/) a [Claude](https://claude.ai/?redirect=claude.com), aby ste si chýbajúce základy včas doplnili.
 
-**2、尽量理解每一个知识点**
+**2. Snažte sa porozumieť každému poznatku**
 
-在学习的过程中，应该尽量理解每一个知识点，哪怕需要耗费几天的时间来学习。
+Počas učenia je najdôležitejšie snažiť sa porozumieť každému jednotlivému poznatku, aj keby to malo trvať niekoľko dní.
 
-当你选择跳过不理解的内容时，只会在后续开发中再次遇到并阻碍开发进度，最终需要重新投入时间去学习。与其亡羊补牢，不如在学习的阶段把知识理解清楚。
+Ak sa rozhodnete preskočiť niečo, čomu nerozumiete, je veľmi pravdepodobné, že sa s tým počas ďalšieho vývoja znova stretnete a bude to brzdiť váš postup. Nakoniec aj tak budete musieť znovu investovať čas do učenia. Namiesto neskorého napravovania je lepšie pochopiť veci už vo fáze učenia.
 
-每一个知识点本质上都是一件工具 —— 掌握的工具越多，解决问题的能力越强。
+Každý poznatok je vo svojej podstate nástroj — čím viac nástrojov ovládate, tým silnejšia je vaša schopnosť riešiť problémy.
 
-就像建造房屋一样，如果你手里只有一件工具，虽然勉强可以完成大部分工作，但在面对更高质量要求时，就会显得力不从心。掌握更多工具，才能建造出更稳固的房子。
+Je to ako pri stavbe domu: ak máte v rukách len jeden nástroj, možno s ním zvládnete väčšinu práce, ale pri vyšších nárokoch na kvalitu už nebude stačiť. Len ak ovládate viac nástrojov, môžete postaviť pevnejší dom.
 
-**3、保持持续学习**
+**3. Zachovajte si kontinuitu učenia**
 
-学习需要从一而终。很少有人真正愿意拿出几个月的时间来认真学习一个教程。持续投入时间学习，比短期高强度更重要。
+Učenie si vyžaduje dlhodobú vytrvalosť. Len málokto je naozaj ochotný venovať niekoľko mesiacov tomu, aby poctivo prešiel celý kurz. Dôležitejšie než krátkodobá vysoká intenzita je neustále a pravidelné investovanie času do učenia.
 
-即使每天只完成百分之一，一百天也可以完成整个学习目标。
+Aj keď každý deň dokončíte len jedno percento, za sto dní môžete dokončiť celý cieľ učenia.
 
-## 教育愿景
+## Vzdelávacia vízia
 
-这个课程不会教授太多的 Swift 和 SwiftUI 知识，而是把初学者领到 Swift 这条编程的道路上。就像拼积木 —— 教程负责讲解拼接方法，剩下的时间就是你自己去拼搭属于你的积木。
+Tento kurz nebude učiť príliš veľa vedomostí o Swifte a SwiftUI, ale skôr pomôže začiatočníkom vstúpiť na cestu programovania v Swifte. Je to ako skladanie stavebnice — kurz vysvetlí spôsob skladania a zvyšný čas je na vás, aby ste si poskladali vlastnú stavbu.
 
-项目已在 [GitHub](https://github.com/fangjunyu1/SwiftSlim) 开源，可以免费下载、使用。同时也提供 App Store 版本用于体验。
+Projekt je open source na [GitHube](https://github.com/fangjunyu1/SwiftSlim), je možné ho bezplatne stiahnuť a používať. Zároveň je k dispozícii aj verzia v App Store na vyskúšanie.
 
-我们希望帮助更多没有技术背景但渴望改变职业路径的人，通过学习编程、开发应用，获得新的可能性。
+Dúfame, že pomôžeme viacerým ľuďom bez technického zázemia, ktorí túžia zmeniť svoju kariérnu cestu, aby si prostredníctvom učenia sa programovania a vývoja aplikácií otvorili nové možnosti.
 
-## 内容更新
+## Aktualizácie obsahu
 
-本教程基于当前版本的 Swift 与 SwiftUI 编写。
+Tento kurz je napísaný na základe aktuálnej verzie Swiftu a SwiftUI.
 
-随着 Apple 平台和工具的更新，部分 API 可能发生变化。若发现问题或内容需要更新，可参考官方文档或开源仓库的最新版本。
+Keďže sa platformy Apple a nástroje priebežne aktualizujú, niektoré API sa môžu zmeniť. Ak narazíte na problém alebo bude potrebné obsah aktualizovať, môžete sa pozrieť do oficiálnej dokumentácie alebo do najnovšej verzie open source repozitára.
 
 ---
 方君宇

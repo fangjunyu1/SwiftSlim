@@ -14,11 +14,11 @@ Xcode 是 Apple 官方提供的集成開發環境（IDE, Integrated Development 
 
 Xcode 目前有兩種安裝方式：
 
-1、通過 [Mac App Store](../../RESOURCE/https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 下載
+1、通過 [Mac App Store](https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 下載
 
-2、通過 [Apple Developer 官方網站](../../RESOURCE/https://developer.apple.com/xcode/)下載
+2、通過 [Apple Developer 官方網站](https://developer.apple.com/xcode/)下載
 
-兩種方式都可以下載 Xcode。區別在於 Apple Developer 官方網站除了正式版，還可以下載 [Beta](../../RESOURCE/https://developer.apple.com/download/all/?q=Xcode) 版或歷史版本。
+兩種方式都可以下載 Xcode。區別在於 Apple Developer 官方網站除了正式版，還可以下載 [Beta](https://developer.apple.com/download/all/?q=Xcode) 版或歷史版本。
 
 如果只是學習開發，建議使用正式版。Beta 版本主要用於測試新功能，可能存在不穩定情況。
 

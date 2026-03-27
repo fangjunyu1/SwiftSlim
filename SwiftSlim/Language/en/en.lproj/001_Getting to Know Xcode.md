@@ -14,11 +14,11 @@ In this lesson, we will learn how to download Xcode, create our first iOS app, a
 
 There are currently two ways to install Xcode:
 
-1. Download it from the [Mac App Store](../../RESOURCE/https://apps.apple.com/cn/app/xcode/id497799835?mt=12)
+1. Download it from the [Mac App Store](https://apps.apple.com/cn/app/xcode/id497799835?mt=12)
 
-2. Download it from the [Apple Developer website](../../RESOURCE/https://developer.apple.com/xcode/)
+2. Download it from the [Apple Developer website](https://developer.apple.com/xcode/)
 
-Both methods work. The difference is that the Apple Developer website provides not only the stable release, but also [beta](../../RESOURCE/https://developer.apple.com/download/all/?q=Xcode) versions and older versions.
+Both methods work. The difference is that the Apple Developer website provides not only the stable release, but also [beta](https://developer.apple.com/download/all/?q=Xcode) versions and older versions.
 
 If you are only learning development, it is recommended to use the stable version. Beta versions are mainly for testing new features and may be unstable.
 

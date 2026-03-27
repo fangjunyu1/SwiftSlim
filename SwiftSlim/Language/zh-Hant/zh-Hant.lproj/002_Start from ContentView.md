@@ -264,7 +264,7 @@ Image(systemName: "backpack")
 
 我們需要使用 Apple 官方提供的系統圖示庫 SF Symbols。
 
-打開 Apple Developer 官方網站，下載 [SF Symbols](../../RESOURCE/https://developer.apple.com/sf-symbols/)。
+打開 Apple Developer 官方網站，下載 [SF Symbols](https://developer.apple.com/sf-symbols/)。
 
 ![Swift](../../RESOURCE/002_sf.png)
 

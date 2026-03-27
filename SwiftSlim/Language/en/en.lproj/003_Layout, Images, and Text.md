@@ -98,7 +98,7 @@ When the size provided by `frame` is larger than the view's own size, `alignment
 
 `alignment` lets views be arranged along horizontal or vertical directions. However, when we want text and images to appear at opposite ends, a single alignment setting is not enough.
 
-For example, imagine we want to build the top area of the [NHK](../../RESOURCE/https://www3.nhk.or.jp/nhkworld/zh/news/) website, with the NHK icon on the left and the site menu icon on the right.
+For example, imagine we want to build the top area of the [NHK](https://www3.nhk.or.jp/nhkworld/zh/news/) website, with the NHK icon on the left and the site menu icon on the right.
 
 ![Swift](../../RESOURCE/003_alignment3.png)
 
@@ -393,7 +393,7 @@ Common font weights from thin to heavy:
 
 So far, we have learned the basics of SwiftUI layout, `Spacer`, `Image`, and `Text`. These are already enough to build some simple views.
 
-For example: [Google](../../RESOURCE/https://www.google.com/)
+For example: [Google](https://www.google.com/)
 
 ![Swift](../../RESOURCE/003_google.png)
 

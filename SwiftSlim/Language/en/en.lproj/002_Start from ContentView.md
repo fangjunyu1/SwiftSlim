@@ -264,7 +264,7 @@ Image(systemName: "backpack")
 
 We need to use Apple's official system icon library, SF Symbols.
 
-Open Apple's developer website and download [SF Symbols](../../RESOURCE/https://developer.apple.com/sf-symbols/).
+Open Apple's developer website and download [SF Symbols](https://developer.apple.com/sf-symbols/).
 
 ![Swift](../../RESOURCE/002_sf.png)
 

@@ -264,7 +264,7 @@ Image(systemName: "backpack")
 
 আমাদের অ্যাপল থেকে সরবরাহকৃত অফিসিয়াল সিস্টেম আইকন লাইব্রেরি SF Symbols ব্যবহার করতে হবে।
 
-Apple Developer ওয়েবসাইট থেকে [SF Symbols](../../RESOURCE/https://developer.apple.com/sf-symbols/) ডাউনলোড করুন।
+Apple Developer ওয়েবসাইট থেকে [SF Symbols](https://developer.apple.com/sf-symbols/) ডাউনলোড করুন।
 
 ![Swift](../../RESOURCE/002_sf.png)
 

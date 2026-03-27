@@ -4,7 +4,7 @@
 
 Xcode 是 Apple 官方提供的集成开发环境（IDE, Integrated Development Environment），用于开发 iOS、macOS、watchOS、tvOS 等 Apple 平台应用。
 
-![Swift](001_xcode.png)
+![Swift](../../RESOURCE/001_xcode.png)
 
 在整个教学过程中，我们都将使用 Xcode 编写代码、运行程序。
 
@@ -26,7 +26,7 @@ Xcode 目前有两种安装方式：
 
 打开 Xcode 后，会看到启动界面。
 
-![Swift](001_xcode1.png)
+![Swift](../../RESOURCE/001_xcode1.png)
 
 左侧包含三个常用选项：
 
@@ -40,7 +40,7 @@ Xcode 目前有两种安装方式：
 
 ### 选择项目模板
 
-![Swift](001_xcode2.png)
+![Swift](../../RESOURCE/001_xcode2.png)
 
 进入项目模板选择界面，这里显示多个平台（iOS、macOS等）以及不同类型的项目模板。
 
@@ -58,7 +58,7 @@ Xcode 目前有两种安装方式：
 
 进入项目信息填写界面，我们需要根据字段类型进行填写。
 
-![Swift](001_xcode3.png)
+![Swift](../../RESOURCE/001_xcode3.png)
 
 各字段的含义：
 
@@ -78,7 +78,7 @@ Xcode 目前有两种安装方式：
 
 ### 保存项目
 
-![Swift](001_xcode4.png)
+![Swift](../../RESOURCE/001_xcode4.png)
 
 选择一个合适的文件夹保存。
 
@@ -88,7 +88,7 @@ Xcode 目前有两种安装方式：
 
 保存 Xcode 项目后，在 Finder 中可以看到生成的项目文件夹。
 
-![Swift](001_xcode5.png)
+![Swift](../../RESOURCE/001_xcode5.png)
 
 - Assets.xcassets —— 用于存放图片、App 图标等资源的文件夹
 
@@ -110,7 +110,7 @@ Xcode 界面主要由五个区域组成：
 - Inspector —— 属性检查区域，用于查看和修改文件的属性
 - Debug Area —— 调试区域，查看日志输出
 
-![Swift](001_xcode6.png)
+![Swift](../../RESOURCE/001_xcode6.png)
 
 注意：Canvas 主要用于 SwiftUI 视图预览，从 Xcode 官方架构来讲，它是 Editor 的辅助预览面板（Preview Pane）。只有在打开 SwiftUI 视图文件时，才可以启用 Canvas，其他类型文件不会显示预览功能。
 
@@ -118,7 +118,7 @@ Xcode 界面主要由五个区域组成：
 
 第一次打开 Xcode 项目时，Inspector 和 Debug Area 默认可能是隐藏状态，可以点击右上角和右下角按钮显示。
 
-![Swift](001_xcode7.png)
+![Swift](../../RESOURCE/001_xcode7.png)
 
 提示：Inspector 区域主要用于查看和修改文件属性。在实际开发中，通常会隐藏该区域，以获得更大的编辑空间。
 

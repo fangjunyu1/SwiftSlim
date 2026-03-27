@@ -2,75 +2,75 @@
 
 ## Hvad er Swift?
 
-Før vi lærer Swift, lad os tale lidt om programmeringssproget Swift. Swift er et moderne programmeringssprog udviklet af Apple, som hovedsageligt bruges til at bygge applikationer på Apple-platforme såsom iOS, macOS, iPadOS, watchOS osv.
+Før vi lærer Swift, skal vi først kort forstå programmeringssproget Swift. Swift er et moderne programmeringssprog udviklet af Apple og bruges primært til at bygge apps til Apple-platforme som iOS, macOS, iPadOS og watchOS.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Sammenlignet med andre programmeringssprog har Swift en kortfattet syntaks og lægger mere vægt på sikkerhed og læsbarhed. I kombination med SwiftUI er det lettere at lære og forstå. Jeg har selvfølgelig ikke lært andre programmeringssprog før, så det er måske lidt sværere end HTML.
+Sammenlignet med andre programmeringssprog har Swift en mere enkel syntaks og lægger større vægt på sikkerhed og læsbarhed. Sammen med SwiftUI er det lettere at lære og forstå. Jeg havde dog selv ikke lært andre programmeringssprog før, så det kan føles lidt sværere end HTML.
 
-Swift kan ikke kun udvikle applikationer til Apple-platforme; Swift-fællesskabet arbejder hårdt på at portere Swift til [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/)-platformen og endda køre det i [server](https://github.com/awslabs/swift-aws-lambda-runtime)-miljøer og andre steder. Fra et langsigtet udviklingsperspektiv har Swift et større vækstpotentiale og har i fremtiden mulighed for at blive et tværplatform-programmeringssprog ligesom Flutter og React Native.
+Swift kan ikke kun bruges til at udvikle apps til Apple-platforme. Swift-fællesskabet arbejder også på at porte Swift til [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) og endda lade det køre på [servere](https://github.com/awslabs/swift-aws-lambda-runtime) og andre miljøer. Set i et langsigtet perspektiv har Swift et stort udviklingspotentiale og kan i fremtiden få mulighed for at blive et cross-platform programmeringssprog på linje med Flutter og React Native.
 
-## Læringsindhold
+## Hvad skal vi lære?
 
 Denne vejledning fokuserer hovedsageligt på grundlæggende viden om Swift og SwiftUI.
 
-Vi starter med at lære om simple variabler og datatyper, bruger SwiftUI til at opbygge grænseflader, forstår hvordan data lagres og læses, og til sidst vil vi måske dykke ned i avanceret indhold som Swift Data og iCloud-synkronisering.
+Vi starter med enkle variabler og datatyper, bruger SwiftUI til at bygge brugerflader, forstår hvordan data gemmes og læses, og til sidst kan vi også komme ind på mere avancerede emner som SwiftData og iCloud-synkronisering.
 
-Hvert kapitel vil dreje sig om en faktisk case, hvor vi lærer Swift-viden gennem praktisk anvendelse.
+Hvert kapitel tager udgangspunkt i en konkret case, så vi lærer Swift gennem rigtige anvendelser.
 
-Nogle vejledninger fokuserer måske først på at forklare en stor mængde syntaks og API'er, før de går i gang med projektpraksis. For begyndere er det som et barn, der lærer ord fra en ordbog; at huske en masse indhold uden anvendelsesscenarier vil i sidste ende kun få begynderen til at miste interessen.
+Nogle vejledninger bruger først lang tid på at forklare en masse syntaks og API'er og går først derefter videre til projekter. For begyndere svarer det lidt til, at et barn lærer ord fra en ordbog. Når man skal huske en masse indhold uden en reel anvendelsessituation, mister man let interessen.
 
-Denne vejledning vil lære viden i faktiske udviklingsscenarier og bruge behov til at introducere relaterede videnspunkter.
+Denne vejledning lærer dig viden i faktiske udviklingsscenarier og bruger behov til at introducere de relevante begreber.
 
-Efter at have gennemført denne vejledning vil du være i stand til selvstændigt at udvikle og køre en grundlæggende applikation, installere den på din egen iOS / macOS-enhed, eller publicere applikationen i App Store.
+Når du har gennemført denne vejledning, vil du kunne udvikle og køre en grundlæggende app selv, installere den på dine egne iOS- eller macOS-enheder og endda udgive appen på App Store.
 
-## Hvordan lærer man helt fra bunden?
+## Hvordan lærer man Swift helt fra bunden?
 
-Jeg startede også selv helt fra bunden. I begyndelsen så jeg bare et par [Swift-undervisningsvideoer]( iOS-applikationer ikke er komplekse, hvilket vakte min interesse. Derefter begyndte jeg at forsøge at få mere viden om Swift. For eksempel ved at spille programmeringsspil på [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), læse [den officielle Swift-dokumentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) samt studere [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
+Jeg startede også helt uden erfaring. I begyndelsen så jeg bare nogle få [Swift-undervisningsvideoer](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3) på YouTube og opdagede, at det faktisk ikke var særligt kompliceret at udvikle iOS-apps, hvilket vækkede min interesse. Derefter begyndte jeg at prøve at lære mere om Swift, for eksempel gennem programmeringsspillene i [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), ved at læse [Swifts officielle dokumentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) og ved at følge [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
 
-Set i bakspejlet var det primært [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui), der gav mig en læringsramme, så jeg kunne lære SwiftUI systematisk. Men da vejledningen er på engelsk, og jeg manglede et programmeringsfundament, havde jeg meget svært ved at forstå det undervejs. Derfor brugte jeg AI som [ChatGPT](https://chatgpt.com/) og [Claude](https://claude.ai/?redirect=claude.com) til at hjælpe med at forstå videnspunkterne.
+Når jeg ser tilbage på det nu, var det især [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui), der gav mig en læringsramme, så jeg kunne lære SwiftUI mere systematisk. Men fordi vejledningen er på engelsk, og fordi jeg selv manglede programmeringsgrundlag, stødte jeg på mange vanskeligheder undervejs. Derfor brugte jeg AI-værktøjer som [ChatGPT](https://chatgpt.com/) og [Claude](https://claude.ai/?redirect=claude.com) til at hjælpe mig med at forstå begreberne.
 
-I læringsprocessen er det uundgåeligt at støde på viden, der er svær at forstå. Jeg husker, at da jeg lærte om UserDefaults, vidste jeg kun, hvordan man gemte data, men ikke at data skulle læses manuelt, så jeg mistænkte min kode for at have problemer. Selv et så simpelt videnspunkt fik mig til at spilde flere dage.
+I læringsprocessen er der uundgåeligt nogle emner, der er svære at forstå. Jeg husker for eksempel, at da jeg lærte UserDefaults, vidste jeg kun, hvordan man gemte data, men ikke at data skulle læses manuelt tilbage. Det fik mig endda til at tvivle på, om der var noget galt med min kode. Selv et så simpelt begreb kostede mig flere dage.
 
-Eller for eksempel closures (lukninger), main thread (hovedtråden), generics (generiske typer) og andre videnspunkter. Fordi jeg ikke forstod dem dybt nok i den tidlige læringsfase, måtte jeg bruge energi på at lære dem igen, da jeg stødte på dem i faktisk udvikling.
+For eksempel med closures, hovedtråde og generics: i den tidlige læringsfase kunne jeg ikke forstå dem til bunds. Da jeg senere stødte på dem igen i rigtig udvikling, måtte jeg bruge tid på at lære dem på ny.
 
-Derfor er mit råd:
+Derfor er mit råd følgende:
 
-**1. Suppler med grundlæggende viden**
+**1. Supplér den grundlæggende viden**
 
-Der er et kinesisk ordsprog, der siger: "Al begyndelse er svær". For en nybegynder er nogle videnspunkter ofte svære at forstå, når man lige er begyndt at lære Swift. Det er ikke fordi selve videnspunktet er komplekst, men fordi der under denne pyramide af viden findes endnu mere grundlæggende viden, som du ikke har lært eller kender til.
+På kinesisk siger man, at "alt er svært i begyndelsen". For nybegyndere, der lærer Swift helt fra bunden, vil der næsten uundgåeligt dukke nogle begreber op, som er svære at forstå undervejs. Det betyder ofte ikke, at selve begrebet er særligt komplekst, men at der endnu længere nede i denne videnspyramide findes endnu mere grundlæggende koncepter, som begynderen endnu ikke har mødt.
 
-På dette tidspunkt bør du spørge AI som [ChatGPT](https://chatgpt.com/) og [Claude](https://claude.ai/?redirect=claude.com) for at udfylde hullerne i den grundlæggende viden.
+Når det sker, kan du overveje at bruge AI-værktøjer som [ChatGPT](https://chatgpt.com/) og [Claude](https://claude.ai/?redirect=claude.com) til hurtigt at udfylde den manglende basisviden.
 
-**2. Prøv at forstå hvert enkelt videnspunkt**
+**2. Forsøg at forstå hvert enkelt begreb**
 
-I læringsprocessen bør du prøve at forstå hvert enkelt videnspunkt, selvom det kræver flere dage at lære.
+Det vigtigste i læringsprocessen er at prøve at forstå hvert enkelt begreb, også selv om det kræver flere dages arbejde.
 
-Når du vælger at springe indhold over, du ikke forstår, vil du blot støde på det igen i den efterfølgende udvikling, hvor det vil hindre dine fremskridt, og du vil i sidste ende skulle investere tid igen for at lære det. I stedet for at reparere folden, når fåret er løbet væk, er det bedre at forstå viden klart i læringsfasen.
+Hvis du vælger at springe noget over, du ikke forstår, er sandsynligheden stor for, at du møder det igen senere i udviklingen, hvor det så vil bremse din fremdrift. Til sidst bliver du alligevel nødt til at bruge tid på at lære det igen. I stedet for at lappe skaden senere er det bedre at forstå stoffet ordentligt allerede i læringsfasen.
 
-Hvert videnspunkt er i bund og grund et værktøj – jo flere værktøjer du mestrer, desto stærkere er din evne til at løse problemer.
+Hvert begreb er i bund og grund et værktøj. Jo flere værktøjer du mestrer, desto stærkere bliver din evne til at løse problemer.
 
-Det er ligesom at bygge et hus; hvis du kun har ét værktøj i hånden, kan du måske knap nok udføre det meste af arbejdet, men du vil virke magtesløs over for højere kvalitetskrav. At mestre flere værktøjer gør det muligt at bygge et mere solidt hus.
+Det er lidt som at bygge et hus. Hvis du kun har ét værktøj i hånden, kan du måske lige akkurat klare det meste arbejde, men når kravene til kvalitet bliver højere, vil du hurtigt komme til kort. Jo flere værktøjer du mestrer, desto mere solidt et hus kan du bygge.
 
-**3. Oprethold kontinuerlig læring**
+**3. Bevar kontinuerlig læring**
 
-Læring kræver vedholdenhed. Få mennesker er virkelig villige til at sætte flere måneder af til seriøst at studere en vejledning. Kontinuerlig investering af tid til læring er vigtigere end kortvarig høj intensitet.
+Læring kræver vedholdenhed over lang tid. Der er ikke mange, som reelt er villige til at bruge flere måneder på at studere en vejledning seriøst. Det er vigtigere at lægge tid i det kontinuerligt end at presse sig selv hårdt i en kort periode.
 
-Selv hvis du kun gennemfører én procent om dagen, kan du nå hele læringsmålet på hundrede dage.
+Selv hvis du kun gennemfører én procent om dagen, kan du stadig nå hele målet på hundrede dage.
 
-## Uddannelsesvision
+## Pædagogisk vision
 
-Dette kursus vil ikke undervise i alt for meget Swift- og SwiftUI-viden, men snarere lede begyndere ind på vejen til Swift-programmering. Det er ligesom at bygge med klodser – vejledningen er ansvarlig for at forklare samlemetoderne, og resten af tiden er op til dig til at bygge dine egne klodser.
+Dette kursus vil ikke lære dig enorme mængder Swift- og SwiftUI-viden, men snarere føre begyndere ind på programmeringsvejen med Swift. Det er som at bygge med klodser: vejledningen forklarer, hvordan delene sættes sammen, og resten af tiden er det dig selv, der bygger dine egne klodskonstruktioner.
 
-Projektet er open source på [GitHub](https://github.com/fangjunyu1/SwiftSlim), og kan downloades og bruges gratis. Der tilbydes også en App Store-version til afprøvning.
+Projektet er open source på [GitHub](https://github.com/fangjunyu1/SwiftSlim), så det kan downloades og bruges gratis. Der findes også en App Store-version, som kan bruges til at prøve oplevelsen.
 
-Vi håber at kunne hjælpe flere mennesker uden teknisk baggrund, men som ønsker at ændre deres karrierevej, med at få nye muligheder gennem læring af programmering og app-udvikling.
+Vi håber at kunne hjælpe flere mennesker uden teknisk baggrund, men med et stærkt ønske om at ændre deres karrierevej, med at få nye muligheder gennem programmering og appudvikling.
 
-## Indholdsopdateringer
+## Opdatering af indhold
 
-Denne vejledning er skrevet baseret på de nuværende versioner af Swift og SwiftUI.
+Denne vejledning er skrevet med udgangspunkt i den aktuelle version af Swift og SwiftUI.
 
-I takt med at Apple-platforme og værktøjer opdateres, kan nogle API'er ændre sig. Hvis du finder problemer eller indhold, der skal opdateres, kan du henvise til den officielle dokumentation eller den nyeste version i open source-lageret.
+Efterhånden som Apple-platforme og værktøjer opdateres, kan visse API'er ændre sig. Hvis du opdager problemer, eller indholdet har brug for opdatering, kan du se den nyeste version i den officielle dokumentation eller i open source-repositoriet.
 
 ---
 Fang Junyu

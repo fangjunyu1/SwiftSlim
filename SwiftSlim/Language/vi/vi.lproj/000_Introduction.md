@@ -1,78 +1,78 @@
-# 引言
+# Lời mở đầu
 
-## 什么是 Swift ?
+## Swift là gì?
 
-在学习 Swift 之前，我们先谈论一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
+Trước khi học Swift, chúng ta hãy tìm hiểu sơ qua về ngôn ngữ lập trình Swift. Swift là một ngôn ngữ lập trình hiện đại do Apple phát triển, chủ yếu được sử dụng để xây dựng các ứng dụng trên các nền tảng của Apple như iOS, macOS, iPadOS, watchOS, v.v.
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
-Swift 语言相比其他编程语言来讲，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
+So với các ngôn ngữ lập trình khác, ngôn ngữ Swift có cú pháp ngắn gọn, nhấn mạnh hơn vào tính an toàn và khả năng đọc hiểu. Kết hợp với SwiftUI sẽ càng dễ học và dễ tiếp thu hơn. Tất nhiên, trước đây tôi chưa từng học qua ngôn ngữ lập trình nào khác, có lẽ nó sẽ khó hơn HTML một chút.
 
-Swift 不仅可以开发 Apple 平台上的应用程序，Swift 社区正在努力将 Swift 移植到 [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) 平台，甚至运行在[服务器](https://github.com/awslabs/swift-aws-lambda-runtime)等其他环境。从长远发展的角度来看，Swift 的发展空间更大，未来有机会成为类似 Flutter、React Native 等跨平台编程语言。
+Swift không chỉ có thể phát triển các ứng dụng trên nền tảng của Apple, cộng đồng Swift hiện đang nỗ lực đưa Swift lên nền tảng [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/), thậm chí chạy trên [máy chủ](https://github.com/awslabs/swift-aws-lambda-runtime) và các môi trường khác. Nhìn từ góc độ phát triển lâu dài, Swift có không gian phát triển rộng mở hơn, trong tương lai có cơ hội trở thành ngôn ngữ lập trình đa nền tảng tương tự như Flutter hay React Native.
 
-## 学习内容
+## Nội dung học tập
 
-本教程以 Swift 和 SwiftUI 基础知识为主。
+Hướng dẫn này chủ yếu tập trung vào các kiến thức cơ bản của Swift và SwiftUI.
 
-我们将从简单的变量和数据类型开始学习，使用 SwiftUI 构建界面，理解数据的存储和读取方式，最后可能还会深入学习 Swift Data、iCloud 同步等进阶内容。
+Chúng ta sẽ bắt đầu học từ các biến và kiểu dữ liệu đơn giản, sử dụng SwiftUI để xây dựng giao diện, hiểu cách thức lưu trữ và đọc dữ liệu, và cuối cùng có thể sẽ đi sâu vào các nội dung nâng cao như SwiftData, đồng bộ hóa iCloud.
 
-每一章节都会围绕一个实际案例展开，在实际应用中学习 Swift 知识。
+Mỗi chương sẽ xoay quanh một dự án thực tế, giúp bạn học kiến thức Swift thông qua việc ứng dụng vào thực tiễn.
 
-有些教程可能会先集中讲解大量语法和 API，再进入项目实践。这对初学者来讲，就像孩童从字典中识字一样，在没有应用场景下记忆大量内容，最终只会让初学者失去兴趣。
+Một số hướng dẫn có thể tập trung giải thích một lượng lớn cú pháp và API trước, sau đó mới đi vào thực hành dự án. Đối với người mới bắt đầu, điều này giống như một đứa trẻ học chữ từ từ điển vậy, việc ghi nhớ một lượng lớn nội dung mà không có ngữ cảnh ứng dụng cuối cùng sẽ chỉ làm cho người mới bắt đầu mất đi hứng thú.
 
-本教程将在实际开发场景中学习知识，用需求引出相关的知识点。
+Hướng dẫn này sẽ giúp bạn học kiến thức trong các tình huống phát triển thực tế, dùng các yêu cầu công việc để dẫn dắt đến các điểm kiến thức liên quan.
 
-完成本教程后，你将能够独立开发并运行一个基础应用，并安装在自己的 iOS / macOS 设备上，也可以将应用发布到 App Store。
+Sau khi hoàn thành hướng dẫn này, bạn sẽ có thể tự phát triển và chạy một ứng dụng cơ bản, cài đặt nó trên thiết bị iOS / macOS của riêng mình, và cũng có thể phát hành ứng dụng lên App Store.
 
-## 零基础如何学习？
+## Học từ con số không như thế nào?
 
-我之前也是一个零基础，起初只是浏览了几期 Youtube 上的 [Swift 教学视频](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3)，发现开发 iOS 应用并不复杂，让我产生了一定的兴趣。之后，我开始尝试获取更多的 Swift 知识。例如，游玩 [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12) 上的编程游戏，阅读 [Swift 官方教程文档](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)，以及学习 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)。
+Ban đầu tôi cũng bắt đầu từ con số không, thoạt tiên chỉ lướt xem vài video hướng dẫn Swift trên Youtube, nhận thấy việc phát triển ứng dụng iOS không hề phức tạp, điều đó đã khiến tôi cảm thấy hứng thú nhất định. Sau đó, tôi bắt đầu thử học thêm kiến thức về Swift. Ví dụ: trải nghiệm trò chơi lập trình trên [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), đọc [Tài liệu hướng dẫn chính thức của Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/), cũng như học [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
 
-现在看来，主要还是 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) 提供了一个学习框架，让我可以系统性的学习 SwiftUI。但是，因为教程是英文，加上自己缺乏编程基础，导致在理解的过程中存在非常多的困难。对此，我使用 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等 AI 辅助理解知识点。
+Bây giờ nhìn lại, chủ yếu vẫn là [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) đã cung cấp một khuôn khổ học tập, giúp tôi có thể học SwiftUI một cách có hệ thống. Tuy nhiên, vì hướng dẫn bằng tiếng Anh, cộng thêm việc bản thân thiếu nền tảng lập trình, dẫn đến việc tôi gặp rất nhiều khó khăn trong quá trình tiếp thu. Đối với vấn đề này, tôi đã sử dụng các công cụ AI như [ChatGPT](https://chatgpt.com/) và [Claude](https://claude.ai/?redirect=claude.com) để hỗ trợ tìm hiểu các điểm kiến thức.
 
-在学习的过程中，难免出现一些理解起来比较困难的知识，我记得在学习 UserDefaults 的时候，只知道如何保存数据，不知道数据需要手动读取，以至于怀疑我的代码存在问题。即便是这样一个简单的知识点，也让我浪费了几天的时间。
+Trong quá trình học, khó tránh khỏi việc xuất hiện một số kiến thức tương đối khó hiểu. Tôi nhớ khi học về UserDefaults, tôi chỉ biết cách lưu dữ liệu mà không biết rằng dữ liệu cần phải được đọc một cách thủ công, đến mức tôi đã nghi ngờ mã code của mình có vấn đề. Ngay cả một điểm kiến thức đơn giản như vậy cũng khiến tôi lãng phí mất vài ngày.
 
-再比如闭包、主线程、泛型等知识点，我在前期学习的过程中，因为不能够深入理解它们，在实际开发中再次遇到这些知识时，又需要拿出精力重新学习。
+Hay ví dụ như các kiến thức về Closures (Bao đóng), Main thread (Luồng chính), Generics (Kiểu tổng quát), trong giai đoạn đầu học tập, vì không thể hiểu sâu về chúng, nên khi gặp lại những kiến thức này trong quá trình phát triển thực tế, tôi lại phải bỏ công sức ra để học lại.
 
-因此，我的建议是：
+Do đó, lời khuyên của tôi là:
 
-**1、补充基础知识**
+**1. Bổ sung kiến thức nền tảng**
 
-中国有句话叫做“万事开头难”，对于零基础来讲，刚开始学习 Swift 时，一些知识点往往难以理解，这不是因为知识点本身复杂，而是在这个知识的金字塔下，还有更加基础的知识你没有学习或了解过。
+Tục ngữ có câu "Vạn sự khởi đầu nan", đối với những người mới học Swift từ con số không, trong quá trình học khó tránh khỏi việc gặp phải một số kiến thức khó hiểu —— Điều này thường không phải do bản thân kiến thức đó quá phức tạp, mà là ở phần đáy của kim tự tháp kiến thức này, vẫn còn một số khái niệm cơ bản hơn mà người mới học chưa từng được tiếp xúc.
 
-这时应该询问 [ChatGPT](https://chatgpt.com/) 和 [Claude](https://claude.ai/?redirect=claude.com) 等AI，补全基础知识。
+Khi gặp tình huống này, bạn có thể cân nhắc nhờ đến sự trợ giúp của các công cụ AI như [ChatGPT](https://chatgpt.com/) và [Claude](https://claude.ai/?redirect=claude.com) để kịp thời bổ sung những kiến thức nền tảng còn thiếu.
 
-**2、尽量理解每一个知识点**
+**2. Nắm vững từng điểm kiến thức**
 
-在学习的过程中，应该尽量理解每一个知识点，哪怕需要耗费几天的时间来学习。
+Trong quá trình học, điều quan trọng nhất là cố gắng hiểu rõ từng điểm kiến thức, cho dù phải mất vài ngày.
 
-当你选择跳过不理解的内容时，只会在后续开发中再次遇到并阻碍开发进度，最终需要重新投入时间去学习。与其亡羊补牢，不如在学习的阶段把知识理解清楚。
+Nếu chọn cách bỏ qua những nội dung không hiểu, thì xác suất cao là bạn sẽ gặp lại chúng trong quá trình phát triển sau này và làm cản trở tiến độ phát triển, cuối cùng vẫn phải đầu tư thời gian để học lại. Thay vì "mất bò mới lo làm chuồng", tốt hơn hết là hãy hiểu rõ các kiến thức ngay trong giai đoạn học tập.
 
-每一个知识点本质上都是一件工具 —— 掌握的工具越多，解决问题的能力越强。
+Mỗi điểm kiến thức về bản chất đều là một công cụ —— Bạn càng nắm vững nhiều công cụ, khả năng giải quyết vấn đề của bạn càng mạnh mẽ.
 
-就像建造房屋一样，如果你手里只有一件工具，虽然勉强可以完成大部分工作，但在面对更高质量要求时，就会显得力不从心。掌握更多工具，才能建造出更稳固的房子。
+Giống như việc xây nhà vậy, nếu trong tay bạn chỉ có một công cụ, mặc dù có thể miễn cưỡng hoàn thành phần lớn công việc, nhưng khi đối mặt với những yêu cầu chất lượng cao hơn, bạn sẽ cảm thấy bất lực. Chỉ khi nắm vững nhiều công cụ hơn, bạn mới có thể xây dựng được một ngôi nhà vững chắc hơn.
 
-**3、保持持续学习**
+**3. Duy trì việc học tập liên tục**
 
-学习需要从一而终。很少有人真正愿意拿出几个月的时间来认真学习一个教程。持续投入时间学习，比短期高强度更重要。
+Học tập đòi hỏi sự kiên trì lâu dài. Rất ít người thực sự sẵn lòng bỏ ra vài tháng để học một cách nghiêm túc một hướng dẫn nào đó. Việc liên tục đầu tư thời gian cho việc học quan trọng hơn là học cường độ cao trong thời gian ngắn.
 
-即使每天只完成百分之一，一百天也可以完成整个学习目标。
+Ngay cả khi mỗi ngày chỉ hoàn thành một phần trăm, thì trong một trăm ngày bạn cũng có thể hoàn thành toàn bộ mục tiêu học tập.
 
-## 教育愿景
+## Tầm nhìn giáo dục
 
-这个课程不会教授太多的 Swift 和 SwiftUI 知识，而是把初学者领到 Swift 这条编程的道路上。就像拼积木 —— 教程负责讲解拼接方法，剩下的时间就是你自己去拼搭属于你的积木。
+Khóa học này sẽ không dạy quá nhiều kiến thức về Swift và SwiftUI, mà là dẫn dắt người mới bắt đầu bước vào con đường lập trình Swift. Giống như trò chơi xếp hình LEGO vậy —— Hướng dẫn sẽ chịu trách nhiệm giải thích các phương pháp lắp ráp, thời gian còn lại là để bạn tự lắp ráp những khối hình của riêng mình.
 
-项目已在 [GitHub](https://github.com/fangjunyu1/SwiftSlim) 开源，可以免费下载、使用。同时也提供 App Store 版本用于体验。
+Dự án đã được mã nguồn mở trên [GitHub](https://github.com/fangjunyu1/SwiftSlim), bạn có thể tải xuống và sử dụng miễn phí. Đồng thời, chúng tôi cũng cung cấp phiên bản trên App Store để bạn trải nghiệm.
 
-我们希望帮助更多没有技术背景但渴望改变职业路径的人，通过学习编程、开发应用，获得新的可能性。
+Chúng tôi hy vọng có thể giúp đỡ nhiều người không có nền tảng công nghệ nhưng khao khát thay đổi lộ trình nghề nghiệp, thông qua việc học lập trình và phát triển ứng dụng, để có được những cơ hội mới.
 
-## 内容更新
+## Cập nhật nội dung
 
-本教程基于当前版本的 Swift 与 SwiftUI 编写。
+Hướng dẫn này được biên soạn dựa trên phiên bản hiện tại của Swift và SwiftUI.
 
-随着 Apple 平台和工具的更新，部分 API 可能发生变化。若发现问题或内容需要更新，可参考官方文档或开源仓库的最新版本。
+Cùng với sự cập nhật của nền tảng và các công cụ Apple, một số API có thể thay đổi. Nếu bạn phát hiện vấn đề hoặc nội dung cần được cập nhật, vui lòng tham khảo tài liệu chính thức hoặc phiên bản mới nhất trên kho lưu trữ mã nguồn mở.
 
 ---
-方君宇
+方君宇 (Phương Quân Vũ)
 
 2026-02-14

@@ -29,7 +29,7 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Colors vius"
+            "value" : "Colors brillants"
           }
         },
         "cs" : {
@@ -53,7 +53,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ζωηρά χρώματα"
+            "value" : "Ζωντανά χρώματα"
           }
         },
         "es" : {
@@ -65,13 +65,13 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Loistavat värit"
+            "value" : "Upeat värit"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couleurs éclatantes"
+            "value" : "Des couleurs éclatantes"
           }
         },
         "gu" : {
@@ -317,13 +317,13 @@
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vytvoření stránky osobního životopisu"
+            "value" : "Vytvoření osobní stránky s životopisem"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Opret en personlig CV-side"
+            "value" : "Byg en personlig CV-side"
           }
         },
         "de" : {
@@ -335,7 +335,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Δημιουργία σελίδας προσωπικού βιογραφικού"
+            "value" : "Δημιουργία μιας προσωπικής σελίδας βιογραφικού"
           }
         },
         "es" : {
@@ -347,13 +347,13 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rakenna henkilökohtainen ansioluettelosivu"
+            "value" : "Henkilökohtaisen CV-sivun rakentaminen"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Créer une page de CV personnel"
+            "value" : "Construire une page de CV personnel"
           }
         },
         "gu" : {
@@ -1444,7 +1444,7 @@
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Čítač"
+            "value" : "Počítadlo"
           }
         },
         "da" : {
@@ -1732,19 +1732,19 @@
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Introduktion til Xcode"
+            "value" : "Lær Xcode at kende"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Einführung in Xcode"
+            "value" : "Xcode kennenlernen"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Γνωριμία με το Xcode"
+            "value" : "Γνωρίζοντας το Xcode"
           }
         },
         "es" : {
@@ -1756,7 +1756,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutustuminen Xcodeen"
+            "value" : "Tutustutaan Xcodeen"
           }
         },
         "fr" : {
@@ -2284,7 +2284,7 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Disseny, imatges i text"
+            "value" : "Disposició, imatges i text"
           }
         },
         "cs" : {
@@ -2326,7 +2326,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mise en page, images et texte"
+            "value" : "Disposition, images et texte"
           }
         },
         "gu" : {
@@ -2566,13 +2566,13 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fes que el botó funcioni"
+            "value" : "Fer que el botó comenci a funcionar"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zprovozněte tlačítko"
+            "value" : "Rozpohybujme tlačítko"
           }
         },
         "da" : {
@@ -2584,13 +2584,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Den Button zum Laufen bringen"
+            "value" : "Den Button zum Arbeiten bringen"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Κάντε το κουμπί να λειτουργεί"
+            "value" : "Κάνοντας το Button να λειτουργεί"
           }
         },
         "es" : {
@@ -2602,7 +2602,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laita painike toimimaan"
+            "value" : "Saadaan painike toimimaan"
           }
         },
         "fr" : {
@@ -2848,31 +2848,31 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "operador"
+            "value" : "Operadors"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "operátor"
+            "value" : "Operátory"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "operator"
+            "value" : "Operatorer"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Operator"
+            "value" : "Operatoren"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "τελεστής"
+            "value" : "Τελεστές"
           }
         },
         "es" : {
@@ -2884,13 +2884,13 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "operaattori"
+            "value" : "Operaattorit"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "opérateur"
+            "value" : "Opérateurs"
           }
         },
         "gu" : {
@@ -3130,19 +3130,19 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "guardiola"
+            "value" : "Guardiola"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "pokladnička"
+            "value" : "Pokladnička"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "sparegris"
+            "value" : "Sparegris"
           }
         },
         "de" : {
@@ -3154,7 +3154,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "κουμπαράς"
+            "value" : "Κουμπαράς"
           }
         },
         "es" : {
@@ -3166,13 +3166,13 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "säästöpossu"
+            "value" : "Säästöpossu"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "tirelire"
+            "value" : "Tirelire"
           }
         },
         "gu" : {
@@ -3424,19 +3424,19 @@
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Citater Karusel"
+            "value" : "Citatkarussel"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zitate Karussell"
+            "value" : "Zitate-Karussell"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Καρουσέλ με ρήσεις"
+            "value" : "Καρουζέλ αποφθεγμάτων"
           }
         },
         "es" : {
@@ -3448,7 +3448,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lainauskaruselli"
+            "value" : "Sitaattikaruselli"
           }
         },
         "fr" : {
@@ -3694,13 +3694,13 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desa l'import de la guardiola"
+            "value" : "Desar l'import de la guardiola"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uložit částku prasátka"
+            "value" : "Uložení částky v pokladničce"
           }
         },
         "da" : {
@@ -3712,13 +3712,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Betrag im Sparschwein speichern"
+            "value" : "Den Sparschwein-Betrag speichern"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Αποθήκευση ποσού κουμπαρά"
+            "value" : "Αποθήκευση του ποσού του κουμπαρά"
           }
         },
         "es" : {
@@ -3730,7 +3730,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tallenna säästöpossun summa"
+            "value" : "Säästöpossun summan tallentaminen"
           }
         },
         "fr" : {
@@ -4000,7 +4000,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Προσομοιωτής και φυσική συσκευή"
+            "value" : "Προσομοιωτής και πραγματική συσκευή"
           }
         },
         "es" : {
@@ -4258,31 +4258,31 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Comença des de ContentView"
+            "value" : "Començar des de ContentView"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Začněte od ContentView"
+            "value" : "Začínáme s ContentView"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Start fra ContentView"
+            "value" : "Start med ContentView"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Beginnen Sie mit ContentView"
+            "value" : "Start mit ContentView"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ξεκινήστε από το ContentView"
+            "value" : "Ξεκινώντας από το ContentView"
           }
         },
         "es" : {
@@ -4294,13 +4294,13 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aloita ContentView’sta"
+            "value" : "Aloita ContentView’stä"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Commencez par ContentView"
+            "value" : "Commencer avec ContentView"
           }
         },
         "gu" : {
@@ -4822,31 +4822,31 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cicle de vida de la vista SwiftUI"
+            "value" : "Cicle de vida de les vistes de SwiftUI"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Životní cyklus zobrazení SwiftUI"
+            "value" : "Životní cyklus view ve SwiftUI"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI-visnings livscyklus"
+            "value" : "SwiftUI-visningens livscyklus"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lebenszyklus SwiftUI-Ansicht"
+            "value" : "Der Lebenszyklus von SwiftUI-Views"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Κύκλος ζωής προβολής SwiftUI"
+            "value" : "Ο κύκλος ζωής των SwiftUI views"
           }
         },
         "es" : {
@@ -4864,7 +4864,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cycle de vie vue SwiftUI"
+            "value" : "Cycle de vie d'une vue SwiftUI"
           }
         },
         "gu" : {
@@ -5122,7 +5122,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Typsystem"
+            "value" : "Das Typsystem"
           }
         },
         "el" : {

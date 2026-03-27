@@ -264,7 +264,7 @@ Image(systemName: "backpack")
 
 Трябва да използваме официалната библиотека със системни икони на Apple, SF Symbols.
 
-Отвори сайта на Apple Developer и изтегли [SF Symbols](../../RESOURCE/https://developer.apple.com/sf-symbols/).
+Отвори сайта на Apple Developer и изтегли [SF Symbols](https://developer.apple.com/sf-symbols/).
 
 ![Swift](../../RESOURCE/002_sf.png)
 

@@ -4,7 +4,7 @@
 
 在学习 Swift 之前，我们先简单了解一下 Swift 编程语言。Swift 是由 Apple 开发的一门现代编程语言，主要用于构建 iOS、macOS、iPadOS、watchOS 等 Apple 平台上的应用程序。
 
-![Swift](000_swift.png)
+![Swift](../../RESOURCE/000_swift.png)
 
 Swift 语言相比其他编程语言，语法简洁，更强调安全性和可读性。配合 SwiftUI 更容易学习和理解。当然，我之前并没有学习过其他编程语言，可能比 HTML 稍难一点。
 

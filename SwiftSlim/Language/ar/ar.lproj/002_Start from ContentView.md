@@ -264,7 +264,7 @@ Image(systemName: "backpack")
 
 نحتاج إلى استخدام مكتبة الأيقونات الرسمية من Apple، وهي SF Symbols.
 
-انتقل إلى موقع Apple Developer وقم بتنزيل [SF Symbols](../../RESOURCE/https://developer.apple.com/sf-symbols/).
+انتقل إلى موقع Apple Developer وقم بتنزيل [SF Symbols](https://developer.apple.com/sf-symbols/).
 
 ![Swift](../../RESOURCE/002_sf.png)
 

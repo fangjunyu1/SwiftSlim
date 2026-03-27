@@ -8,7 +8,7 @@ Before learning Swift, let us first get a basic understanding of the Swift progr
 
 Compared with many other programming languages, Swift has a clean syntax and places greater emphasis on safety and readability. When used together with SwiftUI, it becomes easier to learn and understand. Of course, I had not learned any other programming language before either, so to me it felt a little harder than HTML, but still approachable.
 
-Swift is not limited to Apple-platform apps. The Swift community is actively working on bringing Swift to [Android](../../RESOURCE/https://www.swift.org/blog/nightly-swift-sdk-for-android/) and even to other environments such as [servers](../../RESOURCE/https://github.com/awslabs/swift-aws-lambda-runtime). From a long-term perspective, Swift has more room to grow and may eventually become a cross-platform language similar to Flutter or React Native.
+Swift is not limited to Apple-platform apps. The Swift community is actively working on bringing Swift to [Android](https://www.swift.org/blog/nightly-swift-sdk-for-android/) and even to other environments such as [servers](https://github.com/awslabs/swift-aws-lambda-runtime). From a long-term perspective, Swift has more room to grow and may eventually become a cross-platform language similar to Flutter or React Native.
 
 ## What This Course Covers
 
@@ -26,9 +26,9 @@ After completing this tutorial, you will be able to independently build and run 
 
 ## How Should Absolute Beginners Learn?
 
-I also started as a complete beginner. At first, I only watched a few [Swift tutorial videos on YouTube](../../RESOURCE/https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3), and I discovered that iOS app development was not as complicated as I had imagined. That gave me some real interest. After that, I began learning more Swift knowledge in different ways, such as trying the coding games in [Swift Playgrounds](../../RESOURCE/https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), reading the [official Swift documentation](../../RESOURCE/https://docs.swift.org/swift-book/documentation/the-swift-programming-language/), and studying [100 Days Of SwiftUI](../../RESOURCE/https://www.hackingwithswift.com/100/swiftui).
+I also started as a complete beginner. At first, I only watched a few [Swift tutorial videos on YouTube](https://www.youtube.com/watch?v=4SaddkGm5yA&list=PLliocbKHJNwuLHJlVv6q5tKJxJltjBspC&index=3), and I discovered that iOS app development was not as complicated as I had imagined. That gave me some real interest. After that, I began learning more Swift knowledge in different ways, such as trying the coding games in [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id1496833156?mt=12), reading the [official Swift documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/), and studying [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui).
 
-Looking back now, it was mainly [100 Days Of SwiftUI](../../RESOURCE/https://www.hackingwithswift.com/100/swiftui) that gave me a structured learning framework and allowed me to study SwiftUI systematically. However, because the tutorial was in English and I had no programming foundation, I ran into many difficulties during the learning process. To deal with that, I used AI tools such as [ChatGPT](../../RESOURCE/https://chatgpt.com/) and [Claude](../../RESOURCE/https://claude.ai/?redirect=claude.com) to help me understand the concepts.
+Looking back now, it was mainly [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui) that gave me a structured learning framework and allowed me to study SwiftUI systematically. However, because the tutorial was in English and I had no programming foundation, I ran into many difficulties during the learning process. To deal with that, I used AI tools such as [ChatGPT](https://chatgpt.com/) and [Claude](https://claude.ai/?redirect=claude.com) to help me understand the concepts.
 
 During the learning process, some ideas were inevitably hard to understand. I remember that when I was learning `UserDefaults`, I only knew how to save data, but I did not know that I needed to read the data manually, which made me suspect there was something wrong with my code. Even such a simple concept cost me several days.
 
@@ -40,7 +40,7 @@ So my suggestions are:
 
 There is a Chinese saying: "The beginning of everything is hard." For beginners learning Swift from zero, it is normal to encounter difficult concepts during the learning process. Very often, the issue is not that the concept itself is too complicated, but that there are even more basic ideas at the bottom of the knowledge pyramid that you have not learned yet.
 
-When this happens, you can consider using AI tools such as [ChatGPT](../../RESOURCE/https://chatgpt.com/) and [Claude](../../RESOURCE/https://claude.ai/?redirect=claude.com) to fill in the missing basics in time.
+When this happens, you can consider using AI tools such as [ChatGPT](https://chatgpt.com/) and [Claude](https://claude.ai/?redirect=claude.com) to fill in the missing basics in time.
 
 **2. Try to understand every knowledge point**
 
@@ -62,7 +62,7 @@ Even if you only complete one percent each day, you can still finish the entire 
 
 This course will not teach an excessive amount of Swift and SwiftUI knowledge. Instead, it is designed to guide beginners onto the road of Swift programming. It is like building with blocks: the tutorial explains how to connect the pieces, and the rest of the time is for you to build your own creation.
 
-The project is already open sourced on [GitHub](../../RESOURCE/https://github.com/fangjunyu1/SwiftSlim), where it can be downloaded and used for free. There is also an App Store version available for hands-on experience.
+The project is already open sourced on [GitHub](https://github.com/fangjunyu1/SwiftSlim), where it can be downloaded and used for free. There is also an App Store version available for hands-on experience.
 
 We hope to help more people without a technical background but with a desire to change their career path discover new possibilities through learning programming and building apps.
 
