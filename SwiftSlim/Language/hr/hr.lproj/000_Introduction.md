@@ -73,6 +73,6 @@ Ovaj je vodič napisan na temelju trenutnih verzija Swifta i SwiftUI-ja.
 Kako se Apple platforme i alati ažuriraju, neki API-ji mogu se promijeniti. Ako primijetite problem ili sadržaj treba ažurirati, možete pogledati službenu dokumentaciju ili najnoviju verziju u repozitoriju otvorenog koda.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

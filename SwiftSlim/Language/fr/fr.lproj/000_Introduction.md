@@ -73,6 +73,6 @@ Ce tutoriel est écrit sur la base de la version actuelle de Swift et SwiftUI.
 Avec les mises à jour des plateformes et des outils Apple, certaines API peuvent évoluer. Si vous constatez un problème ou si un contenu doit être actualisé, vous pouvez consulter la documentation officielle ou la dernière version du dépôt open source.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

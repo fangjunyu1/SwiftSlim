@@ -92,11 +92,11 @@ Karena itu, ketika logika tombol sederhana dan hanya memanggil satu fungsi, penu
 
 Operator aritmetika (`Arithmetic Operators`) digunakan untuk perhitungan angka:
 
-- \+ penjumlahan
-- \- pengurangan
-- \* perkalian
-- / pembagian
-- % modulo (sisa bagi)
+- `+` penjumlahan
+- `-` pengurangan
+- `*` perkalian
+- `/` pembagian
+- `%` modulo (sisa bagi)
 
 Contoh:
 
@@ -126,10 +126,10 @@ Operator perbandingan (`Comparison Operators`) digunakan untuk menilai hubungan 
 
 - `==` sama dengan
 - `!=` tidak sama dengan
-- \> lebih besar dari
-- < lebih kecil dari
-- \>= lebih besar dari atau sama dengan
-- <= lebih kecil dari atau sama dengan
+- `>` lebih besar dari
+- `<` lebih kecil dari
+- `>=` lebih besar dari atau sama dengan
+- `<=` lebih kecil dari atau sama dengan
 
 Contoh:
 

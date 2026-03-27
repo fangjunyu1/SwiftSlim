@@ -206,7 +206,7 @@ Swift ਅਤੇ SwiftUI ਦੇ ਸੰਬੰਧ ਨੂੰ ਸਮਝਣ ਲਈ App
 Swift ਦੇ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ, Objective-C Apple platforms ਲਈ ਮੁੱਖ programming language ਸੀ, ਅਤੇ ਇਹ C language ਨਾਲ mixed programming ਨੂੰ support ਕਰਦੀ ਸੀ। ਇਸ ਦੀ syntax ਕਾਫ਼ੀ ਲੰਬੀ ਸੀ, ਜਿਸ ਕਾਰਨ ਸ਼ੁਰੂਆਤੀ ਲੋਕਾਂ ਲਈ ਇਸਨੂੰ ਸਿੱਖਣਾ ਕੁਝ ਔਖਾ ਹੁੰਦਾ ਸੀ:
 
 ```Obj-c
-// Objective-C 的写法
+// Objective-C ਵਿੱਚ ਲਿਖਣ ਦਾ ਤਰੀਕਾ
 NSString *name = @"Fang";
 NSLog(@"Hello，%@", name);
 ```
@@ -214,7 +214,7 @@ NSLog(@"Hello，%@", name);
 2014 ਵਿੱਚ, Apple ਨੇ WWDC 'ਤੇ Swift language ਜਾਰੀ ਕੀਤੀ। Swift ਦੀ syntax ਹੋਰ ਆਧੁਨਿਕ ਹੈ, type safety ਵੀ ਵੱਧ ਹੈ, ਅਤੇ ਇਹ ਹੌਲੀ-ਹੌਲੀ Objective-C ਦੀ ਥਾਂ ਮੁੱਖ development language ਬਣ ਗਈ:
 
 ```swift
-// Swift 的写法
+// Swift ਵਿੱਚ ਲਿਖਣ ਦਾ ਤਰੀਕਾ
 let name = "Fang"
 print("Hello, \(name)")
 ```

@@ -73,6 +73,6 @@ Tikimės padėti daugiau žmonių, neturinčių technologinio pagrindo, bet nori
 Atnaujinant Apple platformas ir įrankius, dalis API gali pasikeisti. Jei pastebėsite problemų arba reikės atnaujinti turinį, galite remtis naujausia oficialios dokumentacijos ar atvirojo kodo saugyklos versija.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

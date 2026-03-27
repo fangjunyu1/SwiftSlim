@@ -256,7 +256,7 @@ num = num + 5   // num = 15
 Swift kalboje ternarinis operatorius (`Ternary Operator`) pagal sąlygą pasirenka vieną iš dviejų rezultatų:
 
 ```swift
-条件 ? 值1 : 值2
+sąlyga ? reikšmė1 : reikšmė2
 ```
 
 Jo veikimo logika tokia: jei sąlyga yra `true`, grąžinama „1 reikšmė“; jei sąlyga yra `false`, grąžinama „2 reikšmė“.

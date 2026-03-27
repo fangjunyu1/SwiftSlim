@@ -73,6 +73,6 @@ Bu eğitim, mevcut Swift ve SwiftUI sürümlerine dayanarak hazırlanmıştır.
 Apple platformları ve araçları güncellendikçe bazı API’lerde değişiklikler olabilir. Bir sorun fark ederseniz veya içeriğin güncellenmesi gerekiyorsa, resmî belgeleri ya da açık kaynak deposunun en güncel sürümünü inceleyebilirsiniz.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14

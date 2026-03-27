@@ -256,7 +256,7 @@ num = num + 5   // num = 15
 L'opérateur ternaire (`Ternary Operator`) en Swift permet de juger une condition et de retourner l'un de deux résultats possibles :
 
 ```swift
-条件 ? 值1 : 值2
+condition ? valeur1 : valeur2
 ```
 
 Sa logique d'exécution est la suivante : si la condition vaut `true`, il retourne "valeur 1" ; si la condition vaut `false`, il retourne "valeur 2".

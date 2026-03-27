@@ -92,11 +92,11 @@ Portanto, quando a lógica do botão é simples e apenas chama uma função, usa
 
 Os operadores aritméticos (Arithmetic Operators) são usados para cálculos numéricos:
 
-* + adição
-* - subtração
-* * multiplicação
-* / divisão
-* % módulo (resto)
+* `+` adição
+* `-` subtração
+* `*` multiplicação
+* `/` divisão
+* `%` módulo (resto)
 
 Exemplo:
 
@@ -124,12 +124,12 @@ Quando os dois tipos são diferentes, é necessário converter manualmente o tip
 
 Os operadores de comparação (Comparison Operators) são usados para verificar a relação entre dois valores, e o resultado é um `Bool`:
 
-* == igual a
-* != diferente de
-* > maior que
-* < menor que
-* >= maior ou igual a
-* <= menor ou igual a
+* `==` igual a
+* `!=` diferente de
+* `>` maior que
+* `<` menor que
+* `>=` maior ou igual a
+* `<=` menor ou igual a
 
 Exemplo:
 
@@ -156,9 +156,9 @@ Se `index` for menor que `sayings.count - 1`, o resultado da comparação será 
 
 Os operadores lógicos (Logical Operators) são usados para combinar múltiplas condições:
 
-* && e (AND)
-* || ou (OR)
-* ! não (NOT)
+* `&&` e (AND)
+* `||` ou (OR)
+* `!` não (NOT)
 
 ### && e
 
@@ -214,7 +214,7 @@ Aqui, `!allowed` significa inverter o valor de `allowed`.
 
 O operador de atribuição (Assignment Operators) é usado para atribuir ou atualizar valores:
 
-* = atribuição
+* `=` atribuição
 
 Tanto na declaração de variáveis quanto durante cálculos, a operação de atribuição aparece com frequência:
 
@@ -228,10 +228,10 @@ Esse código indica que o valor `5` é atribuído à variável `a`.
 
 No desenvolvimento real, além do operador básico de atribuição, também usamos com frequência os “operadores compostos de atribuição”, que permitem calcular e atualizar diretamente com base no valor original:
 
-* +=
-* -=
-* *=
-* /=
+* `+=`
+* `-=`
+* `*=`
+* `/=`
 
 Na aula anterior sobre “contador”, já vimos de forma simples os operadores compostos de atribuição.
 
@@ -305,8 +305,8 @@ Essa forma permite mudar dinamicamente o efeito visual da view em uma única lin
 
 Os operadores de intervalo (Range Operators) são usados para representar intervalos:
 
-* ... intervalo fechado (inclui as duas extremidades)
-* ..< intervalo semiaberto (não inclui o lado direito)
+* `...` intervalo fechado (inclui as duas extremidades)
+* `..<` intervalo semiaberto (não inclui o lado direito)
 
 Por exemplo:
 
@@ -371,12 +371,12 @@ Com a prática em diferentes cenários, você poderá se familiarizar gradualmen
 
 Além disso, o Swift também oferece uma categoria mais baixa de operadores — os operadores de bits (Bitwise Operators):
 
-* & (E bit a bit)
-* | (OU bit a bit)
-* ^ (XOR bit a bit)
-* ~ (negação bit a bit)
-* >> (deslocamento à direita)
-* << (deslocamento à esquerda)
+* `&` (E bit a bit)
+* `|` (OU bit a bit)
+* `^` (XOR bit a bit)
+* `~` (negação bit a bit)
+* `>>` (deslocamento à direita)
+* `<<` (deslocamento à esquerda)
 
 Por exemplo:
 

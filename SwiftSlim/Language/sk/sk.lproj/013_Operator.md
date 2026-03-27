@@ -256,7 +256,7 @@ num = num + 5   // num = 15
 Ternárny operátor (`Ternary Operator`) v jazyku Swift vyhodnotí podmienku a vráti jednu z dvoch hodnôt:
 
 ```swift id="1ndpga"
-条件 ? 值1 : 值2
+podmienka ? hodnota1 : hodnota2
 ```
 
 Jeho logika je takáto: ak je podmienka `true`, vráti „hodnotu 1“; ak je podmienka `false`, vráti „hodnotu 2“.

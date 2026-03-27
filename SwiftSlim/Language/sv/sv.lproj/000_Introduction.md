@@ -73,6 +73,6 @@ Den här kursen är skriven utifrån den nuvarande versionen av Swift och SwiftU
 I takt med att Apples plattformar och verktyg uppdateras kan vissa API:er förändras. Om du upptäcker problem eller att innehåll behöver uppdateras kan du hänvisa till den senaste versionen av den officiella dokumentationen eller det öppna källkodsarkivet.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

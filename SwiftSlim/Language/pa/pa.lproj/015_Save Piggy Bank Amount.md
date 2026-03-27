@@ -110,7 +110,7 @@ nil
 
 ਇੱਥੇ ਜ਼ੋਰ ਨਾਲ ਸਮਝਣ ਵਾਲੀ ਗੱਲ ਹੈ ਕਿ nil ਦਾ ਮਤਲਬ “ਕੋਈ data ਨਹੀਂ” ਹੈ, ਨਾ ਕਿ ਖਾਲੀ string।
 
-“类型系统” ਵਾਲੇ ਪਾਠ ਵਿੱਚ ਅਸੀਂ ਇਸੇ ਤਰ੍ਹਾਂ ਦੀ ਸਮੱਸਿਆ ਦੇਖੀ ਸੀ — ਜਦੋਂ type conversion ਅਸਫਲ ਹੁੰਦੀ ਹੈ, ਤਾਂ optional type ਵਾਪਸ ਆਉਂਦੀ ਹੈ।
+“ਟਾਈਪ ਸਿਸਟਮ” ਵਾਲੇ ਪਾਠ ਵਿੱਚ ਅਸੀਂ ਇਸੇ ਤਰ੍ਹਾਂ ਦੀ ਸਮੱਸਿਆ ਦੇਖੀ ਸੀ — ਜਦੋਂ type conversion ਅਸਫਲ ਹੁੰਦੀ ਹੈ, ਤਾਂ optional type ਵਾਪਸ ਆਉਂਦੀ ਹੈ।
 
 ਐਸੇ ਵੇਲੇ, ਸਾਨੂੰ ?? ਦੀ ਵਰਤੋਂ ਕਰਕੇ default value ਦੇਣੀ ਪੈਂਦੀ ਹੈ, ਅਤੇ optional ਨੂੰ unwrap ਕਰਨਾ ਪੈਂਦਾ ਹੈ:
 
@@ -354,7 +354,7 @@ TextField("Amount", value: $number, format: .number)
 Generic parameter 'Value' could not be inferred
 ```
 
-ਇਹ ਉਹੀ ਸਥਿਤੀ ਹੈ ਜੋ ਅਸੀਂ “类型系统” ਵਿੱਚ ਵੇਖੀ ਸੀ: ਜਦੋਂ variable ਦੀ type ਆਪਣੇ ਆਪ infer ਨਹੀਂ ਹੋ ਸਕਦੀ, ਤਾਂ ਸਾਨੂੰ ਉਸਦੀ type explicitly declare ਕਰਨੀ ਪੈਂਦੀ ਹੈ।
+ਇਹ ਉਹੀ ਸਥਿਤੀ ਹੈ ਜੋ ਅਸੀਂ “ਟਾਈਪ ਸਿਸਟਮ” ਵਿੱਚ ਵੇਖੀ ਸੀ: ਜਦੋਂ variable ਦੀ type ਆਪਣੇ ਆਪ infer ਨਹੀਂ ਹੋ ਸਕਦੀ, ਤਾਂ ਸਾਨੂੰ ਉਸਦੀ type explicitly declare ਕਰਨੀ ਪੈਂਦੀ ਹੈ।
 
 ਕਿਉਂਕਿ ਅਸੀਂ number ਨੂੰ nil ਕੀਤਾ ਹੈ, ਅਤੇ nil ਆਪਣੇ ਆਪ ਵਿੱਚ ਕਿਸੇ ਵੀ type ਦੀ ਜਾਣਕਾਰੀ ਨਹੀਂ ਰੱਖਦਾ, ਇਸ ਲਈ compiler ਇਹ ਨਹੀਂ ਜਾਣ ਸਕਦਾ ਕਿ variable String ਹੈ, Int ਹੈ ਜਾਂ ਕੋਈ ਹੋਰ type, ਇਸ ਕਰਕੇ error ਆਉਂਦੀ ਹੈ।
 

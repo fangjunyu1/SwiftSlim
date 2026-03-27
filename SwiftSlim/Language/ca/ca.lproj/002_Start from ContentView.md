@@ -28,7 +28,7 @@ El codi de `ContentView`:
 //  ContentView.swift
 //  SwiftSlimTest
 //
-//  Created by 方君宇 on 2026/2/23.
+//  Created by Fang Junyu on 2026/2/23.
 //
 
 import SwiftUI
@@ -61,7 +61,7 @@ A la part superior del fitxer:
 //  ContentView.swift
 //  SwiftSlimTest
 //
-//  Created by 方君宇 on 2026/2/23.
+//  Created by Fang Junyu on 2026/2/23.
 //
 ```
 

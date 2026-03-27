@@ -206,7 +206,7 @@ Swift మరియు SwiftUI మధ్య ఉన్న సంబంధాన్
 Swift రాకముందు, Objective-C అనేది Apple ప్లాట్‌ఫారమ్‌లలో ప్రధాన programming language గా ఉండేది. ఇది C language తో కలిసి పని చేయగలదు. అయితే దీని syntax కొంత పొడవుగా ఉండేది, అందువల్ల beginners కు ఇది కొంత క్లిష్టంగా అనిపించేది:
 
 ```Obj-c
-// Objective-C 的写法
+// Objective-C లో రాయే విధానం
 NSString *name = @"Fang";
 NSLog(@"Hello，%@", name);
 ```
@@ -214,7 +214,7 @@ NSLog(@"Hello，%@", name);
 2014 లో, Apple WWDC లో Swift భాషను విడుదల చేసింది. Swift syntax మరింత ఆధునికంగా ఉండటం, type safety ఎక్కువగా ఉండటం వలన, ఇది క్రమంగా Objective-C ను భర్తీ చేస్తూ ప్రధాన development language గా మారింది:
 
 ```swift
-// Swift 的写法
+// Swift లో రాయే విధానం
 let name = "Fang"
 print("Hello, \(name)")
 ```

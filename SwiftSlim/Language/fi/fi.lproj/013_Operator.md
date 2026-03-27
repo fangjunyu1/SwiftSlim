@@ -256,7 +256,7 @@ num = num + 5   // num = 15
 Swiftin ternäärioperaattori (`Ternary Operator`) arvioi ehdon ja palauttaa toisen kahdesta arvosta:
 
 ```swift
-条件 ? 值1 : 值2
+ehto ? arvo1 : arvo2
 ```
 
 Sen suorituslogiikka on seuraava: jos ehto on `true`, palautetaan "arvo 1"; jos ehto on `false`, palautetaan "arvo 2".

@@ -237,9 +237,9 @@ Button("Next") {
 
 ```swift
 if condition {
-    // 当 condition 为 true 时执行的代码
+    // condition true असल्यास चालणारा कोड
 } else {
-    // 当 condition 为 false 时执行的代码
+    // condition false असल्यास चालणारा कोड
 }
 ```
 
@@ -262,7 +262,7 @@ if age > 18 {
 
 ```swift
 if condition {
-    // 当 condition 为 true 时执行的代码
+    // condition true असल्यास चालणारा कोड
 }
 ```
 
@@ -390,13 +390,13 @@ struct ContentView: View {
 
 ```swift
 if conditionA {
-    // 当 conditionA 为 true 时执行的代码
+    // conditionA true असल्यास चालणारा कोड
 } else if conditionB {
-    // 当 conditionB 为 true 时执行的代码
+    // conditionB true असल्यास चालणारा कोड
 } else if conditionC {
-    // 当 conditionC 为 true 时执行的代码
+    // conditionC true असल्यास चालणारा कोड
 } else {
-    // 所有条件均不满足时执行的代码
+    // सर्व अटी पूर्ण न झाल्यास चालणारा कोड
 }
 ```
 

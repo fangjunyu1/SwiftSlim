@@ -388,6 +388,7 @@ print(a & b) // 2 (ਬਾਈਨਰੀ 010)
 print(a | b) // 7 (ਬਾਈਨਰੀ 111)
 print(a ^ b) // 5 (ਬਾਈਨਰੀ 101)
 print(~a)    // -7 (ਉਲਟ)
+```
 
 Swift ਵਿੱਚ integers ਨੂੰ binary two’s complement ਰੂਪ ਵਿੱਚ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ, ਇਸ ਲਈ NOT ਕਰਨ ਤੋਂ ਬਾਅਦ ਉਸਦੇ ਅਨੁਸਾਰ negative number ਮਿਲਦਾ ਹੈ।
 

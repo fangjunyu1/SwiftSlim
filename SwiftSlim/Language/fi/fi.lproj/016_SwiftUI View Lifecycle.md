@@ -12,7 +12,7 @@ Kun luot iOS-projektin, Xcode generoi oletuksena kaksi tiedostoa:
 
 ```
 ContentView.swift
-项目名 + App.swift
+projektin nimi + App.swift
 ```
 
 Näistä `"projektin nimi + App".swift` on koko sovelluksen sisääntulotiedosto.

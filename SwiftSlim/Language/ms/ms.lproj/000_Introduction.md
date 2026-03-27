@@ -73,6 +73,6 @@ Tutorial ini ditulis berdasarkan versi semasa Swift dan SwiftUI.
 Seiring dengan kemas kini platform dan alat Apple, sebahagian API mungkin berubah. Jika anda menemui masalah atau kandungan yang perlu dikemas kini, anda boleh merujuk dokumentasi rasmi atau versi terkini repositori sumber terbuka.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

@@ -274,7 +274,7 @@ Atidarykite SF Symbols programėlę.
 
 Kairėje rodomos simbolių kategorijos, dešinėje — atitinkamos piktogramos.
 
-Paspaudę piktogramą dešiniuoju pelės klavišu galite pasirinkti "拷贝1个名称", ir bus nukopijuotas atitinkamas tekstinis pavadinimas.
+Paspaudę piktogramą dešiniuoju pelės klavišu galite pasirinkti "Nukopijuokite 1 pavadinimą", ir bus nukopijuotas atitinkamas tekstinis pavadinimas.
 
 Pavyzdžiui:
 

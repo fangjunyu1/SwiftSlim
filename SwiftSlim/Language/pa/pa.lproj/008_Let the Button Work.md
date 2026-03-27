@@ -8,7 +8,7 @@
 
 ਬਟਨ ਸਭ ਤੋਂ ਆਮ UI controls ਵਿੱਚੋਂ ਇੱਕ ਹਨ। ਜਦੋਂ ਸਾਨੂੰ download, open ਜਾਂ exit ਵਰਗੀਆਂ ਕਾਰਵਾਈਆਂ ਕਰਨੀ ਹੁੰਦੀਆਂ ਹਨ, ਅਸੀਂ ਆਮ ਤੌਰ 'ਤੇ ਬਟਨ 'ਤੇ click ਕਰਦੇ ਹਾਂ।
 
-ਉਦਾਹਰਨ ਲਈ, App Store ਵਿੱਚ “获取” ਬਟਨ 'ਤੇ click ਕਰਕੇ App download ਕੀਤਾ ਜਾਂਦਾ ਹੈ।
+ਉਦਾਹਰਨ ਲਈ, App Store ਵਿੱਚ “ਪ੍ਰਾਪਤ ਕਰੋ” ਬਟਨ 'ਤੇ click ਕਰਕੇ App download ਕੀਤਾ ਜਾਂਦਾ ਹੈ।
 
 ![Button](../../RESOURCE/008_button.png)
 

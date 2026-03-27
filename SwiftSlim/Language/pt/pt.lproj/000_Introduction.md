@@ -74,6 +74,6 @@ Este tutorial foi escrito com base na versão atual do Swift e do SwiftUI.
 
 ---
 
-方君宇
+Fang Junyu
 
 2026-02-14

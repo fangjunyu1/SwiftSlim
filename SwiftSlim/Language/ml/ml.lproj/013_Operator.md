@@ -256,7 +256,7 @@ num = num + 5   // num = 15
 Swift-യിലെ ternary operator (`Ternary Operator`) condition അനുസരിച്ച് രണ്ട് results-ൽ ഒന്നിനെ return ചെയ്യുന്നു:
 
 ```swift
-条件 ? 值1 : 值2
+നിബന്ധന ? മൂല്യം1 : മൂല്യം2
 ```
 
 ഇതിന്റെ execution logic: condition `true` ആണെങ്കിൽ “value1” return ചെയ്യും; condition `false` ആണെങ്കിൽ “value2” return ചെയ്യും.

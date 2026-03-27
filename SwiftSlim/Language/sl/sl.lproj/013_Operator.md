@@ -92,11 +92,11 @@ Zato je pri enostavni logiki gumba in kadar ta samo kliče eno funkcijo zapis z 
 
 Aritmetični operatorji（Arithmetic Operators）se uporabljajo za računanje z vrednostmi:
 
-* + seštevanje
-* - odštevanje
-* * množenje
-* / deljenje
-* % ostanek pri deljenju（ostanek）
+* `+` seštevanje
+* `-` odštevanje
+* `*` množenje
+* `/` deljenje
+* `%` ostanek pri deljenju（ostanek）
 
 Primer:
 
@@ -156,9 +156,9 @@ if index < sayings.count - 1 {
 
 Logični operatorji（Logical Operators）se uporabljajo za povezovanje več pogojev:
 
-* && in（AND）
-* || ali（OR）
-* ! ne（NOT）
+* `&&` in（AND）
+* `||` ali（OR）
+* `!` ne（NOT）
 
 ### && in
 
@@ -214,7 +214,7 @@ Pomembno je poudariti, da sta ! in != dva različna operatorja. ! obrača Bool v
 
 Operatorji prirejanja（Assignment Operators）se uporabljajo za dodeljevanje ali posodabljanje vrednosti spremenljivk:
 
-* = prirejanje
+* `=` prirejanje
 
 Tako pri deklaraciji spremenljivke kot pri izračunu se pojavlja operacija prirejanja:
 
@@ -228,10 +228,10 @@ Ta koda pomeni, da vrednost 5 dodelimo spremenljivki a.
 
 V dejanskem razvoju se poleg osnovnega operatorja prirejanja pogosto uporabljajo tudi »sestavljeni operatorji prirejanja«, ki omogočajo neposreden izračun na obstoječi vrednosti in njeno posodobitev:
 
-* +=
-* -=
-* *=
-* /=
+* `+=`
+* `-=`
+* `*=`
+* `/=`
 
 V prejšnji lekciji »Števec« smo se s sestavljenimi operatorji prirejanja že na kratko srečali.
 
@@ -305,8 +305,8 @@ Takšen zapis omogoča, da v eni vrstici kode dinamično spreminjamo videz pogle
 
 Operatorji obsega（Range Operators）se uporabljajo za predstavitev intervalov:
 
-* ... zaprti interval（vključuje oba konca）
-* ..< polodprti interval（desnega konca ne vključuje）
+* `...` zaprti interval（vključuje oba konca）
+* `..<` polodprti interval（desnega konca ne vključuje）
 
 Na primer：
 
@@ -371,12 +371,12 @@ S postopnim vadenjem v različnih scenarijih se lahko dobro seznanimo z vsemi vr
 
 Poleg tega Swift ponuja še eno bolj nizkonivojsko skupino operatorjev —— bitne operatorje（Bitwise Operators）：
 
-* &（bitni AND）
-* |（bitni OR）
-* ^（bitni XOR）
-* ~（bitni NOT）
-* >>（premik v desno）
-* <<（premik v levo）
+* `&`（bitni AND）
+* `|`（bitni OR）
+* `^`（bitni XOR）
+* `~`（bitni NOT）
+* `>>`（premik v desno）
+* `<<`（premik v levo）
 
 Na primer：
 

@@ -73,6 +73,6 @@ Hướng dẫn này được biên soạn dựa trên phiên bản hiện tại 
 Cùng với sự cập nhật của nền tảng và các công cụ Apple, một số API có thể thay đổi. Nếu bạn phát hiện vấn đề hoặc nội dung cần được cập nhật, vui lòng tham khảo tài liệu chính thức hoặc phiên bản mới nhất trên kho lưu trữ mã nguồn mở.
 
 ---
-方君宇 (Phương Quân Vũ)
+Fang Junyu
 
 2026-02-14

@@ -73,6 +73,6 @@ Ez az oktatóanyag a Swift és a SwiftUI jelenlegi verziójára épül.
 Ahogy az Apple platformok és eszközök frissülnek, egyes API-k változhatnak. Ha problémát találsz, vagy a tartalom frissítésre szorul, érdemes megnézni a hivatalos dokumentációt vagy a nyílt forráskódú adattár legújabb verzióját.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14  

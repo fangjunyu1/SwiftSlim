@@ -73,6 +73,6 @@ Tento kurz je napísaný na základe aktuálnej verzie Swiftu a SwiftUI.
 Keďže sa platformy Apple a nástroje priebežne aktualizujú, niektoré API sa môžu zmeniť. Ak narazíte na problém alebo bude potrebné obsah aktualizovať, môžete sa pozrieť do oficiálnej dokumentácie alebo do najnovšej verzie open source repozitára.
 
 ---
-方君宇
+Fang Junyu
 
 2026-02-14

@@ -92,11 +92,11 @@ Därför är `action`-skrivningen tydligare och mer kodmässigt korrekt när kna
 
 Aritmetiska operatorer (Arithmetic Operators) används för numeriska beräkningar:
 
-* + addition
-* - subtraktion
-* * multiplikation
-* / division
-* % modulo (rest)
+* `+` addition
+* `-` subtraktion
+* `*` multiplikation
+* `/` division
+* `%` modulo (rest)
 
 Exempel:
 
@@ -124,12 +124,12 @@ När två typer inte är samma måste man konvertera typen manuellt.
 
 Jämförelseoperatorer (Comparison Operators) används för att avgöra relationen mellan två värden, och resultatet blir en `Bool`:
 
-* == lika med
-* != inte lika med
-* > större än
-* < mindre än
-* >= större än eller lika med
-* <= mindre än eller lika med
+* `==` lika med
+* `!=` inte lika med
+* `>` större än
+* `<` mindre än
+* `>=` större än eller lika med
+* `<=` mindre än eller lika med
 
 Exempel:
 
@@ -156,9 +156,9 @@ Om `index` är mindre än `sayings.count - 1` blir jämförelseresultatet `true`
 
 Logiska operatorer (Logical Operators) används för att kombinera flera villkor:
 
-* && och (AND)
-* || eller (OR)
-* ! inte (NOT)
+* `&&` och (AND)
+* `||` eller (OR)
+* `!` inte (NOT)
 
 ### && och
 
@@ -214,7 +214,7 @@ Det är viktigt att notera att `!` och `!=` är två olika operatorer. `!` inver
 
 Tilldelningsoperatorer (Assignment Operators) används för att tilldela eller uppdatera variabler:
 
-* = tilldelning
+* `=` tilldelning
 
 Både vid deklaration av variabler och i beräkningar förekommer tilldelning:
 
@@ -228,10 +228,10 @@ Den här koden betyder att talet `5` tilldelas variabeln `a`.
 
 I faktisk utveckling används, förutom den grundläggande tilldelningsoperatorn, ofta även “sammansatta tilldelningsoperatorer”, som gör att man direkt kan beräkna utifrån det nuvarande värdet och uppdatera det:
 
-* +=
-* -=
-* *=
-* /=
+* `+=`
+* `-=`
+* `*=`
+* `/=`
 
 I lektionen om “räknaren” har vi redan kort lärt känna sammansatta tilldelningsoperatorer.
 
@@ -305,8 +305,8 @@ Detta gör att man med en enda kodrad kan ändra vyers utseende dynamiskt beroen
 
 Intervalloperatorer (Range Operators) används för att uttrycka ett intervall:
 
-* ... slutet intervall (inkluderar båda ändpunkterna)
-* ..< halvöppet intervall (inkluderar inte högra sidan)
+* `...` slutet intervall (inkluderar båda ändpunkterna)
+* `..<` halvöppet intervall (inkluderar inte högra sidan)
 
 Till exempel:
 
@@ -371,12 +371,12 @@ Genom att öva i olika scenarier kan man gradvis bli bekant med och bemästra de
 
 Utöver detta erbjuder Swift också en mer låg nivå-typ av operatorer — bitoperatorer (Bitwise Operators):
 
-* & (bitvis och)
-* | (bitvis eller)
-* ^ (bitvis xor)
-* ~ (bitvis negation)
-* >> (högerskift)
-* << (vänsterskift)
+* `&` (bitvis och)
+* `|` (bitvis eller)
+* `^` (bitvis xor)
+* `~` (bitvis negation)
+* `>>` (högerskift)
+* `<<` (vänsterskift)
 
 Till exempel:
 

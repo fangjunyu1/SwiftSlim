@@ -92,11 +92,11 @@ Ezért ha a gomb logikája egyszerű, és csak egyetlen függvényt hív meg, az
 
 Az aritmetikai operátorok (`Arithmetic Operators`) számértékekkel végzett műveletekre szolgálnak:
 
-- \+ összeadás
-- \- kivonás
-- \* szorzás
-- / osztás
-- % maradékos osztás
+- `+` összeadás
+- `-` kivonás
+- `*` szorzás
+- `/` osztás
+- `%` maradékos osztás
 
 Példa:
 
@@ -124,12 +124,12 @@ Ha a két érték típusa eltér, akkor kézzel kell típust konvertálni.
 
 Az összehasonlító operátorok (`Comparison Operators`) két érték kapcsolatát vizsgálják, és `Bool` eredményt adnak vissza:
 
-- == egyenlő
-- != nem egyenlő
-- \> nagyobb
-- < kisebb
-- \>= nagyobb vagy egyenlő
-- <= kisebb vagy egyenlő
+- `==` egyenlő
+- `!=` nem egyenlő
+- `>` nagyobb
+- `<` kisebb
+- `>=` nagyobb vagy egyenlő
+- `<=` kisebb vagy egyenlő
 
 Példa:
 
@@ -214,7 +214,7 @@ Fontos megjegyezni, hogy a `!` és a `!=` két különböző operátor: a `!` eg
 
 Az értékadó operátorok (`Assignment Operators`) értékadáshoz vagy változófrissítéshez valók:
 
-- = értékadás
+- `=` értékadás
 
 Változó deklarálásakor vagy számítás közben gyakran használjuk:
 
@@ -228,10 +228,10 @@ Ez azt jelenti, hogy az `5` értéket az `a` változóhoz rendeljük.
 
 Valódi fejlesztésben az egyszerű értékadáson kívül gyakran használjuk az úgynevezett összetett értékadó operátorokat is, amelyek a meglévő értéken számolnak, majd az eredményt visszaírják:
 
-- +=
-- -=
-- *=
-- /=
+- `+=`
+- `-=`
+- `*=`
+- `/=`
 
 A „számláló” leckében már röviden találkoztunk velük.
 
