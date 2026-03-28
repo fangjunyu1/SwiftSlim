@@ -34,13 +34,20 @@ struct Education: View {
     @State private var EducationVM = EducationViewModel()
     
     var body: some View {
-        // 课程列表
         List {
-            ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
-                NavigationLink(destination: EducationPage(url: item.url)) {
-                    Text("\(index + 1)")
-                    Text(LocalizedStringKey(item.name))
+            Section {
+                ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
+                    NavigationLink(destination: EducationPage(url: item.url)) {
+                        Text("\(index + 1)")
+                        Text(LocalizedStringKey(item.name))
+                    }
                 }
+            } footer: {
+                Text("\(Bundle.main.version) (\(Bundle.main.build))")
+                    .font(.footnote)
+                    .foregroundStyle(.gray)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical,20)
             }
         }
         .navigationTitle("Contents")

@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct SwiftSlimApp: App {
+    @StateObject private var appStorage = AppStorageManager.shared
+    @Environment(\.scenePhase) private var scenePhase
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appStorage)
+        }
+        .onChange(of: scenePhase) { newPhase in
+            if newPhase == .active {
+                appStorage.updateAppUsageDay()
+            }
         }
     }
 }
