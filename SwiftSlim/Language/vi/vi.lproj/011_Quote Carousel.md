@@ -1,7 +1,3 @@
-This task is a translation, not a document creation task, so no skills are needed. I'll translate the full document into Vietnamese in Markdown format.
-
----
-
 # Vòng Lặp Danh Ngôn
 
 Trong bài học này, chúng ta sẽ xây dựng tính năng "vòng lặp danh ngôn" và tìm hiểu sâu hơn về các kiến thức Swift cơ bản như Mảng (Array) và câu lệnh điều kiện (if-else).
