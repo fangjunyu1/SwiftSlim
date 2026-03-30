@@ -4,6 +4,9 @@
 //
 //  Created by 方君宇 on 2025/7/29.
 //
+//  Change App Name(2026-03-30)
+//  SwiftSlim -> Qight
+//
 
 import SwiftUI
 
