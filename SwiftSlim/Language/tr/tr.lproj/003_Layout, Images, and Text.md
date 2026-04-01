@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 Bu derste SwiftUI’nin varsayılan düzen mekanizmasını, ayrıca görsel ve metin kullanma yöntemlerini öğreneceğiz. Önceki dersin temelinde, view yapısını ve görüntülenme biçimini daha ileri düzeyde anlayacağız. Bu bilgiler, temel arayüz düzenleri kurmamızı destekleyecektir.
 

@@ -6,7 +6,7 @@ Quando fazemos cálculos, comparações ou julgamentos lógicos, precisamos usar
 
 ```swift
 let a = 100 * 8
-````
+```
 
 Ao aprender programação, muitas pessoas percebem que quem tem certo raciocínio matemático costuma entender melhor a lógica de programação. Isso acontece porque a programação, em essência, depende de “cálculo” e “julgamento por regras”, e são exatamente essas as funções centrais dos operadores.
 

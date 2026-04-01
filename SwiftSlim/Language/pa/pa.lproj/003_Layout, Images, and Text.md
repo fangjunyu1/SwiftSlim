@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 ਇਸ ਪਾਠ ਵਿੱਚ, ਅਸੀਂ SwiftUI ਦੇ ਡਿਫ਼ਾਲਟ layout mechanism ਅਤੇ images ਅਤੇ text ਦੀ ਵਰਤੋਂ ਸਿੱਖਾਂਗੇ। ਪਿਛਲੇ ਪਾਠ ਦੇ ਆਧਾਰ 'ਤੇ, ਅਸੀਂ view ਦੀ ਬਣਤਰ ਅਤੇ display ਦੇ ਢੰਗ ਨੂੰ ਹੋਰ ਡੂੰਘਾਈ ਨਾਲ ਸਮਝਾਂਗੇ। ਇਹ ਗਿਆਨ ਬੁਨਿਆਦੀ interface layouts ਬਣਾਉਣ ਲਈ ਮਦਦਗਾਰ ਹੋਵੇਗਾ।
 

@@ -20,7 +20,7 @@ Först använder vi Text för att visa ett tal.
 
 ```swift
 Text("0")
-````
+```
 
 Men om talet behöver kunna ändras kan vi inte skriva in `"0"` direkt, utan bör använda en variabel för att spara talet.
 

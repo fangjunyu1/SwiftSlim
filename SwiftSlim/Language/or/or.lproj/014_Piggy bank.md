@@ -18,7 +18,7 @@ ContentView ମଧ୍ୟରେ, “ସଞ୍ଚୟ କୁମ୍ଭ” ର ମୋ
 
 ```swift
 @State private var amount = 0
-````
+```
 
 ତା ପରେ, ଏହି ରାଶିକୁ ଦେଖାଇବା ପାଇଁ Text ବ୍ୟବହାର କରିବା:
 

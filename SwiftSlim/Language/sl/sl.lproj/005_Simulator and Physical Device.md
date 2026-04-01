@@ -40,7 +40,7 @@ Lahko pa simulator tudi neposredno zaprete:
 
 ``` id="vjjmtd"
 Thread 1: signal SIGTERM
-````
+```
 
 To običajno ni napaka v logiki programa, ampak pomeni, da je bil proces odpravljanja napak zunanje prekinjen. V večini primerov lahko to prezrete, saj ne gre za napako v logiki aplikacije.
 

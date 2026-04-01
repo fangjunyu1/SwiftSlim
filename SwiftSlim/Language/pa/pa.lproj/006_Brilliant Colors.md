@@ -20,7 +20,7 @@ SwiftUI ਵਿੱਚ, ਤੁਸੀਂ ਲਿਖਤ ਦਾ ਰੰਗ ਸੈੱਟ
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 `.blue` ਦਾ ਅਰਥ ਨੀਲਾ ਰੰਗ ਹੈ। ਅਸਲ ਵਿੱਚ ਇਹ `Color.blue` ਦਾ ਸਰਲ ਲਿਖਣ ਤਰੀਕਾ ਹੈ (type inference)।
 

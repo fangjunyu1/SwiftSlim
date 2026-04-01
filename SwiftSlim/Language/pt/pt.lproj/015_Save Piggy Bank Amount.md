@@ -22,7 +22,7 @@ Isso acontece porque usamos uma variável declarada com `@State`:
 
 ```swift
 @State private var amount = 0
-````
+```
 
 A vida útil de uma variável declarada com `@State` depende completamente da view.
 

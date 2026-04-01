@@ -15,7 +15,7 @@ När man skapar ett iOS-projekt genererar Xcode som standard två filer:
 ContentView.swift
 ProjectName + App.swift
 
-````
+```
 
 Bland dessa är `"ProjectName + App".swift` hela appens startfil.
 
@@ -32,7 +32,7 @@ struct SwiftSlimTestApp: App {
         }
     }
 }
-````
+```
 
 ### Kodens körflöde
 

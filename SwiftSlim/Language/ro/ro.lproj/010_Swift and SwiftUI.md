@@ -38,7 +38,7 @@ De exemplu, procesarea datelor în Swift:
 
 ```swift
 let markdown = try? String(contentsOf: url)
-````
+```
 
 Acest cod implică declarații de variabile, definiții de constante, funcții, controlul fluxului și altele similare, dar nu afectează direct afișarea view-ului.
 

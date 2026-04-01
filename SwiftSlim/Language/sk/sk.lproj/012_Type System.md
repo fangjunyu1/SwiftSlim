@@ -6,7 +6,7 @@ Napríklad:
 
 ```swift id="8f78z3"
 var hello = "Hello, World"
-````
+```
 
 Tu `hello` uchováva text, preto je jeho typ `String`.
 

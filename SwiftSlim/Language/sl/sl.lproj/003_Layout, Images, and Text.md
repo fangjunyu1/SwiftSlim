@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 V tej lekciji bomo spoznali privzeti mehanizem postavitve v SwiftUI ter način uporabe slik in besedila. Na podlagi prejšnje lekcije bomo dodatno razumeli strukturo pogledov in način prikaza, to znanje pa nam bo pomagalo graditi osnovne postavitve uporabniškega vmesnika.
 

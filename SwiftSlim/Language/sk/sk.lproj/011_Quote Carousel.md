@@ -14,7 +14,7 @@ Najjednoduchší spôsob je použiť view `Text`:
 
 ```swift id="l4rn0m"
 Text("Slow progress is still progress.")
-````
+```
 
 Tento kód dokáže zobraziť iba jeden pevne daný citát. Ak chceme zobraziť viacero citátov a umožniť ich prepínanie, musíme si ich najprv uložiť.
 

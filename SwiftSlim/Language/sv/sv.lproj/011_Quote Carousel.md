@@ -14,7 +14,7 @@ Det enklaste sättet är att använda vyn Text:
 
 ```swift id="77fweq"
 Text("Slow progress is still progress.")
-````
+```
 
 Den här koden kan bara visa ett fast citat. Om vi vill visa flera citat och växla mellan dem behöver vi spara citaten.
 

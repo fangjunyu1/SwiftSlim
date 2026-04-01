@@ -15,7 +15,7 @@ Ao criar um projeto iOS, o Xcode gera por padrão dois arquivos:
 ContentView.swift
 ProjectName + App.swift
 
-````
+```
 
 Entre eles, `"ProjectName + App".swift` é o arquivo de entrada de todo o aplicativo.
 
@@ -32,7 +32,7 @@ struct SwiftSlimTestApp: App {
         }
     }
 }
-````
+```
 
 ### Fluxo de execução do código
 

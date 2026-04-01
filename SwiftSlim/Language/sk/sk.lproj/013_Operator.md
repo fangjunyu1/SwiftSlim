@@ -6,7 +6,7 @@ Keď vykonávame výpočty, porovnania alebo logické rozhodovanie, vždy potreb
 
 ```swift id="mh7wql"
 let a = 100 * 8
-````
+```
 
 Počas učenia programovania si veľa ľudí všimne, že ľudia s určitým matematickým myslením často ľahšie chápu programovú logiku. Je to preto, že programovanie je vo svojej podstate neoddeliteľné od „výpočtov“ a „rozhodovania podľa pravidiel“, a práve to je hlavná úloha operátorov.
 

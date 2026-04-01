@@ -40,7 +40,7 @@ Eğer simülatörü doğrudan kapatırsanız, Xcode şu uyarıyı verebilir:
 
 ``` id="87aohh"
 Thread 1: signal SIGTERM
-````
+```
 
 Bu genellikle uygulama mantığındaki bir hata değildir; hata ayıklama sürecinin dışarıdan sonlandırılması nedeniyle oluşur. Genelde yok sayılabilir ve uygulama mantığına ait bir hata sayılmaz.
 

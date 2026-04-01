@@ -55,7 +55,7 @@ FangJunyu
 
 name
 
-````
+```
 
 В этом примере name — это имя, а FangJunyu — сохранённая информация.
 
@@ -67,7 +67,7 @@ name
 
 ```swift
 var name = "FangJunyu"
-````
+```
 
 Здесь объявлена переменная с именем name, её тип — String, а значение — "FangJunyu".
 

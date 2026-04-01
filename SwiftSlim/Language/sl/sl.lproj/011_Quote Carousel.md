@@ -14,7 +14,7 @@ Najpreprostejši način je uporaba pogleda Text:
 
 ```swift
 Text("Slow progress is still progress.")
-````
+```
 
 Ta koda lahko prikaže samo en fiksen citat. Če želimo prikazati več citatov in omogočiti preklapljanje, jih moramo najprej shraniti.
 

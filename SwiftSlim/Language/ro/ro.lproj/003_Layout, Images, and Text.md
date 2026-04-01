@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 În această lecție, vom învăța mecanismul implicit de layout din SwiftUI, precum și modul de utilizare al imaginilor și textului. Pe baza lecției anterioare, vom înțelege mai bine structura și modul de afișare al view-urilor, iar aceste cunoștințe ne vor ajuta să construim layout-uri de bază pentru interfață.
 

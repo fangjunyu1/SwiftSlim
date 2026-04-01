@@ -20,7 +20,7 @@ Acești modificatori sunt folosiți pentru a controla aspectul vizual al view-ur
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 `.blue` înseamnă albastru și este, de fapt, forma prescurtată a lui `Color.blue` (prin inferență de tip).
 

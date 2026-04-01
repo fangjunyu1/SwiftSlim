@@ -13,7 +13,7 @@
 ```swift
 ContentView.swift
 ProjectName + App.swift
-````
+```
 
 ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ, “ProjectName + App”.swift ਪੂਰੇ app ਦੀ entry file ਹੁੰਦੀ ਹੈ।
 

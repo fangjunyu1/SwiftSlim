@@ -37,7 +37,7 @@ Bu bilgiler kaydedilir ve daha sonra gösterilir.
 
 ``` id="vtm1s6"
 FangJunyu
-````
+```
 
 Bu adı kaydetmemiz gerekir; böylece uygulama içinde gösterebiliriz.
 

@@ -20,7 +20,7 @@ Mai întâi, folosim Text pentru a afișa un număr.
 
 ```swift
 Text("0")
-````
+```
 
 Dar dacă numărul trebuie să se schimbe, nu putem scrie direct "0", ci trebuie să folosim o variabilă pentru a salva numărul.
 

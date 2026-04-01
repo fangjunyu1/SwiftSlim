@@ -48,7 +48,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-````
+```
 
 Kod az görünse de SwiftUI’nin çekirdek yapısını içerir.
 

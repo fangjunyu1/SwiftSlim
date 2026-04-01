@@ -6,7 +6,7 @@ Till exempel:
 
 ```swift id="b9n3qf"
 var hello = "Hello, World"
-````
+```
 
 Här lagrar `hello` en textsträng, så dess typ är `String`.
 

@@ -20,7 +20,7 @@ Najprv použijeme `Text` na zobrazenie čísla.
 
 ```swift
 Text("0")
-````
+```
 
 Ak sa však číslo má meniť, nemôžeme napevno zapísať `"0"`, ale mali by sme použiť premennú na uloženie čísla.
 

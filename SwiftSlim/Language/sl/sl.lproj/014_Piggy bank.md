@@ -18,7 +18,7 @@ V ContentView deklariramo spremenljivko za shranjevanje skupnega zneska v »hran
 
 ```swift
 @State private var amount = 0
-````
+```
 
 Nato uporabimo Text za prikaz tega zneska:
 

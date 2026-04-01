@@ -15,7 +15,7 @@ Ko v Xcode ustvarimo iOS projekt, sistem privzeto ustvari dve datoteki:
 ContentView.swift
 ProjectName + App.swift
 
-````
+```
 
 Med njima je datoteka »ProjectName + App«.swift vstopna točka celotne aplikacije.
 
@@ -32,7 +32,7 @@ struct SwiftSlimTestApp: App {
         }
     }
 }
-````
+```
 
 ### Potek izvajanja kode
 

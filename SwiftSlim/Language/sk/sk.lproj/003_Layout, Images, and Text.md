@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 V tejto lekcii sa naučíme predvolený mechanizmus rozloženia v SwiftUI a spôsob používania obrázkov a textu. Na základe predchádzajúcej lekcie budeme ďalej rozumieť štruktúre a zobrazeniu View. Tieto poznatky nám pomôžu vytvárať základné rozhrania.
 

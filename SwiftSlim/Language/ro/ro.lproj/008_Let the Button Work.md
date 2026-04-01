@@ -20,7 +20,7 @@ Utilizarea de bază:
 Button("") {
     
 }
-````
+```
 
 Structura poate fi împărțită în două părți:
 

@@ -38,7 +38,7 @@ Till exempel, att behandla data i Swift:
 
 ```swift
 let markdown = try? String(contentsOf: url)
-````
+```
 
 Den här typen av kod omfattar variabeldeklarationer, konstantdefinitioner, funktioner, kontrollflöden och liknande, och påverkar inte direkt hur vyn visas.
 

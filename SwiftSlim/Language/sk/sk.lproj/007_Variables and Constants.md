@@ -37,7 +37,7 @@ Napríklad používateľ zadá do App meno:
 
 ``` id="t7y1na"
 FangJunyu
-````
+```
 
 Toto meno musíme uložiť, aby sa mohlo zobraziť v App.
 

@@ -20,7 +20,7 @@ V SwiftUI lahko nastavimo barvo besedila.
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 .blue pomeni modro barvo. To je pravzaprav skrajšana oblika za Color.blue (sklepanje tipa).
 

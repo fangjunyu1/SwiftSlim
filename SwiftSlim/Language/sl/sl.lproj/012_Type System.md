@@ -6,7 +6,7 @@ Na primer:
 
 ```swift
 var hello = "Hello, World"
-````
+```
 
 Tukaj hello shranjuje besedilo, zato je njegov tip String.
 

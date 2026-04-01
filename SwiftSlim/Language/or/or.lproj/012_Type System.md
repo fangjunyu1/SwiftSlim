@@ -6,7 +6,7 @@
 
 ```swift
 var hello = "Hello, World"
-````
+```
 
 ଏଠାରେ `hello` ଗୋଟିଏ ଟେକ୍ସ୍ଟ ସଞ୍ଚୟ କରୁଛି, ସେହିପାଇଁ ଏହାର ଟାଇପ୍ `String`।
 

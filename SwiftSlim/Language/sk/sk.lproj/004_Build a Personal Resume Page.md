@@ -34,7 +34,7 @@ struct ContentView: View {
         .padding()
     }
 }
-````
+```
 
 Teraz kód vymažte a začnite písať vlastný obsah:
 

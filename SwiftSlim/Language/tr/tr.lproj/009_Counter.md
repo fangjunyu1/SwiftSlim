@@ -20,7 +20,7 @@ Sayaçlar genellikle sürekli artan miktarları kaydetmek için kullanılır. Ö
 
 ```swift
 Text("0")
-````
+```
 
 Ama sayı değişecekse, `"0"` değerini sabit yazamayız; bunun yerine sayıyı bir değişkende saklamalıyız.
 

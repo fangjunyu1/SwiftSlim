@@ -20,7 +20,7 @@ SwiftUI’de metnin rengini ayarlayabiliriz.
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 `.blue` mavi rengi ifade eder. Aslında bu, `Color.blue` yazımının kısaltılmış hâlidir. Bunun nedeni type inference’dır.
 

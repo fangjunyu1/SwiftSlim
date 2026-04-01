@@ -18,7 +18,7 @@ I `ContentView` deklarerar vi en variabel för att spara spargrisens totala belo
 
 ```swift
 @State private var amount = 0
-````
+```
 
 Sedan använder vi `Text` för att visa detta belopp:
 

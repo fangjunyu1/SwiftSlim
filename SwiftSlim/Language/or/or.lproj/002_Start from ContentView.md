@@ -48,7 +48,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-````
+```
 
 କୋଡ୍ ଅଧିକ ନୁହେଁ, କିନ୍ତୁ ଏଥିରେ SwiftUI ର ମୁଖ୍ୟ ଗଠନ ଅନ୍ତର୍ଭୁକ୍ତ ଅଛି।
 

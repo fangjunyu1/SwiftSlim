@@ -18,7 +18,7 @@ No `ContentView`, declaramos uma variável para guardar o valor total do “cofr
 
 ```swift
 @State private var amount = 0
-````
+```
 
 Em seguida, usamos `Text` para exibir esse valor:
 

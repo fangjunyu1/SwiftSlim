@@ -22,7 +22,7 @@ Asta se întâmplă deoarece folosim o variabilă declarată cu @State:
 
 ```swift id="q1b8ye"
 @State private var amount = 0
-````
+```
 
 Variabila declarată cu @State are ciclul ei de viață complet dependent de vizualizare.
 

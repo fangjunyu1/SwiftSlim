@@ -18,7 +18,7 @@ Mai întâi, trebuie să afișăm suma totală din „pușculiță”.
 
 ```swift
 @State private var amount = 0
-````
+```
 
 Apoi, folosim Text pentru a afișa această sumă:
 

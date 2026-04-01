@@ -6,7 +6,7 @@ De exemplu:
 
 ```swift
 var hello = "Hello, World"
-````
+```
 
 Aici, hello păstrează un text, deci tipul său este String.
 

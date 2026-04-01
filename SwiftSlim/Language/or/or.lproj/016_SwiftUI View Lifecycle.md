@@ -13,7 +13,7 @@ iOS ପ୍ରୋଜେକ୍ଟ ସୃଷ୍ଟି କଲେ, Xcode ଡିଫଲ
 ```
 ContentView.swift
 ProjectName + App.swift
-````
+```
 
 ଏଥିରେ, “ProjectName + App”.swift ହେଉଛି ସମଗ୍ର ଆପ୍‌ର entry file।
 
@@ -30,7 +30,7 @@ struct SwiftSlimTestApp: App {
         }
     }
 }
-````
+```
 
 ### କୋଡ୍ ଚାଲିବାର ପ୍ରକ୍ରିୟା
 

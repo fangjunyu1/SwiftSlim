@@ -22,7 +22,7 @@ To je zato, ker uporabljamo spremenljivko, deklarirano z @State:
 
 ```swift
 @State private var amount = 0
-````
+```
 
 Življenjski cikel spremenljivke, deklarirane z @State, je popolnoma odvisen od pogleda.
 

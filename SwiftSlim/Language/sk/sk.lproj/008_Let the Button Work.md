@@ -20,7 +20,7 @@ Základné použitie:
 Button("") {
     
 }
-````
+```
 
 Jeho štruktúru možno rozdeliť na dve časti:
 

@@ -6,7 +6,7 @@ Ko računamo, primerjamo ali izvajamo logične presoje, moramo uporabljati opera
 
 ```swift
 let a = 100 * 8
-````
+```
 
 Med učenjem programiranja veliko ljudi opazi, da tisti z nekoliko boljšim matematičnim razmišljanjem pogosto lažje razumejo logiko programa. To je zato, ker programiranje v bistvu ne more brez »računanja« in »presoje pravil«, operatorji pa imajo prav pri tem osrednjo vlogo.
 

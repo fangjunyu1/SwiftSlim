@@ -6,7 +6,7 @@ När vi gör beräkningar, jämförelser eller logiska bedömningar behöver vi 
 
 ```swift
 let a = 100 * 8
-````
+```
 
 När man lär sig programmera märker många att personer med viss matematisk förståelse ofta har lättare att förstå programlogik. Det beror på att programmering i grunden inte kan skiljas från “beräkning” och “regelbaserad bedömning”, och det är just detta som operatorer har som kärnuppgift.
 

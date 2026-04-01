@@ -48,7 +48,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-````
+```
 
 Aj keď je kódu pomerne málo, obsahuje základnú štruktúru SwiftUI.
 

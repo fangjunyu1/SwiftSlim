@@ -6,7 +6,7 @@ Atunci când efectuăm calcule, comparații sau judecăți logice, avem nevoie d
 
 ```swift
 let a = 100 * 8
-````
+```
 
 În procesul de învățare a programării, mulți oameni observă că persoanele cu o anumită gândire matematică reușesc adesea să înțeleagă mai ușor logica programelor. Asta deoarece esența programării nu poate fi separată de „calcul” și „judecata pe baza regulilor”, iar operatorii sunt exact cei care îndeplinesc acest rol central.
 

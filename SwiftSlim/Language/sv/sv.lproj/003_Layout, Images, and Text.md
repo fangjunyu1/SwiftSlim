@@ -10,7 +10,7 @@ VStack {
     Text("Hello, world!")
 }
 .padding()
-````
+```
 
 I den här lektionen ska vi lära oss SwiftUIs standardmekanism för layout, samt hur bilder och text används. Med utgångspunkt i den förra lektionen ska vi vidare förstå vyernas struktur och visningssätt. Denna kunskap kan hjälpa oss att bygga grundläggande gränssnittslayouter.
 

@@ -14,7 +14,7 @@ Cea mai simplă metodă este să folosim view-ul Text:
 
 ```swift
 Text("Slow progress is still progress.")
-````
+```
 
 Acest cod poate afișa doar un singur citat fix. Dacă vrem să afișăm mai multe citate și să realizăm funcția de comutare, trebuie să le salvăm.
 

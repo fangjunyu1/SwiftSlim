@@ -6,7 +6,7 @@
 
 ```swift
 var hello = "Hello, World"
-````
+```
 
 Тут `hello` зберігає текст, тому його тип — `String`.
 

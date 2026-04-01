@@ -20,7 +20,7 @@
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 .blue означает синий цвет. На самом деле это сокращённая форма записи Color.blue благодаря выводу типа.
 

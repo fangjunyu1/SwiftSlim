@@ -38,7 +38,7 @@ Swift esas olarak veriyi yönetmek, durumu saklamak ve mantığı çalıştırma
 
 ```swift
 let markdown = try? String(contentsOf: url)
-````
+```
 
 Bu tür kodlar; değişken tanımlama, sabit tanımlama, fonksiyonlar, kontrol akışı gibi yapıları içerir ve doğrudan view’un görüntülenmesini etkilemez.
 

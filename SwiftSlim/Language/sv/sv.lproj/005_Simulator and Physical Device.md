@@ -40,7 +40,7 @@ Om du stänger simulatorn direkt kan Xcode visa följande meddelande:
 
 ``` id="nm8f6q"
 Thread 1: signal SIGTERM
-````
+```
 
 Detta är vanligtvis inte ett logiskt fel i programmet, utan beror på att felsökningsprocessen avslutades externt. Det kan normalt ignoreras och räknas inte som ett fel i appens logik.
 

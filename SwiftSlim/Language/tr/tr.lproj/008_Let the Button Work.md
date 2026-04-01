@@ -20,7 +20,7 @@ Temel kullanım:
 Button("") {
     
 }
-````
+```
 
 Yapı iki parçaya ayrılabilir:
 

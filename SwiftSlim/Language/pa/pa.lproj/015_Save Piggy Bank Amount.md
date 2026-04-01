@@ -22,7 +22,7 @@
 
 ```swift
 @State private var amount = 0
-````
+```
 
 @State ਨਾਲ declare ਕੀਤਾ ਗਿਆ variable ਪੂਰੀ ਤਰ੍ਹਾਂ view ਦੇ lifecycle 'ਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ।
 

@@ -40,7 +40,7 @@ Xcode ਆਪਣੇ ਆਪ project ਨੂੰ build ਕਰੇਗਾ ਅਤੇ simu
 
 ``` id="3iv58m"
 Thread 1: signal SIGTERM
-````
+```
 
 ਇਹ ਆਮ ਤੌਰ 'ਤੇ program logic ਦੀ ਗਲਤੀ ਨਹੀਂ ਹੁੰਦੀ, ਸਗੋਂ ਇਸ ਲਈ ਹੁੰਦੀ ਹੈ ਕਿ debug process ਨੂੰ ਬਾਹਰੋਂ terminate ਕੀਤਾ ਗਿਆ ਹੈ। ਆਮ ਤੌਰ 'ਤੇ ਇਸਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ; ਇਹ App logic error ਨਹੀਂ ਹੁੰਦੀ।
 

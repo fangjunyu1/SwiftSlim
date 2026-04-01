@@ -40,7 +40,7 @@ Ak simulátor zavriete priamo, Xcode môže zobraziť hlásenie:
 
 ``` id="6l8w1j"
 Thread 1: signal SIGTERM
-````
+```
 
 Zvyčajne to nie je chyba logiky programu, ale dôsledok toho, že ladený proces bol ukončený zvonka. Vo väčšine prípadov to možno ignorovať, pretože nejde o chybu logiky aplikácie.
 

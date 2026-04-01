@@ -22,7 +22,7 @@ Je to preto, že používame premennú deklarovanú pomocou `@State`:
 
 ```swift id="tyx2u4"
 @State private var amount = 0
-````
+```
 
 Životný cyklus premennej deklarovanej pomocou `@State` úplne závisí od view.
 

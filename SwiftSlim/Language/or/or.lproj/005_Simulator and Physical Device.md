@@ -40,7 +40,7 @@ Xcode ସ୍ୱୟଂଚାଳିତ ଭାବେ project କୁ build କରି
 
 ``` id="y511fw"
 Thread 1: signal SIGTERM
-````
+```
 
 ଏହା ସାଧାରଣତଃ program logic error ନୁହେଁ, ବରଂ debug process କୁ ବାହ୍ୟଭାବେ terminate କରାଯାଇଥିବାରୁ ଏହା ଘଟେ। ସାଧାରଣତଃ ଏହାକୁ ignore କରାଯାଇପାରେ, ଏହା App logic ର ଭୁଲ୍ ନୁହେଁ।
 

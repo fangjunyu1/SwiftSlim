@@ -20,7 +20,7 @@ V SwiftUI môžeme nastaviť farbu textu.
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 .blue znamená modrú farbu a v skutočnosti ide o skrátený zápis Color.blue vďaka odvodzovaniu typu.
 

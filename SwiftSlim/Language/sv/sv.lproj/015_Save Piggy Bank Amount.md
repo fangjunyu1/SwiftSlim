@@ -22,7 +22,7 @@ Detta beror på att vi använder en variabel deklarerad med `@State`:
 
 ```swift
 @State private var amount = 0
-````
+```
 
 En variabel som deklareras med `@State` har en livscykel som helt beror på vyn.
 

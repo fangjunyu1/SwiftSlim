@@ -40,7 +40,7 @@ Als je de simulator direct sluit, kan Xcode deze melding geven:
 
 ```swift
 Thread 1: signal SIGTERM
-````
+```
 
 Dit is meestal geen fout in de applogica, maar ontstaat doordat het debugproces extern is beëindigd. Meestal kun je dit negeren; het hoort niet bij een logische fout van de app.
 

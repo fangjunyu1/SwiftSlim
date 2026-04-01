@@ -38,7 +38,7 @@ Na primer, obdelava podatkov v Swiftu:
 
 ```swift
 let markdown = try? String(contentsOf: url)
-````
+```
 
 Ta koda vključuje deklaracije spremenljivk, definicije konstant, funkcije, nadzorni tok in podobno, vendar ne vpliva neposredno na prikaz pogleda.
 

@@ -38,7 +38,7 @@ Napríklad spracovanie dát v Swifte:
 
 ```swift id="c0ix2n"
 let markdown = try? String(contentsOf: url)
-````
+```
 
 Tento kód zahŕňa deklaráciu premenných, definíciu konštánt, funkcie, riadiaci tok a podobne, ale priamo neovplyvňuje zobrazenie view.
 

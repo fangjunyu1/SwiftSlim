@@ -6,7 +6,7 @@
 
 ```swift
 var hello = "Hello, World"
-````
+```
 
 ਇੱਥੇ hello ਇੱਕ ਟੈਕਸਟ ਸੰਭਾਲ ਰਿਹਾ ਹੈ, ਇਸ ਲਈ ਇਸਦੀ ਕਿਸਮ String ਹੈ।
 

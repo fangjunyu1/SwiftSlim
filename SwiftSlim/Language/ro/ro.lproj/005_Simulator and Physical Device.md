@@ -40,7 +40,7 @@ Dacă închizi direct simulatorul, Xcode poate afișa mesajul:
 
 ``` id="r4x29v"
 Thread 1: signal SIGTERM
-````
+```
 
 De obicei, aceasta nu este o eroare de logică a programului, ci apare deoarece procesul de depanare a fost terminat extern. În general, poate fi ignorată și nu aparține erorilor de logică ale aplicației.
 

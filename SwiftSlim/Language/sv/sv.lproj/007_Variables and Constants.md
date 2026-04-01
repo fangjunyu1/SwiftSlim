@@ -55,7 +55,7 @@ Till exempel:
 
 name
 
-````
+```
 
 I det här exemplet är `name` namnet, och `FangJunyu` är den sparade informationen.
 
@@ -67,7 +67,7 @@ Eftersom ett namn vanligtvis kan ändras, bör vi använda en variabel.
 
 ```swift
 var name = "FangJunyu"
-````
+```
 
 Här deklareras en variabel med namnet `name`, variabelns typ är `String`, och värdet är `"FangJunyu"`.
 

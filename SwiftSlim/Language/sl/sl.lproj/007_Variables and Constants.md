@@ -37,7 +37,7 @@ Na primer, če uporabnik v aplikacijo vnese ime:
 
 ``` id="fptr2r"
 FangJunyu
-````
+```
 
 moramo to ime shraniti, da ga lahko prikažemo v aplikaciji.
 

@@ -13,7 +13,7 @@ Când creezi un proiect iOS, Xcode generează implicit două fișiere:
 ```
 ContentView.swift
 ProjectName + App.swift
-````
+```
 
 Dintre acestea, „ProjectName + App”.swift este fișierul de intrare al întregii aplicații.
 
@@ -30,7 +30,7 @@ struct SwiftSlimTestApp: App {
         }
     }
 }
-````
+```
 
 ### Fluxul de execuție al codului
 

@@ -13,7 +13,7 @@ Pri vytvorení iOS projektu Xcode predvolene vygeneruje dva súbory:
 ``` id="h2m8qa"
 ContentView.swift
 ProjectName + App.swift
-````
+```
 
 Z nich je `"ProjectName + App".swift` vstupný súbor celej aplikácie.
 

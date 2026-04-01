@@ -18,7 +18,7 @@ V `ContentView` deklarujeme premennú na uloženie celkovej sumy v „pokladnič
 
 ```swift id="suv4nx"
 @State private var amount = 0
-````
+```
 
 Potom použijeme `Text` na zobrazenie tejto sumy:
 

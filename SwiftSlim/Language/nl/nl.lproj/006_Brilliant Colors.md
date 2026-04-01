@@ -20,7 +20,7 @@ In SwiftUI kun je de kleur van tekst instellen.
 ```swift
 Text("Fang Junyu")
     .foregroundStyle(.blue)
-````
+```
 
 .blue betekent blauw en is in feite een verkorte schrijfwijze van Color.blue (type inference).
 
