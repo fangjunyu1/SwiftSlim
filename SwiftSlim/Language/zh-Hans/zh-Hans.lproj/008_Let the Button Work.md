@@ -416,7 +416,7 @@ func sayHello() {
 sayHello()
 ```
 
-如果函数需要数据，可以使用 参数：
+如果函数需要数据，可以使用参数：
 
 ```swift
 func sayHello(name: String) {

@@ -416,7 +416,7 @@ func sayHello() {
 sayHello()
 ```
 
-如果函式需要資料，可以使用 參數：
+如果函式需要資料，可以使用參數：
 
 ```swift
 func sayHello(name: String) {
