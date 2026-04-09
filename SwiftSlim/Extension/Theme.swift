@@ -25,13 +25,8 @@ extension Theme {
                 CodeBlockWithCopyButton(configuration: configuration)
             }
             .code {
-                
                 FontSize(body)
-                FontWeight(.bold)
-//                FontSize(body)
-//                FontWeight(.regular)
-//                FontFamily(.system(.serif))
-//                BackgroundColor(Color.gray.opacity(0.3))
+                FontWeight(.semibold)
             }
             .image { configuration in
                 configuration.label

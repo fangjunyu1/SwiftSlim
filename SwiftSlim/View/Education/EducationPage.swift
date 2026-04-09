@@ -52,14 +52,17 @@ struct EducationPage: View {
                             .markdownImageProvider(.asset)
                             .markdownTheme(.custom(isLargeLayout: false))
                             .padding(.horizontal)
+                            .padding(.top, 20)
+                            .padding(.bottom, 50)
                     } else {
                         // iPad / Mac
                         Markdown(content)
                             .markdownImageProvider(.asset)
                             .markdownTheme(.custom(isLargeLayout: true))
                             .padding(.horizontal)
+                            .padding(.top, 20)
+                            .padding(.bottom, 50)
                     }
-                    Spacer().frame(height: 50)
                 }
             } else {
                 ProgressView {
@@ -67,6 +70,7 @@ struct EducationPage: View {
                 }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             // 进入课程视图，执行数据统计方法
             print("打开课程次数:\(appStorage.openCount)")
