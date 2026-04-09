@@ -7,6 +7,9 @@
 //  Change App Name(2026-03-30)
 //  SwiftSlim -> Qight
 //
+//  Change App Name(2026-04-09)
+//  Qight -> Qinote
+//
 
 import SwiftUI
 
