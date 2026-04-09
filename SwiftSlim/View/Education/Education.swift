@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EducationModel:Identifiable,Equatable {
+struct EducationModel:Identifiable,Equatable,Hashable {
     let id = UUID()
     let name: String
     let url: URL
@@ -31,8 +31,6 @@ class EducationViewModel {
 }
 
 struct Education: View {
-    @State private var EducationVM = EducationViewModel()
-    
     var body: some View {
         List {
             ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in

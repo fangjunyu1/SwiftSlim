@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DABAA182F5D710C000ABF0D /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1DABAA172F5D710C000ABF0D /* MarkdownUI */; };
+		1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC948452F8603A0004E8448 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DABAA182F5D710C000ABF0D /* MarkdownUI in Frameworks */,
+				1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = SwiftSlim;
 			packageProductDependencies = (
-				1DABAA172F5D710C000ABF0D /* MarkdownUI */,
+				1DC948452F8603A0004E8448 /* MarkdownUI */,
 			);
 			productName = SwiftSlim;
 			productReference = 1D9CAED12E38C51000A48D57 /* SwiftSlim.app */;
@@ -160,7 +160,7 @@
 			mainGroup = 1D9CAEC82E38C51000A48D57;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1DABAA162F5D710C000ABF0D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D9CAED22E38C51000A48D57 /* Products */;
@@ -326,7 +326,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftSlim/SwiftSlim.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 30;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = RRMSD743UQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -363,7 +363,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftSlim/SwiftSlim.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 30;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = RRMSD743UQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,7 +416,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1DABAA162F5D710C000ABF0D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+		1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
 			requirement = {
@@ -427,9 +427,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1DABAA172F5D710C000ABF0D /* MarkdownUI */ = {
+		1DC948452F8603A0004E8448 /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1DABAA162F5D710C000ABF0D /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			package = 1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
