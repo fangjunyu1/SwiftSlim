@@ -59,7 +59,7 @@ struct EducationPage: View {
                         Markdown(content)
                             .markdownImageProvider(.asset)
                             .markdownTheme(.custom(isLargeLayout: true))
-                            .padding(.horizontal)
+                            .padding(.horizontal, 50)
                             .padding(.top, 20)
                             .padding(.bottom, 50)
                     }

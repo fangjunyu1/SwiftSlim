@@ -10,15 +10,22 @@ import MarkdownUI
 
 extension Theme {
     static func custom(isLargeLayout: Bool = false) -> Theme {
-        let h1: Double = isLargeLayout ? 28 : 24
-        let h2: Double = isLargeLayout ? 24 : 20
-        let h3: Double = isLargeLayout ? 22 : 18
-        let h4: Double = isLargeLayout ? 20 : 16
-        let body: Double = isLargeLayout ? 20 : 16
+        let h1: Double = isLargeLayout ? 30 : 24
+        let h2: Double = isLargeLayout ? 26 : 20
+        let h3: Double = isLargeLayout ? 24 : 18
+        let h4: Double = isLargeLayout ? 22 : 16
+        let body: Double = isLargeLayout ? 22 : 16
         let imageMaxHeight: Double = isLargeLayout ? 420 : 300
-        let listMargin: Double = 5
-        let listItemMargin: Double = 8
-        let margin: Double = 16
+        let listMargin: Double = isLargeLayout ? 10 : 5
+        let listItemMargin: Double = isLargeLayout ? 16 : 8
+        let family: Font.Design = isLargeLayout ? .default : .serif
+        let heading1Weight: Font.Weight = isLargeLayout ? .semibold : .bold
+        let textWeight: Font.Weight = isLargeLayout ? .light : .regular
+        let headingWeight: Font.Weight = isLargeLayout ? .medium : .semibold
+        let margin: Double = 30
+        let paragraphMargin: Double = isLargeLayout ? 30 : 0
+        let lineSpacing: Double = isLargeLayout ? 0.44 : 0.22
+        let liLineSpacing: Double = 0.22
         
         return Theme()
             .codeBlock { configuration in
@@ -38,8 +45,8 @@ extension Theme {
                 configuration.label
                     .markdownTextStyle {
                         FontSize(h1)
-                        FontWeight(.bold)
-                        FontFamily(.system(.serif))
+                        FontWeight(heading1Weight)
+                        FontFamily(.system(family))
                     }
                     .markdownMargin(top: margin, bottom: margin)
             }
@@ -47,8 +54,8 @@ extension Theme {
                 configuration.label
                     .markdownTextStyle {
                         FontSize(h2)
-                        FontWeight(.semibold)
-                        FontFamily(.system(.serif))
+                        FontWeight(headingWeight)
+                        FontFamily(.system(family))
                     }
                     .markdownMargin(top: margin, bottom: margin)
             }
@@ -56,8 +63,8 @@ extension Theme {
                 configuration.label
                     .markdownTextStyle {
                         FontSize(h3)
-                        FontWeight(.semibold)
-                        FontFamily(.system(.serif))
+                        FontWeight(headingWeight)
+                        FontFamily(.system(family))
                     }
                     .markdownMargin(top: margin, bottom: margin)
             }
@@ -66,20 +73,21 @@ extension Theme {
                 configuration.label
                     .markdownTextStyle {
                         FontSize(h4)
-                        FontWeight(.semibold)
-                        FontFamily(.system(.serif))
+                        FontWeight(headingWeight)
+                        FontFamily(.system(family))
                     }
                     .markdownMargin(top: margin, bottom: margin)
             }
             .text {
                 FontSize(body)
-                FontWeight(.regular)
-                FontFamily(.system(.serif))
+                FontWeight(textWeight)
+                FontFamily(.system(family))
             }
         // 段落：控制正文行间距、段落上下间距
             .paragraph { configuration in
                 configuration.label
-                    .relativeLineSpacing(.em(0.22))
+                    .relativeLineSpacing(.em(lineSpacing))
+                    .markdownMargin(top: paragraphMargin, bottom: paragraphMargin)
             }
         
         // 整个列表块（ul / ol）
@@ -91,7 +99,7 @@ extension Theme {
         // 每一个 li
             .listItem { configuration in
                 configuration.label
-                    .relativeLineSpacing(.em(0.2))
+                    .relativeLineSpacing(.em(liLineSpacing))
                     .markdownMargin(top: listItemMargin, bottom: listItemMargin)
             }
     }
