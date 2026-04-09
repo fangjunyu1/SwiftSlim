@@ -16,21 +16,22 @@ extension Theme {
         let h4: Double = isLargeLayout ? 20 : 16
         let body: Double = isLargeLayout ? 20 : 16
         let imageMaxHeight: Double = isLargeLayout ? 420 : 300
-        let listMargin: Double = 3
+        let listMargin: Double = 5
+        let listItemMargin: Double = 8
         let margin: Double = 16
         
         return Theme()
             .codeBlock { configuration in
                 CodeBlockWithCopyButton(configuration: configuration)
             }
-            .blockquote { configuration in
-                configuration.label
-                    .markdownTextStyle {
-                        FontSize(body)
-                        FontWeight(.regular)
-                        FontFamily(.system(.serif))
-                        BackgroundColor(Color.gray.opacity(0.3))
-                    }
+            .code {
+                
+                FontSize(body)
+                FontWeight(.bold)
+//                FontSize(body)
+//                FontWeight(.regular)
+//                FontFamily(.system(.serif))
+//                BackgroundColor(Color.gray.opacity(0.3))
             }
             .image { configuration in
                 configuration.label
@@ -89,13 +90,14 @@ extension Theme {
         // 整个列表块（ul / ol）
             .list { configuration in
                 configuration.label
+                    .markdownMargin(top: listMargin, bottom: listMargin)
             }
         
         // 每一个 li
             .listItem { configuration in
                 configuration.label
                     .relativeLineSpacing(.em(0.2))
-                    .markdownMargin(top: listMargin, bottom: listMargin)
+                    .markdownMargin(top: listItemMargin, bottom: listItemMargin)
             }
     }
 }
