@@ -12,7 +12,7 @@ import StoreKit
 struct EducationPage: View {
     @EnvironmentObject var appStorage: AppStorageManager
     private let content: String?
-    
+    let device = UIDevice.current
     init(url: URL) {
         let markdown = try? String(contentsOf: url)
         self.content = markdown
@@ -46,10 +46,19 @@ struct EducationPage: View {
         VStack {
             if let content = content {
                 ScrollView {
-                    Markdown(content)
-                        .markdownImageProvider(.asset)
-                        .markdownTheme(.custom)
-                        .padding(.horizontal)
+                    if device.userInterfaceIdiom == .phone {
+                        // iPhone
+                        Markdown(content)
+                            .markdownImageProvider(.asset)
+                            .markdownTheme(.custom(isLargeLayout: false))
+                            .padding(.horizontal)
+                    } else {
+                        // iPad / Mac
+                        Markdown(content)
+                            .markdownImageProvider(.asset)
+                            .markdownTheme(.custom(isLargeLayout: true))
+                            .padding(.horizontal)
+                    }
                     Spacer().frame(height: 50)
                 }
             } else {

@@ -9,56 +9,74 @@ import SwiftUI
 import MarkdownUI
 
 extension Theme {
-    static var custom: Theme {
-        Theme()
+    static func custom(isLargeLayout: Bool = false) -> Theme {
+        let h1: Double = isLargeLayout ? 28 : 24
+        let h2: Double = isLargeLayout ? 24 : 20
+        let h3: Double = isLargeLayout ? 22 : 18
+        let h4: Double = isLargeLayout ? 20 : 16
+        let body: Double = isLargeLayout ? 20 : 16
+        let imageMaxHeight: Double = isLargeLayout ? 420 : 300
+        let listMargin: Double = 3
+        let margin: Double = 16
+        
+        return Theme()
             .codeBlock { configuration in
                 CodeBlockWithCopyButton(configuration: configuration)
+            }
+            .blockquote { configuration in
+                configuration.label
+                    .markdownTextStyle {
+                        FontSize(body)
+                        FontWeight(.regular)
+                        FontFamily(.system(.serif))
+                        BackgroundColor(Color.gray.opacity(0.3))
+                    }
             }
             .image { configuration in
                 configuration.label
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: 300, alignment: .center)
-                    .markdownMargin(top: 16, bottom: 16)
+                    .frame(maxWidth: .infinity, maxHeight: imageMaxHeight, alignment: .center)
+                    .markdownMargin(top: margin, bottom: margin)
             }
             .heading1 { configuration in
                 configuration.label
                     .markdownTextStyle {
-                        FontSize(24)
+                        FontSize(h1)
                         FontWeight(.bold)
                         FontFamily(.system(.serif))
                     }
-                    .markdownMargin(top: 16, bottom: 16)
+                    .markdownMargin(top: margin, bottom: margin)
             }
             .heading2 { configuration in
                 configuration.label
                     .markdownTextStyle {
-                        FontSize(20)
+                        FontSize(h2)
                         FontWeight(.semibold)
                         FontFamily(.system(.serif))
                     }
-                    .markdownMargin(top: 16, bottom: 16)
+                    .markdownMargin(top: margin, bottom: margin)
             }
             .heading3 { configuration in
                 configuration.label
                     .markdownTextStyle {
-                        FontSize(17)
+                        FontSize(h3)
                         FontWeight(.semibold)
                         FontFamily(.system(.serif))
                     }
-                    .markdownMargin(top: 16, bottom: 16)
+                    .markdownMargin(top: margin, bottom: margin)
             }
         
             .heading4 { configuration in
                 configuration.label
                     .markdownTextStyle {
-                        FontSize(15)
+                        FontSize(h4)
                         FontWeight(.semibold)
                         FontFamily(.system(.serif))
                     }
-                    .markdownMargin(top: 16, bottom: 16)
+                    .markdownMargin(top: margin, bottom: margin)
             }
             .text {
-                FontSize(16)
+                FontSize(body)
                 FontWeight(.regular)
                 FontFamily(.system(.serif))
             }
@@ -66,20 +84,18 @@ extension Theme {
             .paragraph { configuration in
                 configuration.label
                     .relativeLineSpacing(.em(0.22))
-                    .markdownMargin(top: 0, bottom: 12)
             }
         
         // 整个列表块（ul / ol）
             .list { configuration in
                 configuration.label
-                    .markdownMargin(top: 4, bottom: 12)
             }
         
         // 每一个 li
             .listItem { configuration in
                 configuration.label
                     .relativeLineSpacing(.em(0.2))
-                    .markdownMargin(top: 4, bottom: 4)
+                    .markdownMargin(top: listMargin, bottom: listMargin)
             }
     }
 }
