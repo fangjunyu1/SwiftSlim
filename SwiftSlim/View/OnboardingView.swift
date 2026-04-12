@@ -111,7 +111,7 @@ struct OnboardingView: View {
                     }
                     .padding(.vertical,10)
                     .padding(.horizontal,16)
-                    .background(Color.white)
+                    .background(Color("WhiteAndGrayBackground"))
                     .cornerRadius(10)
                     .shadow(radius: 5)
                     .offset(x: 0, y: 20)
@@ -151,7 +151,7 @@ struct OnboardingView: View {
                                     RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
                                     
                                         .frame(width: 160, height: 14)
-                                        .foregroundStyle(Color(hex: "F3F3F3"))
+                                        .foregroundStyle(Color("LightGray"))
                                 }
                                 HStack(spacing: 20) {
                                     Image(systemName: "checkmark.circle")
@@ -159,7 +159,7 @@ struct OnboardingView: View {
                                     RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
                                     
                                         .frame(width: 100, height: 14)
-                                        .foregroundStyle(Color(hex: "F3F3F3"))
+                                        .foregroundStyle(Color("LightGray"))
                                 }
                                 HStack(spacing: 20) {
                                     Image(systemName: "circle")
@@ -167,7 +167,7 @@ struct OnboardingView: View {
                                     RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
                                     
                                         .frame(width: 160, height: 14)
-                                        .foregroundStyle(Color(hex: "F3F3F3"))
+                                        .foregroundStyle(Color("LightGray"))
                                 }
                             }
                             Spacer()
@@ -176,7 +176,7 @@ struct OnboardingView: View {
                     }
                     .padding(20)
                     .frame(width: 300)
-                    .background(Color.white)
+                    .background(Color("WhiteAndGrayBackground"))
                     .cornerRadius(30)
                     .shadow(color: Color(hex: "5335FF").opacity(0.3), radius: 3)
                     .padding(.horizontal,20)
@@ -307,7 +307,7 @@ struct DeveloperToolbox: View {
     let imageColor: String
     let backgroundColor: String
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Image(image)
                 .renderingMode(.template)
                 .resizable()
@@ -320,11 +320,11 @@ struct DeveloperToolbox: View {
             
             RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
                 .frame(width: 100, height: 14)
-                .foregroundStyle(Color(hex: "F3F3F3"))
+                .foregroundStyle(Color("LightGray"))
         }
         .padding(16)
         .frame(width: 140)
-        .background(Color.white)
+        .background(Color("WhiteAndGrayBackground"))
         .cornerRadius(20.0)
         .shadow(radius: 3)
     }
