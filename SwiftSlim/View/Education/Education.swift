@@ -35,11 +35,11 @@ struct Education: View {
         List {
             ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
                 NavigationLink(destination: EducationPage(url: item.url)) {
-                    Text("\(index + 1)")
+                    Text(verbatim: "\(index + 1)")
                     Text(LocalizedStringKey(item.name))
                 }
             }
-            Text("\(Bundle.main.version) (\(Bundle.main.build))")
+            Text(verbatim: "\(Bundle.main.version) (\(Bundle.main.build))")
                 .font(.footnote)
                 .foregroundStyle(.gray)
                 .frame(maxWidth: .infinity)

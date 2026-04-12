@@ -17,6 +17,8 @@ class AppStorageManager: ObservableObject {
     // 防止循环写入标志
     private var isLoading = false
     
+    // 是否完成引导页
+    @Published var hasCompletedOnboarding = false { didSet {updateValue(key: "hasCompletedOnboarding",newValue: hasCompletedOnboarding,oldValue: oldValue)} }
     // 进入课程详情页的次数
     @Published var openCount = 0 { didSet {updateValue(key: "openCount",newValue: openCount,oldValue: oldValue)} }
     // 评分窗口
@@ -85,6 +87,7 @@ extension AppStorageManager {
         //        defaults.register(defaults: [
         //            "isModelConfigManager": true,   // 默认开启 iCloud 同步
         //        ])
+        hasCompletedOnboarding  = defaults.bool(forKey: "hasCompletedOnboarding")   // 是否完成引导页
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
         // 首次使用时间
@@ -119,6 +122,7 @@ extension AppStorageManager {
         } // 还原加载进度标志
         let store = NSUbiquitousKeyValueStore.default
         
+        loadValueFromiCloud(key: "hasCompletedOnboarding")  // 是否完成引导页
         loadValueFromiCloud(key: "openCount")   // 进入课程详情页的次数
         loadValueFromiCloud(key: "hasRequestedReview")    // 评分弹窗
         loadValueFromiCloud(key: "firstUsed")    // 首次打开应用时间
@@ -139,6 +143,7 @@ extension AppStorageManager {
         }
         print("iCloud中 \(key) 值为\(store.object(forKey: key) ?? "None")")
         switch key {
+        case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
         case "hasRequestedReview": hasRequestedReview = store.bool(forKey: key)
         case "openCount": openCount = store.object(forKey: key) as? Int ?? 0
             // 首次打开应用时间

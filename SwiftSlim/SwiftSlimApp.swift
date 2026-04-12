@@ -19,7 +19,7 @@ struct SwiftSlimApp: App {
     @Environment(\.scenePhase) private var scenePhase
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environmentObject(appStorage)
         }
         .onChange(of: scenePhase) { newPhase in

@@ -1,18 +1,1133 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%@ (%@)" : {
+    "%lld lessons" : {
+      "comment" : "%lld 课时",
+      "extractionState" : "manual",
       "localizations" : {
-        "en" : {
+        "ar" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ (%2$@)"
+            "state" : "translated",
+            "value" : "%lld درسًا"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld урока"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld পাঠ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lliçons"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lekcí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lektioner"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Lektionen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld μαθήματα"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lecciones"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld oppituntia"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld leçons"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld પાઠ"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld שיעורים"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld पाठ"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lekcija"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lecke"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pelajaran"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lezioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld レッスン"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld сабақ"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ಪಾಠಗಳು"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 강의"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pamokos"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld പാഠങ്ങൾ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld धडे"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pelajaran"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld leksjoner"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lessen"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ପାଠ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ਪਾਠ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lekcji"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lições"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lecții"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld уроков"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lekcií"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lekcij"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lektioner"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld பாடங்கள்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld పాఠాలు"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld บทเรียน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ders"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld уроків"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld اسباق"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld bài học"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 课时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 課時"
           }
         }
       }
     },
-    "%lld" : {
-
+    "Are You Ready?" : {
+      "comment" : "准备好了吗？",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل أنت مستعد؟"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готови ли сте?"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "আপনি কি প্রস্তুত?"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estàs a punt?"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jste připraveni?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er du klar?"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bist du bereit?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Είστε έτοιμοι;"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás listo?"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oletko valmis?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Êtes-vous prêt ?"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "તૈયાર છો?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מוכנים?"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या आप तैयार हैं?"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeste li spremni?"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Készen áll?"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siap?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei pronto?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備はできましたか？"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дайынсыз ба?"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಸಿದ್ಧವೇ?"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "준비됐나요?"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ar pasiruošę?"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "തയ്യാറായോ?"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "तयार आहात?"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah bersedia?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er du klar?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ben je klaar?"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପ୍ରସ୍ତୁତ କି?"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਤਿਆਰ ਹੋ?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gotowy?"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Está pronto?"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ești gata?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готовы?"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ste pripravení?"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ste pripravljeni?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Är du redo?"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "தயாரா?"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "సిద్ధమేనా?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พร้อมไหม?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazır mısın?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готові?"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تیار ہیں؟"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng chưa?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备好了吗？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備好了嗎？"
+          }
+        }
+      }
+    },
+    "Basics" : {
+      "comment" : "基础入门",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأساسيات"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основи"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "মৌলিক পাঠ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inici bàsic"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Základy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grundlæggende"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grundlagen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βασικά"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fundamentos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perusteet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bases"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "મૂળભૂત પરિચય"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יסודות"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बुनियादी परिचय"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osnove"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alapok"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dasar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基礎入門"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Негіздер"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಮೂಲ ಪರಿಚಯ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기초 입문"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagrindai"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "അടിസ്ഥാന പരിചയം"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मूलभूत परिचय"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grunnleggende"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basis"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ମୂଳ ପରିଚୟ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਬੁਨਿਆਦੀ ਜਾਣ-ਪਛਾਣ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podstawy"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Básico"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noțiuni de bază"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основы"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Základy"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osnove"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grunder"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "அடிப்படை அறிமுகம்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ప్రాథమిక పరిచయం"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พื้นฐานเบื้องต้น"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temel bilgiler"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Основи"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بنیادی تعارف"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập môn cơ bản"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基础入门"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基礎入門"
+          }
+        }
+      }
+    },
+    "Beginner Courses" : {
+      "comment" : "入门课程",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دروس البداية"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начални уроци"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "শুরুর পাঠ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curs inicial"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úvodní lekce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startlektioner"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstiegskurse"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αρχικά μαθήματα"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curso inicial"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alkuopit"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cours d’entrée"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "શરૂઆતના પાઠ"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שיעורי התחלה"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "शुरुआती पाठ"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Početne lekcije"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kezdő leckék"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pelajaran awal"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lezioni base"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入門レッスン"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бастапқы сабақтар"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಆರಂಭಿಕ ಪಾಠಗಳು"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "입문 강의"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradžios pamokos"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "പ്രാരംഭ പാഠങ്ങൾ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुरुवातीचे धडे"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pelajaran asas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startkurs"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starterslessen"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପ୍ରାରମ୍ଭିକ ପାଠ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਸ਼ੁਰੂਆਤੀ ਪਾਠ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lekcje wstępne"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curso inicial"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecții de bază"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Базовые уроки"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úvodné lekcie"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začetne lekcije"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startlektioner"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "தொடக்க பாடங்கள்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ప్రారంభ పాఠాలు"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บทเรียนเริ่มต้น"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlangıç dersleri"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Початкові уроки"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابتدائی اسباق"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bài học nhập môn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入门课程"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入門課程"
+          }
+        }
+      }
     },
     "Brilliant Colors" : {
       "comment" : "006_绚丽的颜色",
@@ -574,6 +1689,570 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "構建個人簡歷頁面"
+          }
+        }
+      }
+    },
+    "Chapter 1" : {
+      "comment" : "第一章",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفصل 1"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Първа глава"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "অধ্যায় ১"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capítol 1"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapitola 1"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapitel 1"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapitel 1"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κεφάλαιο 1"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capítulo 1"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luku 1"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chapitre 1"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "અધ્યાય 1"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרק 1"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अध्याय 1"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poglavlje 1"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. fejezet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bab 1"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capitolo 1"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第1章"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1-тарау"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಅಧ್ಯಾಯ 1"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1장"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 skyrius"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "അദ്ധ്യായം 1"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अध्याय 1"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bab 1"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapittel 1"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoofdstuk 1"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ଅଧ୍ୟାୟ 1"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਅਧਿਆਇ 1"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozdział 1"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capítulo 1"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capitolul 1"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Глава 1"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapitola 1"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poglavje 1"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapitel 1"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "அத்தியாயம் 1"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "అధ్యాయం 1"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บทที่ 1"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bölüm 1"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розділ 1"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "باب 1"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chương 1"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一章"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一章"
+          }
+        }
+      }
+    },
+    "Combine tutorials with tools to create a more complete experience for learning, searching, and understanding." : {
+      "comment" : "让教程与工具相互配合，在学习、查找和理解之间建立更完整的体验。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دع الدروس والأدوات تعمل معًا لتمنحك تجربة أكثر تكاملًا في التعلّم والبحث والفهم."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Съчетава уроци и инструменти, за да създаде по-завършено изживяване при учене, търсене и разбиране."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "টিউটোরিয়াল ও টুল একসঙ্গে কাজ করে শেখা, খোঁজা ও বোঝার অভিজ্ঞতাকে আরও পূর্ণ করে।"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fes que els tutorials i les eines treballin junts per oferir una experiència més completa entre aprendre, cercar i entendre."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nechte lekce a nástroje spolupracovat a vytvořit tak ucelenější zážitek z učení, vyhledávání a porozumění."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lad lektioner og værktøjer arbejde sammen og skabe en mere komplet oplevelse på tværs af læring, søgning og forståelse."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lassen Sie Lektionen und Werkzeuge zusammenwirken, um ein vollständigeres Erlebnis beim Lernen, Suchen und Verstehen zu schaffen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αφήστε τα μαθήματα και τα εργαλεία να συνεργαστούν, ώστε να δημιουργηθεί μια πιο ολοκληρωμένη εμπειρία μάθησης, αναζήτησης και κατανόησης."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz que las lecciones y las herramientas trabajen juntas para crear una experiencia más completa entre aprender, buscar y entender."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anna oppituntien ja työkalujen toimia yhdessä, jotta oppimisen, hakemisen ja ymmärtämisen kokemus olisi kokonaisvaltaisempi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites travailler ensemble les leçons et les outils pour offrir une expérience plus complète entre apprentissage, recherche et compréhension."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "પાઠ અને સાધનોને સાથે કામ કરવા દો, જેથી શીખવા, શોધવા અને સમજવા વચ્ચે વધુ પૂર્ણ અનુભવ સર્જાય."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפשרו לשיעורים ולכלים לעבוד יחד כדי ליצור חוויה שלמה יותר בין למידה, חיפוש והבנה."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पाठों और टूल्स को साथ मिलकर काम करने दें, ताकि सीखने, खोजने और समझने के बीच अधिक पूर्ण अनुभव बन सके।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neka lekcije i alati rade zajedno kako bi stvorili potpunije iskustvo u učenju, pretraživanju i razumijevanju."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hagyja, hogy a leckék és az eszközök együtt működjenek, és teljesebb élményt nyújtsanak a tanulás, keresés és megértés során."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biarkan pelajaran dan alat bekerja bersama untuk menciptakan pengalaman yang lebih lengkap dalam belajar, mencari, dan memahami."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fai lavorare insieme lezioni e strumenti per creare un’esperienza più completa tra apprendimento, ricerca e comprensione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チュートリアルとツールを連携させ、学ぶこと・探すこと・理解することをより一体的な体験にします。"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сабақтар мен құралдар бірге жұмыс істеп, үйрену, іздеу және түсіну арасында анағұрлым толық тәжірибе қалыптастырсын."
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಪಾಠಗಳು ಮತ್ತು ಸಾಧನಗಳು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವಂತೆ ಮಾಡಿ, ಕಲಿಕೆ, ಹುಡುಕಾಟ ಮತ್ತು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವಿಕೆಯಲ್ಲಿ ಹೆಚ್ಚು ಸಂಪೂರ್ಣ ಅನುಭವವನ್ನು ನಿರ್ಮಿಸಿ."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "튜토리얼과 도구가 서로 어우러져 학습, 검색, 이해를 더 완전한 경험으로 연결합니다."
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leiskite pamokoms ir įrankiams veikti kartu, kad mokymasis, paieška ir supratimas taptų visapusiškesne patirtimi."
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "പാഠങ്ങളും ഉപകരണങ്ങളും ഒരുമിച്ച് പ്രവർത്തിച്ച് പഠനം, തിരച്ചിൽ, മനസ്സിലാക്കൽ എന്നിവയ്ക്കിടയിൽ കൂടുതൽ സമ്പൂർണമായ അനുഭവം സൃഷ്ടിക്കട്ടെ."
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "धडे आणि साधने एकत्र काम करू द्या, ज्यामुळे शिकणे, शोधणे आणि समजणे यामध्ये अधिक पूर्ण अनुभव तयार होईल."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biarkan pelajaran dan alat saling bekerjasama untuk membina pengalaman yang lebih lengkap dalam pembelajaran, carian dan pemahaman."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La leksjoner og verktøy spille sammen for å skape en mer helhetlig opplevelse av læring, søk og forståelse."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laat lessen en tools samenwerken om een completere ervaring te bieden bij leren, zoeken en begrijpen."
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପାଠ ଓ ଉପକରଣଗୁଡ଼ିକୁ ଏକସାଥିରେ କାମ କରିବାକୁ ଦିଅନ୍ତୁ, ଯାହା ଶିଖିବା, ଖୋଜିବା ଓ ବୁଝିବାରେ ଅଧିକ ସମ୍ପୂର୍ଣ୍ଣ ଅନୁଭବ ଗଢ଼େ।"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਪਾਠਾਂ ਅਤੇ ਸਾਧਨਾਂ ਨੂੰ ਇਕੱਠੇ ਕੰਮ ਕਰਨ ਦਿਓ, ਤਾਂ ਜੋ ਸਿੱਖਣ, ਖੋਜਣ ਅਤੇ ਸਮਝਣ ਵਿੱਚ ਹੋਰ ਪੂਰਾ ਅਨੁਭਵ ਬਣੇ।"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niech lekcje i narzędzia współpracują, aby tworzyć pełniejsze doświadczenie w nauce, wyszukiwaniu i rozumieniu."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faça com que lições e ferramentas trabalhem juntas para criar uma experiência mais completa entre aprender, buscar e entender."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lasă lecțiile și instrumentele să lucreze împreună pentru a crea o experiență mai completă între învățare, căutare și înțelegere."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пусть уроки и инструменты работают вместе, создавая более целостный опыт в обучении, поиске и понимании."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nech lekcie a nástroje spolupracujú a vytvoria tak ucelenejší zážitok z učenia, vyhľadávania a porozumenia."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naj lekcije in orodja sodelujejo ter ustvarijo bolj celovito izkušnjo pri učenju, iskanju in razumevanju."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Låt lektioner och verktyg samverka för att skapa en mer komplett upplevelse av att lära, söka och förstå."
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "பாடங்களும் கருவிகளும் ஒன்றுடன் ஒன்று இணைந்து செயல்பட்டு, கற்றல், தேடல் மற்றும் புரிதல் ஆகியவற்றில் மேலும் முழுமையான அனுபவத்தை உருவாக்கட்டும்."
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "పాఠాలు మరియు సాధనాలు కలిసి పనిచేసి, నేర్చుకోవడం, వెతకడం మరియు అర్థం చేసుకోవడం మధ్య మరింత సంపూర్ణ అనుభవాన్ని రూపొందించనివ్వండి."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ให้บทเรียนและเครื่องมือทำงานร่วมกัน เพื่อสร้างประสบการณ์ที่สมบูรณ์ยิ่งขึ้นระหว่างการเรียนรู้ การค้นหา และความเข้าใจ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dersler ve araçlar birlikte çalışarak öğrenme, arama ve anlama arasında daha bütünlüklü bir deneyim oluştursun."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нехай уроки й інструменти працюють разом, створюючи повніший досвід у навчанні, пошуку та розумінні."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسباق اور ٹولز کو ساتھ کام کرنے دیں تاکہ سیکھنے، تلاش کرنے اور سمجھنے کے درمیان ایک زیادہ مکمل تجربہ بن سکے۔"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy để bài học và công cụ phối hợp với nhau để tạo nên trải nghiệm trọn vẹn hơn giữa học, tìm kiếm và hiểu."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让教程与工具相互配合，在学习、查找和理解之间建立更完整的体验。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "讓教學與工具相互配合，在學習、查找與理解之間建立更完整的體驗。"
           }
         }
       }
@@ -1987,6 +3666,288 @@
         }
       }
     },
+    "From syntax to interface, from examples to practice, learn SwiftUI in a way that is easier to understand." : {
+      "comment" : "从语法到界面，从示例到实践，用更容易理解的方式带你进入 SwiftUI。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من القواعد إلى الواجهة، ومن الأمثلة إلى التطبيق، ندخلك إلى SwiftUI بطريقة أسهل للفهم."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От синтаксиса до интерфейса, от примерите до практиката — навлезте в SwiftUI по по-лесен за разбиране начин."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ভাষার নিয়ম থেকে ইন্টারফেস, উদাহরণ থেকে অনুশীলন—আরও সহজভাবে SwiftUI-তে প্রবেশ করতে সাহায্য করবে।"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De la sintaxi a la interfície, dels exemples a la pràctica, entra a SwiftUI d’una manera més fàcil d’entendre."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od syntaxe po rozhraní, od příkladů k praxi — pronikněte do SwiftUI srozumitelnějším způsobem."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra syntaks til grænseflade, fra eksempler til praksis, kom ind i SwiftUI på en måde, der er lettere at forstå."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Von der Syntax zur Oberfläche, von Beispielen zur Praxis — lernen Sie SwiftUI auf eine leichter verständliche Weise kennen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Από τη σύνταξη έως το περιβάλλον διεπαφής, από τα παραδείγματα στην πράξη, μπείτε στο SwiftUI με έναν πιο εύκολο και κατανοητό τρόπο."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De la sintaxis a la interfaz, de los ejemplos a la práctica, entra en SwiftUI de una forma más fácil de entender."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Syntaksista käyttöliittymään, esimerkeistä käytäntöön — tutustu SwiftUIhin helpommin ymmärrettävällä tavalla."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De la syntaxe à l’interface, des exemples à la pratique, entrez dans SwiftUI d’une manière plus facile à comprendre."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "સિન્ટેક્સથી ઈન્ટરફેસ સુધી, ઉદાહરણોથી પ્રયોગ સુધી, વધુ સરળ રીતે SwiftUI માં પ્રવેશ કરો."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מהתחביר אל הממשק, מהדוגמאות אל התרגול, היכנסו ל-SwiftUI בדרך קלה יותר להבנה."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिंटैक्स से इंटरफ़ेस तक, उदाहरणों से अभ्यास तक, आपको SwiftUI में एक अधिक आसान तरीके से प्रवेश कराया जाता है।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od sintakse do sučelja, od primjera do prakse, uvedite se u SwiftUI na lakši i razumljiviji način."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A szintaxistól a felületig, a példáktól a gyakorlatig — ismerje meg a SwiftUI-t könnyebben érthető módon."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dari sintaks ke antarmuka, dari contoh ke praktik, masuk ke SwiftUI dengan cara yang lebih mudah dipahami."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalla sintassi all’interfaccia, dagli esempi alla pratica, entra in SwiftUI in un modo più facile da capire."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文法から画面へ、例から実践へ、より理解しやすい形で SwiftUI の世界へ入っていきましょう。"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синтаксистен интерфейске, мысалдардан тәжірибеге дейін — SwiftUI-ге түсінуге жеңіл жолмен қадам басыңыз."
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಸಿಂಟ್ಯಾಕ್ಸ್‌ನಿಂದ ಇಂಟರ್ಫೇಸ್‌ವರೆಗೆ, ಉದಾಹರಣೆಗಳಿಂದ ಅಭ್ಯಾಸದವರೆಗೆ, ಇನ್ನಷ್ಟು ಸುಲಭವಾಗಿ ಅರ್ಥವಾಗುವ ರೀತಿಯಲ್ಲಿ SwiftUI ಗೆ ನಿಮ್ಮನ್ನು ಕರೆದುಕೊಂಡು ಹೋಗುತ್ತದೆ."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "문법에서 화면까지, 예제에서 실전까지, 더 쉽게 이해할 수 있는 방식으로 SwiftUI에 입문해 보세요."
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuo sintaksės iki sąsajos, nuo pavyzdžių iki praktikos — pažinkite SwiftUI lengviau suprantamu būdu."
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "സിന്റാക്സിൽ നിന്ന് ഇന്റർഫേസിലേക്ക്, ഉദാഹരണങ്ങളിൽ നിന്ന് പ്രായോഗിക ഉപയോഗത്തിലേക്ക്, കൂടുതൽ എളുപ്പത്തിൽ മനസിലാകുന്ന രീതിയിൽ SwiftUIയിലേക്ക് നിങ്ങളെ കൈപിടിച്ചുനയിക്കുന്നു."
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सिंटॅक्सपासून इंटरफेसपर्यंत, उदाहरणांपासून सरावापर्यंत, अधिक सोप्या पद्धतीने तुम्हाला SwiftUI मध्ये घेऊन जाते."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dari sintaks ke antara muka, daripada contoh ke amali, bawa anda masuk ke SwiftUI dengan cara yang lebih mudah difahami."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fra syntaks til grensesnitt, fra eksempler til praksis, gir det deg en lettere forståelig vei inn i SwiftUI."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Van syntaxis tot interface, van voorbeelden tot praktijk, maak kennis met SwiftUI op een beter te begrijpen manier."
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ସିନ୍ଟାକ୍ସରୁ ଇଣ୍ଟରଫେସ୍ ପର୍ଯ୍ୟନ୍ତ, ଉଦାହରଣରୁ ପ୍ରୟୋଗ ପର୍ଯ୍ୟନ୍ତ, ଅଧିକ ସହଜରେ ବୁଝିପାରିବା ଭଳି ଭାବରେ SwiftUI କୁ ନେଇଯାଏ।"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਸਿੰਟੈਕਸ ਤੋਂ ਇੰਟਰਫੇਸ ਤੱਕ, ਉਦਾਹਰਣਾਂ ਤੋਂ ਅਭਿਆਸ ਤੱਕ, ਤੁਹਾਨੂੰ SwiftUI ਵਿੱਚ ਹੋਰ ਆਸਾਨ ਤਰੀਕੇ ਨਾਲ ਲੈ ਜਾਂਦਾ ਹੈ।"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od składni do interfejsu, od przykładów do praktyki — poznawaj SwiftUI w sposób łatwiejszy do zrozumienia."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da sintaxe à interface, dos exemplos à prática, entre no SwiftUI de uma forma mais fácil de entender."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De la sintaxă la interfață, de la exemple la practică, intră în SwiftUI într-un mod mai ușor de înțeles."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От синтаксиса к интерфейсу, от примеров к практике — погружайтесь в SwiftUI более понятным способом."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od syntaxe po rozhranie, od príkladov k praxi — vstúpte do SwiftUI zrozumiteľnejším spôsobom."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Od sintakse do vmesnika, od primerov do prakse — spoznajte SwiftUI na lažje razumljiv način."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Från syntax till gränssnitt, från exempel till praktik, ta steget in i SwiftUI på ett sätt som är lättare att förstå."
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "இலக்கணத்திலிருந்து இடைமுகம் வரை, எடுத்துக்காட்டிலிருந்து நடைமுறை வரை, மேலும் எளிதாகப் புரிந்துகொள்ளும் வகையில் SwiftUI-க்கு உங்களை அழைத்துச் செல்கிறது."
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "సింటాక్స్ నుంచి ఇంటర్‌ఫేస్ వరకు, ఉదాహరణల నుంచి ప్రాక్టీస్ వరకు, మరింత సులభంగా అర్థమయ్యే విధంగా SwiftUI లోకి తీసుకెళ్తుంది."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จากไวยากรณ์สู่หน้าตา จากตัวอย่างสู่การลงมือทำ พาคุณเข้าสู่ SwiftUI ด้วยวิธีที่เข้าใจได้ง่ายขึ้น"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sözdiziminden arayüze, örneklerden pratiğe, SwiftUI’ye daha kolay anlaşılır bir şekilde giriş yapın."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Від синтаксису до інтерфейсу, від прикладів до практики — занурюйтесь у SwiftUI у більш зрозумілий спосіб."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نحو سے انٹرفیس تک، مثالوں سے عملی استعمال تک، آپ کو SwiftUI میں زیادہ آسانی سے سمجھ آنے والے انداز میں لے جاتا ہے۔"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Từ cú pháp đến giao diện, từ ví dụ đến thực hành, đưa bạn vào SwiftUI theo cách dễ hiểu hơn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从语法到界面，从示例到实践，用更容易理解的方式带你进入 SwiftUI。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從語法到介面，從範例到實作，用更容易理解的方式帶你進入 SwiftUI。"
+          }
+        }
+      }
+    },
     "Getting to Know Xcode" : {
       "comment" : "001_认识Xcode",
       "extractionState" : "manual",
@@ -2829,6 +4790,288 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "佈局、圖片和文字"
+          }
+        }
+      }
+    },
+    "Learn SwiftUI" : {
+      "comment" : "轻松学 SwiftUI",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلّم SwiftUI"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учи SwiftUI"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সহজে SwiftUI"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprèn SwiftUI"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Učte se SwiftUI"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lær SwiftUI"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI lernen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μάθε SwiftUI"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprende SwiftUI"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opi SwiftUI"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apprendre SwiftUI"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "સરળ SwiftUI"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ללמוד SwiftUI"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आसान SwiftUI"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uči SwiftUI"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI könnyen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belajar SwiftUI"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impara SwiftUI"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やさしく学ぶSwiftUI"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI үйрену"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಸುಲಭ SwiftUI"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쉽게 배우는 SwiftUI"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mokykis SwiftUI"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ലളിത SwiftUI"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सोपे SwiftUI"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belajar SwiftUI"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lær SwiftUI"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer SwiftUI"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ସହଜ SwiftUI"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਆਸਾਨ SwiftUI"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nauka SwiftUI"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprenda SwiftUI"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Învață SwiftUI"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Легко о SwiftUI"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Učte sa SwiftUI"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uči se SwiftUI"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lär dig SwiftUI"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "எளிய SwiftUI"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "సులభ SwiftUI"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เรียน SwiftUI"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI Öğren"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вивчай SwiftUI"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آسان SwiftUI"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học SwiftUI"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "轻松学 SwiftUI"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輕鬆學 SwiftUI"
           }
         }
       }
@@ -3957,6 +6200,288 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "電影清單"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "comment" : "下一步",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التالي"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напред"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "পরবর্তী"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Següent"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Další"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Næste"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επόμενο"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siguiente"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuraava"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "આગળ"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הבא"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अगला"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sljedeće"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tovább"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berikutnya"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次へ"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Келесі"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಮುಂದಿನದು"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitas"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "അടുത്തത്"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पुढील"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seterusnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volgende"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପରବର୍ତ୍ତୀ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਅਗਲਾ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalej"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguinte"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Următorul"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ďalej"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naprej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "அடுத்து"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "తదుపరి"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถัดไป"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İleri"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далі"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اگلا"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp theo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
           }
         }
       }
@@ -5653,6 +8178,288 @@
         }
       }
     },
+    "Skip" : {
+      "comment" : "跳过",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطي"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропускане"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "এড়িয়ে যান"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omet"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přeskočit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spring over"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παράλειψη"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omitir"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohita"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "છોડો"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דלג"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "छोड़ें"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preskoči"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kihagyás"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lewati"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өткізіп жіберу"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಬಿಟ್ಟುಬಿಡಿ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "건너뛰기"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Praleisti"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ഒഴിവാക്കുക"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वगळा"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langkau"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hopp over"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overslaan"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ଛାଡନ୍ତୁ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਛੱਡੋ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomiń"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ignorar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omite"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preskočiť"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preskoči"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoppa över"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "தவிர்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "దాటవేయి"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้าม"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atla"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустити"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چھوڑیں"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bỏ qua"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳过"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳過"
+          }
+        }
+      }
+    },
     "Start from ContentView" : {
       "comment" : "002_从 ContentView 开始",
       "extractionState" : "manual",
@@ -5931,6 +8738,852 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "從 ContentView 開始"
+          }
+        }
+      }
+    },
+    "Start Learning" : {
+      "comment" : "开始学习",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ التعلم"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Започнете"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "শেখা শুরু"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comença"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začít"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start læring"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt lernen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita opiskelu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "શીખવાનું શરૂ કરો"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התחל ללמוד"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सीखना शुरू करें"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Počni učiti"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kezdje el"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai belajar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "学習を始める"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оқуды бастау"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಕಲಿಕೆ ಆರಂಭಿಸಿ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "학습 시작"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradėti"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "പഠനം തുടങ്ങുക"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "शिकणे सुरू करा"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mula belajar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start læring"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin met leren"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ଶିଖିବା ଆରମ୍ଭ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਸਿੱਖਣਾ ਸ਼ੁਰੂ ਕਰੋ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zacznij naukę"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începe"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začať"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začni"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja lära"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "கற்றலை தொடங்கு"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "నేర్చుకోవడం ప్రారంభించండి"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มเรียนรู้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğrenmeye başla"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почати"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سیکھنا شروع کریں"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu học"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始学习"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始學習"
+          }
+        }
+      }
+    },
+    "Start with the fundamentals, learn common SwiftUI patterns step by step, and build a clear development mindset." : {
+      "comment" : "从基础内容开始，逐步学习 SwiftUI 常见用法，建立清晰的开发思路。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ من الأساسيات وتعلّم استخدامات SwiftUI الشائعة خطوةً بخطوة لبناء فهم واضح للتطوير."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "От основите нататък изучавайте постепенно често използваните начини за работа със SwiftUI и изградете ясен подход към разработката."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "মৌলিক বিষয় থেকে শুরু করে ধাপে ধাপে SwiftUI-এর সাধারণ ব্যবহার শিখে পরিষ্কার ডেভেলপমেন্ট ধারণা গড়ে তুলুন।"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comença pels continguts bàsics, aprèn a poc a poc els usos més habituals de SwiftUI i construeix una idea clara del desenvolupament."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začněte od základů, postupně se učte běžné použití SwiftUI a vybudujte si jasný přístup k vývoji."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start med det grundlæggende, lær de mest almindelige måder at bruge SwiftUI på trin for trin, og opbyg en klar forståelse af udvikling."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginnen Sie mit den Grundlagen, lernen Sie Schritt für Schritt die gängigen Anwendungen von SwiftUI und entwickeln Sie ein klares Verständnis für die Entwicklung."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε από τα βασικά, μάθετε σταδιακά τις συνηθισμένες χρήσεις του SwiftUI και διαμορφώστε μια ξεκάθαρη λογική ανάπτυξης."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empieza por lo básico, aprende poco a poco los usos más comunes de SwiftUI y construye una idea clara del desarrollo."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita perusteista, opi SwiftUI:n yleiset käyttötavat vaihe vaiheelta ja rakenna selkeä käsitys sovelluskehityksestä."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencez par les bases, apprenez progressivement les usages courants de SwiftUI et construisez une logique de développement claire."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "મૂળભૂત સામગ્રીથી શરૂઆત કરો, ધીમે ધીમે SwiftUI ના સામાન્ય ઉપયોગો શીખો અને વિકાસ માટે સ્પષ્ટ સમજ બનાવો."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התחילו מהיסודות, למדו בהדרגה את השימושים הנפוצים של SwiftUI, ובנו דרך חשיבה ברורה לפיתוח."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बुनियादी सामग्री से शुरू करें, धीरे-धीरे SwiftUI के सामान्य उपयोग सीखें, और विकास की स्पष्ट समझ बनाएं।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krenite od osnova, postupno učite najčešće načine korištenja SwiftUI-ja i izgradite jasan razvojni način razmišljanja."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kezdje az alapokkal, fokozatosan tanulja meg a SwiftUI gyakori használatát, és alakítson ki világos fejlesztési szemléletet."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulailah dari dasar, pelajari penggunaan umum SwiftUI secara bertahap, dan bangun pemahaman pengembangan yang jelas."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia dalle basi, impara gradualmente gli usi più comuni di SwiftUI e costruisci un approccio chiaro allo sviluppo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基礎内容から始めて、SwiftUI の一般的な使い方を少しずつ学び、明確な開発の考え方を身につけましょう。"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Негіздерден бастаңыз, SwiftUI-дің жиі қолданылатын тәсілдерін біртіндеп үйреніп, әзірлеудің айқын түсінігін қалыптастырыңыз."
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಮೂಲಭುತ ವಿಷಯಗಳಿಂದ ಆರಂಭಿಸಿ, ಹಂತ ಹಂತವಾಗಿ SwiftUI ಯ ಸಾಮಾನ್ಯ ಬಳಕೆಗಳನ್ನು ಕಲಿಯಿರಿ ಮತ್ತು ಅಭಿವೃದ್ಧಿಯ ಸ್ಪಷ್ಟ ಆಲೋಚನೆ ರೂಪಿಸಿಕೊಳ್ಳಿ."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기초 내용부터 시작해 SwiftUI의 자주 쓰는 사용법을 단계적으로 배우고, 명확한 개발 사고를 세워보세요."
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradėkite nuo pagrindų, po truputį mokykitės įprastų SwiftUI naudojimo būdų ir susikurkite aiškų požiūrį į kūrimą."
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "അടിസ്ഥാനങ്ങളിൽ നിന്ന് തുടങ്ങുക, SwiftUIയുടെ സാധാരണ ഉപയോഗങ്ങൾ ഘട്ടംഘട്ടമായി പഠിക്കുക, വികസനത്തെക്കുറിച്ചുള്ള വ്യക്തമായ ധാരണ രൂപപ്പെടുത്തുക."
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मूलभूत गोष्टींपासून सुरुवात करा, हळूहळू SwiftUI चे सामान्य उपयोग शिका आणि विकासाची स्पष्ट समज तयार करा."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulakan dengan asas, pelajari penggunaan biasa SwiftUI secara beransur-ansur, dan bina pemahaman pembangunan yang jelas."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start med det grunnleggende, lær vanlige måter å bruke SwiftUI på steg for steg, og bygg en tydelig forståelse av utvikling."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin met de basis, leer stap voor stap de meest gebruikte toepassingen van SwiftUI en bouw een duidelijke ontwikkelgedachte op."
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ମୂଳ ଆଧାରରୁ ଆରମ୍ଭ କରନ୍ତୁ, ପର୍ଯ୍ୟାୟକ୍ରମେ SwiftUI ର ସାଧାରଣ ବ୍ୟବହାର ଶିଖନ୍ତୁ, ଏବଂ ବିକାଶ ସମ୍ପର୍କରେ ସ୍ପଷ୍ଟ ଧାରଣା ଗଢ଼ନ୍ତୁ।"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਬੁਨਿਆਦੀ ਸਮੱਗਰੀ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ, ਹੌਲੀ-ਹੌਲੀ SwiftUI ਦੇ ਆਮ ਵਰਤਾਰੇ ਸਿੱਖੋ ਅਤੇ ਵਿਕਾਸ ਬਾਰੇ ਸਾਫ਼ ਸਮਝ ਬਣਾਓ।"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zacznij od podstaw, stopniowo ucz się najczęstszych zastosowań SwiftUI i zbuduj jasne podejście do tworzenia aplikacji."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comece pelo básico, aprenda aos poucos os usos mais comuns do SwiftUI e construa uma visão clara de desenvolvimento."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începeți cu noțiunile de bază, învățați treptat utilizările comune ale SwiftUI și construiți o gândire clară pentru dezvoltare."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начните с основ, постепенно изучайте распространённые способы использования SwiftUI и формируйте чёткое понимание разработки."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začnite od základov, postupne sa učte bežné spôsoby používania SwiftUI a vytvorte si jasný prístup k vývoju."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začnite z osnovami, postopoma spoznavajte pogoste načine uporabe SwiftUI-ja in oblikujte jasno predstavo o razvoju."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja med grunderna, lär dig steg för steg de vanligaste sätten att använda SwiftUI och bygg upp en tydlig förståelse för utveckling."
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "அடிப்படையிலிருந்து தொடங்கி, SwiftUI-ի பொதுவான பயன்பாடுகளை படிப்படியாக கற்றுக்கொண்டு, மேம்பாட்டிற்கான தெளிவான புரிதலை உருவாக்குங்கள்."
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ప్రాథమిక విషయాలతో ప్రారంభించి, SwiftUI యొక్క సాధారణ వినియోగాలను దశలవారీగా నేర్చుకుని, అభివృద్ధిపై స్పష్టమైన అవగాహనను నిర్మించండి."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มจากเนื้อหาพื้นฐาน ค่อย ๆ เรียนรู้การใช้งาน SwiftUI ที่พบบ่อย และสร้างแนวคิดการพัฒนาที่ชัดเจน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temel içeriklerden başlayın, SwiftUI’nin yaygın kullanımlarını adım adım öğrenin ve geliştirme için net bir bakış oluşturun."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почніть з основ, поступово вивчайте поширені способи використання SwiftUI та сформуйте чітке розуміння розробки."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بنیادی مواد سے آغاز کریں، آہستہ آہستہ SwiftUI کے عام استعمالات سیکھیں، اور ترقی کے لیے واضح سمجھ بنائیں۔"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu từ nội dung cơ bản, từng bước học các cách dùng phổ biến của SwiftUI và xây dựng tư duy phát triển rõ ràng."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从基础内容开始，逐步学习 SwiftUI 常见用法，建立清晰的开发思路。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從基礎內容開始，逐步學習 SwiftUI 常見用法，建立清晰的開發思路。"
+          }
+        }
+      }
+    },
+    "Starting now, write your first line of code and gradually build your very first app." : {
+      "comment" : "从现在开始，尝试写下第一行代码，慢慢构建属于你的第一个 App。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من الآن، جرّب كتابة أول سطر برمجي وابدأ تدريجيًا في بناء تطبيقك الأول."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Започнете още сега, опитайте да напишете първия си ред код и постепенно създайте първото си собствено приложение."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "এখন থেকেই প্রথম কোডের লাইনটি লিখে ধীরে ধীরে আপনার প্রথম App তৈরি করা শুরু করুন।"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comença ara, prova d’escriure la teva primera línia de codi i ves construint a poc a poc la teva primera app."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začněte hned teď, zkuste napsat svůj první řádek kódu a postupně vytvořte svou první aplikaci."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start nu, prøv at skrive din første linje kode, og byg langsomt din første app."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginnen Sie jetzt, schreiben Sie Ihre erste Codezeile und bauen Sie nach und nach Ihre erste App."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε τώρα, δοκιμάστε να γράψετε την πρώτη σας γραμμή κώδικα και χτίστε σταδιακά την πρώτη σας εφαρμογή."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empieza ahora, intenta escribir tu primera línea de código y construye poco a poco tu primera app."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita nyt, kokeile kirjoittaa ensimmäinen koodirivisi ja rakenna vähitellen ensimmäinen sovelluksesi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencez dès maintenant, essayez d’écrire votre première ligne de code et créez progressivement votre première app."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "હવે જ શરૂઆત કરો, તમારી પહેલી કોડ લાઇન લખવાનો પ્રયાસ કરો અને ધીમે ધીમે તમારી પહેલી એપ બનાવો."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התחילו עכשיו, נסו לכתוב את שורת הקוד הראשונה שלכם, ובנו בהדרגה את האפליקציה הראשונה שלכם."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अभी शुरू करें, अपनी पहली कोड पंक्ति लिखने की कोशिश करें, और धीरे-धीरे अपना पहला ऐप बनाएं।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Počnite odmah, pokušajte napisati svoj prvi redak koda i postupno izgradite svoju prvu aplikaciju."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kezdje el most, próbálja meg leírni az első kódsorát, és fokozatosan építse fel az első alkalmazását."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai sekarang, coba tulis baris kode pertamamu, dan bangun aplikasi pertamamu secara bertahap."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia da ora, prova a scrivere la tua prima riga di codice e costruisci poco a poco la tua prima app."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今から始めて、最初の1行のコードを書いてみて、少しずつ自分だけの最初のアプリを作っていきましょう。"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дәл қазір бастаңыз, алғашқы кодыңыздың жолын жазып көріңіз және өзіңіздің алғашқы қолданбаңызды біртіндеп құрастырыңыз."
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " ಈಗಲೇ ಪ್ರಾರಂಭಿಸಿ, ನಿಮ್ಮ ಮೊದಲ ಕೋಡ್ ಸಾಲನ್ನು ಬರೆಯಲು ಪ್ರಯತ್ನಿಸಿ ಮತ್ತು ನಿಧಾನವಾಗಿ ನಿಮ್ಮ ಮೊದಲ ಆಪ್ ಅನ್ನು ನಿರ್ಮಿಸಿರಿ."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지금부터 시작해 첫 번째 코드 한 줄을 써 보고, 천천히 나만의 첫 App을 만들어 보세요."
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradėkite dabar, pabandykite parašyti pirmąją kodo eilutę ir pamažu kurkite savo pirmąją programėlę."
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ഇപ്പോൾ തന്നെ തുടങ്ങൂ, നിങ്ങളുടെ ആദ്യ കോഡ് വരി എഴുതാൻ ശ്രമിക്കൂ, പിന്നെ പതുക്കെ നിങ്ങളുടെ ആദ്യ ആപ്പ് നിർമ്മിക്കൂ."
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आत्ताच सुरू करा, तुमची पहिली कोडची ओळ लिहून पाहा आणि हळूहळू तुमचे पहिले अॅप तयार करा."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulakan sekarang, cuba tulis baris kod pertama anda, dan bina aplikasi pertama anda sedikit demi sedikit."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start nå, prøv å skrive din første kodelinje, og bygg gradvis din første app."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin nu, probeer je eerste regel code te schrijven en bouw stap voor stap aan je eerste app."
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ଏବେଠାରୁ ଆରମ୍ଭ କରନ୍ତୁ, ନିଜର ପ୍ରଥମ କୋଡ୍ ଲାଇନ୍ ଲେଖିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ, ଏବଂ ଧୀରେ ଧୀରେ ନିଜର ପ୍ରଥମ ଆପ୍ ତିଆରି କରନ୍ତୁ।"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਹੁਣੇ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ, ਆਪਣੀ ਪਹਿਲੀ ਕੋਡ ਲਾਈਨ ਲਿਖਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਅਤੇ ਹੌਲੀ-ਹੌਲੀ ਆਪਣੀ ਪਹਿਲੀ ਐਪ ਬਣਾਓ।"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zacznij już teraz, spróbuj napisać swoją pierwszą linię kodu i stopniowo twórz swoją pierwszą aplikację."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comece agora, tente escrever sua primeira linha de código e vá construindo aos poucos seu primeiro app."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începeți chiar acum, încercați să scrieți prima linie de cod și construiți treptat prima voastră aplicație."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начните прямо сейчас, попробуйте написать первую строку кода и постепенно создайте своё первое приложение."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začnite hneď teraz, skúste napísať svoj prvý riadok kódu a postupne vytvorte svoju prvú aplikáciu."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Začnite zdaj, poskusite napisati svojo prvo vrstico kode in postopoma zgradite svojo prvo aplikacijo."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja nu, prova att skriva din första rad kod och bygg steg för steg din första app."
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "இப்போதே தொடங்குங்கள், உங்கள் முதல் குறியீட்டு வரியை எழுதிப் பார்த்து, மெதுவாக உங்கள் முதல் ஆப்பை உருவாக்குங்கள்."
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ఇప్పుడే ప్రారంభించండి, మీ మొదటి కోడ్ పంక్తిని రాయడానికి ప్రయత్నించి, మెల్లగా మీ మొదటి యాప్‌ను నిర్మించండి."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มตั้งแต่ตอนนี้ ลองเขียนโค้ดบรรทัดแรกของคุณ แล้วค่อย ๆ สร้างแอปแรกของคุณขึ้นมา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdi başlayın, ilk kod satırınızı yazmayı deneyin ve ilk uygulamanızı yavaş yavaş oluşturun."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почніть уже зараз, спробуйте написати свій перший рядок коду та поступово створіть свій перший застосунок."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابھی سے شروع کریں، اپنی پہلی کوڈ لائن لکھنے کی کوشش کریں، اور آہستہ آہستہ اپنی پہلی ایپ بنائیں۔"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu ngay từ bây giờ, thử viết dòng mã đầu tiên của bạn và dần dần xây dựng ứng dụng đầu tiên của mình."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从现在开始，尝试写下第一行代码，慢慢构建属于你的第一个 App。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從現在開始，嘗試寫下第一行程式碼，慢慢打造屬於你的第一個 App。"
           }
         }
       }
@@ -6777,6 +10430,288 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SwiftUI 視圖生命週期"
+          }
+        }
+      }
+    },
+    "Tools" : {
+      "comment" : "开发者工具箱",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدوات المطور"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Инструменти"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ডেভেলপার টুলবক্স"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eines"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nástroje"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Værktøjer"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tools"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εργαλεία"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herramientas"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Työkalut"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outils"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ડેવલપર ટૂલબોક્સ"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כלים"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेवलपर टूलबॉक्स"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alati za razvoj"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eszközök"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alat"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strumenti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开发者ツール"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Құралдар"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಸಾಧನಗಳು"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개발자 도구함"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Įrankiai"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ഉപകരണങ്ങൾ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेव्हलपर टूलबॉक्स"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utviklerverktøy"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tools"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ଟୁଲ୍ସ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਡਿਵੈਲਪਰ ਟੂਲਬਾਕਸ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Narzędzia"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferramentas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instrumente"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Инструменты"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nástroje"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orodja"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utvecklarverktyg"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "கருவிகள்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "సాధనాలు"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เครื่องมือ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Araçlar"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інструменти"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ٹولز"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công cụ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开发者工具箱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開發者工具箱"
           }
         }
       }
