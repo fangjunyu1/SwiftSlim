@@ -10,7 +10,6 @@ import SwiftUI
 struct OnboardingView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @State private var step = OnboardingStep.learnSwiftUI
-    let numberOfCourses = 20
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -22,8 +21,7 @@ struct OnboardingView: View {
                     ForEach(OnboardingStep.allCases) { item in
                         OnboardingPageContainer(
                             step: step,
-                            currentStep: item,
-                            numberOfCourses: numberOfCourses
+                            currentStep: item
                         )
                         .tag(item)
                     }
@@ -68,7 +66,7 @@ struct OnboardingView: View {
         .padding(30)
     }
     
-    // 下一步按钮
+    // 下一步 按钮
     private var actionButton: some View {
         Button(action: {
             if let next = step.next() {
@@ -97,6 +95,7 @@ struct OnboardingView: View {
     }
 }
 
+// 按钮样式
 struct PressScaleButtonStyle: ButtonStyle {
     var scale: CGFloat = 0.9
     

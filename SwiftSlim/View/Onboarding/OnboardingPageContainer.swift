@@ -10,7 +10,6 @@ import SwiftUI
 struct OnboardingPageContainer: View {
     let step: OnboardingStep
     let currentStep: OnboardingStep
-    let numberOfCourses: Int
     var body: some View {
         VStack(spacing: 30) {
             animationArea
@@ -23,12 +22,12 @@ struct OnboardingPageContainer: View {
     
     private var animationArea: some View {
         ZStack {
-            switch step {
+            switch currentStep {
             case .learnSwiftUI:
                 LearnSwiftUIStage()
                 
             case .startLessons:
-                StartLessonsStage(numberOfCourses: numberOfCourses)
+                StartLessonsStage()
                 
             case .toolBox:
                 ToolboxStage()
@@ -38,9 +37,9 @@ struct OnboardingPageContainer: View {
             }
         }
         .frame(height: 300)
-        .contentShape(Rectangle())
     }
     
+    // 文字区域
     private var textArea: some View {
         VStack(spacing: 16) {
             Text(LocalizedStringKey(step.title))
@@ -57,6 +56,7 @@ struct OnboardingPageContainer: View {
     }
 }
 
+// 轻松学 SwiftUI
 struct LearnSwiftUIStage: View {
     @State private var animateIn = false
     
@@ -108,14 +108,15 @@ struct LearnSwiftUIStage: View {
         }
         .padding(.vertical, 10)
         .padding(.horizontal, 16)
-        .background(Color.white)
+        .background(Color("WhiteAndGrayBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .shadow(color: Color.gray.opacity(0.3), radius: 5)
     }
 }
 
+// 入门课程
 struct StartLessonsStage: View {
-    let numberOfCourses: Int
+    let numberOfCourses = 20
     @State private var animateIn = false
     
     var body: some View {
@@ -147,6 +148,7 @@ struct StartLessonsStage: View {
     private var card: some View {
         VStack(spacing: 20) {
             HStack {
+                // 第一章
                 Text("Chapter 1")
                     .fontWeight(.semibold)
                     .foregroundStyle(Color(hex: "4E47DD"))
@@ -157,7 +159,8 @@ struct StartLessonsStage: View {
                 
                 Spacer()
                 
-                Text("\(numberOfCourses) Lessons")
+                // 20 课时
+                Text("\(numberOfCourses) lessons")
                     .foregroundStyle(.gray)
             }
             
@@ -179,7 +182,7 @@ struct StartLessonsStage: View {
         }
         .padding(20)
         .frame(width: 300)
-        .background(Color.white)
+        .background(Color("WhiteAndGrayBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 30))
         .shadow(color: Color(hex: "5335FF").opacity(0.3), radius: 10, y: 6)
     }
@@ -191,11 +194,12 @@ struct StartLessonsStage: View {
             
             RoundedRectangle(cornerRadius: 30)
                 .frame(width: width, height: 14)
-                .foregroundStyle(Color(hex: "F3F3F3"))
+                .foregroundStyle(Color("LightGray"))
         }
     }
 }
 
+// 开发者工具箱
 struct ToolboxStage: View {
     @State private var animateIn = false
     
@@ -203,7 +207,7 @@ struct ToolboxStage: View {
         ZStack {
             // 背景色
             RadialGradient(
-                gradient: Gradient(colors: [Color(hex: "F4eefc")]),
+                gradient: Gradient(colors: [Color("LightPurple")]),
                 center: .center,
                 startRadius: 20,
                 endRadius: 200
@@ -237,17 +241,33 @@ struct ToolboxStage: View {
         }
     }
     
+    // 工具箱视图
     private func toolboxItem(
         image: String,
         imageColor: String,
         backgroundColor: String,
         delay: Double
     ) -> some View {
-        DeveloperToolbox(
-            image: image,
-            imageColor: imageColor,
-            backgroundColor: backgroundColor
-        )
+        VStack(spacing: 20) {
+            Image(image)
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30)
+                .foregroundStyle(Color(hex: imageColor))
+                .padding(10)
+                .background(Color(hex: backgroundColor))
+                .cornerRadius(10)
+            
+            RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
+                .frame(width: 100, height: 14)
+                .foregroundStyle(Color("LightGray"))
+        }
+        .padding(16)
+        .frame(width: 140)
+        .background(Color("WhiteAndGrayBackground"))
+        .cornerRadius(20.0)
+        .shadow(color: Color.gray.opacity(0.3), radius: 3)
         .offset(y: animateIn ? 0 : 60)
         .opacity(animateIn ? 1 : 0)
         .animation(.spring(response: 0.48, dampingFraction: 0.82).delay(delay), value: animateIn)
@@ -292,7 +312,7 @@ struct ReadyStage: View {
                 .frame(height: 250)
                 .animation(.spring(response: 0.65, dampingFraction: 0.8), value: animateIn)
             
-            RotatingBorderView(animate: animateIn)
+            RotatingBorderView()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .transition(.asymmetric(
