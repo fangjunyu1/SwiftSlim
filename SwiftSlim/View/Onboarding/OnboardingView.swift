@@ -93,6 +93,17 @@ struct OnboardingView: View {
             .background(Color(hex: "3762E3"))
             .clipShape(RoundedRectangle(cornerRadius: 20))
         })
+        .buttonStyle(PressScaleButtonStyle())
+    }
+}
+
+struct PressScaleButtonStyle: ButtonStyle {
+    var scale: CGFloat = 0.9
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? scale : 1.0)
+            .animation(.easeOut(duration: 0.12), value: configuration.isPressed)
     }
 }
 
