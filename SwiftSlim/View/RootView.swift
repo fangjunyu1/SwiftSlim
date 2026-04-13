@@ -22,12 +22,12 @@ struct RootView: View {
             }
         }
         .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
-        .onAppear {
-            // 测试引导页，测试后必须删除 ！！！
-            #if DEBUG
-            appStorage.hasCompletedOnboarding = false
-            #endif
-        }
+//        .onAppear {
+//            // 测试引导页，测试后必须删除 ！！！
+//            #if DEBUG
+//            appStorage.hasCompletedOnboarding = false
+//            #endif
+//        }
     }
 }
 
