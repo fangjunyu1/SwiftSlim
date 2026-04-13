@@ -122,7 +122,7 @@ extension AppStorageManager {
         } // 还原加载进度标志
         let store = NSUbiquitousKeyValueStore.default
         
-        loadValueFromiCloud(key: "hasCompletedOnboarding")  // 是否完成引导页
+        // loadValueFromiCloud(key: "hasCompletedOnboarding")  // 是否完成引导页，不从 iCloud 读取引导页状态
         loadValueFromiCloud(key: "openCount")   // 进入课程详情页的次数
         loadValueFromiCloud(key: "hasRequestedReview")    // 评分弹窗
         loadValueFromiCloud(key: "firstUsed")    // 首次打开应用时间
@@ -143,7 +143,8 @@ extension AppStorageManager {
         }
         print("iCloud中 \(key) 值为\(store.object(forKey: key) ?? "None")")
         switch key {
-        case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
+        // 引导页不同步到 iCloud
+        // case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
         case "hasRequestedReview": hasRequestedReview = store.bool(forKey: key)
         case "openCount": openCount = store.object(forKey: key) as? Int ?? 0
             // 首次打开应用时间
