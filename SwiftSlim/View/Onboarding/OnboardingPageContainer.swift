@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct OnboardingPageContainer: View {
-    let step: OnboardingStep
     let currentStep: OnboardingStep
     var body: some View {
         VStack(spacing: 30) {
@@ -20,6 +19,7 @@ struct OnboardingPageContainer: View {
         .padding(.horizontal, 30)
     }
     
+    // 动画区域
     private var animationArea: some View {
         ZStack {
             switch currentStep {
@@ -42,12 +42,12 @@ struct OnboardingPageContainer: View {
     // 文字区域
     private var textArea: some View {
         VStack(spacing: 16) {
-            Text(LocalizedStringKey(step.title))
+            Text(LocalizedStringKey(currentStep.title))
                 .font(.title)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
             
-            Text(LocalizedStringKey(step.description))
+            Text(LocalizedStringKey(currentStep.description))
                 .font(.footnote)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.gray)
@@ -59,6 +59,8 @@ struct OnboardingPageContainer: View {
 // 轻松学 SwiftUI
 struct LearnSwiftUIStage: View {
     @State private var animateIn = false
+//    let step: OnboardingStep
+    let hello = "Hello"
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -68,12 +70,11 @@ struct LearnSwiftUIStage: View {
                 .frame(width: 280)
                 .shadow(radius: 10)
                 .scaleEffect(animateIn ? 1 : 0.96)
-                .opacity(animateIn ? 1 : 0)
                 .animation(.easeOut(duration: 0.35), value: animateIn)
-            
-            helloTag
-                .offset(y: animateIn ? 20 : 80)
+            HelloTag(hello: hello)
+                .scaleEffect(animateIn ? 1 : 0.2)
                 .opacity(animateIn ? 1 : 0)
+                .offset(y: animateIn ? 20 : 80)
                 .animation(.spring(response: 0.5, dampingFraction: 0.82).delay(0.1), value: animateIn)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -87,41 +88,24 @@ struct LearnSwiftUIStage: View {
                 animateIn = true
             }
         }
-    }
-    
-    private var helloTag: some View {
-        HStack {
-            Text(verbatim: "</>")
-                .font(.caption2)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color(hex: "176ACD"))
-                .padding(5)
-                .background(
-                    Circle()
-                        .fill(Color(hex: "DEEAFC"))
-                        .frame(width: 25, height: 25)
-                )
-            
-            Text(verbatim: "Hello, SwiftUI!")
-                .font(.footnote)
-                .fontWeight(.bold)
-        }
-        .padding(.vertical, 10)
-        .padding(.horizontal, 16)
-        .background(Color("WhiteAndGrayBackground"))
-        .clipShape(RoundedRectangle(cornerRadius: 10))
-        .shadow(color: Color.gray.opacity(0.3), radius: 5)
+//        .onChange(of: step) { _ in
+//            animateIn = false
+//            DispatchQueue.main.async {
+//                animateIn = true
+//            }
+//        }
     }
 }
 
 // 入门课程
 struct StartLessonsStage: View {
     let numberOfCourses = 20
+//    let step: OnboardingStep
     @State private var animateIn = false
     
     var body: some View {
         ZStack(alignment: .trailing) {
-            card
+            Card(numberOfCourses: numberOfCourses)
                 .offset(y: animateIn ? 0 : 40)
                 .opacity(animateIn ? 1 : 0)
                 .animation(.spring(response: 0.5, dampingFraction: 0.86), value: animateIn)
@@ -144,64 +128,12 @@ struct StartLessonsStage: View {
             }
         }
     }
-    
-    private var card: some View {
-        VStack(spacing: 20) {
-            HStack {
-                // 第一章
-                Text("Chapter 1")
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color(hex: "4E47DD"))
-                    .padding(.vertical, 8)
-                    .padding(.horizontal, 16)
-                    .background(Color(hex: "EFF2FE"))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                
-                Spacer()
-                
-                // 20 课时
-                Text("\(numberOfCourses) lessons")
-                    .foregroundStyle(.gray)
-            }
-            
-            HStack {
-                Text("Basics")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                Spacer()
-            }
-            
-            HStack {
-                VStack(alignment: .leading, spacing: 16) {
-                    lessonRow(icon: "checkmark.circle", width: 160, isDone: true)
-                    lessonRow(icon: "checkmark.circle", width: 100, isDone: true)
-                    lessonRow(icon: "circle", width: 160, isDone: false)
-                }
-                Spacer()
-            }
-        }
-        .padding(20)
-        .frame(width: 300)
-        .background(Color("WhiteAndGrayBackground"))
-        .clipShape(RoundedRectangle(cornerRadius: 30))
-        .shadow(color: Color(hex: "5335FF").opacity(0.3), radius: 10, y: 6)
-    }
-    
-    private func lessonRow(icon: String, width: CGFloat, isDone: Bool) -> some View {
-        HStack(spacing: 20) {
-            Image(systemName: icon)
-                .foregroundStyle(isDone ? Color(hex: "34CB46") : .gray)
-            
-            RoundedRectangle(cornerRadius: 30)
-                .frame(width: width, height: 14)
-                .foregroundStyle(Color("LightGray"))
-        }
-    }
 }
 
 // 开发者工具箱
 struct ToolboxStage: View {
     @State private var animateIn = false
+//    let step: OnboardingStep
     
     var body: some View {
         ZStack {
@@ -248,34 +180,21 @@ struct ToolboxStage: View {
         backgroundColor: String,
         delay: Double
     ) -> some View {
-        VStack(spacing: 20) {
-            Image(image)
-                .renderingMode(.template)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 30)
-                .foregroundStyle(Color(hex: imageColor))
-                .padding(10)
-                .background(Color(hex: backgroundColor))
-                .cornerRadius(10)
-            
-            RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
-                .frame(width: 100, height: 14)
-                .foregroundStyle(Color("LightGray"))
-        }
-        .padding(16)
-        .frame(width: 140)
-        .background(Color("WhiteAndGrayBackground"))
-        .cornerRadius(20.0)
-        .shadow(color: Color.gray.opacity(0.3), radius: 3)
+        DeveloperToolbox(
+            image: image,
+            imageColor: imageColor,
+            backgroundColor: backgroundColor
+        )
         .offset(y: animateIn ? 0 : 60)
         .opacity(animateIn ? 1 : 0)
         .animation(.spring(response: 0.48, dampingFraction: 0.82).delay(delay), value: animateIn)
     }
 }
 
+// 准备好了吗？
 struct ReadyStage: View {
     @State private var animateIn = false
+//    let step: OnboardingStep
     
     var body: some View {
         ZStack {
@@ -304,7 +223,7 @@ struct ReadyStage: View {
                         startRadius: 20,
                         endRadius: 200
                     )
-                    .frame(width: 250, height: 250)
+                    .frame(width: 210, height: 210)
                     .opacity(0.5)
                     .cornerRadius(90)
                     .blur(radius: 40)
@@ -325,68 +244,6 @@ struct ReadyStage: View {
                 animateIn = true
             }
         }
-    }
-}
-
-// 开发者工具箱独立视图
-struct DeveloperToolbox: View {
-    let image: String
-    let imageColor: String
-    let backgroundColor: String
-    var body: some View {
-        VStack(spacing: 20) {
-            Image(image)
-                .renderingMode(.template)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 30)
-                .foregroundStyle(Color(hex: imageColor))
-                .padding(10)
-                .background(Color(hex: backgroundColor))
-                .cornerRadius(10)
-            
-            RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
-                .frame(width: 100, height: 14)
-                .foregroundStyle(Color("LightGray"))
-        }
-        .padding(16)
-        .frame(width: 140)
-        .background(Color("WhiteAndGrayBackground"))
-        .cornerRadius(20.0)
-        .shadow(color: Color.gray.opacity(0.3), radius: 3)
-    }
-}
-
-// 课时图标
-struct CourseBadges: View {
-    var numberOfCourses: Int
-    var body: some View {
-        VStack {
-            Text(verbatim: "\(numberOfCourses)+")
-                .font(.title)
-                .fontWeight(.black)
-            Text(verbatim:"LESSONS")
-                .font(.caption2)
-                .fontWeight(.bold)
-        }
-        .foregroundStyle(Color.white)
-        .background {
-            let size = 90.0
-            ZStack {
-                LinearGradient(
-                    gradient: Gradient(colors: [Color(hex: "f3c766"), Color(hex: "de954c")]), // 渐变的颜色
-                    startPoint: .topLeading, // 渐变的起始点
-                    endPoint: .bottomTrailing // 渐变的结束点
-                )
-                .cornerRadius(10)
-                .frame(width: size, height: size)
-                .cornerRadius(100)
-                .shadow(radius: 10)
-                Circle()
-                    .stroke(Color.white, lineWidth: 5)
-            }
-        }
-        .rotationEffect(Angle(degrees: -20.0))
     }
 }
 
