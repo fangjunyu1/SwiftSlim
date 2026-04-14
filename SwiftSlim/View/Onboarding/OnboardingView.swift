@@ -10,7 +10,6 @@ import SwiftUI
 struct OnboardingView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @State private var step = OnboardingStep.learnSwiftUI
-    @State private var pageID = UUID()
     var body: some View {
         ZStack(alignment: .topTrailing) {
             VStack(spacing: 0) {
@@ -19,15 +18,12 @@ struct OnboardingView: View {
                 // TabView 动画和文字
                 TabView(selection: $step) {
                     ForEach(OnboardingStep.allCases) { item in
-                        OnboardingPageContainer(currentStep: item)
+                        OnboardingPageContainer(step: item)
                             .tag(item)
                             .id("\(item)-\(step == item)")
                     }
                 }
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .onChange(of: step) { _ in
-                    pageID = UUID()
-                }
                 // 进度条
                 progressView
                 // 按钮

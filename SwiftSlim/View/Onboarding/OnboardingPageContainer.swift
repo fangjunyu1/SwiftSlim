@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingPageContainer: View {
-    let currentStep: OnboardingStep
+    let step: OnboardingStep
     var body: some View {
         VStack(spacing: 30) {
             animationArea
@@ -22,7 +22,7 @@ struct OnboardingPageContainer: View {
     // 动画区域
     private var animationArea: some View {
         ZStack {
-            switch currentStep {
+            switch step {
             case .learnSwiftUI:
                 LearnSwiftUIStage()
                 
@@ -42,12 +42,12 @@ struct OnboardingPageContainer: View {
     // 文字区域
     private var textArea: some View {
         VStack(spacing: 16) {
-            Text(LocalizedStringKey(currentStep.title))
+            Text(LocalizedStringKey(step.title))
                 .font(.title)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
             
-            Text(LocalizedStringKey(currentStep.description))
+            Text(LocalizedStringKey(step.description))
                 .font(.footnote)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.gray)
@@ -59,7 +59,6 @@ struct OnboardingPageContainer: View {
 // 轻松学 SwiftUI
 struct LearnSwiftUIStage: View {
     @State private var animateIn = false
-//    let step: OnboardingStep
     let hello = "Hello"
     
     var body: some View {
@@ -77,30 +76,15 @@ struct LearnSwiftUIStage: View {
                 .offset(y: animateIn ? 20 : 80)
                 .animation(.spring(response: 0.5, dampingFraction: 0.82).delay(0.1), value: animateIn)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .transition(.asymmetric(
-            insertion: .move(edge: .trailing).combined(with: .opacity),
-            removal: .move(edge: .leading).combined(with: .opacity)
-        ))
         .onAppear {
-            animateIn = false
-            DispatchQueue.main.async {
-                animateIn = true
-            }
+            animateIn = true
         }
-//        .onChange(of: step) { _ in
-//            animateIn = false
-//            DispatchQueue.main.async {
-//                animateIn = true
-//            }
-//        }
     }
 }
 
 // 入门课程
 struct StartLessonsStage: View {
     let numberOfCourses = 20
-//    let step: OnboardingStep
     @State private var animateIn = false
     
     var body: some View {
@@ -116,16 +100,8 @@ struct StartLessonsStage: View {
                 .offset(x: -20, y: 80)
                 .animation(.interpolatingSpring(stiffness: 260, damping: 11).delay(0.15), value: animateIn)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .transition(.asymmetric(
-            insertion: .move(edge: .trailing).combined(with: .opacity),
-            removal: .move(edge: .leading).combined(with: .opacity)
-        ))
         .onAppear {
-            animateIn = false
-            DispatchQueue.main.async {
-                animateIn = true
-            }
+            animateIn = true
         }
     }
 }
@@ -159,17 +135,9 @@ struct ToolboxStage: View {
                     toolboxItem(image: "danger", imageColor: "CA3A32", backgroundColor: "FFDDDD", delay: 0.24)
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .transition(.asymmetric(
-                insertion: .move(edge: .trailing).combined(with: .opacity),
-                removal: .move(edge: .leading).combined(with: .opacity)
-            ))
         }
         .onAppear {
-            animateIn = false
-            DispatchQueue.main.async {
-                animateIn = true
-            }
+            animateIn = true
         }
     }
     
@@ -233,16 +201,8 @@ struct ReadyStage: View {
             
             RotatingBorderView()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .transition(.asymmetric(
-            insertion: .move(edge: .trailing).combined(with: .opacity),
-            removal: .move(edge: .leading).combined(with: .opacity)
-        ))
         .onAppear {
-            animateIn = false
-            DispatchQueue.main.async {
-                animateIn = true
-            }
+            animateIn = true
         }
     }
 }
