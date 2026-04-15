@@ -25,4 +25,6 @@ extension Color {
         
         self.init(red: red, green: green, blue: blue)
     }
+    
+    static let appColor = Color(hex: "3762E3")
 }

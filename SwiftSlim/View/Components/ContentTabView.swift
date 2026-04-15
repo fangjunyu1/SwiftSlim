@@ -17,34 +17,23 @@ struct ContentTabView: View {
         VStack {
             Spacer()
             HStack {
+                Spacer()
                 ForEach(contentType.allCases, id:\.rawValue) { item in
+                    Spacer()
                     tabView(name: item.name, img: item.image, type: item, selectedTab: $selectedTab)
-                }
-            }
-            .padding(.vertical,12)
-            .padding(.horizontal,20)
-            .background(
-                HStack {
-                    Rectangle()
-                        .fill(Color("WhiteAndGrayBackground"))
-                        .frame(width: 90,height: 58)
-                        .cornerRadius(40)
-                        .offset(x:10)
-                        .offset(x: CGFloat(77) * CGFloat(selectedTab.rawValue))
-                        .opacity(0.8)
                     Spacer()
                 }
-            )
+                Spacer()
+            }
+            .padding(.vertical, 20)
             .background(
                 Rectangle()
                     .fill(.regularMaterial)
                     .blur(radius: 3)
-                    .cornerRadius(100)
-                    .shadow(color: .black.opacity(0.1), radius: 10, y: 5)
                     .opacity(0.9)
             )
-            .cornerRadius(50)
         }
+        .ignoresSafeArea()
     }
     
 }
@@ -62,15 +51,14 @@ struct tabView: View {
             Image(img)
                 .resizable()
                 .renderingMode(.template)
-                .scaleEffect(clicked ? 1.1 : 1)
+                .scaleEffect(clicked ? 1.05 : 1)
                 .scaledToFit()
                 .frame(width: 30)
-                .foregroundStyle(selected ? Color.blue : Color.gray)
+                .foregroundStyle(selected ? Color.appColor : Color.gray)
             Text(LocalizedStringKey(name))
                 .font(.footnote)
-                .foregroundStyle(selected ? Color.blue : Color.gray)
+                .foregroundStyle(selected ? Color.appColor : Color.gray)
         }
-        .frame(width: 70)
         .contentShape(Rectangle())
         .onTapGesture {
             if !selected {

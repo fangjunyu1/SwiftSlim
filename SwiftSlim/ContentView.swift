@@ -13,17 +13,26 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 TabView(selection: $selected) {
-                    HomeView()
-                    CoursesView()
-                    ToolsView()
-                    SettingsView()
+                    VStack {
+                        switch selected {
+                        case .home:
+                            HomeView()
+                        case .courses:
+                            CoursesView()
+                        case .tools:
+                            ToolsView()
+                        case .settings:
+                            SettingsView()
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color(hex: "F2F2F7"))
                 }
                 ContentTabView(selectedTab: $selected)
             }
         }
+        .navigationViewStyle(.stack)
     }
-    
-    
 }
 
 #Preview {

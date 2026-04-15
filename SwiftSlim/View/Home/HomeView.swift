@@ -9,5 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        VStack {
+            Text(verbatim: "123")
+        }
     }
+}
+
+#Preview {
+    HomeView()
 }

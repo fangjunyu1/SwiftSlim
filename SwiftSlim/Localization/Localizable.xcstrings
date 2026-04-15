@@ -4800,6 +4800,9 @@
         }
       }
     },
+    "Hello, world!" : {
+
+    },
     "Home" : {
       "comment" : "首页",
       "extractionState" : "manual",
