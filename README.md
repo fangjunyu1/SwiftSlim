@@ -10,9 +10,9 @@
 
 --- 
 
-### Qight
+### Qinote
 
-Qight is a beginner-friendly Swift / SwiftUI tutorial project designed for learners with no programming background.
+Qinote is a beginner-friendly Swift / SwiftUI tutorial project designed for learners with no programming background.
 
 This tutorial follows a project-driven approach, teaching Swift syntax and SwiftUI interface development through real-world examples instead of abstract theory. The goal is to help beginners gradually build the skills needed to develop iOS and macOS applications.
 

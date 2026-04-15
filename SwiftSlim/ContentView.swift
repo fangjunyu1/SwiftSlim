@@ -10,8 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            // 教学课程 - 视图
-            Education()
+            TabView {
+                // 教学课程 - 视图
+                Education()
+            }
+            
         }
     }
 }

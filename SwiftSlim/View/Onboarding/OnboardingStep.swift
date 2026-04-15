@@ -19,7 +19,7 @@ enum OnboardingStep: Int, Identifiable, CaseIterable {
         case .startLessons:
             return "Beginner Courses"
         case .toolBox:
-            return "Tools"
+            return "Developer Toolbox"
         case .areYouReady:
             return "Are You Ready?"
         }
