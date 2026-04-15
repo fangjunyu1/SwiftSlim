@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selected = contentType.home
     var body: some View {
         NavigationView {
-            TabView {
-                // 教学课程 - 视图
-                Education()
+            ZStack {
+                TabView(selection: $selected) {
+                    HomeView()
+                    CoursesView()
+                    ToolsView()
+                    SettingsView()
+                }
+                ContentTabView(selectedTab: $selected)
             }
-            
         }
     }
+    
+    
 }
 
 #Preview {
