@@ -12,7 +12,6 @@ import StoreKit
 struct EducationPage: View {
     @EnvironmentObject var appStorage: AppStorageManager
     private let content: String?
-    let device = UIDevice.current
     init(url: URL) {
         let markdown = try? String(contentsOf: url)
         self.content = markdown
@@ -46,7 +45,7 @@ struct EducationPage: View {
         VStack {
             if let content = content {
                 ScrollView {
-                    if device.userInterfaceIdiom == .phone {
+                    if UIDevice.isPhone {
                         // iPhone
                         Markdown(content)
                             .markdownImageProvider(.asset)

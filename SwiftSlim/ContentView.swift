@@ -28,7 +28,7 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(hex: "F2F2F7"))
                 }
-                ContentTabView(selectedTab: $selected)
+                ContentFrostedTabView(selectedTab: $selected)
             }
         }
         .navigationViewStyle(.stack)
