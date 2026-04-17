@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D400D6D2F924B5A00739D29 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 1D400D6C2F924B5A00739D29 /* Splash */; };
 		1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC948452F8603A0004E8448 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */,
+				1D400D6D2F924B5A00739D29 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = SwiftSlim;
 			packageProductDependencies = (
 				1DC948452F8603A0004E8448 /* MarkdownUI */,
+				1D400D6C2F924B5A00739D29 /* Splash */,
 			);
 			productName = SwiftSlim;
 			productReference = 1D9CAED12E38C51000A48D57 /* SwiftSlim.app */;
@@ -161,6 +164,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				1D400D6B2F924B5A00739D29 /* XCRemoteSwiftPackageReference "Splash" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D9CAED22E38C51000A48D57 /* Products */;
@@ -416,6 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1D400D6B2F924B5A00739D29 /* XCRemoteSwiftPackageReference "Splash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Splash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.0;
+			};
+		};
 		1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
@@ -427,6 +439,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1D400D6C2F924B5A00739D29 /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D400D6B2F924B5A00739D29 /* XCRemoteSwiftPackageReference "Splash" */;
+			productName = Splash;
+		};
 		1DC948452F8603A0004E8448 /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;

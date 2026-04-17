@@ -66,10 +66,10 @@ struct frostedTabView: View {
                 .scaleEffect(clicked ? 1.05 : 1)
                 .scaledToFit()
                 .frame(width: 24)
-                .foregroundStyle(selected ? Color.appColor : Color.gray)
+                .foregroundStyle(selected ? Color("AppColor") : Color.gray)
             Text(LocalizedStringKey(name))
                 .font(.footnote)
-                .foregroundStyle(selected ? Color.appColor : Color.gray)
+                .foregroundStyle(selected ? Color("AppColor") : Color.gray)
         }
         .frame(width: 63)
         .contentShape(Rectangle())

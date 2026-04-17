@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Binding var selected: contentType
     var body: some View {
         Text(verbatim: "4")
     }

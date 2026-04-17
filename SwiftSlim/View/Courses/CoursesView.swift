@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct CoursesView: View {
+    @Binding var selected: contentType
     var body: some View {
-        Text(verbatim: "2")
+        Education()
     }
+}
+
+#Preview {
+    ContentView()
+        .environmentObject(AppStorageManager.shared)
 }

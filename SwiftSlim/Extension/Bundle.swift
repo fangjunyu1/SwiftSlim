@@ -15,4 +15,10 @@ extension Bundle {
     var build: String {
         object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "1"
     }
+    
+    var appName: String {
+        Bundle.main.object(
+            forInfoDictionaryKey: "CFBundleName"
+        ) as? String ?? "Qinote"
+    }
 }

@@ -24,8 +24,11 @@ struct Card: View {
                 Spacer()
                 
                 // 20 课时
-                Text("\(numberOfCourses) lessons")
-                    .foregroundStyle(.gray)
+                HStack {
+                    Text(verbatim: "\(numberOfCourses)")
+                    Text("lesson")
+                }
+                .foregroundStyle(.gray)
             }
             
             // 基础入门
