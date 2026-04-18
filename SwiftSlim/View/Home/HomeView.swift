@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var selected: contentType
+    @State private var currentCode = DailyTips.randomCode()
     let languageCode = Locale.current.languageCode ?? "zh"
     var isNotEnglish: Bool {
         languageCode != "en"
@@ -248,6 +249,7 @@ struct HomeView: View {
     
     // 每日技巧
     var tip: some View {
+        
         VStack(spacing: 16) {
             // 每日技巧标题
             HStack {
@@ -269,7 +271,11 @@ struct HomeView: View {
             }
             // 每日技巧代码
             HStack {
-                HighlightedCodeView(code:DailyTips.randomCode)
+                HighlightedCodeView(code: currentCode)
+                    .onTapGesture {
+                        print("修改 currentCode")
+                        currentCode = DailyTips.randomCode()
+                    }
                 Spacer()
             }
         }

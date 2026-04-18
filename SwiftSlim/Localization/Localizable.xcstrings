@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "Are You Ready?" : {
       "comment" : "准备好了吗？",
       "extractionState" : "manual",
