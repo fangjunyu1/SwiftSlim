@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @Binding var selected: contentType
     @State private var currentCode = DailyTips.randomCode()
+    @EnvironmentObject var appStorage: AppStorageManager
     let languageCode = Locale.current.languageCode ?? "zh"
     var isNotEnglish: Bool {
         languageCode != "en"
@@ -68,7 +69,9 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     // 问候语：你好，开发者👋
-                    Text("Hello, Developer")
+                    let name = NSLocalizedString(appStorage.userName, comment: "Developer")
+                    let great = String(format: NSLocalizedString("Hello, %@", comment: "问候语"), name)
+                    Text(great)
                         .fontWeight(.bold)
                     Text(verbatim:"👋")
                         .fontWeight(.bold)
@@ -272,10 +275,6 @@ struct HomeView: View {
             // 每日技巧代码
             HStack {
                 HighlightedCodeView(code: currentCode)
-                    .onTapGesture {
-                        print("修改 currentCode")
-                        currentCode = DailyTips.randomCode()
-                    }
                 Spacer()
             }
         }
@@ -284,6 +283,10 @@ struct HomeView: View {
         .background(Color("LightBlack"))
         .cornerRadius(10)
         .shadow(radius: 1)
+        .onTapGesture {
+            print("修改 currentCode")
+            currentCode = DailyTips.randomCode()
+        }
     }
 }
 

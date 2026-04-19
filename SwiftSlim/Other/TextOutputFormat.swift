@@ -48,7 +48,7 @@ extension TextOutputFormat {
         }
 
         func build() -> Text {
-            self.accumulatedText.reduce(Text(""), +)
+            self.accumulatedText.reduce(Text(verbatim: ""), +)
         }
     }
 }

@@ -27,4 +27,5 @@ struct NotificationView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AppStorageManager.shared)
 }

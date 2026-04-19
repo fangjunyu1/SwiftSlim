@@ -18,6 +18,8 @@ class AppStorageManager: ObservableObject {
     private var isLoading = false
     
     // 是否完成引导页
+    @Published var userName = "Developer" { didSet {updateValue(key: "userName",newValue: userName,oldValue: oldValue)} }
+    // 进入课程详情页的次数
     @Published var hasCompletedOnboarding = false { didSet {updateValue(key: "hasCompletedOnboarding",newValue: hasCompletedOnboarding,oldValue: oldValue)} }
     // 进入课程详情页的次数
     @Published var openCount = 0 { didSet {updateValue(key: "openCount",newValue: openCount,oldValue: oldValue)} }
@@ -84,12 +86,13 @@ extension AppStorageManager {
         } // 还原加载进度标志
         let defaults = UserDefaults.standard
         // 注册默认值
-        //        defaults.register(defaults: [
-        //            "isModelConfigManager": true,   // 默认开启 iCloud 同步
-        //        ])
+        defaults.register(defaults: [
+            "userName": "Developer",   // 默认用户名为：Developer
+        ])
         hasCompletedOnboarding  = defaults.bool(forKey: "hasCompletedOnboarding")   // 是否完成引导页
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
+        userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
         // 首次使用时间
         if defaults.object(forKey: "firstUsed") == nil {
             firstUsed = Date.distantPast
@@ -128,6 +131,7 @@ extension AppStorageManager {
         loadValueFromiCloud(key: "firstUsed")    // 首次打开应用时间
         loadValueFromiCloud(key: "lastOpenedAt")    // 最近一次打开应用时间
         loadValueFromiCloud(key: "daysUsed")    // 累计使用天数
+        loadValueFromiCloud(key: "userName")
         store.synchronize() // 强制触发数据同步
     }
 }
@@ -143,8 +147,8 @@ extension AppStorageManager {
         }
         print("iCloud中 \(key) 值为\(store.object(forKey: key) ?? "None")")
         switch key {
-        // 引导页不同步到 iCloud
-        // case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
+            // 引导页不同步到 iCloud
+            // case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
         case "hasRequestedReview": hasRequestedReview = store.bool(forKey: key)
         case "openCount": openCount = store.object(forKey: key) as? Int ?? 0
             // 首次打开应用时间
@@ -153,6 +157,7 @@ extension AppStorageManager {
         case "lastOpenedAt": lastOpenedAt = Date(timeIntervalSince1970: store.double(forKey: key))
             // 累计使用天数
         case "daysUsed": daysUsed = store.object(forKey: key) as? Int ?? 0
+        case "userName": userName = store.string(forKey: key) ?? "Developer"
         default:
             print("未定义的 iCloud key：\(key)")
         }
