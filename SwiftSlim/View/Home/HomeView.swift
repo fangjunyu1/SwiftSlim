@@ -31,6 +31,7 @@ struct HomeView: View {
                 // 每日提醒
                 tip
                 Spacer()
+                    .frame(height: 30)
             }
         }
     }
@@ -56,7 +57,7 @@ struct HomeView: View {
                     .frame(width: 20)
                     .foregroundStyle(Color("BlackColor"))
                     .padding(10)
-                    .background()
+                    .background(Color("WhiteAndGrayBackground"))
                     .cornerRadius(30)
                     .shadow(color: Color.gray.opacity(0.3), radius: 3, y:3)
             })
@@ -117,7 +118,7 @@ struct HomeView: View {
             }
             .padding(10)
             .frame(width: 340, height: 100)
-            .background()
+            .background(Color("WhiteAndGrayBackground"))
             .cornerRadius(10)
             Image("book2")
                 .resizable()
@@ -129,7 +130,7 @@ struct HomeView: View {
         }
     }
     
-    // 入门教材
+    // 入门教程
     var tutorial: some View {
         VStack(alignment: .leading, spacing: 24) {
             // 顶部入门、20+ 课
@@ -322,7 +323,7 @@ struct DevToolsView: View {
             }
         }
         .padding(14)
-        .background()
+        .background(Color("WhiteAndGrayBackground"))
         .cornerRadius(10)
     }
 }

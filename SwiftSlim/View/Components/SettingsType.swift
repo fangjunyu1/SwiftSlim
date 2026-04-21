@@ -89,7 +89,7 @@ enum SettingsType: Int, Identifiable, CaseIterable {
                 .destination(AnyView(AcknowLedgementsView()))
             
         case .openSource:
-                .destination(AnyView(OpenSourceView()))
+                .url(URL(string: "https://github.com/fangjunyu1/SwiftSlim")!)
         }
     }
 }

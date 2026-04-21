@@ -171,7 +171,7 @@ struct AboutUsView: View {
                     .foregroundStyle(.white)
                     .padding(.vertical, 12)
                     .padding(.horizontal, 50)
-                    .background(Color("AppColor"))
+                    .background(Color("AppColor2"))
                     .cornerRadius(10)
                     .shadow(radius: 3)
             })

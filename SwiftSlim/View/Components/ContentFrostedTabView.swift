@@ -75,10 +75,8 @@ struct frostedTabView: View {
         .contentShape(Rectangle())
         .onTapGesture {
             if !selected {
-                withAnimation {
-                    // 点击时修改 TabView
-                    selectedTab = type
-                }
+                // 点击时修改 TabView
+                selectedTab = type
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     clicked = true
                     withAnimation {

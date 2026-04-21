@@ -15,30 +15,29 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
-        TabView(selection: $selected) {
-            NavigationTabView(selected: $selected) {
-                HomeView(selected: $selected)
+        NavigationView {
+            ZStack {
+                Group {
+                    switch selected {
+                    case .home:
+                        HomeView(selected: $selected)
+                    case .courses:
+                        CoursesView(selected: $selected)
+                    case .tools:
+                        ToolsView(selected: $selected)
+                    case .settings:
+                        SettingsView(selected: $selected)
+                    }
+                }
+                .modifier(BackgroundModifiers())
+                
+                // 磨砂玻璃 TabView 视图
+                ContentFrostedTabView(selectedTab: $selected)
             }
-            .tag(contentType.home)
-            
-            NavigationTabView(selected: $selected) {
-                CoursesView(selected: $selected)
-            }
-            .tag(contentType.courses)
-            
-            NavigationTabView(selected: $selected) {
-                ToolsView(selected: $selected)
-            }
-            .tag(contentType.tools)
-            
-            NavigationTabView(selected: $selected) {
-                SettingsView(selected: $selected)
-            }
-            .tag(contentType.settings)
         }
     }
 }
+
 
 struct NavigationTabView<Content: View>: View {
     let content: Content
@@ -51,12 +50,8 @@ struct NavigationTabView<Content: View>: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                content
-                    .modifier(BackgroundModifiers())
-                
-                ContentFrostedTabView(selectedTab: $selected)
-            }
+            content
+                .modifier(BackgroundModifiers())
         }
         .navigationViewStyle(.stack)
     }
