@@ -28,7 +28,6 @@ struct ToolsView: View {
             
         }
         .navigationTitle("Tools")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     // 学习工具
@@ -41,7 +40,7 @@ struct ToolsView: View {
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
                 ForEach(ToolType.LearningTool) { item in
-                    DevToolsView(tool: item, displayLocation: .Tools)
+                        DevToolsView(tool: item, displayLocation: .Tools)
                 }
             }
         }
@@ -57,7 +56,8 @@ struct ToolsView: View {
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
                 ForEach(ToolType.DesignTools) { item in
-                    DevToolsView(tool: item, displayLocation: .Tools)
+                    
+                        DevToolsView(tool: item, displayLocation: .Tools)
                 }
             }
         }

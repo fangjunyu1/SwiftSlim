@@ -51,15 +51,40 @@ struct DevToolsView: View {
         }
     }
     
+    var spacing: Double {
+        if displayLocation == .Home {
+            return 5
+        } else if displayLocation == .Tools {
+            return 8
+        } else {
+            return 8
+        }
+    }
+    
+    var imageSize: Double {
+        if displayLocation == .Home {
+            return 18
+        } else if displayLocation == .Tools {
+            return 24
+        } else {
+            return 24
+        }
+    }
+    
     var body: some View {
-        
+        NavigationLink(destination: tool.view) {
+            toolContent
+        }
+    }
+    
+    var toolContent: some View {
         HStack {
-            VStack(alignment: alignment, spacing: 5) {
+            VStack(alignment: alignment, spacing: spacing) {
                 Image(tool.img)
                     .resizable()
                     .renderingMode(.template)
                     .scaledToFit()
-                    .frame(width: 18,height: 18)
+                    .frame(width: imageSize, height: imageSize)
                     .foregroundStyle(devColor)
                     .padding(6)
                     .background(devColor.opacity(0.15))
@@ -68,6 +93,7 @@ struct DevToolsView: View {
                 Text(LocalizedStringKey(tool.rawValue))
                     .font(.footnote)
                     .fontWeight(.bold)
+                    .foregroundStyle(Color("BlackColor"))
                 Text(LocalizedStringKey(tool.description))
                     .modifier(NotesText())
             }

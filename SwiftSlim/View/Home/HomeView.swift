@@ -242,7 +242,7 @@ struct HomeView: View {
                 })
             }
             // 开发者工具（前四个）
-            LazyVGrid(columns: columns) {
+            LazyVGrid(columns: columns, alignment: .leading) {
                 ForEach(ToolType.allCases) { tool in
                     DevToolsView(tool: tool, displayLocation: .Home)
                 }

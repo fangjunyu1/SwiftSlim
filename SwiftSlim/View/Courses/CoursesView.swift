@@ -10,7 +10,12 @@ import SwiftUI
 struct CoursesView: View {
     @Binding var selected: contentType
     var body: some View {
-        Education()
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 30) {
+                Education()
+            }
+        }
+        .navigationTitle("Contents")
     }
 }
 
