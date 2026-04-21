@@ -9,41 +9,56 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selected = contentType.home
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
         
-        ZStack {
-            TabView(selection: $selected) {
-                NavigationView {
-                    HomeView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                }
-                .navigationViewStyle(.stack)
-                .tag(contentType.home)
-                
-                
-                NavigationView {
-                    CoursesView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                }
-                .navigationViewStyle(.stack)
-                .tag(contentType.courses)
-                
-                NavigationView {
-                    ToolsView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                }
-                .navigationViewStyle(.stack)
-                .tag(contentType.tools)
-                
-                NavigationView {
-                    SettingsView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                }
-                .navigationViewStyle(.stack)
-                .tag(contentType.settings)
+        TabView(selection: $selected) {
+            NavigationTabView(selected: $selected) {
+                HomeView(selected: $selected)
             }
-            ContentFrostedTabView(selectedTab: $selected)
+            .tag(contentType.home)
+            
+            NavigationTabView(selected: $selected) {
+                CoursesView(selected: $selected)
+            }
+            .tag(contentType.courses)
+            
+            NavigationTabView(selected: $selected) {
+                ToolsView(selected: $selected)
+            }
+            .tag(contentType.tools)
+            
+            NavigationTabView(selected: $selected) {
+                SettingsView(selected: $selected)
+            }
+            .tag(contentType.settings)
         }
+    }
+}
+
+struct NavigationTabView<Content: View>: View {
+    let content: Content
+    @Binding var selected: contentType
+    
+    init(selected: Binding<contentType>, content: () -> Content) {
+        self.content = content()
+        self._selected = selected
+    }
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                content
+                    .modifier(BackgroundModifiers())
+                
+                ContentFrostedTabView(selectedTab: $selected)
+            }
+        }
+        .navigationViewStyle(.stack)
     }
 }
 

@@ -15,4 +15,10 @@ struct PromptText: ViewModifier {
     }
 }
 
-
+struct PromptGrayText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.footnote)
+            .foregroundStyle(.gray)
+    }
+}

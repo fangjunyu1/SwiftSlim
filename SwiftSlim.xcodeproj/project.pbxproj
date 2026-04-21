@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D400D6D2F924B5A00739D29 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 1D400D6C2F924B5A00739D29 /* Splash */; };
+		1D4D08132F94C83D00C9CDC3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4D08122F94C83D00C9CDC3 /* Lottie */; };
 		1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC948452F8603A0004E8448 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 			files = (
 				1DC948462F8603A0004E8448 /* MarkdownUI in Frameworks */,
 				1D400D6D2F924B5A00739D29 /* Splash in Frameworks */,
+				1D4D08132F94C83D00C9CDC3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,7 @@
 			packageProductDependencies = (
 				1DC948452F8603A0004E8448 /* MarkdownUI */,
 				1D400D6C2F924B5A00739D29 /* Splash */,
+				1D4D08122F94C83D00C9CDC3 /* Lottie */,
 			);
 			productName = SwiftSlim;
 			productReference = 1D9CAED12E38C51000A48D57 /* SwiftSlim.app */;
@@ -165,6 +168,7 @@
 			packageReferences = (
 				1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				1D400D6B2F924B5A00739D29 /* XCRemoteSwiftPackageReference "Splash" */,
+				1D4D08112F94C83D00C9CDC3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1D9CAED22E38C51000A48D57 /* Products */;
@@ -428,6 +432,14 @@
 				minimumVersion = 0.16.0;
 			};
 		};
+		1D4D08112F94C83D00C9CDC3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.6.0;
+			};
+		};
 		1DC948442F8603A0004E8448 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
@@ -443,6 +455,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1D400D6B2F924B5A00739D29 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = Splash;
+		};
+		1D4D08122F94C83D00C9CDC3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D4D08112F94C83D00C9CDC3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		1DC948452F8603A0004E8448 /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
