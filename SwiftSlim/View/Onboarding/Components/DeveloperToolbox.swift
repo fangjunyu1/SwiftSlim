@@ -18,7 +18,7 @@ struct DeveloperToolbox: View {
                 .renderingMode(.template)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 30)
+                .frame(width: 24)
                 .foregroundStyle(Color(hex: imageColor))
                 .padding(10)
                 .background(Color(hex: backgroundColor))
@@ -34,4 +34,9 @@ struct DeveloperToolbox: View {
         .cornerRadius(20.0)
         .shadow(color: Color.gray.opacity(0.3), radius: 3)
     }
+}
+
+#Preview {
+    OnboardingView()
+        .environmentObject(AppStorageManager.shared)
 }

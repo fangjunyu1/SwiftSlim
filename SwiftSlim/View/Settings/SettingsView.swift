@@ -184,7 +184,7 @@ struct SettingsItemView: View {
 private extension View {
     func cardStyle() -> some View {
         self
-            .background(Color("LightBlack"))
+            .background(Color("WhiteAndBlack"))
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }

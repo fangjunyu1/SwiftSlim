@@ -30,6 +30,7 @@ struct ContentFrostedTabView: View {
                         .cornerRadius(40)
                         .offset(x: 6)
                         .offset(x: CGFloat(70) * CGFloat(selectedTab.rawValue))
+                        .animation(.easeInOut(duration: 0.25), value: selectedTab)
                         .opacity(0.8)
                     Spacer()
                 }
@@ -90,4 +91,5 @@ struct frostedTabView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AppStorageManager.shared)
 }

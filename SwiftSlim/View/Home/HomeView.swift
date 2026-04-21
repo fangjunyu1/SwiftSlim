@@ -57,7 +57,7 @@ struct HomeView: View {
                     .frame(width: 20)
                     .foregroundStyle(Color("BlackColor"))
                     .padding(10)
-                    .background(Color("WhiteAndGrayBackground"))
+                    .background(Color("WhiteAndBlack"))
                     .cornerRadius(30)
                     .shadow(color: Color.gray.opacity(0.3), radius: 3, y:3)
             })
@@ -118,7 +118,7 @@ struct HomeView: View {
             }
             .padding(10)
             .frame(width: 340, height: 100)
-            .background(Color("WhiteAndGrayBackground"))
+            .background(Color("WhiteAndBlack"))
             .cornerRadius(10)
             Image("book2")
                 .resizable()
@@ -244,9 +244,10 @@ struct HomeView: View {
             // 开发者工具（前四个）
             LazyVGrid(columns: columns) {
                 ForEach(ToolType.allCases) { tool in
-                    DevToolsView(tool: .componentPreview)
+                    DevToolsView(tool: tool, displayLocation: .Home)
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.horizontal, 8)
     }
@@ -288,43 +289,6 @@ struct HomeView: View {
             print("修改 currentCode")
             currentCode = DailyTips.randomCode()
         }
-    }
-}
-
-// 开发工具视图
-struct DevToolsView: View {
-    @Environment(\.colorScheme) var colorScheme
-    let tool: ToolType
-    var devColor: Color {
-        colorScheme == .light ? tool.color : Color.white
-    }
-    var body: some View {
-        
-        VStack {
-            HStack {
-                VStack(alignment: .leading, spacing: 5) {
-                    Image(tool.img)
-                        .resizable()
-                        .renderingMode(.template)
-                        .scaledToFit()
-                        .frame(width: 30)
-                        .foregroundStyle(devColor)
-                        .padding(3)
-                        .background(devColor.opacity(0.15))
-                        .cornerRadius(8)
-                        .padding(.bottom, 8)
-                    Text(LocalizedStringKey(tool.rawValue))
-                        .font(.footnote)
-                        .fontWeight(.bold)
-                    Text(LocalizedStringKey(tool.description))
-                        .modifier(NotesText())
-                }
-                Spacer()
-            }
-        }
-        .padding(14)
-        .background(Color("WhiteAndGrayBackground"))
-        .cornerRadius(10)
     }
 }
 

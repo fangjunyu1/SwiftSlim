@@ -19,6 +19,7 @@ struct RootView: View {
                 // 引导页
                 OnboardingView()
                     .transition(.opacity)
+                Text("Hello").font(.title).foregroundStyle(.blue).padding().background(.white)
             }
         }
         .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)

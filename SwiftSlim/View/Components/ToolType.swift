@@ -9,30 +9,54 @@ import SwiftUI
 
 enum ToolType: String, Identifiable, CaseIterable {
     
-    case componentPreview = "Preview"
+    case Shortcuts
+    case Preview
+    
+    static var LearningTool: [ToolType] {
+        return [.Shortcuts]
+    }
+    
+    static var DesignTools: [ToolType] {
+        return [.Preview]
+    }
     
     var id: String {
         rawValue
     }
     
-    var img: String {
+    var color: Color {
         switch self {
-        case .componentPreview:
-            "mokuai"
+        case .Preview:
+            Color(hex:"883AE2")
+        case .Shortcuts:
+            Color(hex: "4A5466")
         }
     }
     
-    var color: Color {
+    var img: String {
         switch self {
-        case .componentPreview:
-            Color(hex:"883AE2")
+        case .Preview:
+            "mokuai"
+        case .Shortcuts:
+            "shortcutKey"
         }
     }
     
     var description: String {
         switch self {
-        case .componentPreview:
+        case .Preview:
             "UI Controls"
+        case .Shortcuts:
+            "Xcode Shortcuts"
+        }
+    }
+    
+    @ViewBuilder var view: some View {
+        switch self {
+        case .Shortcuts:
+            ShortcutsView()
+        case .Preview:
+            PreviewView()
         }
     }
 }
