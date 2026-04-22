@@ -27,6 +27,27 @@ struct ShortcutKey: Identifiable {
         ShortcutKey(name: "Quick Open", key: ["⇧","⌘","O"]),
         ShortcutKey(name: "Command Search", key: ["⇧","⌘","A"])
     ]
+    
+    // 编辑
+    static var EditList: [ShortcutKey] = [
+        ShortcutKey(name: "Comment/Uncomment", key: ["⌘","/"]),
+        ShortcutKey(name: "Re-Indent", key: ["⌃","I"])
+    ]
+    
+    // 运行
+    static var RunList: [ShortcutKey] = [
+        ShortcutKey(name: "Build Project", key: ["⌘","B"]),
+        ShortcutKey(name: "Run Project", key: ["⌘","R"]),
+        ShortcutKey(name: "Stop", key: ["⌘","."]),
+        ShortcutKey(name: "Clean Build", key: ["⇧","⌘","K"])
+    ]
+    
+    // 测试和调试
+    static var TestDebugList: [ShortcutKey] = [
+        ShortcutKey(name: "Add Breakpoint", key: ["⌘","\\"]),
+        ShortcutKey(name: "Clear Console", key: ["⌘","K"]),
+        ShortcutKey(name: "Show/Hide Debug Area", key: ["⇧","⌘","Y"])
+    ]
 }
 
 struct ShortcutsView: View {
@@ -38,8 +59,16 @@ struct ShortcutsView: View {
                 
                 // 搜索视图
                 ShortcutsItemView(title: "Search", list: ShortcutKey.SearchList)
-            }
                 
+                // 编辑视图
+                ShortcutsItemView(title: "Edit", list: ShortcutKey.EditList)
+                
+                // 运行视图
+                ShortcutsItemView(title: "Run", list: ShortcutKey.RunList)
+                
+                // 测试和调试视图
+                ShortcutsItemView(title: "Test & Debug", list: ShortcutKey.TestDebugList)
+            }
         }
         .navigationTitle("Shortcuts")
         .navigationBarTitleDisplayMode(.inline)
@@ -73,7 +102,7 @@ struct ShortcutsItemView: View {
                             Text(verbatim: key)
                                 .font(.footnote)
                                 .frame(width: 26, height: 26)
-                                .background(Color(hex: "F3F3F3"))
+                                .background(Color("LightDrak"))
                                 .cornerRadius(5)
                                 .shadow(radius: 1)
                         }
@@ -84,7 +113,7 @@ struct ShortcutsItemView: View {
                 }
             }
             .padding(20)
-            .background()
+            .background(Color("WhiteAndBlack"))
             .cornerRadius(20)
         }
     }

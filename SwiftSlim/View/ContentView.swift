@@ -35,6 +35,7 @@ struct ContentView: View {
                 ContentFrostedTabView(selectedTab: $selected)
             }
         }
+        .navigationViewStyle(.stack)
     }
 }
 
