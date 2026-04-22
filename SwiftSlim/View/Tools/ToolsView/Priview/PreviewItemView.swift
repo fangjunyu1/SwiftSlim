@@ -24,7 +24,7 @@ struct PreviewItemView: View {
     @State private var wheelSelection = "Apple" // PickerWheel
     @State private var selectedDate = Date()    // DatePicker
     @State private var selectedColor: Color = .blue // ColorPicker
-    @State private var isShowDetails = false    // DisclosureGroup
+    @State private var isShowDetails = true    // DisclosureGroup
     @State private var tabSelection = 0 // TabView
     
     var body: some View {
@@ -399,7 +399,9 @@ struct PreviewItemView: View {
                     }
                     .padding(.top, 8)
                 }
+                Spacer()
             }
+            .frame(height: 140)
             
         case .tabView:
             TabView(selection: $tabSelection) {

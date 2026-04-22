@@ -4555,9 +4555,6 @@
         }
       }
     },
-    "Banana" : {
-
-    },
     "Basics" : {
       "comment" : "基础入门",
       "extractionState" : "manual",
@@ -11042,9 +11039,6 @@
           }
         }
       }
-    },
-    "Dark" : {
-
     },
     "Design Ref" : {
       "comment" : "设计参考",
@@ -31667,9 +31661,6 @@
           }
         }
       }
-    },
-    "System" : {
-
     },
     "Terms" : {
       "comment" : "使用条款",
