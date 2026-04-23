@@ -169,7 +169,7 @@ struct PreviewItemView: View {
             .frame(maxWidth: .infinity)
             
         case .link:
-            Link(destination: URL(string: "https://developer.apple.com")!) {
+            Link(destination: URL(string: "https://developer.Apple.com")!) {
                 Text(verbatim: "Open Apple Developer")
                     .font(.system(size: 16, weight: .semibold))
             }
@@ -277,33 +277,44 @@ struct PreviewItemView: View {
             }
             
         case .pickerSegmented:
-            Picker("", selection: $segmentedSelection) {
+            Picker(selection: $segmentedSelection) {
                 Text(verbatim: "First").tag(0)
                 Text(verbatim: "Second").tag(1)
                 Text(verbatim: "Third").tag(2)
+            } label: {
+                EmptyView()
             }
             .pickerStyle(.segmented)
             
         case .pickerMenu:
-            Picker("", selection: $menuSelection) {
+            Picker(selection: $menuSelection) {
                 Text(verbatim: "Light").tag("Light")
                 Text(verbatim: "Dark").tag("Dark")
                 Text(verbatim: "System").tag("System")
+            } label: {
+                EmptyView()
             }
             .pickerStyle(MenuPickerStyle())
             
         case .pickerWheel:
-            Picker("", selection: $wheelSelection) {
+            Picker(selection: $wheelSelection) {
                 Text(verbatim: "Apple").tag("Apple")
                 Text(verbatim: "Banana").tag("Banana")
                 Text(verbatim: "Cherry").tag("Cherry")
+            } label: {
+                EmptyView()
             }
             .pickerStyle(.wheel)
             .frame(height: 160)
             
         case .datePicker:
             VStack(alignment: .leading, spacing: 10) {
-                DatePicker("", selection: $selectedDate, displayedComponents: [.date, .hourAndMinute])
+                DatePicker(
+                    selection: $selectedDate,
+                    displayedComponents: [.date, .hourAndMinute],
+                    label: {
+                        EmptyView()
+                    })
                     .frame(maxWidth: .infinity)
                     .offset(x: -15)
                 

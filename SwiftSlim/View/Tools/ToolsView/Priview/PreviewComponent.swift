@@ -97,7 +97,7 @@ Button("Tap Me") {
             demo: .link,
             code: """
 Link("Open Apple Developer",
-     destination: URL(string: "https://developer.apple.com")!)
+     destination: URL(string: "https://developer.Apple.com")!)
 """
         ),
         .init(
