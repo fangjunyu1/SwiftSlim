@@ -20,12 +20,15 @@ struct PreviewView: View {
         components.filter { item in
             // 如果没有选择搜索类型，或者当前搜索类型和当前组件类型一致，则类型返回 true
             let matchCategory = selectedCategory == nil || item.category == selectedCategory
+            let localizedName = NSLocalizedString(item.name, comment: "")
+            let localizedSubtitle = NSLocalizedString(item.subtitle, comment: "")
+            let localizedDescription = NSLocalizedString(item.description, comment: "")
             // 如果输入内容为空，或者组件名称、副标题、介绍和输入内容相匹配，返回 true
             let matchSearch =
             searchText.isEmpty ||
-            item.name.localizedCaseInsensitiveContains(searchText) ||
-            item.subtitle.localizedCaseInsensitiveContains(searchText) ||
-            item.description.localizedCaseInsensitiveContains(searchText)
+            localizedName.localizedCaseInsensitiveContains(searchText) ||
+            localizedSubtitle.localizedCaseInsensitiveContains(searchText) ||
+            localizedDescription.localizedCaseInsensitiveContains(searchText)
             
             return matchCategory && matchSearch
         }

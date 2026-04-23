@@ -7,21 +7,34 @@
 
 import SwiftUI
 
+enum ToolCategory {
+    case LearningTool
+    case DesignTools
+}
+
+extension ToolType {
+    static let LearningTools:[ToolType] = [.Shortcuts, .API_Dictionary]
+    static let DesignTools:[ToolType] = [.Preview]
+}
 enum ToolType: String, Identifiable, CaseIterable {
     
     case Shortcuts
     case Preview
-    
-    static var LearningTool: [ToolType] {
-        return [.Shortcuts]
-    }
-    
-    static var DesignTools: [ToolType] {
-        return [.Preview]
-    }
+    case API_Dictionary
     
     var id: String {
         rawValue
+    }
+    
+    var title: String {
+        switch self {
+        case .Preview:
+            "Preview"
+        case .Shortcuts:
+            "Shortcuts"
+        case .API_Dictionary:
+            "API Dictionary"
+        }
     }
     
     var color: Color {
@@ -30,6 +43,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex:"883AE2")
         case .Shortcuts:
             Color(hex: "4A5466")
+        case .API_Dictionary:
+            Color(hex:"4EAE54")
         }
     }
     
@@ -39,6 +54,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "mokuai"
         case .Shortcuts:
             "shortcutKey"
+        case .API_Dictionary:
+            "book"
         }
     }
     
@@ -48,6 +65,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "UI Controls"
         case .Shortcuts:
             "Xcode Shortcuts"
+        case .API_Dictionary:
+            "API Quick Reference"
         }
     }
     
@@ -57,6 +76,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             ShortcutsView()
         case .Preview:
             PreviewView()
+        case .API_Dictionary:
+            APIView()
         }
     }
 }

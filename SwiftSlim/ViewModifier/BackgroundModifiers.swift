@@ -13,5 +13,6 @@ struct BackgroundModifiers: ViewModifier {
             .padding(20)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("BackgroundColor"))
+            .ignoresSafeArea(.container, edges: .bottom)
     }
 }

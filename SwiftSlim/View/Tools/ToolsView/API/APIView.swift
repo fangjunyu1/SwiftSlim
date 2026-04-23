@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct APIView: View {
+    @State private var searchText = ""
     var body: some View {
         ScrollView {
             VStack {
@@ -15,7 +16,18 @@ struct APIView: View {
             }
             .modifier(BackgroundModifiers())
         }
-        .navigationTitle("Preview")
+        .searchable(
+            text: $searchText,
+            prompt: "Search APIs, like Text or VStack..."
+        )
+        .navigationTitle("API Dictionary")
         .navigationBarTitleDisplayMode(.inline)
+        .modifier(BackgroundModifiers())
+    }
+}
+
+#Preview {
+    NavigationView {
+        APIView()
     }
 }

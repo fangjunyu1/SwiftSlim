@@ -51,6 +51,16 @@ struct DevToolsView: View {
         }
     }
     
+    var height: Double {
+        if displayLocation == .Home {
+            return 110
+        } else if displayLocation == .Tools {
+            return 140
+        } else {
+            return 140
+        }
+    }
+    
     var spacing: Double {
         if displayLocation == .Home {
             return 5
@@ -90,7 +100,7 @@ struct DevToolsView: View {
                     .background(devColor.opacity(0.15))
                     .cornerRadius(8)
                     .padding(.bottom, 8)
-                Text(LocalizedStringKey(tool.rawValue))
+                Text(LocalizedStringKey(tool.title))
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundStyle(Color("BlackColor"))
@@ -102,7 +112,7 @@ struct DevToolsView: View {
             }
         }
         .padding(padding)
-        .frame(width: width)
+        .frame(width: width, height: height)
         .background(Color("WhiteAndBlack"))
         .cornerRadius(10)
     }

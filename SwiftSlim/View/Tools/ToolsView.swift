@@ -11,7 +11,7 @@ struct ToolsView: View {
     @Binding var selected: contentType
     
     let columns = [
-        GridItem(.adaptive(minimum: 120), spacing: 12)
+        GridItem(.adaptive(minimum: 120, maximum: 120) , spacing: 20, alignment: .leading)
     ]
     
     var body: some View {
@@ -39,7 +39,7 @@ struct ToolsView: View {
                 Spacer()
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
-                ForEach(ToolType.LearningTool) { item in
+                ForEach(ToolType.LearningTools) { item in
                         DevToolsView(tool: item, displayLocation: .Tools)
                 }
             }
