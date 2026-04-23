@@ -94,7 +94,7 @@ struct HomeView: View {
                 BlockProgress(rows: 4, columns: 8, progress: 0.7)
                 VStack(alignment: .leading) {
                     Spacer()
-                    Text("Progress")
+                    Text("LearningProgress")
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundStyle(Color("AppColor"))

@@ -22,8 +22,8 @@ extension PreviewComponent {
         .init(
             category: .display,
             name: "Text",
-            subtitle: "文本",
-            description: "用于显示一段普通文本。",
+            subtitle: "Text",
+            description: "Displays plain text.",
             demo: .text,
             code: """
 Text("Hello, SwiftUI")
@@ -33,8 +33,8 @@ Text("Hello, SwiftUI")
         .init(
             category: .display,
             name: "Image",
-            subtitle: "图片",
-            description: "用于显示系统图标或本地图片。",
+            subtitle: "Image",
+            description: "Displays system icons or local images.",
             demo: .image,
             code: """
 Image(systemName: "swift")
@@ -45,8 +45,8 @@ Image(systemName: "swift")
         .init(
             category: .display,
             name: "Label",
-            subtitle: "图标与文字",
-            description: "用于将图标和文本组合显示。",
+            subtitle: "Icon & Text",
+            description: "Combines an icon and text.",
             demo: .label,
             code: """
 Label("Favorites", systemImage: "star.fill")
@@ -55,8 +55,8 @@ Label("Favorites", systemImage: "star.fill")
         .init(
             category: .display,
             name: "Divider",
-            subtitle: "分隔线",
-            description: "用于分隔不同区域的内容。",
+            subtitle: "Divider",
+            description: "Separates content sections.",
             demo: .divider,
             code: """
 VStack {
@@ -69,8 +69,8 @@ VStack {
         .init(
             category: .display,
             name: "ProgressView",
-            subtitle: "进度",
-            description: "用于显示加载状态或任务进度。",
+            subtitle: "Progress",
+            description: "Displays loading status or task progress.",
             demo: .progressView,
             code: """
 ProgressView(value: 0.3)
@@ -79,8 +79,8 @@ ProgressView(value: 0.3)
         .init(
             category: .action,
             name: "Button",
-            subtitle: "按钮",
-            description: "用于响应点击操作。",
+            subtitle: "Button",
+            description: "Responds to tap actions.",
             demo: .button,
             code: """
 Button("Tap Me") {
@@ -92,8 +92,8 @@ Button("Tap Me") {
         .init(
             category: .action,
             name: "Link",
-            subtitle: "链接",
-            description: "用于打开网页链接。",
+            subtitle: "Link",
+            description: "Opens web pages or jumps to a URL.",
             demo: .link,
             code: """
 Link("Open Apple Developer",
@@ -103,8 +103,8 @@ Link("Open Apple Developer",
         .init(
             category: .action,
             name: "Menu",
-            subtitle: "菜单",
-            description: "用于展示多个可选操作。",
+            subtitle: "Menu",
+            description: "Shows multiple actions.",
             demo: .menu,
             code: """
 Menu("More Actions") {
@@ -117,8 +117,8 @@ Menu("More Actions") {
         .init(
             category: .action,
             name: "NavigationLink",
-            subtitle: "页面跳转",
-            description: "用于导航到新页面。",
+            subtitle: "NavigationLink",
+            description: "Navigates to another view.",
             demo: .navigationLink,
             code: """
 NavigationLink {
@@ -131,8 +131,8 @@ NavigationLink {
         .init(
             category: .input,
             name: "TextField",
-            subtitle: "单行输入",
-            description: "用于输入简短文本。",
+            subtitle: "TextField",
+            description: "Accepts short text input.",
             demo: .textField,
             code: """
 TextField("Enter your name", text: $text)
@@ -142,8 +142,8 @@ TextField("Enter your name", text: $text)
         .init(
             category: .input,
             name: "SecureField",
-            subtitle: "密码输入",
-            description: "用于输入隐藏内容。",
+            subtitle: "SecureField",
+            description: "Hides sensitive text input.",
             demo: .secureField,
             code: """
 SecureField("Enter password", text: $password)
@@ -153,8 +153,8 @@ SecureField("Enter password", text: $password)
         .init(
             category: .input,
             name: "TextEditor",
-            subtitle: "多行输入",
-            description: "用于输入较长文本内容。",
+            subtitle: "TextEditor",
+            description: "Edits multi-line text.",
             demo: .textEditor,
             code: """
 TextEditor(text: $text)
@@ -164,8 +164,8 @@ TextEditor(text: $text)
         .init(
             category: .input,
             name: "Toggle",
-            subtitle: "开关",
-            description: "用于切换开与关状态。",
+            subtitle: "Toggle",
+            description: "Switches a value on or off.",
             demo: .toggle,
             code: """
 Toggle("Dark Mode", isOn: $isOn)
@@ -174,8 +174,8 @@ Toggle("Dark Mode", isOn: $isOn)
         .init(
             category: .input,
             name: "Slider",
-            subtitle: "滑块",
-            description: "用于选择连续范围的数值。",
+            subtitle: "Slider",
+            description: "Selects a value in a range.",
             demo: .slider,
             code: """
 Slider(value: $value, in: 0...100, step: 1)
@@ -184,8 +184,8 @@ Slider(value: $value, in: 0...100, step: 1)
         .init(
             category: .input,
             name: "Stepper",
-            subtitle: "步进器",
-            description: "用于逐步增加或减少数值。",
+            subtitle: "Stepper",
+            description: "Adjusts a value step by step.",
             demo: .stepper,
             code: """
 Stepper("Num: \\(count)", value: $count, in: 1...10)
@@ -194,8 +194,8 @@ Stepper("Num: \\(count)", value: $count, in: 1...10)
         .init(
             category: .input,
             name: "Picker (Segmented)",
-            subtitle: "分段选择",
-            description: "适合少量选项之间快速切换。",
+            subtitle: "Segmented Picker",
+            description: "Switches quickly between options.",
             demo: .pickerSegmented,
             code: """
 Picker("Number", selection: $selection) {
@@ -209,8 +209,8 @@ Picker("Number", selection: $selection) {
         .init(
             category: .input,
             name: "Picker (Menu)",
-            subtitle: "菜单选择",
-            description: "以菜单方式展示选项。",
+            subtitle: "Menu Picker",
+            description: "Presents options in a menu.",
             demo: .pickerMenu,
             code: """
 Picker("Theme", selection: $selection) {
@@ -224,8 +224,8 @@ Picker("Theme", selection: $selection) {
         .init(
             category: .input,
             name: "Picker (Wheel)",
-            subtitle: "滚轮选择",
-            description: "以滚轮形式选择选项。",
+            subtitle: "Wheel Picker",
+            description: "Presents options in a wheel.",
             demo: .pickerWheel,
             code: """
 Picker("Fruit", selection: $wheelSelection) {
@@ -239,8 +239,8 @@ Picker("Fruit", selection: $wheelSelection) {
         .init(
             category: .input,
             name: "DatePicker",
-            subtitle: "日期选择",
-            description: "用于选择日期和时间。",
+            subtitle: "DatePicker",
+            description: "Selects a date and time.",
             demo: .datePicker,
             code: """
 DatePicker("Select Date",
@@ -251,8 +251,8 @@ DatePicker("Select Date",
         .init(
             category: .input,
             name: "ColorPicker",
-            subtitle: "颜色选择",
-            description: "用于选择颜色。",
+            subtitle: "ColorPicker",
+            description: "Selects a color.",
             demo: .colorPicker,
             code: """
 ColorPicker("Accent Color", selection: $color)
@@ -261,8 +261,8 @@ ColorPicker("Accent Color", selection: $color)
         .init(
             category: .container,
             name: "ScrollView",
-            subtitle: "滚动视图",
-            description: "用于展示可滚动内容。",
+            subtitle: "ScrollView",
+            description: "Shows scrollable content.",
             demo: .scrollView,
             code: """
 ScrollView(.horizontal, showsIndicators: false) {
@@ -275,8 +275,8 @@ ScrollView(.horizontal, showsIndicators: false) {
         .init(
             category: .container,
             name: "List",
-            subtitle: "列表",
-            description: "用于按行展示数据内容。",
+            subtitle: "List",
+            description: "Shows data in rows.",
             demo: .list,
             code: """
 List {
@@ -289,8 +289,8 @@ List {
         .init(
             category: .container,
             name: "Section",
-            subtitle: "分组",
-            description: "用于给列表或表单内容分区。",
+            subtitle: "Section",
+            description: "Groups list or form content.",
             demo: .section,
             code: """
 List {
@@ -304,8 +304,8 @@ List {
         .init(
             category: .container,
             name: "Form",
-            subtitle: "表单",
-            description: "适合设置页与资料录入场景。",
+            subtitle: "Form",
+            description: "Collects settings or user input.",
             demo: .form,
             code: """
 Form {
@@ -319,8 +319,8 @@ Form {
         .init(
             category: .container,
             name: "DisclosureGroup",
-            subtitle: "折叠组",
-            description: "用于展开或收起内容。",
+            subtitle: "DisclosureGroup",
+            description: "Expands or collapses content.",
             demo: .disclosureGroup,
             code: """
 DisclosureGroup("Show Details") {
@@ -331,8 +331,8 @@ DisclosureGroup("Show Details") {
         .init(
             category: .navigation,
             name: "TabView",
-            subtitle: "标签页",
-            description: "用于多个页面之间切换。",
+            subtitle: "TabView",
+            description: "Switches between multiple views.",
             demo: .tabView,
             code: """
 TabView {

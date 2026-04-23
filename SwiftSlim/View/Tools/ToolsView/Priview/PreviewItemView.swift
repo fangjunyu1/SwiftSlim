@@ -48,7 +48,7 @@ struct PreviewItemView: View {
                 Text(item.name)
                     .font(.system(size: 22, weight: .bold))
                 
-                Text(item.subtitle)
+                Text(LocalizedStringKey(item.subtitle))
                     .font(.system(size: 14))
                     .foregroundColor(.secondary)
             }
@@ -70,7 +70,7 @@ struct PreviewItemView: View {
     
     // 组件描述
     private var descriptionView: some View {
-        Text(item.description)
+        Text(LocalizedStringKey(item.description))
             .font(.system(size: 14))
             .foregroundColor(.secondary)
     }
