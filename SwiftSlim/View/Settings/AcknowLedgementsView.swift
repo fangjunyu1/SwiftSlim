@@ -43,7 +43,7 @@ struct AcknowLedgementsView: View {
     
     // 资源与技术
     var ResourcesSupport: some View {
-        let imgs: [String] = ["LottieFiles","Freepik","iconfont","magicpatterns","GitHub"]
+        let imgs: [String] = ["LottieFiles","Freepik","iconfont","magicpatterns","GitHub","ChatGPT","Codex"]
         return VStack {
             AcknowLedgementsTitle(
                 title: "Resources & Support",
@@ -61,7 +61,7 @@ struct AcknowLedgementsView: View {
     
     // 第三方库支持
     var ThirdPartyLibraries: some View {
-        let imgs: [String] = ["splash","MarkdownUI"]
+        let imgs: [String] = ["splash","MarkdownUI","lottie-ios"]
         return VStack {
             AcknowLedgementsTitle(
                 title: "Third-Party Libraries",
