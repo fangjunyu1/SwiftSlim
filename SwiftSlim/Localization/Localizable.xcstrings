@@ -4552,18 +4552,6 @@
         }
       }
     },
-    "API Dictionary" : {
-      "comment" : "API 字典",
-      "extractionState" : "manual",
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "API 字典"
-          }
-        }
-      }
-    },
     "API Quick Reference" : {
       "comment" : "接口速查手册",
       "extractionState" : "manual",
@@ -33101,6 +33089,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "整理縮排"
+          }
+        }
+      }
+    },
+    "Reference" : {
+      "comment" : "速查手册",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "速查手册"
           }
         }
       }

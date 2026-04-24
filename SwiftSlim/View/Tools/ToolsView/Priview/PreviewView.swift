@@ -20,13 +20,12 @@ struct PreviewView: View {
         components.filter { item in
             // 如果没有选择搜索类型，或者当前搜索类型和当前组件类型一致，则类型返回 true
             let matchCategory = selectedCategory == nil || item.category == selectedCategory
-            let localizedName = NSLocalizedString(item.name, comment: "")
             let localizedSubtitle = NSLocalizedString(item.subtitle, comment: "")
             let localizedDescription = NSLocalizedString(item.description, comment: "")
             // 如果输入内容为空，或者组件名称、副标题、介绍和输入内容相匹配，返回 true
             let matchSearch =
             searchText.isEmpty ||
-            localizedName.localizedCaseInsensitiveContains(searchText) ||
+            item.name.localizedCaseInsensitiveContains(searchText) ||
             localizedSubtitle.localizedCaseInsensitiveContains(searchText) ||
             localizedDescription.localizedCaseInsensitiveContains(searchText)
             
@@ -45,9 +44,8 @@ struct PreviewView: View {
     
     var body: some View {
         VStack {
-            
-            // 分类组件
-            categoryBar
+            // 导航组件（搜素 + 分类）
+            NavigationBar(searchText: $searchText, selectedCategory: $selectedCategory, selectedColor: Color.blue)
             
             // 组件列表
             ScrollView {
@@ -81,45 +79,52 @@ struct PreviewView: View {
             // 防止搜索内容为空时，类别从顶部掉下来
             Spacer()
         }
-        .searchable(
-            text: $searchText,
-            prompt: "Search components..."
-        )
         .navigationTitle("Preview")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
     }
-    
-    // 分类组件
-    private var categoryBar: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 10) {
-                categoryButton(title: "All", isSelected: selectedCategory == nil) {
-                    selectedCategory = nil
-                }
-                
-                ForEach(PreviewCategory.allCases) { category in
-                    categoryButton(title: category.title, isSelected: selectedCategory == category) {
-                        selectedCategory = category
-                    }
-                }
-            }
-            .padding(.vertical, 2)
+}
+
+struct NavigationBar<Category: CategoryItem>: View {
+    @Binding var searchText: String
+    @Binding var selectedCategory: Category?
+    var selectedColor: Color
+    var body: some View {
+        VStack(spacing: 20) {
+            // 搜索组件
+            SearchBar(searchText: $searchText, selectedColor: selectedColor)
+            
+            // 分类组件
+            CategoryBar(selectedCategory: $selectedCategory)
         }
     }
-    
-    // 分类按钮
-    private func categoryButton(title: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(LocalizedStringKey(title))
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(isSelected ? .white : .primary)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 10)
-                .background(isSelected ? Color.blue : Color(.secondarySystemBackground))
-                .clipShape(Capsule())
+}
+
+struct SearchBar: View {
+    @FocusState private var isTextFieldFocused: Bool
+    @Binding var searchText: String
+    var selectedColor: Color
+    var body: some View {
+        HStack {
+            Image("magnifier")
+                .resizable()
+                .renderingMode(.template)
+                .scaledToFit()
+                .frame(width: 18, height: 18)
+                .foregroundStyle(.secondary)
+            
+            TextField("Search components...", text: $searchText)
         }
-        .buttonStyle(.plain)
+        .focused($isTextFieldFocused)
+        .padding(10)
+        .background(Color("WhiteAndBlack"))
+        .cornerRadius(10)
+        .overlay {
+            if isTextFieldFocused {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color("AppColor"), lineWidth: 2)
+            }
+        }
     }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 // 预览组件分类
-enum PreviewCategory: String, CaseIterable, Identifiable {
+enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
     case display
     case action
     case input

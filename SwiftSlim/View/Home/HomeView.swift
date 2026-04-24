@@ -31,7 +31,7 @@ struct HomeView: View {
                 // 每日提醒
                 tip
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 50)
             }
         }
     }

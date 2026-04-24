@@ -33,7 +33,7 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Shortcuts:
             "Shortcuts"
         case .API_Dictionary:
-            "API Dictionary"
+            "Reference"
         }
     }
     

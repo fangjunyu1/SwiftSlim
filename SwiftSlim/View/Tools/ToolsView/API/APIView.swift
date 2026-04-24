@@ -20,7 +20,7 @@
 //            text: $searchText,
 //            prompt: "Search APIs, like Text or VStack..."
 //        )
-//        .navigationTitle("API Dictionary")
+//        .navigationTitle("Reference")
 //        .navigationBarTitleDisplayMode(.inline)
 //        .modifier(BackgroundModifiers())
 //    }
