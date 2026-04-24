@@ -53,6 +53,7 @@ struct ShortcutKey: Identifiable {
 struct ShortcutsView: View {
     var body: some View {
         ScrollView {
+            ToolHeaderView(tool: .Shortcuts)
             VStack(spacing: 20) {
                 // 预览视图
                 ShortcutsItemView(title: "tool_Preview", list: ShortcutKey.PreviewList)

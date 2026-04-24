@@ -39,23 +39,8 @@ struct Education: View {
                     Text(LocalizedStringKey(item.name))
                 }
             }
-            Text(verbatim: "\(Bundle.main.version) (\(Bundle.main.build))")
-                .font(.footnote)
-                .foregroundStyle(.gray)
-                .frame(maxWidth: .infinity)
-                .listRowInsets(EdgeInsets())
-                .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
         }
         .navigationTitle("Contents")
-        
-        // 默认占位视图（双栏布局时显示在右侧）
-        Image("placeholder")
-            .resizable()
-            .renderingMode(.template)
-            .foregroundColor(.gray)
-            .scaledToFit()
-            .frame(width: 100)
     }
 }
 

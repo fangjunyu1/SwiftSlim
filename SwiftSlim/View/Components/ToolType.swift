@@ -13,14 +13,15 @@ enum ToolCategory {
 }
 
 extension ToolType {
-    static let LearningTools:[ToolType] = [.Shortcuts, .API_Dictionary]
+    static let LearningTools:[ToolType] = [.Shortcuts]
     static let DesignTools:[ToolType] = [.Preview]
 }
 enum ToolType: String, Identifiable, CaseIterable {
     
     case Shortcuts
     case Preview
-    case API_Dictionary
+//    case API_Dictionary
+//    case Errors
     
     var id: String {
         rawValue
@@ -32,8 +33,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             "Preview"
         case .Shortcuts:
             "Shortcuts"
-        case .API_Dictionary:
-            "Reference"
+//        case .API_Dictionary:
+//            "Reference"
+//        case .Errors:
+//            "Errors"
         }
     }
     
@@ -43,8 +46,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex:"883AE2")
         case .Shortcuts:
             Color(hex: "4A5466")
-        case .API_Dictionary:
-            Color(hex:"4EAE54")
+//        case .API_Dictionary:
+//            Color(hex:"4EAE54")
+//        case .Errors:
+//            Color(hex: "CA3A32")
         }
     }
     
@@ -54,8 +59,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             "mokuai"
         case .Shortcuts:
             "shortcutKey"
-        case .API_Dictionary:
-            "book"
+//        case .API_Dictionary:
+//            "book"
+//        case .Errors:
+//            "danger"
         }
     }
     
@@ -65,8 +72,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             "UI Controls"
         case .Shortcuts:
             "Xcode Shortcuts"
-        case .API_Dictionary:
-            "API Quick Reference"
+//        case .API_Dictionary:
+//            "API Quick Reference"
+//        case .Errors:
+//            "Common Fixes"
         }
     }
     
@@ -76,8 +85,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             ShortcutsView()
         case .Preview:
             PreviewView()
-        case .API_Dictionary:
-            APIView()
+//        case .API_Dictionary:
+//            APIView()
+//        case .Errors:
+//            ErrorsView()
         }
     }
 }

@@ -9931,6 +9931,18 @@
         }
       }
     },
+    "Common Fixes" : {
+      "comment" : "常见错误解决",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "常见错误解决"
+          }
+        }
+      }
+    },
     "Contact Us" : {
       "comment" : "联系我们",
       "extractionState" : "manual",
@@ -16703,6 +16715,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "信箱"
+          }
+        }
+      }
+    },
+    "Errors" : {
+      "comment" : "报错库",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "报错库"
           }
         }
       }
@@ -35655,6 +35679,18 @@
         }
       }
     },
+    "Search errors..." : {
+      "comment" : "搜索报错信息...",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索报错信息..."
+          }
+        }
+      }
+    },
     "Section" : {
       "comment" : "分组",
       "extractionState" : "manual",
@@ -52051,6 +52087,9 @@
 
     },
     "作用" : {
+
+    },
+    "复制" : {
 
     },
     "复制代码" : {

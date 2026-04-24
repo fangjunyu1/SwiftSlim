@@ -43,88 +43,40 @@ struct PreviewView: View {
     }
     
     var body: some View {
-        VStack {
-            // 导航组件（搜素 + 分类）
-            NavigationBar(searchText: $searchText, selectedCategory: $selectedCategory, selectedColor: Color.blue)
+        ScrollView {
+            // 导航组件
+            ToolCategoryView(tool: .Preview, searchTips: "Search components...", searchText: $searchText, selectedCategory: $selectedCategory)
             
             // 组件列表
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: 20) {
-                    ForEach(displayedCategories) { category in
-                        let items = filteredComponents.filter { $0.category == category }
-                        if !items.isEmpty {
-                            VStack(alignment: .leading, spacing: 16) {
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(LocalizedStringKey(category.title))
-                                        .font(.system(size: 24, weight: .bold))
-                                    
-                                    Text(LocalizedStringKey(category.subtitle))
-                                        .font(.system(size: 14))
-                                        .foregroundColor(.secondary)
-                                }
-                                .padding(.horizontal, 10)
-                                // 视图预览组件
-                                LazyVStack(spacing: 18) {
-                                    ForEach(items) { item in
-                                        PreviewItemView(item: item)
-                                    }
+            LazyVStack(alignment: .leading, spacing: 20) {
+                ForEach(displayedCategories) { category in
+                    let items = filteredComponents.filter { $0.category == category }
+                    if !items.isEmpty {
+                        VStack(alignment: .leading, spacing: 16) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(LocalizedStringKey(category.title))
+                                    .font(.system(size: 24, weight: .bold))
+                                
+                                Text(LocalizedStringKey(category.subtitle))
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.secondary)
+                            }
+                            .padding(.horizontal, 10)
+                            // 视图预览组件
+                            LazyVStack(spacing: 18) {
+                                ForEach(items) { item in
+                                    PreviewItemView(item: item)
                                 }
                             }
-                            .padding(.vertical, 20)
                         }
+                        .padding(.vertical, 20)
                     }
                 }
             }
-            
-            // 防止搜索内容为空时，类别从顶部掉下来
-            Spacer()
         }
         .navigationTitle("Preview")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
-    }
-}
-
-struct NavigationBar<Category: CategoryItem>: View {
-    @Binding var searchText: String
-    @Binding var selectedCategory: Category?
-    var selectedColor: Color
-    var body: some View {
-        VStack(spacing: 20) {
-            // 搜索组件
-            SearchBar(searchText: $searchText, selectedColor: selectedColor)
-            
-            // 分类组件
-            CategoryBar(selectedCategory: $selectedCategory)
-        }
-    }
-}
-
-struct SearchBar: View {
-    @FocusState private var isTextFieldFocused: Bool
-    @Binding var searchText: String
-    var selectedColor: Color
-    var body: some View {
-        HStack {
-            Image("magnifier")
-                .resizable()
-                .renderingMode(.template)
-                .scaledToFit()
-                .frame(width: 18, height: 18)
-                .foregroundStyle(.secondary)
-            
-            TextField("Search components...", text: $searchText)
-        }
-        .focused($isTextFieldFocused)
-        .padding(10)
-        .background(Color("WhiteAndBlack"))
-        .cornerRadius(10)
-        .overlay {
-            if isTextFieldFocused {
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color("AppColor"), lineWidth: 2)
-            }
-        }
     }
 }
 
