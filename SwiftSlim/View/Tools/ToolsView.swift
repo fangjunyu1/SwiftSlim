@@ -39,7 +39,7 @@ struct ToolsView: View {
                 Spacer()
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
-                ForEach(ToolType.LearningTools) { item in
+                ForEach(ToolType.allCases.filter { $0.category == .LearningTool }) { item in
                         DevToolsView(tool: item, displayLocation: .Tools)
                 }
             }
@@ -55,7 +55,7 @@ struct ToolsView: View {
                 Spacer()
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
-                ForEach(ToolType.DesignTools) { item in
+                ForEach(ToolType.allCases.filter { $0.category == .DesignTools }) { item in
                     
                         DevToolsView(tool: item, displayLocation: .Tools)
                 }

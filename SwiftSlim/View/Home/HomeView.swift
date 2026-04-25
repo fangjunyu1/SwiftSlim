@@ -24,7 +24,6 @@ struct HomeView: View {
                 greeting
                 // 学习进度
                 // learningProgress
-                
                 // 开发工具
                 devTools
                 // 每日提醒
@@ -133,8 +132,7 @@ struct HomeView: View {
     var devTools: some View {
         
         let columns = [
-            GridItem(.adaptive(minimum: 160)),
-            GridItem(.adaptive(minimum: 160))
+            GridItem(.adaptive(minimum: 140, maximum: 140) , spacing: 20, alignment: .leading)
         ]
         
         return VStack(spacing: 20) {
@@ -153,12 +151,12 @@ struct HomeView: View {
                 })
             }
             // 开发者工具（前四个）
-            LazyVGrid(columns: columns, alignment: .leading) {
-                ForEach(ToolType.allCases) { tool in
-                    DevToolsView(tool: tool, displayLocation: .Home)
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
+                    ForEach(ToolType.allCases) { tool in
+                        DevToolsView(tool: tool, displayLocation: .Home)
+                    }
                 }
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.horizontal, 8)
     }

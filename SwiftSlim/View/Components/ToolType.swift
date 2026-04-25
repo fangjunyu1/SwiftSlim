@@ -12,14 +12,11 @@ enum ToolCategory {
     case DesignTools
 }
 
-extension ToolType {
-    static let LearningTools:[ToolType] = [.Shortcuts]
-    static let DesignTools:[ToolType] = [.Preview]
-}
 enum ToolType: String, Identifiable, CaseIterable {
     
     case Shortcuts
     case Preview
+    case Curves
 //    case API_Dictionary
 //    case Errors
     
@@ -37,6 +34,18 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            "Reference"
 //        case .Errors:
 //            "Errors"
+        case .Curves:
+            "Animation Curves"
+        }
+    }
+    
+    
+    var category: ToolCategory {
+        switch self {
+        case .Shortcuts:
+                .LearningTool
+        case .Preview,.Curves:
+                .DesignTools
         }
     }
     
@@ -46,6 +55,23 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex:"883AE2")
         case .Shortcuts:
             Color(hex: "4A5466")
+        case .Curves:
+            Color(hex: "27746A")
+//        case .API_Dictionary:
+//            Color(hex:"4EAE54")
+//        case .Errors:
+//            Color(hex: "CA3A32")
+        }
+    }
+    
+    var bgColor: Color {
+        switch self {
+        case .Preview:
+            Color(hex:"883AE2")
+        case .Shortcuts:
+            Color(hex: "4A5466")
+        case .Curves:
+            Color(hex: "1EE5C7")
 //        case .API_Dictionary:
 //            Color(hex:"4EAE54")
 //        case .Errors:
@@ -59,6 +85,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "mokuai"
         case .Shortcuts:
             "shortcutKey"
+        case .Curves:
+            "curve"
 //        case .API_Dictionary:
 //            "book"
 //        case .Errors:
@@ -72,8 +100,10 @@ enum ToolType: String, Identifiable, CaseIterable {
             "UI Controls"
         case .Shortcuts:
             "Xcode Shortcuts"
+        case .Curves:
+            "Animation Preview"
 //        case .API_Dictionary:
-//            "API Quick Reference"
+//            "API Reference"
 //        case .Errors:
 //            "Common Fixes"
         }
@@ -85,6 +115,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             ShortcutsView()
         case .Preview:
             PreviewView()
+        case .Curves:
+            AnimationCurves()
 //        case .API_Dictionary:
 //            APIView()
 //        case .Errors:

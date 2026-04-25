@@ -18,7 +18,7 @@
 //        }
 //        .searchable(
 //            text: $searchText,
-//            prompt: "Search APIs, like Text or VStack..."
+//            prompt: "Search APIs..."
 //        )
 //        .navigationTitle("Reference")
 //        .navigationBarTitleDisplayMode(.inline)

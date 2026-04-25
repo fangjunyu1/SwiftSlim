@@ -3703,9 +3703,6 @@
         }
       }
     },
-    "Add 1" : {
-
-    },
     "Add Breakpoint" : {
       "comment" : "添加断点",
       "extractionState" : "manual",
@@ -4552,7 +4549,31 @@
         }
       }
     },
-    "API Quick Reference" : {
+    "Animation Curves" : {
+      "comment" : "动画曲线",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画曲线"
+          }
+        }
+      }
+    },
+    "Animation Preview" : {
+      "comment" : "动画效果预览",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画效果预览"
+          }
+        }
+      }
+    },
+    "API Reference" : {
       "comment" : "接口速查手册",
       "extractionState" : "manual",
       "localizations" : {
@@ -4563,9 +4584,6 @@
           }
         }
       }
-    },
-    "API 速查" : {
-
     },
     "Are You Ready?" : {
       "comment" : "准备好了吗？",
@@ -7668,12 +7686,6 @@
           }
         }
       }
-    },
-    "Child turns Off" : {
-
-    },
-    "Child turns On" : {
-
     },
     "Clean Build" : {
       "comment" : "清理构建",
@@ -11633,9 +11645,6 @@
           }
         }
       }
-    },
-    "Count: %lld" : {
-
     },
     "Counter" : {
       "comment" : "009_计数器",
@@ -19840,7 +19849,7 @@
       }
     },
     "Hello" : {
-
+      "shouldTranslate" : false
     },
     "Hello, %@" : {
       "comment" : "你好，开发者",
@@ -20405,9 +20414,6 @@
           }
         }
       }
-    },
-    "Hello, SwiftUI" : {
-
     },
     "Hides sensitive text input." : {
       "comment" : "用于输入隐藏内容。",
@@ -25497,9 +25503,6 @@
         }
       }
     },
-    "Loading..." : {
-
-    },
     "Login Interactions" : {
       "comment" : "020_登录交互",
       "extractionState" : "manual",
@@ -30294,9 +30297,6 @@
         }
       }
     },
-    "Parent value" : {
-
-    },
     "Piggy bank" : {
       "comment" : "014_存钱罐",
       "extractionState" : "manual",
@@ -33117,18 +33117,6 @@
         }
       }
     },
-    "Reference" : {
-      "comment" : "速查手册",
-      "extractionState" : "manual",
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "速查手册"
-          }
-        }
-      }
-    },
     "Refresh Preview" : {
       "comment" : "刷新预览",
       "extractionState" : "manual",
@@ -35385,18 +35373,6 @@
         }
       }
     },
-    "Search APIs, like Text or VStack..." : {
-      "comment" : "搜索 API（如 Text, VStack）...",
-      "extractionState" : "manual",
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "搜索 API（如 Text, VStack）..."
-          }
-        }
-      }
-    },
     "Search components..." : {
       "comment" : "搜索组件...",
       "extractionState" : "manual",
@@ -35675,18 +35651,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "搜尋元件..."
-          }
-        }
-      }
-    },
-    "Search errors..." : {
-      "comment" : "搜索报错信息...",
-      "extractionState" : "manual",
-      "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "搜索报错信息..."
           }
         }
       }
@@ -45279,9 +45243,6 @@
         }
       }
     },
-    "Tap Me" : {
-
-    },
     "Terms" : {
       "comment" : "使用条款",
       "extractionState" : "manual",
@@ -52079,72 +52040,6 @@
           }
         }
       }
-    },
-    "下面这个小例子演示了 @State 如何在当前视图中保存数据，并在数值变化时自动刷新界面。" : {
-
-    },
-    "代码" : {
-
-    },
-    "作用" : {
-
-    },
-    "复制" : {
-
-    },
-    "复制代码" : {
-
-    },
-    "已复制" : {
-
-    },
-    "当前状态：关闭" : {
-
-    },
-    "当前状态：开启" : {
-
-    },
-    "按钮已点击" : {
-
-    },
-    "提示" : {
-
-    },
-    "搜索 API、状态、修饰符..." : {
-
-    },
-    "搜索组件、状态或修饰符" : {
-
-    },
-    "效果对比" : {
-
-    },
-    "效果预览" : {
-
-    },
-    "模拟一个后台任务完成后，再切回主线程更新界面。" : {
-
-    },
-    "模拟请求" : {
-
-    },
-    "点击按钮试试看" : {
-
-    },
-    "父视图拥有状态，子视图通过 @Binding 修改它。" : {
-
-    },
-    "状态演示" : {
-
-    },
-    "这类 API 更适合展示“添加前”和“添加后”的差异。" : {
-
-    },
-    "速查" : {
-
-    },
-    "默认值：%@" : {
-
     }
   },
   "version" : "1.0"

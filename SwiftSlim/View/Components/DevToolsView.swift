@@ -17,6 +17,10 @@ struct DevToolsView: View {
         colorScheme == .light ? tool.color : Color.white
     }
     
+    var devBgColor: Color {
+        colorScheme == .light ? tool.bgColor : Color.white
+    }
+    
     var alignment: HorizontalAlignment {
         if displayLocation == .Home {
             return .leading
@@ -43,7 +47,7 @@ struct DevToolsView: View {
     
     var width: Double {
         if displayLocation == .Home {
-            return 160
+            return 140
         } else if displayLocation == .Tools {
             return 120
         } else {
@@ -97,15 +101,19 @@ struct DevToolsView: View {
                     .frame(width: imageSize, height: imageSize)
                     .foregroundStyle(devColor)
                     .padding(6)
-                    .background(devColor.opacity(0.15))
+                    .background(devBgColor.opacity(0.15))
                     .cornerRadius(8)
                     .padding(.bottom, 8)
                 Text(LocalizedStringKey(tool.title))
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundStyle(Color("BlackColor"))
+                    .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
                 Text(LocalizedStringKey(tool.description))
                     .modifier(NotesText())
+                    .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             if isHome {
                 Spacer()
@@ -126,4 +134,5 @@ enum DevToolsDisplayLocation {
 #Preview {
     ContentView()
         .environmentObject(AppStorageManager.shared)
+        .environment(\.locale, .init(identifier: "en"))
 }
