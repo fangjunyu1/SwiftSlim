@@ -45,16 +45,6 @@ struct DevToolsView: View {
         displayLocation == .Home
     }
     
-    var width: Double {
-        if displayLocation == .Home {
-            return 140
-        } else if displayLocation == .Tools {
-            return 120
-        } else {
-            return 120
-        }
-    }
-    
     var height: Double {
         if displayLocation == .Home {
             return 110
@@ -120,7 +110,8 @@ struct DevToolsView: View {
             }
         }
         .padding(padding)
-        .frame(width: width, height: height)
+        .frame(height: height)
+        .frame(maxWidth: .infinity)
         .background(Color("WhiteAndBlack"))
         .cornerRadius(10)
     }

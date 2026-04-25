@@ -17,6 +17,7 @@ enum ToolType: String, Identifiable, CaseIterable {
     case Shortcuts
     case Preview
     case Curves
+    case Colors
 //    case API_Dictionary
 //    case Errors
     
@@ -36,6 +37,8 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            "Errors"
         case .Curves:
             "Animation Curves"
+        case .Colors:
+            "Colors"
         }
     }
     
@@ -44,7 +47,7 @@ enum ToolType: String, Identifiable, CaseIterable {
         switch self {
         case .Shortcuts:
                 .LearningTool
-        case .Preview,.Curves:
+        case .Preview,.Curves, .Colors:
                 .DesignTools
         }
     }
@@ -57,6 +60,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex: "4A5466")
         case .Curves:
             Color(hex: "27746A")
+        case .Colors:
+            Color(hex: "CE2A66")
 //        case .API_Dictionary:
 //            Color(hex:"4EAE54")
 //        case .Errors:
@@ -72,6 +77,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex: "4A5466")
         case .Curves:
             Color(hex: "1EE5C7")
+        case .Colors:
+            Color(hex: "FF6BCE")
 //        case .API_Dictionary:
 //            Color(hex:"4EAE54")
 //        case .Errors:
@@ -87,6 +94,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "shortcutKey"
         case .Curves:
             "curve"
+        case .Colors:
+            "paletteLine"
 //        case .API_Dictionary:
 //            "book"
 //        case .Errors:
@@ -102,6 +111,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "Xcode Shortcuts"
         case .Curves:
             "Animation Preview"
+        case .Colors:
+            "Semantic Colors"
 //        case .API_Dictionary:
 //            "API Reference"
 //        case .Errors:
@@ -116,8 +127,9 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Preview:
             PreviewView()
         case .Curves:
-//            AnimationCurves()
             AnimationCurves()
+        case .Colors:
+            ColorsView()
 //        case .API_Dictionary:
 //            APIView()
 //        case .Errors:
