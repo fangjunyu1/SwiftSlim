@@ -116,6 +116,7 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Preview:
             PreviewView()
         case .Curves:
+//            AnimationCurves()
             AnimationCurves()
 //        case .API_Dictionary:
 //            APIView()

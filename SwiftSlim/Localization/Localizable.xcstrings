@@ -5995,6 +5995,30 @@
         }
       }
     },
+    "Bounce" : {
+      "comment" : "弹性（Bounce）",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "弹性（Bounce）"
+          }
+        }
+      }
+    },
+    "Bounce effect with overshoot and return" : {
+      "comment" : "带有弹跳效果，超出目标后回弹",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "带有弹跳效果，超出目标后回弹"
+          }
+        }
+      }
+    },
     "Brilliant Colors" : {
       "comment" : "006_绚丽的颜色",
       "extractionState" : "manual",
@@ -12492,6 +12516,18 @@
         }
       }
     },
+    "Custom Spring Animation" : {
+      "comment" : "自定义弹簧动画",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义弹簧动画"
+          }
+        }
+      }
+    },
     "Daily Tips" : {
       "comment" : "每日技巧",
       "extractionState" : "manual",
@@ -15882,6 +15918,18 @@
         }
       }
     },
+    "Duration" : {
+      "comment" : "持续时间（Duration）",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "持续时间（Duration）"
+          }
+        }
+      }
+    },
     "Edit" : {
       "comment" : "编辑",
       "extractionState" : "manual",
@@ -17300,6 +17348,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "方君宇"
+          }
+        }
+      }
+    },
+    "Fast response with slight springy finish" : {
+      "comment" : "快速响应，迅速到位后轻微弹性收尾",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速响应，迅速到位后轻微弹性收尾"
           }
         }
       }
@@ -19562,6 +19622,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "認識 Xcode"
+          }
+        }
+      }
+    },
+    "Gradually accelerates from slow to fast" : {
+      "comment" : "由慢到快，开始缓慢加速",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由慢到快，开始缓慢加速"
+          }
+        }
+      }
+    },
+    "Gradually decelerates from fast to slow" : {
+      "comment" : "由快到慢，结尾逐渐减速",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由快到慢，结尾逐渐减速"
           }
         }
       }
@@ -24939,6 +25023,18 @@
         }
       }
     },
+    "Linear animation with constant speed throughout" : {
+      "comment" : "匀速动画，全程速度保持恒定",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "匀速动画，全程速度保持恒定"
+          }
+        }
+      }
+    },
     "Link" : {
       "comment" : "链接",
       "extractionState" : "manual",
@@ -30297,6 +30393,18 @@
         }
       }
     },
+    "Physics-based spring interpolation with precise control parameters" : {
+      "comment" : "基于物理插值的弹簧，精确控制参数",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基于物理插值的弹簧，精确控制参数"
+          }
+        }
+      }
+    },
     "Piggy bank" : {
       "comment" : "014_存钱罐",
       "extractionState" : "manual",
@@ -30575,6 +30683,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "存錢罐"
+          }
+        }
+      }
+    },
+    "Play All Comparisons" : {
+      "comment" : "全部播放对比",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部播放对比"
+          }
+        }
+      }
+    },
+    "Playing..." : {
+      "comment" : "播放中...",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放中..."
           }
         }
       }
@@ -31421,6 +31553,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "組件預覽"
+          }
+        }
+      }
+    },
+    "Preview Effect" : {
+      "comment" : "预览效果",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "预览效果"
           }
         }
       }
@@ -40731,6 +40875,54 @@
         }
       }
     },
+    "Smooth transition with acceleration then deceleration" : {
+      "comment" : "先加速后减速，两端平滑过渡",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先加速后减速，两端平滑过渡"
+          }
+        }
+      }
+    },
+    "Smoother than easeInOut, more natural feel" : {
+      "comment" : "平滑曲线，比 easeInOut 更柔和自然",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "平滑曲线，比 easeInOut 更柔和自然"
+          }
+        }
+      }
+    },
+    "Spring animation with natural physical elasticity" : {
+      "comment" : "弹簧动画，自然物理感弹性过渡",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "弹簧动画，自然物理感弹性过渡"
+          }
+        }
+      }
+    },
+    "Spring tuned for gestures, more responsive" : {
+      "comment" : "适合手势驱动的弹簧，响应更灵敏",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "适合手势驱动的弹簧，响应更灵敏"
+          }
+        }
+      }
+    },
     "Start from ContentView" : {
       "comment" : "002_从 ContentView 开始",
       "extractionState" : "manual",
@@ -44957,6 +45149,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適合在少量選項之間快速切換。"
+          }
+        }
+      }
+    },
+    "System default curve, typically easeInOut" : {
+      "comment" : "系统默认曲线，通常为 easeInOut 效果",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统默认曲线，通常为 easeInOut 效果"
           }
         }
       }
