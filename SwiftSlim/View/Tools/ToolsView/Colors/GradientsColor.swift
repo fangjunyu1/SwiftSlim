@@ -25,20 +25,20 @@ enum GradientsColor: String, Identifiable, CaseIterable {
 
     var title: String {
         switch self {
-        case .linearGradient:  "线性渐变"
-        case .radialGradient:  "径向渐变"
-        case .angularGradient: "角度渐变"
+        case .linearGradient:  "Linear Gradient"
+        case .radialGradient:  "Radial Gradient"
+        case .angularGradient: "Angular Gradient"
         }
     }
 
     var describe: String {
         switch self {
         case .linearGradient:
-            "线性渐变会在指定的方向上从一个颜色过渡到另一个颜色。"
+            "Linear gradient transitions between colors along a direction."
         case .radialGradient:
-            "径向渐变是从中心向外扩展的渐变效果，适合用于圆形或有中心点的渐变效果。"
+            "Radial gradient expands outward from a center point."
         case .angularGradient:
-            "角度渐变是围绕某个点旋转的渐变效果，适合用于圆形或圆弧区域。"
+            "Angular gradient rotates colors around a center point.。"
         }
     }
 

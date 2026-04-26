@@ -4549,6 +4549,30 @@
         }
       }
     },
+    "Angular Gradient" : {
+      "comment" : "角度渐变",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "角度渐变"
+          }
+        }
+      }
+    },
+    "Angular gradient rotates colors around a center point." : {
+      "comment" : "角度渐变是围绕某个点旋转的渐变效果，适合用于圆形或圆弧区域。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "角度渐变是围绕某个点旋转的渐变效果，适合用于圆形或圆弧区域。"
+          }
+        }
+      }
+    },
     "Animation Curves" : {
       "comment" : "动画曲线",
       "extractionState" : "manual",
@@ -4581,6 +4605,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "接口速查手册"
+          }
+        }
+      }
+    },
+    "App accent color, default blue" : {
+      "comment" : "App 的强调色，默认蓝色",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App 的强调色，默认蓝色"
           }
         }
       }
@@ -19638,6 +19674,18 @@
         }
       }
     },
+    "Gradient Colors" : {
+      "comment" : "渐变颜色",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "渐变颜色"
+          }
+        }
+      }
+    },
     "Gradually accelerates from slow to fast" : {
       "comment" : "由慢到快，开始缓慢加速",
       "extractionState" : "manual",
@@ -25043,6 +25091,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "匀速动画，全程速度保持恒定"
+          }
+        }
+      }
+    },
+    "Linear Gradient" : {
+      "comment" : "线性渐变",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "线性渐变"
+          }
+        }
+      }
+    },
+    "Linear gradient transitions between colors along a direction." : {
+      "comment" : "线性渐变会在指定的方向上从一个颜色过渡到另一个颜色。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "线性渐变会在指定的方向上从一个颜色过渡到另一个颜色。"
           }
         }
       }
@@ -31581,6 +31653,18 @@
         }
       }
     },
+    "Primary text color, adapts to light and dark modes" : {
+      "comment" : "主要文本颜色，自动适应深浅模式",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主要文本颜色，自动适应深浅模式"
+          }
+        }
+      }
+    },
     "Privacy" : {
       "comment" : "隐私政策",
       "extractionState" : "manual",
@@ -32987,6 +33071,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "名言輪播"
+          }
+        }
+      }
+    },
+    "Radial Gradient" : {
+      "comment" : "径向渐变",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "径向渐变"
+          }
+        }
+      }
+    },
+    "Radial gradient expands outward from a center point." : {
+      "comment" : "径向渐变是从中心向外扩展的渐变效果，适合用于圆形或有中心点的渐变效果。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "径向渐变是从中心向外扩展的渐变效果，适合用于圆形或有中心点的渐变效果。"
           }
         }
       }
@@ -35811,6 +35919,18 @@
         }
       }
     },
+    "Secondary text for supporting information" : {
+      "comment" : "次要文本，用于补充信息",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次要文本，用于补充信息"
+          }
+        }
+      }
+    },
     "Section" : {
       "comment" : "分组",
       "extractionState" : "manual",
@@ -37504,13 +37624,13 @@
       }
     },
     "Semantic Colors" : {
-      "comment" : "系统与语义色",
+      "comment" : "语义颜色",
       "extractionState" : "manual",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "系统与语义色"
+            "value" : "语义颜色"
           }
         }
       }
@@ -45173,6 +45293,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適合在少量選項之間快速切換。"
+          }
+        }
+      }
+    },
+    "System & Semantic" : {
+      "comment" : "系统与语义色",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统与语义色"
+          }
+        }
+      }
+    },
+    "System Colors" : {
+      "comment" : "系统颜色",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "系统颜色"
           }
         }
       }

@@ -27,9 +27,9 @@ enum SemanticColor: String, Identifiable, CaseIterable {
 
     var describe: String {
         switch self {
-        case .primary:     "主要文本颜色，自动适应深浅模式"
-        case .secondary:   "次要文本，用于补充信息"
-        case .accentColor: "App 的强调色，默认蓝色"
+        case .primary:     "Primary text color, adapts to light and dark modes"
+        case .secondary:   "Secondary text for supporting information"
+        case .accentColor: "App accent color, default blue"
         }
     }
 }

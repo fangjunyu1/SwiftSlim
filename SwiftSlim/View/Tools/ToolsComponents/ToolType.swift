@@ -112,7 +112,7 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Curves:
             "Animation Preview"
         case .Colors:
-            "Semantic Colors"
+            "System & Semantic"
 //        case .API_Dictionary:
 //            "API Reference"
 //        case .Errors:

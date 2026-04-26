@@ -34,7 +34,7 @@ struct SemanticColorBlock: View {
                     .font(.footnote)
                     .fontWeight(.bold)
                     .foregroundStyle(Color("BlackColor"))
-                Text(sColor.describe)
+                Text(LocalizedStringKey(sColor.describe))
                     .font(.footnote)
                     .foregroundStyle(.gray)
             }

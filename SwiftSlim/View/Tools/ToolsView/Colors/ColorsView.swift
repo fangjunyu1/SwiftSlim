@@ -18,7 +18,7 @@ struct ColorsView: View {
             VStack(spacing: 30) {
                 // 系统颜色
                 VStack(alignment: .leading, spacing: 10) {
-                    sectionTitle("系统颜色")
+                    sectionTitle("System Colors")
                     LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
                         ForEach(SystemColor.allCases) { color in
                             SystemColorBlock(color: color)
@@ -29,7 +29,7 @@ struct ColorsView: View {
 
                 // 语义颜色
                 VStack(alignment: .leading, spacing: 10) {
-                    sectionTitle("语义颜色")
+                    sectionTitle("Semantic Colors")
                     VStack(spacing: 20) {
                         ForEach(Array(SemanticColor.allCases.enumerated()), id: \.offset) { index, color in
                             SemanticColorBlock(sColor: color)
@@ -46,7 +46,7 @@ struct ColorsView: View {
 
                 // 渐变颜色
                 VStack(alignment: .leading, spacing: 10) {
-                    sectionTitle("渐变颜色")
+                    sectionTitle("Gradient Colors")
                     VStack(spacing: 20) {
                         ForEach(Array(GradientsColor.allCases.enumerated()), id: \.offset) { index, color in
                             GradientsColorBlock(gColor: color)
