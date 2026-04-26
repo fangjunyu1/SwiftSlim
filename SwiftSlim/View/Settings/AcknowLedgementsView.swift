@@ -43,7 +43,7 @@ struct AcknowLedgementsView: View {
     
     // 资源与技术
     var ResourcesSupport: some View {
-        let imgs: [String] = ["LottieFiles","Freepik","iconfont","magicpatterns","GitHub","ChatGPT","Codex"]
+        let imgs: [String] = ["LottieFiles","Freepik","iconfont","magicpatterns","GitHub","ChatGPT","Codex","claude"]
         return VStack {
             AcknowLedgementsTitle(
                 title: "Resources & Support",
