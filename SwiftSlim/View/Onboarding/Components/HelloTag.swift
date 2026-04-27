@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HelloTag: View {
-    var hello: String
     var body: some View {
         HStack {
             Text(verbatim: "</>")

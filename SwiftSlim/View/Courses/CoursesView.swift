@@ -50,7 +50,7 @@ struct CoursesView: View {
                     .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 16, height: 16)
-                Text("PREMIUM")
+                Text(verbatim: "PREMIUM")
                     .font(.subheadline)
                     .fontWeight(.heavy)
                 Spacer()

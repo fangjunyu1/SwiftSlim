@@ -59,7 +59,6 @@ struct OnboardingPageContainer: View {
 // 轻松学 SwiftUI
 struct LearnSwiftUIStage: View {
     @State private var animateIn = false
-    let hello = "Hello"
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -70,7 +69,7 @@ struct LearnSwiftUIStage: View {
                 .shadow(radius: 10)
                 .scaleEffect(animateIn ? 1 : 0.96)
                 .animation(.easeOut(duration: 0.35), value: animateIn)
-            HelloTag(hello: hello)
+            HelloTag()
                 .scaleEffect(animateIn ? 1 : 0.2)
                 .opacity(animateIn ? 1 : 0)
                 .offset(y: animateIn ? 20 : 80)

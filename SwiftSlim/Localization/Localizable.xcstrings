@@ -24895,9 +24895,6 @@
         }
       }
     },
-    "Hello" : {
-      "shouldTranslate" : false
-    },
     "Hello, %@" : {
       "comment" : "你好，开发者",
       "extractionState" : "manual",
@@ -37317,9 +37314,6 @@
           }
         }
       }
-    },
-    "PREMIUM" : {
-
     },
     "Presents options in a menu." : {
       "comment" : "以菜单方式展示选项。",
