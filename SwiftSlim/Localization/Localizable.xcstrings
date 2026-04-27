@@ -37318,6 +37318,9 @@
         }
       }
     },
+    "PREMIUM" : {
+
+    },
     "Presents options in a menu." : {
       "comment" : "以菜单方式展示选项。",
       "extractionState" : "manual",
