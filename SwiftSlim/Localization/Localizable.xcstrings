@@ -12169,6 +12169,18 @@
         }
       }
     },
+    "Coming Soon" : {
+      "comment" : "敬请期待",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "敬请期待"
+          }
+        }
+      }
+    },
     "Command Search" : {
       "comment" : "命令搜索",
       "extractionState" : "manual",
@@ -18939,6 +18951,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用於顯示系統圖示或本機圖片。"
+          }
+        }
+      }
+    },
+    "Dive deeper into SwiftUI from the basics, covering data storage, view splitting, state management, project organization, and real-world application development." : {
+      "comment" : "从 SwiftUI 基础继续深入，学习数据存储、视图拆分、状态管理、项目组织与实际应用开发。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从 SwiftUI 基础继续深入，学习数据存储、视图拆分、状态管理、项目组织与实际应用开发。"
           }
         }
       }
@@ -53107,6 +53131,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Swift 和 SwiftUI"
+          }
+        }
+      }
+    },
+    "SwiftUI Advanced Development" : {
+      "comment" : "SwiftUI 高级开发",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SwiftUI 高级开发"
           }
         }
       }

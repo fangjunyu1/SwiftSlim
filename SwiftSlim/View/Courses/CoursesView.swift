@@ -30,6 +30,8 @@ struct CoursesView: View {
                         .background(Color("WhiteAndBlack"))
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 }
+                // SwiftUI 高级开发
+                SwiftUIAdvancedDevelopment
             }
         }
         .navigationTitle("Courses")
@@ -37,6 +39,72 @@ struct CoursesView: View {
         .safeAreaInset(edge: .bottom) {
             Spacer().frame(height: 120)
         }
+    }
+    
+    var SwiftUIAdvancedDevelopment: some View {
+        VStack(spacing: 20) {
+            // PREMIUM
+            HStack {
+                Image("lock")
+                    .resizable()
+                    .renderingMode(.template)
+                    .scaledToFit()
+                    .frame(width: 16, height: 16)
+                Text("PREMIUM")
+                    .font(.subheadline)
+                    .fontWeight(.heavy)
+                Spacer()
+            }
+            .foregroundStyle(Color("GoldColor"))
+            
+            // SwiftUI 高级开发
+            HStack {
+                Text("SwiftUI Advanced Development")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+                Spacer()
+            }
+            
+            // 描述：从 SwiftUI 基础继续深入...
+            HStack {
+                Text("Dive deeper into SwiftUI from the basics, covering data storage, view splitting, state management, project organization, and real-world application development.")
+                    .font(.footnote)
+                    .fontWeight(.medium)
+                    .foregroundStyle(Color("LightDrak").opacity(0.8))
+                Spacer()
+            }
+            Button(action: {
+                print("点击了敬请期待")
+            }, label:  {
+                Text("Coming Soon")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                    .frame(width: 260, height: 55)
+                    .foregroundStyle(.black)
+                    .background(Color("GoldColor"))
+                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            })
+        }
+        .padding(26)
+        .background {
+            VStack {
+                HStack {
+                    Spacer()
+                    Image("start2")
+                        .resizable()
+                        .renderingMode(.template)
+                        .scaledToFit()
+                        .frame(width: 120, height: 120)
+                        .foregroundStyle(.white.opacity(0.1))
+                }
+                Spacer()
+            }
+            .padding(20)
+        }
+        .background(Color("LightBlack"))
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        
     }
 }
 
