@@ -38,7 +38,7 @@ enum GradientsColor: String, Identifiable, CaseIterable {
         case .radialGradient:
             "Radial gradient expands outward from a center point."
         case .angularGradient:
-            "Angular gradient rotates colors around a center point.。"
+            "Angular gradient rotates colors around a center point."
         }
     }
 

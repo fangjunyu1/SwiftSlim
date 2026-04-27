@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ColorsView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     let columns = [
         GridItem(.adaptive(minimum: 90, maximum: 120), spacing: 10, alignment: .leading)
     ]
@@ -59,6 +60,11 @@ struct ColorsView: View {
         .navigationTitle("Colors")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
+        .onDisappear {
+            print("关闭课程")
+            print("检测是否满足打开评分窗口")
+            AppRating.checkReviewIfNeeded(appStorage: appStorage)
+        }
     }
 
     // 提取为私有方法，避免重复代码

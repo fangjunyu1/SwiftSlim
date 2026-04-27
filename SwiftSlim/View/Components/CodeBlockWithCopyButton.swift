@@ -74,9 +74,3 @@ struct CodeBlockWithCopyButton: View {
         }
     }
 }
-
-#Preview {
-    NavigationView {
-        Education()
-    }
-}
