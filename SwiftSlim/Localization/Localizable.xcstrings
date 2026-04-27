@@ -46029,6 +46029,19 @@
         }
       }
     },
+    "SF Symbols" : {
+      "comment" : "SF Symbols",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
     "Shortcuts" : {
       "comment" : "快捷键速查",
       "extractionState" : "manual",
@@ -54203,6 +54216,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適合在少量選項之間快速切換。"
+          }
+        }
+      }
+    },
+    "Symbols" : {
+      "comment" : "图标库",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标库"
           }
         }
       }

@@ -18,6 +18,7 @@ enum ToolType: String, Identifiable, CaseIterable {
     case Preview
     case Curves
     case Colors
+    case Symbols
 //    case API_Dictionary
 //    case Errors
     
@@ -39,6 +40,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "Animation Curves"
         case .Colors:
             "Colors"
+        case .Symbols:
+            "Symbols"
         }
     }
     
@@ -47,7 +50,7 @@ enum ToolType: String, Identifiable, CaseIterable {
         switch self {
         case .Shortcuts:
                 .LearningTool
-        case .Preview,.Curves, .Colors:
+        case .Symbols,.Preview,.Curves, .Colors:
                 .DesignTools
         }
     }
@@ -62,6 +65,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex: "27746A")
         case .Colors:
             Color(hex: "CE2A66")
+        case .Symbols:
+            Color(hex: "D9622B")
 //        case .API_Dictionary:
 //            Color(hex:"4EAE54")
 //        case .Errors:
@@ -79,6 +84,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             Color(hex: "1EE5C7")
         case .Colors:
             Color(hex: "FF6BCE")
+        case .Symbols:
+            Color(hex: "D9622B")
 //        case .API_Dictionary:
 //            Color(hex:"4EAE54")
 //        case .Errors:
@@ -96,6 +103,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "curve"
         case .Colors:
             "paletteLine"
+        case .Symbols:
+            "fenlei"
 //        case .API_Dictionary:
 //            "book"
 //        case .Errors:
@@ -113,6 +122,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             "Animation Preview"
         case .Colors:
             "System & Semantic"
+        case .Symbols:
+            "SF Symbols"
 //        case .API_Dictionary:
 //            "API Reference"
 //        case .Errors:
@@ -130,6 +141,8 @@ enum ToolType: String, Identifiable, CaseIterable {
             AnimationCurves()
         case .Colors:
             ColorsView()
+        case .Symbols:
+            SymbolsView()
 //        case .API_Dictionary:
 //            APIView()
 //        case .Errors:
