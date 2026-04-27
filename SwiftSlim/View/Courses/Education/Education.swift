@@ -32,12 +32,17 @@ class EducationViewModel {
 
 struct Education: View {
     var body: some View {
-        List {
-            ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
-                NavigationLink(destination: EducationPage(url: item.url)) {
-                    Text(verbatim: "\(index + 1)")
-                    Text(LocalizedStringKey(item.name))
+        VStack {
+            List {
+                ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
+                    NavigationLink(destination: EducationPage(url: item.url)) {
+                        Text(verbatim: "\(index + 1)")
+                        Text(LocalizedStringKey(item.name))
+                    }
                 }
+            }
+            .safeAreaInset(edge: .bottom) {
+                Color.clear.frame(height: 80) // 你的底部导航栏高度
             }
         }
     }

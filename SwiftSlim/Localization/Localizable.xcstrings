@@ -13575,6 +13575,7 @@
     },
     "Contents" : {
       "comment" : "目录",
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
