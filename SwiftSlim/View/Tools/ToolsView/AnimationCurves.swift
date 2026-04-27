@@ -69,6 +69,7 @@ enum AnimationCurvesEnum: String, CaseIterable, Identifiable {
 // MARK: - Main View
 
 struct AnimationCurves: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     /// 用时间戳触发"全部播放"，避免多个 item 的 asyncAfter 互相竞争重置 Bool
     @State private var playAllTrigger: Date? = nil
     
@@ -85,6 +86,11 @@ struct AnimationCurves: View {
         .navigationTitle("Animation Curves")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
+        .onDisappear {
+            print("关闭课程")
+            print("检测是否满足打开评分窗口")
+            AppRating.checkReviewIfNeeded(appStorage: appStorage)
+        }
     }
     
     // MARK: 全部播放按钮
@@ -129,6 +135,7 @@ struct AnimationCurves: View {
 // MARK: - Animation Item
 
 struct AnimationCurvesItem: View {
+    
     @State private var circleX: Double = 0
     @State private var circleStartX: Double = 0
     @State private var circleEndX: Double = 0

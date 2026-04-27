@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PreviewView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     // 所有视图组件
     private let components = PreviewComponent.all
     
@@ -77,6 +78,11 @@ struct PreviewView: View {
         .navigationTitle("Preview")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
+        .onDisappear {
+            print("关闭课程")
+            print("检测是否满足打开评分窗口")
+            AppRating.checkReviewIfNeeded(appStorage: appStorage)
+        }
     }
 }
 

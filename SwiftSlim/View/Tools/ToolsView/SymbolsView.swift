@@ -25,7 +25,7 @@ enum SymbolsVersion: String, Identifiable, CaseIterable, CategoryItem {
     case SF5
     case SF6
     case SF7
-
+    
     var title: String {
         switch self {
         case .SF1: return "iOS 13+"
@@ -64,10 +64,10 @@ struct SingleSymbols: Identifiable {
     var name: String
     var version: SymbolsVersion
     var keywords: [String]
-
+    
     // MARK: - 完整符号列表
     static let listSymbols: [SingleSymbols] = [
-
+        
         // ========== 书写与编辑 ==========
         SingleSymbols(name: "pencil",                    version: .SF1, keywords: ["铅笔", "写字", "编辑", "绘图", "修改", "注释"]),
         SingleSymbols(name: "pencil.tip",                version: .SF1, keywords: ["铅笔头", "笔尖", "绘图", "写作", "标注"]),
@@ -78,7 +78,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "trash",                     version: .SF1, keywords: ["垃圾桶", "删除", "移除", "废纸篓", "清除", "丢弃"]),
         SingleSymbols(name: "scissors",                  version: .SF1, keywords: ["剪刀", "剪切", "裁剪", "删除", "编辑"]),
         SingleSymbols(name: "crop",                      version: .SF1, keywords: ["修剪", "裁剪", "裁切", "调整", "编辑图片"]),
-
+        
         // ========== 文件与存储 ==========
         SingleSymbols(name: "folder",                    version: .SF1, keywords: ["文件夹", "目录", "整理", "归档", "分类"]),
         SingleSymbols(name: "tray",                      version: .SF1, keywords: ["托盘", "收件箱", "存储", "收纳", "输入"]),
@@ -95,7 +95,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "scroll",                    version: .SF2, keywords: ["卷轴", "历史", "古卷", "文本", "文件"]),
         SingleSymbols(name: "checklist",                 version: .SF4, keywords: ["清单", "列表", "待办", "任务", "勾选"]),
         SingleSymbols(name: "square.text.square",        version: .SF4, keywords: ["文本方块", "内容框", "文字", "卡片"]),
-
+        
         // ========== 阅读与书籍 ==========
         SingleSymbols(name: "book",                      version: .SF1, keywords: ["书本", "阅读", "图书", "教材", "学习"]),
         SingleSymbols(name: "books.vertical",            version: .SF2, keywords: ["书架", "图书馆", "多本书", "藏书", "阅读"]),
@@ -105,7 +105,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "magazine",                  version: .SF3, keywords: ["杂志", "期刊", "阅读", "资讯", "出版"]),
         SingleSymbols(name: "newspaper",                 version: .SF1, keywords: ["报纸", "新闻", "资讯", "媒体", "阅读"]),
         SingleSymbols(name: "bookmark",                  version: .SF1, keywords: ["书签", "收藏", "标记", "记录位置", "保存"]),
-
+        
         // ========== 教育与办公 ==========
         SingleSymbols(name: "graduationcap",             version: .SF1, keywords: ["毕业帽", "毕业", "学校", "教育", "学术", "大学"]),
         SingleSymbols(name: "ruler",                     version: .SF1, keywords: ["尺子", "测量", "长度", "标尺", "设计"]),
@@ -114,7 +114,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "studentdesk",               version: .SF2, keywords: ["学生桌", "书桌", "学习", "课堂", "教室"]),
         SingleSymbols(name: "link",                      version: .SF1, keywords: ["链接", "超链接", "URL", "连接", "网址"]),
         SingleSymbols(name: "apple.terminal",            version: .SF1, keywords: ["终端", "命令行", "控制台", "开发", "代码", "Shell"]),
-
+        
         // ========== 人物与社交 ==========
         SingleSymbols(name: "person",                    version: .SF1, keywords: ["个人", "用户", "账户", "联系人", "个人资料"]),
         SingleSymbols(name: "person.2",                  version: .SF1, keywords: ["两人", "双人", "好友", "联系人", "分享", "团队"]),
@@ -126,7 +126,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "person.crop.rectangle",     version: .SF1, keywords: ["用户图片", "身份证件", "证件照", "截图"]),
         SingleSymbols(name: "person.text.rectangle",     version: .SF3, keywords: ["驾照", "身份证", "证件", "个人信息", "名片"]),
         SingleSymbols(name: "rectangle.pattern.checkered", version: .SF2, keywords: ["棋盘", "格子图案", "纹理", "棋格"]),
-
+        
         // ========== 人物动作 ==========
         SingleSymbols(name: "figure.stand",              version: .SF2, keywords: ["站立人", "人物", "用户", "个人", "站立"]),
         SingleSymbols(name: "figure.stand.dress",        version: .SF4, keywords: ["站立人女", "女性人物", "用户", "个人"]),
@@ -149,7 +149,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "figure.outdoor.cycle",      version: .SF4, keywords: ["骑行", "自行车", "户外", "运动", "骑车"]),
         SingleSymbols(name: "figure.pool.swim",          version: .SF4, keywords: ["游泳", "水上运动", "健身", "泳池"]),
         SingleSymbols(name: "figure.seated.seatbelt",    version: .SF4, keywords: ["安全带", "驾驶", "坐姿", "安全", "系安全带"]),
-
+        
         // ========== 运动与健身 ==========
         SingleSymbols(name: "dumbbell",                  version: .SF4, keywords: ["哑铃", "健身", "力量训练", "举重", "锻炼"]),
         SingleSymbols(name: "sportscourt",               version: .SF2, keywords: ["运动场", "球场", "体育", "比赛", "健身"]),
@@ -168,7 +168,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "rosette",                   version: .SF2, keywords: ["玫瑰花结", "荣誉", "勋章", "装饰", "认证"]),
         SingleSymbols(name: "trophy",                    version: .SF1, keywords: ["奖杯", "冠军", "获奖", "荣誉", "第一名"]),
         SingleSymbols(name: "medal",                     version: .SF2, keywords: ["勋章", "奖牌", "荣誉", "获奖", "成就"]),
-
+        
         // ========== 键盘与输入 ==========
         SingleSymbols(name: "command",                   version: .SF1, keywords: ["Command", "键盘", "快捷键", "macOS", "Cmd"]),
         SingleSymbols(name: "space",                     version: .SF1, keywords: ["空格", "空格键", "键盘", "输入"]),
@@ -191,7 +191,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "cursorarrow",               version: .SF1, keywords: ["鼠标光标", "指针", "箭头", "光标"]),
         SingleSymbols(name: "keyboard",                  version: .SF1, keywords: ["键盘", "输入法", "打字", "输入设备"]),
         SingleSymbols(name: "beziercurve",               version: .SF1, keywords: ["贝塞尔曲线", "曲线", "路径", "设计", "绘图"]),
-
+        
         // ========== 天气与自然 ==========
         SingleSymbols(name: "peacesign",                 version: .SF2, keywords: ["和平", "和平标志", "反战", "符号"]),
         SingleSymbols(name: "globe",                     version: .SF1, keywords: ["地球", "全球", "国际化", "语言", "世界", "互联网"]),
@@ -217,7 +217,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "flame",                     version: .SF1, keywords: ["火焰", "火苗", "热门", "趋势", "燃烧"]),
         SingleSymbols(name: "fire.extinguisher",         version: .SF2, keywords: ["灭火器", "消防", "安全", "紧急", "灭火"]),
         SingleSymbols(name: "umbrella",                  version: .SF1, keywords: ["雨伞", "下雨", "防水", "遮阳", "保护"]),
-
+        
         // ========== 媒体播放 ==========
         SingleSymbols(name: "play",                      version: .SF1, keywords: ["播放", "开始", "运行", "开启", "音视频"]),
         SingleSymbols(name: "pause",                     version: .SF1, keywords: ["暂停", "停顿", "等待", "中断"]),
@@ -237,12 +237,12 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "music.note",                version: .SF1, keywords: ["音乐", "音符", "歌曲", "旋律", "播放"]),
         SingleSymbols(name: "music.quarternote.3",       version: .SF2, keywords: ["音符", "乐谱", "节拍", "音乐", "节奏"]),
         SingleSymbols(name: "music.microphone",          version: .SF2, keywords: ["麦克风", "歌唱", "录音", "演唱", "卡拉OK"]),
-
+        
         // ========== 旋转与方向箭头 ==========
         SingleSymbols(name: "arrow.trianglehead.clockwise",         version: .SF5, keywords: ["顺时针", "旋转", "刷新", "循环", "更新"]),
         SingleSymbols(name: "arrow.trianglehead.counterclockwise",  version: .SF5, keywords: ["逆时针", "旋转", "撤销", "回退", "反转"]),
         SingleSymbols(name: "arrow.trianglehead.2.clockwise.rotate.90", version: .SF5, keywords: ["双向旋转", "同步", "刷新", "循环"]),
-
+        
         // ========== 搜索与查找 ==========
         SingleSymbols(name: "swift",                     version: .SF1, keywords: ["Swift", "开发", "编程", "iOS", "苹果语言"]),
         SingleSymbols(name: "magnifyingglass",           version: .SF1, keywords: ["放大镜", "搜索", "查找", "查询", "检索"]),
@@ -251,7 +251,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "loupe",                     version: .SF5, keywords: ["放大镜", "精确搜索", "查找", "特写"]),
         SingleSymbols(name: "microphone",                version: .SF1, keywords: ["麦克风", "录音", "语音", "声音输入", "话筒"]),
         SingleSymbols(name: "microphone.slash",          version: .SF1, keywords: ["静音", "麦克风关闭", "禁用麦克风", "无声"]),
-
+        
         // ========== 线条与形状基础 ==========
         SingleSymbols(name: "line.diagonal",             version: .SF2, keywords: ["线条", "斜线", "分隔", "设计元素"]),
         SingleSymbols(name: "line.diagonal.arrow",       version: .SF2, keywords: ["斜向箭头", "方向", "对角线", "移动"]),
@@ -268,7 +268,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "square.on.circle",          version: .SF2, keywords: ["方块和圆", "形状组合", "叠加"]),
         SingleSymbols(name: "square.stack",              version: .SF1, keywords: ["方块堆叠", "图层", "多页", "卡片"]),
         SingleSymbols(name: "squareshape",               version: .SF2, keywords: ["矩形", "方框", "形状", "区域"]),
-
+        
         // ========== 应用图标形状 ==========
         SingleSymbols(name: "app",                       version: .SF2, keywords: ["App", "应用", "图标", "软件", "程序"]),
         SingleSymbols(name: "plus.app",                  version: .SF2, keywords: ["添加App", "安装", "下载应用", "新增"]),
@@ -298,7 +298,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "flag",                      version: .SF1, keywords: ["旗帜", "标志", "标记", "举报", "里程碑"]),
         SingleSymbols(name: "flag.pattern.checkered",    version: .SF2, keywords: ["方格旗", "赛车", "终点", "完成", "冠军"]),
         SingleSymbols(name: "flag.2.crossed",            version: .SF3, keywords: ["交叉旗", "信号", "通信", "国际"]),
-
+        
         // ========== 位置与导航 ==========
         SingleSymbols(name: "location",                  version: .SF1, keywords: ["位置", "定位", "GPS", "地理位置", "导航"]),
         SingleSymbols(name: "location.slash",            version: .SF1, keywords: ["禁用定位", "关闭GPS", "不定位", "隐私"]),
@@ -310,7 +310,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "signpost.right.and.left",   version: .SF4, keywords: ["路标", "双向", "交叉口", "导航", "方向"]),
         SingleSymbols(name: "mountain.2",                version: .SF3, keywords: ["山", "山脉", "户外", "登山", "风景"]),
         SingleSymbols(name: "safari",                    version: .SF1, keywords: ["Safari", "浏览器", "网络", "指南针", "探索"]),
-
+        
         // ========== 通知与提醒 ==========
         SingleSymbols(name: "bell",                      version: .SF1, keywords: ["铃铛", "通知", "提醒", "铃声", "消息"]),
         SingleSymbols(name: "bell.slash",                version: .SF1, keywords: ["静音", "关闭通知", "勿扰", "禁止响铃"]),
@@ -319,18 +319,18 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "tag",                       version: .SF1, keywords: ["标签", "分类", "价格", "标记", "归类"]),
         SingleSymbols(name: "bolt",                      version: .SF1, keywords: ["闪电", "快速", "充电", "能量", "电力"]),
         SingleSymbols(name: "bolt.horizontal",           version: .SF2, keywords: ["水平闪电", "快速", "充电", "连接"]),
-
+        
         // ========== iCloud 与同步 ==========
         SingleSymbols(name: "icloud",                    version: .SF1, keywords: ["iCloud", "云同步", "云端", "备份", "存储"]),
         SingleSymbols(name: "icloud.slash",              version: .SF1, keywords: ["iCloud关闭", "无网络", "未同步", "断开"]),
         SingleSymbols(name: "checkmark.icloud",          version: .SF1, keywords: ["已同步", "iCloud完成", "备份成功"]),
         SingleSymbols(name: "xmark.icloud",              version: .SF1, keywords: ["同步失败", "iCloud错误", "未完成"]),
         SingleSymbols(name: "icloud.and.arrow.down",     version: .SF1, keywords: ["从iCloud下载", "云端下载", "同步", "获取"]),
-
+        
         // ========== 数学 ==========
         SingleSymbols(name: "squareroot",                version: .SF1, keywords: ["平方根", "开根号", "数学", "计算", "根式"]),
         SingleSymbols(name: "x.squareroot",              version: .SF1, keywords: ["x的平方根", "数学", "开方", "运算"]),
-
+        
         // ========== 相机与照片 ==========
         SingleSymbols(name: "flashlight.off.fill",       version: .SF1, keywords: ["手电筒", "闪光灯", "照明", "亮光"]),
         SingleSymbols(name: "camera",                    version: .SF1, keywords: ["相机", "拍照", "摄影", "拍摄", "镜头"]),
@@ -344,7 +344,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "photo.stack",               version: .SF4, keywords: ["图片堆叠", "相册", "多张照片", "图库"]),
         SingleSymbols(name: "mosaic",                    version: .SF4, keywords: ["马赛克", "拼贴", "像素化", "模糊", "隐私"]),
         SingleSymbols(name: "camera.filters",            version: .SF1, keywords: ["滤镜", "相机效果", "颜色叠加", "美化"]),
-
+        
         // ========== 消息与通信 ==========
         SingleSymbols(name: "message",                   version: .SF1, keywords: ["消息", "短信", "聊天", "对话", "通讯"]),
         SingleSymbols(name: "bubble",                    version: .SF4, keywords: ["气泡", "对话", "评论", "聊天", "消息"]),
@@ -362,7 +362,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "envelope.open",             version: .SF1, keywords: ["打开信封", "已读", "邮件", "阅读"]),
         SingleSymbols(name: "mail",                      version: .SF2, keywords: ["邮件", "Mail", "电子邮件", "收件"]),
         SingleSymbols(name: "paperplane",                version: .SF1, keywords: ["发送", "纸飞机", "分享", "投递", "传递"]),
-
+        
         // ========== 设置与系统 ==========
         SingleSymbols(name: "gear",                      version: .SF1, keywords: ["齿轮", "设置", "选项", "配置", "系统"]),
         SingleSymbols(name: "gearshape",                 version: .SF2, keywords: ["齿轮", "设置", "选项", "偏好", "系统"]),
@@ -378,7 +378,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "perspective",               version: .SF1, keywords: ["透视", "视角", "3D", "校正", "变换"]),
         SingleSymbols(name: "skew",                      version: .SF1, keywords: ["倾斜", "变形", "透视", "校正"]),
         SingleSymbols(name: "grid",                      version: .SF1, keywords: ["网格", "格子", "对齐", "布局"]),
-
+        
         // ========== 购物与支付 ==========
         SingleSymbols(name: "bag",                       version: .SF2, keywords: ["购物袋", "购物", "商店", "袋子", "手提"]),
         SingleSymbols(name: "cart",                      version: .SF2, keywords: ["购物车", "购物", "加购", "下单", "商城"]),
@@ -393,7 +393,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "chineseyuanrenminbisign",   version: .SF3, keywords: ["人民币", "元", "￥", "货币", "中国"]),
         SingleSymbols(name: "purchased",                 version: .SF1, keywords: ["已购买", "购买记录", "已付款", "订单"]),
         SingleSymbols(name: "gift",                      version: .SF1, keywords: ["礼物", "礼品", "赠送", "节日", "惊喜"]),
-
+        
         // ========== 工具与创作 ==========
         SingleSymbols(name: "wand.and.rays",             version: .SF1, keywords: ["魔杖", "魔法", "AI增强", "自动", "一键"]),
         SingleSymbols(name: "paintbrush",                version: .SF1, keywords: ["画笔", "绘画", "美化", "设计", "艺术"]),
@@ -408,7 +408,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "eyedropper",                version: .SF1, keywords: ["滴管", "取色", "颜色选择", "吸管"]),
         SingleSymbols(name: "wrench.and.screwdriver",    version: .SF2, keywords: ["设置", "维修", "工具", "修复", "开发"]),
         SingleSymbols(name: "applescript",               version: .SF1, keywords: ["AppleScript", "脚本", "自动化", "开发"]),
-
+        
         // ========== 医疗与健康 ==========
         SingleSymbols(name: "stethoscope",               version: .SF2, keywords: ["听诊器", "医疗", "医生", "诊断", "健康"]),
         SingleSymbols(name: "inhaler",                   version: .SF3, keywords: ["吸入器", "哮喘", "医疗", "药物", "肺部"]),
@@ -426,12 +426,12 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "staroflife",                version: .SF1, keywords: ["生命之星", "急救", "医疗", "救护"]),
         SingleSymbols(name: "brain",                     version: .SF2, keywords: ["大脑", "智能", "AI", "思考", "神经"]),
         SingleSymbols(name: "brain.head.profile",        version: .SF2, keywords: ["大脑轮廓", "思维", "心理", "智能"]),
-
+        
         // ========== 办公设备 ==========
         SingleSymbols(name: "printer",                   version: .SF1, keywords: ["打印机", "打印", "输出", "纸张", "文档"]),
         SingleSymbols(name: "scanner",                   version: .SF2, keywords: ["扫描仪", "扫描", "数字化", "OCR"]),
         SingleSymbols(name: "faxmachine",                version: .SF2, keywords: ["传真机", "传真", "发送文件", "通讯"]),
-
+        
         // ========== 包类与旅行 ==========
         SingleSymbols(name: "handbag",                   version: .SF2, keywords: ["手提包", "购物", "时尚", "女包", "包"]),
         SingleSymbols(name: "briefcase",                 version: .SF2, keywords: ["公文包", "工作", "商务", "职场", "办公"]),
@@ -442,7 +442,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "theatermasks",              version: .SF1, keywords: ["戏剧", "面具", "表演", "喜剧悲剧", "艺术"]),
         SingleSymbols(name: "puzzlepiece.extension",     version: .SF3, keywords: ["拼图扩展", "插件", "扩展", "组合"]),
         SingleSymbols(name: "puzzlepiece",               version: .SF3, keywords: ["拼图", "组合", "模块", "部件", "插件"]),
-
+        
         // ========== 家居与智能家庭 ==========
         SingleSymbols(name: "homekit",                   version: .SF2, keywords: ["HomeKit", "智能家居", "家庭自动化"]),
         SingleSymbols(name: "house",                     version: .SF1, keywords: ["房子", "主页", "首页", "家", "返回主页"]),
@@ -493,7 +493,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "house.lodge",               version: .SF4, keywords: ["小屋", "木屋", "度假屋", "户外"]),
         SingleSymbols(name: "square.split.bottomrightquarter", version: .SF2, keywords: ["分割方块", "布局", "分区", "区域"]),
         SingleSymbols(name: "globe.desk",                version: .SF4, keywords: ["地球仪", "全球", "教育", "地理"]),
-
+        
         // ========== 安全与锁定 ==========
         SingleSymbols(name: "lock",                      version: .SF1, keywords: ["锁", "加锁", "安全", "私密", "密码"]),
         SingleSymbols(name: "lock.open",                 version: .SF1, keywords: ["解锁", "开锁", "允许", "访问", "开放"]),
@@ -502,7 +502,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "faceid",                    version: .SF1, keywords: ["面容ID", "人脸识别", "生物识别", "解锁"]),
         SingleSymbols(name: "touchid",                   version: .SF1, keywords: ["指纹", "Touch ID", "生物识别", "解锁"]),
         SingleSymbols(name: "opticid",                   version: .SF5, keywords: ["虹膜识别", "Optic ID", "Vision Pro", "认证"]),
-
+        
         // ========== 三维与空间 ==========
         SingleSymbols(name: "move.3d",                   version: .SF1, keywords: ["3D移动", "空间", "三维", "AR", "坐标"]),
         SingleSymbols(name: "torus",                     version: .SF5, keywords: ["环面", "甜甜圈形", "3D", "几何"]),
@@ -516,7 +516,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "square.2.layers.3d",        version: .SF3, keywords: ["双层3D", "叠加", "图层", "深度"]),
         SingleSymbols(name: "square.3.layers.3d.down.right", version: .SF3, keywords: ["三层3D", "图层", "堆叠"]),
         SingleSymbols(name: "cylinder",                  version: .SF1, keywords: ["圆柱", "3D", "几何", "数据库"]),
-
+        
         // ========== 设备 ==========
         SingleSymbols(name: "cpu",                       version: .SF1, keywords: ["CPU", "处理器", "芯片", "性能", "计算"]),
         SingleSymbols(name: "memorychip",                version: .SF2, keywords: ["内存", "芯片", "存储", "RAM", "硬件"]),
@@ -577,7 +577,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "simcard",                   version: .SF2, keywords: ["SIM卡", "手机卡", "通话", "运营商"]),
         SingleSymbols(name: "sdcard",                    version: .SF2, keywords: ["SD卡", "存储卡", "扩容", "内存卡"]),
         SingleSymbols(name: "esim",                      version: .SF2, keywords: ["eSIM", "虚拟SIM卡", "电子SIM", "手机"]),
-
+        
         // ========== 交通工具 ==========
         SingleSymbols(name: "airplane",                  version: .SF1, keywords: ["飞机", "航班", "飞行", "旅行", "航空"]),
         SingleSymbols(name: "car",                       version: .SF1, keywords: ["汽车", "驾驶", "出行", "交通", "自驾"]),
@@ -597,7 +597,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "stroller",                  version: .SF2, keywords: ["婴儿车", "推车", "宝宝", "亲子"]),
         SingleSymbols(name: "parkingsign",               version: .SF2, keywords: ["停车", "停车场", "P标志", "交通"]),
         SingleSymbols(name: "fuelpump",                  version: .SF2, keywords: ["加油", "油泵", "燃油", "加油站"]),
-
+        
         // ========== 汽车零部件 ==========
         SingleSymbols(name: "engine.combustion",         version: .SF4, keywords: ["发动机", "引擎", "燃油", "汽车"]),
         SingleSymbols(name: "headlight.high.beam",       version: .SF4, keywords: ["远光灯", "大灯", "车灯", "照明"]),
@@ -630,7 +630,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "tachometer",                version: .SF4, keywords: ["转速表", "仪表盘", "发动机", "RPM"]),
         SingleSymbols(name: "horn",                      version: .SF4, keywords: ["喇叭", "鸣笛", "警报", "汽车"]),
         SingleSymbols(name: "abs",                       version: .SF4, keywords: ["ABS", "防抱死", "制动", "安全"]),
-
+        
         // ========== 动植物 ==========
         SingleSymbols(name: "hare",                      version: .SF1, keywords: ["兔子", "快速", "速度", "动物", "性能"]),
         SingleSymbols(name: "tortoise",                  version: .SF1, keywords: ["乌龟", "缓慢", "低速", "节能", "动物"]),
@@ -648,7 +648,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "camera.macro",              version: .SF3, keywords: ["花朵", "微距", "植物", "自然", "摄影"]),
         SingleSymbols(name: "tree",                      version: .SF4, keywords: ["树", "植物", "自然", "绿色", "环保"]),
         SingleSymbols(name: "fossil.shell",              version: .SF4, keywords: ["化石", "贝壳", "古生物", "自然", "科学"]),
-
+        
         // ========== 服装与时尚 ==========
         SingleSymbols(name: "hanger",                    version: .SF2, keywords: ["衣架", "衣物", "晾衣", "整理", "时尚"]),
         SingleSymbols(name: "crown",                     version: .SF2, keywords: ["王冠", "皇冠", "会员", "VIP", "高级"]),
@@ -659,7 +659,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "coat",                      version: .SF4, keywords: ["大衣", "外套", "冬装", "服装"]),
         SingleSymbols(name: "shoe",                      version: .SF4, keywords: ["鞋子", "球鞋", "服装", "穿搭"]),
         SingleSymbols(name: "shoeprints.fill",           version: .SF2, keywords: ["脚印", "步骤", "行走", "足迹"]),
-
+        
         // ========== 娱乐与影视 ==========
         SingleSymbols(name: "film",                      version: .SF1, keywords: ["电影", "胶片", "影视", "视频", "录像"]),
         SingleSymbols(name: "movieclapper",              version: .SF1, keywords: ["场记板", "电影", "导演", "拍摄", "影视"]),
@@ -667,7 +667,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "lifepreserver",             version: .SF1, keywords: ["救生圈", "帮助", "支持", "安全", "援助"]),
         SingleSymbols(name: "recordingtape",             version: .SF1, keywords: ["录音带", "磁带", "音乐", "复古"]),
         SingleSymbols(name: "binoculars",                version: .SF1, keywords: ["望远镜", "观察", "远处", "搜索", "侦查"]),
-
+        
         // ========== 面部与身体 ==========
         SingleSymbols(name: "face.smiling",              version: .SF1, keywords: ["笑脸", "表情", "Emoji", "开心", "微笑"]),
         SingleSymbols(name: "eye",                       version: .SF1, keywords: ["眼睛", "查看", "预览", "可见", "观察"]),
@@ -688,7 +688,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "hand.point.up",             version: .SF2, keywords: ["点击", "触控", "手指点击", "交互"]),
         SingleSymbols(name: "hand.wave",                 version: .SF2, keywords: ["挥手", "打招呼", "再见", "问候"]),
         SingleSymbols(name: "hands.clap",                version: .SF2, keywords: ["鼓掌", "拍手", "称赞", "庆祝"]),
-
+        
         // ========== 二维码与扫描 ==========
         SingleSymbols(name: "qrcode",                    version: .SF1, keywords: ["二维码", "QR码", "扫码", "链接"]),
         SingleSymbols(name: "barcode",                   version: .SF1, keywords: ["条形码", "商品码", "扫描", "识别"]),
@@ -696,7 +696,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "f.cursive",                 version: .SF1, keywords: ["F字母", "草书", "字体", "Facebook"]),
         SingleSymbols(name: "scope",                     version: .SF1, keywords: ["瞄准", "范围", "目标", "精确"]),
         SingleSymbols(name: "rectangle.stack",           version: .SF1, keywords: ["矩形堆叠", "卡片", "图层", "多页"]),
-
+        
         // ========== 图表与数据 ==========
         SingleSymbols(name: "chart.xyaxis.line",         version: .SF3, keywords: ["折线图", "图表", "数据", "趋势"]),
         SingleSymbols(name: "gauge.with.needle",         version: .SF3, keywords: ["仪表盘", "计量", "速度", "性能"]),
@@ -707,14 +707,14 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "burst",                     version: .SF1, keywords: ["爆炸形", "新品", "特卖", "热点"]),
         SingleSymbols(name: "waveform.path.ecg",         version: .SF1, keywords: ["心电图", "心率", "医疗", "健康"]),
         SingleSymbols(name: "waveform",                  version: .SF2, keywords: ["波形", "音频", "声波", "信号"]),
-
+        
         // ========== 时间 ==========
         SingleSymbols(name: "clock",                     version: .SF1, keywords: ["时钟", "时间", "钟表", "小时", "分钟"]),
         SingleSymbols(name: "alarm",                     version: .SF1, keywords: ["闹钟", "提醒", "起床", "闹铃"]),
         SingleSymbols(name: "stopwatch",                 version: .SF1, keywords: ["秒表", "计时", "比赛", "速度"]),
         SingleSymbols(name: "timer",                     version: .SF1, keywords: ["定时器", "倒计时", "计时", "时间"]),
         SingleSymbols(name: "hourglass",                 version: .SF1, keywords: ["沙漏", "倒计时", "等待", "时间流逝"]),
-
+        
         // ========== 游戏 ==========
         SingleSymbols(name: "arcade.stick.console",      version: .SF3, keywords: ["街机", "摇杆主机", "游戏", "复古"]),
         SingleSymbols(name: "arcade.stick",              version: .SF3, keywords: ["街机摇杆", "操控杆", "游戏", "复古"]),
@@ -722,7 +722,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "playstation.logo",          version: .SF2, keywords: ["PlayStation", "PS", "索尼", "游戏主机"]),
         SingleSymbols(name: "xbox.logo",                 version: .SF2, keywords: ["Xbox", "微软", "游戏主机"]),
         SingleSymbols(name: "gamecontroller",            version: .SF1, keywords: ["游戏手柄", "游戏", "控制器", "主机游戏"]),
-
+        
         // ========== 食品与饮品 ==========
         SingleSymbols(name: "cup.and.saucer",            version: .SF1, keywords: ["杯子", "茶", "咖啡", "餐饮", "热饮"]),
         SingleSymbols(name: "cup.and.heat.waves",        version: .SF3, keywords: ["热咖啡", "热饮", "蒸汽", "咖啡"]),
@@ -732,7 +732,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "birthday.cake",             version: .SF4, keywords: ["蛋糕", "生日", "庆祝", "节日", "甜品"]),
         SingleSymbols(name: "carrot",                    version: .SF4, keywords: ["胡萝卜", "蔬菜", "食物", "健康"]),
         SingleSymbols(name: "fork.knife",                version: .SF1, keywords: ["刀叉", "餐饮", "吃饭", "餐厅", "美食"]),
-
+        
         // ========== 科学与数学 ==========
         SingleSymbols(name: "bonjour",                   version: .SF1, keywords: ["Bonjour", "局域网", "网络发现", "服务"]),
         SingleSymbols(name: "scalemass",                 version: .SF2, keywords: ["质量", "重量", "平衡", "秤"]),
@@ -740,7 +740,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "compass.drawing",           version: .SF3, keywords: ["圆规", "绘图", "几何", "设计"]),
         SingleSymbols(name: "atom",                      version: .SF2, keywords: ["原子", "物理", "科学", "化学"]),
         SingleSymbols(name: "wave.3.up",                 version: .SF3, keywords: ["波浪", "信号", "无线", "振动"]),
-
+        
         // ========== 其他杂项 ==========
         SingleSymbols(name: "point.bottomleft.forward.to.point.topright.scurvepath", version: .SF2, keywords: ["路径", "连接", "曲线", "流程"]),
         SingleSymbols(name: "battery.100percent",        version: .SF1, keywords: ["电量", "满电", "电池", "充电", "能量"]),
@@ -751,7 +751,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "view.2d",                   version: .SF3, keywords: ["2D视图", "平面", "二维"]),
         SingleSymbols(name: "view.3d",                   version: .SF3, keywords: ["3D视图", "立体", "三维", "空间"]),
         SingleSymbols(name: "numbers",                   version: .SF3, keywords: ["数字", "数值", "计算", "Number"]),
-
+        
         // ========== 文字排版 ==========
         SingleSymbols(name: "character",                 version: .SF1, keywords: ["字符", "文字", "字体", "文本"]),
         SingleSymbols(name: "bold",                      version: .SF1, keywords: ["粗体", "加粗", "字体", "强调"]),
@@ -762,7 +762,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "percent",                   version: .SF1, keywords: ["百分比", "%", "比例", "折扣"]),
         SingleSymbols(name: "function",                  version: .SF1, keywords: ["函数", "方法", "编程", "数学", "f(x)"]),
         SingleSymbols(name: "paragraphsign",             version: .SF1, keywords: ["段落符号", "¶", "排版", "文本"]),
-
+        
         // ========== 信息符号 ==========
         SingleSymbols(name: "info",                      version: .SF1, keywords: ["信息", "关于", "详情", "说明"]),
         SingleSymbols(name: "info.circle",               version: .SF1, keywords: ["信息", "帮助", "详情", "关于"]),
@@ -773,7 +773,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "exclamationmark.2",         version: .SF2, keywords: ["双感叹号", "警告", "紧急", "重要"]),
         SingleSymbols(name: "exclamationmark.3",         version: .SF2, keywords: ["三感叹号", "严重警告", "紧急"]),
         SingleSymbols(name: "exclamationmark.circle",    version: .SF1, keywords: ["警告", "错误", "感叹号", "圆形"]),
-
+        
         // ========== 数学运算符号 ==========
         SingleSymbols(name: "plus",                      version: .SF1, keywords: ["加号", "添加", "新建", "增加"]),
         SingleSymbols(name: "plus.circle",               version: .SF1, keywords: ["圆形加号", "添加", "新建"]),
@@ -791,7 +791,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "notequal",                  version: .SF1, keywords: ["不等号", "不等于", "≠", "差异"]),
         SingleSymbols(name: "chevron.left.forwardslash.chevron.right", version: .SF1, keywords: ["代码", "HTML", "标签", "</>", "编程"]),
         SingleSymbols(name: "ellipsis.curlybraces",      version: .SF2, keywords: ["代码省略", "函数体", "编程", "{...}"]),
-
+        
         // ========== 操作符号 ==========
         SingleSymbols(name: "xmark",                     version: .SF1, keywords: ["关闭", "删除", "错误", "退出", "取消"]),
         SingleSymbols(name: "xmark.circle",              version: .SF1, keywords: ["圆形关闭", "取消", "删除", "错误"]),
@@ -799,7 +799,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "checkmark",                 version: .SF1, keywords: ["对号", "完成", "确认", "选中", "成功"]),
         SingleSymbols(name: "checkmark.circle",          version: .SF1, keywords: ["圆形对号", "完成", "确认", "成功"]),
         SingleSymbols(name: "checkmark.square",          version: .SF1, keywords: ["方形对号", "完成", "勾选", "选中"]),
-
+        
         // ========== 方向箭头 ==========
         SingleSymbols(name: "chevron.left",              version: .SF1, keywords: ["返回", "左箭头", "上一步", "退出"]),
         SingleSymbols(name: "chevron.forward",           version: .SF1, keywords: ["前进", "右箭头", "下一步", "更多"]),
@@ -819,7 +819,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "arrowtriangle.right",       version: .SF1, keywords: ["右三角", "前进", "下一个", "右"]),
         SingleSymbols(name: "arrowtriangle.up",          version: .SF1, keywords: ["上三角", "向上", "顶部", "上"]),
         SingleSymbols(name: "arrowtriangle.down",        version: .SF1, keywords: ["下三角", "向下", "底部", "下拉"]),
-
+        
         // ========== 方向形状箭头 ==========
         SingleSymbols(name: "arrowshape.left",           version: .SF3, keywords: ["左箭头", "返回", "后退", "方向"]),
         SingleSymbols(name: "arrowshape.right",          version: .SF3, keywords: ["右箭头", "前进", "发送", "方向"]),
@@ -829,10 +829,10 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "arrowshape.turn.up.left",   version: .SF3, keywords: ["转弯箭头", "回复", "返回", "撤销"]),
         SingleSymbols(name: "arrowshape.turn.up.left.2", version: .SF3, keywords: ["双回复", "全部回复", "撤销"]),
         SingleSymbols(name: "arrowkeys",                 version: .SF5, keywords: ["方向键", "上下左右", "键盘", "控制"]),
-
+        
         // ========== 系统品牌 ==========
         SingleSymbols(name: "apple.logo",                version: .SF1, keywords: ["苹果", "Apple", "Logo", "品牌"]),
-
+        
         // ========== 取出与存入 ==========
         SingleSymbols(name: "square.and.arrow.up",       version: .SF1, keywords: ["分享", "导出", "上传", "发送", "共享"]),
         SingleSymbols(name: "rectangle.portrait.and.arrow.right", version: .SF4, keywords: ["退出", "退出应用", "导出", "右出"]),
@@ -841,15 +841,15 @@ struct SingleSymbols: Identifiable {
 }
 
 struct SymbolsView: View {
-
+    @EnvironmentObject var appStorage: AppStorageManager
     // 搜索类型和内容
     @State private var selectedCategory: SymbolsVersion? = nil
     @State private var searchText = ""
-
+    
     let columns = [
         GridItem(.adaptive(minimum: 90, maximum: 140), spacing: 20, alignment: .leading)
     ]
-
+    
     let availableSymbols: [SingleSymbols] = SingleSymbols.listSymbols.filter {
         UIImage(systemName: $0.name) != nil
     }
@@ -890,7 +890,7 @@ struct SymbolsView: View {
     var body: some View {
         ScrollView {
             // 导航组件
-            ToolCategoryView(tool: .Symbols, searchTips: "搜索图标...", searchText: $searchText, selectedCategory: $selectedCategory)
+            ToolCategoryView(tool: .Symbols, searchTips: "Search icons...", searchText: $searchText, selectedCategory: $selectedCategory)
             // 图标
             LazyVGrid(columns: columns, spacing: 10) {
                 ForEach(filteredSymbols) { symbol in
@@ -902,13 +902,18 @@ struct SymbolsView: View {
         .navigationTitle("Symbols")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
+        .onDisappear {
+            print("关闭课程")
+            print("检测是否满足打开评分窗口")
+            AppRating.checkReviewIfNeeded(appStorage: appStorage)
+        }
     }
 }
 
 struct SymbolsItemView: View {
     @State private var didCopy = false
     var symbol: SingleSymbols
-
+    
     var body: some View {
         Button(action: copyCode) {
             VStack(spacing: 16) {
@@ -939,7 +944,7 @@ struct SymbolsItemView: View {
             .shadow(radius: 0.5)
         }
     }
-
+    
     private func copyCode() {
         UIPasteboard.general.string = symbol.name
         withAnimation(.easeInOut(duration: 0.2)) { didCopy = true }

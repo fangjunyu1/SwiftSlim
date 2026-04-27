@@ -43210,6 +43210,18 @@
         }
       }
     },
+    "Search icons..." : {
+      "comment" : "搜索图标...",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索图标..."
+          }
+        }
+      }
+    },
     "Secondary text for supporting information" : {
       "comment" : "次要文本，用于补充信息",
       "extractionState" : "manual",

@@ -32,24 +32,46 @@ class EducationViewModel {
 
 struct Education: View {
     var body: some View {
-        VStack {
-            List {
-                ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
-                    NavigationLink(destination: EducationPage(url: item.url)) {
-                        Text(verbatim: "\(index + 1)")
-                        Text(LocalizedStringKey(item.name))
-                    }
+        VStack(spacing: 0) {
+            ForEach(Array(EducationViewModel.educationItems.enumerated()), id: \.element.id) { index, item in
+                NavigationLink(destination: EducationPage(url: item.url)) {
+                    EducationItem(index:index, item: item)
+                }
+                if index != EducationViewModel.educationItems.count - 1 {
+                    Divider()
+                        .padding(.leading, 20)
                 }
             }
-            .safeAreaInset(edge: .bottom) {
-                Color.clear.frame(height: 80) // 你的底部导航栏高度
-            }
         }
+        .background(Color("WhiteAndBlack"))
+        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+    }
+}
+
+struct EducationItem: View {
+    let index: Int
+    let item: EducationModel
+    var body: some View {
+        HStack(spacing: 20) {
+            Text(verbatim: "\(index + 1)")
+                .font(.headline)
+                .foregroundStyle(Color.secondary)
+            Text(LocalizedStringKey(item.name))
+                .font(.headline)
+                .fontWeight(.medium)
+                .foregroundStyle(Color("BlackColor"))
+            Spacer()
+        }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 20)
     }
 }
 
 #Preview {
     NavigationView {
-        Education()
+        ScrollView {
+            Education()
+        }
+        .modifier(BackgroundModifiers())
     }
 }

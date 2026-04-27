@@ -51,6 +51,7 @@ struct ShortcutKey: Identifiable {
 }
 
 struct ShortcutsView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     var body: some View {
         ScrollView {
             ToolHeaderView(tool: .Shortcuts)
@@ -74,6 +75,11 @@ struct ShortcutsView: View {
         .navigationTitle("Shortcuts")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
+        .onDisappear {
+            print("关闭课程")
+            print("检测是否满足打开评分窗口")
+            AppRating.checkReviewIfNeeded(appStorage: appStorage)
+        }
     }
 }
 

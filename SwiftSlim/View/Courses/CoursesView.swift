@@ -10,10 +10,16 @@ import SwiftUI
 struct CoursesView: View {
     @Binding var selected: contentType
     var body: some View {
-        VStack {
-            Education()
+        ScrollView {
+            education
+                .padding(.vertical, 20)
         }
         .navigationTitle("Courses")
+    }
+    
+    // 学习列表
+    var education: some View {
+        Education()
     }
 }
 

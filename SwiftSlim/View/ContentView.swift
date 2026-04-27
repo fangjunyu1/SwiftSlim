@@ -23,6 +23,7 @@ struct ContentView: View {
                             .modifier(BackgroundModifiers())
                     case .courses:
                         CoursesView(selected: $selected)
+                            .padding(.horizontal, 20)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(Color("BackgroundColor"))
                             .ignoresSafeArea(.container, edges: .bottom)
