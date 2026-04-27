@@ -23,7 +23,7 @@ extension Theme {
         let textWeight: Font.Weight = isLargeLayout ? .light : .regular
         let headingWeight: Font.Weight = isLargeLayout ? .medium : .semibold
         let margin: Double = 30
-        let paragraphMargin: Double = isLargeLayout ? 30 : 10
+        let paragraphMargin: Double = isLargeLayout ? 30 : 20
         let lineSpacing: Double = isLargeLayout ? 0.44 : 0.22
         let liLineSpacing: Double = 0.22
         

@@ -27,15 +27,16 @@ struct CoursesView: View {
             VStack(spacing: 20) {
                 ForEach(CoursesViewModel.chapters) { chapter in
                     CoursesChapterView(chapter: chapter)
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                        .padding(.vertical, 20)
                         .background(Color("WhiteAndBlack"))
-                        .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 }
             }
         }
         .navigationTitle("Courses")
-        .padding(.vertical, 30)
+        .padding(.top, 30)
+        .safeAreaInset(edge: .bottom) {
+            Spacer().frame(height: 120)
+        }
     }
 }
 
@@ -43,7 +44,7 @@ struct CoursesChapterView: View {
     @State private var showList = false
     let chapter: CoursesChapter
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Button(action: {
                 withAnimation {
                     showList.toggle()
@@ -51,7 +52,7 @@ struct CoursesChapterView: View {
             }, label: {
                 HStack {
                     Text(LocalizedStringKey(chapter.title))
-                        .font(.title3)
+                        .font(.headline)
                         .fontWeight(.medium)
                         .foregroundStyle(Color("BlackColor"))
                     Spacer()
@@ -59,7 +60,7 @@ struct CoursesChapterView: View {
                         .font(.headline.bold())
                         .foregroundColor(.secondary)
                 }
-                .padding(.vertical, 12)
+                .padding(.vertical, 24)
                 .padding(.horizontal, 30)
             })
             if showList {
@@ -79,17 +80,15 @@ struct CoursesChapterView: View {
 struct CoursesItem: View {
     let item: CoursesModel
     var body: some View {
-        HStack(spacing: 30) {
+        HStack(spacing: 20) {
             Text(verbatim: "\(item.index)")
-                .font(.headline)
                 .foregroundStyle(Color.secondary)
             Text(LocalizedStringKey(item.name))
-                .font(.headline)
                 .fontWeight(.medium)
                 .foregroundStyle(Color("BlackColor"))
             Spacer()
         }
-        .padding(.vertical, 12)
+        .padding(.vertical, 16)
         .padding(.horizontal, 30)
     }
 }
