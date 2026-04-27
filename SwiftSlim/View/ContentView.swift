@@ -17,19 +17,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Group {
                     switch selected {
                     case .home:
                         HomeView(selected: $selected)
+                            .modifier(BackgroundModifiers())
                     case .courses:
                         CoursesView(selected: $selected)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .background(Color("BackgroundColor"))
+                            .ignoresSafeArea(.container, edges: .bottom)
                     case .tools:
                         ToolsView(selected: $selected)
+                            .modifier(BackgroundModifiers())
                     case .settings:
                         SettingsView(selected: $selected)
+                            .modifier(BackgroundModifiers())
                     }
-                }
-                .modifier(BackgroundModifiers())
                 
                 // 磨砂玻璃 TabView 视图
                 ContentFrostedTabView(selectedTab: $selected)

@@ -40,7 +40,6 @@ struct Education: View {
                 }
             }
         }
-        .navigationTitle("Contents")
     }
 }
 

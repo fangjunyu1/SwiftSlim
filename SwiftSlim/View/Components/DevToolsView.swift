@@ -11,7 +11,6 @@ import SwiftUI
 struct DevToolsView: View {
     @Environment(\.colorScheme) var colorScheme
     let tool: ToolType
-    let displayLocation: DevToolsDisplayLocation
     
     var devColor: Color {
         colorScheme == .light ? tool.color : Color.white
@@ -19,60 +18,6 @@ struct DevToolsView: View {
     
     var devBgColor: Color {
         colorScheme == .light ? tool.bgColor : Color.white
-    }
-    
-    var alignment: HorizontalAlignment {
-        if displayLocation == .Home {
-            return .leading
-        } else if displayLocation == .Tools {
-            return .center
-        } else {
-            return .center
-        }
-    }
-    
-    var padding: CGFloat {
-        if displayLocation == .Home {
-            return 16
-        } else if displayLocation == .Tools {
-            return 20
-        } else {
-            return 20
-        }
-    }
-    
-    var isHome: Bool {
-        displayLocation == .Home
-    }
-    
-    var height: Double {
-        if displayLocation == .Home {
-            return 110
-        } else if displayLocation == .Tools {
-            return 140
-        } else {
-            return 140
-        }
-    }
-    
-    var spacing: Double {
-        if displayLocation == .Home {
-            return 5
-        } else if displayLocation == .Tools {
-            return 8
-        } else {
-            return 8
-        }
-    }
-    
-    var imageSize: Double {
-        if displayLocation == .Home {
-            return 18
-        } else if displayLocation == .Tools {
-            return 24
-        } else {
-            return 24
-        }
     }
     
     var body: some View {
@@ -83,12 +28,12 @@ struct DevToolsView: View {
     
     var toolContent: some View {
         HStack {
-            VStack(alignment: alignment, spacing: spacing) {
+            VStack(alignment: .leading, spacing: 5) {
                 Image(tool.img)
                     .resizable()
                     .renderingMode(.template)
                     .scaledToFit()
-                    .frame(width: imageSize, height: imageSize)
+                    .frame(width: 18, height: 18)
                     .foregroundStyle(devColor)
                     .padding(6)
                     .background(devBgColor.opacity(0.15))
@@ -105,21 +50,14 @@ struct DevToolsView: View {
                     .lineLimit(2)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            if isHome {
-                Spacer()
-            }
+            Spacer()
         }
-        .padding(padding)
-        .frame(height: height)
+        .padding(16)
+        .frame(height: 110)
         .frame(maxWidth: .infinity)
         .background(Color("WhiteAndBlack"))
         .cornerRadius(10)
     }
-}
-
-enum DevToolsDisplayLocation {
-    case Home
-    case Tools
 }
 
 #Preview {

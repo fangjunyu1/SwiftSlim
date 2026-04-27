@@ -11,7 +11,7 @@ struct ToolsView: View {
     @Binding var selected: contentType
     
     let columns = [
-        GridItem(.adaptive(minimum: 120, maximum: 120) , spacing: 20, alignment: .leading)
+        GridItem(.adaptive(minimum: 140, maximum: 200) , spacing: 20, alignment: .leading)
     ]
     
     var body: some View {
@@ -40,7 +40,7 @@ struct ToolsView: View {
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
                 ForEach(ToolType.allCases.filter { $0.category == .LearningTool }) { item in
-                        DevToolsView(tool: item, displayLocation: .Tools)
+                        DevToolsView(tool: item)
                 }
             }
         }
@@ -57,7 +57,7 @@ struct ToolsView: View {
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
                 ForEach(ToolType.allCases.filter { $0.category == .DesignTools }) { item in
                     
-                        DevToolsView(tool: item, displayLocation: .Tools)
+                        DevToolsView(tool: item)
                 }
             }
         }
