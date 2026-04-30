@@ -44,7 +44,7 @@ struct SettingsView: View {
                 
                 versionSection
             }
-            .padding(.bottom, 80)
+            .padding(.bottom, 120)
             
         }
         .navigationTitle("Settings")

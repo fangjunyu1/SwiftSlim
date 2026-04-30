@@ -24,7 +24,7 @@ struct ToolsView: View {
                 // 设计参考
                 DesignRef
             }
-            .padding(.bottom, 80)
+            .padding(.bottom, 120)
             
         }
         .navigationTitle("Tools")
