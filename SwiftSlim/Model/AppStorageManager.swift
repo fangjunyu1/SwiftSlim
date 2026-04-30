@@ -33,6 +33,8 @@ class AppStorageManager: ObservableObject {
     @Published var daysUsed: Int = 0 { didSet { updateValue(key: "daysUsed", newValue: daysUsed, oldValue: oldValue)}}
     // 统计学习的课程（编号）
     @Published var completedCourse: Set<Int> = [] { didSet { updateValue(key: "completedCourse", newValue: completedCourse, oldValue: oldValue)}}
+    // 最近打开课程，用于继续学习
+    @Published var lastOpenedCourse: Int = 0 { didSet { updateValue(key: "lastOpenedCourse", newValue: lastOpenedCourse, oldValue: oldValue)}}
     
     // 记录第一次打开日期、最近一次打开日期和累计天数
     func updateAppUsageDay() {
@@ -95,7 +97,8 @@ extension AppStorageManager {
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
         userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
-        completedCourse = Set<Int>(defaults.array(forKey: "completedCourse") as? [Int] ?? [])
+        completedCourse = Set<Int>(defaults.array(forKey: "completedCourse") as? [Int] ?? []) // 完成的课程
+        lastOpenedCourse = defaults.integer(forKey: "lastOpenedCourse")   // 最近打开的课程
         
         // 首次使用时间
         if defaults.object(forKey: "firstUsed") == nil {
@@ -137,6 +140,7 @@ extension AppStorageManager {
         loadValueFromiCloud(key: "daysUsed")    // 累计使用天数
         loadValueFromiCloud(key: "userName")    // 用户名
         loadValueFromiCloud(key: "completedCourse") // 用户学习过的课程
+        loadValueFromiCloud(key: "lastOpenedCourse")    // 最近打开的课程
         store.synchronize() // 强制触发数据同步
     }
 }
@@ -164,6 +168,7 @@ extension AppStorageManager {
         case "daysUsed": daysUsed = store.object(forKey: key) as? Int ?? 0
         case "userName": userName = store.string(forKey: key) ?? "Developer"
         case "completedCourse": completedCourse = Set<Int>(store.array(forKey: key) as? [Int] ?? [])
+        case "lastOpenedCourse": lastOpenedCourse = store.object(forKey: key) as? Int ?? 0
         default:
             print("未定义的 iCloud key：\(key)")
         }

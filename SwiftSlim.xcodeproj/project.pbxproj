@@ -10,7 +10,6 @@
 		1D27E1002F9D8E8000CBA2CD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D27E0FF2F9D8E8000CBA2CD /* Lottie */; };
 		1D27E1032F9D8E8700CBA2CD /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 1D27E1022F9D8E8700CBA2CD /* Splash */; };
 		1D27E1062F9D8E9E00CBA2CD /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D27E1052F9D8E9E00CBA2CD /* MarkdownUI */; };
-		1D375FCB2FA394B70042F253 /* SymbolsVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D375FCA2FA394B70042F253 /* SymbolsVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,7 +197,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D375FCB2FA394B70042F253 /* SymbolsVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

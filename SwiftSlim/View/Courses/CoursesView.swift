@@ -110,6 +110,7 @@ struct CoursesView: View {
 }
 
 struct CoursesChapterView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     @State private var showList = false
     let chapter: CoursesChapter
     var body: some View {
@@ -135,7 +136,7 @@ struct CoursesChapterView: View {
             if showList {
                 Divider()
                 ForEach(Array(chapter.items.enumerated()), id:\.offset) { index, item in
-                    NavigationLink(destination: CoursesPage(url: item.url)) {
+                    NavigationLink(destination: CoursesPage(item: item)) {
                         CoursesItem(item: item)
                     }
                     if index != chapter.items.count - 1 {
@@ -147,15 +148,36 @@ struct CoursesChapterView: View {
     }
 }
 struct CoursesItem: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     let item: CoursesModel
+    
+    var isCompleted: Bool {
+        AppStorageManager.shared.completedCourse.contains(item.index)
+    }
+    
+    var isContinueLearning: Bool {
+        AppStorageManager.shared.lastOpenedCourse == item.index
+    }
+    
     var body: some View {
         HStack(spacing: 20) {
             Text(verbatim: "\(item.index)")
                 .foregroundStyle(Color.secondary)
             Text(LocalizedStringKey(item.name))
                 .fontWeight(.medium)
-                .foregroundStyle(Color("BlackColor"))
+                .foregroundStyle(isCompleted ? Color("BlackColor") : Color.secondary)
             Spacer()
+            if isCompleted {
+                Image(systemName: "checkmark.circle")
+                    .font(.system(size: 20))
+                    .foregroundStyle(Color.green)
+            } else {
+                if isContinueLearning {
+                    Image(systemName: "arrowtriangle.right.circle")
+                        .font(.system(size: 20))
+                        .foregroundStyle(Color.blue)
+                }
+            }
         }
         .padding(.vertical, 16)
         .padding(.horizontal, 30)
