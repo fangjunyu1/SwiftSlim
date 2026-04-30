@@ -92,10 +92,16 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "document.on.document",      version: .SF6, keywords: ["复制", "拷贝", "副本", "重复"], keywords_en: ["copy", "duplicate", "document copy", "file copy", "document", "file"]),
         SingleSymbols(name: "clipboard",                 version: .SF4, keywords: ["剪贴板", "粘贴", "复制", "记录", "内容"], keywords_en: ["clipboard", "paste", "copy"]),
         SingleSymbols(name: "text.page",                 version: .SF6, keywords: ["文本", "页面", "文档", "内容", "文章"], keywords_en: ["text", "page", "document", "content", "article"]),
+        SingleSymbols(name: "text.page.badge.magnifyingglass",                 version: .SF6, keywords: ["搜索文档", "查找文档", "搜索文本", "查找文本", "页面搜索", "检索"], keywords_en: ["search document", "find document", "search text", "find text", "page search", "lookup"]),
         SingleSymbols(name: "note",                      version: .SF2, keywords: ["笔记", "便签", "备忘", "记录", "注释", "便笺"], keywords_en: ["note", "notes", "memo", "record", "annotation"]),
         SingleSymbols(name: "scroll",                    version: .SF2, keywords: ["卷轴", "古卷", "文本", "文档", "历史", "档案"], keywords_en: ["scroll", "document", "history", "archive", "paper"]),
         SingleSymbols(name: "checklist",                 version: .SF3, keywords: ["清单", "列表", "待办", "任务", "勾选", "核对"], keywords_en: ["checklist", "todo", "list", "task", "check", "items"]),
         SingleSymbols(name: "square.text.square",        version: .SF3, keywords: ["文本框", "内容框", "文字", "文本", "排版", "内容"], keywords_en: ["text box", "text", "content", "layout", "text frame"]),
+        
+        // =========== 日历 ===========
+        SingleSymbols(name: "calendar",version: .SF1,keywords: ["日历", "日期", "日程", "时间", "安排", "计划", "事件", "提醒"],keywords_en: ["calendar", "date", "schedule", "time", "plan", "event", "reminder"]),
+
+        SingleSymbols(name: "calendar.and.person",version: .SF6,keywords: ["日历", "个人日历", "日程", "预约", "会议", "安排"],keywords_en: ["calendar", "personal calendar", "user calendar", "schedule", "appointment", "meeting", "event"]),
         
         // ========== 阅读与书籍 ==========
         SingleSymbols(name: "book",                      version: .SF1, keywords: ["书", "书本", "书籍", "阅读", "图书", "教材", "学习", "课程"], keywords_en: ["book", "read", "reading", "textbook", "study", "course"]),
@@ -285,6 +291,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "infinity",                  version: .SF2, keywords: ["无限", "循环", "永久"], keywords_en: ["∞",  "infinity", "endless", "loop", "forever"]),
         
         // ========== 录制 ==========
+        SingleSymbols(name: "stop.circle",             version: .SF1, keywords: ["停止", "结束", "中止", "终止", "暂停操作", "停止播放", "停止录制", "圆形"], keywords_en: ["stop", "end", "halt", "terminate", "stop playback", "stop recording", "circle"]),
         SingleSymbols(name: "record.circle",             version: .SF2, keywords: ["录制", "录音", "录屏", "录像"], keywords_en: ["REC", "record", "recording", "capture", "video", "audio"]),
         
         // ========== 音频系统 ==========
@@ -485,8 +492,8 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "slider.horizontal.3",       version: .SF1, keywords: ["设置", "配置", "水平", "调节", "参数"], keywords_en: ["settings", "configuration", "slider", "adjust", "controls", "parameter"]),
         SingleSymbols(name: "slider.vertical.3",         version: .SF2, keywords: ["设置", "配置", "垂直", "调节", "参数"], keywords_en: ["settings", "configuration", "slider", "adjust", "controls", "parameter"]),
         SingleSymbols(name: "switch.2",                  version: .SF2, keywords: ["开关", "切换"], keywords_en: ["toggle", "switch", "enable", "disable"]),
-        SingleSymbols(name: "ellipsis",                  version: .SF1, keywords: ["更多", "菜单", "选项", "省略", "省略号"], keywords_en: ["more", "menu", "options","pmitted"]),
-        SingleSymbols(name: "ellipsis.circle",           version: .SF1, keywords: ["更多", "菜单", "选项", "省略", "省略号", "圆形"], keywords_en: ["more", "menu", "options","pmitted", "circle"]),
+        SingleSymbols(name: "ellipsis",                  version: .SF1, keywords: ["更多", "菜单", "选项", "省略", "省略号"], keywords_en: ["more", "menu", "options", "omitted"]),
+        SingleSymbols(name: "ellipsis.circle",           version: .SF1, keywords: ["更多", "菜单", "选项", "省略", "省略号", "圆形"], keywords_en: ["more", "menu", "options", "omitted", "circle"]),
         SingleSymbols(name: "nosign",                    version: .SF1, keywords: ["禁止", "禁用", "不允许", "拒绝", "驳回"], keywords_en: ["forbidden", "prohibited", "disabled", "rejected"]),
         
         
@@ -498,7 +505,6 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "line.3.crossed.swirl.circle", version: .SF2, keywords: ["漩涡", "效果", "滤镜"], keywords_en: ["swirl", "effect", "filter", "processing"]),
         SingleSymbols(name: "lineweight",                version: .SF2, keywords: ["线宽", "粗细"], keywords_en: ["line weight", "stroke", "style"]),
         SingleSymbols(name: "perspective",               version: .SF1, keywords: ["透视", "视角", "变换"], keywords_en: ["perspective", "transform", "viewpoint"]),
-        SingleSymbols(name: "skew",                      version: .SF1, keywords: [ "倾斜", "变形"], keywords_en: ["skew", "distort", "transform"]),
         SingleSymbols(name: "grid",                      version: .SF1, keywords: ["网格", "布局", "对齐"], keywords_en: ["#","grid", "layout", "alignment"]),
         
         // ========== 购物容器 ==========
@@ -614,7 +620,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "lamp.desk",                 version: .SF4, keywords: ["灯", "照明", "台灯", "桌灯", "阅读灯"], keywords_en: ["lamp", "light", "desk lamp", "study light","table lamp"]),
         SingleSymbols(name: "lamp.floor",                version: .SF4, keywords: ["灯", "照明", "落地灯", "家居"], keywords_en: ["lamp", "light", "floor lamp", "home furnishings"]),
         SingleSymbols(name: "lamp.ceiling",              version: .SF4, keywords: ["灯", "照明", "吊灯", "天花板灯"], keywords_en: ["lamp", "light", "ceiling Light"]),
-        SingleSymbols(name: "chandelier",                version: .SF4, keywords: ["灯", "照明", "枝形吊灯", "吊灯", "水晶灯"], keywords_en: ["lamp", "light", "chandelier", "crystal Ccandelier"]),
+        SingleSymbols(name: "chandelier",                version: .SF4, keywords: ["灯", "照明", "枝形吊灯", "吊灯", "水晶灯"], keywords_en: ["lamp", "light", "chandelier", "crystal chandelier"]),
         SingleSymbols(name: "light.panel",               version: .SF4, keywords: ["灯", "照明", "面板", "灯光面板"], keywords_en: ["lamp", "light", "panel", "lighting panel"]),
         
         // ========== 电力系统 ==========
@@ -892,7 +898,6 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "leaf",                      version: .SF2, keywords: ["叶子", "植物", "绿色", "环保", "自然"], keywords_en: ["leaf", "plant", "green", "eco", "nature"]),
         SingleSymbols(name: "tree",                      version: .SF4, keywords: ["树", "树木", "植物", "自然", "森林"], keywords_en: ["tree", "plant", "forest", "nature"]),
         SingleSymbols(name: "laurel.leading",            version: .SF4, keywords: ["月桂", "桂冠", "胜利", "荣誉", "装饰"], keywords_en: ["laurel", "wreath", "victory", "honor", "decoration"]),
-        SingleSymbols(name: "camera.macro",              version: .SF3, keywords: ["微距", "花朵", "植物", "摄影", "细节"], keywords_en: ["macro", "macro photography", "flower", "plant", "close up"]),
         SingleSymbols(name: "fossil.shell",              version: .SF4, keywords: ["化石", "贝壳", "古生物", "自然", "科学"], keywords_en: ["fossil", "shell", "prehistoric", "nature", "science"]),
         
         // ========== 衣物 ==========
@@ -928,7 +933,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "binoculars",                version: .SF2, keywords: ["望远镜", "双筒望远镜", "观察", "侦察"], keywords_en: ["binoculars", "telescope", "observation", "spotting"]),
         
         // ========== 安全 / 支持 ==========
-        SingleSymbols(name: "lifepreserver",             version: .SF2, keywords: ["救生圈", "救援", "安全", "紧急",  "援助"], keywords_en: ["kifebuoy", "rescue", "safety", "emergency", "aid"]),
+        SingleSymbols(name: "lifepreserver",             version: .SF2, keywords: ["救生圈", "救援", "安全", "紧急",  "援助"], keywords_en: ["lifebuoy", "rescue", "safety", "emergency", "aid"]),
         
         // ========== 表情 / 面部（Emoji语义层） ==========
         SingleSymbols(name: "face.smiling",              version: .SF2, keywords: ["人脸", "笑脸", "微笑", "开心", "表情"], keywords_en: ["smiling face", "happy", "emoji", "smile", "positive expression"]),
@@ -966,7 +971,7 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "barcode",                   version: .SF1, keywords: ["条形码", "商品条码", "扫码", "扫描"], keywords_en: ["barcode", "product barcode", "scan", "scanning"]),
         SingleSymbols(name: "livephoto",                 version: .SF1, keywords: ["动态照片", "实况照片", "照片"], keywords_en: ["live photo", "motion photo", "photo"]),
         SingleSymbols(name: "f.cursive",                 version: .SF1, keywords: ["草书F", "手写体", "字母F"], keywords_en: ["cursive f", "f", "handwritten f", "letter f"]),
-        SingleSymbols(name: "scope",                     version: .SF1, keywords: ["范围", "瞄准", "目标", "聚焦", "精确", "准星"], keywords_en: ["scope", "aim", "targeting", "focus", "precision", "Crosshai"]),
+        SingleSymbols(name: "scope",                     version: .SF1, keywords: ["范围", "瞄准", "目标", "聚焦", "精确", "准星"], keywords_en: ["scope", "aim", "targeting", "focus", "precision", "crosshair"]),
         SingleSymbols(name: "rectangle.stack",           version: .SF1, keywords: ["堆叠", "图层"], keywords_en: ["stack", "cards", "layers", "pages"]),
         
         // ========== 数据可视化 ==========
@@ -984,12 +989,12 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "waveform.path.ecg",         version: .SF1, keywords: ["心电图", "心率"], keywords_en: ["ecg", "heart rate"]),
         
         // ========== 商业 / 营销事件 ==========
-        SingleSymbols(name: "burst",                     version: .SF1, keywords: ["爆发", "新品", "促销", "热点", "营销", "特卖"], keywords_en: ["burst", "new product", "promotion", "hot deal", "marketing highlight", "special offer''"]),
+        SingleSymbols(name: "burst",                     version: .SF1, keywords: ["爆发", "新品", "促销", "热点", "营销", "特卖"], keywords_en: ["burst", "new product", "promotion", "hot deal", "marketing highlight", "special offer"]),
         
         // ========== 时间 ==========
         SingleSymbols(name: "clock",                     version: .SF1, keywords: ["时钟", "时间", "钟表", "小时", "分钟"], keywords_en: ["clock", "time", "watch", "hours", "minutes"]),
         SingleSymbols(name: "alarm",                     version: .SF1, keywords: ["闹钟", "提醒", "闹铃", "起床", "通知提醒"], keywords_en: ["alarm", "alert", "reminder", "wake up", "notification"]),
-        SingleSymbols(name: "stopwatch",                 version: .SF1, keywords: ["秒表", "计时", "测速", "比赛"], keywords_en: ["stopwatch", "timer", "speed ​​test", "race"]),
+        SingleSymbols(name: "stopwatch",                 version: .SF1, keywords: ["秒表", "计时", "测速", "比赛"], keywords_en: ["stopwatch", "timer", "speed test", "race"]),
         SingleSymbols(name: "timer",                     version: .SF1, keywords: ["倒计时", "定时器", "计时", "时间"], keywords_en: ["timer", "countdown"]),
         SingleSymbols(name: "hourglass",                 version: .SF1, keywords: ["沙漏", "等待", "倒计时", "时间", "加载"], keywords_en: ["hourglass", "waiting", "countdown", "loading", "time flow"]),
         
@@ -1046,7 +1051,6 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "burn",                      version: .SF1, keywords: ["燃烧", "烧伤", "烫伤"], keywords_en: ["burn", "scald"]),
         
         // ========== 几何变换 ==========
-        SingleSymbols(name: "perspective",               version: .SF1, keywords: ["透视", "视角"], keywords_en: ["perspective", "viewpoint"]),
         SingleSymbols(name: "skew",                      version: .SF1, keywords: ["倾斜", "斜切", "变形", "几何变换", "扭曲"], keywords_en: ["slant", "bevel", "deformation", "geometric transformation", "twist"]),
         
         // ========== 渲染 / 视觉效果 ==========
@@ -1142,9 +1146,9 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "arrow.uturn.left.square",          version: .SF1, keywords: ["正方形", "方向", "返回", "左", "箭头", "上一步", "退出", "后退", "撤销"], keywords_en: ["square", "back", "left", "arrow", "previous", "return", "chevron", "exit", "dismiss", "direction", "cancel"]),
         
         // ========== 方向箭头（向右转） ==========
-        SingleSymbols(name: "arrow.uturn.right",          version: .SF1, keywords: ["方向", "前进", "右", "箭头", "下一步", "更多", "继续", "进入", "重做"], keywords_en: ["back", "left", "arrow", "previous", "return", "chevron", "exit", "dismiss", "direction", "redo"]),
-        SingleSymbols(name: "arrow.uturn.right.circle",          version: .SF1, keywords: ["圆形", "方向", "前进", "右", "箭头", "下一步", "更多", "继续", "进入", "重做"], keywords_en: ["circle", "back", "left", "arrow", "previous", "return", "chevron", "exit", "dismiss", "direction", "redo"]),
-        SingleSymbols(name: "arrow.uturn.right.square",          version: .SF1, keywords: ["方向", "前进", "右", "箭头", "下一步", "更多", "继续", "进入", "重做"], keywords_en: ["square", "back", "left", "arrow", "previous", "return", "chevron", "exit", "dismiss", "direction", "redo"]),
+        SingleSymbols(name: "arrow.uturn.right",          version: .SF1, keywords: ["方向", "箭头", "右", "转向", "重做"], keywords_en: ["direction", "arrow", "right", "turn", "u-turn", "redo"]),
+        SingleSymbols(name: "arrow.uturn.right.circle",          version: .SF1, keywords: ["圆形", "方向", "箭头", "右", "转向", "重做"], keywords_en: ["circle", "direction", "arrow", "right", "turn", "u-turn", "redo"]),
+        SingleSymbols(name: "arrow.uturn.right.square",          version: .SF1, keywords: ["正方形", "方向", "箭头", "右", "转向", "重做"], keywords_en: ["square", "direction", "arrow", "right", "turn", "u-turn", "redo"]),
     
         // ========== 方向箭头（向上转） ==========
         SingleSymbols(name: "arrow.uturn.up",          version: .SF1, keywords: ["方向", "上", "箭头", "返回", "掉头", "反转", "拐弯", "转向"], keywords_en: ["direction", "up", "arrow", "return", "u-turn", "reverse", "turn", "switch"]),
@@ -1172,8 +1176,8 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "arrow.trianglehead.merge",  version: .SF6, keywords: ["方向", "箭头", "合并", "整合", "连接", "协作"], keywords_en: ["direction", "arrow", "merge", "integrate", "connect", "collaborate"]),
         SingleSymbols(name: "arrow.trianglehead.branch", version: .SF6, keywords: ["方向", "箭头", "分支", "派生", "分叉", "分流"], keywords_en: ["direction", "arrow", "branch", "derivative", "fork", "split"]),
         SingleSymbols(name: "arrow.trianglehead.swap",   version: .SF6, keywords: ["方向", "箭头", "传输", "连接"], keywords_en: ["direction", "arrow", "transmission", "connect"]),
-        SingleSymbols(name: "arrow.down.left.arrow.up.right", version: .SF5, keywords: ["方向", "箭头", "转换", "双向", "交换", "互换", "切换"], keywords_en: ["direction", "arrow", "conversion", "cidirectional", "exchange", "interchange", "switch"]),
-        SingleSymbols(name: "arrow.up.left.arrow.down.right", version: .SF5, keywords: ["方向", "箭头", "转换", "双向", "交换", "互换", "切换"], keywords_en: ["direction", "arrow", "conversion", "cidirectional", "exchange", "interchange", "switch"]),
+        SingleSymbols(name: "arrow.down.left.arrow.up.right", version: .SF5, keywords: ["方向", "箭头", "转换", "双向", "交换", "互换", "切换"], keywords_en: ["direction", "arrow", "conversion", "bidirectional", "exchange", "interchange", "switch"]),
+        SingleSymbols(name: "arrow.up.left.arrow.down.right", version: .SF5, keywords: ["方向", "箭头", "转换", "双向", "交换", "互换", "切换"], keywords_en: ["direction", "arrow", "conversion", "bidirectional", "exchange", "interchange", "switch"]),
         
         // ========== 三角箭头 ==========
         // ========== 三角箭头（左） ==========
@@ -1210,6 +1214,29 @@ struct SingleSymbols: Identifiable {
         SingleSymbols(name: "square.and.arrow.up",       version: .SF1, keywords: ["分享", "导出", "上传", "发送", "共享"], keywords_en: ["share", "export", "upload", "send"]),
         SingleSymbols(name: "rectangle.portrait.and.arrow.right", version: .SF3, keywords: ["登出", "退出", "离开", "导出"], keywords_en: ["logout", "exit", "leave", "export", "quit"]),
         SingleSymbols(name: "square.and.arrow.down",     version: .SF1, keywords: ["导入", "下载", "保存", "接收", "存入"], keywords_en: ["import", "download", "save", "receive", "store"]),
+        
+        // =============== 数字 =========
+        SingleSymbols(name: "0.circle",version: .SF6,keywords: ["0", "数字", "圆形", "编号", "序号"],keywords_en: ["0", "circle", "number", "index"]),
+        SingleSymbols(name: "0.square",version: .SF6,keywords: ["0", "数字", "正方形", "编号", "序号"],keywords_en: ["0", "square", "number", "index"]),
+        SingleSymbols(name: "1.circle",version: .SF6,keywords: ["1", "数字", "圆形", "编号", "序号"],keywords_en: ["1", "circle", "number", "index"]),
+        SingleSymbols(name: "1.square",version: .SF6,keywords: ["1", "数字", "正方形", "编号", "序号"],keywords_en: ["1", "square", "number", "index"]),
+        SingleSymbols(name: "2.circle",version: .SF6,keywords: ["2", "数字", "圆形", "编号", "序号"],keywords_en: ["2", "circle", "number", "index"]),
+        SingleSymbols(name: "2.square",version: .SF6,keywords: ["2", "数字", "正方形", "编号", "序号"],keywords_en: ["2", "square", "number", "index"]),
+        SingleSymbols(name: "3.circle",version: .SF6,keywords: ["3", "数字", "圆形", "编号", "序号"],keywords_en: ["3", "circle", "number", "index"]),
+        SingleSymbols(name: "3.square",version: .SF6,keywords: ["3", "数字", "正方形", "编号", "序号"],keywords_en: ["3", "square", "number", "index"]),
+        SingleSymbols(name: "4.circle",version: .SF6,keywords: ["4", "数字", "圆形", "编号", "序号"],keywords_en: ["4", "circle", "number", "index"]),
+        SingleSymbols(name: "4.square",version: .SF6,keywords: ["4", "数字", "正方形", "编号", "序号"],keywords_en: ["4", "square", "number", "index"]),
+        SingleSymbols(name: "5.circle",version: .SF6,keywords: ["5", "数字", "圆形", "编号", "序号"],keywords_en: ["5", "circle", "number", "index"]),
+        SingleSymbols(name: "5.square",version: .SF6,keywords: ["5", "数字", "正方形", "编号", "序号"],keywords_en: ["5", "square", "number", "index"]),
+        SingleSymbols(name: "6.circle",version: .SF6,keywords: ["6", "数字", "圆形", "编号", "序号"],keywords_en: ["6", "circle", "number", "index"]),
+        SingleSymbols(name: "6.square",version: .SF6,keywords: ["6", "数字", "正方形","编号", "序号"],keywords_en: ["6", "square", "number", "index"]),
+        SingleSymbols(name: "7.circle",version: .SF6,keywords: ["7", "数字", "圆形", "编号", "序号"],keywords_en: ["7", "circle", "number", "index"]),
+        SingleSymbols(name: "7.square",version: .SF6,keywords: ["7", "数字", "正方形","编号", "序号"],keywords_en: ["7", "square", "number", "index"]),
+        SingleSymbols(name: "8.circle",version: .SF6,keywords: ["8", "数字", "圆形", "编号", "序号"],keywords_en: ["8", "circle", "number", "index"]),
+        SingleSymbols(name: "8.square",version: .SF6,keywords: ["8", "数字", "正方形", "编号", "序号"],keywords_en: ["8", "square", "number", "index"]),
+        SingleSymbols(name: "9.circle",version: .SF6,keywords: ["9", "数字", "圆形", "编号", "序号"],keywords_en: ["9", "circle", "number", "index"]),
+        SingleSymbols(name: "9.square",version: .SF6,keywords: ["9", "数字", "正方形", "编号", "序号"],keywords_en: ["9", "square", "number", "index"]),
+        
     ]
 }
 
