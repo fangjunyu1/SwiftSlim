@@ -96,8 +96,8 @@ Button("Tap Me") {
             description: "Opens web pages or jumps to a URL.",
             demo: .link,
             code: """
-Link("Open Apple Developer",
-     destination: URL(string: "https://developer.Apple.com")!)
+Link("Open Fang Junyu",
+     destination: URL(string: "https://fangjunyu.com/")!)
 """
         ),
         .init(

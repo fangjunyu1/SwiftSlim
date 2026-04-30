@@ -169,8 +169,8 @@ struct PreviewItemView: View {
             .frame(maxWidth: .infinity)
             
         case .link:
-            Link(destination: URL(string: "https://developer.Apple.com")!) {
-                Text(verbatim: "Open Apple Developer")
+            Link(destination: URL(string: "https://fangjunyu.com/")!) {
+                Text(verbatim: "Open Fang Junyu")
                     .font(.system(size: 16, weight: .semibold))
             }
             

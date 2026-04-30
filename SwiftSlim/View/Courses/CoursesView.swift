@@ -71,7 +71,7 @@ struct CoursesView: View {
                 Text("Dive deeper into SwiftUI from the basics, covering data storage, view splitting, state management, project organization, and real-world application development.")
                     .font(.footnote)
                     .fontWeight(.medium)
-                    .foregroundStyle(Color("LightDrak").opacity(0.8))
+                    .foregroundStyle(Color.white.opacity(0.8))
                 Spacer()
             }
             Button(action: {
@@ -85,6 +85,7 @@ struct CoursesView: View {
                     .background(Color("GoldColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             })
+            .disabled(true)
         }
         .padding(26)
         .background {
