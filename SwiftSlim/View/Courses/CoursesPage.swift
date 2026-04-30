@@ -49,7 +49,6 @@ struct CoursesPage: View {
                     }
                     
                     completionArea
-                        .padding(.bottom, 50)
                 }
             } else {
                 ProgressView {
@@ -59,7 +58,9 @@ struct CoursesPage: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
-            AppStorageManager.shared.lastOpenedCourse = courseNumber
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                AppStorageManager.shared.lastOpenedCourse = courseNumber
+            }
         }
         .onDisappear {
             print("关闭课程")
@@ -70,36 +71,40 @@ struct CoursesPage: View {
     
     @ViewBuilder
     var completionArea: some View {
-        VStack {
-            if showCompletedFeedback {
-                Label("Completed", systemImage: "checkmark.circle.fill")
-                    .foregroundStyle(.green)
+        ZStack {
+            Button(action: {
+                // 添加完成的课程序号
+                appStorage.completedCourse.insert(courseNumber)
+                
+                withAnimation {
+                    showCompletedFeedback = true
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    withAnimation {
+                        showCompletedFeedback = false
+                    }
+                }
+            }, label: {
+                Text("Mark as Complete")
                     .padding(.vertical, 8)
                     .padding(.horizontal, 20)
-            } else if !isCompleted {
-                Button(action: {
-                    // 添加完成的课程序号
-                    appStorage.completedCourse.insert(courseNumber)
-                    
-                    withAnimation {
-                        showCompletedFeedback = true
-                    }
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                        withAnimation {
-                            showCompletedFeedback = false
-                        }
-                    }
-                }, label: {
-                    Text("Mark as Complete")
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 20)
-                        .foregroundStyle(.white)
-                        .background(.blue)
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                        .shadow(radius: 0.3)
-                })
-            }
+                    .foregroundStyle(.white)
+                    .background(.blue)
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .shadow(radius: 0.3)
+            })
+            .opacity(!isCompleted && !showCompletedFeedback ? 1 : 0)
+            .allowsHitTesting(!isCompleted && !showCompletedFeedback)
+            
+            Label("Completed", systemImage: "checkmark.circle.fill")
+                .foregroundStyle(.green)
+                .padding(.vertical, 8)
+                .padding(.horizontal, 20)
+                .opacity(showCompletedFeedback ? 1 : 0)
         }
+        .frame(height: 44)
+        .padding(.top, 30)
+        .padding(.bottom, 50)
     }
 }

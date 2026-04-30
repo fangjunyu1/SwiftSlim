@@ -159,13 +159,16 @@ struct CoursesItem: View {
         AppStorageManager.shared.lastOpenedCourse == item.index
     }
     
+    var titleColor: Color {
+        isCompleted || isContinueLearning ? Color("BlackColor") : Color.secondary
+    }
     var body: some View {
         HStack(spacing: 20) {
             Text(verbatim: "\(item.index)")
                 .foregroundStyle(Color.secondary)
             Text(LocalizedStringKey(item.name))
                 .fontWeight(.medium)
-                .foregroundStyle(isCompleted ? Color("BlackColor") : Color.secondary)
+                .foregroundStyle(titleColor)
             Spacer()
             if isCompleted {
                 Image(systemName: "checkmark.circle")
