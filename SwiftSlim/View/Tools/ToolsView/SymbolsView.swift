@@ -70,25 +70,25 @@ struct SingleSymbols: Identifiable {
     static let listSymbols: [SingleSymbols] = [
         
         // ========== 书写与编辑 ==========
-        SingleSymbols(name: "pencil",                    version: .SF1, keywords: ["铅笔", "笔", "书写", "写字", "编辑", "绘图", "修改", "注释"], keywords_en: ["pencil", "pen", "write", "writing", "draw", "edit", "annotate"]),
-        SingleSymbols(name: "pencil.tip",                version: .SF1, keywords: ["铅笔头", "笔尖", "笔", "铅笔", "书写", "绘图", "标注", "标记"], keywords_en: ["pencil tip", "pencil", "tip", "nib", "write", "draw", "annotate", "mark"]),
+        SingleSymbols(name: "pencil",                    version: .SF1, keywords: ["铅笔", "笔", "书写", "写字", "编辑", "绘图", "画图", "修改", "注释"], keywords_en: ["pen", "pencil", "write", "writing", "draw", "drawing", "edit", "annotate"]),
+        SingleSymbols(name: "pencil.tip",                version: .SF1, keywords: ["笔", "铅笔", "铅笔头", "笔尖", "书写", "绘图", "标注", "标记"], keywords_en: ["pen", "pencil", "pencil tip", "tip", "nib", "write", "draw", "annotate", "mark"]),
         SingleSymbols(name: "eraser",                    version: .SF4, keywords: ["橡皮", "橡皮擦", "擦除", "清除", "删除", "移除"], keywords_en: ["eraser", "erase", "clear", "remove", "delete"]),
-        SingleSymbols(name: "square.and.pencil",         version: .SF1, keywords: ["编辑", "修改", "写作", "新建", "起草", "笔", "铅笔"], keywords_en: ["edit", "compose", "write", "create", "new", "draft"]),
+        SingleSymbols(name: "square.and.pencil",         version: .SF1, keywords: ["笔", "铅笔", "编辑", "修改", "写作", "新建", "起草", ], keywords_en: ["pen", "pencil", "edit", "compose", "write", "create", "new", "draft"]),
         SingleSymbols(name: "scribble",                  version: .SF1, keywords: ["涂鸦", "手写", "笔迹", "草稿", "绘图", "乱画", "线条"], keywords_en: ["scribble", "handwriting", "draw", "sketch", "doodle", "line"]),
-        SingleSymbols(name: "highlighter",               version: .SF2, keywords: ["高亮", "荧光笔", "标注", "标记", "记号", "笔", "重点"], keywords_en: ["highlighter", "highlight", "mark", "marker", "annotate"]),
+        SingleSymbols(name: "highlighter",               version: .SF2, keywords: ["笔", "高亮", "荧光笔", "标注", "标记", "记号", "重点"], keywords_en: ["pen", "highlighter", "highlight", "mark", "marker", "annotate"]),
         SingleSymbols(name: "trash",                     version: .SF1, keywords: ["垃圾桶", "删除", "移除", "清除", "丢弃", "废纸篓"], keywords_en: ["trash", "delete", "remove", "bin", "discard"]),
         SingleSymbols(name: "scissors",                  version: .SF1, keywords: ["剪刀", "剪切", "裁剪", "剪", "编辑"], keywords_en: ["scissors", "cut", "clip", "trim"]),
         SingleSymbols(name: "crop",                      version: .SF1, keywords: ["裁剪", "裁切", "修剪", "截取", "调整"], keywords_en: ["crop", "trim", "cut", "resize"]),
         
         // ========== 文件与存储 ==========
-        SingleSymbols(name: "folder",                    version: .SF1, keywords: ["文件夹", "目录", "文件", "资源夹", "整理", "归档", "分类", "存储"], keywords_en: ["folder", "directory", "file", "files", "organize", "archive", "storage"]),
-        SingleSymbols(name: "tray",                      version: .SF1, keywords: ["托盘", "收件箱", "收纳", "存放", "容器", "文件盘"], keywords_en: ["tray", "inbox", "container", "storage", "holder"]),
-        SingleSymbols(name: "externaldrive",             version: .SF2, keywords: ["外置硬盘", "移动硬盘", "硬盘", "外接磁盘", "存储设备", "备份", "磁盘"], keywords_en: ["external drive", "hard drive", "disk", "drive", "storage", "backup"]),
-        SingleSymbols(name: "archivebox",                version: .SF1, keywords: ["存档", "归档", "档案盒", "盒子", "存储", "打包", "收纳"], keywords_en: ["archive", "archive box", "box", "storage", "package"]),
-        SingleSymbols(name: "document",                  version: .SF6, keywords: ["文件", "文档", "页面", "档案", "资料", "单页"], keywords_en: ["document", "file", "page", "paper"]),
-        SingleSymbols(name: "arrow.down.document",       version: .SF6, keywords: ["下载", "下载文件", "保存", "导入", "获取", "接收"], keywords_en: ["download", "save", "import", "receive", "file"]),
+        SingleSymbols(name: "folder",                    version: .SF1, keywords: ["文件夹", "目录", "整理", "归档", "分类", "存储"], keywords_en: ["folder", "directory", "organize", "archive", "storage"]),
+        SingleSymbols(name: "tray",                      version: .SF1, keywords: ["托盘", "收件箱", "收纳", "存放"], keywords_en: ["tray", "inbox", "organization", "storage"]),
+        SingleSymbols(name: "externaldrive",             version: .SF2, keywords: ["移动硬盘","外接硬盘", "硬盘", "磁盘", "存储设备", "备份"], keywords_en: ["external drive", "portable drive", "hard drive", "disk", "storage", "backup"]),
+        SingleSymbols(name: "archivebox",                version: .SF1, keywords: ["归档", "存档", "收纳", "盒子", "打包", "存储"], keywords_en: ["archive", "archive box", "storage", "box", "package", "store", "save"]),
+        SingleSymbols(name: "document",                  version: .SF6, keywords: ["文件", "文档", "页面", "档案", "资料", "单页"], keywords_en: ["document", "file", "page", "paper", "record", "material"]),
+        SingleSymbols(name: "arrow.down.document",       version: .SF6, keywords: ["下载", "下载文件", "保存", "导入", "获取", "接收"], keywords_en: ["download", "download file", "save", "import", "receive", "document", "file"]),
         SingleSymbols(name: "text.document",             version: .SF6, keywords: ["文本文件", "纯文本", "文档", "文件"], keywords_en: ["text file", "txt", "document", "file"]),
-        SingleSymbols(name: "zipper.page",               version: .SF6, keywords: ["压缩", "压缩包", "打包", "归档", "文件"], keywords_en: ["zip", "archive", "compress", "file"]),
+        SingleSymbols(name: "zipper.page",               version: .SF6, keywords: ["压缩", "压缩包", "打包", "归档", "文件"], keywords_en: ["zip", "zip file", "archive", "archiving", "compress", "compressed file", "file"]),
         SingleSymbols(name: "document.on.document",      version: .SF6, keywords: ["复制", "拷贝", "副本", "重复"], keywords_en: ["copy", "duplicate", "document copy", "file copy", "document", "file"]),
         SingleSymbols(name: "clipboard",                 version: .SF4, keywords: ["剪贴板", "粘贴", "复制", "记录", "内容"], keywords_en: ["clipboard", "paste", "copy"]),
         SingleSymbols(name: "text.page",                 version: .SF6, keywords: ["文本", "页面", "文档", "内容", "文章"], keywords_en: ["text", "page", "document", "content", "article"]),
@@ -123,54 +123,55 @@ struct SingleSymbols: Identifiable {
         // ========== 人物与社交 ==========
         SingleSymbols(name: "person",                    version: .SF1, keywords: ["人", "个人", "用户", "账户", "联系人", "个人资料", "头像", "成员"], keywords_en: ["person", "user", "account", "contact", "profile", "avatar", "member"]),
         SingleSymbols(name: "person.2",                  version: .SF1, keywords: ["两人", "双人", "好友", "联系人", "用户", "成员", "分享", "配对", "关系"], keywords_en: ["two people", "pair", "friends", "contacts", "users", "members", "share", "relationship"]),
-        SingleSymbols(name: "person.3",                  version: .SF1, keywords: ["三人", "多人", "团队", "群组", "小组", "协作", "社区", "成员", "群聊"], keywords_en: ["group", "team", "people", "users", "members", "collaboration", "community", "group chat"]),
+        SingleSymbols(name: "person.3",                  version: .SF1, keywords: ["三人", "多人", "团队", "群组", "小组", "协作", "社区", "成员", "群聊"], keywords_en: ["three people", "group", "team", "users", "members", "collaboration", "community", "group chat"]),
         
         // ========== 身份与证件 ==========
         SingleSymbols(name: "lanyardcard",               version: .SF3, keywords: ["工牌", "胸牌", "挂绳卡", "证件", "身份", "员工证", "通行证", "凭证"], keywords_en: ["id card", "badge", "lanyard", "employee badge", "credential", "pass"]),
-        SingleSymbols(name: "person.crop.circle",        version: .SF1, keywords: ["头像", "用户头像", "个人头像", "个人资料", "账户", "用户", "联系人", "圆形头像"], keywords_en: ["avatar", "profile", "profile picture", "user", "account", "contact", "circle avatar"]),
-        SingleSymbols(name: "person.crop.rectangle",     version: .SF1, keywords: ["照片", "人物照片","证件照", "用户图片", "头像卡片", "资料图片", "个人图片"], keywords_en: ["profile image", "profile photo", "portrait", "id photo", "user image", "photo"]),
-        SingleSymbols(name: "person.text.rectangle",     version: .SF3, keywords: ["人", "身份证", "驾照", "证件", "名片", "个人信息", "资料"], keywords_en: ["id", "license", "credential", "card", "identity"]),
+        SingleSymbols(name: "person.crop.circle",        version: .SF1, keywords: ["头像", "用户头像", "个人头像", "个人资料", "账户", "用户", "联系人", "圆形"], keywords_en: ["avatar", "profile", "profile picture", "user", "account", "contact", "circle"]),
+        SingleSymbols(name: "person.crop.rectangle",     version: .SF1, keywords: ["照片", "用户图片", "头像卡片", "资料图片", "个人照片"], keywords_en: ["profile image", "profile photo", "portrait", "id photo", "user image", "photo"]),
+        SingleSymbols(name: "person.text.rectangle",     version: .SF3, keywords: ["身份证", "证件", "身份信息", "个人信息", "资料卡", "名片", "驾照", "凭证"], keywords_en: ["id card", "identity", "credential", "profile card", "personal info", "license", "card"]),
         
         // ========== 图片与展示 ==========
-        SingleSymbols(name: "photo.artframe",            version: .SF3, keywords: ["相框", "照片", "图片", "展示", "艺术", "画框"], keywords_en: ["photo", "frame", "image", "display", "art"]),
-        SingleSymbols(name: "person.crop.artframe",      version: .SF3, keywords: ["人", "头像框", "相框", "个人相框", "照片框"], keywords_en: ["profile frame", "avatar frame", "photo frame", "image"]),
+        SingleSymbols(name: "photo.artframe",            version: .SF3, keywords: ["相框", "照片", "图片", "画框", "艺术"], keywords_en: ["photo frame", "photo", "frame", "image", "gallery", "art"]),
+        SingleSymbols(name: "person.crop.artframe",      version: .SF3, keywords: ["头像框", "相框", "个人相框", "照片框"], keywords_en: ["avatar frame", "photo frame", "personal photo frames", "image"]),
         
         // ========== 图案 / 纹理 ==========
-        SingleSymbols(name: "rectangle.pattern.checkered", version: .SF6, keywords: ["游戏", "棋盘", "棋格", "格子", "方格", "纹理", "背景图案"], keywords_en: ["game", "checkered", "grid", "pattern", "texture", "tile"]),
+        SingleSymbols(name: "rectangle.pattern.checkered", version: .SF6, keywords: ["游戏", "棋盘", "棋格", "格子", "方格", "纹理", "图案"], keywords_en: ["game", "checkered", "checkerboard", "grid", "pattern", "texture", "tile"]),
         
         // ========== 人物基础 ==========
-        SingleSymbols(name: "figure",                    version: .SF5, keywords: ["人", "个人", "人物", "人形", "行人", "用户"], keywords_en: ["figure", "person", "human"]),
-        SingleSymbols(name: "figure.stand",              version: .SF2, keywords: ["人", "个人", "人物", "人形", "用户", "站立", "站姿"], keywords_en: ["stand", "standing", "person"]),
-        SingleSymbols(name: "figure.stand.dress",        version: .SF6, keywords: ["人", "个人", "人物", "女性", "女装", "站立"], keywords_en: ["woman", "female", "stand", "dress"]),
+        SingleSymbols(name: "figure",                    version: .SF5, keywords: ["人", "人体", "行人", "用户"], keywords_en: ["person", "human", "figure", "body", "pedestrian"]),
+        SingleSymbols(name: "figure.stand",              version: .SF2, keywords: ["男", "男性", "站立", "站姿", "人", "人体", "个人"], keywords_en: ["man", "human", "male", "standing", "stand", "person", "figure", "human", "body"]),
+        SingleSymbols(name: "figure.stand.dress",        version: .SF6, keywords: ["女", "女性", "裙子", "女装", "站立", "站姿"], keywords_en: ["woman", "human", "female", "skirt", "dress", "standing", "standing posture", "figure", "person"]),
         
         // ========== 社交/互动 ==========
-        SingleSymbols(name: "figure.wave",               version: .SF2, keywords: ["人", "个人", "人物", "挥手", "打招呼", "问候", "欢迎"], keywords_en: ["wave", "greet", "hello", "welcome"]),
-        SingleSymbols(name: "figure.arms.open",          version: .SF4, keywords: ["人", "个人", "人物", "张开双臂", "拥抱", "欢迎", "开放"], keywords_en: ["open arms", "hug", "welcome", "embrace"]),
-        SingleSymbols(name: "figure.2.arms.open",        version: .SF4, keywords: ["人", "双人", "牵手", "欢迎", "家庭"], keywords_en: ["two people", "welcome", "family"]),
-        SingleSymbols(name: "figure.2.and.child.holdinghands", version: .SF4, keywords: ["人", "三人", "亲子", "家庭", "牵手", "父母", "孩子"], keywords_en: ["family", "parent", "child", "handheld"]),
+        SingleSymbols(name: "figure.wave",               version: .SF2, keywords: ["人", "挥手", "打招呼", "问候", "欢迎", "你好", "再见"], keywords_en: ["person", "human", "figure", "waving", "greet", "greeting", "welcome", "hello", "goodbye"]),
+        SingleSymbols(name: "figure.arms.open",          version: .SF4, keywords: ["人"], keywords_en: ["person", "human"]),
+        SingleSymbols(name: "figure.2.arms.open",        version: .SF4, keywords: ["人", "双人", "两人", "牵手", "关系", "情侣"], keywords_en: ["person", "human", "two people", "holding hands", "relationship", "couple"]),
+        SingleSymbols(name: "figure.2.and.child.holdinghands", version: .SF4, keywords: ["人", "三人", "亲子", "家庭", "牵手", "家人"], keywords_en: ["person", "human", "three people", "parent-child", "family", "holding hands"]),
         
         // ========== 行为动作 ==========
-        SingleSymbols(name: "figure.walk",               version: .SF2, keywords: ["人", "走路", "行走", "步行", "散步", "行人"], keywords_en: ["walk", "walking", "pedestrian", "go"]),
-        SingleSymbols(name: "figure.run",                version: .SF4, keywords: ["人", "运动", "跑步", "奔跑", "健身", "速度"], keywords_en: ["run", "running", "jog", "sprint", "sport"]),
-        SingleSymbols(name: "figure.hiking",             version: .SF4, keywords: ["人", "徒步", "登山", "爬山", "远足", "户外"], keywords_en: ["hike", "hiking", "mountain", "outdoor"]),
-        SingleSymbols(name: "figure.outdoor.cycle",      version: .SF4, keywords: ["人", "运动", "健身", "骑行", "自行车", "户外", "骑车"], keywords_en: ["bike", "bicycle", "cycling", "ride"]),
-        SingleSymbols(name: "figure.pool.swim",          version: .SF4, keywords: ["人", "游泳", "水上运动", "健身", "泳池"], keywords_en: ["swim", "swimming", "pool", "water"]),
-        SingleSymbols(name: "figure.mind.and.body",      version: .SF4, keywords: ["人", "冥想", "瑜伽", "放松", "正念", "静坐"], keywords_en: ["yoga", "meditation", "mindfulness", "relax"]),
-        SingleSymbols(name: "figure.mixed.cardio",       version: .SF4, keywords: ["人", "训练", "有氧运动", "健身", "锻炼", "运动"], keywords_en: ["training", "fitness", "sports", "exercise"]),
-        SingleSymbols(name: "figure.highintensity.intervaltraining", version: .SF4, keywords: ["人", "热身", "运动", "高强度", "间歇训练", "健身", "训练"], keywords_en: ["hiit", "training", "fitness", "workout"]),
+        SingleSymbols(name: "figure.walk",               version: .SF2, keywords: ["人", "走路", "行走", "步行", "散步", "行人"], keywords_en: ["person", "human", "walk", "walking", "strolling", "pedestrian", "go"]),
+        SingleSymbols(name: "figure.run",                version: .SF4, keywords: ["人", "运动", "慢跑", "冲刺", "跑步", "奔跑", "健身"], keywords_en: ["person", "human", "run", "running", "jog", "sprint", "fitness", "exercise", "sport"]),
+        SingleSymbols(name: "figure.hiking",             version: .SF4, keywords: ["人", "徒步", "登山", "爬山", "远足", "户外"], keywords_en: ["person", "human", "hike", "hiking", "trekking", "mountain", "outdoor"]),
+        SingleSymbols(name: "figure.outdoor.cycle",      version: .SF4, keywords: ["人", "运动", "健身", "骑行", "自行车", "户外", "骑车"], keywords_en: ["person", "human", "bike", "bicycle", "cycling", "ride", "outdoor cycling"]),
+        SingleSymbols(name: "figure.pool.swim",          version: .SF4, keywords: ["人", "游泳", "运动", "健身"], keywords_en: ["person", "human", "swimming", "sports", "fitness"]),
+        SingleSymbols(name: "figure.mind.and.body",      version: .SF4, keywords: ["人", "冥想", "瑜伽", "放松", "正念", "静坐"], keywords_en: ["person", "human", "meditation", "yoga", "relax", "mindfulness", "sitting meditation"]),
+        SingleSymbols(name: "figure.mixed.cardio",       version: .SF4, keywords: ["人", "训练", "有氧运动", "健身", "锻炼", "运动", "体能训练"], keywords_en: ["person", "human", "mixed cardio", "cardio", "training", "fitness", "exercise", "workout"]),
+        SingleSymbols(name: "figure.highintensity.intervaltraining", version: .SF4, keywords: ["人", "健身", "训练", "锻炼", "运动", "高强度间歇训练"], keywords_en: ["person", "human", "high intensity interval training", "hiit",  "fitness", "training", "workout", "exercise"]),
         
         // ========== 安全/风险 ==========
-        SingleSymbols(name: "figure.fall",               version: .SF4, keywords: ["人", "跌倒", "滑倒", "摔倒", "危险", "警告"], keywords_en: ["fall", "falling", "danger", "accident"]),
-        SingleSymbols(name: "figure.walk.diamond",       version: .SF2, keywords: ["人", "警告", "注意", "过马路", "交通"], keywords_en: ["pedestrian", "warning", "traffic", "crossing"]),
-        SingleSymbols(name: "figure.seated.seatbelt",    version: .SF4, keywords: ["人", "安全带", "驾驶", "坐姿", "安全"], keywords_en: ["seatbelt", "car", "safety", "driving"]),
+        SingleSymbols(name: "figure.fall",               version: .SF4, keywords: ["人", "跌倒", "滑倒", "摔倒"], keywords_en: ["person", "human", "fall", "falling", "slip down", "tumble"]),
+        SingleSymbols(name: "figure.walk.diamond",       version: .SF2, keywords: ["人", "行人", "步行", "交通", "路标", "人行横道", "注意"], keywords_en: ["person", "human", "pedestrian", "walk", "walking", "crossing", "crosswalk", "traffic", "road sign", "caution"]),
+        SingleSymbols(name: "figure.seated.seatbelt",    version: .SF4, keywords: ["人", "安全带", "乘车", "乘客", "坐姿", "安全", "汽车"], keywords_en: ["person", "human", "seatbelt", "riding", "passenger", "sitting posture", "safety", "car"]),
         
         // ========== 特殊人群 ==========
-        SingleSymbols(name: "accessibility",             version: .SF5, keywords: ["人", "无障碍", "辅助功能", "残障", "包容"], keywords_en: ["accessibility", "disabled", "inclusive"]),
-        SingleSymbols(name: "figure.roll",               version: .SF3, keywords: ["人", "轮椅", "无障碍", "残障", "移动", "辅助"], keywords_en: ["wheelchair", "accessibility", "mobility", "disabled"]),
+        SingleSymbols(name: "accessibility",             version: .SF5, keywords: ["人", "无障碍", "辅助功能", "残障", "包容"], keywords_en: ["person", "human", "accessibility", "accessible", "disabled", "inclusive"]),
+        SingleSymbols(name: "figure.roll",               version: .SF3, keywords: ["人", "轮椅", "无障碍", "残障", "滚动"], keywords_en: ["person", "human", "wheelchair", "accessibility", "disability", "rolling"]),
         
         // ========== 性别/标识 ==========
-        SingleSymbols(name: "figure.stand.dress.line.vertical.figure", version: .SF6, keywords: ["人", "厕所", "卫生间", "洗手间", "男女", "标识"], keywords_en: ["toilet", "restroom", "bathroom", "gender", "sign"]),
+        SingleSymbols(name: "figure.stand.dress.line.vertical.figure", version: .SF6, keywords: ["人", "厕所", "卫生间", "洗手间", "公共厕所", "男女", "标识"], keywords_en: ["person", "human", "restroom", "bathroom", "toilet", "public restroom", "men and women", "gender sign", "restroom sign"]),
         
+        //--------
         // ========== 运动与健身 ==========
         SingleSymbols(name: "dumbbell",                  version: .SF4, keywords: ["哑铃", "健身", "力量训练", "举重", "训练", "锻炼"], keywords_en: ["dumbbell", "fitness", "workout", "strength", "training"]),
         SingleSymbols(name: "sportscourt",               version: .SF1, keywords: ["运动", "运动场", "球场", "体育场", "比赛场地", "体育", "游戏", "比赛", "场地"], keywords_en: ["sports court", "court", "stadium", "sport", "game"]),
