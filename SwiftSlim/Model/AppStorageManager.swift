@@ -31,6 +31,8 @@ class AppStorageManager: ObservableObject {
     @Published var lastOpenedAt:Date = Date.distantPast { didSet { updateValue(key: "lastOpenedAt", newValue: lastOpenedAt, oldValue: oldValue)}}
     // 累计使用天数
     @Published var daysUsed: Int = 0 { didSet { updateValue(key: "daysUsed", newValue: daysUsed, oldValue: oldValue)}}
+    // 统计学习的课程（编号）
+    @Published var completedCourse: Set<Int> = [] { didSet { updateValue(key: "completedCourse", newValue: completedCourse, oldValue: oldValue)}}
     
     // 记录第一次打开日期、最近一次打开日期和累计天数
     func updateAppUsageDay() {
@@ -93,6 +95,8 @@ extension AppStorageManager {
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
         userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
+        completedCourse = Set<Int>(defaults.array(forKey: "completedCourse") as? [Int] ?? [])
+        
         // 首次使用时间
         if defaults.object(forKey: "firstUsed") == nil {
             firstUsed = Date.distantPast
@@ -131,7 +135,8 @@ extension AppStorageManager {
         loadValueFromiCloud(key: "firstUsed")    // 首次打开应用时间
         loadValueFromiCloud(key: "lastOpenedAt")    // 最近一次打开应用时间
         loadValueFromiCloud(key: "daysUsed")    // 累计使用天数
-        loadValueFromiCloud(key: "userName")
+        loadValueFromiCloud(key: "userName")    // 用户名
+        loadValueFromiCloud(key: "completedCourse") // 用户学习过的课程
         store.synchronize() // 强制触发数据同步
     }
 }
@@ -158,6 +163,7 @@ extension AppStorageManager {
             // 累计使用天数
         case "daysUsed": daysUsed = store.object(forKey: key) as? Int ?? 0
         case "userName": userName = store.string(forKey: key) ?? "Developer"
+        case "completedCourse": completedCourse = Set<Int>(store.array(forKey: key) as? [Int] ?? [])
         default:
             print("未定义的 iCloud key：\(key)")
         }
@@ -178,6 +184,10 @@ extension AppStorageManager {
             let timestamp = dateValue.timeIntervalSince1970
             defaults.set(timestamp, forKey: key)
             store.set(timestamp, forKey: key)
+        } else if let setValue = newValue as? Set<Int> {
+            let arrayValue = Array(setValue).sorted()
+            defaults.set(arrayValue, forKey: key)
+            store.set(arrayValue, forKey: key)
         }
         // 处理其他类型
         else {
