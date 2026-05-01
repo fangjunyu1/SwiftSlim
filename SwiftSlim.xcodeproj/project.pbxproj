@@ -13,7 +13,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D375FCA2FA394B70042F253 /* SymbolsVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsVersion.swift; sourceTree = "<group>"; };
 		1D9CAED12E38C51000A48D57 /* SwiftSlim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSlim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +56,6 @@
 			children = (
 				1D9CAED32E38C51000A48D57 /* SwiftSlim */,
 				1D9CAED22E38C51000A48D57 /* Products */,
-				1D375FCA2FA394B70042F253 /* SymbolsVersion.swift */,
 			);
 			sourceTree = "<group>";
 		};

@@ -169,6 +169,7 @@ struct CoursesItem: View {
             Text(LocalizedStringKey(item.name))
                 .fontWeight(.medium)
                 .foregroundStyle(titleColor)
+                .multilineTextAlignment(.leading)
             Spacer()
             if isCompleted {
                 Image(systemName: "checkmark.circle")
