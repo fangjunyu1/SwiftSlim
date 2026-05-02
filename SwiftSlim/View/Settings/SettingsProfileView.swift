@@ -56,7 +56,7 @@ struct SettingsProfileView: View {
         VStack(alignment: .leading) {
             Text("name")
                 .font(.footnote)
-                .foregroundStyle(.lightBlack)
+                .foregroundStyle(.secondary)
                 .padding(.horizontal, 10)
             TextField("", text: $name)
                 .padding(.horizontal, 20)
@@ -86,20 +86,24 @@ struct SettingsProfileView: View {
                     saveStats = false
                 }
             }, label: {
-                if saveStats {
-                    Image(systemName: "checkmark")
-                        .font(.system(size: 20).bold())
-                } else {
-                    Text("save")
-                        .fontWeight(.bold)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .foregroundStyle(Color("AppColor2"))
+                        .frame(width: 230, height: 55)
+                    VStack {
+                        if saveStats {
+                            Image(systemName: "checkmark")
+                                .font(.system(size: 20).bold())
+                        } else {
+                            Text("save")
+                                .fontWeight(.bold)
+                        }
+                    }
+                    .foregroundStyle(.white)
                 }
             })
-            .foregroundStyle(.white)
-            .frame(width: 230, height: 55)
-            .contentShape(Rectangle())
-            .background(Color("AppColor2"))
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             .disabled(saveStats)
+            
             Button(action: {
                 dismiss()
             }, label: {
