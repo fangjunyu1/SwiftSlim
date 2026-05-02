@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     @Binding var selected: contentType
+    private var selectedImage: UIImage? {
+        loadImage()
+    }
     
     private let supportItems: [SettingsType] = [
         .feedback, .privacy, .termsOfUse
@@ -18,12 +22,19 @@ struct SettingsView: View {
         .aboutUs, .acknowLedgements, .openSource
     ]
     
-    private var developerName: String {
-        NSLocalizedString("Developer", comment: "UserName")
-    }
-    
-    private var developerInitial: String {
-        String(developerName.prefix(1))
+    private func loadImage() -> UIImage? {
+        guard !appStorage.userImage.isEmpty else { return nil }
+        
+        // 每次读取时动态获取当前 Documents 路径
+        let fileManager = FileManager.default
+        let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = docURL.appendingPathComponent(appStorage.userImage)
+        
+        print("读取路径：\(fileURL.path)")
+        print("文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
+        
+        guard let data = try? Data(contentsOf: fileURL) else { return nil }
+        return UIImage(data: data)
     }
     
     var body: some View {
@@ -62,38 +73,42 @@ private extension SettingsView {
 
 private extension SettingsView {
     var accountSection: some View {
-        HStack(spacing: 20) {
-            Text(verbatim: developerInitial)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundStyle(.white)
-                .frame(width: 68, height: 68)
-                .background(avatarGradient)
-                .clipShape(Circle())
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Developer")
-                    .font(.headline)
-                    .fontWeight(.bold)
+        NavigationLink(destination: {
+            SettingsProfileView()
+        }, label: {
+            HStack(spacing: 20) {
+                // 用户头像
+                if selectedImage != nil {
+                    SettingsEnum.userImageView(appStorage: appStorage, img: selectedImage, size: 68, fontSize: .title)
+                } else {
+                    SettingsEnum.userImageView(appStorage: appStorage, size: 68, fontSize: .title)
+                }
                 
-                Text("Free Account")
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text( SettingsEnum.userName(appStorage: appStorage))
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                    
+                    Text("Free Account")
+                        .font(.footnote)
+                        .foregroundStyle(Color.gray)
+                }
+                
+                Spacer()
+                
+                Image("right")
+                    .resizable()
+                    .renderingMode(.template)
+                    .scaledToFit()
+                    .frame(width: 16, height: 16)
+                    .foregroundStyle(.gray.opacity(0.8))
+                    .opacity(0.5)
             }
-            
-            Spacer()
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 14)
-        .cardStyle()
-    }
-    
-    var avatarGradient: some ShapeStyle {
-        LinearGradient(
-            colors: [Color("Linear1"), Color("Linear2")],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .cardStyle()
+        })
     }
     
     @ViewBuilder
@@ -117,69 +132,6 @@ private extension SettingsView {
     }
 }
 
-// MARK: - Row
-struct SettingsItemView: View {
-    @Environment(\.openURL) private var openURL
-    let item: SettingsType
-
-    var body: some View {
-        rowContent
-    }
-
-    @ViewBuilder
-    private var rowContent: some View {
-        switch item.action {
-        case .destination(let destination):
-            NavigationLink(destination: destination) {
-                itemView
-            }
-
-        case .url(let url):
-            Link(destination: url) {
-                itemView
-            }
-
-        case .email:
-            Button {
-                Email.sendFeedback(using: openURL)
-            } label: {
-                itemView
-            }
-            .buttonStyle(.plain)
-        }
-    }
-
-    private var itemView: some View {
-        HStack(spacing: 10) {
-            Image(item.img)
-                .resizable()
-                .renderingMode(.template)
-                .scaledToFit()
-                .frame(width: 16, height: 16)
-                .foregroundStyle(.white)
-                .padding(6)
-                .background(item.color)
-                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-
-            Text(LocalizedStringKey(item.title))
-                .foregroundStyle(Color("BlackColor"))
-
-            Spacer()
-
-            Image("right")
-                .resizable()
-                .renderingMode(.template)
-                .scaledToFit()
-                .frame(width: 16, height: 16)
-                .foregroundStyle(.gray.opacity(0.8))
-                .opacity(0.5)
-        }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
-        .contentShape(Rectangle())
-    }
-}
-
 // MARK: - Reusable Style
 private extension View {
     func cardStyle() -> some View {
@@ -190,6 +142,9 @@ private extension View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(AppStorageManager.shared)
+    NavigationView {
+        SettingsView(selected: .constant(.settings))
+            .modifier(BackgroundModifiers())
+            .environmentObject(AppStorageManager.shared)
+    }
 }
