@@ -17,27 +17,25 @@ enum SettingsSaveStats {
 struct SettingsProfileView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @Environment(\.dismiss) var dismiss
+    
+    @Binding var selectedImage: UIImage?
+    @Binding var userName: String
+    @Binding var avatarUpdatedAt: Double
+    
     @State private var name = ""
+    @State private var draftImage: UIImage?
     @State private var saveStats: SettingsSaveStats = .prepar
-    @State private var selectedImage: UIImage?
     @State private var isImagePickerPresented = false
     
     var body: some View {
         VStack(spacing: 30) {
             // 用户头像
-            if selectedImage != nil {
-                SettingsEnum.userImageView(appStorage: appStorage, img: selectedImage, size: 100, fontSize: .system(size: 50))
-                    .onTapGesture {
-                        isImagePickerPresented = true
-                    }
-            } else {
-                SettingsEnum.userImageView(appStorage: appStorage, size: 100, fontSize: .system(size: 50))
-                    .onTapGesture {
-                        isImagePickerPresented = true
-                    }
-            }
+            SettingsEnum.userImageView(appStorage: appStorage, userName: userName, img: draftImage, size: 100, fontSize: .system(size: 50))
+                .onTapGesture {
+                    isImagePickerPresented = true
+                }
             // 用户名称
-            userName
+            userNameTextField
             // 提示信息
             userTip
             // 确认和取消按钮
@@ -47,20 +45,17 @@ struct SettingsProfileView: View {
         .modifier(BackgroundModifiers())
         .navigationTitle("profile card")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            // 初始化用户名
-            name = SettingsEnum.userName(appStorage: appStorage)
-            // 初始化用户头像
-            selectedImage = loadImage()
-            // 从 iClod 获取用户头像
-        }
         .sheet(isPresented: $isImagePickerPresented) {
-            ImagePickerViewController(selectedImage: $selectedImage)
+            ImagePickerViewController(selectedImage: $draftImage)
                 .ignoresSafeArea()
+        }
+        .onAppear {
+            name = userName
+            draftImage = selectedImage
         }
     }
     
-    private var userName: some View {
+    private var userNameTextField: some View {
         VStack(alignment: .leading) {
             Text("name")
                 .font(.footnote)
@@ -88,8 +83,12 @@ struct SettingsProfileView: View {
             Button(action: {
                 // 保存用户名
                 saveStats = .load
+                
+                userName = name
                 appStorage.userName = name
-                saveImage(image: selectedImage)
+                avatarUpdatedAt = Date().timeIntervalSince1970
+                
+                saveImage(image: draftImage)
             }, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -107,6 +106,7 @@ struct SettingsProfileView: View {
                                 .font(.system(size: 20).bold())
                         } else {
                             ProgressView()
+                                .tint(.white)
                         }
                     }
                     .foregroundStyle(.white)
@@ -115,6 +115,7 @@ struct SettingsProfileView: View {
             .disabled(saveStats == .load)
             
             Button(action: {
+                draftImage = selectedImage
                 dismiss()
             }, label: {
                 Text("cancel")
@@ -176,55 +177,11 @@ struct SettingsProfileView: View {
             print("iCloud 文件保存失败")
         }
     }
-    
-    private func loadImage() -> UIImage? {
-        var image: UIImage?
-        if let iCloudImage = loadUserImageFromiCloud() {
-            image = iCloudImage
-            return image
-        } else if let localImage = loadlocalImage() {
-            image = localImage
-            return image
-        }
-        print("iCloud 和本地都没有头像文件，返回 nil")
-        return image
-    }
-    
-    private func loadlocalImage() -> UIImage? {
-        print("尝试从本地读取头像文件")
-        guard !appStorage.userImage.isEmpty else { return nil }
-        
-        // 每次读取时动态获取当前 Documents 路径
-        let fileManager = FileManager.default
-        let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let fileURL = docURL.appendingPathComponent(appStorage.userImage)
-        
-        print("本地头像文件，读取路径：\(fileURL.path)")
-        print("本地头像文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
-        
-        guard let data = try? Data(contentsOf: fileURL) else { return nil }
-        print("从本地获取头像文件成功 ✅")
-        return UIImage(data: data)
-    }
-    
-    func loadUserImageFromiCloud() -> UIImage? {
-        do {
-            print("尝试从 iCloud 获取头像文件")
-            let data = try iCloudFileManager.shared.read(
-                fileName: "userProfileImage.jpg"
-            )
-            print("从 iCloud 获取头像文件成功 ✅")
-            return UIImage(data: data)
-        } catch {
-            print("iCloud 头像文件获取失败：\(error.localizedDescription)")
-            return nil
-        }
-    }
 }
 
 #Preview {
     NavigationView {
-        SettingsProfileView()
+        SettingsProfileView(selectedImage: .constant(nil), userName: .constant("123"), avatarUpdatedAt: .constant(Date().timeIntervalSince1970))
             .environmentObject(AppStorageManager.shared)
     }
 }

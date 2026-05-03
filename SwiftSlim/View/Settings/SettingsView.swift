@@ -10,19 +10,10 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @Binding var selected: contentType
-    private var selectedImage: UIImage? {
-//        loadImage()
-        var image: UIImage?
-        if let iCloudImage = loadUserImageFromiCloud() {
-            image = iCloudImage
-            return image
-        } else if let localImage = loadlocalImage() {
-            image = localImage
-            return image
-        }
-        print("iCloud 和本地都没有头像文件，返回 nil")
-        return image
-    }
+    @State private var isLoadingAvatar = false
+    @State private var userName: String = ""
+    @State private var selectedImage: UIImage? = nil
+    @State private var avatarUpdatedAt = Date().timeIntervalSince1970
     
     private let supportItems: [SettingsType] = [
         .feedback, .privacy, .termsOfUse
@@ -32,47 +23,73 @@ struct SettingsView: View {
         .aboutUs, .acknowLedgements, .openSource
     ]
     
-//    private func loadImage() -> UIImage? {
-//        var image: UIImage?
-//        if let iCloudImage = loadUserImageFromiCloud() {
-//            image = iCloudImage
-//            return image
-//        } else if let localImage = loadlocalImage() {
-//            image = localImage
-//            return image
-//        }
-//        print("iCloud 和本地都没有头像文件，返回 nil")
-//        return image
-//    }
-    
-    private func loadlocalImage() -> UIImage? {
-        print("尝试从本地读取头像文件")
-        guard !appStorage.userImage.isEmpty else { return nil }
+    private func loadAvatar() async {
+        let imageName = appStorage.userImage
         
-        // 每次读取时动态获取当前 Documents 路径
-        let fileManager = FileManager.default
-        let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let fileURL = docURL.appendingPathComponent(appStorage.userImage)
+        // 设置加载头像标识
+        await MainActor.run {
+            isLoadingAvatar = true
+        }
         
-        print("本地头像文件，读取路径：\(fileURL.path)")
-        print("本地头像文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
+        let image = await loadAvatarImage(imageName: imageName)
         
-        guard let data = try? Data(contentsOf: fileURL) else { return nil }
-        print("从本地获取头像文件成功 ✅")
-        return UIImage(data: data)
+        // 如果头像发生变化，或者任务被取消，退出加载头像函数
+        await MainActor.run {
+            if Task.isCancelled {
+                isLoadingAvatar = false
+                return
+            }
+            
+            selectedImage = image
+            isLoadingAvatar = false
+        }
     }
     
-    func loadUserImageFromiCloud() -> UIImage? {
-        do {
-            print("尝试从 iCloud 获取头像文件")
-            let data = try iCloudFileManager.shared.read(
-                fileName: "userProfileImage.jpg"
-            )
-            print("从 iCloud 获取头像文件成功 ✅")
-            return UIImage(data: data)
-        } catch {
-            print("iCloud 头像文件获取失败：\(error.localizedDescription)")
+    private func loadAvatarImage(imageName: String) async  -> UIImage? {
+        
+        let image: UIImage? = await Task.detached(priority: .utility) {
+            
+            // 1、先从 iCloud 获取头像文件
+            if let data = try? iCloudFileManager.shared.read(fileName: "userProfileImage.jpg"), let image = UIImage(data: data) {
+                print("从 iCloud 获取头像文件成功 ✅")
+                return image
+            }
+            
+            // 2、从本地获取头像文件
+            guard !imageName.isEmpty else {
+                print("无法从 iCloud 获取文件，本地保存的 imageName 为空，返回 nil")
+                return nil
+            }
+            
+            print("尝试从本地读取头像文件")
+            
+            // 每次读取时动态获取当前 Documents 路径
+            let fileManager = FileManager.default
+            let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let fileURL = docURL.appendingPathComponent(imageName)
+            
+            print("本地头像文件，读取路径：\(fileURL.path)")
+            print("本地头像文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
+            
+            if let data = try? Data(contentsOf: fileURL), let image = UIImage(data: data) {
+                print("从本地获取头像文件成功 ✅")
+                return image
+            }
+            
+            print("本地和 iCloud 都没有头像文件，返回 nil")
             return nil
+        }.value
+        
+        return image
+    }
+    
+    // 获取用户名
+    func userName(appStorage: AppStorageManager) -> String {
+        if appStorage.userName.isEmpty {
+            // 如果用户名为空，返回本地化的开发者名称
+            return NSLocalizedString("Developer", comment: "UserName")
+        } else {
+            return appStorage.userName
         }
     }
     
@@ -98,6 +115,12 @@ struct SettingsView: View {
             
         }
         .navigationTitle("Settings")
+        .task(id: avatarUpdatedAt) {
+            await loadAvatar()
+        }
+        .onAppear {
+            userName = userName(appStorage: appStorage)
+        }
     }
 }
 
@@ -113,18 +136,14 @@ private extension SettingsView {
 private extension SettingsView {
     var accountSection: some View {
         NavigationLink(destination: {
-            SettingsProfileView()
+            SettingsProfileView(selectedImage: $selectedImage, userName: $userName, avatarUpdatedAt: $avatarUpdatedAt)
         }, label: {
             HStack(spacing: 20) {
                 // 用户头像
-                if selectedImage != nil {
-                    SettingsEnum.userImageView(appStorage: appStorage, img: selectedImage, size: 68, fontSize: .title)
-                } else {
-                    SettingsEnum.userImageView(appStorage: appStorage, size: 68, fontSize: .title)
-                }
+                SettingsEnum.userImageView(appStorage: appStorage, userName: userName, img: selectedImage, size: 68, fontSize: .title)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text( SettingsEnum.userName(appStorage: appStorage))
+                    Text(userName)
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)

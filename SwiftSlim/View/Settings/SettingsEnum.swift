@@ -17,17 +17,7 @@ enum SettingsEnum {
         )
     }
     
-    static func userName(appStorage: AppStorageManager) -> String {
-        if appStorage.userName.isEmpty {
-            // 如果用户名为空，返回本地化的开发者名称
-            return NSLocalizedString("Developer", comment: "UserName")
-        } else {
-            return appStorage.userName
-        }
-    }
-    
-    
-    static func userImageView(appStorage: AppStorageManager, img: UIImage? = nil,  size: CGFloat, fontSize: Font) -> some View {
+    static func userImageView(appStorage: AppStorageManager, userName: String, img: UIImage? = nil, size: CGFloat, fontSize: Font) -> some View {
         
         VStack {
             if let img = img {
@@ -35,7 +25,7 @@ enum SettingsEnum {
                     .resizable()
                     .scaledToFill()
             } else {
-                Text(verbatim: String(userName(appStorage: appStorage).prefix(1)))
+                Text(verbatim: String(userName.prefix(1)))
                     .font(fontSize)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)

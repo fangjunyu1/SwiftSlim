@@ -8,7 +8,7 @@
 import SwiftUI
 import Observation
 
-class AppStorageManager: ObservableObject {
+final class AppStorageManager: ObservableObject {
     static let shared = AppStorageManager()  // 全局单例
     private init() {
         loadUserDefault()   // 初始化时同步本地存储
