@@ -34,6 +34,7 @@ struct HomeView: View {
                     .frame(height: 80)
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     // 顶部视图
