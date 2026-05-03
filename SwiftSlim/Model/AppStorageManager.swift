@@ -187,8 +187,11 @@ extension AppStorageManager {
 // MARK: - 更新字段，保存到 UserDefaults，并尝试同步 iCloud
 extension AppStorageManager {
     private func updateValue<T:Equatable>(key: String, newValue: T, oldValue: T) {
+        print("进入 updateValue 方法,newValue:\(newValue), oldValue:\(oldValue), isLoading:\(isLoading)")
         guard newValue != oldValue, !isLoading else { return }
+        print("完成校验")
         
+        print("更新本地数据，并将 \(key) 数据同步到 iCloud")
         // 同步保存到本地
         let defaults = UserDefaults.standard
         let store = NSUbiquitousKeyValueStore.default
@@ -208,7 +211,10 @@ extension AppStorageManager {
             defaults.set(newValue, forKey: key)
             store.set(newValue, forKey: key)
         }
-        
         store.synchronize()
+        
+        print("完成数据更新 ✅")
+        print("本地数据:\(defaults.object(forKey: key) ?? "nil")")
+        print("iCloud数据:\(store.object(forKey: key) ?? "nil")")
     }
 }
