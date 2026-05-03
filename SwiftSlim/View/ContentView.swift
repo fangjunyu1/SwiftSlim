@@ -17,32 +17,44 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                    switch selected {
-                    case .home:
-                        HomeView(selected: $selected)
-                            .modifier(BackgroundModifiers())
-                    case .courses:
-                        CoursesView(selected: $selected)
-                            .padding(.horizontal, 20)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color("BackgroundColor"))
-                            .ignoresSafeArea(.container, edges: .bottom)
-                    case .tools:
-                        ToolsView(selected: $selected)
-                            .modifier(BackgroundModifiers())
-                    case .settings:
-                        SettingsView(selected: $selected)
-                            .modifier(BackgroundModifiers())
-                    }
-                
-                // 磨砂玻璃 TabView 视图
+                switch selected {
+                case .home:
+                    HomeView(selected: $selected)
+                        .modifier(BackgroundModifiers())
+                case .courses:
+                    CoursesView(selected: $selected)
+                        .padding(.horizontal, 20)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color("BackgroundColor"))
+                        .ignoresSafeArea(.container, edges: .bottom)
+                case .tools:
+                    ToolsView(selected: $selected)
+                        .modifier(BackgroundModifiers())
+                case .settings:
+                    SettingsView(selected: $selected)
+                        .modifier(BackgroundModifiers())
+                }
                 ContentFrostedTabView(selectedTab: $selected)
             }
+            StandbyView()
         }
-        .navigationViewStyle(.stack)
     }
 }
 
+struct StandbyView: View {
+    var body: some View {
+        VStack {
+            Image("app0")
+                .resizable()
+                .renderingMode(.template)
+                .scaledToFit()
+                .frame(width: 100)
+                .foregroundStyle(Color.gray.opacity(0.3))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .modifier(BackgroundModifiers())
+    }
+}
 
 struct NavigationTabView<Content: View>: View {
     let content: Content

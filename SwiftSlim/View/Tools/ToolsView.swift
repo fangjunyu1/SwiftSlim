@@ -11,7 +11,7 @@ struct ToolsView: View {
     @Binding var selected: contentType
     
     let columns = [
-        GridItem(.adaptive(minimum: 140, maximum: 200) , spacing: 20, alignment: .leading)
+        GridItem(.adaptive(minimum: 140, maximum: 300) , spacing: 20, alignment: .leading)
     ]
     
     var body: some View {

@@ -222,7 +222,7 @@ struct HomeView: View {
     var devTools: some View {
         
         let columns = [
-            GridItem(.adaptive(minimum: 140, maximum: 200) , spacing: 20, alignment: .leading)
+            GridItem(.adaptive(minimum: 140, maximum: 300) , spacing: 20, alignment: .leading)
         ]
         
         return VStack(spacing: 20) {
