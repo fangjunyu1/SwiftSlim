@@ -11,7 +11,17 @@ struct SettingsView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @Binding var selected: contentType
     private var selectedImage: UIImage? {
-        loadImage()
+//        loadImage()
+        var image: UIImage?
+        if let iCloudImage = loadUserImageFromiCloud() {
+            image = iCloudImage
+            return image
+        } else if let localImage = loadlocalImage() {
+            image = localImage
+            return image
+        }
+        print("iCloud 和本地都没有头像文件，返回 nil")
+        return image
     }
     
     private let supportItems: [SettingsType] = [
@@ -22,7 +32,21 @@ struct SettingsView: View {
         .aboutUs, .acknowLedgements, .openSource
     ]
     
-    private func loadImage() -> UIImage? {
+//    private func loadImage() -> UIImage? {
+//        var image: UIImage?
+//        if let iCloudImage = loadUserImageFromiCloud() {
+//            image = iCloudImage
+//            return image
+//        } else if let localImage = loadlocalImage() {
+//            image = localImage
+//            return image
+//        }
+//        print("iCloud 和本地都没有头像文件，返回 nil")
+//        return image
+//    }
+    
+    private func loadlocalImage() -> UIImage? {
+        print("尝试从本地读取头像文件")
         guard !appStorage.userImage.isEmpty else { return nil }
         
         // 每次读取时动态获取当前 Documents 路径
@@ -30,11 +54,26 @@ struct SettingsView: View {
         let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let fileURL = docURL.appendingPathComponent(appStorage.userImage)
         
-        print("读取路径：\(fileURL.path)")
-        print("文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
+        print("本地头像文件，读取路径：\(fileURL.path)")
+        print("本地头像文件存在：\(fileManager.fileExists(atPath: fileURL.path))")
         
         guard let data = try? Data(contentsOf: fileURL) else { return nil }
+        print("从本地获取头像文件成功 ✅")
         return UIImage(data: data)
+    }
+    
+    func loadUserImageFromiCloud() -> UIImage? {
+        do {
+            print("尝试从 iCloud 获取头像文件")
+            let data = try iCloudFileManager.shared.read(
+                fileName: "userProfileImage.jpg"
+            )
+            print("从 iCloud 获取头像文件成功 ✅")
+            return UIImage(data: data)
+        } catch {
+            print("iCloud 头像文件获取失败：\(error.localizedDescription)")
+            return nil
+        }
     }
     
     var body: some View {
