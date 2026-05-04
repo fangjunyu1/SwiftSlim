@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+private enum ProfileSaveError: Error {
+    case imageEncodingFailed
+}
+
 enum SettingsSaveStats {
     case prepar
     case load
@@ -18,19 +22,15 @@ struct SettingsProfileView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @Environment(\.dismiss) var dismiss
     
-    @Binding var selectedImage: UIImage?
-    @Binding var userName: String
-    @Binding var avatarUpdatedAt: Double
-    
-    @State private var name = ""
-    @State private var draftImage: UIImage?
+    @State private var draftName = ""   // 临时保存的名称
+    @State private var draftImage: UIImage? // 临时保存图片
     @State private var saveStats: SettingsSaveStats = .prepar
     @State private var isImagePickerPresented = false
     
     var body: some View {
         VStack(spacing: 30) {
             // 用户头像
-            SettingsEnum.userImageView(appStorage: appStorage, userName: userName, img: draftImage, size: 100, fontSize: .system(size: 50))
+            SettingsEnum.userImageView(displayName: draftName, image: draftImage, size: 100, fontSize: .system(size: 50))
                 .onTapGesture {
                     isImagePickerPresented = true
                 }
@@ -50,8 +50,8 @@ struct SettingsProfileView: View {
                 .ignoresSafeArea()
         }
         .onAppear {
-            name = userName
-            draftImage = selectedImage
+            draftName = appStorage.userDisplayName
+            draftImage = appStorage.userImage
         }
     }
     
@@ -61,7 +61,7 @@ struct SettingsProfileView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .padding(.horizontal, 10)
-            TextField("", text: $name)
+            TextField("", text: $draftName)
                 .padding(.horizontal, 20)
                 .frame(height: 50)
                 .overlay {
@@ -81,14 +81,9 @@ struct SettingsProfileView: View {
     private var button: some View {
         VStack(spacing: 16) {
             Button(action: {
-                // 保存用户名
-                saveStats = .load
-                
-                userName = name
-                appStorage.userName = name
-                avatarUpdatedAt = Date().timeIntervalSince1970
-                
-                saveImage(image: draftImage)
+                Task {
+                    await saveProfile()
+                }
             }, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -115,7 +110,7 @@ struct SettingsProfileView: View {
             .disabled(saveStats == .load)
             
             Button(action: {
-                draftImage = selectedImage
+                draftImage = appStorage.userImage
                 dismiss()
             }, label: {
                 Text("cancel")
@@ -125,63 +120,102 @@ struct SettingsProfileView: View {
         }
     }
     
-    // 保存图片
-    private func saveImage(image: UIImage?) {
+    // 保存个人简介
+    @MainActor
+    private func saveProfile() async {
+        // 将保存动作改为加载中
+        saveStats = .load
+        
+        // 保存临时名称和图片、图片文件名称
+        let name = draftName
+        let image = draftImage
+        let fileName = "userProfileImage.jpg"  // 只保存文件名
+        
         do {
-            try savelocalImage(image: image)
-            saveUserImageToiCloud(image)
-            print("保存文件成功，等待 1.5 秒，返回成功状态")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                saveStats = .success
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    saveStats = .prepar
-                }
+            // 保存图片文件
+            try await saveAvatarFiles(image: image, fileName: fileName)
+            print("保存个人资料成功")
+            
+            if appStorage.userName != name {
+                appStorage.userName = name
             }
+            
+            if image != nil {
+                appStorage.userImage = image
+                appStorage.userImageName = fileName
+            }
+            
+            try? await Task.sleep(nanoseconds: 1_500_000_000)
+            saveStats = .success
+            
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
+            saveStats = .prepar
         } catch {
-            print("保存文件失败，等待 1.5 秒，返回报错状态")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                saveStats = .error
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    saveStats = .prepar
-                }
-            }
+            print("保存个人资料失败：\(error.localizedDescription)")
+            
+            try? await Task.sleep(nanoseconds: 1_500_000_000)
+            saveStats = .error
+            
+            try? await Task.sleep(nanoseconds: 1_000_000_000)
+            saveStats = .prepar
         }
     }
-    private func savelocalImage(image: UIImage?) throws {
-        guard let image = image,
-              let data = image.jpegData(compressionQuality: 1.0) else { return }
+    
+    // 保存用户头像文件
+    private func saveAvatarFiles(image: UIImage?,fileName: String) async throws {
         
-        let fileName = "userProfileImage.jpg"  // 只保存文件名
-        let fileManager = FileManager.default
-        let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let fileURL = docURL.appendingPathComponent(fileName)
+        guard let image else {
+            print("没有头像，仅保存用户名")
+            return
+        }
         
-        print("保存本地文件")
-        try data.write(to: fileURL)
-        appStorage.userImage = fileName  // 只存文件名，不存绝对路径
-        print("本地文件保存成功：\(fileURL.path)")
+        // 1、保存本地文件
+        guard let data = image.jpegData(compressionQuality: 1.0) else {
+            throw ProfileSaveError.imageEncodingFailed
+        }
+        
+        try await saveAvatarToLocal(fileName: fileName, data: data)
+        syncAvatarToiCloud(data: data, fileName: fileName)
     }
     
-    // 保存 iCloud 文件
-    func saveUserImageToiCloud(_ image: UIImage?) {
-        guard let image = image, let data = image.jpegData(compressionQuality: 0.9) else { return }
-        
-        print("保存 iCloud 文件")
-        do {
-            try iCloudFileManager.shared.save(
-                data: data,
-                fileName: "userProfileImage.jpg"
-            )
-            print("iCloud 文件保存成功")
-        } catch {
-            print("iCloud 文件保存失败")
+    // 将图片文件保存到本地
+    private func saveAvatarToLocal(fileName: String, data: Data) async throws {
+        try await Task.detached(priority: .utility) {
+            let fileManager = FileManager.default
+            let docURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let fileURL = docURL.appendingPathComponent(fileName)
+            
+            print("保存本地文件")
+            try data.write(to: fileURL)
+            print("本地文件保存成功：\(fileURL.path)")
+        }.value
+    }
+    
+    // 将图片文件保存到 iCloud
+    private func syncAvatarToiCloud(data: Data, fileName: String) {
+        Task.detached(priority: .utility) {
+            do {
+                print("保存 iCloud 文件")
+                try iCloudFileManager.shared.save(
+                    data: data,
+                    fileName: fileName
+                )
+                
+                await MainActor.run {
+                    appStorage.avatarUpdatedUUID = UUID()
+                }
+                
+                print("iCloud 文件保存成功")
+            } catch {
+                print("iCloud 文件保存失败")
+            }
         }
     }
 }
 
 #Preview {
     NavigationView {
-        SettingsProfileView(selectedImage: .constant(nil), userName: .constant("123"), avatarUpdatedAt: .constant(Date().timeIntervalSince1970))
+        SettingsProfileView()
             .environmentObject(AppStorageManager.shared)
     }
 }

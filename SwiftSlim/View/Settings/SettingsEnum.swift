@@ -17,15 +17,18 @@ enum SettingsEnum {
         )
     }
     
-    static func userImageView(appStorage: AppStorageManager, userName: String, img: UIImage? = nil, size: CGFloat, fontSize: Font) -> some View {
+    static func userImageView(displayName: String, image: UIImage?, size: CGFloat, fontSize: Font) -> some View {
         
-        VStack {
-            if let img = img {
+        let trimmedName = displayName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let initial = trimmedName.first.map(String.init) ?? "D"
+        
+        return VStack {
+            if let img = image {
                 Image(uiImage: img)
                     .resizable()
                     .scaledToFill()
             } else {
-                Text(verbatim: String(userName.prefix(1)))
+                Text(verbatim: String(initial.prefix(1)))
                     .font(fontSize)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)

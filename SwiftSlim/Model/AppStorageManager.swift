@@ -12,7 +12,13 @@ final class AppStorageManager: ObservableObject {
     static let shared = AppStorageManager()  // 全局单例
     private init() {
         loadUserDefault()   // 初始化时同步本地存储
+        
+        // 启动时先请求 iCloud KVS 同步，再读取；后续监听外部变化。
+        let store = NSUbiquitousKeyValueStore.default
+            store.synchronize()
+        
         loadFromiCloud()    // 从iCloud读取数据
+        observeiCloudChanges()  // 监听 iCloud 数据变化
     }
     // 防止循环写入标志
     private var isLoading = false
@@ -21,8 +27,21 @@ final class AppStorageManager: ObservableObject {
     // 1.0.3 版本之前为 userName，但是默认值为 Developer，现在重新名称。
     // 受影响版本为 1.0.3 之前，大概 20 个用户
     @Published var userName:String = "" { didSet {updateValue(key: "userName",newValue: userName,oldValue: oldValue)} }
-    // 用户头像路径，以 String 形式保存
-    @Published var userImage: String = "" { didSet {updateValue(key: "userImage",newValue: userImage,oldValue: oldValue)} }
+    // 用户名称，以 String 形式保存，默认为 userProfileImage.jpg，保持不变
+    @Published var userImageName: String = "" { didSet {updateValue(key: "userImageName",newValue: userImageName,oldValue: oldValue)} }
+    // 用户头像，作为全局变量保存，不同步到 iCloud 和 Userdefaults
+    @Published var userImage: UIImage?
+    // 设置视图中的用户名称，根据 userName 计算得出
+    var userDisplayName: String {
+        if userName.isEmpty {
+            // 如果用户名为空，返回本地化的开发者名称
+            return NSLocalizedString("Developer", comment: "UserName")
+        } else {
+            return userName
+        }
+    }
+    // 检测用户头像更新情况
+    @Published var avatarUpdatedUUID: UUID? { didSet {updateValue(key: "avatarUpdatedUUID",newValue: avatarUpdatedUUID,oldValue: oldValue)} }
     // 是否完成引导页
     @Published var hasCompletedOnboarding = false { didSet {updateValue(key: "hasCompletedOnboarding",newValue: hasCompletedOnboarding,oldValue: oldValue)} }
     // 进入课程详情页的次数
@@ -95,8 +114,14 @@ extension AppStorageManager {
         } // 还原加载进度标志
         let defaults = UserDefaults.standard
         userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
-        userImage = defaults.string(forKey: "userImage")  ?? ""         // 用户头像
-        print("loadUserDefault - 本地头像文件路径：\(userImage)")
+        userImageName = defaults.string(forKey: "userImageName")  ?? ""         // 用户头像
+        if let idString = defaults.string(forKey: "avatarUpdatedUUID") {
+            print("本地 avatarUpdatedUUID：\(idString)")
+            avatarUpdatedUUID = UUID(uuidString: idString) ?? UUID()
+        } else {
+            print("本地没有 avatarUpdatedUUID，avatarUpdatedUUID 为 nil")
+            avatarUpdatedUUID = nil
+        }
         hasCompletedOnboarding  = defaults.bool(forKey: "hasCompletedOnboarding")   // 是否完成引导页
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
@@ -137,7 +162,8 @@ extension AppStorageManager {
         
         // loadValueFromiCloud(key: "hasCompletedOnboarding")  // 是否完成引导页，不从 iCloud 读取引导页状态
         loadValueFromiCloud(key: "userName")    // 用户名
-        loadValueFromiCloud(key: "userImage")   // 用户头像
+        loadValueFromiCloud(key: "userImageName")   // 用户头像
+        loadValueFromiCloud(key: "avatarUpdatedUUID")   // 获取用户头像的 UUID()
         loadValueFromiCloud(key: "openCount")   // 进入课程详情页的次数
         loadValueFromiCloud(key: "hasRequestedReview")    // 评分弹窗
         loadValueFromiCloud(key: "firstUsed")    // 首次打开应用时间
@@ -165,9 +191,17 @@ extension AppStorageManager {
         // case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
             
         case "userName": userName = store.string(forKey: key) ?? "Developer"
-        case "userImage": 
+        case "userImageName":
             print("loadValueFromiCloud - 本地头像文件路径：\(store.string(forKey: key) ?? "没有iCloud" )")
-            userImage = store.string(forKey: key) ?? ""
+            userImageName = store.string(forKey: key) ?? ""
+        case "avatarUpdatedUUID":
+            if let idString = store.string(forKey: key) {
+                print("本地 avatarUpdatedUUID：\(idString)")
+                avatarUpdatedUUID = UUID(uuidString: idString) ?? UUID()
+            } else {
+                print("iCloud 没有 avatarUpdatedUUID，avatarUpdatedUUID 为 nil)")
+                avatarUpdatedUUID = nil
+            }
         case "hasRequestedReview": hasRequestedReview = store.bool(forKey: key)
         case "openCount": openCount = store.object(forKey: key) as? Int ?? 0
             // 首次打开应用时间
@@ -205,7 +239,13 @@ extension AppStorageManager {
             let arrayValue = Array(setValue).sorted()
             defaults.set(arrayValue, forKey: key)
             store.set(arrayValue, forKey: key)
+        } else if let optionalUUID = newValue as? UUID? {
+            if let uuid = optionalUUID {
+                defaults.set(uuid.uuidString, forKey: key)
+                store.set(uuid.uuidString, forKey: key)
+            }
         }
+        
         // 处理其他类型
         else {
             defaults.set(newValue, forKey: key)
@@ -216,5 +256,33 @@ extension AppStorageManager {
         print("完成数据更新 ✅")
         print("本地数据:\(defaults.object(forKey: key) ?? "nil")")
         print("iCloud数据:\(store.object(forKey: key) ?? "nil")")
+    }
+}
+
+extension AppStorageManager {
+    /// 监听 iCloud 变化，同步到本地
+    private func observeiCloudChanges() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(iCloudDidUpdate),
+            name: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
+            object: NSUbiquitousKeyValueStore.default
+        )
+    }
+
+    /// iCloud 数据变化时，更新本地数据
+    @objc private func iCloudDidUpdate(notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let changedKeys = userInfo[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] else {
+            loadFromiCloud()
+            return
+        }
+
+        isLoading = true
+        defer { isLoading = false }
+
+        for key in changedKeys {
+            loadValueFromiCloud(key: key)
+        }
     }
 }

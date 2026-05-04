@@ -11,9 +11,6 @@ struct SettingsView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @Binding var selected: contentType
     @State private var isLoadingAvatar = false
-    @State private var userName: String = ""
-    @State private var selectedImage: UIImage? = nil
-    @State private var avatarUpdatedAt = Date().timeIntervalSince1970
     
     private let supportItems: [SettingsType] = [
         .feedback, .privacy, .termsOfUse
@@ -24,7 +21,7 @@ struct SettingsView: View {
     ]
     
     private func loadAvatar() async {
-        let imageName = appStorage.userImage
+        let imageName = appStorage.userImageName
         
         // 设置加载头像标识
         await MainActor.run {
@@ -40,7 +37,7 @@ struct SettingsView: View {
                 return
             }
             
-            selectedImage = image
+            appStorage.userImage = image
             isLoadingAvatar = false
         }
     }
@@ -83,16 +80,6 @@ struct SettingsView: View {
         return image
     }
     
-    // 获取用户名
-    func userName(appStorage: AppStorageManager) -> String {
-        if appStorage.userName.isEmpty {
-            // 如果用户名为空，返回本地化的开发者名称
-            return NSLocalizedString("Developer", comment: "UserName")
-        } else {
-            return appStorage.userName
-        }
-    }
-    
     var body: some View {
         ScrollView(showsIndicators: false) {
             
@@ -115,11 +102,8 @@ struct SettingsView: View {
             
         }
         .navigationTitle("Settings")
-        .task(id: avatarUpdatedAt) {
+        .task(id: appStorage.avatarUpdatedUUID) {
             await loadAvatar()
-        }
-        .onAppear {
-            userName = userName(appStorage: appStorage)
         }
     }
 }
@@ -136,14 +120,14 @@ private extension SettingsView {
 private extension SettingsView {
     var accountSection: some View {
         NavigationLink(destination: {
-            SettingsProfileView(selectedImage: $selectedImage, userName: $userName, avatarUpdatedAt: $avatarUpdatedAt)
+            SettingsProfileView()
         }, label: {
             HStack(spacing: 20) {
                 // 用户头像
-                SettingsEnum.userImageView(appStorage: appStorage, userName: userName, img: selectedImage, size: 68, fontSize: .title)
+                SettingsEnum.userImageView(displayName: appStorage.userDisplayName, image: appStorage.userImage, size: 68, fontSize: .title)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(userName)
+                    Text(appStorage.userDisplayName)
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
