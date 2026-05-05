@@ -18,7 +18,7 @@ final class iCloudFileManager {
             return nil
         }
 
-        let documentsURL = containerURL.appendingPathComponent("Documents")
+        let documentsURL = containerURL.appendingPathComponent("Documents",isDirectory: true)
         
         if !FileManager.default.fileExists(atPath: documentsURL.path) {
             try? FileManager.default.createDirectory(
