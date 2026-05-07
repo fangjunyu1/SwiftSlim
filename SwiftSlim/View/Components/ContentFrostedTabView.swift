@@ -48,7 +48,6 @@ struct ContentFrostedTabView: View {
         .ignoresSafeArea()
         .padding(.bottom, UIDevice.isPhone ? 3 : 30)
     }
-    
 }
 
 struct frostedTabView: View {
