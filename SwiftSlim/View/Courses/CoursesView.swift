@@ -172,17 +172,21 @@ struct CoursesItem: View {
                 .foregroundStyle(titleColor)
                 .multilineTextAlignment(.leading)
             Spacer()
-            if isCompleted {
-                Image(systemName: "checkmark.circle")
-                    .font(.system(size: 20))
-                    .foregroundStyle(Color.green)
-            } else {
-                if isContinueLearning {
-                    Image(systemName: "arrowtriangle.right.circle")
+            VStack {
+                if isCompleted {
+                    Image(systemName: "checkmark.circle")
                         .font(.system(size: 20))
-                        .foregroundStyle(Color.blue)
+                        .foregroundStyle(Color.green)
+                        
+                } else {
+                    if isContinueLearning {
+                        Image(systemName: "arrowtriangle.right.circle")
+                            .font(.system(size: 20))
+                            .foregroundStyle(Color.blue)
+                    }
                 }
             }
+            .frame(height: 10)
         }
         .padding(.vertical, 16)
         .padding(.horizontal, 30)
