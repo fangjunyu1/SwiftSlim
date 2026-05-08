@@ -126,6 +126,7 @@ struct CoursesChapterView: View {
                         .font(.headline)
                         .fontWeight(.medium)
                         .foregroundStyle(Color("BlackColor"))
+                        .lineLimit(1)
                     Spacer()
                     Image(systemName: showList ? "chevron.down" : "chevron.forward")
                         .font(.headline.bold())
@@ -171,6 +172,7 @@ struct CoursesItem: View {
                 .fontWeight(.medium)
                 .foregroundStyle(titleColor)
                 .multilineTextAlignment(.leading)
+                .lineLimit(1)
             Spacer()
             VStack {
                 if isCompleted {
@@ -196,4 +198,5 @@ struct CoursesItem: View {
 #Preview {
     ContentView()
         .environmentObject(AppStorageManager.shared)
+        .environment(\.locale, .init(identifier: "de")) // 设置为阿拉伯语
 }
