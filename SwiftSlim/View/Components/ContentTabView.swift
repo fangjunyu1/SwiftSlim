@@ -53,6 +53,8 @@ struct tabView: View {
             Text(LocalizedStringKey(name))
                 .font(.footnote)
                 .foregroundStyle(selected ? Color("AppColor") : Color.gray)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
         }
         .contentShape(Rectangle())
         .onTapGesture {
