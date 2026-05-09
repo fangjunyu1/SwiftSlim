@@ -25,7 +25,7 @@ Button("a + b") {
 }
 ```
 
-Tip: i trykhændelsen for `Button` kan der udføres almindelig Swift-kode.
+Tip: I trykhændelsen for `Button` kan der udføres almindelig Swift-kode.
 
 Men hvis vi skriver lignende kode direkte i egenskaberne i en SwiftUI-visning, støder vi på et problem.
 

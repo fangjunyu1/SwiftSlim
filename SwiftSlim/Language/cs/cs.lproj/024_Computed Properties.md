@@ -25,7 +25,7 @@ Button("a + b") {
 }
 ```
 
-Tip: v události klepnutí na `Button` lze spouštět běžný kód Swift.
+Tip: V události klepnutí na `Button` lze spouštět běžný kód Swift.
 
 Pokud ale podobný kód napíšeme přímo do vlastností zobrazení SwiftUI, narazíme na problém.
 

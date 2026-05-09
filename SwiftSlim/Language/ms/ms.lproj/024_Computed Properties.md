@@ -1,4 +1,4 @@
-# Computed Property
+# Sifat Terhitung
 
 Dalam pelajaran ini, kita akan mempelajari computed property.
 

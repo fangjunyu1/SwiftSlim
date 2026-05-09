@@ -523,7 +523,7 @@ struct ContentView: View {
 }
 ```
 
-Display result:
+دکھایا جانے والا نتیجہ:
 
 ![view](../../Resource/024_view.png)
 
@@ -644,7 +644,7 @@ struct ContentView: View {
 }
 ```
 
-Display result:
+دکھایا جانے والا نتیجہ:
 
 ![view](../../Resource/024_view1.png)
 

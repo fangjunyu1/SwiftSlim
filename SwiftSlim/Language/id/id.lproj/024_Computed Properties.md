@@ -25,7 +25,7 @@ Button("a + b") {
 }
 ```
 
-Tip: di dalam event tap milik `Button`, kita dapat menjalankan kode Swift biasa.
+Tip: Di dalam event tap milik `Button`, kita dapat menjalankan kode Swift biasa.
 
 Namun, jika kode serupa ditulis langsung di dalam properti sebuah view SwiftUI, kita akan menemui masalah.
 
