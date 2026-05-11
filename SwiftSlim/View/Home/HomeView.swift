@@ -109,7 +109,7 @@ struct HomeView: View {
                             Text(verbatim: "/")
                             Text(verbatim: "20")
                                 .padding(.trailing, 3)
-                            Text("lessons")
+                            Text("Lessons")
                         }
                         .modifier(PromptText())
                     }
@@ -157,7 +157,7 @@ struct HomeView: View {
                             .fontWeight(.medium)
                         Text(verbatim: "+")
                             .fontWeight(.medium)
-                        Text("lessons")
+                        Text("Lessons")
                             .fontWeight(.medium)
                             .padding(.leading, 3)
                     }

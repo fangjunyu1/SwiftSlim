@@ -26,7 +26,7 @@ struct Card: View {
                 // 20 课时
                 HStack {
                     Text(verbatim: "\(numberOfCourses)")
-                    Text("lesson")
+                    Text("Lessons")
                 }
                 .foregroundStyle(.gray)
             }
