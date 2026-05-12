@@ -44,7 +44,7 @@ struct SymbolsView: View {
             
             // 本地化名称和关键词数组
             let localizedKeywords = item.keywords.map {
-                NSLocalizedString($0, comment: "")
+                NSLocalizedString($0, tableName: "Symbols", comment: "")
             }
             
             // 如果输入内容为空，或者 Symbols 的英文名称、本地化描述和输入内容相匹配，返回 true
