@@ -828,7 +828,6 @@ struct PinkColorView: View {
     var body: some View {
         Color.pink
             .frame(width: 80, height: 40)
-            .shadow(radius: 3)
     }
 }
 ```
