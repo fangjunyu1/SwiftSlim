@@ -9413,10 +9413,16 @@
             "value": "Ζωντανά χρώματα"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brilliant Colors"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Colores vibrantes"
+            "value": "Colores brillantes"
           }
         },
         "fi": {
@@ -9434,7 +9440,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "ચમકતા રંગો"
+            "value": "ઝગમગતા રંગો"
           }
         },
         "he": {
@@ -9452,7 +9458,7 @@
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Živopisne boje"
+            "value": "Sjajne boje"
           }
         },
         "hu": {
@@ -9464,13 +9470,13 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Warna Cerah"
+            "value": "Warna yang cemerlang"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Colori vivaci"
+            "value": "Colori brillanti"
           }
         },
         "ja": {
@@ -9488,13 +9494,13 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಚುರುಕಾದ ಬಣ್ಣಗಳು"
+            "value": "ಮನೋಹರ ಬಣ್ಣಗಳು"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "선명한 색상"
+            "value": "다채로운 색상"
           }
         },
         "lt": {
@@ -9506,19 +9512,19 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "തിളക്കമുള്ള നിറങ്ങൾ"
+            "value": "മനോഹരമായ നിറങ്ങൾ"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "चमकदार रंग"
+            "value": "आकर्षक रंग"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Warna-warna terang"
+            "value": "Warna yang menarik"
           }
         },
         "nb": {
@@ -9530,25 +9536,25 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Levendige kleuren"
+            "value": "Prachtige kleuren"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଚକଚକିଆ ରଙ୍ଗ"
+            "value": "ରଙ୍ଗର ଚମକ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਚਮਕੀਲੇ ਰੰਗ"
+            "value": "ਰੰਗਾਂ ਦੀ ਰੌਣਕ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jasne kolory"
+            "value": "Efektowne kolory"
           }
         },
         "pt": {
@@ -9560,7 +9566,7 @@
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Culori vibrante"
+            "value": "Culori spectaculoase"
           }
         },
         "ru": {
@@ -9584,31 +9590,31 @@
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Livfulla färger"
+            "value": "Färgstarka färger"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "தெளிவான நிறங்கள்"
+            "value": "அழகான நிறங்கள்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "ప్రకాశవంతమైన రంగులు"
+            "value": "ఆకర్షణీయమైన రంగులు"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สีสันสดใส"
+            "value": "สีสันที่โดดเด่น"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Canlı renkler"
+            "value": "Canlı Renkler"
           }
         },
         "uk": {
@@ -9620,13 +9626,13 @@
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "شوخ رنگ"
+            "value": "دلکش رنگ"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Màu sắc rực rỡ"
+            "value": "Những màu sắc rực rỡ"
           }
         },
         "zh-Hans": {
@@ -9695,10 +9701,16 @@
             "value": "Δημιουργία μιας προσωπικής σελίδας βιογραφικού"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build a Personal Resume Page"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Crear una página de currículum personal"
+            "value": "Construir una página de currículum personal"
           }
         },
         "fi": {
@@ -9716,19 +9728,19 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "વ્યક્તિગત રિઝ્યુમે પેજ બનાવવું"
+            "value": "વ્યક્તિગત રિઝ્યૂમે પેજ બનાવવું"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "בניית עמוד קורות חיים אישיים"
+            "value": "בניית עמוד קורות חיים אישי"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "एक व्यक्तिगत रिज़्यूमे पेज बनाना"
+            "value": "व्यक्तिगत रिज्यूमे पेज बनाना"
           }
         },
         "hr": {
@@ -9740,13 +9752,13 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Személyes önéletrajz oldal készítése"
+            "value": "Személyes önéletrajz oldal felépítése"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Membangun Halaman Resume Pribadi"
+            "value": "Membangun halaman resume pribadi"
           }
         },
         "it": {
@@ -9758,19 +9770,19 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "個人履歴書ページを作成する"
+            "value": "個人履歴ページを作る"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Жеке түйіндеме бетін құру"
+            "value": "Жеке түйіндеме бетін құрастыру"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ವೈಯಕ್ತಿಕ ರೆಸ್ಯೂಮ್ ಪುಟವನ್ನು ನಿರ್ಮಿಸುವುದು"
+            "value": "ವೈಯಕ್ತಿಕ ರೆಸ್ಯೂಮ್ ಪುಟ ನಿರ್ಮಾಣ"
           }
         },
         "ko": {
@@ -9782,13 +9794,13 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sukurti asmeninio CV puslapį"
+            "value": "Asmeninio gyvenimo aprašymo puslapio kūrimas"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "വ്യക്തിഗത റിസ്യൂം പേജ് നിർമ്മിക്കുക"
+            "value": "ഒരു വ്യക്തിഗത റിസ്യൂം പേജ് നിർമ്മിക്കുക"
           }
         },
         "mr": {
@@ -9800,13 +9812,13 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Membina Halaman Resume Peribadi"
+            "value": "Membina halaman resume peribadi"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bygge en personlig CV-side"
+            "value": "Bygg en personlig CV-side"
           }
         },
         "nl": {
@@ -9818,13 +9830,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ବ୍ୟକ୍ତିଗତ ରେଜ୍ୟୁମେ ପୃଷ୍ଠା ତିଆରି କରିବା"
+            "value": "ବ୍ୟକ୍ତିଗତ ରେଜ୍ୟୁମେ ପେଜ୍ ତିଆରି କରିବା"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਨਿੱਜੀ ਰਿਜ਼ਿਊਮੇ ਪੰਨਾ ਬਣਾਉਣਾ"
+            "value": "ਨਿੱਜੀ ਰਿਜ਼ਿਊਮੇ ਪੇਜ ਬਣਾਉਣਾ"
           }
         },
         "pl": {
@@ -9836,13 +9848,13 @@
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Criar uma página de currículo pessoal"
+            "value": "Construindo uma página de currículo pessoal"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Crearea unei pagini de CV personal"
+            "value": "Construirea unei pagini de CV personal"
           }
         },
         "ru": {
@@ -9854,37 +9866,37 @@
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vytvorenie stránky osobného životopisu"
+            "value": "Vytvorenie osobnej profilovej stránky"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ustvarjanje strani osebnega življenjepisa"
+            "value": "Izdelava osebnega življenjepisa"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Skapa en personlig CV-sida"
+            "value": "Bygg en personlig profilsida"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "தனிப்பட்ட ரெச்யூமே பக்கத்தை உருவாக்குதல்"
+            "value": "தனிப்பட்ட சுயவிவரப் பக்கத்தை உருவாக்குதல்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "వ్యక్తిగత రెజ్యూమే పేజీని నిర్మించడం"
+            "value": "వ్యక్తిగత రిజ్యూమే పేజీ నిర్మించడం"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สร้างหน้าประวัติส่วนตัว"
+            "value": "สร้างหน้าเรซูเม่ส่วนตัว"
           }
         },
         "tr": {
@@ -9908,7 +9920,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xây dựng trang sơ yếu lý lịch cá nhân"
+            "value": "Xây dựng trang hồ sơ cá nhân"
           }
         },
         "zh-Hans": {
@@ -17609,6 +17621,12 @@
             "value": "Μετρητής"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Counter"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -17660,7 +17678,7 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Penghitung"
+            "value": "Counter"
           }
         },
         "it": {
@@ -17678,7 +17696,7 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Санауыш"
+            "value": "Есептегіш"
           }
         },
         "kn": {
@@ -17714,7 +17732,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pembilang"
+            "value": "Kaunter"
           }
         },
         "nb": {
@@ -17756,7 +17774,7 @@
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Contor"
+            "value": "Contorul"
           }
         },
         "ru": {
@@ -17786,7 +17804,7 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "கவுண்டர்"
+            "value": "எண்ணி"
           }
         },
         "te": {
@@ -17822,7 +17840,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bộ đếm"
+            "value": "Bộ đếm (Counter)"
           }
         },
         "zh-Hans": {
@@ -27233,6 +27251,12 @@
             "value": "Γνωρίζοντας το Xcode"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting to Know Xcode"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -27254,7 +27278,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode સાથે પરિચય"
+            "value": "Xcode ને ઓળખીએ"
           }
         },
         "he": {
@@ -27266,7 +27290,7 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode से परिचय"
+            "value": "Xcode को समझना"
           }
         },
         "hr": {
@@ -27290,13 +27314,13 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Introduzione a Xcode"
+            "value": "Conoscere Xcode"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcodeを知る"
+            "value": "Xcode を知る"
           }
         },
         "kk": {
@@ -27326,7 +27350,7 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode പരിചയം"
+            "value": "Xcode-നെ പരിചയപ്പെടാം"
           }
         },
         "mr": {
@@ -27338,7 +27362,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pengenalan kepada Xcode"
+            "value": "Mengenali Xcode"
           }
         },
         "nb": {
@@ -27350,13 +27374,13 @@
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kennismaking met Xcode"
+            "value": "Kennismaken met Xcode"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode ପରିଚୟ"
+            "value": "Xcode କୁ ଚିହ୍ନିବା"
           }
         },
         "pa": {
@@ -27368,7 +27392,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wprowadzenie do Xcode"
+            "value": "Poznanie Xcode"
           }
         },
         "pt": {
@@ -27380,7 +27404,7 @@
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Introducere în Xcode"
+            "value": "Cunoașterea Xcode"
           }
         },
         "ru": {
@@ -27392,31 +27416,31 @@
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zoznámenie sa s Xcode"
+            "value": "Zoznámme sa s Xcode"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spoznavanje z Xcode"
+            "value": "Spoznajmo Xcode"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lär känna Xcode"
+            "value": "Lära känna Xcode"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode அறிமுகம்"
+            "value": "Xcode-ஐ அறிதல்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode పరిచయం"
+            "value": "Xcode ను పరిచయం చేసుకోవడం"
           }
         },
         "th": {
@@ -27428,7 +27452,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode'u Tanıma"
+            "value": "Xcode ile Tanışma"
           }
         },
         "uk": {
@@ -27440,19 +27464,19 @@
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "Xcode کا تعارف"
+            "value": "Xcode کو سمجھنا"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Làm quen với Xcode"
+            "value": "Tìm hiểu Xcode"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "认识Xcode"
+            "value": "认识 Xcode"
           }
         },
         "zh-Hant": {
@@ -31181,6 +31205,12 @@
             "value": "Εισαγωγή"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Introduction"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -31202,7 +31232,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "પરિચય"
+            "value": "પ્રસ્તાવના"
           }
         },
         "he": {
@@ -31232,7 +31262,7 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pengantar"
+            "value": "Pendahuluan"
           }
         },
         "it": {
@@ -31262,19 +31292,19 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "소개"
+            "value": "서문"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Įvadas"
+            "value": "Įžanga"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "അവതാരിക"
+            "value": "പരിചയം"
           }
         },
         "mr": {
@@ -31304,13 +31334,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ପରିଚୟ"
+            "value": "ପ୍ରସ୍ତାବନା"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਪਰਿਚਯ"
+            "value": "ਭੂਮਿਕਾ"
           }
         },
         "pl": {
@@ -31352,7 +31382,7 @@
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Introduktion"
+            "value": "Inledning"
           }
         },
         "ta": {
@@ -31394,7 +31424,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Giới thiệu"
+            "value": "Lời mở đầu"
           }
         },
         "zh-Hans": {
@@ -31463,6 +31493,12 @@
             "value": "Διάταξη, εικόνες και κείμενο"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout, Images, and Text"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -31484,7 +31520,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "રૂપરેખાંકન, છબીઓ અને લખાણ"
+            "value": "લેઆઉટ, ચિત્રો અને લખાણ"
           }
         },
         "he": {
@@ -31496,7 +31532,7 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "लेआउट, चित्र और पाठ"
+            "value": "लेआउट, चित्र और टेक्स्ट"
           }
         },
         "hr": {
@@ -31514,7 +31550,7 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tata Letak, Gambar, dan Teks"
+            "value": "Tata letak, gambar, dan teks"
           }
         },
         "it": {
@@ -31526,7 +31562,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "レイアウト、画像とテキスト"
+            "value": "レイアウト、画像、文字"
           }
         },
         "kk": {
@@ -31538,25 +31574,25 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ವಿನ್ಯಾಸ, ಚಿತ್ರಗಳು ಮತ್ತು ಪಠ್ಯ"
+            "value": "ಲೇಔಟ್, ಚಿತ್ರಗಳು ಮತ್ತು ಪಠ್ಯ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "레이아웃, 이미지 및 텍스트"
+            "value": "레이아웃, 이미지, 텍스트"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Išdėstymas, vaizdai ir tekstas"
+            "value": "Išdėstymas, paveikslėliai ir tekstas"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ലേയൗട്ട്, ചിത്രങ്ങൾയും എഴുത്തും"
+            "value": "ലേയൗട്ട്, ചിത്രങ്ങൾ, വാചകം"
           }
         },
         "mr": {
@@ -31574,31 +31610,31 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oppsett, bilder og tekst"
+            "value": "Layout, bilder og tekst"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Indeling, afbeeldingen en tekst"
+            "value": "Layout, afbeeldingen en tekst"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ବିନ୍ୟାସ, ଛବି ଏବଂ ପାଠ୍ୟ"
+            "value": "ଲେଆଉଟ୍, ଛବି ଏବଂ ଟେକ୍ସ୍ଟ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਲੇਆਊਟ, ਚਿੱਤਰ ਅਤੇ ਪਾਠ"
+            "value": "ਲੇਆਉਟ, ਤਸਵੀਰਾਂ ਅਤੇ ਲਿਖਤ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Układ, obrazy i tekst"
+            "value": "Układ, obraz i tekst"
           }
         },
         "pt": {
@@ -31616,7 +31652,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Компоновка, изображения и текст"
+            "value": "Макеты, изображения и текст"
           }
         },
         "sk": {
@@ -31640,31 +31676,31 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "அமைப்பு, படங்கள் மற்றும் உரை"
+            "value": "அமைப்பு, படம் மற்றும் உரை"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "అమరిక, చిత్రాలు మరియు పాఠ్యం"
+            "value": "లేఅవుట్, చిత్రాలు మరియు పాఠ్యం"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "การจัดวาง รูปภาพ และข้อความ"
+            "value": "เลย์เอาต์ รูปภาพ และข้อความ"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Düzen, görseller ve metin"
+            "value": "Düzen, Görsel ve Metin"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Розташування, зображення та текст"
+            "value": "Макет, зображення і текст"
           }
         },
         "ur": {
@@ -31676,7 +31712,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bố cục, hình ảnh và văn bản"
+            "value": "Bố cục, Hình ảnh và Văn bản"
           }
         },
         "zh-Hans": {
@@ -33443,10 +33479,16 @@
             "value": "Κάνοντας το Button να λειτουργεί"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let the Button Start Working"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hacer que el botón funcione"
+            "value": "Hacer que el botón empiece a funcionar"
           }
         },
         "fi": {
@@ -33464,13 +33506,13 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "બટનને કામ કરવા દો"
+            "value": "બટનને કાર્યરત બનાવવું"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "גרום לכפתור לעבוד"
+            "value": "לגרום לכפתור לעבוד"
           }
         },
         "hi": {
@@ -33482,43 +33524,43 @@
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pokrenite gumb"
+            "value": "Pokrenimo gumb"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Működésbe hozni a gombot"
+            "value": "Tegyük működőképessé a gombot"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Buat tombol bekerja"
+            "value": "Membuat tombol mulai bekerja"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fai funzionare il pulsante"
+            "value": "Far funzionare il pulsante"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ボタンを動作させる"
+            "value": "ボタンを動かしてみよう"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Түймені іске қосу"
+            "value": "Батырманы жұмыс істетейік"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಬಟನ್ ಕೆಲಸ ಮಾಡಲು ಬಿಡಿ"
+            "value": "Button ಅನ್ನು ಕೆಲಸ ಮಾಡಿಸೋಣ"
           }
         },
         "ko": {
@@ -33530,31 +33572,31 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Priverskite mygtuką veikti"
+            "value": "Priverskime mygtuką veikti"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ബട്ടൺ പ്രവർത്തിക്കാൻ അനുവദിക്കുക"
+            "value": "ബട്ടൺ പ്രവർത്തിപ്പിക്കാം"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "बटण कार्यरत करा"
+            "value": "बटण कार्यरत करूया"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jadikan butang berfungsi"
+            "value": "Membuat butang berfungsi"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Få knappen til å fungere"
+            "value": "La knappen begynne å virke"
           }
         },
         "nl": {
@@ -33566,97 +33608,97 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ବଟନ୍‌କୁ କାମ କରିବାକୁ ଦିଅନ୍ତୁ"
+            "value": "ବଟନ୍‌କୁ କାମ କରାନ୍ତୁ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਬਟਨ ਨੂੰ ਕੰਮ ਕਰਨ ਦਿਓ"
+            "value": "ਬਟਨ ਨੂੰ ਕੰਮ ਕਰਾਉਣਾ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spraw, aby przycisk działał"
+            "value": "Sprawmy, by przycisk zaczął działać"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fazer o botão funcionar"
+            "value": "Fazer o botão começar a funcionar"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fă butonul să funcționeze"
+            "value": "Cum să faci butonul să funcționeze"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Заставить кнопку работать"
+            "value": "Как заставить кнопку работать"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sprevozniť tlačidlo"
+            "value": "Aby tlačidlo začalo fungovať"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Naj gumb deluje"
+            "value": "Naj gumb začne delovati"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Få knappen att fungera"
+            "value": "Få knappen att börja fungera"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "பட்டனை செயல்படச் செய்யவும்"
+            "value": "பட்டனை செயல்படச் செய்வோம்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "బటన్ పనిచేయేలా చేయండి"
+            "value": "బటన్‌ను పనిచేయించడం ప్రారంభిద్దాం"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ทำให้ปุ่มทำงาน"
+            "value": "ทำให้ปุ่มเริ่มทำงาน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Düğmeyi çalıştır"
+            "value": "Düğmenin Çalışmasını Sağlamak"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Змусити кнопку працювати"
+            "value": "Як змусити кнопку працювати"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "بٹن کو کام کرنے دیں"
+            "value": "بٹن کو کام پر لگانا"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Làm cho nút hoạt động"
+            "value": "Bắt đầu làm việc với Nút bấm (Button)"
           }
         },
         "zh-Hans": {
@@ -35135,6 +35177,12 @@
             "value": "Αλληλεπιδράσεις σύνδεσης"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Login Interactions"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -35415,6 +35463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Βρόχοι και λίστες"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loops and Lists"
           }
         },
         "es": {
@@ -37401,6 +37455,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Λίστα Ταινιών"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movie List"
           }
         },
         "es": {
@@ -40511,10 +40571,16 @@
             "value": "Τελεστές"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operators"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "operador"
+            "value": "Operadores"
           }
         },
         "fi": {
@@ -40532,13 +40598,13 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "ઓપરેટર"
+            "value": "operators"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אופרטור"
+            "value": "אופרטורים"
           }
         },
         "hi": {
@@ -40550,25 +40616,25 @@
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatori"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "operátor"
+            "value": "Operátorok"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operator"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "operatore"
+            "value": "Operatori"
           }
         },
         "ja": {
@@ -40580,7 +40646,7 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "оператор"
+            "value": "Операторлар"
           }
         },
         "kn": {
@@ -40598,37 +40664,37 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "operatorius"
+            "value": "Operatoriai"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ഓപ്പറേറ്റർ"
+            "value": "ഓപ്പറേറ്ററുകൾ"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ऑपरेटर"
+            "value": "ऑपरेटर्स"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operator"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatorer"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatoren"
           }
         },
         "or": {
@@ -40646,55 +40712,55 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatory"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "operador"
+            "value": "Operadores"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatori"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "оператор"
+            "value": "Операторы"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "operátor"
+            "value": "Operátory"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatorji"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "operator"
+            "value": "Operatorer"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "இயக்கி"
+            "value": "ஆபரேட்டர்கள்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "ఆపరేటర్"
+            "value": "ఆపరేటర్లు"
           }
         },
         "th": {
@@ -40706,25 +40772,25 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "operatör"
+            "value": "Operatörler"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "оператор"
+            "value": "Оператори"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "آپریٹر"
+            "value": "آپریٹرز"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "toán tử"
+            "value": "Toán Tử"
           }
         },
         "zh-Hans": {
@@ -41363,10 +41429,16 @@
             "value": "Κουμπαράς"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piggy Bank"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "hucha"
+            "value": "Hucha"
           }
         },
         "fi": {
@@ -41384,7 +41456,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "બચતપાત્ર"
+            "value": "પિગી બેંક"
           }
         },
         "he": {
@@ -41402,25 +41474,25 @@
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "kasica"
+            "value": "Kasica-prasica"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "persely"
+            "value": "Persely"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "celengan"
+            "value": "Celengan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "salvadanaio"
+            "value": "Salvadanaio"
           }
         },
         "ja": {
@@ -41432,13 +41504,13 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "тиынқұт"
+            "value": "Ақша жинайтын құты"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಉಳಿತಾಯ ಪೆಟ್ಟಿಗೆ"
+            "value": "ಹುಂಡಿ"
           }
         },
         "ko": {
@@ -41450,43 +41522,43 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "taupyklė"
+            "value": "Taupyklė"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "പൈസാപ്പെട്ടി"
+            "value": "പിഗ്ഗി ബാങ്ക്"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "गुल्लक"
+            "value": "गुलक"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "tabung"
+            "value": "Tabung duit syiling"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "sparebøsse"
+            "value": "Sparegris"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "spaarpot"
+            "value": "Spaarpot"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ସଞ୍ଚୟ ପାତ୍ର"
+            "value": "ସଞ୍ଚୟ କୁମ୍ଭ"
           }
         },
         "pa": {
@@ -41498,55 +41570,55 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "skarbonka"
+            "value": "Skarbonka"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "cofrinho"
+            "value": "Cofrinho"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "pușculiță"
+            "value": "Pușculiță"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "копилка"
+            "value": "Копилка"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "pokladnička"
+            "value": "Pokladnička"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "hranilnik"
+            "value": "Hranilnik"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "spargris"
+            "value": "Spargris"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "சேமிப்பு பெட்டி"
+            "value": "பணம் சேமிப்பு குடுவை"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "పొదుపు పెట్టె"
+            "value": "పిగ్గీ బ్యాంక్"
           }
         },
         "th": {
@@ -41558,25 +41630,25 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "kumbara"
+            "value": "Kumbara"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "скарбничка"
+            "value": "Скарбничка"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "گلک"
+            "value": "مٹی کا گلک"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "heo đất"
+            "value": "Heo Đất"
           }
         },
         "zh-Hans": {
@@ -45323,6 +45395,12 @@
             "value": "Καρουζέλ αποφθεγμάτων"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quote Carousel"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -45344,7 +45422,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "ઉધૃતી કૅરોસેલ"
+            "value": "કહેવતોનું કેરુસેલ"
           }
         },
         "he": {
@@ -45356,31 +45434,31 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "उद्धरण करौसель"
+            "value": "उद्धरण कैरोसेल"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kružni citati"
+            "value": "Vrtuljak citata"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Idézet karusszel"
+            "value": "Idézetkörhinta"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Karusel Kutipan"
+            "value": "Carousel kutipan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Carosello delle citazioni"
+            "value": "Carosello di citazioni"
           }
         },
         "ja": {
@@ -45392,13 +45470,13 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Цитаталар каруселі"
+            "value": "Дәйексөз каруселі"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಉಲ್ಲೇಖ ಕಾರಸುಲ್"
+            "value": "ಉಲ್ಲೇಖ ಕ್ಯಾರಸೆಲ್"
           }
         },
         "ko": {
@@ -45410,49 +45488,49 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Citatų karuselis"
+            "value": "Citatų karuselė"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ഉദ്ധരണി കാർസൽ"
+            "value": "ഉദ്ധരണി കരൂസൽ"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "कोटेशन कॅरॉसेल"
+            "value": "सुविचार कॅरुसेल"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Karusel Petikan"
+            "value": "Karusel kata-kata hikmah"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sitater Karusell"
+            "value": "Karusell med sitater"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Citaten carrousel"
+            "value": "Citatencarrousel"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଉଦ୍ଧୃତି କ୍ୟାରୋସେଲ"
+            "value": "ଉକ୍ତି ରୋଟେସନ୍"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਉਧਰੋਤਿ ਕੈਰੋਸੇਲ"
+            "value": "ਕਹਾਵਤਾਂ ਦਾ ਰੋਟੇਸ਼ਨ"
           }
         },
         "pl": {
@@ -45464,7 +45542,7 @@
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Carrossel de Citações"
+            "value": "Carrossel de citações"
           }
         },
         "ro": {
@@ -45488,31 +45566,31 @@
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kolesce citatov"
+            "value": "Vrteči se citati"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Citat Karusell"
+            "value": "Citatkarusell"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "மேற்கோள் காருசல்"
+            "value": "மேற்கோள் சுழற்சி"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "కోట్స్ క్యారస్సెల్"
+            "value": "సూక్తుల రోటేషన్"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "คารูเซลคำคม"
+            "value": "การเลื่อนแสดงคำคม"
           }
         },
         "tr": {
@@ -45530,13 +45608,13 @@
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "اقتباسات کا کیروسل"
+            "value": "اقوال کی گردش"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Carousel trích dẫn"
+            "value": "Vòng Lặp Danh Ngôn"
           }
         },
         "zh-Hans": {
@@ -48149,10 +48227,16 @@
             "value": "Αποθήκευση του ποσού του κουμπαρά"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving the Piggy Bank Amount"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Guardar monto de la alcancía"
+            "value": "Guardar la cantidad de la hucha"
           }
         },
         "fi": {
@@ -48170,199 +48254,199 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "પિગી બેંક રકમ સાચવો"
+            "value": "પિગી બેંકની રકમ સાચવવી"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "שמור סכום קופת חיסכון"
+            "value": "שמירת הסכום של קופת החיסכון"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "गुल्लक की राशि सहेजें"
+            "value": "गुल्लक की amount save करना"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spremi iznos kasice"
+            "value": "Spremanje iznosa kasice-prasice"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Persely összeg mentése"
+            "value": "A persely összegének mentése"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simpan jumlah celengan"
+            "value": "Menyimpan jumlah celengan"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salva importo salvadanaio"
+            "value": "Salvare l'importo del salvadanaio"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "貯金箱の金額を保存"
+            "value": "貯金箱の金額を保存する"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Жинақ шотының сомасын сақтау"
+            "value": "Ақша жинайтын құтыдағы соманы сақтау"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಪಿಗಿ ಬ್ಯಾಂಕ್ ಮೊತ್ತವನ್ನು ಉಳಿಸಿ"
+            "value": "ಹುಂಡಿಯ ಮೊತ್ತವನ್ನು ಉಳಿಸುವುದು"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "저금통 금액 저장"
+            "value": "저금통 금액 저장하기"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Išsaugoti taupyklės sumą"
+            "value": "Taupyklės sumos išsaugojimas"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "പിഗ്ഗി ബാങ്ക് തുക സംരക്ഷിക്കുക"
+            "value": "പിഗ്ഗി ബാങ്ക് amount save ചെയ്യുക"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "गुल्लक रक्कम जतन करा"
+            "value": "गुलकातील रक्कम जतन करणे"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simpan jumlah tabung"
+            "value": "Simpan amaun tabung duit syiling"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lagre sparegrisbeløp"
+            "value": "Lagre beløpet i sparegrisen"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spaarpotbedrag opslaan"
+            "value": "Het bedrag van de spaarpot opslaan"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ପିଗି ବ୍ୟାଙ୍କ ରାଶି ସଞ୍ଚୟ କରନ୍ତୁ"
+            "value": "ସଞ୍ଚୟ କୁମ୍ଭର ରାଶି ସେଭ୍ କରିବା"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਗੁੱਲਕ ਦੀ ਰਕਮ ਸੰਭਾਲੋ"
+            "value": "ਗੁੱਲਕ ਦੀ ਰਕਮ ਸੰਭਾਲਣਾ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zapisz kwotę skarbonki"
+            "value": "Zapisywanie kwoty w skarbonce"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salvar valor do cofrinho"
+            "value": "Salvar o valor do cofrinho"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salvează suma pușculiței"
+            "value": "Salvarea sumei din pușculiță"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Сохранить сумму копилки"
+            "value": "Сохранение суммы в копилке"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Uložiť sumu pokladničky"
+            "value": "Uloženie sumy v pokladničke"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Shrani znesek hranilnika"
+            "value": "Shranjevanje zneska v hranilniku"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Spara spargrisbelopp"
+            "value": "Spara spargrisens belopp"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "பன்றிக் குடுவை தொகையை சேமிக்கவும்"
+            "value": "பணம் சேமிப்பு குடுவைத் தொகையை சேமித்தல்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "పిగ్గీ బ్యాంక్ మొత్తాన్ని సేవ్ చేయండి"
+            "value": "పిగ్గీ బ్యాంక్ మొత్తాన్ని సేవ్ చేయడం"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "บันทึกจำนวนเงินกระปุกออมสิน"
+            "value": "การบันทึกจำนวนเงินในกระปุกออมสิน"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kumbara tutarını kaydet"
+            "value": "Kumbara Tutarını Kaydetme"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Зберегти суму скарбнички"
+            "value": "Збереження суми в скарбничці"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "گلک کی رقم محفوظ کریں"
+            "value": "منی باکس کی رقم محفوظ کرنا"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lưu số tiền heo đất"
+            "value": "Lưu Số Tiền Heo Đất"
           }
         },
         "zh-Hans": {
@@ -54354,6 +54438,12 @@
             "value": "Προβολή σύνδεσης"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign In View"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -54636,10 +54726,16 @@
             "value": "Προσομοιωτής και πραγματική συσκευή"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simulator and Physical Device"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simulador y Dispositivo Físico"
+            "value": "Simulador y dispositivo físico"
           }
         },
         "fi": {
@@ -54657,7 +54753,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "સિમ્યુલેટર અને ભૌતિક ઉપકરણ"
+            "value": "Simulator અને Physical Device"
           }
         },
         "he": {
@@ -54669,7 +54765,7 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "सिमुलेटर और भौतिक डिवाइस"
+            "value": "सिम्युलेटर और वास्तविक डिवाइस"
           }
         },
         "hr": {
@@ -54687,7 +54783,7 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simulator dan Perangkat Fisik"
+            "value": "Simulator dan perangkat fisik"
           }
         },
         "it": {
@@ -54699,25 +54795,25 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "シミュレーターと実機デバイス"
+            "value": "シミュレータと実機"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Симулятор және физикалық құрылғы"
+            "value": "Симулятор және нақты құрылғы"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಸಿಮ್ಯುಲೇಟರ್ ಮತ್ತು ಭೌತಿಕ ಸಾಧನ"
+            "value": "ಸಿಮ್ಯುಲೇಟರ್ ಮತ್ತು ನೈಜ ಸಾಧನ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "시뮬레이터 및 실제 기기"
+            "value": "시뮬레이터와 실제 기기"
           }
         },
         "lt": {
@@ -54729,19 +54825,19 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "സിമുലേറ്ററും ഭൗതിക ഉപകരണവും"
+            "value": "Simulatorയും Physical Deviceഉം"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "सिम्युलेटर आणि भौतिक उपकरण"
+            "value": "सिम्युलेटर आणि प्रत्यक्ष डिव्हाइस"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simulator dan Peranti Fizikal"
+            "value": "Simulator dan peranti fizikal"
           }
         },
         "nb": {
@@ -54759,31 +54855,31 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ସିମ୍ୟୁଲେଟର ଏବଂ ଭୌତିକ ଉପକରଣ"
+            "value": "ସିମ୍ୟୁଲେଟର ଏବଂ ଭୌତିକ ଡିଭାଇସ୍"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਸਿਮੂਲੇਟਰ ਅਤੇ ਭੌਤਿਕ ਡਿਵਾਈਸ"
+            "value": "ਸਿਮੂਲੇਟਰ ਅਤੇ ਅਸਲੀ ਡਿਵਾਈਸ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Symulator i urządzenie fizyczne"
+            "value": "Symulator i fizyczne urządzenie"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simulador e Dispositivo Físico"
+            "value": "Simulador e dispositivo físico"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Simulator și dispozitiv fizic"
+            "value": "Simulatorul și dispozitivul fizic"
           }
         },
         "ru": {
@@ -54813,19 +54909,19 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "சிமுலேட்டர் மற்றும் இயற்பியல் சாதனம்"
+            "value": "சிமுலேட்டர் மற்றும் உண்மையான சாதனம்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "సిమ్యులేటర్ మరియు భౌతిక పరికరం"
+            "value": "సిమ్యులేటర్ మరియు నిజమైన పరికరం"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ตัวจำลองและอุปกรณ์จริง"
+            "value": "โปรแกรมจำลองและอุปกรณ์จริง"
           }
         },
         "tr": {
@@ -54843,25 +54939,25 @@
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "سیمیولیٹر اور فزیکل ڈیوائس"
+            "value": "سمیولیٹر اور حقیقی ڈیوائس"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trình giả lập và Thiết bị Vật lý"
+            "value": "Trình giả lập và Thiết bị thực"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "模拟器与实体设备"
+            "value": "模拟器和实体设备"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "模擬器與實體裝置"
+            "value": "模擬器和實體設備"
           }
         }
       }
@@ -56565,7 +56661,7 @@
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": " البدء من ContentView"
+            "value": "البدء من ContentView"
           }
         },
         "bg": {
@@ -56610,10 +56706,16 @@
             "value": "Ξεκινώντας από το ContentView"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starting from ContentView"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comienza desde ContentView"
+            "value": "Empezar desde ContentView"
           }
         },
         "fi": {
@@ -56631,31 +56733,31 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView થી શરૂઆત કરો"
+            "value": "ContentView થી શરૂઆત"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "התחל מ-ContentView"
+            "value": "מתחילים מ-ContentView"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView से शुरुआत करें"
+            "value": "ContentView से शुरुआत"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Započnite od ContentView"
+            "value": "Početak od ContentViewa"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kezdje a ContentView-vel"
+            "value": "Kezdjük a ContentView-val"
           }
         },
         "id": {
@@ -56667,7 +56769,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inizia da ContentView"
+            "value": "Iniziare da ContentView"
           }
         },
         "ja": {
@@ -56679,13 +56781,13 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView-тен бастаңыз"
+            "value": "ContentView-ден бастау"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView ಇಂದ ಪ್ರಾರಂಭಿಸಿ"
+            "value": "ContentView ಇಂದ ಪ್ರಾರಂಭಿಸೋಣ"
           }
         },
         "ko": {
@@ -56697,85 +56799,85 @@
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pradėkite nuo ContentView"
+            "value": "Pradėkime nuo ContentView"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView ൽ നിന്ന് ആരംഭിക്കുക"
+            "value": "ContentView മുതൽ തുടങ്ങാം"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView पासून सुरुवात करा"
+            "value": "ContentView पासून सुरुवात"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mulakan dari ContentView"
+            "value": "Bermula dari ContentView"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start fra ContentView"
+            "value": "Start med ContentView"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Begin bij ContentView"
+            "value": "Beginnen met ContentView"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView ଠାରୁ ଆରମ୍ଭ କରନ୍ତୁ"
+            "value": "ContentView ଠାରୁ ଆରମ୍ଭ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ"
+            "value": "ContentView ਤੋਂ ਸ਼ੁਰੂਆਤ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zacznij od ContentView"
+            "value": "Zaczynamy od ContentView"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Comece pelo ContentView"
+            "value": "Começando pelo ContentView"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Începeți de la ContentView"
+            "value": "Începând cu ContentView"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Начните с ContentView"
+            "value": "Начинаем с ContentView"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Začnite od ContentView"
+            "value": "Začíname od ContentView"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Začnite z ContentView"
+            "value": "Začnimo z datoteko ContentView"
           }
         },
         "sv": {
@@ -56787,13 +56889,13 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView இலிருந்து தொடங்குங்கள்"
+            "value": "ContentView-இலிருந்து தொடங்கலாம்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView నుండి ప్రారంభించండి"
+            "value": "ContentView నుంచి ప్రారంభం"
           }
         },
         "th": {
@@ -56805,19 +56907,19 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView’den başlayın"
+            "value": "ContentView’den Başlamak"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Почніть з ContentView"
+            "value": "Починаємо з ContentView"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "ContentView سے شروع کریں"
+            "value": "ContentView سے آغاز"
           }
         },
         "vi": {
@@ -58584,6 +58686,12 @@
             "value": "struct και class"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "struct and class"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -59148,6 +59256,12 @@
             "value": "Swift και SwiftUI"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift and SwiftUI"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -59169,19 +59283,19 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "સ્વિફ્ટ અને સ્વિફ્ટયુઆઈ"
+            "value": "Swift અને SwiftUI"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "סוויפט ו- SwiftUI"
+            "value": "Swift ו-SwiftUI"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "स्विफ्ट और स्विफ्टयूआई"
+            "value": "Swift और SwiftUI"
           }
         },
         "hr": {
@@ -59223,7 +59337,7 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಸ್ವಿಫ್ಟ್ ಮತ್ತು ಸ್ವಿಫ್ಟ್‌ಯುಐ"
+            "value": "Swift ಮತ್ತು SwiftUI"
           }
         },
         "ko": {
@@ -59241,13 +59355,13 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "സ്വിഫ്റ്റും സ്വിഫ്റ്റയൂഐ"
+            "value": "Swiftയും SwiftUIയും"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "स्विफ्ट आणि स्विफ्टयूआय"
+            "value": "Swift आणि SwiftUI"
           }
         },
         "ms": {
@@ -59271,13 +59385,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ସ୍ୱିଫ୍ଟ ଏବଂ ସ୍ୱିଫ୍ଟୟୁଆଇ"
+            "value": "Swift ଏବଂ SwiftUI"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਸਵਿਫਟ ਅਤੇ ਸਵਿਫਟਯੂਆਈ"
+            "value": "Swift ਅਤੇ SwiftUI"
           }
         },
         "pl": {
@@ -59331,7 +59445,7 @@
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "స్విఫ్ట్ మరియు స్విఫ్ట్‌యూ‌ఐ"
+            "value": "Swift మరియు SwiftUI"
           }
         },
         "th": {
@@ -59349,13 +59463,13 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Swift та SwiftUI"
+            "value": "Swift і SwiftUI"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "سوئفٹ اور سوئفٹی یو آئی"
+            "value": "Swift اور SwiftUI"
           }
         },
         "vi": {
@@ -59994,10 +60108,16 @@
             "value": "Ο κύκλος ζωής των SwiftUI views"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftUI View Lifecycle"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ciclo de vida vista SwiftUI"
+            "value": "Ciclo de vida de las vistas en SwiftUI"
           }
         },
         "fi": {
@@ -60015,19 +60135,19 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI વ્યૂ જીવનચક્ર"
+            "value": "SwiftUI view lifecycle"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "מחזור חיים תצוגת SwiftUI"
+            "value": "מחזור החיים של תצוגת SwiftUI"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI व्यू जीवनचक्र"
+            "value": "SwiftUI view lifecycle"
           }
         },
         "hr": {
@@ -60039,43 +60159,43 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI nézet életciklus"
+            "value": "A SwiftUI nézet életciklusa"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Siklus hidup tampilan SwiftUI"
+            "value": "Siklus hidup view SwiftUI"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ciclo di vita vista SwiftUI"
+            "value": "Ciclo di vita delle viste SwiftUI"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUIビューライフサイクル"
+            "value": "SwiftUI ビューのライフサイクル"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI көрініс өмірлік циклі"
+            "value": "SwiftUI view өмірлік циклі"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI ವೀಕ್ಷಣೆ ಜೀವನಚಕ್ರ"
+            "value": "SwiftUI view ಜೀವನಚಕ್ರ"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI 뷰 생명 주기"
+            "value": "SwiftUI 뷰 생명주기"
           }
         },
         "lt": {
@@ -60087,115 +60207,115 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI വ്യൂ ജീവിതചക്രം"
+            "value": "SwiftUI view lifecycle"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI दृश्य जीवनचक्र"
+            "value": "SwiftUI view lifecycle"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kitaran hayat paparan SwiftUI"
+            "value": "Kitar hayat view SwiftUI"
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI-visning livssyklus"
+            "value": "Livssyklusen til SwiftUI-visninger"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Levenscyclus van SwiftUI-weergave"
+            "value": "De levenscyclus van een SwiftUI-view"
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI ଭ୍ୟୁ ଜୀବନଚକ୍ର"
+            "value": "SwiftUI ଭ୍ୟୁର ଲାଇଫସାଇକଲ୍"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI ਵਿਊ ਜੀਵਨ ਚੱਕਰ"
+            "value": "SwiftUI ਵਿਊ ਦਾ ਜੀਵਨ ਚੱਕਰ"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cykl życia widoku SwiftUI"
+            "value": "Cykl życia widoku w SwiftUI"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ciclo de vida visualização SwiftUI"
+            "value": "Ciclo de vida da View no SwiftUI"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ciclu de viață vizualizare SwiftUI"
+            "value": "Ciclul de viață al vizualizărilor în SwiftUI"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Жизненный цикл SwiftUI-представления"
+            "value": "Жизненный цикл представления в SwiftUI"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Životný cyklus zobrazenia SwiftUI"
+            "value": "Životný cyklus view v SwiftUI"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Življenjski cikel pogleda SwiftUI"
+            "value": "Življenjski cikel pogleda v SwiftUI"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI-vy livscykel"
+            "value": "SwiftUI-vyers livscykel"
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI பார்வை வாழ்க்கைச் சுழற்சி"
+            "value": "SwiftUI View வாழ்க்கைச்சுற்று"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI వీక్షణ జీవన చక్రం"
+            "value": "SwiftUI వ్యూ లైఫ్‌సైకిల్"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "วงจรชีวิตมุมมอง SwiftUI"
+            "value": "วงจรชีวิตของ View ใน SwiftUI"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "SwiftUI görünüm yaşam döngüsü"
+            "value": "SwiftUI Görünüm Yaşam Döngüsü"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Життєвий цикл SwiftUI-подання"
+            "value": "Життєвий цикл подання SwiftUI"
           }
         },
         "ur": {
@@ -60207,7 +60327,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vòng đời chế độ xem SwiftUI"
+            "value": "Vòng Đời View Trong SwiftUI"
           }
         },
         "zh-Hans": {
@@ -66210,6 +66330,12 @@
             "value": "Σύστημα τύπων"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type System"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -66231,13 +66357,13 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "ટાઇપ સિસ્ટમ"
+            "value": "પ્રકાર પ્રણાલી"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "מערכת טיפוסים"
+            "value": "מערכת הטיפוסים"
           }
         },
         "hi": {
@@ -66267,7 +66393,7 @@
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sistema di tipi"
+            "value": "Sistema dei tipi"
           }
         },
         "ja": {
@@ -66279,13 +66405,13 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Типтер жүйесі"
+            "value": "Түр жүйесі"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಟೈಪ್ ಸಿಸ್ಟಮ್"
+            "value": "ಪ್ರಕಾರ ವ್ಯವಸ್ಥೆ"
           }
         },
         "ko": {
@@ -66309,7 +66435,7 @@
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "टाइप प्रणाली"
+            "value": "प्रकार प्रणाली"
           }
         },
         "ms": {
@@ -66333,13 +66459,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଟାଇପ ସିଷ୍ଟମ"
+            "value": "ଟାଇପ୍ ସିଷ୍ଟମ୍"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਟਾਈਪ ਸਿਸਟਮ"
+            "value": "ਕਿਸਮ ਪ੍ਰਣਾਲੀ"
           }
         },
         "pl": {
@@ -66357,7 +66483,7 @@
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sistem de tipuri"
+            "value": "Sistemul de tipuri"
           }
         },
         "ru": {
@@ -66393,7 +66519,7 @@
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "టైప్ సిస్టమ్"
+            "value": "టైప్ వ్యవస్థ"
           }
         },
         "th": {
@@ -66405,7 +66531,7 @@
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tür sistemi"
+            "value": "Tür Sistemi"
           }
         },
         "uk": {
@@ -66423,7 +66549,7 @@
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hệ thống kiểu"
+            "value": "Hệ Thống Kiểu Dữ Liệu"
           }
         },
         "zh-Hans": {
@@ -67062,6 +67188,12 @@
             "value": "Μεταβλητές και σταθερές"
           }
         },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Variables and Constants"
+          }
+        },
         "es": {
           "stringUnit": {
             "state": "translated",
@@ -67095,7 +67227,7 @@
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "चर और स्थिरांक"
+            "value": "वेरिएबल और कॉन्स्टैंट"
           }
         },
         "hr": {
@@ -67113,7 +67245,7 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Variabel dan Konstanta"
+            "value": "Variabel dan konstanta"
           }
         },
         "it": {
@@ -67137,7 +67269,7 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಚರಗಳು ಮತ್ತು ಸ್ಥಿರಾಂಕಗಳು"
+            "value": "ವ್ಯೇರಿಯಬಲ್‌ಗಳು ಮತ್ತು ಕನ್ಸ್ಟೆಂಟ್‌ಗಳು"
           }
         },
         "ko": {
@@ -67155,7 +67287,7 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ചറങ്ങളും സ്ഥിരാങ്കങ്ങളും"
+            "value": "വേരിയബിളുകളും കോൺസ്റ്റന്റുകളും"
           }
         },
         "mr": {
@@ -67167,7 +67299,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pembolehubah dan Pemalar"
+            "value": "Pembolehubah dan pemalar"
           }
         },
         "nb": {
@@ -67185,13 +67317,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଚର ଏବଂ ନିର୍ଦ୍ଧାରିତ"
+            "value": "ଚଳକ ଏବଂ ଧ୍ରୁବକ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਚਲ ਅਤੇ ਸਥਿਰਾਂਕ"
+            "value": "ਵੇਰੀਏਬਲ ਅਤੇ ਕਾਂਸਟੈਂਟ"
           }
         },
         "pl": {
@@ -67239,13 +67371,13 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "மாறிகள் மற்றும் நிலையான்கள்"
+            "value": "மாறிகள் மற்றும் மாறாத மாறிகள்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "చరాలు మరియు స్థిరాంకాలు"
+            "value": "చరాలు మరియు స్థిరాలు"
           }
         },
         "th": {
