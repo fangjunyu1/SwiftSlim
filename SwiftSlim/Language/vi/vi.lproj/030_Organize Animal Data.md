@@ -501,7 +501,7 @@ struct ContentView: View {
                             .font(.title2)
                             .frame(width: 40, height: 40)
                             .background(Color.gray.opacity(0.1))
-                            .clipShape(Circle())
+                            .cornerRadius(20)
                         
                         Text(animal.name)
                             .fontWeight(.bold)
