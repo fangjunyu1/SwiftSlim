@@ -50,6 +50,7 @@ struct CoursesPage: View {
                     
                     completionArea
                 }
+                .textSelection(.enabled)
             } else {
                 ProgressView {
                     Text(verbatim: "...")
