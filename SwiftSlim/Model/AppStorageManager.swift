@@ -23,6 +23,11 @@ final class AppStorageManager: ObservableObject {
     // 防止循环写入标志
     private var isLoading = false
     
+    // 判断用户是否为会员
+    var isPremium: Bool {
+        false
+    }
+    
     // 用户名称
     // 1.0.3 版本之前为 userName，但是默认值为 Developer，现在重新名称。
     // 受影响版本为 1.0.3 之前，大概 20 个用户

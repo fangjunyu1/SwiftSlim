@@ -17,12 +17,19 @@ struct SymbolsView: View {
         GridItem(.adaptive(minimum: 90, maximum: 140), spacing: 20, alignment: .leading)
     ]
     
-    let filtered = SingleSymbols.listSymbols.filter {
+    
+    // 全部可用的 Symbols
+    private static let supportedSymbols: [SingleSymbols] = SingleSymbols.listSymbols.filter {
         UIImage(systemName: $0.name) != nil
     }
-
+    
+    // 根据会员，返回可用 Symbols，非会员显示前 200 个 SF Symbols
     var availableSymbols: [SingleSymbols] {
-        Array(filtered.prefix(200))
+        if appStorage.isPremium {
+            return Self.supportedSymbols
+        } else {
+            return Array(Self.supportedSymbols.prefix(200))
+        }
     }
     
     var filteredSymbols: [SingleSymbols] {
