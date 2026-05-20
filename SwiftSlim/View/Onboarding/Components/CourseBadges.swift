@@ -9,10 +9,9 @@ import SwiftUI
 
 // 课时图标
 struct CourseBadges: View {
-    var numberOfCourses: Int
     var body: some View {
         VStack {
-            Text(verbatim: "\(numberOfCourses)+")
+            Text(CoursesViewModel.coursesCountText)
                 .font(.title)
                 .fontWeight(.black)
             Text(verbatim:"LESSONS")

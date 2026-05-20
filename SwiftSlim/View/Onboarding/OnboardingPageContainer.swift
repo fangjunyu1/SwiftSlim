@@ -83,17 +83,16 @@ struct LearnSwiftUIStage: View {
 
 // 入门课程
 struct StartLessonsStage: View {
-    let numberOfCourses = 20
     @State private var animateIn = false
     
     var body: some View {
         ZStack(alignment: .trailing) {
-            Card(numberOfCourses: numberOfCourses)
+            Card()
                 .offset(y: animateIn ? 0 : 40)
                 .opacity(animateIn ? 1 : 0)
                 .animation(.spring(response: 0.5, dampingFraction: 0.86), value: animateIn)
             
-            CourseBadges(numberOfCourses: numberOfCourses)
+            CourseBadges()
                 .scaleEffect(animateIn ? 1 : 0.2)
                 .opacity(animateIn ? 1 : 0)
                 .offset(x: -20, y: 80)

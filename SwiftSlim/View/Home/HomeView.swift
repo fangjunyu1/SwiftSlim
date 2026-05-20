@@ -153,9 +153,7 @@ struct HomeView: View {
                         }
                     Spacer()
                     HStack(spacing: 0) {
-                        Text(verbatim: "20")
-                            .fontWeight(.medium)
-                        Text(verbatim: "+")
+                        Text(CoursesViewModel.coursesCountText)
                             .fontWeight(.medium)
                         Text("Lessons")
                             .fontWeight(.medium)

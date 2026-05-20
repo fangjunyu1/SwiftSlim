@@ -9,7 +9,7 @@ import SwiftUI
 
 class CoursesViewModel {
     // 获取当前语言环境下的 Markdown 文档
-    static var coursesItems: [CoursesModel] {
+    static let coursesItems: [CoursesModel] = {
         // 批量获取某一类型的资源（这里加载Markdown文件）
         let mdFiles = Bundle.main.urls(forResourcesWithExtension: "md", subdirectory: nil) ?? []
         var index = 0
@@ -23,7 +23,7 @@ class CoursesViewModel {
                 index += 1
                 return CoursesModel(index: index, name: displayName, url: url)
             }
-    }
+    }()
     
     // 将 Markdown 文件归类到具体章节
     static var chapters: [CoursesChapter] {
@@ -46,6 +46,16 @@ class CoursesViewModel {
             CoursesChapter(title: chapter1Name, items: chapter1),
             CoursesChapter(title: chapter2Name, items: chapter2)
         ]
+    }
+    
+    // 课程数量 - Int
+    static var coursesCount: Int {
+        (coursesItems.count / 10) * 10
+    }
+    
+    // 课程数量 - String
+    static var coursesCountText: String {
+        "\(coursesCount)+"
     }
 }
 

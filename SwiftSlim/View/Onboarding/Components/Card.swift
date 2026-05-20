@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Card: View {
-    let numberOfCourses: Int
     var body: some View {
         VStack(spacing: 20) {
             HStack {
@@ -25,7 +24,7 @@ struct Card: View {
                 
                 // 20 课时
                 HStack {
-                    Text(verbatim: "\(numberOfCourses)")
+                    Text(CoursesViewModel.coursesCountText)
                     Text("Lessons")
                 }
                 .foregroundStyle(.gray)
