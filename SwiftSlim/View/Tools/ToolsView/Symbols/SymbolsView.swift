@@ -25,7 +25,7 @@ struct SymbolsView: View {
     
     // 根据会员，返回可用 Symbols，非会员显示前 200 个 SF Symbols
     var availableSymbols: [SingleSymbols] {
-        if appStorage.isPremium {
+        if appStorage.isValidMember {
             return Self.supportedSymbols
         } else {
             return Array(Self.supportedSymbols.prefix(200))

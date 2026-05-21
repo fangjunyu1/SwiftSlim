@@ -14,7 +14,7 @@ struct SingleSymbols: Identifiable {
     var keywords: [String]
     var keywords_en: [String]
     
-    // MARK: - 完整符号列表
+    // MARK: - 完整符号列表 - 717 个
     static let listSymbols: [SingleSymbols] = [
         
         // ========== 书写与编辑 ==========

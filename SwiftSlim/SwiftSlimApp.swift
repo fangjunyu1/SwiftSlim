@@ -16,11 +16,18 @@ import SwiftUI
 @main
 struct SwiftSlimApp: App {
     @StateObject private var appStorage = AppStorageManager.shared
+    @StateObject private var iapManager = IAPManager.shared
     @Environment(\.scenePhase) private var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             RootView()
+                .task {
+                    await iapManager.loadProduct()   // 加载产品信息
+                    await iapManager.handleTransactions()   // 加载内购交易更新
+                }
                 .environmentObject(appStorage)
+                .environmentObject(iapManager)
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {

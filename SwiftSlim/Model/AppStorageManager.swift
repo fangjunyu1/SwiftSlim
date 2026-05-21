@@ -23,11 +23,17 @@ final class AppStorageManager: ObservableObject {
     // 防止循环写入标志
     private var isLoading = false
     
+    // MARK: - 内购会员
+    // 永久会员标识，内购产品ID - 20240523
+    @Published var isLifetime = false { didSet {updateValue(key: "isLifetime",newValue: isLifetime,oldValue: oldValue )}}
+    // 会员有效期
+    @Published var expirationDate: Double = Date.distantPast.timeIntervalSince1970 { didSet {updateValue(key: "expirationDate",newValue: expirationDate,oldValue: oldValue )}}
     // 判断用户是否为会员
-    var isPremium: Bool {
-        false
+    var isValidMember: Bool {
+        isLifetime || Date(timeIntervalSince1970: expirationDate) > Date()
     }
-    
+
+    // MARK: - 管理属性
     // 用户名称
     // 1.0.3 版本之前为 userName，但是默认值为 Developer，现在重新名称。
     // 受影响版本为 1.0.3 之前，大概 20 个用户
@@ -117,7 +123,14 @@ extension AppStorageManager {
             isLoading = false
             print("退出UserDefaults同步")
         } // 还原加载进度标志
+        
         let defaults = UserDefaults.standard
+        
+        // 内购会员
+        isLifetime = defaults.bool(forKey: "isLifetime")    // 永久会员
+        expirationDate = defaults.double(forKey: "expirationDate")  // 会员有效期
+        
+        // 普通属性
         userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
         userImageName = defaults.string(forKey: "userImageName")  ?? ""         // 用户头像
         if let idString = defaults.string(forKey: "avatarUpdatedUUID") {
@@ -165,6 +178,9 @@ extension AppStorageManager {
         } // 还原加载进度标志
         let store = NSUbiquitousKeyValueStore.default
         
+        loadValueFromiCloud(key: "isLifetime")    // 永久会员
+        loadValueFromiCloud(key: "expirationDate")    // 会员有效期
+        
         // loadValueFromiCloud(key: "hasCompletedOnboarding")  // 是否完成引导页，不从 iCloud 读取引导页状态
         loadValueFromiCloud(key: "userName")    // 用户名
         loadValueFromiCloud(key: "userImageName")   // 用户头像
@@ -194,7 +210,14 @@ extension AppStorageManager {
             
         // 引导页不同步到 iCloud
         // case "hasCompletedOnboarding": hasCompletedOnboarding = store.bool(forKey: key)
-            
+        
+        // MARK: - 会员相关属性
+        // 永久会员
+        case "isLifetime": isLifetime = store.bool(forKey: key)
+        // 会员有效期
+        case "expirationDate": expirationDate = store.double(forKey: key)
+        
+        // MARK: - 其他属性
         case "userName": userName = store.string(forKey: key) ?? "Developer"
         case "userImageName":
             print("loadValueFromiCloud - 本地头像文件路径：\(store.string(forKey: key) ?? "没有iCloud" )")
