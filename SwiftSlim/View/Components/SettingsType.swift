@@ -15,6 +15,7 @@ enum SettingsType: Int, Identifiable, CaseIterable {
     case aboutUs
     case acknowLedgements
     case openSource
+    case pro
     
     var id: Int {
         rawValue
@@ -34,13 +35,15 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             "acknowLedgements"
         case .openSource:
             "openSource"
+        case .pro:
+            "pro"
         }
     }
     
     var color: Color {
         switch self {
         case .feedback:
-            Color(hex: "AD5CFF")
+            Color(hex: "3B79FD")
         case .privacy:
             Color(hex: "5E5E5E")
         case .termsOfUse:
@@ -51,6 +54,8 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             Color(hex: "F04B4B")
         case .openSource:
             Color(hex: "D69F3C")
+        case .pro:
+            Color(hex: "A506D7")
         }
     }
     
@@ -68,6 +73,8 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             "Acknowledgements"
         case .openSource:
             "Open Source"
+        case .pro:
+            "Pro"
         }
     }
     
@@ -90,6 +97,9 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             
         case .openSource:
                 .url(URL(string: "https://github.com/fangjunyu1/SwiftSlim")!)
+            
+        case .pro:
+                .destination(AnyView(ProView()))
         }
     }
 }

@@ -83,14 +83,20 @@ struct SettingsView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             
-            VStack(spacing: 36) {
+            VStack(spacing: 16) {
                 accountSection
                 
+                // 会员
+                SettingsItemView(item: SettingsType.pro)
+                    .cardStyle()
+                
+                // 支持
                 settingsSection(
                     title: "Support",
                     items: supportItems
                 )
                 
+                // 关于
                 settingsSection(
                     title: "About",
                     items: aboutItems
@@ -156,8 +162,8 @@ private extension SettingsView {
     @ViewBuilder
     func settingsSection(title: LocalizedStringKey, items: [SettingsType]) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .modifier(PromptText())
+//            Text(title)
+//                .modifier(PromptText())
             
             VStack(spacing: 0) {
                 ForEach(Array(items.enumerated()), id: \.element) { index, item in
