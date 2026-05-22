@@ -443,6 +443,9 @@ struct PreviewItemView: View {
     
     // 复制代码
     private func copyCode() {
+        // 触发振动
+        HapticManager.shared.selectionChanged()
+        
         UIPasteboard.general.string = item.code
         
         withAnimation(.easeInOut(duration: 0.2)) {
