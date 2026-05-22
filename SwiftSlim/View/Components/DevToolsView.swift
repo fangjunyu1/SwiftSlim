@@ -46,7 +46,7 @@ struct DevToolsView: View {
                     .lineLimit(2)
                     .fixedSize(horizontal: false, vertical: true)
                 Text(LocalizedStringKey(tool.description))
-                    .modifier(NotesText())
+                    .modifier(Caption2Text())
                     .lineLimit(2)
                     .fixedSize(horizontal: false, vertical: true)
             }

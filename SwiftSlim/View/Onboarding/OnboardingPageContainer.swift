@@ -157,10 +157,29 @@ struct ToolboxStage: View {
     }
 }
 
+enum readySize {
+    case small
+    case big
+}
+
 // 准备好了吗？
 struct ReadyStage: View {
     @State private var animateIn = false
+    
+    var backgroundSize: readySize = readySize.big
 //    let step: OnboardingStep
+    
+    var backgroundRadialGradientRadius: Double {
+        backgroundSize == .big ? 200 : 150
+    }
+    
+    var backgroundRadialGradientSize: Double {
+        backgroundSize == .big ? 210 : 160
+    }
+    
+    var viewSize: Double {
+        backgroundSize == .big ? 250 : 200
+    }
     
     var body: some View {
         ZStack {
@@ -187,14 +206,14 @@ struct ReadyStage: View {
                         gradient: Gradient(colors: [Color(hex: "1000E3")]),
                         center: .center,
                         startRadius: 20,
-                        endRadius: 200
+                        endRadius: backgroundRadialGradientRadius
                     )
-                    .frame(width: 210, height: 210)
+                    .frame(width: backgroundRadialGradientSize, height: backgroundRadialGradientSize)
                     .opacity(0.5)
                     .cornerRadius(90)
-                    .blur(radius: 40)
+                    .blur(radius: 30)
                 }
-                .frame(height: 250)
+                .frame(height: viewSize)
                 .animation(.spring(response: 0.65, dampingFraction: 0.8), value: animateIn)
             
             RotatingBorderView()

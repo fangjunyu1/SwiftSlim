@@ -19,7 +19,7 @@ struct SymbolsItemView: View {
                     .imageScale(.large)
                     .foregroundStyle(Color.accentColor)
                 Text(symbol.name)
-                    .modifier(NotesText())
+                    .modifier(Caption2Text())
                     .lineLimit(1)
                     .frame(width: 60)
             }

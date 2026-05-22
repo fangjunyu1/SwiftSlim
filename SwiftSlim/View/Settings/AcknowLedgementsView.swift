@@ -87,7 +87,7 @@ struct AcknowLedgementsTitle: View {
                 .modifier(SettingsTitle())
                 .multilineTextAlignment(.center)
             Text(LocalizedStringKey(describe))
-                .modifier(PromptGrayText())
+                .modifier(FootnoteGrayText())
                 .multilineTextAlignment(.center)
         }
         .padding(20)

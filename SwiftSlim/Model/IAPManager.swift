@@ -6,12 +6,33 @@
 //
 
 import StoreKit
+import SwiftUI
 
 // 内购商品结构
-struct IAPProduct {
+struct IAPProduct: Identifiable {
     var name: String    // 本地展示名，如 “按月”
     var id: String  // App Store 产品 ID
-    var priceSuffix: String?    // 价格后缀，如 “/月” 或 “/年”
+    var priceSuffix: LocalizedStringKey    // 价格后缀，如 “/月” 或 “/年”
+    var tag: LocalizedStringKey?    // 标签，早鸟价，买断制
+    var tagColor: Color?    // 标签颜色
+    var isRecommend: Bool   // 是否推荐
+}
+
+struct IAPDisplayProduct: Identifiable {
+    let product: Product        // StoreKit 返回的真实商品
+    let info: IAPProduct        // 你自己配置的展示信息
+    
+    var id: String {
+        product.id
+    }
+    
+    var displayName: String {
+        product.displayName
+    }
+    
+    var displayPrice: String {
+        product.displayPrice
+    }
 }
 
 @available(iOS 15.0, *)
@@ -23,12 +44,13 @@ class IAPManager: ObservableObject {
     
     // 商品信息-价格映射表
     let IAPProductList: [IAPProduct] = [    //  需要内购的产品ID数组
-        IAPProduct(name: "By Month", id: "com.fangjunyu.Qinote.monthly", priceSuffix: "Month"),
-        IAPProduct(name: "By Year", id: "com.fangjunyu.Qinote.yearly", priceSuffix: "Year"),
-        IAPProduct(name: "Lifetime", id: "com.fangjunyu.Qinote.lifetime")
+        IAPProduct(name: "By Month", id: "com.fangjunyu.Qinote.monthly", priceSuffix: "Monthly", isRecommend: false),
+        IAPProduct(name: "By Year", id: "com.fangjunyu.Qinote.yearly", priceSuffix: "Annual", tag: "Early Bird", tagColor: Color(hex: "3477F5"), isRecommend: true),
+        IAPProduct(name: "One-Time", id: "com.fangjunyu.Qinote.lifetime", priceSuffix: "Lifetime", tag: "One-Time", tagColor: Color(hex: "FF8140"), isRecommend: false)
     ]
     
-    var products: [Product] = []    // 存储从 App Store 获取的内购商品信息
+    // 产品信息
+    @Published private(set) var displayProducts: [IAPDisplayProduct] = []    // 存储从 App Store 获取的内购商品信息
     
     // 获取产品信息的方法
     func loadProduct() async {
@@ -40,8 +62,16 @@ class IAPManager: ObservableObject {
                 // 抛出内购信息为空的错误,可能是所有的产品ID都不存在，中断执行，不会return返回products产品信息
                 throw StoreError.IAPInformationIsEmpty
             }
-            products = fetchedProducts  // 将获取的内购商品保存到products变量
-            print("成功加载产品: \(products)")    // 输出内购商品数组信息
+            displayProducts = IAPProductList.compactMap { iapProduct in  // 将获取的内购商品保存到 products 变量
+                guard let storeProduct = fetchedProducts.first(where: { $0.id == iapProduct.id }) else {
+                    return nil
+                }
+                return IAPDisplayProduct(
+                    product: storeProduct,
+                    info: iapProduct
+                )
+            }
+            print("成功加载产品: \(displayProducts)")    // 输出内购商品数组信息
         } catch {
             print("加载产品失败：\(error)")    // 输出报错
         }
@@ -104,7 +134,7 @@ class IAPManager: ObservableObject {
             do {
                 let transaction = try checkVerified(result) // 验证交易
                 // --- 1. 永久会员逻辑 -----
-                if transaction.productID == "20240523" {
+                if transaction.productID == "com.fangjunyu.Qinote.lifetime" {
                     print("进入永久会员逻辑")
                     if transaction.revocationDate == nil {
                         print("永久会员没有退款，新增永久会员标识")
@@ -148,12 +178,12 @@ class IAPManager: ObservableObject {
     }
     
     // 更新内购商品状态
-    func updatePurchasedState(from transaction: Transaction) {
+    func updatePurchasedState(from transaction: StoreKit.Transaction) {
         let productID = transaction.productID
         print("进入内购商品状态，产品ID：\(productID)")
         
         // ========== 永久会员逻辑 =========
-        if productID == "20240523" {
+        if productID == "com.fangjunyu.Qinote.lifetime" {
             if transaction.revocationDate != nil {
                 // 清理永久会员标识
                 print("永久会员退款，清空标识")
@@ -201,7 +231,7 @@ class IAPManager: ObservableObject {
     
     // 重新加载产品信息。
     func resetProduct() async {
-        self.products = []
+        displayProducts = []
         await loadProduct()    // 调取loadProduct方法获取产品信息
     }
 }

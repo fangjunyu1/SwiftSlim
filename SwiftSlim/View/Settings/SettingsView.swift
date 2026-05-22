@@ -119,7 +119,7 @@ private extension SettingsView {
         HStack {
             Text(verbatim: Bundle.main.version + "（" +  Bundle.main.build + "）")
         }
-        .modifier(NotesText())
+        .modifier(Caption2Text())
     }
 }
 

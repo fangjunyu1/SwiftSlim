@@ -82,10 +82,7 @@ struct OnboardingView: View {
                 Text(verbatim: step.buttonTitle.1)
                     .fontWeight(.bold)
             }
-            .foregroundColor(.white)
-            .frame(width: 240,height: 60)
-            .background(Color(hex: "3762E3"))
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .modifier(ButtonModifier())
         })
         .buttonStyle(PressScaleButtonStyle())
     }

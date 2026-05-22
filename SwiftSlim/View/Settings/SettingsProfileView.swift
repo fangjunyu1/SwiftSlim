@@ -74,7 +74,7 @@ struct SettingsProfileView: View {
     }
     private var userTip: some View {
         Text("ProfilTip")
-            .modifier(PromptGrayText())
+            .modifier(FootnoteGrayText())
             .multilineTextAlignment(.center)
     }
     
