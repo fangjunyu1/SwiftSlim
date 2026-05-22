@@ -62,6 +62,9 @@ struct AboutUsView: View {
             )
             // 关于作者
             Button(action: {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
+                
                 withAnimation {
                     showFangPhoto.toggle()
                 }
@@ -162,6 +165,9 @@ struct AboutUsView: View {
                 }
             }
             Button(action: {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
+                
                 // 打开方君宇的 AppStore 页面
                 openURL(URL(string: "https://apps.apple.com/cn/developer/%E5%90%9B%E5%AE%87-%E6%96%B9/id1746520472")!)
             }, label: {

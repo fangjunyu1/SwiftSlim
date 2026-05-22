@@ -74,6 +74,9 @@ struct CoursesPage: View {
     var completionArea: some View {
         ZStack {
             Button(action: {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
+                
                 // 添加完成的课程序号
                 appStorage.completedCourse.insert(courseNumber)
                 

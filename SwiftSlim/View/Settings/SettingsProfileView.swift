@@ -81,6 +81,9 @@ struct SettingsProfileView: View {
     private var button: some View {
         VStack(spacing: 16) {
             Button(action: {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
+                
                 Task {
                     await saveProfile()
                 }
@@ -110,6 +113,9 @@ struct SettingsProfileView: View {
             .disabled(saveStats == .load)
             
             Button(action: {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
+                
                 draftImage = appStorage.userImage
                 dismiss()
             }, label: {
