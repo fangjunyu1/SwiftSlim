@@ -43,6 +43,8 @@ struct SymbolsItemView: View {
     }
     
     private func copyCode() {
+        // 触发振动
+        HapticManager.shared.selectionChanged()
         UIPasteboard.general.string = symbol.name
         withAnimation(.easeInOut(duration: 0.2)) { didCopy = true }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
