@@ -284,6 +284,9 @@ struct HomeView: View {
         .cornerRadius(10)
         .shadow(radius: 1)
         .onTapGesture {
+            // 触发振动
+            HapticManager.shared.selectionChanged()
+            
             print("修改 currentCode")
             currentCode = DailyTips.randomCode()
         }
