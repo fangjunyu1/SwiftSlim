@@ -18,6 +18,9 @@ struct ProView: View {
     // 年度会员 ID
     private let yearlyProductID = "com.fangjunyu.Qinote.yearly"
     
+    // 当前方案、选择方案的选项高度
+    private let buttonHeight: Double = 60
+    
     private var expirationDateString: String {
         Self.formatExpirationDate(appStorage.expirationDate)
     }
@@ -64,13 +67,9 @@ struct ProView: View {
                         if appStorage.isValidMember {
                             currentPlan
                         }
-#if DEBUG
-                        chooseAPlan
-#else
-                        if !iapManager.products.isEmpty {
+                        if !iapManager.displayProducts.isEmpty {
                             chooseAPlan
                         }
-#endif
                         included
                         purchaseNotice
                         Spacer()
@@ -157,7 +156,7 @@ struct ProView: View {
                 // 高级会员
                 HStack {
                     Text("Pro")
-                        .fontWeight(.bold)
+                        .fontWeight(.medium)
                     Spacer()
                     // 到期时间
                     VStack(alignment: .trailing) {
@@ -166,18 +165,20 @@ struct ProView: View {
                     }
                     .modifier(FootnoteGrayText())
                 }
-                .modifier(ProBg())
+                .frame(height: buttonHeight)
+                .modifier(Pro2Bg())
             }
             if appStorage.isLifetime {
                 // 终身
                 HStack {
                     Text("Lifetime Pro")
-                        .fontWeight(.bold)
+                        .fontWeight(.medium)
                     Spacer()
                     Text("Lifetime Access")
                         .modifier(FootnoteGrayText())
                 }
-                .modifier(ProBg())
+                .frame(height: buttonHeight)
+                .modifier(Pro2Bg())
             }
         }
     }
@@ -233,19 +234,18 @@ struct ProView: View {
                                 .imageScale(.large)
                                 .foregroundStyle(isSelected ? Color.blue : Color.gray)
                         }
-                        .padding(5)
+                        .frame(height: buttonHeight)
                         .modifier(ProBg())
                         .overlay {
                             if isSelected {
                                 RoundedRectangle(cornerRadius: 12)
-                                    .stroke(Color.blue, lineWidth: 2)
+                                    .strokeBorder(Color.blue, lineWidth: 3)
                             }
                         }
                     })
                     .buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal, 5)
         }
         .onAppear {
             selectDefaultProductIfNeeded()

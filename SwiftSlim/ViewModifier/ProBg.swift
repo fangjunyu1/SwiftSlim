@@ -10,8 +10,20 @@ import SwiftUI
 struct ProBg: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .padding(10)
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
             .background(Color("WhiteAndBlack"))
             .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
+
+struct Pro2Bg: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(.vertical, 6)
+            .padding(.horizontal, 16)
+            .background(Color("WhiteAndBlack"))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+}
+
