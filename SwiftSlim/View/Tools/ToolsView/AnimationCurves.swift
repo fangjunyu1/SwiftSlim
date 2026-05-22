@@ -96,6 +96,8 @@ struct AnimationCurves: View {
     // MARK: 全部播放按钮
     private var playAllButton: some View {
         Button {
+            // 触发振动
+            HapticManager.shared.selectionChanged()
             playAllTrigger = Date()
         } label: {
             HStack {
@@ -170,6 +172,8 @@ struct AnimationCurvesItem: View {
     private var playButton: some View {
         Button {
             guard !isPlaying else { return }
+            // 触发振动
+            HapticManager.shared.selectionChanged()
             playAnimation()
         } label: {
             Image(systemName: isPlaying ? "pause.fill" : "play.fill")
@@ -304,6 +308,8 @@ struct CustomSpringAnimationView: View {
             
             // 播放按钮
             Button {
+                // 触发振动
+                HapticManager.shared.selectionChanged()
                 guard !isPlaying else { return }
                 playAnimation()
             } label: {
@@ -341,8 +347,12 @@ struct CustomSpringAnimationView: View {
                     .font(.subheadline.monospacedDigit())
                     .foregroundStyle(Color("CurvesColor"))
             }
-            Slider(value: value, in: range)
+            Slider(value: value, in: range, step: 0.1)
                 .tint(Color("CurvesColor"))
+                .onChange(of: value.wrappedValue) { value in
+                    // 触发振动
+                    HapticManager.shared.selectionChanged()
+                }
         }
     }
     

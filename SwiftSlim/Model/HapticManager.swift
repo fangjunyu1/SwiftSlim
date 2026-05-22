@@ -12,6 +12,8 @@ struct HapticManager {
     private init() {}
     
     private let selectionGenerator = UISelectionFeedbackGenerator()
+    private let generator = UINotificationFeedbackGenerator()
+    
     private var isEnabled: Bool = true
 //    {
         // AppStorageManager.shared.isVibration
@@ -19,25 +21,21 @@ struct HapticManager {
     
     func selectionChanged() {
         guard isEnabled else { return }
-        selectionGenerator.prepare()
         selectionGenerator.selectionChanged()
     }
     
     func success() {
         guard isEnabled else { return }
-        let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
     }
     
     func error() {
         guard isEnabled else { return }
-        let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.error)
     }
     
     func warning() {
         guard isEnabled else { return }
-        let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.warning)
     }
 }
