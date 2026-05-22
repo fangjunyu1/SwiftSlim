@@ -42,6 +42,8 @@ class IAPManager: ObservableObject {
     
     private init() {}
     
+    private let oneTimeID = "com.fangjunyu.Qinote.lifetime"
+    
     // 商品信息-价格映射表
     let IAPProductList: [IAPProduct] = [    //  需要内购的产品ID数组
         IAPProduct(name: "By Month", id: "com.fangjunyu.Qinote.monthly", priceSuffix: "Monthly", isRecommend: false),
@@ -78,7 +80,7 @@ class IAPManager: ObservableObject {
     }
     
     // purchaseProduct：购买商品的方法，返回购买结果
-    func purchaseProduct(_ product: Product,completion:(Bool) -> Void) async {
+    func purchaseProduct(_ product: Product,completion:(ProductResultEnum) -> Void) async {
         // 在这里输出要购买的商品id
         print("Purchasing product: \(product.id)")
         do {
@@ -88,21 +90,21 @@ class IAPManager: ObservableObject {
                 let transaction = try checkVerified(verification)    // 验证交易
                 updatePurchasedState(from: transaction)    // 更新内购商品的购买状态
                 await transaction.finish()    // 告诉系统交易完成
-                completion(true)
+                completion(.purchase_Success)
                 print("交易成功：\(result)")
             case .userCancelled:    // 用户取消交易
                 print("用户取消交易：\(result)")
-                completion(false)
+                completion(.stateless)
             case .pending:    // 购买交易被挂起
                 print("购买交易被挂起：\(result)")
-                completion(false)
+                completion(.purchase_Failed)
             default:    // 其他情况
-                completion(false)
+                completion(.purchase_Failed)
                 throw StoreError.failedVerification    // 购买失败
             }
         } catch {
             print("购买失败：\(error)")
-            completion(false)
+            completion(.purchase_Failed)
             await resetProduct()    // 购买失败后重置 product 以便允许再次尝试购买
         }
     }
@@ -123,7 +125,7 @@ class IAPManager: ObservableObject {
     }
     
     // 检查所有交易，如果用户退款，则取消内购标识。
-    func checkAllTransactions(state:(Bool) -> Void) async {
+    func checkAllTransactions(state:(ProductResultEnum) -> Void) async {
         print("进入 checkAllTransactions 方法，检查所有交易")
         
         var latestExpiration: Date?
@@ -134,7 +136,7 @@ class IAPManager: ObservableObject {
             do {
                 let transaction = try checkVerified(result) // 验证交易
                 // --- 1. 永久会员逻辑 -----
-                if transaction.productID == "com.fangjunyu.Qinote.lifetime" {
+                if transaction.productID == oneTimeID {
                     print("进入永久会员逻辑")
                     if transaction.revocationDate == nil {
                         print("永久会员没有退款，新增永久会员标识")
@@ -144,37 +146,48 @@ class IAPManager: ObservableObject {
                     continue   // 不 return，只是跳过本次循环
                 }
                 
-                // --- 2. 订阅逻辑 -------
+                // --- 2. 订阅退款逻辑 -------
                 if let revoke = transaction.revocationDate {
-                    print("订阅商品有退款，订阅时间为nil")
+                    print("订阅商品有退款，订阅退款时间为 \(revoke)")
                     // 有退款就清空
                     latestExpiration = nil
                     continue
                 }
                 
+                // --- 3. 订阅时间逻辑 -------
                 if let expiration = transaction.expirationDate {
                     // 多订阅，取最新过期时间（有效期最长的）
                     latestExpiration = max(latestExpiration ?? expiration, expiration)
-                    print("最新的订阅时间:\(latestExpiration?.formatted())")
+                    print("最新的订阅时间:\(latestExpiration?.formatted() ?? "Nil")")
                 }
                 
+                // --- 4. 完成交易 -------
                 await transaction.finish()
             } catch {
                 print("交易处理失败：\(error)")
+                state(ProductResultEnum.restore_Failed)
+                return
             }
         }
         
         // ---- 扫描完成后统一更新状态 ----
         AppStorageManager.shared.isLifetime = lifetimePurchased
         
-        print("全部扫描完成，更新状态，永久会员标识:\(lifetimePurchased),最近的订阅时间:\(latestExpiration?.formatted())")
+        print("全部扫描完成，更新状态，永久会员标识:\(lifetimePurchased),最近的订阅时间:\(latestExpiration?.formatted() ?? "Nil")")
+        
         if let exp = latestExpiration {
             AppStorageManager.shared.expirationDate = exp.timeIntervalSince1970
         } else {
             AppStorageManager.shared.expirationDate = 0
         }
         
-        state(true)
+        // 如果会员有效时间大于当前时间，或者有永久会员，返回成功
+        // 否则，返回失败
+        if let latestData = latestExpiration, latestData > Date() || lifetimePurchased {
+            state(ProductResultEnum.restore_Success)
+        } else {
+            state(ProductResultEnum.restore_Failed)
+        }
     }
     
     // 更新内购商品状态
@@ -183,7 +196,7 @@ class IAPManager: ObservableObject {
         print("进入内购商品状态，产品ID：\(productID)")
         
         // ========== 永久会员逻辑 =========
-        if productID == "com.fangjunyu.Qinote.lifetime" {
+        if productID == oneTimeID {
             if transaction.revocationDate != nil {
                 // 清理永久会员标识
                 print("永久会员退款，清空标识")

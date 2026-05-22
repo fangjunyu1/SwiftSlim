@@ -14,6 +14,7 @@ struct ProView: View {
     @State private var selectedProductID: String?
     @State private var isLoading = false    // 加载画布
     @State private var purchaseProductTask: Task<Void, Never>?  // 内购 Task
+    @State private var ProductResultStatus: ProductResultEnum?
     
     // 年度会员 ID
     private let yearlyProductID = "com.fangjunyu.Qinote.yearly"
@@ -91,6 +92,9 @@ struct ProView: View {
                 loadingView
             }
         }
+        .sheet(item: $ProductResultStatus) { result in
+            ProductResultView(result: result)
+        }
     }
     
     // 加载视图
@@ -116,8 +120,9 @@ struct ProView: View {
                 Spacer()
             }
             ProgressView("loading...")
+                .font(.subheadline)
                 .padding(20)
-                .background(Color.white.opacity(0.8))
+                .background(Color("WhiteAndBlack").opacity(0.8))
                 .cornerRadius(10)
             
         }
@@ -222,7 +227,7 @@ struct ProView: View {
                                         .font(.subheadline)
                                         .fontWeight(.medium)
                                     HStack(spacing: 2) {
-                                        Text("/")
+                                        Text(verbatim: "/")
                                         Text(product.info.priceSuffix)
                                     }
                                     .font(.footnote)
@@ -240,6 +245,24 @@ struct ProView: View {
                             if isSelected {
                                 RoundedRectangle(cornerRadius: 12)
                                     .strokeBorder(Color.blue, lineWidth: 3)
+                            }
+                        }
+                        .overlay {
+                            if product.info.isRecommend {
+                                VStack {
+                                    HStack {
+                                        Spacer()
+                                        Text("Recommended")
+                                            .font(.caption)
+                                            .fontWeight(.medium)
+                                            .foregroundStyle(Color.white)
+                                            .padding(3)
+                                            .padding(.horizontal, 8)
+                                            .background(Color(hex: "3477F5"))
+                                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                                    }
+                                    Spacer()
+                                }
                             }
                         }
                     })
@@ -340,6 +363,14 @@ struct ProView: View {
                         print("完成恢复购买")
                         // 移除加载动画
                         isLoading = false
+                        // 弹出完成提示
+                        if result == .restore_Success {
+                            print("restore_Success")
+                            ProductResultStatus = .restore_Success
+                        } else if result == .restore_Failed  {
+                            print("restore_Failed")
+                            ProductResultStatus = .restore_Failed
+                        }
                     }
                 }
             }, label: {
@@ -366,6 +397,12 @@ struct ProView: View {
                         print("完成购买")
                         // 移除加载动画
                         isLoading = false
+                        // 弹出完成提示
+                        if result == .purchase_Success {
+                            ProductResultStatus = .purchase_Success
+                        } else if result == .purchase_Failed  {
+                            ProductResultStatus = .purchase_Failed
+                        }
                     }
                 }
             }, label: {
@@ -381,6 +418,17 @@ struct ProView: View {
             })
         }
     }
+}
+
+enum ProductResultEnum: Identifiable {
+    var id: UUID {
+        UUID()
+    }
+    case purchase_Success
+    case purchase_Failed
+    case restore_Success
+    case restore_Failed
+    case stateless
 }
 
 struct PreviewProView: View {
