@@ -21,6 +21,8 @@ struct SystemColorBlock: View {
 
     var body: some View {
         Button {
+            // 触发振动
+            HapticManager.shared.selectionChanged()
             UIPasteboard.general.string = color.hexColor
             isCopied = true
             tapCount += 1

@@ -12,6 +12,8 @@ struct GradientsColorBlock: View {
     var gColor: GradientsColor
 
     private func copyCode() {
+        // 触发振动
+        HapticManager.shared.selectionChanged()
         UIPasteboard.general.string = gColor.code
         withAnimation(.easeInOut(duration: 0.2)) { isCopied = true }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
