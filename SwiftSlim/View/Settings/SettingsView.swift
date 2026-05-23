@@ -97,15 +97,30 @@ private extension SettingsView {
                 // 用户头像
                 SettingsEnum.userImageView(displayName: appStorage.userDisplayName, image: appStorage.userImage, size: 68, fontSize: .title)
                 
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 6) {
                     Text(appStorage.userDisplayName)
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                     
-                    Text("Free Account")
-                        .font(.footnote)
-                        .foregroundStyle(Color.gray)
+                    if appStorage.isValidMember {
+                        Text(verbatim: "PRO")
+                            .font(.caption2)
+                            .fontWeight(.bold)
+                            .foregroundStyle(Color("GoldColor"))
+                            .padding(.vertical, 2)
+                            .padding(.horizontal, 10)
+                            .background(Color.gold.opacity(0.1))
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .strokeBorder(Color.gold, lineWidth: 1)
+                            }
+                    } else {
+                        Text("Free Account")
+                            .font(.footnote)
+                            .foregroundStyle(Color.gray)
+                    }
                 }
                 
                 Spacer()
