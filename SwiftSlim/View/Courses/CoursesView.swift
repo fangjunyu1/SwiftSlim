@@ -21,7 +21,13 @@ struct CoursesChapter: Identifiable {
 }
 
 struct CoursesView: View {
+    @EnvironmentObject var iapManager: IAPManager
+    @EnvironmentObject var appStorage: AppStorageManager
+    
+    // 显示会员视图
+    @State private var showProView = false
     @Binding var selected: contentType
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
@@ -38,6 +44,11 @@ struct CoursesView: View {
         .padding(.top, 30)
         .safeAreaInset(edge: .bottom) {
             Spacer().frame(height: 120)
+        }
+        .sheet(isPresented: $showProView) {
+            ProView(showCloseButton: true)
+                .environmentObject(appStorage)
+                .environmentObject(iapManager)
         }
     }
     
@@ -75,7 +86,9 @@ struct CoursesView: View {
                 Spacer()
             }
             Button(action: {
-                print("点击了敬请期待")
+                if !appStorage.isValidMember {
+                    showProView = true
+                }
             }, label:  {
                 Text("Coming Soon")
                     .font(.headline)
@@ -86,7 +99,7 @@ struct CoursesView: View {
                     .background(Color("GoldColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             })
-            .disabled(true)
+            .disabled(appStorage.isValidMember)
         }
         .padding(26)
         .background {
