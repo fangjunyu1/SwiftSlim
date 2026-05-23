@@ -102,7 +102,6 @@ private extension SettingsView {
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
-                    
                     if appStorage.isValidMember {
                         Text(verbatim: "PRO")
                             .font(.caption2)
@@ -116,10 +115,13 @@ private extension SettingsView {
                                 RoundedRectangle(cornerRadius: 5)
                                     .strokeBorder(Color.gold, lineWidth: 1)
                             }
+                            .frame(height: 18)
+                    
                     } else {
                         Text("Free Account")
                             .font(.footnote)
                             .foregroundStyle(Color.gray)
+                            .frame(height: 18)
                     }
                 }
                 
