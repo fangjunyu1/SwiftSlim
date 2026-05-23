@@ -26,6 +26,9 @@ struct OnboardingView: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 // 进度条
                 progressView
+                
+                Spacer()
+                
                 // 按钮
                 actionButton
                 

@@ -103,6 +103,11 @@ struct SettingsView: View {
                 )
                 
                 versionSection
+                
+                // 测试按钮
+                #if DEBUG
+                testButton
+                #endif
             }
             .padding(.bottom, 120)
             
@@ -111,6 +116,17 @@ struct SettingsView: View {
         .task(id: appStorage.avatarUpdatedUUID) {
             await loadAvatar()
         }
+    }
+}
+
+private extension SettingsView {
+    var testButton: some View {
+        Button(action: {
+            appStorage.hasCompletedOnboarding = false
+        }, label: {
+            Text(verbatim: "restart Onboarding")
+                .font(.footnote)
+        })
     }
 }
 

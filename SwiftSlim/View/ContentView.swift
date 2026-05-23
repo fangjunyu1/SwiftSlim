@@ -15,8 +15,6 @@ struct ContentView: View {
     }
     
     var body: some View {
-        // 待优化 NavigationView
-        NavigationView {
             ZStack {
                 switch selected {
                 case .home:
@@ -37,8 +35,6 @@ struct ContentView: View {
                 }
                 ContentFrostedTabView(selectedTab: $selected)
             }
-            StandbyView()
-        }
     }
 }
 
