@@ -32,6 +32,7 @@ struct SwiftSlimApp: App {
                 }
                 .environmentObject(appStorage)
                 .environmentObject(iapManager)
+                .environmentObject(avatarImage)
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SymbolsView: View {
+    @EnvironmentObject var iapManager: IAPManager
     @EnvironmentObject var appStorage: AppStorageManager
     // 搜索类型和内容
     @State private var selectedCategory: SymbolsVersion? = nil
@@ -114,10 +115,9 @@ struct SymbolsView: View {
             AppRating.checkReviewIfNeeded(appStorage: appStorage)
         }
         .sheet(isPresented: $showProView) {
-            ProView()
-                .safeAreaInset(edge: .top) {
-                    Spacer().frame(height: 50)
-                }
+            ProView(showCloseButton: true)
+                .environmentObject(appStorage)
+                .environmentObject(iapManager)
         }
     }
 }

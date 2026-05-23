@@ -99,7 +99,7 @@ enum SettingsType: Int, Identifiable, CaseIterable {
                 .url(URL(string: "https://github.com/fangjunyu1/SwiftSlim")!)
             
         case .pro:
-                .destination(AnyView(ProView()))
+                .destination(AnyView(ProView(showCloseButton: false)))
         }
     }
 }

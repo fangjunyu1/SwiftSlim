@@ -9,12 +9,15 @@ import SwiftUI
 import StoreKit
 
 struct ProView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var appStorage: AppStorageManager
     @EnvironmentObject var iapManager: IAPManager
     @State private var selectedProductID: String?
     @State private var isLoading = false    // 加载画布
     @State private var operationTask: Task<Void, Never>?  // 内购 Task
     @State private var productResultStatus: ProductResultEnum?
+    
+    var showCloseButton: Bool
     
     // 年度会员 ID
     private let yearlyProductID = "com.fangjunyu.Qinote.yearly"
@@ -91,6 +94,8 @@ struct ProView: View {
         }
         .sheet(item: $productResultStatus) { result in
             ProductResultView(result: result)
+                .environmentObject(appStorage)
+                .environmentObject(iapManager)
         }
         .task {
             if iapManager.displayProducts.isEmpty {
@@ -98,6 +103,27 @@ struct ProView: View {
                 selectDefaultProductIfNeeded()
             }
         }
+        .safeAreaInset(edge: .top) {
+            if showCloseButton {
+                closeButton
+            }
+        }
+    }
+    
+    // 关闭视图
+    var closeButton: some View {
+        HStack {
+            Spacer()
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.title.bold())
+                    .foregroundStyle(.secondary)
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(30)
     }
     
     // 加载视图
@@ -330,10 +356,13 @@ struct ProView: View {
                         // 弹出完成提示
                         switch result {
                         case .restoreSuccess:
+                            print("恢复成功")
                             productResultStatus = .restoreSuccess
-                        case .purchaseFailed:
+                        case .restoreFailed:
+                            print("恢复失败")
                             productResultStatus = .restoreFailed
                         default:
+                            print("进入其他选择")
                             break
                         }
                     }
@@ -406,7 +435,7 @@ struct PreviewProView: View {
     @StateObject var iapManager = IAPManager.shared
     var body: some View {
         NavigationView {
-            ProView()
+            ProView(showCloseButton: false)
                 .environmentObject(appStorage)
                 .environmentObject(iapManager)
                 .task {

@@ -185,10 +185,13 @@ class IAPManager: ObservableObject {
         // 否则，返回失败
         
         let hasValidSubscription = latestExpiration.map { $0 > Date() } ?? false
+        print("是否有会员？:\(hasValidSubscription)")
         
         if lifetimePurchased || hasValidSubscription {
+            print("当前是会员，返回 .restoreSuccess")
             state(ProductResultEnum.restoreSuccess)
         } else {
+            print("不是任何会员，返回 .restoreFailed ")
             state(ProductResultEnum.restoreFailed)
         }
     }
