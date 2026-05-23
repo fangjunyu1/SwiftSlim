@@ -17,6 +17,7 @@ import SwiftUI
 struct SwiftSlimApp: App {
     @StateObject private var appStorage = AppStorageManager.shared
     @StateObject private var iapManager = IAPManager.shared
+    @StateObject private var avatarImage = AvatarImage.shared
     @Environment(\.scenePhase) private var scenePhase
     
     var body: some Scene {
@@ -25,6 +26,9 @@ struct SwiftSlimApp: App {
                 .task {
                     await iapManager.loadProduct()   // 加载产品信息
                     await iapManager.handleTransactions()   // 加载内购交易更新
+                }
+                .task(id: appStorage.avatarUpdatedUUID) {
+                    await avatarImage.loadAvatar(appStorage: appStorage)
                 }
                 .environmentObject(appStorage)
                 .environmentObject(iapManager)
