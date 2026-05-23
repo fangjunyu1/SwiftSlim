@@ -27,3 +27,13 @@ struct Pro2Bg: ViewModifier {
     }
 }
 
+
+struct Pro3Bg: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(12)
+            .background(Color("WhiteAndBlack"))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+}
+

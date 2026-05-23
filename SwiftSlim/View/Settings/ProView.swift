@@ -200,14 +200,14 @@ struct ProView: View {
                             Spacer()
                             Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
                                 .imageScale(.large)
-                                .foregroundStyle(isSelected ? Color.blue : Color.gray)
+                                .foregroundStyle(isSelected ? Color("AppColor2") : Color.gray)
                         }
                         .frame(height: 60)
                         .modifier(ProBg())
                         .overlay {
                             if isSelected {
                                 RoundedRectangle(cornerRadius: 12)
-                                    .strokeBorder(Color.blue, lineWidth: 3)
+                                    .strokeBorder(Color("AppColor2"), lineWidth: 3)
                             }
                         }
                         .overlay {
@@ -221,7 +221,7 @@ struct ProView: View {
                                             .foregroundStyle(Color.white)
                                             .padding(3)
                                             .padding(.horizontal, 8)
-                                            .background(Color(hex: "3477F5"))
+                                            .background(Color("AppColor2"))
                                             .clipShape(RoundedRectangle(cornerRadius: 5))
                                     }
                                     Spacer()
@@ -257,23 +257,24 @@ struct ProView: View {
                         VStack {
                             RoundedRectangle(cornerRadius: 5)
                                 .fill(pro.color)
-                                .frame(width: 30, height: 30)
+                                .frame(width: 33, height: 33)
                                 .overlay {
                                     Image(pro.icon)
                                         .resizable()
                                         .renderingMode(.template)
                                         .scaledToFit()
                                         .foregroundStyle(.white)
-                                        .frame(width: 20, height: 20)
+                                        .frame(width: 22, height: 22)
                                 }
                             Spacer()
                         }
                         // 描述
                         VStack(alignment: .leading, spacing: 3) {
                             Text(pro.name)
-                                .font(.footnote)
+                                .font(.subheadline)
                             Text(pro.description)
-                                .modifier(Caption2Text())
+                                .font(.caption)
+                                .foregroundStyle(Color.secondary)
                         }
                         Spacer()
                     }
@@ -284,7 +285,7 @@ struct ProView: View {
                     }
                 }
             }
-            .modifier(ProBg())
+            .modifier(Pro3Bg())
         }
     }
     
@@ -381,7 +382,7 @@ struct ProView: View {
                     .minimumScaleFactor(0.5)
                     .foregroundColor(.white)
                     .frame(width: 240,height: 60)
-                    .background(selectedProduct == nil ? Color.gray : Color(hex: "3477F5"))
+                    .background(selectedProduct == nil ? Color.gray : Color("AppColor2"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             })
             .disabled(selectedProduct == nil)
