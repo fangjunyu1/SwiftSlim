@@ -26,27 +26,27 @@ struct ProductResultView: View {
     }
     
     // Lottie 动画
-    var LottieName: String? {
+    private var lottieName: String? {
         switch result {
-        case .purchase_Success, .restore_Success:
+        case .purchaseSuccess, .restoreSuccess:
             "check"
-        case .purchase_Failed, .restore_Failed:
-            "checkmark"
+        case .purchaseFailed, .restoreFailed:
+            "error"
         case .stateless:
             nil
         }
     }
     
     // 完成状态
-    var ResultName: LocalizedStringKey? {
+    private var resultName: LocalizedStringKey? {
         switch result {
-        case .purchase_Success:
+        case .purchaseSuccess:
             "Purchased"
-        case .purchase_Failed:
+        case .purchaseFailed:
             "Purchase Failed"
-        case .restore_Success:
+        case .restoreSuccess:
             "Restored"
-        case .restore_Failed:
+        case .restoreFailed:
             "Restore Failed"
         case .stateless:
             nil
@@ -58,7 +58,7 @@ struct ProductResultView: View {
             VStack(spacing: 20) {
                 lottie
                 proTitle
-                proInfo
+                CurrentPlanView()
                     .padding(.top, 20)
                     .padding(.bottom, 50)
                 proButton
@@ -72,8 +72,8 @@ struct ProductResultView: View {
     @ViewBuilder
     var lottie: some View {
         // Lottie 动画
-        if let LottieName = LottieName {
-            LottieView(filename: LottieName)
+        if let lottieName = lottieName {
+            LottieView(filename: lottieName)
                 .modifier(LottieModifier())
         }
     }
@@ -81,8 +81,8 @@ struct ProductResultView: View {
     var proTitle: some View {
         VStack(spacing: 16) {
             // 完成状态
-            if let ResultName = ResultName {
-                Text(ResultName)
+            if let resultName = resultName {
+                Text(resultName)
                     .font(.title)
                     .fontWeight(.bold)
                     .lineLimit(2)
@@ -94,40 +94,6 @@ struct ProductResultView: View {
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .foregroundStyle(Color("AppColor2"))
-        }
-    }
-    
-    // 会员信息
-    var proInfo: some View {
-        VStack {
-            if Date(timeIntervalSince1970: appStorage.expirationDate) > Date() {
-                // 高级会员
-                HStack {
-                    Text("Pro")
-                        .fontWeight(.medium)
-                    Spacer()
-                    // 到期时间
-                    VStack(alignment: .trailing) {
-                        Text("Expiration Date")
-                        Text(expirationDateString)
-                    }
-                    .modifier(FootnoteGrayText())
-                }
-                .frame(height: buttonHeight)
-                .modifier(Pro2Bg())
-            }
-            if appStorage.isLifetime {
-                // 终身
-                HStack {
-                    Text("Lifetime Pro")
-                        .fontWeight(.medium)
-                    Spacer()
-                    Text("Lifetime Access")
-                        .modifier(FootnoteGrayText())
-                }
-                .frame(height: buttonHeight)
-                .modifier(Pro2Bg())
-            }
         }
     }
     

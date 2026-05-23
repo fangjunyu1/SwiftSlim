@@ -90,21 +90,21 @@ class IAPManager: ObservableObject {
                 let transaction = try checkVerified(verification)    // 验证交易
                 updatePurchasedState(from: transaction)    // 更新内购商品的购买状态
                 await transaction.finish()    // 告诉系统交易完成
-                completion(.purchase_Success)
+                completion(.purchaseSuccess)
                 print("交易成功：\(result)")
             case .userCancelled:    // 用户取消交易
                 print("用户取消交易：\(result)")
                 completion(.stateless)
             case .pending:    // 购买交易被挂起
                 print("购买交易被挂起：\(result)")
-                completion(.purchase_Failed)
+                completion(.purchaseFailed)
             default:    // 其他情况
-                completion(.purchase_Failed)
+                completion(.purchaseFailed)
                 throw StoreError.failedVerification    // 购买失败
             }
         } catch {
             print("购买失败：\(error)")
-            completion(.purchase_Failed)
+            completion(.purchaseFailed)
             await resetProduct()    // 购买失败后重置 product 以便允许再次尝试购买
         }
     }
@@ -165,7 +165,7 @@ class IAPManager: ObservableObject {
                 await transaction.finish()
             } catch {
                 print("交易处理失败：\(error)")
-                state(ProductResultEnum.restore_Failed)
+                state(ProductResultEnum.restoreFailed)
                 return
             }
         }
@@ -183,10 +183,13 @@ class IAPManager: ObservableObject {
         
         // 如果会员有效时间大于当前时间，或者有永久会员，返回成功
         // 否则，返回失败
-        if let latestData = latestExpiration, latestData > Date() || lifetimePurchased {
-            state(ProductResultEnum.restore_Success)
+        
+        let hasValidSubscription = latestExpiration.map { $0 > Date() } ?? false
+        
+        if lifetimePurchased || hasValidSubscription {
+            state(ProductResultEnum.restoreSuccess)
         } else {
-            state(ProductResultEnum.restore_Failed)
+            state(ProductResultEnum.restoreFailed)
         }
     }
     
@@ -225,7 +228,9 @@ class IAPManager: ObservableObject {
             print("商品订购日期:\(transaction.purchaseDate)")
             print("订阅商品有效期为:\(expiration)，同步高级会员有效期")
             print("订阅商品信息:\(transaction)")
-            AppStorageManager.shared.expirationDate = expiration.timeIntervalSince1970
+            let newValue = expiration.timeIntervalSince1970
+            let currentValue = AppStorageManager.shared.expirationDate
+            AppStorageManager.shared.expirationDate = max(newValue, currentValue)
             return
         }
     }

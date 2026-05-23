@@ -13,14 +13,11 @@ struct ProView: View {
     @EnvironmentObject var iapManager: IAPManager
     @State private var selectedProductID: String?
     @State private var isLoading = false    // 加载画布
-    @State private var purchaseProductTask: Task<Void, Never>?  // 内购 Task
-    @State private var ProductResultStatus: ProductResultEnum?
+    @State private var operationTask: Task<Void, Never>?  // 内购 Task
+    @State private var productResultStatus: ProductResultEnum?
     
     // 年度会员 ID
     private let yearlyProductID = "com.fangjunyu.Qinote.yearly"
-    
-    // 当前方案、选择方案的选项高度
-    private let buttonHeight: Double = 60
     
     private var expirationDateString: String {
         Self.formatExpirationDate(appStorage.expirationDate)
@@ -66,7 +63,7 @@ struct ProView: View {
                         proTitle
                         // 如果有会员才显示
                         if appStorage.isValidMember {
-                            currentPlan
+                            CurrentPlanView()
                         }
                         if !iapManager.displayProducts.isEmpty {
                             chooseAPlan
@@ -79,7 +76,7 @@ struct ProView: View {
                 
                 VStack(spacing: 14) {
                     subscribeButton
-                    restorePurchasesd
+                    restorePurchasesButton
                 }
                 .padding(.top, 10)
                 .padding(.bottom, 50)
@@ -92,8 +89,14 @@ struct ProView: View {
                 loadingView
             }
         }
-        .sheet(item: $ProductResultStatus) { result in
+        .sheet(item: $productResultStatus) { result in
             ProductResultView(result: result)
+        }
+        .task {
+            if iapManager.displayProducts.isEmpty {
+                await iapManager.loadProduct()
+                selectDefaultProductIfNeeded()
+            }
         }
     }
     
@@ -108,8 +111,8 @@ struct ProView: View {
                         // 振动
                         HapticManager.shared.selectionChanged()
                         isLoading = false
-                        purchaseProductTask?.cancel()   // 取消购买任务
-                        purchaseProductTask = nil
+                        operationTask?.cancel()   // 取消购买任务
+                        operationTask = nil
                     }, label: {
                         Image(systemName: "xmark")
                             .font(.title)
@@ -146,46 +149,6 @@ struct ProView: View {
                 .font(.footnote)
         }
         .multilineTextAlignment(.center)
-    }
-    
-    // 当前方案
-    var currentPlan: some View {
-        VStack {
-            // 当前方案
-            HStack {
-                Text("Current Plan")
-                    .modifier(FootnoteGrayText())
-                Spacer()
-            }
-            if Date(timeIntervalSince1970: appStorage.expirationDate) > Date() {
-                // 高级会员
-                HStack {
-                    Text("Pro")
-                        .fontWeight(.medium)
-                    Spacer()
-                    // 到期时间
-                    VStack(alignment: .trailing) {
-                        Text("Expiration Date")
-                        Text(expirationDateString)
-                    }
-                    .modifier(FootnoteGrayText())
-                }
-                .frame(height: buttonHeight)
-                .modifier(Pro2Bg())
-            }
-            if appStorage.isLifetime {
-                // 终身
-                HStack {
-                    Text("Lifetime Pro")
-                        .fontWeight(.medium)
-                    Spacer()
-                    Text("Lifetime Access")
-                        .modifier(FootnoteGrayText())
-                }
-                .frame(height: buttonHeight)
-                .modifier(Pro2Bg())
-            }
-        }
     }
     
     // 选择方案
@@ -239,7 +202,7 @@ struct ProView: View {
                                 .imageScale(.large)
                                 .foregroundStyle(isSelected ? Color.blue : Color.gray)
                         }
-                        .frame(height: buttonHeight)
+                        .frame(height: 60)
                         .modifier(ProBg())
                         .overlay {
                             if isSelected {
@@ -349,7 +312,7 @@ struct ProView: View {
     }
     
     // 恢复购买
-    var restorePurchasesd: some View {
+    var restorePurchasesButton: some View {
         VStack {
             Button(action: {
                 // 触发振动
@@ -357,19 +320,20 @@ struct ProView: View {
                 // 显示加载动画
                 isLoading = true
                 
-                Task {
+                operationTask = Task {
                     await iapManager.checkAllTransactions {
                         result in
                         print("完成恢复购买")
                         // 移除加载动画
                         isLoading = false
                         // 弹出完成提示
-                        if result == .restore_Success {
-                            print("restore_Success")
-                            ProductResultStatus = .restore_Success
-                        } else if result == .restore_Failed  {
-                            print("restore_Failed")
-                            ProductResultStatus = .restore_Failed
+                        switch result {
+                        case .restoreSuccess:
+                            productResultStatus = .restoreSuccess
+                        case .purchaseFailed:
+                            productResultStatus = .restoreFailed
+                        default:
+                            break
                         }
                     }
                 }
@@ -388,20 +352,25 @@ struct ProView: View {
                 print("开始内购商品")
                 // 触发振动
                 HapticManager.shared.selectionChanged()
+                
                 guard let selectedProduct else { return }
                 // 显示加载动画
                 isLoading = true
                 
-                purchaseProductTask = Task {
+                operationTask = Task {
                     await iapManager.purchaseProduct(selectedProduct) { result in
                         print("完成购买")
                         // 移除加载动画
                         isLoading = false
+                        
                         // 弹出完成提示
-                        if result == .purchase_Success {
-                            ProductResultStatus = .purchase_Success
-                        } else if result == .purchase_Failed  {
-                            ProductResultStatus = .purchase_Failed
+                        switch result {
+                        case .purchaseSuccess:
+                            productResultStatus = .purchaseSuccess
+                        case .purchaseFailed:
+                            productResultStatus = .purchaseFailed
+                        default:
+                            break
                         }
                     }
                 }
@@ -414,20 +383,20 @@ struct ProView: View {
                     .frame(width: 240,height: 60)
                     .background(selectedProduct == nil ? Color.gray : Color(hex: "3477F5"))
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .disabled(selectedProduct == nil)
             })
+            .disabled(selectedProduct == nil)
         }
     }
 }
 
-enum ProductResultEnum: Identifiable {
-    var id: UUID {
-        UUID()
+enum ProductResultEnum: String, Identifiable {
+    var id: String {
+        rawValue
     }
-    case purchase_Success
-    case purchase_Failed
-    case restore_Success
-    case restore_Failed
+    case purchaseSuccess
+    case purchaseFailed
+    case restoreSuccess
+    case restoreFailed
     case stateless
 }
 
