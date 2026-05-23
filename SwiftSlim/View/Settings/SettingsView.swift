@@ -121,12 +121,25 @@ struct SettingsView: View {
 
 private extension SettingsView {
     var testButton: some View {
-        Button(action: {
-            appStorage.hasCompletedOnboarding = false
-        }, label: {
-            Text(verbatim: "restart Onboarding")
-                .font(.footnote)
-        })
+        VStack(spacing: 16) {
+            Button(action: {
+                appStorage.hasCompletedOnboarding = false
+            }, label: {
+                Text(verbatim: "重制引导页")
+                    .font(.caption2)
+            })
+            .buttonStyle(.plain)
+            
+            Button(action: {
+                appStorage.isLifetime = false
+                appStorage.expirationDate = 0
+            }, label: {
+                Text(verbatim: "重制会员")
+                    .font(.caption2)
+            })
+            .buttonStyle(.plain)
+        }
+        .foregroundStyle(Color.gray)
     }
 }
 
