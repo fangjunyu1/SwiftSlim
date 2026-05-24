@@ -14,6 +14,7 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
     case input
     case container
     case navigation
+    case shape
     
     var id: String { rawValue }
     
@@ -24,6 +25,7 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .input: return "Input"
         case .container: return "Container"
         case .navigation: return "Navigation"
+        case .shape: return "Shapes"
         }
     }
     
@@ -34,6 +36,7 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .input: return "Input, Selection & Editing"
         case .container: return "Content, Layout & Containers"
         case .navigation: return "Navigation & Transitions"
+        case .shape: return "Shapes, Borders & Drawing"
         }
     }
     
@@ -50,6 +53,8 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
             4
         case .navigation:
             1
+        case .shape:
+            5
         }
     }
 }

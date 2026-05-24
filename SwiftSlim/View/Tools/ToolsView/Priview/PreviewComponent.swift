@@ -342,6 +342,85 @@ TabView {
 }
 .tabViewStyle(PageTabViewStyle())
 """
+        ),
+        .init(
+            category: .shape,
+            name: "Circle",
+            subtitle: "Circle",
+            description: "Draws a circular shape.",
+            demo: .circle,
+            code: """
+        Circle()
+            .fill(.blue)
+            .frame(width: 80, height: 80)
+        """
+        ),
+        .init(
+            category: .shape,
+            name: "Rectangle",
+            subtitle: "Rectangle",
+            description: "Draws a rectangular shape.",
+            demo: .rectangle,
+            code: """
+        Rectangle()
+            .fill(.green)
+            .frame(width: 120, height: 70)
+        """
+        ),
+        .init(
+            category: .shape,
+            name: "RoundedRectangle",
+            subtitle: "RoundedRectangle",
+            description: "Draws a rectangle with rounded corners.",
+            demo: .roundedRectangle,
+            code: """
+        RoundedRectangle(cornerRadius: 20)
+            .fill(.purple)
+            .frame(width: 120, height: 70)
+        """
+        ),
+        .init(
+            category: .shape,
+            name: "Capsule",
+            subtitle: "Pill Shape",
+            description: "Draws a capsule-shaped view.",
+            demo: .capsule,
+            code: """
+        Capsule()
+            .fill(.orange)
+            .frame(width: 140, height: 60)
+        """
+        ),
+        .init(
+            category: .shape,
+            name: "Ellipse",
+            subtitle: "Oval Shape",
+            description: "Draws an oval shape.",
+            demo: .ellipse,
+            code: """
+        Ellipse()
+            .fill(.pink)
+            .frame(width: 130, height: 70)
+        """
+        ),
+        .init(
+            category: .shape,
+            name: "UnevenRoundedRectangle",
+            subtitle: "Custom Corners",
+            description: "Draws a rectangle with different corner radii.",
+            demo: .unevenRoundedRectangle,
+            code: """
+        UnevenRoundedRectangle(
+            cornerRadii: .init(
+                topLeading: 28,
+                bottomLeading: 8,
+                bottomTrailing: 28,
+                topTrailing: 8
+            )
+        )
+        .fill(.cyan)
+        .frame(width: 120, height: 70)
+        """
         )
     ]
 }

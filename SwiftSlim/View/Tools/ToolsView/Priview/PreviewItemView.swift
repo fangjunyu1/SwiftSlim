@@ -75,11 +75,11 @@ struct PreviewItemView: View {
     
     // 预览卡片
     private var previewCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(spacing: 12) {
             PreviewItemDemoView(item: item)
         }
         .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity)
         .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .disabled(isLocked)

@@ -65,7 +65,6 @@ struct PreviewItemDemoView: View {
                     .font(.system(size: 40))
                     .foregroundColor(.pink)
             }
-            .frame(maxWidth: .infinity)
             
         case .label:
             VStack(alignment: .leading, spacing: 10) {
@@ -93,7 +92,6 @@ struct PreviewItemDemoView: View {
                 Divider()
                 Text(verbatim: "Bottom Content")
             }
-            .frame(maxWidth: .infinity)
             
         case .progressView:
             VStack(alignment: .leading, spacing: 12) {
@@ -116,7 +114,6 @@ struct PreviewItemDemoView: View {
                     .font(.system(size: 14))
                     .foregroundColor(.secondary)
             }
-            .frame(maxWidth: .infinity)
             
         case .link:
             Link(destination: URL(string: "https://fangjunyu.com/")!) {
@@ -372,6 +369,42 @@ struct PreviewItemDemoView: View {
             }
             .frame(height: 180)
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        case .circle:
+            HStack {
+                Circle()
+                    .fill(.blue)
+                    .frame(width: 80, height: 80)
+            }
+
+        case .rectangle:
+            Rectangle()
+                .fill(.green)
+                .frame(width: 120, height: 70)
+
+        case .roundedRectangle:
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.purple)
+                .frame(width: 120, height: 70)
+
+        case .capsule:
+            Capsule()
+                .fill(.orange)
+                .frame(width: 140, height: 60)
+
+        case .ellipse:
+            Ellipse()
+                .fill(.pink)
+                .frame(width: 130, height: 70)
+
+        case .unevenRoundedRectangle:
+            UnevenRoundedRectangleFallback(
+                topLeading: 28,
+                bottomLeading: 8,
+                bottomTrailing: 28,
+                topTrailing: 8
+            )
+            .fill(.cyan)
+            .frame(width: 120, height: 70)
         }
     }
 }

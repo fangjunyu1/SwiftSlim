@@ -6,15 +6,20 @@
 //
 
 enum PreviewDemo {
+    // 展示
     case text
     case image
     case label
     case divider
     case progressView
+    
+    // 交互
     case button
     case link
     case menu
     case navigationLink
+    
+    // 输入
     case textField
     case secureField
     case textEditor
@@ -26,10 +31,22 @@ enum PreviewDemo {
     case pickerWheel
     case datePicker
     case colorPicker
+    
+    // 容器
     case scrollView
     case list
     case section
     case form
     case disclosureGroup
+    
+    // 导航
     case tabView
+    
+    // 形状
+    case circle
+    case rectangle
+    case roundedRectangle
+    case capsule
+    case ellipse
+    case unevenRoundedRectangle
 }
