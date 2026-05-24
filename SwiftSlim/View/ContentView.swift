@@ -15,26 +15,26 @@ struct ContentView: View {
     }
     
     var body: some View {
-            ZStack {
-                switch selected {
-                case .home:
-                    HomeView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                case .courses:
-                    CoursesView(selected: $selected)
-                        .padding(.horizontal, 20)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color("BackgroundColor"))
-                        .ignoresSafeArea(.container, edges: .bottom)
-                case .tools:
-                    ToolsView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                case .settings:
-                    SettingsView(selected: $selected)
-                        .modifier(BackgroundModifiers())
-                }
-                ContentFrostedTabView(selectedTab: $selected)
+        ZStack {
+            switch selected {
+            case .home:
+                HomeView(selected: $selected)
+                    .modifier(BackgroundModifiers())
+            case .courses:
+                CoursesView(selected: $selected)
+                    .padding(.horizontal, 20)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color("BackgroundColor"))
+                    .ignoresSafeArea(.container, edges: .bottom)
+            case .tools:
+                ToolsView(selected: $selected)
+                    .modifier(BackgroundModifiers())
+            case .settings:
+                SettingsView(selected: $selected)
+                    .modifier(BackgroundModifiers())
             }
+            ContentFrostedTabView(selectedTab: $selected)
+        }
     }
 }
 
@@ -49,7 +49,7 @@ struct StandbyView: View {
                 .foregroundStyle(Color.gray.opacity(0.3))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .modifier(BackgroundModifiers())
+        .modifier(BackgroundModifiers())
     }
 }
 

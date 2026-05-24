@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CoursesModel:Identifiable,Equatable,Hashable {
-    let id = UUID()
+    var id: Int { index }
     let index: Int
     let name: String
     let url: URL
 }
 
 struct CoursesChapter: Identifiable {
-    let id = UUID()
+    var id: String { title }
     let title: String
     let items: [CoursesModel]
 }
