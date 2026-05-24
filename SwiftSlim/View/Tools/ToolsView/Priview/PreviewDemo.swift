@@ -11,7 +11,12 @@ enum PreviewDemo {
     case image
     case label
     case divider
+    case spacer
+    case color
     case progressView
+    case asyncImage
+    case gauge
+    case contentUnavailableView
     
     // 交互
     case button

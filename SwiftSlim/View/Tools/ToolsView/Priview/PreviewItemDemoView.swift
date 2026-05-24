@@ -51,6 +51,8 @@ struct PreviewItemDemoView: View {
     
     var body: some View {
         switch item.demo {
+            
+        // MARK: 展示
         case .text:
             Text(verbatim: "Hello, SwiftUI")
                 .font(.system(size: 24, weight: .semibold))
@@ -92,6 +94,31 @@ struct PreviewItemDemoView: View {
                 Divider()
                 Text(verbatim: "Bottom Content")
             }
+
+        case .spacer:
+            HStack {
+                Text(verbatim: "Left")
+                    .font(.system(size: 16, weight: .semibold))
+
+                Spacer()
+
+                Text(verbatim: "Right")
+                    .font(.system(size: 16, weight: .semibold))
+            }
+            .padding()
+            .background(.gray.opacity(0.12))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            
+        case .color:
+            HStack(spacing: 16) {
+                Color.blue
+                    .frame(width: 80, height: 80)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+
+                Color.purple
+                    .frame(width: 80, height: 80)
+                    .clipShape(Circle())
+            }
             
         case .progressView:
             VStack(alignment: .leading, spacing: 12) {
@@ -101,6 +128,43 @@ struct PreviewItemDemoView: View {
                     .foregroundColor(.secondary)
             }
             
+        case .asyncImage:
+            AsyncImage(url: URL(string: "https://picsum.photos/160")) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 120, height: 120)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            
+        case .gauge:
+            CircularGaugeFallback(
+                    value: 0.65,
+                    currentValue: "65%",
+                    color: .blue
+                )
+            .frame(width: 53)
+
+        case .contentUnavailableView:
+            VStack(spacing: 10) {
+                Image(systemName: "magnifyingglass")
+                    .font(.system(size: 46))
+                    .foregroundStyle(Color.secondary)
+
+                VStack {
+                    Text(verbatim: "No Results")
+                        .font(.title2)
+                        .fontWeight(.bold)
+
+                    Text(verbatim: "Try another keyword.")
+                        .font(.subheadline)
+                        .foregroundStyle(Color.gray)
+                }
+            }
+            
+        // MARK: 交互
         case .button:
             VStack(spacing: 12) {
                 Button(action: {

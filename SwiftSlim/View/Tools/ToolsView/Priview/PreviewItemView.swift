@@ -131,6 +131,17 @@ struct PreviewItemView: View {
     // 代码卡片
     private var codeCard: some View {
         Group {
+//            #if DEBUG
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                Text(item.code)
+//                    .font(.system(size: 13, design: .monospaced))
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .padding(16)
+//                
+//            }
+//            .background(Color.black.opacity(0.04))
+//            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+//            #else
             if isLocked {
                 lockedCodeCard
             } else {
@@ -144,6 +155,7 @@ struct PreviewItemView: View {
                 .background(Color.black.opacity(0.04))
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             }
+//            #endif
         }
     }
     

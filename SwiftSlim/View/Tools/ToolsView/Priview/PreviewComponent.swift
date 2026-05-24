@@ -19,6 +19,8 @@ struct PreviewComponent: Identifiable {
 
 extension PreviewComponent {
     static let all: [PreviewComponent] = [
+        // MARK: - 展示
+        // Text
         .init(
             category: .display,
             name: "Text",
@@ -30,6 +32,8 @@ Text("Hello, SwiftUI")
     .font(.system(size: 24, weight: .semibold))
 """
         ),
+        
+        // Image
         .init(
             category: .display,
             name: "Image",
@@ -42,6 +46,8 @@ Image(systemName: "swift")
     .foregroundColor(.orange)
 """
         ),
+        
+        // Label
         .init(
             category: .display,
             name: "Label",
@@ -52,6 +58,8 @@ Image(systemName: "swift")
 Label("Favorites", systemImage: "star.fill")
 """
         ),
+        
+        // Divider
         .init(
             category: .display,
             name: "Divider",
@@ -66,6 +74,38 @@ VStack {
 }
 """
         ),
+        
+        // Spacer
+        .init(
+            category: .display,
+            name: "Spacer",
+            subtitle: "Spacer",
+            description: "Adds flexible empty space between views.",
+            demo: .spacer,
+            code: """
+        HStack {
+            Text("Left")
+            Spacer()
+            Text("Right")
+        }
+        """
+        ),
+        
+        // Color
+        .init(
+            category: .display,
+            name: "Color",
+            subtitle: "Color",
+            description: "Displays a solid color as a view.",
+            demo: .color,
+            code: """
+        Color.blue
+            .frame(width: 80, height: 80)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+        """
+        ),
+        
+        // ProgressView
         .init(
             category: .display,
             name: "ProgressView",
@@ -76,6 +116,60 @@ VStack {
 ProgressView(value: 0.3)
 """
         ),
+        
+        // AsyncImage
+        .init(
+            category: .display,
+            name: "AsyncImage",
+            subtitle: "AsyncImage",
+            description: "Loads and displays an image from a URL.",
+            demo: .asyncImage,
+            code: """
+        AsyncImage(url: URL(string: "https://picsum.photos/160")) { image in
+            image
+                .resizable()
+                .scaledToFill()
+        } placeholder: {
+            ProgressView()
+        }
+        """
+        ),
+        
+        // Gauge
+        .init(
+            category: .display,
+            name: "Gauge",
+            subtitle: "Gauge",
+            description: "Shows a value within a range.",
+            demo: .gauge,
+            code: """
+        Gauge(value: 0.65) {
+            Text("Storage")
+        } currentValueLabel: {
+            Text("65%")
+        }
+        .gaugeStyle(.accessoryCircularCapacity)
+        .tint(.blue)
+        """
+        ),
+        
+        // ContentUnavailableView
+        .init(
+            category: .display,
+            name: "ContentUnavailableView",
+            subtitle: "Unavailable",
+            description: "Shows an empty or unavailable content state.",
+            demo: .contentUnavailableView,
+            code: """
+        ContentUnavailableView(
+            "No Results",
+            systemImage: "magnifyingglass",
+            description: Text("Try another keyword.")
+        )
+        """
+        ),
+        
+        // MARK: 交互
         .init(
             category: .action,
             name: "Button",

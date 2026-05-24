@@ -44,7 +44,7 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
     var freeLimit: Int {
         switch self {
         case .display:
-            5
+            6
         case .action:
             4
         case .input:
