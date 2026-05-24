@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct APIComponent: Identifiable {
-    var id = UUID()
+    var id: String { name }
     let category: APICategory   // 类别
     let name: String    // 名称
     let subtitle: String    // 副标题
@@ -27,7 +27,7 @@ enum APIAvailability {
 
 // 参数类型
 struct APIParameter: Identifiable {
-    let id = UUID()
+    var id: String { name }
     let name: String
     let type: String
     let describe: String

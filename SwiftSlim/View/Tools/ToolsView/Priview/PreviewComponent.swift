@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PreviewComponent: Identifiable {
-    var id = UUID()
+    var id: String { name }
     let category: PreviewCategory   // 类别
     let name: String    // 组件名称
     let subtitle: String    // 组件副标题
