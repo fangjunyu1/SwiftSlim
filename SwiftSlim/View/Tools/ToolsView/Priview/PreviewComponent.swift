@@ -169,20 +169,23 @@ ProgressView(value: 0.3)
         """
         ),
         
-        // MARK: 交互
-        .init(
-            category: .action,
-            name: "Button",
-            subtitle: "Button",
-            description: "Responds to tap actions.",
-            demo: .button,
-            code: """
+        //  MARK: 交互
+        //  Button
+            .init(
+                category: .action,
+                name: "Button",
+                subtitle: "Button",
+                description: "Responds to tap actions.",
+                demo: .button,
+                code: """
 Button("Tap Me") {
     count += 1
 }
 .buttonStyle(.borderedProminent)
 """
-        ),
+            ),
+        
+        //  Link
         .init(
             category: .action,
             name: "Link",
@@ -194,6 +197,8 @@ Link("Open Fang Junyu",
      destination: URL(string: "https://fangjunyu.com/")!)
 """
         ),
+        
+        //  Menu
         .init(
             category: .action,
             name: "Menu",
@@ -208,6 +213,8 @@ Menu("More Actions") {
 }
 """
         ),
+        
+        //  NavigationLink
         .init(
             category: .action,
             name: "NavigationLink",
@@ -222,17 +229,78 @@ NavigationLink {
 }
 """
         ),
+        
+        //  ShareLink
         .init(
-            category: .input,
-            name: "TextField",
-            subtitle: "TextField",
-            description: "Accepts short text input.",
-            demo: .textField,
+            category: .action,
+            name: "ShareLink",
+            subtitle: "Share Link",
+            description: "Shares text, links, or other content.",
+            demo: .shareLink,
             code: """
+            ShareLink(item: URL(string: "https://www.apple.com/swift/")!) {
+                Label("Share", systemImage: "square.and.arrow.up")
+            }
+            """
+        ),
+        
+        //  EditButton
+        .init(
+            category: .action,
+            name: "EditButton",
+            subtitle: "Edit Button",
+            description: "Toggles edit mode for editable content.",
+            demo: .editButton,
+            code: """
+        @State private var items = ["Text", "Image", "Button"]
+        
+        NavigationStack {
+            List {
+                ForEach(items, id: \\.self) { item in
+                    Text(item)
+                }
+                .onDelete { offsets in
+                    items.remove(atOffsets: offsets)
+                }
+            }
+            .toolbar {
+                EditButton()
+            }
+        }
+        """
+        ),
+        
+        //  ControlGroup
+        .init(
+            category: .action,
+            name: "ControlGroup",
+            subtitle: "Control Group",
+            description: "Groups related controls together.",
+            demo: .controlGroup,
+            code: """
+            ControlGroup {
+                Button("Copy") { }
+                Button("Share") { }
+                Button("Delete") { }
+            }
+            """
+        ),
+        
+        // MARK: 输入
+        //  TextField
+            .init(
+                category: .input,
+                name: "TextField",
+                subtitle: "TextField",
+                description: "Accepts short text input.",
+                demo: .textField,
+                code: """
 TextField("Enter your name", text: $text)
     .textFieldStyle(.roundedBorder)
 """
-        ),
+            ),
+        
+        //  SecureField
         .init(
             category: .input,
             name: "SecureField",
@@ -244,6 +312,8 @@ SecureField("Enter password", text: $password)
     .textFieldStyle(.roundedBorder)
 """
         ),
+        
+        //  TextEditor
         .init(
             category: .input,
             name: "TextEditor",
@@ -255,6 +325,8 @@ TextEditor(text: $text)
     .frame(height: 100)
 """
         ),
+        
+        //  Toggle
         .init(
             category: .input,
             name: "Toggle",
@@ -265,6 +337,8 @@ TextEditor(text: $text)
 Toggle("Dark Mode", isOn: $isOn)
 """
         ),
+        
+        //  Slider
         .init(
             category: .input,
             name: "Slider",
@@ -275,6 +349,8 @@ Toggle("Dark Mode", isOn: $isOn)
 Slider(value: $value, in: 0...100, step: 1)
 """
         ),
+        
+        //  Stepper
         .init(
             category: .input,
             name: "Stepper",
@@ -285,6 +361,8 @@ Slider(value: $value, in: 0...100, step: 1)
 Stepper("Num: \\(count)", value: $count, in: 1...10)
 """
         ),
+        
+        //  Picker (Segmented)
         .init(
             category: .input,
             name: "Picker (Segmented)",
@@ -300,6 +378,8 @@ Picker("Number", selection: $selection) {
 .pickerStyle(.segmented)
 """
         ),
+        
+        //  Picker (Menu)
         .init(
             category: .input,
             name: "Picker (Menu)",
@@ -315,6 +395,8 @@ Picker("Theme", selection: $selection) {
 .pickerStyle(MenuPickerStyle())
 """
         ),
+        
+        //  Picker (Wheel)
         .init(
             category: .input,
             name: "Picker (Wheel)",
@@ -330,6 +412,8 @@ Picker("Fruit", selection: $wheelSelection) {
 .pickerStyle(.wheel)
 """
         ),
+        
+        //  DatePicker
         .init(
             category: .input,
             name: "DatePicker",
@@ -342,6 +426,22 @@ DatePicker("Select Date",
            displayedComponents: [.date, .hourAndMinute])
 """
         ),
+        
+        // MultiDatePicker
+        .init(
+            category: .input,
+            name: "MultiDatePicker",
+            subtitle: "Multi-Date Picker",
+            description: "Lets users select multiple dates.",
+            demo: .multiDatePicker,
+            code: """
+            @State private var selectedDates: Set<DateComponents> = []
+            
+            MultiDatePicker("Dates", selection: $selectedDates)
+            """
+        ),
+        
+        //  ColorPicker
         .init(
             category: .input,
             name: "ColorPicker",
@@ -352,20 +452,244 @@ DatePicker("Select Date",
 ColorPicker("Accent Color", selection: $color)
 """
         ),
+        
+        // MARK: 布局
+        // VStack
+            .init(
+                category: .layout,
+                name: "VStack",
+                subtitle: "Vertical Stack",
+                description: "Arranges views vertically.",
+                demo: .vStack,
+                code: """
+        VStack(spacing: 12) {
+            Text("First")
+            Text("Second")
+            Text("Third")
+        }
+        """
+            ),
+        
+        //  HStack
         .init(
-            category: .container,
-            name: "ScrollView",
-            subtitle: "ScrollView",
-            description: "Shows scrollable content.",
-            demo: .scrollView,
+            category: .layout,
+            name: "HStack",
+            subtitle: "Horizontal Stack",
+            description: "Arranges views horizontally.",
+            demo: .hStack,
             code: """
+        HStack(spacing: 12) {
+            Text("Left")
+            Text("Center")
+            Text("Right")
+        }
+        """
+        ),
+        
+        //  ZStack
+        .init(
+            category: .layout,
+            name: "ZStack",
+            subtitle: "Depth Stack",
+            description: "Overlays views on top of each other.",
+            demo: .zStack,
+            code: """
+        ZStack {
+            Circle()
+                .fill(.blue.opacity(0.25))
+        
+            Image(systemName: "star.fill")
+                .font(.system(size: 36))
+                .foregroundStyle(.blue)
+        }
+        .frame(width: 120, height: 120)
+        """
+        ),
+        
+        //  LazyVStack
+        .init(
+            category: .layout,
+            name: "LazyVStack",
+            subtitle: "Lazy Vertical Stack",
+            description: "Arranges views vertically and creates them as needed.",
+            demo: .lazyVStack,
+            code: """
+        ScrollView {
+            LazyVStack(spacing: 10) {
+                ForEach(0..<6, id: \\.self) { index in
+                    Text("Item \\(index + 1)")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(.gray.opacity(0.12))
+                        .cornerRadius(10)
+                }
+            }
+        }
+        .frame(height: 220)
+        """
+        ),
+        
+        //  LazyHStack
+        .init(
+            category: .layout,
+            name: "LazyHStack",
+            subtitle: "Lazy Horizontal Stack",
+            description: "Arranges views horizontally and creates them as needed.",
+            demo: .lazyHStack,
+            code: """
+        ScrollView(.horizontal) {
+            LazyHStack(spacing: 12) {
+                ForEach(0..<6, id: \\.self) { index in
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(.blue.opacity(0.18))
+                        .frame(width: 90, height: 90)
+                        .overlay(Text("\\(index + 1)"))
+                }
+            }
+        }
+        .frame(height: 110)
+        """
+        ),
+        
+        //  Grid
+        .init(
+            category: .layout,
+            name: "Grid",
+            subtitle: "Grid Layout",
+            description: "Arranges views in rows and columns.",
+            demo: .grid,
+            code: """
+        Grid(horizontalSpacing: 12, verticalSpacing: 12) {
+            GridRow {
+                Text("A")
+                Text("B")
+                Text("C")
+            }
+        
+            GridRow {
+                Text("1")
+                Text("2")
+                Text("3")
+            }
+        }
+        """
+        ),
+        
+        //  LazyVGrid
+        .init(
+            category: .layout,
+            name: "LazyVGrid",
+            subtitle: "Lazy Vertical Grid",
+            description: "Arranges views in a vertical grid.",
+            demo: .lazyVGrid,
+            code: """
+        LazyVGrid(
+            columns: [
+                GridItem(.adaptive(minimum: 60), spacing: 10)
+            ],
+            spacing: 10
+        ) {
+            ForEach(0..<8, id: \\.self) { index in
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(.blue.opacity(0.18))
+                    .frame(height: 60)
+                    .overlay(Text("\\(index + 1)"))
+            }
+        }
+        """
+        ),
+        
+        //  LazyHGrid
+        .init(
+            category: .layout,
+            name: "LazyHGrid",
+            subtitle: "Lazy Horizontal Grid",
+            description: "Arranges views in a horizontal grid.",
+            demo: .lazyHGrid,
+            code: """
+        ScrollView(.horizontal) {
+            LazyHGrid(
+                rows: [
+                    GridItem(.fixed(60)),
+                    GridItem(.fixed(60))
+                ],
+                spacing: 10
+            ) {
+                ForEach(0..<8, id: \\.self) { index in
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.purple.opacity(0.18))
+                        .frame(width: 70)
+                        .overlay(Text("\\(index + 1)"))
+                }
+            }
+        }
+        .frame(height: 140)
+        """
+        ),
+        
+        //  ViewThatFits
+        .init(
+            category: .layout,
+            name: "ViewThatFits",
+            subtitle: "Adaptive Layout",
+            description: "Chooses the first view that fits the available space.",
+            demo: .viewThatFits,
+            code: """
+        ViewThatFits {
+            HStack {
+                Text("SwiftUI")
+                Text("Layout")
+                Text("Preview")
+            }
+        
+            VStack {
+                Text("SwiftUI")
+                Text("Layout")
+                Text("Preview")
+            }
+        }
+        """
+        ),
+        
+        //  GeometryReader
+        .init(
+            category: .layout,
+            name: "GeometryReader",
+            subtitle: "Geometry Reader",
+            description: "Reads the size and position of its container.",
+            demo: .geometryReader,
+            code: """
+        GeometryReader { geo in
+            VStack {
+                Text("Width: \\(Int(geo.size.width))")
+                Text("Height: \\(Int(geo.size.height))")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .frame(height: 120)
+        .background(.gray.opacity(0.12))
+        .cornerRadius(12)
+        """
+        ),
+        
+        //  MARK: 容器
+        //  ScrollView
+            .init(
+                category: .container,
+                name: "ScrollView",
+                subtitle: "ScrollView",
+                description: "Shows scrollable content.",
+                demo: .scrollView,
+                code: """
 ScrollView(.horizontal, showsIndicators: false) {
     HStack {
         // content
     }
 }
 """
-        ),
+            ),
+        
+        //  List
         .init(
             category: .container,
             name: "List",
@@ -380,6 +704,8 @@ List {
 }
 """
         ),
+        
+        //  Section
         .init(
             category: .container,
             name: "Section",
@@ -395,6 +721,8 @@ List {
 }
 """
         ),
+        
+        //  Form
         .init(
             category: .container,
             name: "Form",
@@ -410,6 +738,8 @@ Form {
 }
 """
         ),
+        
+        //  DisclosureGroup
         .init(
             category: .container,
             name: "DisclosureGroup",
@@ -422,13 +752,46 @@ DisclosureGroup("Show Details") {
 }
 """
         ),
+        
+        //  Group
         .init(
-            category: .navigation,
-            name: "TabView",
-            subtitle: "TabView",
-            description: "Switches between multiple views.",
-            demo: .tabView,
+            category: .container,
+            name: "Group",
+            subtitle: "Group",
+            description: "Groups views without creating a visible container.",
+            demo: .group,
             code: """
+            Group {
+                Text("Title")
+                Text("Subtitle")
+            }
+            .font(.headline)
+            """
+        ),
+        
+        //  GroupBox
+        .init(
+            category: .container,
+            name: "GroupBox",
+            subtitle: "Group Box",
+            description: "Displays related content in a labeled container.",
+            demo: .groupBox,
+            code: """
+            GroupBox("Profile") {
+                Label("SwiftUI Developer", systemImage: "person.crop.circle")
+            }
+            """
+        ),
+        
+        // MARK: 导航
+        //  TabView
+            .init(
+                category: .navigation,
+                name: "TabView",
+                subtitle: "TabView",
+                description: "Switches between multiple views.",
+                demo: .tabView,
+                code: """
 TabView {
     Text("Home").tag(0)
     Text("Courses").tag(1)
@@ -436,19 +799,149 @@ TabView {
 }
 .tabViewStyle(PageTabViewStyle())
 """
-        ),
+            ),
+        
+        //  NavigationStack
         .init(
-            category: .shape,
-            name: "Circle",
-            subtitle: "Circle",
-            description: "Draws a circular shape.",
-            demo: .circle,
+            category: .navigation,
+            name: "NavigationStack",
+            subtitle: "Stack Navigation",
+            description: "Manages push-style navigation between views.",
+            demo: .navigationStack,
             code: """
+        NavigationStack {
+            NavigationLink {
+                Text("Detail View")
+            } label: {
+                Text("Open Detail")
+            }
+            .navigationTitle("Stack")
+        }
+        """
+        ),
+        
+        //  NavigationSplitView
+        .init(
+            category: .navigation,
+            name: "NavigationSplitView",
+            subtitle: "Split Navigation",
+            description: "Creates a sidebar and detail navigation layout.",
+            demo: .navigationSplitView,
+            code: """
+        NavigationSplitView {
+            List(["Home", "Tools"], id: \\.self) { item in
+                Text(item)
+            }
+        } detail: {
+            Text("Detail")
+        }
+        """
+        ),
+        
+        // MARK: 呈现
+        // Sheet
+            .init(
+                category: .presentation,
+                name: "Sheet",
+                subtitle: "Sheet",
+                description: "Presents a view from the bottom or as a modal window.",
+                demo: .sheet,
+                code: """
+        @State private var showSheet = false
+        
+        Button("Show Sheet") {
+            showSheet = true
+        }
+        .sheet(isPresented: $showSheet) {
+            Text("Sheet Content")
+                .padding()
+        }
+        """
+            ),
+        
+        //  Alert
+        .init(
+            category: .presentation,
+            name: "Alert",
+            subtitle: "Alert",
+            description: "Shows an important message that needs attention.",
+            demo: .alert,
+            code: """
+        @State private var showAlert = false
+        
+        Button("Show Alert") {
+            showAlert = true
+        }
+        .alert("Delete Item?", isPresented: $showAlert) {
+            Button("Cancel", role: .cancel) { }
+            Button("Delete", role: .destructive) { }
+        } message: {
+            Text("This action cannot be undone.")
+        }
+        """
+        ),
+        
+        //  Popover
+        .init(
+            category: .presentation,
+            name: "Popover",
+            subtitle: "Popover",
+            description: "Presents content in a floating popover.",
+            demo: .popover,
+            code: """
+        @State private var showPopover = false
+        
+        Button("Show Popover") {
+            showPopover = true
+        }
+        .popover(isPresented: $showPopover) {
+            Text("Popover Content")
+                .padding()
+        }
+        """
+        ),
+        
+        //  ConfirmationDialog
+        .init(
+            category: .presentation,
+            name: "ConfirmationDialog",
+            subtitle: "Confirmation Dialog",
+            description: "Shows a list of actions for users to confirm.",
+            demo: .confirmationDialog,
+            code: """
+        @State private var showConfirmationDialog = false
+        
+        Button("Show Options") {
+            showConfirmationDialog = true
+        }
+        .confirmationDialog(
+            "Choose an action",
+            isPresented: $showConfirmationDialog,
+            titleVisibility: .visible
+        ) {
+            Button("Copy") { }
+            Button("Delete", role: .destructive) { }
+            Button("Cancel", role: .cancel) { }
+        }
+        """
+        ),
+        
+        // MARK: 形状
+        //  Circle
+            .init(
+                category: .shape,
+                name: "Circle",
+                subtitle: "Circle",
+                description: "Draws a circular shape.",
+                demo: .circle,
+                code: """
         Circle()
             .fill(.blue)
             .frame(width: 80, height: 80)
         """
-        ),
+            ),
+        
+        //  Rectangle
         .init(
             category: .shape,
             name: "Rectangle",
@@ -461,6 +954,8 @@ TabView {
             .frame(width: 120, height: 70)
         """
         ),
+        
+        //  RoundedRectangle
         .init(
             category: .shape,
             name: "RoundedRectangle",
@@ -473,6 +968,8 @@ TabView {
             .frame(width: 120, height: 70)
         """
         ),
+        
+        //  Capsule
         .init(
             category: .shape,
             name: "Capsule",
@@ -485,6 +982,8 @@ TabView {
             .frame(width: 140, height: 60)
         """
         ),
+        
+        //  Ellipse
         .init(
             category: .shape,
             name: "Ellipse",
@@ -497,6 +996,8 @@ TabView {
             .frame(width: 130, height: 70)
         """
         ),
+        
+        //  UnevenRoundedRectangle
         .init(
             category: .shape,
             name: "UnevenRoundedRectangle",
@@ -515,6 +1016,43 @@ TabView {
         .fill(.cyan)
         .frame(width: 120, height: 70)
         """
+        ),
+        
+        //  ContainerRelativeShape
+        .init(
+            category: .shape,
+            name: "ContainerRelativeShape",
+            subtitle: "Relative Shape",
+            description: "Creates a shape that follows its container.",
+            demo: .containerRelativeShape,
+            code: """
+            ZStack {
+                ContainerRelativeShape()
+                    .fill(.blue.opacity(0.18))
+            
+                Text("Container")
+            }
+            .frame(width: 160, height: 100)
+            .containerShape(RoundedRectangle(cornerRadius: 28))
+            """
+        ),
+        
+        //  Path
+        .init(
+            category: .shape,
+            name: "Path",
+            subtitle: "Custom Path",
+            description: "Draws custom lines and shapes with points.",
+            demo: .path,
+            code: """
+            Path { path in
+                path.move(to: CGPoint(x: 20, y: 80))
+                path.addLine(to: CGPoint(x: 70, y: 20))
+                path.addLine(to: CGPoint(x: 120, y: 80))
+            }
+            .stroke(.blue, lineWidth: 5)
+            .frame(width: 140, height: 100)
+            """
         )
     ]
 }

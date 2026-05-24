@@ -23,6 +23,9 @@ enum PreviewDemo {
     case link
     case menu
     case navigationLink
+    case shareLink
+    case editButton
+    case controlGroup
     
     // 输入
     case textField
@@ -35,7 +38,20 @@ enum PreviewDemo {
     case pickerMenu
     case pickerWheel
     case datePicker
+    case multiDatePicker
     case colorPicker
+    
+    // 布局
+    case vStack
+    case hStack
+    case zStack
+    case lazyVStack
+    case lazyHStack
+    case grid
+    case lazyVGrid
+    case lazyHGrid
+    case viewThatFits
+    case geometryReader
     
     // 容器
     case scrollView
@@ -43,9 +59,19 @@ enum PreviewDemo {
     case section
     case form
     case disclosureGroup
+    case group
+    case groupBox
     
     // 导航
     case tabView
+    case navigationStack
+    case navigationSplitView
+    
+    // 呈现
+    case sheet
+    case alert
+    case popover
+    case confirmationDialog
     
     // 形状
     case circle
@@ -54,4 +80,6 @@ enum PreviewDemo {
     case capsule
     case ellipse
     case unevenRoundedRectangle
+    case containerRelativeShape
+    case path
 }

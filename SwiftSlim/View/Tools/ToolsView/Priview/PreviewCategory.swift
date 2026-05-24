@@ -12,8 +12,10 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
     case display
     case action
     case input
+    case layout
     case container
     case navigation
+    case presentation
     case shape
     
     var id: String { rawValue }
@@ -23,8 +25,10 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .display: return "Display"
         case .action: return "Action"
         case .input: return "Input"
+        case .layout: return "Layout"
         case .container: return "Container"
         case .navigation: return "Navigation"
+        case .presentation: return "Presentation"
         case .shape: return "Shapes"
         }
     }
@@ -34,8 +38,10 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .display: return "Text, Image & Status"
         case .action: return "Buttons, Menus & Actions"
         case .input: return "Input, Selection & Editing"
+        case .layout: return "Stacks, Grids & Geometry"
         case .container: return "Content, Layout & Containers"
         case .navigation: return "Navigation & Transitions"
+        case .presentation: return "Sheets, Alerts & Dialogs"
         case .shape: return "Shapes, Borders & Drawing"
         }
     }
@@ -43,18 +49,14 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
     // 分类限制数量
     var freeLimit: Int {
         switch self {
-        case .display:
-            6
-        case .action:
-            4
-        case .input:
-            8
-        case .container:
-            4
-        case .navigation:
-            1
-        case .shape:
-            5
+        case .display: 6
+        case .action: 4
+        case .input: 8
+        case .layout: 5
+        case .container: 4
+        case .navigation: 1
+        case .presentation: 2
+        case .shape: 5
         }
     }
 }
