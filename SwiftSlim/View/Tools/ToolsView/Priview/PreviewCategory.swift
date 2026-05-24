@@ -36,4 +36,20 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .navigation: return "Navigation & Transitions"
         }
     }
+    
+    // 分类限制数量
+    var freeLimit: Int {
+        switch self {
+        case .display:
+            5
+        case .action:
+            4
+        case .input:
+            8
+        case .container:
+            4
+        case .navigation:
+            1
+        }
+    }
 }

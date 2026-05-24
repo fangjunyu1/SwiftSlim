@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PreviewView: View {
     @EnvironmentObject var appStorage: AppStorageManager
+    @EnvironmentObject var iapManager: IAPManager
     // 所有视图组件
     private let components = PreviewComponent.all
     
@@ -16,9 +17,29 @@ struct PreviewView: View {
     @State private var selectedCategory: PreviewCategory? = nil
     @State private var searchText = ""
     
+    // 显示 Pro 视图
+    @State private var showProView = false
+    
+    // 组件数据源
+    // 会员返回全部可用组件，非会员限制组件的显示
+    private var previewSource: [PreviewComponent] {
+        if appStorage.isValidMember {
+            return components
+        }
+        
+        // 当用户没有搜索或者分类时，仅显示可用的组件预览
+        // 而不是显示所有需解锁的组件，会给用户带来压力
+        if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && selectedCategory == nil {
+            return components.filter { item in !isLocked(item) }
+        }
+        
+        return components
+    }
+    
     // 输入搜索内容，筛选后的组件
     var filteredComponents: [PreviewComponent] {
-        components.filter { item in
+        
+        previewSource.filter { item in
             // 如果没有选择搜索类型，或者当前搜索类型和当前组件类型一致，则类型返回 true
             let matchCategory = selectedCategory == nil || item.category == selectedCategory
             let localizedSubtitle = NSLocalizedString(item.subtitle, comment: "")
@@ -41,6 +62,25 @@ struct PreviewView: View {
         } else {
             return PreviewCategory.allCases
         }
+    }
+    
+    // 判断是否锁定
+    private func isLocked(_ item: PreviewComponent) -> Bool {
+        guard !appStorage.isValidMember else { return false }
+        
+        // 获取分类下所有组件
+        let itemsInCategory = PreviewComponent.all.filter {
+            $0.category == item.category
+        }
+        
+        // firstIndex 匹配当前组件在分类下的序号
+        // 匹配失败则返回 false，不锁定
+        guard let index = itemsInCategory.firstIndex(where: { $0.id == item.id }) else {
+            return false
+        }
+        
+        // 如果当前序号大于等于分类免费数量，则锁定
+        return index >= item.category.freeLimit
     }
     
     var body: some View {
@@ -66,7 +106,9 @@ struct PreviewView: View {
                             // 视图预览组件
                             LazyVStack(spacing: 18) {
                                 ForEach(items) { item in
-                                    PreviewItemView(item: item)
+                                    PreviewItemView(item: item, isLocked: isLocked(item)) {
+                                        showProView = true
+                                    }
                                 }
                             }
                         }
@@ -83,11 +125,18 @@ struct PreviewView: View {
             print("检测是否满足打开评分窗口")
             AppRating.checkReviewIfNeeded(appStorage: appStorage)
         }
+        .sheet(isPresented: $showProView) {
+            ProView(showCloseButton: true)
+                .environmentObject(appStorage)
+                .environmentObject(iapManager)
+        }
     }
 }
 
 #Preview {
     NavigationView {
         PreviewView()
+            .environmentObject(AppStorageManager.shared)
+            .environmentObject(IAPManager.shared)
     }
 }

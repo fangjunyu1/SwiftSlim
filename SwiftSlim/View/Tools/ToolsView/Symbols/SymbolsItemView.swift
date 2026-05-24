@@ -35,12 +35,8 @@ struct SymbolsItemView: View {
                     HStack {
                         Spacer()
                         HStack(spacing: 3) {
-//                            Image(systemName: "lock.fill")
-//                                .font(.system(size: 6).bold())
-                            Text("PRO")
+                            Text(verbatim:"PRO")
                                 .font(.system(size: 8))
-                                .fontWeight(.medium)
-//                                .font(.system(size: 6).bold())
                         }
                         .foregroundStyle(Color.white)
                         .padding(.vertical, 3)
