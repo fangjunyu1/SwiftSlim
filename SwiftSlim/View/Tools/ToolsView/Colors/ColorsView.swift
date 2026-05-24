@@ -45,6 +45,12 @@ struct ColorsView: View {
                     .shadow(radius: 0.5)
                 }
 
+                // 颜色选择器
+                VStack(alignment: .leading, spacing: 10) {
+                    sectionTitle("Color Picker")
+                    ColorPickerBlock()
+                }
+                
                 // 渐变颜色
                 VStack(alignment: .leading, spacing: 10) {
                     sectionTitle("Gradient Colors")
