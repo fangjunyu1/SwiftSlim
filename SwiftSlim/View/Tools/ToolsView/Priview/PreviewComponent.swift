@@ -47,16 +47,18 @@ Image(systemName: "swift")
 """
         ),
         
-        // Label
+        // Color
         .init(
             category: .display,
-            name: "Label",
-            subtitle: "Icon & Text",
-            description: "Combines an icon and text.",
-            demo: .label,
+            name: "Color",
+            subtitle: "Color",
+            description: "Displays a solid color as a view.",
+            demo: .color,
             code: """
-Label("Favorites", systemImage: "star.fill")
-"""
+        Color.blue
+            .frame(width: 80, height: 80)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+        """
         ),
         
         // Divider
@@ -91,18 +93,16 @@ VStack {
         """
         ),
         
-        // Color
+        // Label
         .init(
             category: .display,
-            name: "Color",
-            subtitle: "Color",
-            description: "Displays a solid color as a view.",
-            demo: .color,
+            name: "Label",
+            subtitle: "Icon & Text",
+            description: "Combines an icon and text.",
+            demo: .label,
             code: """
-        Color.blue
-            .frame(width: 80, height: 80)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
-        """
+Label("Favorites", systemImage: "star.fill")
+"""
         ),
         
         // ProgressView
@@ -268,22 +268,6 @@ NavigationLink {
             }
         }
         """
-        ),
-        
-        //  ControlGroup
-        .init(
-            category: .action,
-            name: "ControlGroup",
-            subtitle: "Control Group",
-            description: "Groups related controls together.",
-            demo: .controlGroup,
-            code: """
-            ControlGroup {
-                Button("Copy") { }
-                Button("Share") { }
-                Button("Delete") { }
-            }
-            """
         ),
         
         // MARK: 输入
@@ -780,6 +764,23 @@ DisclosureGroup("Show Details") {
             GroupBox("Profile") {
                 Label("SwiftUI Developer", systemImage: "person.crop.circle")
             }
+            """
+        ),
+        
+        //  ControlGroup
+        .init(
+            category: .container,
+            name: "ControlGroup",
+            subtitle: "Control Group",
+            description: "Groups related controls together.",
+            demo: .controlGroup,
+            code: """
+            ControlGroup {
+                Button("Copy") { }
+                Button("Share") { }
+                Button("Delete") { }
+            }
+            .labelStyle(.iconOnly)
             """
         ),
         

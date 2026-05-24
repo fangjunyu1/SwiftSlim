@@ -9,10 +9,10 @@ enum PreviewDemo {
     // 展示
     case text
     case image
-    case label
+    case color
     case divider
     case spacer
-    case color
+    case label
     case progressView
     case asyncImage
     case gauge
@@ -25,7 +25,6 @@ enum PreviewDemo {
     case navigationLink
     case shareLink
     case editButton
-    case controlGroup
     
     // 输入
     case textField
@@ -61,6 +60,7 @@ enum PreviewDemo {
     case disclosureGroup
     case group
     case groupBox
+    case controlGroup
     
     // 导航
     case tabView

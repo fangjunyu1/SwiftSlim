@@ -22,7 +22,6 @@ struct PreviewItemDemoView: View {
     @State private var selectedColor: Color = .blue // ColorPicker
     @State private var isShowDetails = true    // DisclosureGroup
     @State private var tabSelection = 0 // TabView
-    @State private var editItems = ["Text", "Image", "Button"]  // EditButton
     @State private var selectedDates: Set<DateComponents> = []  //  MultiDatePicker
     @State private var showSheet = false    //  Sheet
     @State private var showPopover = false  // Popover
@@ -77,26 +76,17 @@ struct PreviewItemDemoView: View {
                     .foregroundColor(.pink)
             }
             
-            // Label
-        case .label:
-            VStack(alignment: .leading, spacing: 10) {
-                Label(title:  {
-                    Text(verbatim: "Favorites")
-                }, icon: {
-                    Image(systemName: "star.fill")
-                })
-                Label(title:  {
-                    Text(verbatim: "Downloads")
-                }, icon: {
-                    Image(systemName: "arrow.down.circle.fill")
-                })
-                Label(title:  {
-                    Text(verbatim: "Photos")
-                }, icon: {
-                    Image(systemName: "photo.fill")
-                })
+            // Color
+        case .color:
+            HStack(spacing: 16) {
+                Color.blue
+                    .frame(width: 80, height: 80)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                
+                Color.purple
+                    .frame(width: 80, height: 80)
+                    .clipShape(Circle())
             }
-            .foregroundColor(.primary)
             
             // Divider
         case .divider:
@@ -121,17 +111,26 @@ struct PreviewItemDemoView: View {
             .background(.gray.opacity(0.12))
             .clipShape(RoundedRectangle(cornerRadius: 12))
             
-            // Color
-        case .color:
-            HStack(spacing: 16) {
-                Color.blue
-                    .frame(width: 80, height: 80)
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
-                
-                Color.purple
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
+            // Label
+        case .label:
+            VStack(alignment: .leading, spacing: 10) {
+                Label(title:  {
+                    Text(verbatim: "Favorites")
+                }, icon: {
+                    Image(systemName: "star.fill")
+                })
+                Label(title:  {
+                    Text(verbatim: "Downloads")
+                }, icon: {
+                    Image(systemName: "arrow.down.circle.fill")
+                })
+                Label(title:  {
+                    Text(verbatim: "Photos")
+                }, icon: {
+                    Image(systemName: "photo.fill")
+                })
             }
+            .foregroundColor(.primary)
             
             // ProgressView
         case .progressView:
@@ -156,28 +155,46 @@ struct PreviewItemDemoView: View {
             
             // Gauge
         case .gauge:
-            CircularGaugeFallback(
-                value: 0.65,
-                currentValue: "65%",
-                color: .blue
-            )
-            .frame(width: 53)
+            if #available(iOS 16.0, *) {
+                Gauge(value: 0.65) {
+                    Text(verbatim: "Storage")
+                } currentValueLabel: {
+                    Text(verbatim: "65%")
+                }
+                .gaugeStyle(.accessoryCircularCapacity)
+                .tint(.blue)
+            } else {
+                CircularGaugeFallback(
+                    value: 0.65,
+                    currentValue: "65%",
+                    color: .blue
+                )
+                .frame(width: 53)
+            }
             
             //  ContentUnavailableView
         case .contentUnavailableView:
-            VStack(spacing: 10) {
-                Image(systemName: "magnifyingglass")
-                    .font(.system(size: 46))
-                    .foregroundStyle(Color.secondary)
-                
-                VStack {
-                    Text(verbatim: "No Results")
-                        .font(.title2)
-                        .fontWeight(.bold)
+            if #available(iOS 17.0, *) {
+                ContentUnavailableView(
+                    "No Results",
+                    systemImage: "magnifyingglass",
+                    description: Text("Try another keyword.")
+                )
+            } else {
+                VStack(spacing: 10) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 46))
+                        .foregroundStyle(Color.secondary)
                     
-                    Text(verbatim: "Try another keyword.")
-                        .font(.subheadline)
-                        .foregroundStyle(Color.gray)
+                    VStack {
+                        Text(verbatim: "No Results")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        Text(verbatim: "Try another keyword.")
+                            .font(.subheadline)
+                            .foregroundStyle(Color.gray)
+                    }
                 }
             }
             
@@ -251,91 +268,11 @@ struct PreviewItemDemoView: View {
             
             //  ShareLink
         case .shareLink:
-            if #available(iOS 16.0, macOS 13.0, *) {
-                if let url = URL(string: "https://www.apple.com/swift/") {
-                    ShareLink(item: url) {
-                        Label {
-                            Text(verbatim: "Share")
-                        } icon: {
-                            Image(systemName: "square.and.arrow.up")
-                        }
-                        .font(.system(size: 16, weight: .semibold))
-                        .padding(.horizontal, 18)
-                        .padding(.vertical, 10)
-                        .background(.blue.opacity(0.14))
-                        .clipShape(Capsule())
-                    }
-                }
-            } else {
-                Text(verbatim: "Requires iOS 16 or later")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
+            ShareLinkFallbackDemo()
             
             //  EditButton
         case .editButton:
-            if #available(iOS 16.0, macOS 13.0, *) {
-                NavigationStack {
-                    List {
-                        ForEach(editItems, id: \.self) { item in
-                            Text(verbatim: item)
-                        }
-                        .onDelete { offsets in
-                            editItems.remove(atOffsets: offsets)
-                        }
-                    }
-                    .navigationTitle("Items")
-                    .toolbar {
-                        EditButton()
-                    }
-                }
-                .frame(width: 280, height: 220)
-            } else {
-                NavigationView {
-                    List {
-                        ForEach(editItems, id: \.self) { item in
-                            Text(verbatim: item)
-                        }
-                        .onDelete { offsets in
-                            editItems.remove(atOffsets: offsets)
-                        }
-                    }
-                    .navigationTitle("Items")
-                    .toolbar {
-                        EditButton()
-                    }
-                }
-                .frame(width: 280, height: 220)
-            }
-            
-            //  ControlGroup
-        case .controlGroup:
-            ControlGroup {
-                Button { } label: {
-                    Label {
-                        Text(verbatim: "Copy")
-                    } icon: {
-                        Image(systemName: "doc.on.doc")
-                    }
-                }
-                
-                Button { } label: {
-                    Label {
-                        Text(verbatim: "Share")
-                    } icon: {
-                        Image(systemName: "square.and.arrow.up")
-                    }
-                }
-                
-                Button { } label: {
-                    Label {
-                        Text(verbatim: "Delete")
-                    } icon: {
-                        Image(systemName: "trash")
-                    }
-                }
-            }
-            .labelStyle(.iconOnly)
+            EditButtonFallbackDemo()
             
             // MARK: 输入
             // TextField
@@ -368,8 +305,8 @@ struct PreviewItemDemoView: View {
         case .textEditor:
             VStack(alignment: .leading, spacing: 10) {
                 TextEditor(text: $editorText)
-                    .frame(height: 100)
                     .padding(8)
+                    .frame(height: 100)
                     .background(Color(.systemBackground))
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     .overlay(
@@ -439,14 +376,13 @@ struct PreviewItemDemoView: View {
             
             // DatePicker
         case .datePicker:
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(spacing: 10) {
                 DatePicker(
                     selection: $selectedDate,
                     displayedComponents: [.date, .hourAndMinute],
                     label: {
                         EmptyView()
                     })
-                .frame(maxWidth: .infinity)
                 .offset(x: -15)
                 
                 Text(dateFormatter.string(from: selectedDate))
@@ -456,18 +392,13 @@ struct PreviewItemDemoView: View {
             
             // MultiDatePicker
         case .multiDatePicker:
-            if #available(iOS 16.0, macOS 13.0, *) {
-                MultiDatePicker("Dates", selection: $selectedDates)
-                    .frame(maxWidth: 320)
-            } else {
-                VStack(spacing: 10) {
-                    Image(systemName: "calendar")
-                        .font(.system(size: 36))
-                        .foregroundStyle(.secondary)
-                    
-                    Text(verbatim: "Requires iOS 16 or later")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+            VStack {
+                if #available(iOS 16.0, *) {
+                    MultiDatePicker(selection: $selectedDates) {
+                        Text(verbatim: "Dates")
+                    }
+                } else {
+                    LegacyMultiDatePicker()
                 }
             }
             
@@ -813,6 +744,35 @@ struct PreviewItemDemoView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             .frame(width: 260)
+            
+            //  ControlGroup
+        case .controlGroup:
+            ControlGroup {
+                Button { } label: {
+                    Label {
+                        Text(verbatim: "Copy")
+                    } icon: {
+                        Image(systemName: "doc.on.doc")
+                    }
+                }
+                
+                Button { } label: {
+                    Label {
+                        Text(verbatim: "Share")
+                    } icon: {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                }
+                
+                Button { } label: {
+                    Label {
+                        Text(verbatim: "Delete")
+                    } icon: {
+                        Image(systemName: "trash")
+                    }
+                }
+            }
+            .labelStyle(.iconOnly)
             
             // MARK: 导航
             // TabView

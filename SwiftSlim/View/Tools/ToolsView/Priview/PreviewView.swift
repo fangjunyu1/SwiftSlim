@@ -106,9 +106,15 @@ struct PreviewView: View {
                             // 视图预览组件
                             LazyVStack(spacing: 18) {
                                 ForEach(items) { item in
+                                    #if DEBUG
                                     PreviewItemView(item: item, isLocked: isLocked(item)) {
                                         showProView = true
                                     }
+                                    #else
+                                    PreviewItemView(item: item, isLocked: isLocked(item)) {
+                                        showProView = true
+                                    }
+                                    #endif
                                 }
                             }
                         }
