@@ -133,7 +133,7 @@ struct HomeView: View {
     
     // SwiftUI 入门教程
     var tutorial: some View {
-            VStack(alignment: .leading, spacing: 24) {
+            VStack(alignment: .leading, spacing: 20) {
                 // 顶部入门、20+ 课
                 HStack {
                     // 入门
@@ -166,10 +166,10 @@ struct HomeView: View {
                 // SwiftUI 入门教程 标题和描述
                 VStack(alignment: .leading, spacing: 10) {
                     Text("SwiftUI Beginner Tutorial")
-                        .font(.title2)
+                        .font(.title3)
                         .fontWeight(.bold)
                     Text("Start from zero with SwiftUI and systematically learn Apple’s declarative UI development. Through clear explanations and practical examples, you will gradually master layout, interaction, and state management to build beautiful and useful app interfaces.")
-                        .font(.subheadline)
+                        .font(.footnote)
                         .fontWeight(.medium)
                         .lineLimit(3)
                         .truncationMode(.tail)
