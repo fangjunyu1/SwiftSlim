@@ -7,9 +7,6 @@
     "/" : {
       "shouldTranslate" : false
     },
-    "%lld" : {
-
-    },
     "123" : {
       "shouldTranslate" : false
     },
@@ -59698,7 +59695,7 @@
       }
     },
     "No Results" : {
-
+      "shouldTranslate" : false
     },
     "Notifications" : {
       "comment" : "通知",
@@ -99006,9 +99003,6 @@
           }
         }
       }
-    },
-    "Try another keyword." : {
-
     },
     "Type System" : {
       "comment" : "012_类型系统",

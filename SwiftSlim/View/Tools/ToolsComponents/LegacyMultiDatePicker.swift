@@ -88,7 +88,7 @@ struct LegacyMultiDatePicker: View {
             toggle(date)
         } label: {
             if Calendar.current.isDateInToday(date) {
-                Text("\(day)")
+                Text(verbatim: "\(day)")
                     .font(.system(size: 20, weight: selected ? .semibold : .regular))
                     .foregroundColor(selected ? .blue : .blue)
                     .frame(width: 30, height: 30)
@@ -97,7 +97,7 @@ struct LegacyMultiDatePicker: View {
                             .fill(selected ? Color.accentColor.opacity(0.1) : Color.clear)
                     )
             } else {
-                Text("\(day)")
+                Text(verbatim: "\(day)")
                     .font(.system(size: 20, weight: selected ? .semibold : .regular))
                     .foregroundColor(selected ? .blue : .primary)
                     .frame(width: 30, height: 30)

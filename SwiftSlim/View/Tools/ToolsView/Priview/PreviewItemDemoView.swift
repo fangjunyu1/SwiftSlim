@@ -178,7 +178,7 @@ struct PreviewItemDemoView: View {
                 ContentUnavailableView(
                     "No Results",
                     systemImage: "magnifyingglass",
-                    description: Text("Try another keyword.")
+                    description: Text(verbatim: "Try another keyword.")
                 )
             } else {
                 VStack(spacing: 10) {
@@ -303,21 +303,7 @@ struct PreviewItemDemoView: View {
             
             // TextEditor
         case .textEditor:
-            VStack(alignment: .leading, spacing: 10) {
-                TextEditor(text: $editorText)
-                    .padding(8)
-                    .frame(height: 100)
-                    .background(Color(.systemBackground))
-                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .stroke(Color.gray.opacity(0.2), lineWidth: 1)
-                    )
-                
-                Text(verbatim: "Characters: \(editorText.count)")
-                    .font(.system(size: 14))
-                    .foregroundColor(.secondary)
-            }
+            TextEditorFallbackDemo(editorText: $editorText)
             
             // Toggle
         case .toggle:
@@ -1070,6 +1056,42 @@ struct PreviewItemDemoView: View {
                 )
             )
             .frame(width: 140, height: 100)
+        }
+    }
+}
+
+import SwiftUI
+
+struct TextEditorFallbackDemo: View {
+    @Binding var editorText: String
+    @FocusState private var isEditorFocused: Bool
+    var body: some View {
+        
+        VStack(alignment: .leading, spacing: 10) {
+            TextEditor(text: $editorText)
+                .focused($isEditorFocused)
+                .padding(8)
+                .frame(height: 100)
+                .background(Color(.systemBackground))
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .stroke(Color.gray.opacity(0.2), lineWidth: 1)
+                )
+            
+            Text(verbatim: "Characters: \(editorText.count)")
+                .font(.system(size: 14))
+                .foregroundColor(.secondary)
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                if isEditorFocused {
+                    Spacer()
+                    Button("Done") {
+                        isEditorFocused = false
+                    }
+                }
+            }
         }
     }
 }
