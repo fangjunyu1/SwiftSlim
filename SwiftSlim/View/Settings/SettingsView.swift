@@ -44,9 +44,9 @@ struct SettingsView: View {
                 versionSection
                 
                 // 测试按钮
-                #if DEBUG
-                testButton
-                #endif
+//                #if DEBUG
+//                testButton
+//                #endif
             }
             .padding(.bottom, 120)
             
