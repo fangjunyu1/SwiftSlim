@@ -53,10 +53,9 @@ enum PreviewCategory: String, CaseIterable, Identifiable, CategoryItem {
         case .action: 4
         case .input: 8
         case .layout: 5
-        case .container: 4
-        case .navigation: 1
-//        case .presentation: 2
-        case .presentation: 4
+        case .container: 5
+        case .navigation: 2
+        case .presentation: 2
         case .shape: 5
         }
     }
