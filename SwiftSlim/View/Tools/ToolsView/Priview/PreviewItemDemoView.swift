@@ -20,14 +20,14 @@ struct PreviewItemDemoView: View {
     @State private var wheelSelection = "Apple" // PickerWheel
     @State private var selectedDate = Date()    // DatePicker
     @State private var selectedColor: Color = .blue // ColorPicker
-    @State private var isShowDetails = true    // DisclosureGroup
+    @State private var isShowDetails = false    // DisclosureGroup
     @State private var tabSelection = 0 // TabView
     @State private var selectedDates: Set<DateComponents> = []  //  MultiDatePicker
     @State private var showSheet = false    //  Sheet
     @State private var showPopover = false  // Popover
     @State private var showAlert = false    //  Alert
+    @State private var showAlert1 = false    //  Alert
     @State private var showConfirmationDialog = false   //  ConfirmationDialog
-    
     
     let item: PreviewComponent
     
@@ -460,12 +460,12 @@ struct PreviewItemDemoView: View {
         case .zStack:
             ZStack {
                 Circle()
-                    .fill(.blue.opacity(0.18))
+                    .fill(.blue.opacity(0.15))
                     .frame(width: 120, height: 120)
                 
                 Circle()
-                    .fill(.blue.opacity(0.28))
-                    .frame(width: 82, height: 82)
+                    .fill(.blue.opacity(0.3))
+                    .frame(width: 80, height: 80)
                 
                 Image(systemName: "star.fill")
                     .font(.system(size: 34))
@@ -476,8 +476,8 @@ struct PreviewItemDemoView: View {
         case .lazyVStack:
             ScrollView {
                 LazyVStack(spacing: 10) {
-                    ForEach(0..<6, id: \.self) { index in
-                        Text(verbatim: "Item \(index + 1)")
+                    ForEach(1...6, id: \.self) { index in
+                        Text(verbatim: "Item \(index)")
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(.gray.opacity(0.12))
@@ -486,57 +486,29 @@ struct PreviewItemDemoView: View {
                 }
                 .padding(.horizontal, 4)
             }
-            .frame(width: 260, height: 220)
+            .frame(height: 200)
             
             //  LazyHStack
         case .lazyHStack:
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 12) {
-                    ForEach(0..<6, id: \.self) { index in
+                    ForEach(1...6, id: \.self) { index in
                         RoundedRectangle(cornerRadius: 12)
                             .fill(.blue.opacity(0.18))
                             .frame(width: 90, height: 90)
                             .overlay {
-                                Text(verbatim: "\(index + 1)")
+                                Text(verbatim: "\(index)")
                                     .font(.headline)
                             }
                     }
                 }
                 .padding(.horizontal, 4)
             }
-            .frame(width: 260, height: 110)
+            .frame(height: 110)
             
             //  Grid
         case .grid:
-            if #available(iOS 16.0, macOS 13.0, *) {
-                Grid(horizontalSpacing: 12, verticalSpacing: 12) {
-                    GridRow {
-                        Text(verbatim: "A")
-                        Text(verbatim: "B")
-                        Text(verbatim: "C")
-                    }
-                    
-                    GridRow {
-                        Text(verbatim: "1")
-                        Text(verbatim: "2")
-                        Text(verbatim: "3")
-                    }
-                    
-                    GridRow {
-                        Image(systemName: "star.fill")
-                        Image(systemName: "heart.fill")
-                        Image(systemName: "bolt.fill")
-                    }
-                }
-                .font(.system(size: 20, weight: .semibold))
-                .padding()
-                .background(.gray.opacity(0.12))
-                .clipShape(RoundedRectangle(cornerRadius: 14))
-            } else {
-                Text(verbatim: "Requires iOS 16 or later")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
+            GridFallbackDemo()
             
             //  LazyVGrid
         case .lazyVGrid:
@@ -546,17 +518,16 @@ struct PreviewItemDemoView: View {
                 ],
                 spacing: 10
             ) {
-                ForEach(0..<8, id: \.self) { index in
+                ForEach(1...8, id: \.self) { index in
                     RoundedRectangle(cornerRadius: 10)
                         .fill(.blue.opacity(0.18))
                         .frame(height: 60)
                         .overlay {
-                            Text(verbatim: "\(index + 1)")
+                            Text(verbatim: "\(index)")
                                 .font(.headline)
                         }
                 }
             }
-            .frame(width: 260)
             
             //  LazyHGrid
         case .lazyHGrid:
@@ -568,70 +539,47 @@ struct PreviewItemDemoView: View {
                     ],
                     spacing: 10
                 ) {
-                    ForEach(0..<8, id: \.self) { index in
+                    ForEach(1...8, id: \.self) { index in
                         RoundedRectangle(cornerRadius: 10)
                             .fill(.purple.opacity(0.18))
                             .frame(width: 70)
                             .overlay {
-                                Text(verbatim: "\(index + 1)")
+                                Text(verbatim: "\(index)")
                                     .font(.headline)
                             }
                     }
                 }
                 .padding(.horizontal, 4)
             }
-            .frame(width: 260, height: 140)
+            .frame(height: 140)
             
             //  ViewThatFits
         case .viewThatFits:
-            if #available(iOS 16.0, macOS 13.0, *) {
-                ViewThatFits {
-                    HStack(spacing: 10) {
-                        Text(verbatim: "SwiftUI")
-                        Text(verbatim: "Layout")
-                        Text(verbatim: "Preview")
-                    }
-                    
-                    VStack(spacing: 8) {
-                        Text(verbatim: "SwiftUI")
-                        Text(verbatim: "Layout")
-                        Text(verbatim: "Preview")
-                    }
-                }
-                .font(.system(size: 16, weight: .semibold))
-                .padding()
-                .frame(width: 180)
-                .background(.gray.opacity(0.12))
-                .clipShape(RoundedRectangle(cornerRadius: 14))
-            } else {
-                Text(verbatim: "Requires iOS 16 or later")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
+            ViewThatFitsFallbackDemo()
             
             //  GeometryReader
         case .geometryReader:
             GeometryReader { geo in
                 VStack(spacing: 8) {
-                    Text(verbatim: "Width: \(Int(geo.size.width))")
-                    Text(verbatim: "Height: \(Int(geo.size.height))")
+                    Text(verbatim: "Width: \(geo.size.width)")
+                    Text(verbatim: "Height: \(geo.size.height)")
                 }
                 .font(.system(size: 15, weight: .medium))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .frame(width: 260, height: 120)
+            .frame(height: 120)
             .background(.gray.opacity(0.12))
             .clipShape(RoundedRectangle(cornerRadius: 14))
             
             // MARK: 容器
             // ScrollView
         case .scrollView:
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+            ScrollView {
+                VStack(spacing: 12) {
                     ForEach(1...8, id: \.self) { index in
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Color.blue.opacity(0.15))
-                            .frame(width: 110, height: 80)
+                            .frame(height: 50)
                             .overlay(
                                 Text(verbatim: "Card \(index)")
                                     .font(.system(size: 15, weight: .semibold))
@@ -639,6 +587,7 @@ struct PreviewItemDemoView: View {
                     }
                 }
             }
+            .frame(height: 130)
             
             // List
         case .list:
@@ -680,6 +629,42 @@ struct PreviewItemDemoView: View {
             .frame(height: 160)
             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             
+            // Group
+        case .group:
+            VStack(spacing: 8) {
+                Group {
+                    Text(verbatim: "SwiftUI")
+                    Text(verbatim: "Preview")
+                }
+                .foregroundStyle(Color.blue)
+                .font(.system(size: 18, weight: .semibold))
+            }
+            .padding()
+            .frame(width: 180)
+            .background(.gray.opacity(0.12))
+            .clipShape(RoundedRectangle(cornerRadius: 14))
+            
+            // GroupBox
+        case .groupBox:
+            GroupBox {
+                VStack(alignment: .leading, spacing: 10) {
+                    Label {
+                        Text(verbatim: "SwiftUI Basics")
+                    } icon: {
+                        Image(systemName: "book.closed")
+                    }
+                    
+                    Label {
+                        Text(verbatim: "12 Lessons Completed")
+                    } icon: {
+                        Image(systemName: "checkmark.circle")
+                    }
+                }
+                .padding(.vertical, 6)
+            } label: {
+                Text(verbatim: "Course Status")
+            }
+            
             // DisclosureGroup
         case .disclosureGroup:
             VStack {
@@ -690,13 +675,15 @@ struct PreviewItemDemoView: View {
                 }, label: {
                     HStack {
                         Text(verbatim: "Show Details")
+                            .foregroundStyle(Color.accentColor)
                         Spacer()
                         Image(systemName:"chevron.right")
                             .font(.system(size: 14, weight: .semibold))
-                            .imageScale(.small)
                             .rotationEffect(Angle(degrees: isShowDetails ? 90 : 0))
                     }
+                    .contentShape(Rectangle())
                 })
+                .buttonStyle(.plain)
                 if isShowDetails {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(verbatim: "This is the first line.")
@@ -707,43 +694,7 @@ struct PreviewItemDemoView: View {
                 }
                 Spacer()
             }
-            .frame(height: 140)
-            
-            // Group
-        case .group:
-            VStack(spacing: 8) {
-                Group {
-                    Text(verbatim: "SwiftUI")
-                    Text(verbatim: "Preview")
-                }
-                .font(.system(size: 18, weight: .semibold))
-                .foregroundStyle(.blue)
-            }
-            .padding()
-            .frame(width: 180)
-            .background(.gray.opacity(0.12))
-            .clipShape(RoundedRectangle(cornerRadius: 14))
-            
-            // GroupBox
-        case .groupBox:
-            GroupBox {
-                HStack(spacing: 10) {
-                    Image(systemName: "person.crop.circle")
-                        .font(.system(size: 28))
-                        .foregroundStyle(.blue)
-                    
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(verbatim: "Profile")
-                            .font(.headline)
-                        
-                        Text(verbatim: "SwiftUI Developer")
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-            }
-            .frame(width: 260)
+            .frame(height: 124)
             
             //  ControlGroup
         case .controlGroup:
@@ -783,12 +734,28 @@ struct PreviewItemDemoView: View {
                 demoPage(title: "Tools", icon: "square.grid.2x2.fill", color: .orange).tag(2)
             }
             .frame(height: 180)
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .tabViewStyle(PageTabViewStyle())
             
             //  NavigationStack
         case .navigationStack:
-            if #available(iOS 16.0, macOS 13.0, *) {
+            if #available(iOS 16.0, *) {
                 NavigationStack {
+                    NavigationLink {
+                        Text(verbatim: "Detail View")
+                            .font(.headline)
+                    } label: {
+                        Label {
+                            Text(verbatim: "Open Detail")
+                        } icon: {
+                            Image(systemName: "arrow.right.circle")
+                        }
+                    }
+                    .navigationTitle("Stack")
+                }
+                .frame(height: 180)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+            } else {
+                NavigationView {
                     VStack(spacing: 16) {
                         NavigationLink {
                             Text(verbatim: "Detail View")
@@ -800,19 +767,16 @@ struct PreviewItemDemoView: View {
                                 Image(systemName: "arrow.right.circle")
                             }
                         }
+                        .navigationTitle("Stack")
                     }
-                    .navigationTitle("Stack")
                 }
-                .frame(width: 260, height: 180)
-            } else {
-                Text(verbatim: "Requires iOS 16 or later")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                .frame(height: 180)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             }
             
             //  NavigationSplitView
         case .navigationSplitView:
-            if #available(iOS 16.0, macOS 13.0, *) {
+            if #available(iOS 16.0, *) {
                 NavigationSplitView {
                     List(["Home", "Tools", "Settings"], id: \.self) { item in
                         Text(verbatim: item)
@@ -828,11 +792,25 @@ struct PreviewItemDemoView: View {
                             .font(.headline)
                     }
                 }
-                .frame(width: 280, height: 200)
+                .frame(height: 200)
             } else {
-                Text(verbatim: "Requires iOS 16 or later")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                NavigationView {
+                    List(["Home", "Tools", "Settings"], id: \.self) { item in
+                        Text(verbatim: item)
+                    }
+                    .navigationTitle("Sidebar")
+                    .navigationBarTitleDisplayMode(.automatic)
+                    VStack(spacing: 10) {
+                        Image(systemName: "sidebar.left")
+                            .font(.system(size: 32))
+                            .foregroundStyle(.blue)
+                        
+                        Text(verbatim: "Detail")
+                            .font(.headline)
+                    }
+                    .transition(.move(edge: .leading))
+                }
+                .frame(height: 200)
             }
             
             //  MARK: 呈现
@@ -844,7 +822,7 @@ struct PreviewItemDemoView: View {
                 Label {
                     Text(verbatim: "Show Sheet")
                 } icon: {
-                    Image(systemName: "rectangle.bottomthird.inset.filled")
+                    Image(systemName: "shift")
                 }
                 .font(.system(size: 16, weight: .semibold))
                 .padding(.horizontal, 18)
@@ -876,23 +854,55 @@ struct PreviewItemDemoView: View {
                 showAlert = true
             } label: {
                 Label {
-                    Text(verbatim: "Show Alert")
+                    Text(verbatim: "Show Notice")
                 } icon: {
-                    Image(systemName: "exclamationmark.triangle")
+                    Image(systemName: "info.circle")
                 }
                 .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(Color.blue)
                 .padding(.horizontal, 18)
                 .padding(.vertical, 10)
-                .background(.orange.opacity(0.16))
+                .background(.blue.opacity(0.14))
                 .clipShape(Capsule())
             }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text(verbatim: "Delete Item?"),
-                    message: Text(verbatim: "This action cannot be undone."),
-                    primaryButton: .destructive(Text(verbatim: "Delete")),
-                    secondaryButton: .cancel(Text(verbatim: "Cancel"))
-                )
+            .alert(Text(verbatim: "Course Updated"), isPresented: $showAlert) {
+                Button(role: .cancel) {
+                    
+                } label: {
+                    Text(verbatim: "OK")
+                }
+            } message: {
+                Text(verbatim: "Your learning progress has been saved.")
+            }
+            
+            Button {
+                showAlert1 = true
+            } label: {
+                Label {
+                    Text(verbatim: "Delete Item")
+                } icon: {
+                    Image(systemName: "trash")
+                }
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(Color.red)
+                .padding(.horizontal, 18)
+                .padding(.vertical, 10)
+                .background(.red.opacity(0.14))
+                .clipShape(Capsule())
+            }
+            .alert(Text(verbatim: "Delete Item?"), isPresented: $showAlert1) {
+                Button(role: .cancel) {
+                    
+                } label: {
+                    Text(verbatim: "Cancel")
+                }
+                Button(role: .destructive) {
+                    
+                } label: {
+                    Text(verbatim: "Delete")
+                }
+            } message: {
+                Text(verbatim: "This action cannot be undone.")
             }
             
             //  Popover
@@ -906,6 +916,7 @@ struct PreviewItemDemoView: View {
                     Image(systemName: "bubble.left.and.bubble.right")
                 }
                 .font(.system(size: 16, weight: .semibold))
+                .foregroundColor(Color.purple)
                 .padding(.horizontal, 18)
                 .padding(.vertical, 10)
                 .background(.purple.opacity(0.14))
@@ -925,13 +936,13 @@ struct PreviewItemDemoView: View {
                         .foregroundStyle(.secondary)
                 }
                 .padding()
-                .frame(width: 240)
             }
             
             //  ConfirmationDialog
         case .confirmationDialog:
             Button {
                 showConfirmationDialog = true
+                print("showConfirmationDialog:\(showConfirmationDialog)")
             } label: {
                 Label {
                     Text(verbatim: "Show Options")
@@ -945,18 +956,13 @@ struct PreviewItemDemoView: View {
                 .clipShape(Capsule())
             }
             .confirmationDialog(
-                "Choose an action",
+                Text(verbatim: "Choose an action"),
                 isPresented: $showConfirmationDialog,
                 titleVisibility: .visible
             ) {
                 Button {
                 } label: {
                     Text(verbatim: "Copy")
-                }
-                
-                Button {
-                } label: {
-                    Text(verbatim: "Share")
                 }
                 
                 Button(role: .destructive) {
@@ -1007,14 +1013,27 @@ struct PreviewItemDemoView: View {
             
             // UnevenRoundedRectangleFallback
         case .unevenRoundedRectangle:
-            UnevenRoundedRectangleFallback(
-                topLeading: 28,
-                bottomLeading: 8,
-                bottomTrailing: 28,
-                topTrailing: 8
-            )
-            .fill(.cyan)
-            .frame(width: 120, height: 70)
+            if #available(iOS 16.0, *) {
+                UnevenRoundedRectangle (
+                    cornerRadii: .init(
+                        topLeading: 28,
+                        bottomLeading: 8,
+                        bottomTrailing: 28,
+                        topTrailing: 8
+                    )
+                )
+                .fill(.cyan)
+                .frame(width: 120, height: 70)
+            } else {
+                UnevenRoundedRectangleFallback(
+                    topLeading: 28,
+                    bottomLeading: 8,
+                    bottomTrailing: 28,
+                    topTrailing: 8
+                )
+                .fill(.cyan)
+                .frame(width: 120, height: 70)
+            }
             
             //  ContainerRelativeShape
         case .containerRelativeShape:
@@ -1031,7 +1050,7 @@ struct PreviewItemDemoView: View {
                         .font(.headline)
                 }
             }
-            .frame(width: 170, height: 110)
+            .frame(width: 160, height: 100)
             .containerShape(RoundedRectangle(cornerRadius: 28))
             
             //  Path

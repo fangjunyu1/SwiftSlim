@@ -7,6 +7,9 @@
     "/" : {
       "shouldTranslate" : false
     },
+    "%lld" : {
+
+    },
     "123" : {
       "shouldTranslate" : false
     },
@@ -16714,9 +16717,6 @@
         }
       }
     },
-    "Choose an action" : {
-      "shouldTranslate" : false
-    },
     "Chooses the first view that fits the available space." : {
       "comment" : "根据可用空间选择第一个能够放下的视图。",
       "extractionState" : "manual",
@@ -27750,9 +27750,6 @@
           }
         }
       }
-    },
-    "Dates" : {
-      "shouldTranslate" : false
     },
     "Depth Stack" : {
       "comment" : "重叠排列",
@@ -59699,6 +59696,9 @@
           }
         }
       }
+    },
+    "No Results" : {
+
     },
     "Notifications" : {
       "comment" : "通知",
@@ -99006,6 +99006,9 @@
           }
         }
       }
+    },
+    "Try another keyword." : {
+
     },
     "Type System" : {
       "comment" : "012_类型系统",

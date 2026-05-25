@@ -89,37 +89,30 @@ struct PreviewView: View {
             ToolCategoryView(tool: .Preview, searchTips: "Search components...", searchText: $searchText, selectedCategory: $selectedCategory)
             
             // 组件列表
-            LazyVStack(alignment: .leading, spacing: 20) {
-                ForEach(displayedCategories) { category in
-                    let items = filteredComponents.filter { $0.category == category }
-                    if !items.isEmpty {
-                        VStack(alignment: .leading, spacing: 16) {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(LocalizedStringKey(category.title))
-                                    .font(.system(size: 24, weight: .bold))
-                                
-                                Text(LocalizedStringKey(category.subtitle))
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.secondary)
-                            }
-                            .padding(.horizontal, 10)
-                            // 视图预览组件
-                            LazyVStack(spacing: 18) {
-                                ForEach(items) { item in
-                                    #if DEBUG
-                                    PreviewItemView(item: item, isLocked: isLocked(item)) {
-                                        showProView = true
-                                    }
-                                    #else
-                                    PreviewItemView(item: item, isLocked: isLocked(item)) {
-                                        showProView = true
-                                    }
-                                    #endif
-                                }
+            // LazyVStack 有 BUG，不要用，滚动一定距离会无法弹窗！！！
+            // 复现环境：iPhone 13 mini + 17.6.1
+            
+            ForEach(displayedCategories) { category in
+                let items = filteredComponents.filter { $0.category == category }
+                if !items.isEmpty {
+                    VStack(alignment: .leading, spacing: 16) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(LocalizedStringKey(category.title))
+                                .font(.system(size: 24, weight: .bold))
+                            
+                            Text(LocalizedStringKey(category.subtitle))
+                                .font(.system(size: 14))
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.horizontal, 10)
+                        // 视图预览组件
+                        ForEach(items) { item in
+                            PreviewItemView(item: item, isLocked: isLocked(item)) {
+                                showProView = true
                             }
                         }
-                        .padding(.vertical, 20)
                     }
+                    .padding(.vertical, 20)
                 }
             }
         }

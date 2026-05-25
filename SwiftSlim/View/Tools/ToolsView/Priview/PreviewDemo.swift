@@ -57,9 +57,9 @@ enum PreviewDemo {
     case list
     case section
     case form
-    case disclosureGroup
     case group
     case groupBox
+    case disclosureGroup
     case controlGroup
     
     // 导航

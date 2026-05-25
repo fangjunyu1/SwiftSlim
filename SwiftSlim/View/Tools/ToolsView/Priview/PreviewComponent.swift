@@ -480,13 +480,8 @@ ColorPicker("Accent Color", selection: $color)
             code: """
         ZStack {
             Circle()
-                .fill(.blue.opacity(0.25))
-        
             Image(systemName: "star.fill")
-                .font(.system(size: 36))
-                .foregroundStyle(.blue)
         }
-        .frame(width: 120, height: 120)
         """
         ),
         
@@ -500,16 +495,11 @@ ColorPicker("Accent Color", selection: $color)
             code: """
         ScrollView {
             LazyVStack(spacing: 10) {
-                ForEach(0..<6, id: \\.self) { index in
-                    Text("Item \\(index + 1)")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(.gray.opacity(0.12))
-                        .cornerRadius(10)
+                ForEach(1...6, id: \\.self) { index in
+                    Text("Item \\(index)")
                 }
             }
         }
-        .frame(height: 220)
         """
         ),
         
@@ -523,15 +513,11 @@ ColorPicker("Accent Color", selection: $color)
             code: """
         ScrollView(.horizontal) {
             LazyHStack(spacing: 12) {
-                ForEach(0..<6, id: \\.self) { index in
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(.blue.opacity(0.18))
-                        .frame(width: 90, height: 90)
-                        .overlay(Text("\\(index + 1)"))
+                ForEach(1...6, id: \\.self) { index in
+                    Text("\\(index)")
                 }
             }
         }
-        .frame(height: 110)
         """
         ),
         
@@ -573,11 +559,8 @@ ColorPicker("Accent Color", selection: $color)
             ],
             spacing: 10
         ) {
-            ForEach(0..<8, id: \\.self) { index in
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(.blue.opacity(0.18))
-                    .frame(height: 60)
-                    .overlay(Text("\\(index + 1)"))
+            ForEach(1...8, id: \\.self) { index in
+                Text("\\(index)")
             }
         }
         """
@@ -594,20 +577,16 @@ ColorPicker("Accent Color", selection: $color)
         ScrollView(.horizontal) {
             LazyHGrid(
                 rows: [
-                    GridItem(.fixed(60)),
-                    GridItem(.fixed(60))
+                    GridItem(.fixed(60), spacing: 10),
+                    GridItem(.fixed(60), spacing: 10)
                 ],
                 spacing: 10
             ) {
-                ForEach(0..<8, id: \\.self) { index in
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(.purple.opacity(0.18))
-                        .frame(width: 70)
-                        .overlay(Text("\\(index + 1)"))
+                ForEach(1...8, id: \\.self) { index in
+                    Text("\\(index)")
                 }
             }
         }
-        .frame(height: 140)
         """
         ),
         
@@ -624,12 +603,14 @@ ColorPicker("Accent Color", selection: $color)
                 Text("SwiftUI")
                 Text("Layout")
                 Text("Preview")
+                Text("ViewThatFits")
             }
         
             VStack {
                 Text("SwiftUI")
                 Text("Layout")
                 Text("Preview")
+                Text("ViewThatFits")
             }
         }
         """
@@ -645,14 +626,12 @@ ColorPicker("Accent Color", selection: $color)
             code: """
         GeometryReader { geo in
             VStack {
-                Text("Width: \\(Int(geo.size.width))")
-                Text("Height: \\(Int(geo.size.height))")
+                Text("Width: \\(geo.size.width)")
+                Text("Height: \\(geo.size.height)")
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .frame(height: 120)
-        .background(.gray.opacity(0.12))
-        .cornerRadius(12)
         """
         ),
         
@@ -665,9 +644,11 @@ ColorPicker("Accent Color", selection: $color)
                 description: "Shows scrollable content.",
                 demo: .scrollView,
                 code: """
-ScrollView(.horizontal, showsIndicators: false) {
-    HStack {
-        // content
+ScrollView) {
+    VStack(spacing: 12) {
+        ForEach(1...8, id: \\.self) { index in
+            Text("\\(index)")
+        }
     }
 }
 """
@@ -723,20 +704,6 @@ Form {
 """
         ),
         
-        //  DisclosureGroup
-        .init(
-            category: .container,
-            name: "DisclosureGroup",
-            subtitle: "DisclosureGroup",
-            description: "Expands or collapses content.",
-            demo: .disclosureGroup,
-            code: """
-DisclosureGroup("Show Details") {
-    Text("This is the content")
-}
-"""
-        ),
-        
         //  Group
         .init(
             category: .container,
@@ -749,7 +716,7 @@ DisclosureGroup("Show Details") {
                 Text("Title")
                 Text("Subtitle")
             }
-            .font(.headline)
+            .foregroundStyle(Color.blue)
             """
         ),
         
@@ -761,10 +728,25 @@ DisclosureGroup("Show Details") {
             description: "Displays related content in a labeled container.",
             demo: .groupBox,
             code: """
-            GroupBox("Profile") {
-                Label("SwiftUI Developer", systemImage: "person.crop.circle")
+            GroupBox("GroupBox") {
+                Label("SwiftUI Basics", systemImage: "book.closed")
+                Label("12 Lessons Completed", systemImage: "checkmark.circle")
             }
             """
+        ),
+        
+        //  DisclosureGroup
+        .init(
+            category: .container,
+            name: "DisclosureGroup",
+            subtitle: "DisclosureGroup",
+            description: "Expands or collapses content.",
+            demo: .disclosureGroup,
+            code: """
+DisclosureGroup("Show Details") {
+    Text("This is the content")
+}
+"""
         ),
         
         //  ControlGroup
@@ -830,9 +812,10 @@ TabView {
             demo: .navigationSplitView,
             code: """
         NavigationSplitView {
-            List(["Home", "Tools"], id: \\.self) { item in
+            List(["Home", "Tools", "Settings"], id: \\.self) { item in
                 Text(item)
             }
+            .navigationTitle("Sidebar")
         } detail: {
             Text("Detail")
         }
@@ -855,7 +838,6 @@ TabView {
         }
         .sheet(isPresented: $showSheet) {
             Text("Sheet Content")
-                .padding()
         }
         """
             ),
@@ -870,7 +852,7 @@ TabView {
             code: """
         @State private var showAlert = false
         
-        Button("Show Alert") {
+        Button("Delete Item") {
             showAlert = true
         }
         .alert("Delete Item?", isPresented: $showAlert) {
@@ -897,7 +879,6 @@ TabView {
         }
         .popover(isPresented: $showPopover) {
             Text("Popover Content")
-                .padding()
         }
         """
         ),
@@ -923,6 +904,8 @@ TabView {
             Button("Copy") { }
             Button("Delete", role: .destructive) { }
             Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Select one operation to continue.")
         }
         """
         ),
@@ -1050,6 +1033,7 @@ TabView {
                 path.move(to: CGPoint(x: 20, y: 80))
                 path.addLine(to: CGPoint(x: 70, y: 20))
                 path.addLine(to: CGPoint(x: 120, y: 80))
+                path.addLine(to: CGPoint(x: 20, y: 80))
             }
             .stroke(.blue, lineWidth: 5)
             .frame(width: 140, height: 100)
