@@ -11,13 +11,19 @@ struct RootView: View {
     @State private var selected = contentType.home
     @EnvironmentObject var appStorage: AppStorageManager
     var body: some View {
-        Group {
-            if UIDevice.isPhone {
-                phoneLayout
+        ZStack {
+            if appStorage.hasCompletedOnboarding {
+                if UIDevice.isPhone {
+                    phoneLayout
+                } else {
+                    sidebarLayout
+                }
             } else {
-                sidebarLayout
+                OnboardingView()
+                    .transition(.opacity)
             }
         }
+        .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
     }
     
     
@@ -48,16 +54,8 @@ struct RootView: View {
     
     @ViewBuilder
     private var mainContent: some View {
-        ZStack {
-            if appStorage.hasCompletedOnboarding {
-                ContentView(selected: $selected)
-                    .transition(.opacity)
-            } else {
-                OnboardingView()
-                    .transition(.opacity)
-            }
-        }
-        .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
+        ContentView(selected: $selected)
+            .transition(.opacity)
     }
 }
 
