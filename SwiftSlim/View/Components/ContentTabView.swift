@@ -19,7 +19,7 @@ struct ContentTabView: View {
             Spacer()
             HStack {
                 Spacer()
-                ForEach(contentType.allCases.filter { $0 != .notifications }, id:\.rawValue) { item in
+                ForEach(contentType.allCases.filter { tab in [contentType.notifications, contentType.pro].contains {$0 != tab}}, id:\.rawValue) { item in
                     Spacer()
                     tabView(name: item.name, img: item.image, type: item, selectedTab: $selectedTab)
                     Spacer()

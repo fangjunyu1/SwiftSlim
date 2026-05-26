@@ -13,6 +13,7 @@ enum contentType: Int, CaseIterable {
     case courses = 1
     case tools = 2
     case settings = 3
+    case pro = 5
     
     var name: String {
         switch self {
@@ -26,6 +27,8 @@ enum contentType: Int, CaseIterable {
             "Settings"
         case .notifications:
             "Notifications"
+        case .pro:
+            "Pro"
         }
     }
     
@@ -41,6 +44,8 @@ enum contentType: Int, CaseIterable {
             "homeSetting"
         case .notifications:
             "bell"
+        case .pro:
+            "homePro"
         }
     }
 }

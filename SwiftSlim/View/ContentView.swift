@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     @Binding var selected: contentType
     
 //    init(selected: contentType) {
@@ -35,6 +36,8 @@ struct ContentView: View {
                     .modifier(BackgroundModifiers())
             case .notifications:
                 NotificationView()
+            case .pro:
+                ProView(showCloseButton: false)
             }
         }
     }
