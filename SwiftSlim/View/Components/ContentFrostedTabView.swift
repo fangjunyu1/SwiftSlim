@@ -16,7 +16,7 @@ struct ContentFrostedTabView: View {
         VStack {
             Spacer()
             HStack {
-                ForEach(contentType.allCases.filter { tab in [contentType.notifications, contentType.pro].contains {$0 != tab}}, id:\.rawValue) { item in
+                ForEach(contentType.allCases.filter { tab in ![contentType.notifications, contentType.pro].contains(tab) }, id:\.rawValue) { item in
                     frostedTabView(name: item.name, img: item.image, type: item, selectedTab: $selectedTab)
                 }
             }
