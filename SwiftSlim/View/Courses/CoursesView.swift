@@ -24,6 +24,8 @@ struct CoursesView: View {
     @EnvironmentObject var iapManager: IAPManager
     @EnvironmentObject var appStorage: AppStorageManager
     
+    // 搜索内容
+    @State private var searchText = ""
     // 显示会员视图
     @State private var showProView = false
     @Binding var selected: contentType
@@ -40,10 +42,56 @@ struct CoursesView: View {
         }
     }
     
+    // 搜索课程 - 数据源
+    private var filteredChapters: [CoursesChapter] {
+        
+        let keyword = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !keyword.isEmpty else {
+            return CoursesViewModel.chapters
+        }
+        
+        return CoursesViewModel.chapters.compactMap { chapter in
+            let filteredItems = chapter.items.filter { item in
+                // 1. 搜索课程标题
+                let titleMatched = item.name.range(
+                    of: keyword,
+                    options: [.caseInsensitive, .diacriticInsensitive]
+                ) != nil
+                
+                // 2. 搜索 Markdown 正文内容
+                let contentMatched: Bool = {
+                    guard let data = try? Data(contentsOf: item.url),
+                          let text = String(data: data, encoding: .utf8) else {
+                        return false
+                    }
+                    
+                    return text.range(
+                        of: keyword,
+                        options: [.caseInsensitive, .diacriticInsensitive]
+                    ) != nil
+                }()
+                
+                return titleMatched || contentMatched
+            }
+            
+            // 如果这个章节里没有匹配课程，就不显示这个章节
+            guard !filteredItems.isEmpty else {
+                return nil
+            }
+            
+            // 保留原章节标题，只替换搜索后的课程列表
+            return CoursesChapter(title: chapter.title, items: filteredItems)
+        }
+    }
+    
     private var mainContent: some View {
         ScrollView {
+            // 导航组件
+            ToolSearchView(tool: .Preview, searchTips: "Search courses...", searchText: $searchText)
+            
             VStack(spacing: 20) {
-                ForEach(CoursesViewModel.chapters) { chapter in
+                ForEach(filteredChapters) { chapter in
                     CoursesChapterView(chapter: chapter)
                         .background(Color("WhiteAndBlack"))
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
@@ -204,7 +252,7 @@ struct CoursesItem: View {
                     Image(systemName: "checkmark.circle")
                         .font(.system(size: 20))
                         .foregroundStyle(Color.green)
-                        
+                    
                 } else {
                     if isContinueLearning {
                         Image(systemName: "arrowtriangle.right.circle")

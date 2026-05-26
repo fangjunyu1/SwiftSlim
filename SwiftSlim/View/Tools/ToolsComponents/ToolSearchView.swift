@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToolSearchView: View {
     var tool: ToolType
-    var searchTips: String
+    var searchTips: LocalizedStringKey
     @Binding var searchText: String
     var body: some View {
         VStack(spacing: 20) {

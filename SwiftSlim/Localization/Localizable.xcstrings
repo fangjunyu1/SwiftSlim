@@ -16432,7 +16432,6 @@
         }
       }
     },
-  
     "Chapter 6" : {
       "comment" : "第六章",
       "extractionState" : "manual",
@@ -16715,7 +16714,6 @@
         }
       }
     },
-  
     "Chapter 7" : {
       "comment" : "第七章",
       "extractionState" : "manual",
@@ -16998,7 +16996,6 @@
         }
       }
     },
-  
     "Chapter 8" : {
       "comment" : "第八章",
       "extractionState" : "manual",
@@ -17281,7 +17278,6 @@
         }
       }
     },
-  
     "Chapter 9" : {
       "comment" : "第九章",
       "extractionState" : "manual",
@@ -17564,7 +17560,6 @@
         }
       }
     },
-  
     "Chapter 10" : {
       "comment" : "第十章",
       "extractionState" : "manual",
@@ -17847,7 +17842,6 @@
         }
       }
     },
-  
     "Chapter 11" : {
       "comment" : "第十一章",
       "extractionState" : "manual",
@@ -18130,7 +18124,6 @@
         }
       }
     },
-  
     "Chapter 12" : {
       "comment" : "第十二章",
       "extractionState" : "manual",
@@ -18413,7 +18406,6 @@
         }
       }
     },
-  
     "Chapter 13" : {
       "comment" : "第十三章",
       "extractionState" : "manual",
@@ -18696,7 +18688,6 @@
         }
       }
     },
-  
     "Chapter 14" : {
       "comment" : "第十四章",
       "extractionState" : "manual",
@@ -18979,7 +18970,6 @@
         }
       }
     },
-  
     "Chapter 15" : {
       "comment" : "第十五章",
       "extractionState" : "manual",
@@ -19262,7 +19252,6 @@
         }
       }
     },
-  
     "Chapter 16" : {
       "comment" : "第十六章",
       "extractionState" : "manual",
@@ -19545,7 +19534,6 @@
         }
       }
     },
-  
     "Chapter 17" : {
       "comment" : "第十七章",
       "extractionState" : "manual",
@@ -19828,7 +19816,6 @@
         }
       }
     },
-  
     "Chapter 18" : {
       "comment" : "第十八章",
       "extractionState" : "manual",
@@ -20111,7 +20098,6 @@
         }
       }
     },
-  
     "Chapter 19" : {
       "comment" : "第十九章",
       "extractionState" : "manual",
@@ -20394,7 +20380,6 @@
         }
       }
     },
-  
     "Chapter 20" : {
       "comment" : "第二十章",
       "extractionState" : "manual",
@@ -20677,7 +20662,6 @@
         }
       }
     },
-  
     "Chapter 21" : {
       "comment" : "第二十一章",
       "extractionState" : "manual",
@@ -20960,7 +20944,6 @@
         }
       }
     },
-  
     "Chapter 22" : {
       "comment" : "第二十二章",
       "extractionState" : "manual",
@@ -21243,7 +21226,6 @@
         }
       }
     },
-  
     "Chapter 23" : {
       "comment" : "第二十三章",
       "extractionState" : "manual",
@@ -21526,7 +21508,6 @@
         }
       }
     },
-  
     "Chapter 24" : {
       "comment" : "第二十四章",
       "extractionState" : "manual",
@@ -21809,7 +21790,6 @@
         }
       }
     },
-  
     "Chapter 25" : {
       "comment" : "第二十五章",
       "extractionState" : "manual",
@@ -22092,7 +22072,6 @@
         }
       }
     },
-  
     "Chapter 26" : {
       "comment" : "第二十六章",
       "extractionState" : "manual",
@@ -22375,7 +22354,6 @@
         }
       }
     },
-  
     "Chapter 27" : {
       "comment" : "第二十七章",
       "extractionState" : "manual",
@@ -22658,7 +22636,6 @@
         }
       }
     },
-  
     "Chapter 28" : {
       "comment" : "第二十八章",
       "extractionState" : "manual",
@@ -22941,7 +22918,6 @@
         }
       }
     },
-  
     "Chapter 29" : {
       "comment" : "第二十九章",
       "extractionState" : "manual",
@@ -23224,7 +23200,6 @@
         }
       }
     },
-  
     "Chapter 30" : {
       "comment" : "第三十章",
       "extractionState" : "manual",
@@ -71590,7 +71565,6 @@
         }
       }
     },
-  
     "Practice Cases" : {
       "comment" : "案例练习",
       "extractionState" : "manual",
@@ -83743,6 +83717,288 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "搜尋元件..."
+          }
+        }
+      }
+    },
+    "Search courses..." : {
+      "comment" : "搜索课程...",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابحث عن الدورات..."
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Търсене на курсове..."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "কোর্স খুঁজুন..."
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca cursos..."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat kurzy..."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søg kurser..."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurse suchen..."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναζήτηση μαθημάτων..."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar cursos..."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hae kursseja..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher des cours..."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "કોર્સ શોધો..."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חפש קורסים..."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोर्स खोजें..."
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pretraži tečajeve..."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurzusok keresése..."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari kursus..."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca corsi..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コースを検索..."
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курстарды іздеу..."
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಕೋರ್ಸ್‌ಗಳನ್ನು ಹುಡುಕಿ..."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강좌 검색..."
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ieškoti kursų..."
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "കോഴ്‌സുകൾ തിരയുക..."
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोर्स शोधा..."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari kursus..."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søk kurs..."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoek cursussen..."
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପାଠ୍ୟକ୍ରମ ଖୋଜନ୍ତୁ..."
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਕੋਰਸ ਖੋਜੋ..."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szukaj kursów..."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar cursos..."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caută cursuri..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск курсов..."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hľadať kurzy..."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Išči tečaje..."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sök kurser..."
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "பாடநெறிகளைத் தேடு..."
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "కోర్సులను వెతకండి..."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ค้นหาคอร์ส..."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurs ara..."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пошук курсів..."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کورس تلاش کریں..."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm khóa học..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索课程..."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋課程..."
           }
         }
       }
