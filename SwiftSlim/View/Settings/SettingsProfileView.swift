@@ -138,6 +138,9 @@ struct SettingsProfileView: View {
         let fileName = "userProfileImage.jpg"  // 只保存文件名
         
         do {
+            // 开始加载状态
+            try? await Task.sleep(nanoseconds: 1_500_000_000)
+            
             // 保存图片文件
             try await saveAvatarFiles(image: image, fileName: fileName)
             print("保存个人资料成功")
@@ -151,11 +154,12 @@ struct SettingsProfileView: View {
                 appStorage.userImageName = fileName
             }
             
-            try? await Task.sleep(nanoseconds: 1_500_000_000)
+            // 恢复保存状态
             saveStats = .success
             
             try? await Task.sleep(nanoseconds: 1_000_000_000)
             saveStats = .prepar
+            
         } catch {
             print("保存个人资料失败：\(error.localizedDescription)")
             
