@@ -16,7 +16,7 @@ struct ContentFrostedTabView: View {
         VStack {
             Spacer()
             HStack {
-                ForEach(contentType.allCases, id:\.rawValue) { item in
+                ForEach(contentType.allCases.filter { $0 != .notifications }, id:\.rawValue) { item in
                     frostedTabView(name: item.name, img: item.image, type: item, selectedTab: $selectedTab)
                 }
             }
@@ -50,7 +50,7 @@ struct ContentFrostedTabView: View {
     }
 }
 
-struct frostedTabView: View {
+private struct frostedTabView: View {
     @State private var clicked = false
     var name: String
     var img: String
@@ -91,6 +91,7 @@ struct frostedTabView: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

@@ -95,6 +95,8 @@ struct AcknowLedgementsTitle: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }
+

@@ -15,6 +15,18 @@ struct ToolsView: View {
     ]
     
     var body: some View {
+        if UIDevice.isPhone {
+            mainContent
+                .navigationTitle("Tools")
+                .navigationBarTitleDisplayMode(.large)
+        } else {
+            mainContent
+                .navigationTitle("Tools")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    
+    private var mainContent: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 30) {
                 
@@ -27,7 +39,6 @@ struct ToolsView: View {
             .padding(.bottom, 120)
             
         }
-        .navigationTitle("Tools")
     }
     
     // 学习工具
@@ -64,8 +75,8 @@ struct ToolsView: View {
     }
 }
 
-
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

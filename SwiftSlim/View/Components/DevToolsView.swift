@@ -61,7 +61,7 @@ struct DevToolsView: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
-        .environment(\.locale, .init(identifier: "en"))
+        .environmentObject(IAPManager.shared)
 }

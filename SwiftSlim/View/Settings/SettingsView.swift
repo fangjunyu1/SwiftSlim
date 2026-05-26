@@ -20,6 +20,18 @@ struct SettingsView: View {
     ]
     
     var body: some View {
+        if UIDevice.isPhone {
+            mainContent
+                .navigationBarTitleDisplayMode(.large)
+                .navigationTitle("Settings")
+        } else {
+            mainContent
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("Settings")
+        }
+    }
+    
+    private var mainContent: some View {
         ScrollView(showsIndicators: false) {
             
             VStack(spacing: 16) {
@@ -51,7 +63,6 @@ struct SettingsView: View {
             .padding(.bottom, 120)
             
         }
-        .navigationTitle("Settings")
     }
 }
 
@@ -172,9 +183,7 @@ private extension View {
 }
 
 #Preview {
-    NavigationView {
-        SettingsView(selected: .constant(.settings))
-            .modifier(BackgroundModifiers())
-            .environmentObject(AppStorageManager.shared)
-    }
+    RootView()
+        .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

@@ -9,9 +9,10 @@ import SwiftUI
 
 enum contentType: Int, CaseIterable {
     case home = 0
-    case courses
-    case tools
-    case settings
+    case notifications = 4
+    case courses = 1
+    case tools = 2
+    case settings = 3
     
     var name: String {
         switch self {
@@ -23,6 +24,8 @@ enum contentType: Int, CaseIterable {
             "Tools"
         case .settings:
             "Settings"
+        case .notifications:
+            "Notifications"
         }
     }
     
@@ -36,6 +39,8 @@ enum contentType: Int, CaseIterable {
             "homeTools"
         case .settings:
             "homeSetting"
+        case .notifications:
+            "bell"
         }
     }
 }

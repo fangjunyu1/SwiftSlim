@@ -8,29 +8,61 @@
 import SwiftUI
 
 struct RootView: View {
+    @State private var selected = contentType.home
     @EnvironmentObject var appStorage: AppStorageManager
     var body: some View {
-        
-        // 待优化 NavigationView
+        Group {
+            if UIDevice.isPhone {
+                phoneLayout
+            } else {
+                sidebarLayout
+            }
+        }
+    }
+    
+    
+    // MARK: - iPhone：悬浮导航栏
+    private var phoneLayout: some View {
         NavigationView {
             ZStack {
+                mainContent
+                
+                // 仅 iOS 可以显示底部 TabView
+                // iPad、MacOS 的 TabView 在外层
                 if appStorage.hasCompletedOnboarding {
-                    // 主视图
-                    ContentView()
-                        .transition(.opacity)
-                } else {
-                    // 引导页
-                    OnboardingView()
-                        .transition(.opacity)
+                    ContentFrostedTabView(selectedTab: $selected)
                 }
             }
-            .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
-            StandbyView()
         }
+    }
+    
+    // MARK: - iPad / Mac：左侧导航栏
+    private var sidebarLayout: some View {
+        NavigationView {
+            ContentSidebarTabView(selectedTab: $selected)
+            mainContent
+        }
+    }
+    
+    // MARK: - 主内容
+    
+    @ViewBuilder
+    private var mainContent: some View {
+        ZStack {
+            if appStorage.hasCompletedOnboarding {
+                ContentView(selected: $selected)
+                    .transition(.opacity)
+            } else {
+                OnboardingView()
+                    .transition(.opacity)
+            }
+        }
+        .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
     }
 }
 
 #Preview {
-    return RootView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

@@ -19,7 +19,7 @@ struct ContentTabView: View {
             Spacer()
             HStack {
                 Spacer()
-                ForEach(contentType.allCases, id:\.rawValue) { item in
+                ForEach(contentType.allCases.filter { $0 != .notifications }, id:\.rawValue) { item in
                     Spacer()
                     tabView(name: item.name, img: item.image, type: item, selectedTab: $selectedTab)
                     Spacer()
@@ -33,7 +33,7 @@ struct ContentTabView: View {
     }
 }
 
-struct tabView: View {
+private struct tabView: View {
     @State private var clicked = false
     var name: String
     var img: String
@@ -75,5 +75,7 @@ struct tabView: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
+        .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selected = contentType.home
+    @Binding var selected: contentType
     
-    init() {
-        UITabBar.appearance().isHidden = true
-    }
+//    init(selected: contentType) {
+//        UITabBar.appearance().isHidden = true
+//        self.selected = selected
+//    }
     
     var body: some View {
         ZStack {
@@ -32,8 +33,9 @@ struct ContentView: View {
             case .settings:
                 SettingsView(selected: $selected)
                     .modifier(BackgroundModifiers())
+            case .notifications:
+                NotificationView()
             }
-            ContentFrostedTabView(selectedTab: $selected)
         }
     }
 }
@@ -72,6 +74,7 @@ struct NavigationTabView<Content: View>: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }

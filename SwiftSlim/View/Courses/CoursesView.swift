@@ -29,6 +29,18 @@ struct CoursesView: View {
     @Binding var selected: contentType
     
     var body: some View {
+        if UIDevice.isPhone {
+            mainContent
+                .navigationTitle("Courses")
+                .navigationBarTitleDisplayMode(.large)
+        } else {
+            mainContent
+                .navigationTitle("Courses")
+                .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    
+    private var mainContent: some View {
         ScrollView {
             VStack(spacing: 20) {
                 ForEach(CoursesViewModel.chapters) { chapter in
@@ -39,9 +51,8 @@ struct CoursesView: View {
                 // SwiftUI 高级开发
                 SwiftUIAdvancedDevelopment
             }
+            .padding(.top, 20)
         }
-        .navigationTitle("Courses")
-        .padding(.top, 30)
         .safeAreaInset(edge: .bottom) {
             Spacer().frame(height: 120)
         }
@@ -209,7 +220,7 @@ struct CoursesItem: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
         .environmentObject(AppStorageManager.shared)
-        .environment(\.locale, .init(identifier: "de")) // 设置为阿拉伯语
+        .environmentObject(IAPManager.shared)
 }

@@ -46,5 +46,7 @@ struct HighlightedCodeView: UIViewRepresentable {
 }
 
 #Preview {
-    ContentView()
+    RootView()
+        .environmentObject(AppStorageManager.shared)
+        .environmentObject(IAPManager.shared)
 }
