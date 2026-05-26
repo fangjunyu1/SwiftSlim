@@ -46,8 +46,12 @@ final class AppStorageManager: ObservableObject {
     var userDisplayName: String {
         if userName.isEmpty {
             // 如果用户名为空，返回本地化的开发者名称
-            return NSLocalizedString("Developer", comment: "UserName")
+            print("当前用户名为空，返回 Developer 文字")
+            let name = NSLocalizedString("Developer", comment: "UserName")
+            print("name:\(name)")
+            return name
         } else {
+            print("当前用户名不为空:\(userName)")
             return userName
         }
     }
@@ -131,7 +135,7 @@ extension AppStorageManager {
         expirationDate = defaults.double(forKey: "expirationDate")  // 会员有效期
         
         // 普通属性
-        userName = defaults.string(forKey: "userName") ?? "Developer"   // 用户名
+        userName = defaults.string(forKey: "userName") ?? ""   // 用户名
         userImageName = defaults.string(forKey: "userImageName")  ?? ""         // 用户头像
         if let idString = defaults.string(forKey: "avatarUpdatedUUID") {
             print("本地 avatarUpdatedUUID：\(idString)")
@@ -218,7 +222,7 @@ extension AppStorageManager {
         case "expirationDate": expirationDate = store.double(forKey: key)
         
         // MARK: - 其他属性
-        case "userName": userName = store.string(forKey: key) ?? "Developer"
+        case "userName": userName = store.string(forKey: key) ?? ""
         case "userImageName":
             print("loadValueFromiCloud - 本地头像文件路径：\(store.string(forKey: key) ?? "没有iCloud" )")
             userImageName = store.string(forKey: key) ?? ""
