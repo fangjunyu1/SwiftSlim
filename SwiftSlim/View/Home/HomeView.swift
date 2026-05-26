@@ -84,8 +84,7 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
                     // 问候语：你好，开发者👋
-                    let name = NSLocalizedString(appStorage.userName, comment: "Developer")
-                    let great = String(format: NSLocalizedString("Hello, %@", comment: "问候语"), name)
+                    let great = String(format: NSLocalizedString("Hello, %@", comment: "问候语"), appStorage.userDisplayName)
                     Text(great)
                         .fontWeight(.bold)
                     Text(verbatim:"👋")
