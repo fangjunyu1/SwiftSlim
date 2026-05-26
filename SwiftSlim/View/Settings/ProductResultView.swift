@@ -58,9 +58,11 @@ struct ProductResultView: View {
             VStack(spacing: 20) {
                 lottie
                 proTitle
-                CurrentPlanView()
-                    .padding(.top, 20)
-                    .padding(.bottom, 50)
+                if appStorage.isValidMember {
+                    CurrentPlanView()
+                        .padding(.top, 20)
+                        .padding(.bottom, 50)
+                }
                 proButton
                 Spacer()
             }
