@@ -29,8 +29,9 @@ class CoursesViewModel {
     static var chapters: [CoursesChapter] {
         let items = coursesItems
         
-        let chapter1 = Array(items.prefix(20))
-        let chapter2 = Array(items.dropFirst(20).prefix(20))
+        let chapter1 = Array(items.prefix(14))
+        let chapter2 = Array(items.dropFirst(14).prefix(15))
+        let chapter3 = Array(items.dropFirst(29).prefix(15))
         
         // 本地化章节一
         let localizedchapter1Text1 = NSLocalizedString("Chapter 1", comment: "章节一")
@@ -42,9 +43,15 @@ class CoursesViewModel {
         let localizedchapter2Text2 = NSLocalizedString("Advanced Layout", comment: "进阶布局")
         let chapter2Name = localizedchapter2Text1 + ": " + localizedchapter2Text2
         
+        // 本地化章节三
+        let localizedchapter3Text1 = NSLocalizedString("Chapter 3", comment: "章节三")
+        let localizedchapter3Text2 = NSLocalizedString("Practice Cases", comment: "案例练习")
+        let chapter3Name = localizedchapter3Text1 + ": " + localizedchapter3Text2
+        
         return [
             CoursesChapter(title: chapter1Name, items: chapter1),
-            CoursesChapter(title: chapter2Name, items: chapter2)
+            CoursesChapter(title: chapter2Name, items: chapter2),
+            CoursesChapter(title: chapter3Name, items: chapter3)
         ]
     }
     

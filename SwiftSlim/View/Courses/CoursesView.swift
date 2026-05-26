@@ -188,6 +188,7 @@ struct CoursesItem: View {
     var titleColor: Color {
         isCompleted || isContinueLearning ? Color("BlackColor") : Color.secondary
     }
+    
     var body: some View {
         HStack(spacing: 20) {
             Text(verbatim: "\(item.index)")
