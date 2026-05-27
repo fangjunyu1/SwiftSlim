@@ -15,6 +15,8 @@ struct RootView: View {
             if appStorage.hasCompletedOnboarding {
                 if UIDevice.isPhone {
                     phoneLayout
+                } else if !appStorage.minimalMode {
+                    phoneLayout
                 } else {
                     sidebarLayout
                 }
@@ -39,6 +41,7 @@ struct RootView: View {
                     ContentFrostedTabView(selectedTab: $selected)
                 }
             }
+            StandbyView()
         }
     }
     

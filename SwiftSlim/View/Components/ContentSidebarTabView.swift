@@ -18,10 +18,16 @@ struct ContentSidebarTabView: View {
                 .scaledToFit()
                 .frame(width: 50)
                 .cornerRadius(5)
-            Text(Bundle.main.appName)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.trailing, 20)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(Bundle.main.appName)
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("Minimal UI")
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(.trailing, 20)
         }
     }
     

@@ -9,6 +9,7 @@ import SwiftUI
 
 // MARK: - Row
 struct SettingsItemView: View {
+    @EnvironmentObject var appStorage: AppStorageManager
     @Environment(\.openURL) private var openURL
     let item: SettingsType
 
@@ -36,6 +37,9 @@ struct SettingsItemView: View {
                 itemView
             }
             .buttonStyle(.plain)
+            
+        case .toggle:
+            itemView
         }
     }
 
@@ -56,13 +60,22 @@ struct SettingsItemView: View {
 
             Spacer()
 
-            Image("right")
-                .resizable()
-                .renderingMode(.template)
-                .scaledToFit()
-                .frame(width: 16, height: 16)
-                .foregroundStyle(.gray.opacity(0.8))
-                .opacity(0.5)
+            switch item {
+            case .minimalMode:
+                Toggle(isOn: $appStorage.minimalMode) {
+                    Text(verbatim: "")
+                }
+                .frame(width: 65, height:  30)
+                    
+            default:
+                Image("right")
+                    .resizable()
+                    .renderingMode(.template)
+                    .scaledToFit()
+                    .frame(width: 16, height: 16)
+                    .foregroundStyle(.gray.opacity(0.8))
+                    .opacity(0.5)
+            }
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 10)

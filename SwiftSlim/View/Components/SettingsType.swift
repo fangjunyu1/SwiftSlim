@@ -16,6 +16,7 @@ enum SettingsType: Int, Identifiable, CaseIterable {
     case acknowLedgements
     case openSource
     case pro
+    case minimalMode
     
     var id: Int {
         rawValue
@@ -37,6 +38,8 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             "openSource"
         case .pro:
             "pro"
+        case .minimalMode:
+            "jianyue"
         }
     }
     
@@ -56,6 +59,8 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             Color(hex: "D69F3C")
         case .pro:
             Color(hex: "A506D7")
+        case .minimalMode:
+            Color(hex: "066DD7")
         }
     }
     
@@ -75,6 +80,8 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             "Open Source"
         case .pro:
             "Pro"
+        case .minimalMode:
+            "Minimal Mode"
         }
     }
     
@@ -100,6 +107,9 @@ enum SettingsType: Int, Identifiable, CaseIterable {
             
         case .pro:
                 .destination(AnyView(ProView(showCloseButton: false)))
+            
+        case .minimalMode:
+                .toggle
         }
     }
 }
@@ -108,4 +118,5 @@ enum SettingsAction {
     case destination(AnyView)
     case url(URL)
     case email
+    case toggle
 }

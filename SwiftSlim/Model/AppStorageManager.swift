@@ -73,6 +73,9 @@ final class AppStorageManager: ObservableObject {
     @Published var completedCourse: Set<Int> = [] { didSet { updateValue(key: "completedCourse", newValue: completedCourse, oldValue: oldValue)}}
     // 最近打开课程，用于继续学习
     @Published var lastOpenedCourse: Int = 0 { didSet { updateValue(key: "lastOpenedCourse", newValue: lastOpenedCourse, oldValue: oldValue)}}
+    // 简约模式，iPad、MacOS 可以切换模式的显示，iPhone 不显示
+    // 切换为简约模式后，左侧显示简单的导航条目，内容显示在右侧
+    @Published var minimalMode: Bool = false { didSet {updateValue(key: "minimalMode",newValue: minimalMode,oldValue: oldValue)} }
     
     
     // 记录第一次打开日期、最近一次打开日期和累计天数
@@ -144,11 +147,12 @@ extension AppStorageManager {
             print("本地没有 avatarUpdatedUUID，avatarUpdatedUUID 为 nil")
             avatarUpdatedUUID = nil
         }
-        hasCompletedOnboarding  = defaults.bool(forKey: "hasCompletedOnboarding")   // 是否完成引导页
+        hasCompletedOnboarding = defaults.bool(forKey: "hasCompletedOnboarding")   // 是否完成引导页
         openCount = defaults.integer(forKey: "openCount")   // 进入课程详情页的次数
         hasRequestedReview = defaults.bool(forKey: "hasRequestedReview")    // 评分弹窗
         completedCourse = Set<Int>(defaults.array(forKey: "completedCourse") as? [Int] ?? []) // 完成的课程
         lastOpenedCourse = defaults.integer(forKey: "lastOpenedCourse")   // 最近打开的课程
+        minimalMode = defaults.bool(forKey: "minimalMode")   // 是否完成引导页
         
         // 首次使用时间
         if defaults.object(forKey: "firstUsed") == nil {
@@ -196,6 +200,7 @@ extension AppStorageManager {
         loadValueFromiCloud(key: "daysUsed")    // 累计使用天数
         loadValueFromiCloud(key: "completedCourse") // 用户学习过的课程
         loadValueFromiCloud(key: "lastOpenedCourse")    // 最近打开的课程
+        loadValueFromiCloud(key: "minimalMode") // 简约模式
         store.synchronize() // 强制触发数据同步
     }
 }
@@ -244,6 +249,7 @@ extension AppStorageManager {
         case "daysUsed": daysUsed = store.object(forKey: key) as? Int ?? 0
         case "completedCourse": completedCourse = Set<Int>(store.array(forKey: key) as? [Int] ?? [])
         case "lastOpenedCourse": lastOpenedCourse = store.object(forKey: key) as? Int ?? 0
+        case "minimalMode": minimalMode = store.bool(forKey: key)
         default:
             print("未定义的 iCloud key：\(key)")
         }
@@ -304,17 +310,21 @@ extension AppStorageManager {
 
     /// iCloud 数据变化时，更新本地数据
     @objc private func iCloudDidUpdate(notification: Notification) {
-        guard let userInfo = notification.userInfo,
-              let changedKeys = userInfo[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] else {
-            loadFromiCloud()
-            return
-        }
-
-        isLoading = true
-        defer { isLoading = false }
-
-        for key in changedKeys {
-            loadValueFromiCloud(key: key)
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            
+            guard let userInfo = notification.userInfo,
+                  let changedKeys = userInfo[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] else {
+                self.loadFromiCloud()
+                return
+            }
+            
+            self.isLoading = true
+            defer { self.isLoading = false }
+            
+            for key in changedKeys {
+                self.loadValueFromiCloud(key: key)
+            }
         }
     }
 }

@@ -43,38 +43,23 @@ struct ContentView: View {
     }
 }
 
-struct StandbyView: View {
-    var body: some View {
-        VStack {
-            Image("app0")
-                .resizable()
-                .renderingMode(.template)
-                .scaledToFit()
-                .frame(width: 100)
-                .foregroundStyle(Color.gray.opacity(0.3))
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .modifier(BackgroundModifiers())
-    }
-}
-
-struct NavigationTabView<Content: View>: View {
-    let content: Content
-    @Binding var selected: contentType
-    
-    init(selected: Binding<contentType>, content: () -> Content) {
-        self.content = content()
-        self._selected = selected
-    }
-    
-    var body: some View {
-        NavigationView {
-            content
-                .modifier(BackgroundModifiers())
-        }
-        .navigationViewStyle(.stack)
-    }
-}
+//struct NavigationTabView<Content: View>: View {
+//    let content: Content
+//    @Binding var selected: contentType
+//    
+//    init(selected: Binding<contentType>, content: () -> Content) {
+//        self.content = content()
+//        self._selected = selected
+//    }
+//    
+//    var body: some View {
+//        NavigationView {
+//            content
+//                .modifier(BackgroundModifiers())
+//        }
+//        .navigationViewStyle(.stack)
+//    }
+//}
 
 #Preview {
     RootView()

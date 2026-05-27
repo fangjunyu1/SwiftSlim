@@ -41,6 +41,12 @@ struct SettingsView: View {
                 SettingsItemView(item: SettingsType.pro)
                     .cardStyle()
                 
+                // 简约模式
+                if !UIDevice.isPhone {
+                    SettingsItemView(item: SettingsType.minimalMode)
+                        .cardStyle()
+                }
+                
                 // 支持
                 settingsSection(
                     title: "Support",
