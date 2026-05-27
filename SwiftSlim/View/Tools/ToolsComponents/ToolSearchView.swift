@@ -10,12 +10,14 @@ import SwiftUI
 struct ToolSearchView: View {
     var tool: ToolType
     var searchTips: LocalizedStringKey
+    var showHeader: Bool = true
     @Binding var searchText: String
     var body: some View {
         VStack(spacing: 20) {
-            
-            // 标题组件
-            headerView
+            if showHeader {
+                // 标题组件
+                headerView
+            }
             
             // 搜索组件
             searchBar

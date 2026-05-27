@@ -54,10 +54,7 @@ struct CoursesView: View {
         return CoursesViewModel.chapters.compactMap { chapter in
             let filteredItems = chapter.items.filter { item in
                 // 1. 搜索课程标题
-                let titleMatched = item.name.range(
-                    of: keyword,
-                    options: [.caseInsensitive, .diacriticInsensitive]
-                ) != nil
+                let titleMatched = item.name.localizedCaseInsensitiveContains(keyword)
                 
                 // 2. 搜索 Markdown 正文内容
                 let contentMatched: Bool = {
@@ -66,10 +63,7 @@ struct CoursesView: View {
                         return false
                     }
                     
-                    return text.range(
-                        of: keyword,
-                        options: [.caseInsensitive, .diacriticInsensitive]
-                    ) != nil
+                    return text.localizedCaseInsensitiveContains(keyword)
                 }()
                 
                 return titleMatched || contentMatched
@@ -87,8 +81,13 @@ struct CoursesView: View {
     
     private var mainContent: some View {
         ScrollView {VStack(spacing: 20) {
+            // 搜索栏
+            ToolSearchView(tool: .Preview, searchTips: "Search courses...", showHeader: false, searchText: $searchText)
                 ForEach(filteredChapters) { chapter in
-                    CoursesChapterView(chapter: chapter)
+                    CoursesChapterView(
+                        chapter: chapter,
+                        isSearching: !searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                    )
                         .background(Color("WhiteAndBlack"))
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 }
@@ -182,6 +181,7 @@ struct CoursesChapterView: View {
     @EnvironmentObject var appStorage: AppStorageManager
     @State private var showList = false
     let chapter: CoursesChapter
+    var isSearching: Bool = false
     var body: some View {
         VStack(spacing: 0) {
             Button(action: {
@@ -203,7 +203,7 @@ struct CoursesChapterView: View {
                 .padding(.vertical, 24)
                 .padding(.horizontal, 30)
             })
-            if showList {
+            if showList || isSearching {
                 Divider()
                 ForEach(Array(chapter.items.enumerated()), id:\.offset) { index, item in
                     NavigationLink(destination: CoursesPage(item: item)) {
