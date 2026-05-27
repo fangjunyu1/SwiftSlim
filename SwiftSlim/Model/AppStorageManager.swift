@@ -46,12 +46,9 @@ final class AppStorageManager: ObservableObject {
     var userDisplayName: String {
         if userName.isEmpty {
             // 如果用户名为空，返回本地化的开发者名称
-            print("当前用户名为空，返回 Developer 文字")
             let name = NSLocalizedString("Developer", comment: "UserName")
-            print("name:\(name)")
             return name
         } else {
-            print("当前用户名不为空:\(userName)")
             return userName
         }
     }

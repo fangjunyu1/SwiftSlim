@@ -86,11 +86,7 @@ struct CoursesView: View {
     }
     
     private var mainContent: some View {
-        ScrollView {
-            // 导航组件
-            ToolSearchView(tool: .Preview, searchTips: "Search courses...", searchText: $searchText)
-            
-            VStack(spacing: 20) {
+        ScrollView {VStack(spacing: 20) {
                 ForEach(filteredChapters) { chapter in
                     CoursesChapterView(chapter: chapter)
                         .background(Color("WhiteAndBlack"))
