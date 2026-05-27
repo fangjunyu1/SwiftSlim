@@ -83,18 +83,21 @@ struct CoursesView: View {
         ScrollView {VStack(spacing: 20) {
             // 搜索栏
             ToolSearchView(tool: .Preview, searchTips: "Search courses...", showHeader: false, searchText: $searchText)
-                ForEach(filteredChapters) { chapter in
-                    CoursesChapterView(
-                        chapter: chapter,
-                        isSearching: !searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                    )
-                        .background(Color("WhiteAndBlack"))
-                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                }
+            ForEach(filteredChapters) { chapter in
+                CoursesChapterView(
+                    chapter: chapter,
+                    isSearching: !searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                )
+                .background(Color("WhiteAndBlack"))
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            }
+            
+            if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 // SwiftUI 高级开发
                 SwiftUIAdvancedDevelopment
             }
-            .padding(.top, 20)
+        }
+        .padding(.top, 20)
         }
         .safeAreaInset(edge: .bottom) {
             Spacer().frame(height: 120)
