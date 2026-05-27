@@ -28,6 +28,7 @@ struct CoursesView: View {
     @State private var searchText = ""
     // 显示会员视图
     @State private var showProView = false
+    
     @Binding var selected: contentType
     
     var body: some View {

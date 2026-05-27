@@ -9,7 +9,18 @@ import SwiftUI
 
 struct RootView: View {
     @State private var selected = contentType.home
+    @StateObject private var appUIState = AppUIState()
+    
     @EnvironmentObject var appStorage: AppStorageManager
+    
+    private var shouldShowFrostedTabView: Bool {
+        if UIDevice.isPhone {
+            return appUIState.isTabViewVisible
+        } else {
+            return true
+        }
+    }
+    
     var body: some View {
         ZStack {
             if appStorage.hasCompletedOnboarding {
@@ -25,6 +36,7 @@ struct RootView: View {
                     .transition(.opacity)
             }
         }
+        .environmentObject(appUIState)
         .animation(.easeInOut(duration: 0.25), value: appStorage.hasCompletedOnboarding)
     }
     
@@ -35,10 +47,9 @@ struct RootView: View {
             ZStack {
                 mainContent
                 
-                // 仅 iOS 可以显示底部 TabView
-                // iPad、MacOS 的 TabView 在外层
-                if appStorage.hasCompletedOnboarding {
+                if shouldShowFrostedTabView {
                     ContentFrostedTabView(selectedTab: $selected)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
                 }
             }
             StandbyView()

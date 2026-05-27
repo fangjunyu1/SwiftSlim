@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ToolSearchView: View {
+    @EnvironmentObject private var appUIState: AppUIState
+    
     var tool: ToolType
     var searchTips: LocalizedStringKey
     var showHeader: Bool = true
+    
     @Binding var searchText: String
+    
+    @FocusState private var isSearchFocused: Bool
+    
     var body: some View {
         VStack(spacing: 20) {
             if showHeader {
@@ -21,6 +27,24 @@ struct ToolSearchView: View {
             
             // 搜索组件
             searchBar
+        }
+        .onChange(of: isSearchFocused) { focused in
+            // 如果是 iPhone，输入框聚焦时，设置 isTabViewVisible 为对应的 Bool 值
+#if os(iOS)
+            if UIDevice.isPhone {
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    appUIState.isTabViewVisible = !focused
+                }
+            }
+            #endif
+        }
+        .onDisappear {
+#if os(iOS)
+            // 如果是 iPhone，离开时，恢复 isTabViewVisible
+            if UIDevice.isPhone {
+                appUIState.isTabViewVisible = true
+            }
+            #endif
         }
     }
     
@@ -60,6 +84,7 @@ struct ToolSearchView: View {
                 .font(.system(size: 15))
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
+                .focused($isSearchFocused)
             
             if !searchText.isEmpty {
                 Button {
