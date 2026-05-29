@@ -201,6 +201,7 @@ struct HomeView: View {
                     Text("Start Learning")
                         .font(.subheadline)
                         .fontWeight(.bold)
+                        .lineLimit(1)
                 }
                 .foregroundStyle(Color("AppColor"))
                 .padding(.vertical, 12)
