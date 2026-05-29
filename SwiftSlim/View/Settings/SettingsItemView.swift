@@ -57,8 +57,8 @@ struct SettingsItemView: View {
 
             Text(LocalizedStringKey(item.title))
                 .foregroundStyle(Color("BlackColor"))
-
-            Spacer()
+                .lineLimit(1)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
             switch item {
             case .minimalMode:

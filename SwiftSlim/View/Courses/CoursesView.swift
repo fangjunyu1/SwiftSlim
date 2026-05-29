@@ -200,6 +200,7 @@ struct CoursesChapterView: View {
                         .fontWeight(.medium)
                         .foregroundStyle(Color("BlackColor"))
                         .lineLimit(1)
+                        .minimumScaleFactor(0.9)
                     Spacer()
                     Image(systemName: showList ? "chevron.down" : "chevron.forward")
                         .font(.headline.bold())
