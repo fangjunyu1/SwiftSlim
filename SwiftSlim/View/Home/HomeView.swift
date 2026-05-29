@@ -180,6 +180,7 @@ struct HomeView: View {
                 Text("SwiftUI Beginner Tutorial")
                     .font(.title3)
                     .fontWeight(.bold)
+                    .lineLimit(1)
                 Text("Start from zero with SwiftUI and systematically learn Apple’s declarative UI development. Through clear explanations and practical examples, you will gradually master layout, interaction, and state management to build beautiful and useful app interfaces.")
                     .font(.footnote)
                     .fontWeight(.medium)

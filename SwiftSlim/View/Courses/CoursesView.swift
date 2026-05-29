@@ -141,6 +141,7 @@ struct CoursesView: View {
                     .font(.footnote)
                     .fontWeight(.medium)
                     .foregroundStyle(Color.white.opacity(0.8))
+                    .lineLimit(3)
                 Spacer()
             }
             Button(action: {

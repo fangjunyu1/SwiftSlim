@@ -97807,109 +97807,109 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "تطوير SwiftUI المتقدم"
+            "value" : "SwiftUI متقدم"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Разширена разработка със SwiftUI"
+            "value" : "SwiftUI Pro"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI উন্নত ডেভেলপমেন্ট"
+            "value" : "SwiftUI উন্নত"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desenvolupament avançat amb SwiftUI"
+            "value" : "SwiftUI avançat"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pokročilý vývoj ve SwiftUI"
+            "value" : "SwiftUI pokroč."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avanceret SwiftUI-udvikling"
+            "value" : "SwiftUI øvet"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fortgeschrittene SwiftUI-Entwicklung"
+            "value" : "SwiftUI Profi"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Προχωρημένη ανάπτυξη με SwiftUI"
+            "value" : "SwiftUI προχ."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desarrollo avanzado con SwiftUI"
+            "value" : "SwiftUI avanz."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edistynyt SwiftUI-kehitys"
+            "value" : "SwiftUI jatko"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Développement avancé avec SwiftUI"
+            "value" : "SwiftUI avancé"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "અદ્યતન SwiftUI વિકાસ"
+            "value" : "SwiftUI અદ્યતન"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "פיתוח מתקדם עם SwiftUI"
+            "value" : "SwiftUI מתקדם"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "उन्नत SwiftUI विकास"
+            "value" : "SwiftUI उन्नत"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Napredni razvoj u SwiftUI-ju"
+            "value" : "SwiftUI napred."
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haladó SwiftUI-fejlesztés"
+            "value" : "SwiftUI haladó"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pengembangan SwiftUI lanjutan"
+            "value" : "SwiftUI lanjut"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sviluppo avanzato con SwiftUI"
+            "value" : "SwiftUI avanz."
           }
         },
         "ja" : {
@@ -97921,13 +97921,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI кеңейтілген әзірлеуі"
+            "value" : "SwiftUI озық"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಉನ್ನತ SwiftUI ಅಭಿವೃದ್ಧಿ"
+            "value" : "SwiftUI ಉನ್ನತ"
           }
         },
         "ko" : {
@@ -97939,133 +97939,133 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pažangus SwiftUI kūrimas"
+            "value" : "SwiftUI pažang."
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "പുരോഗമന SwiftUI വികസനം"
+            "value" : "SwiftUI ഉയർന്ന"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "प्रगत SwiftUI विकास"
+            "value" : "SwiftUI प्रगत"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pembangunan SwiftUI lanjutan"
+            "value" : "SwiftUI lanjut"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avansert SwiftUI-utvikling"
+            "value" : "SwiftUI videre"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Geavanceerde SwiftUI-ontwikkeling"
+            "value" : "SwiftUI gevord."
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ଉନ୍ନତ SwiftUI ବିକାଶ"
+            "value" : "SwiftUI ଉନ୍ନତ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਉন্নਤ SwiftUI ਵਿਕਾਸ"
+            "value" : "SwiftUI ਉੱਨਤ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zaawansowany rozwój w SwiftUI"
+            "value" : "SwiftUI zaaw."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desenvolvimento avançado com SwiftUI"
+            "value" : "SwiftUI avanç."
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dezvoltare avansată în SwiftUI"
+            "value" : "SwiftUI avansat"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продвинутая разработка на SwiftUI"
+            "value" : "SwiftUI продв."
           }
         },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pokročilý vývoj v SwiftUI"
+            "value" : "SwiftUI pokr."
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Napreden razvoj v SwiftUI"
+            "value" : "SwiftUI napred."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avancerad SwiftUI-utveckling"
+            "value" : "SwiftUI proffs"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "மேம்பட்ட SwiftUI மேம்பாடு"
+            "value" : "SwiftUI மேல்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ఆధునిక SwiftUI అభివృద్ధి"
+            "value" : "SwiftUI ఆధునిక"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "การพัฒนา SwiftUI ขั้นสูง"
+            "value" : "SwiftUI ขั้นสูง"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "İleri SwiftUI geliştirme"
+            "value" : "SwiftUI ileri"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Просунута розробка у SwiftUI"
+            "value" : "SwiftUI просун."
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "جدید SwiftUI ڈویلپمنٹ"
+            "value" : "SwiftUI جدید"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Phát triển SwiftUI nâng cao"
+            "value" : "SwiftUI nâng"
           }
         },
         "zh-Hans" : {
@@ -98089,127 +98089,127 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "دليل SwiftUI للمبتدئين"
+            "value" : "SwiftUI مبتدئ"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Начално ръководство за SwiftUI"
+            "value" : "SwiftUI основи"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI প্রাথমিক টিউটোরিয়াল"
+            "value" : "SwiftUI শুরু"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial inicial de SwiftUI"
+            "value" : "SwiftUI inicial"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Úvodní kurz SwiftUI"
+            "value" : "SwiftUI úvod"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI for begyndere"
+            "value" : "SwiftUI start"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI-Einstiegskurs"
+            "value" : "SwiftUI Start"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Εισαγωγικό μάθημα SwiftUI"
+            "value" : "SwiftUI αρχή"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial inicial de SwiftUI"
+            "value" : "SwiftUI inicial"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI-aloitusopas"
+            "value" : "SwiftUI alku"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutoriel SwiftUI débutant"
+            "value" : "SwiftUI début"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI પ્રારંભિક માર્ગદર્શિકા"
+            "value" : "SwiftUI શરૂઆત"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "מדריך SwiftUI למתחילים"
+            "value" : "SwiftUI בסיסי"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI प्रारंभिक ट्यूटोरियल"
+            "value" : "SwiftUI आरंभ"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Početni vodič za SwiftUI"
+            "value" : "SwiftUI počet."
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bevezetés a SwiftUI-ba"
+            "value" : "SwiftUI alapok"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial dasar SwiftUI"
+            "value" : "SwiftUI dasar"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial introduttivo a SwiftUI"
+            "value" : "SwiftUI base"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI 入門チュートリアル"
+            "value" : "SwiftUI 入門"
           }
         },
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI бастауыш нұсқаулығы"
+            "value" : "SwiftUI бастау"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ಆರಂಭಿಕ ಪಾಠ"
+            "value" : "SwiftUI ಆರಂಭ"
           }
         },
         "ko" : {
@@ -98221,73 +98221,73 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI pradžios pamoka"
+            "value" : "SwiftUI pradžia"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI പ്രാരംഭ പാഠം"
+            "value" : "SwiftUI തുടക്കം"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI प्रारंभिक मार्गदर्शक"
+            "value" : "SwiftUI आरंभ"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial asas SwiftUI"
+            "value" : "SwiftUI asas"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI for nybegynnere"
+            "value" : "SwiftUI start"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI beginnershandleiding"
+            "value" : "SwiftUI start"
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ଆରମ୍ଭିକ ପାଠ"
+            "value" : "SwiftUI ଆରମ୍ଭ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ਸ਼ੁਰੂਆਤੀ ਟਿਊਟੋਰਿਅਲ"
+            "value" : "SwiftUI ਸ਼ੁਰੂ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Podstawowy kurs SwiftUI"
+            "value" : "SwiftUI start"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial introdutório de SwiftUI"
+            "value" : "SwiftUI inicial"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutorial introductiv SwiftUI"
+            "value" : "SwiftUI început"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вводный курс по SwiftUI"
+            "value" : "SwiftUI основы"
           }
         },
         "sk" : {
@@ -98299,55 +98299,55 @@
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uvodni vodič za SwiftUI"
+            "value" : "SwiftUI uvod"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI för nybörjare"
+            "value" : "SwiftUI start"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI அறிமுக பயிற்சி"
+            "value" : "SwiftUI தொடக்."
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ప్రారంభ పాఠం"
+            "value" : "SwiftUI ఆరంభం"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "บทเรียนเริ่มต้น SwiftUI"
+            "value" : "SwiftUI เริ่ม"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI başlangıç eğitimi"
+            "value" : "SwiftUI giriş"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вступний курс SwiftUI"
+            "value" : "SwiftUI вступ"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SwiftUI ابتدائی ٹیوٹوریل"
+            "value" : "SwiftUI آغاز"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hướng dẫn nhập môn SwiftUI"
+            "value" : "SwiftUI cơ bản"
           }
         },
         "zh-Hans" : {
