@@ -110838,37 +110838,37 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "إلغاء"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "Отказ"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "বাতিল"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "cancel·lar"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "zrušit"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "annuller"
           }
         },
         "de" : {
@@ -110880,7 +110880,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "Άκυρο"
           }
         },
         "en" : {
@@ -110898,7 +110898,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "peruuta"
           }
         },
         "fr" : {
@@ -110910,31 +110910,31 @@
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "રદ કરો"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ביטול"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "रद्द करें"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "odustani"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "mégse"
           }
         },
         "id" : {
@@ -110958,13 +110958,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "бас тарту"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ರದ್ದು"
           }
         },
         "ko" : {
@@ -110976,31 +110976,31 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "atsaukti"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "റദ്ദാക്കുക"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "रद्द करा"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "batal"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "avbryt"
           }
         },
         "nl" : {
@@ -111012,13 +111012,13 @@
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ବାତିଲ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ਰੱਦ ਕਰੋ"
           }
         },
         "pl" : {
@@ -111036,7 +111036,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "anulează"
           }
         },
         "ru" : {
@@ -111048,13 +111048,13 @@
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "zrušiť"
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "prekliči"
           }
         },
         "sv" : {
@@ -111066,19 +111066,19 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ரத்து"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "రద్దు"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "ยกเลิก"
           }
         },
         "tr" : {
@@ -111096,7 +111096,7 @@
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "cancel"
+            "value" : "منسوخ"
           }
         },
         "vi" : {
