@@ -260,7 +260,6 @@ struct HomeView: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(.horizontal, 8)
     }
     
     // 每日技巧
