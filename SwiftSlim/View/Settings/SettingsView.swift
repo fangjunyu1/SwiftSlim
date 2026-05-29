@@ -115,10 +115,13 @@ private extension SettingsView {
                 SettingsEnum.userImageView(displayName: appStorage.userDisplayName, image: appStorage.userImage, size: 68, fontSize: .title)
                 
                 VStack(alignment: .leading, spacing: 6) {
+                    // 用户名称
                     Text(appStorage.userDisplayName)
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
                     if appStorage.isValidMember {
                         Text(verbatim: "PRO")
                             .font(.caption2)
@@ -141,8 +144,7 @@ private extension SettingsView {
                             .frame(height: 18)
                     }
                 }
-                
-                Spacer()
+                .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Image("right")
                     .resizable()
