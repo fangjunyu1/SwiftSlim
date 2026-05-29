@@ -8033,7 +8033,7 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "API 参考"
+            "value" : "API संदर्भ"
           }
         },
         "hr" : {
@@ -26105,7 +26105,7 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "颜色"
+            "value" : "रंग"
           }
         },
         "hr" : {
@@ -27797,7 +27797,7 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常见修复"
+            "value" : "सामान्य सुधार"
           }
         },
         "hr" : {
@@ -36047,7 +36047,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "开发者ツール"
+            "value" : "開発者ツール"
           }
         },
         "kk" : {
@@ -43067,7 +43067,7 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "错误"
+            "value" : "त्रुटियां"
           }
         },
         "hr" : {
@@ -73936,7 +73936,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "组件预览"
+            "value" : "コンポーネントプレビュー"
           }
         },
         "kk" : {
