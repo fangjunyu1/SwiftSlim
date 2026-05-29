@@ -69281,7 +69281,7 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пусни всички сравнения"
+            "value" : "Всички сравнения"
           }
         },
         "bn" : {
@@ -69293,49 +69293,49 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reprodueix totes les comparacions"
+            "value" : "Totes compar."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Přehrát všechna srovnání"
+            "value" : "Všechna srovn."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Afspil alle sammenligninger"
+            "value" : "Alle sammenlign."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alle Vergleiche abspielen"
+            "value" : "Alle Vergleiche"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Αναπαραγωγή όλων των συγκρίσεων"
+            "value" : "Όλες συγκρίσεις"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reproducir todas las comparaciones"
+            "value" : "Todas comparac."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Toista kaikki vertailut"
+            "value" : "Kaikki vertailut"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lire toutes les comparaisons"
+            "value" : "Tout comparer"
           }
         },
         "gu" : {
@@ -69347,7 +69347,7 @@
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הפעל את כל ההשוואות"
+            "value" : "כל ההשוואות"
           }
         },
         "hi" : {
@@ -69359,25 +69359,25 @@
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pokreni sve usporedbe"
+            "value" : "Sve usporedbe"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Összes összehasonlítás lejátszása"
+            "value" : "Összes hasonl."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Putar semua perbandingan"
+            "value" : "Semua bandingan"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Riproduci tutti i confronti"
+            "value" : "Tutti i confronti"
           }
         },
         "ja" : {
@@ -69389,13 +69389,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Барлық салыстыруды ойнату"
+            "value" : "Барлық салыст."
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಎಲ್ಲ ಹೋಲಿಕೆಗಳನ್ನು ಚಾಲನೆ ಮಾಡಿ"
+            "value" : "ಎಲ್ಲ ಹೋಲಿಕೆಗಳು"
           }
         },
         "ko" : {
@@ -69407,133 +69407,133 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Leisti visus palyginimus"
+            "value" : "Visi palyginimai"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "എല്ലാ താരതമ്യങ്ങളും പ്ലേ ചെയ്യുക"
+            "value" : "എല്ലാ താരതമ്യം"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "सर्व तुलना प्ले करा"
+            "value" : "सर्व तुलना"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mainkan semua perbandingan"
+            "value" : "Semua bandingan"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spill av alle sammenligninger"
+            "value" : "Alle sammenlign."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alle vergelijkingen afspelen"
+            "value" : "Alle vergelijk."
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ସମସ୍ତ ତୁଳନା ପ୍ଲେ କରନ୍ତୁ"
+            "value" : "ସବୁ ତୁଳନା"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਸਾਰੀਆਂ ਤੁਲਨਾਵਾਂ ਚਲਾਓ"
+            "value" : "ਸਭ ਤੁਲਨਾਵਾਂ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Odtwórz wszystkie porównania"
+            "value" : "Wszystkie porówn."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reproduzir todas as comparações"
+            "value" : "Todas comparações"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Redă toate comparațiile"
+            "value" : "Toate comparațiile"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Воспроизвести все сравнения"
+            "value" : "Все сравнения"
           }
         },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prehrať všetky porovnania"
+            "value" : "Všetky porovn."
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Predvajaj vse primerjave"
+            "value" : "Vse primerjave"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spela alla jämförelser"
+            "value" : "Alla jämförelser"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "அனைத்து ஒப்பீடுகளையும் இயக்கு"
+            "value" : "அனைத்து ஒப்பீடு"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "అన్ని పోలికలను ప్లే చేయండి"
+            "value" : "అన్ని పోలికలు"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "เล่นการเปรียบเทียบทั้งหมด"
+            "value" : "ทุกการเปรียบเทียบ"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tüm karşılaştırmaları oynat"
+            "value" : "Tüm karşılaştır."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відтворити всі порівняння"
+            "value" : "Усі порівняння"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "تمام موازنوں کو چلائیں"
+            "value" : "تمام موازنے"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Phát tất cả so sánh"
+            "value" : "Phát mọi so sánh"
           }
         },
         "zh-Hans" : {
