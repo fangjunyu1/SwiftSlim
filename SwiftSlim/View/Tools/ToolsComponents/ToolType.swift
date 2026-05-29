@@ -117,13 +117,13 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Preview:
             "UI Controls"
         case .Shortcuts:
-            "Xcode Keys"
+            "Xcode Hotkeys"
         case .Curves:
             "Anim Preview"
         case .Colors:
-            "System"
+            "System Colors"
         case .Symbols:
-            "SF Symbols"
+            "SF Symbol Icons"
 //        case .API_Dictionary:
 //            "API Docs"
 //        case .Errors:

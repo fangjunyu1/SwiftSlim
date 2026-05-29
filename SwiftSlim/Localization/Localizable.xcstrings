@@ -5951,13 +5951,13 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Преглед"
+            "value" : "Аним. преглед"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "প্রিভিউ"
+            "value" : "অ্যানিম দৃশ্য"
           }
         },
         "ca" : {
@@ -5981,7 +5981,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vorschau"
+            "value" : "Animationsblick"
           }
         },
         "el" : {
@@ -5999,19 +5999,19 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esikatselu"
+            "value" : "Animaationäkymä"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aperçu"
+            "value" : "Aperçu animé"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "પૂર્વદર્શન"
+            "value" : "એનિમેશન ઝલક"
           }
         },
         "he" : {
@@ -6023,43 +6023,43 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "पूर्वावलोकन"
+            "value" : "एनीमेशन झलक"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pregled"
+            "value" : "Anim. pregled"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Előnézet"
+            "value" : "Anim. nézet"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pratinjau"
+            "value" : "Pratinjau anim."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Anteprima"
+            "value" : "Anteprima anim."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アニメーションプレビュー"
+            "value" : "アニメーション効果プレビュー"
           }
         },
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Алдын ала"
+            "value" : "Аним. көрініс"
           }
         },
         "kn" : {
@@ -6071,31 +6071,31 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "애니메이션 미리보기"
+            "value" : "애니메이션 효과 미리보기"
           }
         },
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Peržiūra"
+            "value" : "Anim. peržiūra"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "പ്രിവ്യൂ"
+            "value" : "ആനിം. പ്രിവ്യൂ"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "पूर्वदृश्य"
+            "value" : "अॅनिमेशन झलक"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pratonton"
+            "value" : "Pratonton anim."
           }
         },
         "nb" : {
@@ -6107,31 +6107,31 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Voorbeeld"
+            "value" : "Animatieblik"
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ପ୍ରିଭ୍ୟୁ"
+            "value" : "ଆନିମ ଝଲକ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਐਨੀਮੇਸ਼ਨ ਝਲਕ"
+            "value" : "ਐਨੀਮ ਝਲਕ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Podgląd"
+            "value" : "Podgląd anim."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prévia"
+            "value" : "Prévia anim."
           }
         },
         "ro" : {
@@ -6155,7 +6155,7 @@
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Predogled"
+            "value" : "Anim. predogled"
           }
         },
         "sv" : {
@@ -6167,13 +6167,13 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "முன்பார்வு"
+            "value" : "அனிம் காட்சி"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ప్రివ్యూ"
+            "value" : "అనిమ్ ప్రివ్యూ"
           }
         },
         "th" : {
@@ -6185,37 +6185,37 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Önizleme"
+            "value" : "Anim. önizleme"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перегляд"
+            "value" : "Анім. перегляд"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "پیش نظارہ"
+            "value" : "کرو جھلک"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xem trước"
+            "value" : "Xem hoạt họa UI"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "动画效果预览"
+            "value" : "动画曲线效果预览"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "動畫預覽"
+            "value" : "動畫曲線效果預覽"
           }
         }
       }
@@ -80842,6 +80842,289 @@
         }
       }
     },
+    "SF Symbol Icons" : {
+      "comment" : "Description: SF Symbol icons",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SF Symbols"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
     "SF Symbols" : {
       "comment" : "SF Symbols",
       "extractionState" : "manual",
@@ -99792,19 +100075,19 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Системни цветове"
+            "value" : "Сист. цветове"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সিস্টেম রং"
+            "value" : "সিস রং"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Colors del sistema"
+            "value" : "Colors sistema"
           }
         },
         "cs" : {
@@ -99828,25 +100111,25 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Χρώματα συστήματος"
+            "value" : "Χρώματα συστ."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Colores del sistema"
+            "value" : "Colores sist."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Järjestelmävärit"
+            "value" : "Järj.värit"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couleurs système"
+            "value" : "Couleurs syst."
           }
         },
         "gu" : {
@@ -99888,7 +100171,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Colori di sistema"
+            "value" : "Colori sistema"
           }
         },
         "ja" : {
@@ -99912,19 +100195,19 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "시스템 색상"
+            "value" : "시스템 색"
           }
         },
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistemos spalvos"
+            "value" : "Sist. spalvos"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "സിസ്റ്റം നിറങ്ങൾ"
+            "value" : "സിസ്റ്റം നിറം"
           }
         },
         "mr" : {
@@ -99966,19 +100249,19 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kolory systemowe"
+            "value" : "Kolory syst."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cores do sistema"
+            "value" : "Cores sistema"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Culori de sistem"
+            "value" : "Culori sistem"
           }
         },
         "ru" : {
@@ -100008,7 +100291,7 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "சிஸ்டம் நிறங்கள்"
+            "value" : "சிஸ்டம் நிறம்"
           }
         },
         "te" : {
@@ -100020,7 +100303,7 @@
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "สีของระบบ"
+            "value" : "สีระบบ"
           }
         },
         "tr" : {
@@ -100032,7 +100315,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Системні кольори"
+            "value" : "Сист. кольори"
           }
         },
         "ur" : {
@@ -100050,13 +100333,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "系统颜色"
+            "value" : "系统颜色与语义色"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "系統顏色"
+            "value" : "系統顏色與語義色"
           }
         }
       }
@@ -104874,7 +105157,7 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "عناصر UI"
+            "value" : "عناصر واجهة UI"
           }
         },
         "bg" : {
@@ -104898,7 +105181,7 @@
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI prvky"
+            "value" : "Ovládání UI"
           }
         },
         "da" : {
@@ -104928,7 +105211,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI-ohjaimet"
+            "value" : "UI-komponentit"
           }
         },
         "fr" : {
@@ -104940,19 +105223,19 @@
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI કંટ્રોલ"
+            "value" : "UI ઘટકો"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "פקדי UI"
+            "value" : "רכיבי ממשק"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI कंट्रोल"
+            "value" : "UI घटक"
           }
         },
         "hr" : {
@@ -104964,43 +105247,43 @@
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI-elemek"
+            "value" : "UI-komponensek"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kontrol UI"
+            "value" : "Kontrol UI App"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Controlli UI"
+            "value" : "Componenti UI"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UIコントロール"
+            "value" : "UIコントロール部品"
           }
         },
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI басқару"
+            "value" : "UI элементтері"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI ನಿಯಂತ್ರಣ"
+            "value" : "UI ಅಂಶ"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI 컨트롤"
+            "value" : "UI 컨트롤 구성 요소"
           }
         },
         "lt" : {
@@ -105018,13 +105301,13 @@
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI कंट्रोल"
+            "value" : "UI घटक"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kawalan UI"
+            "value" : "Kawalan UI App"
           }
         },
         "nb" : {
@@ -105042,13 +105325,13 @@
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI ନିୟନ୍ତ୍ରଣ"
+            "value" : "UI ଉପାଦାନଗୁଡ଼ିକ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI ਕੰਟਰੋਲ"
+            "value" : "UI ਹਿੱਸੇ"
           }
         },
         "pl" : {
@@ -105078,19 +105361,19 @@
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI prvky"
+            "value" : "Ovládanie UI"
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI kontrole"
+            "value" : "Komponente UI"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI-kontroller"
+            "value" : "UI-komponenter"
           }
         },
         "ta" : {
@@ -105108,7 +105391,7 @@
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "คอนโทรล UI"
+            "value" : "องค์ประกอบ UI"
           }
         },
         "tr" : {
@@ -105120,13 +105403,13 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Елементи UI"
+            "value" : "UI-комп. інтерф"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI کنٹرول"
+            "value" : "UI کنٹرول اجزاء"
           }
         },
         "vi" : {
@@ -105138,13 +105421,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常用 UI 控件"
+            "value" : "常用 UI 控件组件"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "常用 UI 控件"
+            "value" : "常用 UI 控件組件"
           }
         }
       }
@@ -108540,6 +108823,288 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "產品初衷"
+          }
+        }
+      }
+    },
+    "Xcode Hotkeys" : {
+      "comment" : "Description: Xcode hotkeys",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختصارات Xcode"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode клавиши"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode শর্টকাট"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dreceres Xcode"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zkratky Xcode"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-genveje"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-Shortcuts"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήκτρα Xcode"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atajos Xcode"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-oikotiet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raccourcis Xc."
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode શોર્ટકટ"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "קיצורי Xcode"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode शॉर्टकट"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode prečaci"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode gyorsbill"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shortcut Xcode"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scorciat. Xcode"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcodeショートカット"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode пернелері"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode ಶಾರ್ಟ್ ಕೀ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode 키"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode spartieji"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode ഷോർട്ട്"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode शॉर्टकट"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pintasan Xcode"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-snarveier"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-toetsen"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode ଶର୍ଟକଟ୍"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode ਸ਼ਾਰਟਕੱਟ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skróty Xcode"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atalhos Xcode"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taste rapide Xc"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Клавиши Xcode"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skratky Xcode"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bližnjice Xcode"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode-genvägar"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode விசைகள்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode షార్ట్‌లు"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คีย์ลัด Xcode"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode kısayolu"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Клавіші Xcode+"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode شارٹ کٹس"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím tắt Xcode"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode 快捷键速查"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xcode 快捷鍵速查"
           }
         }
       }
