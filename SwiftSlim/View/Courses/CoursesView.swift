@@ -200,13 +200,13 @@ struct CoursesChapterView: View {
                         .fontWeight(.medium)
                         .foregroundStyle(Color("BlackColor"))
                         .lineLimit(1)
-                    Spacer()
                     Image(systemName: showList ? "chevron.down" : "chevron.forward")
                         .font(.headline.bold())
                         .foregroundColor(.secondary)
                 }
                 .padding(.vertical, 24)
                 .padding(.horizontal, 30)
+                Spacer()
             })
             if showList || isSearching {
                 Divider()
@@ -245,9 +245,8 @@ struct CoursesItem: View {
             Text(LocalizedStringKey(item.name))
                 .fontWeight(.medium)
                 .foregroundStyle(titleColor)
-                .multilineTextAlignment(.leading)
                 .lineLimit(1)
-            Spacer()
+                .frame(maxWidth: .infinity, alignment: .leading)
             VStack {
                 if isCompleted {
                     Image(systemName: "checkmark.circle")
