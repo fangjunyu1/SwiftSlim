@@ -83,7 +83,7 @@ struct AnimationCurves: View {
             }
             .padding(.bottom, 40)
         }
-        .navigationTitle("Animation Curves")
+        .navigationTitle("Curves")
         .navigationBarTitleDisplayMode(.inline)
         .modifier(BackgroundModifiers())
         .onDisappear {

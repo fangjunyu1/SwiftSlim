@@ -37,7 +37,7 @@ enum ToolType: String, Identifiable, CaseIterable {
 //        case .Errors:
 //            "Errors"
         case .Curves:
-            "Animation Curves"
+            "Curves"
         case .Colors:
             "Colors"
         case .Symbols:
@@ -117,15 +117,15 @@ enum ToolType: String, Identifiable, CaseIterable {
         case .Preview:
             "UI Controls"
         case .Shortcuts:
-            "Xcode Shortcuts"
+            "Xcode Keys"
         case .Curves:
-            "Animation Preview"
+            "Anim Preview"
         case .Colors:
-            "System & Semantic"
+            "System"
         case .Symbols:
             "SF Symbols"
 //        case .API_Dictionary:
-//            "API Reference"
+//            "API Docs"
 //        case .Errors:
 //            "Common Fixes"
         }

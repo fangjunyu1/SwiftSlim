@@ -6814,7 +6814,289 @@
         }
       }
     },
-    "Animal Encyclopedia" : {
+    "Anim Preview" : {
+      "comment" : "动画效果预览",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معاينة الحركة"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Преглед"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "প্রিভিউ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vista prèvia"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhled animace"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forhåndsvis"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschau"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προεπισκόπηση"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vista previa"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esikatselu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperçu"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "પૂર્વદર્શન"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תצוגה מקדימה"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्वावलोकन"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pregled"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Előnézet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratinjau"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anteprima"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アニメーションプレビュー"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Алдын ала"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಪೂರ್ವವೀಕ್ಷಣೆ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "애니메이션 미리보기"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peržiūra"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "പ്രിവ്യൂ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पूर्वदृश्य"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratonton"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forhåndsvisning"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voorbeeld"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ପ୍ରିଭ୍ୟୁ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਐਨੀਮੇਸ਼ਨ ਝਲਕ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podgląd"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prévia"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previzualizare"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпросмотр"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Náhľad animácie"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predogled"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förhandsvisning"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "முன்பார்வு"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ప్రివ్యూ"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรีวิวแอนิเมชัน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önizleme"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перегляд"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پیش نظارہ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem trước"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画效果预览"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫預覽"
+          }
+        }
+      }
+    },
+"Animal Encyclopedia" : {
       "comment" : "动物百科",
       "extractionState" : "manual",
       "localizations" : {
@@ -7102,570 +7384,6 @@
         }
       }
     },
-    "Animation Curves" : {
-      "comment" : "动画曲线",
-      "extractionState" : "manual",
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "منحنيات الحركة"
-          }
-        },
-        "bg" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Криви на анимация"
-          }
-        },
-        "bn" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "অ্যানিমেশন কার্ভ"
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Corbes d'animació"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Křivky animace"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animationskurver"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animationskurven"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Καμπύλες κίνησης"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Curvas de animación"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animaatiokäyrät"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Courbes d'animation"
-          }
-        },
-        "gu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "એનિમેશન વક્રો"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "עקומות אנימציה"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "एनीमेशन कर्व"
-          }
-        },
-        "hr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Krivulje animacije"
-          }
-        },
-        "hu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animációs görbék"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kurva animasi"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Curve di animazione"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アニメーション曲線"
-          }
-        },
-        "kk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Анимация қисықтары"
-          }
-        },
-        "kn" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ಅನಿಮೇಶನ್ ವಕ್ರಗಳು"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "애니메이션 곡선"
-          }
-        },
-        "lt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animacijos kreivės"
-          }
-        },
-        "ml" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ആനിമേഷൻ വക്രങ്ങൾ"
-          }
-        },
-        "mr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "अॅनिमेशन कर्व्ह"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lengkung animasi"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animasjonskurver"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animatiecurves"
-          }
-        },
-        "or" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ଆନିମେସନ କର୍ଭ"
-          }
-        },
-        "pa" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ਐਨੀਮੇਸ਼ਨ ਕਰਵ"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Krzywe animacji"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Curvas de animação"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Curbe de animație"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Кривые анимации"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Krivky animácie"
-          }
-        },
-        "sl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Krivulje animacije"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animationskurvor"
-          }
-        },
-        "ta" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "அனிமேஷன் வளைவுகள்"
-          }
-        },
-        "te" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "అనిమేషన్ కర్వ్‌లు"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เส้นโค้งแอนิเมชัน"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animasyon eğrileri"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Криві анімації"
-          }
-        },
-        "ur" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اینیمیشن کرو"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Đường cong hoạt ảnh"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "动画曲线"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動畫曲線"
-          }
-        }
-      }
-    },
-    "Animation Preview" : {
-      "comment" : "动画效果预览",
-      "extractionState" : "manual",
-      "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "معاينة الحركة"
-          }
-        },
-        "bg" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Преглед на анимация"
-          }
-        },
-        "bn" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "অ্যানিমেশন প্রিভিউ"
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Previsualització d'animació"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Náhled animace"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animationsvisning"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animationsvorschau"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Προεπισκόπηση κίνησης"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vista previa de animación"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animaation esikatselu"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aperçu d'animation"
-          }
-        },
-        "gu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "એનિમેશન પૂર્વદર્શન"
-          }
-        },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "תצוגה מקדימה"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "एनीमेशन पूर्वावलोकन"
-          }
-        },
-        "hr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pregled animacije"
-          }
-        },
-        "hu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animáció előnézet"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pratinjau animasi"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anteprima animazione"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アニメーションプレビュー"
-          }
-        },
-        "kk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Анимация алдын ала қарауы"
-          }
-        },
-        "kn" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ಅನಿಮೇಶನ್ ಪೂರ್ವವೀಕ್ಷಣೆ"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "애니메이션 미리보기"
-          }
-        },
-        "lt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animacijos peržiūra"
-          }
-        },
-        "ml" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ആനിമേഷൻ പ്രിവ്യൂ"
-          }
-        },
-        "mr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "अॅनिमेशन पूर्वावलोकन"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pratonton animasi"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Forhåndsvisning"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animatievoorbeeld"
-          }
-        },
-        "or" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ଆନିମେସନ ପ୍ରିଭ୍ୟୁ"
-          }
-        },
-        "pa" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ਐਨੀਮੇਸ਼ਨ ਝਲਕ"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Podgląd animacji"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prévia da animação"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Previzualizare animație"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Предпросмотр анимации"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Náhľad animácie"
-          }
-        },
-        "sl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Predogled animacije"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Förhandsvisning"
-          }
-        },
-        "ta" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "அனிமேஷன் முன்பார்வு"
-          }
-        },
-        "te" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "అనిమేషన్ ప్రివ్యూ"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "พรีวิวแอนิเมชัน"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Animasyon önizleme"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Попередній перегляд"
-          }
-        },
-        "ur" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "اینیمیشن پیش نظارہ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Xem trước hoạt ảnh"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "动画效果预览"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動畫預覽"
-          }
-        }
-      }
-    },
     "Annual" : {
       "comment" : "年",
       "extractionState" : "manual",
@@ -7948,7 +7666,7 @@
         }
       }
     },
-    "API Reference" : {
+    "API Docs" : {
       "comment" : "接口速查手册",
       "extractionState" : "manual",
       "localizations" : {
@@ -8135,7 +7853,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dokumentacja API"
+            "value" : "Dok. API"
           }
         },
         "pt" : {
@@ -27737,7 +27455,7 @@
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Solucions comunes"
+            "value" : "Solucions"
           }
         },
         "cs" : {
@@ -27749,13 +27467,13 @@
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Almindelige løsninger"
+            "value" : "Løsninger"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Häufige Lösungen"
+            "value" : "Lösungen"
           }
         },
         "el" : {
@@ -27767,19 +27485,19 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Soluciones comunes"
+            "value" : "Soluciones"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yleiset korjaukset"
+            "value" : "Korjaukset"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Correctifs fréquents"
+            "value" : "Correctifs"
           }
         },
         "gu" : {
@@ -27809,7 +27527,7 @@
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gyakori javítások"
+            "value" : "Javítások"
           }
         },
         "id" : {
@@ -27821,7 +27539,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Soluzioni comuni"
+            "value" : "Soluzioni"
           }
         },
         "ja" : {
@@ -27839,7 +27557,7 @@
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಸಾಮಾನ್ಯ ಪರಿಹಾರಗಳು"
+            "value" : "ಪರಿಹಾರಗಳು"
           }
         },
         "ko" : {
@@ -27851,13 +27569,13 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dažni pataisymai"
+            "value" : "Taisymai"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "സാധാരണ പരിഹാരങ്ങൾ"
+            "value" : "പരിഹാരങ്ങൾ"
           }
         },
         "mr" : {
@@ -27875,13 +27593,13 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vanlige løsninger"
+            "value" : "Løsninger"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Veelvoorkomende oplossingen"
+            "value" : "Oplossingen"
           }
         },
         "or" : {
@@ -27905,13 +27623,13 @@
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Correções comuns"
+            "value" : "Correções"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rezolvări comune"
+            "value" : "Rezolvări"
           }
         },
         "ru" : {
@@ -27935,19 +27653,19 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vanliga lösningar"
+            "value" : "Lösningar"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "பொதுவான தீர்வுகள்"
+            "value" : "தீர்வுகள்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "సాధారణ పరిష్కారాలు"
+            "value" : "పరిష్కారాలు"
           }
         },
         "th" : {
@@ -27965,7 +27683,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поширені виправлення"
+            "value" : "Виправлення"
           }
         },
         "ur" : {
@@ -27977,7 +27695,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cách sửa thường gặp"
+            "value" : "Cách sửa"
           }
         },
         "zh-Hans" : {
@@ -32812,7 +32530,289 @@
         }
       }
     },
-    "Custom Colors" : {
+    "Curves" : {
+      "comment" : "动画曲线",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منحنيات"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Криви"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "কার্ভ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corbes"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Křivky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurver"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurven"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καμπύλες"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curvas"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käyrät"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courbes"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "વક્રો"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עקומות"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कर्व"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krivulje"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görbék"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurva"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curve"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アニメーション曲線"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қисықтар"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ವಕ್ರಗಳು"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "애니메이션 곡선"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kreivės"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "വക്രങ്ങൾ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कर्व्ह"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lengkung"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurver"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curven"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "କର୍ଭ"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਕਰਵ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krzywe"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curvas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curbe"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кривые"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krivky"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krivulje"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurvor"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "வளைவுகள்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "కర్వ్‌లు"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เส้นโค้ง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eğriler"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Криві"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کرو"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đường cong"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动画曲线"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動畫曲線"
+          }
+        }
+      }
+    },
+"Custom Colors" : {
       "comment" : "自定义颜色",
       "extractionState" : "manual",
       "localizations" : {
@@ -73894,7 +73894,7 @@
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "પૂર્વાવલોકન"
+            "value" : "ઝલક"
           }
         },
         "he" : {
@@ -73906,7 +73906,7 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "पूर्वावलोकन"
+            "value" : "झलक"
           }
         },
         "hr" : {
@@ -73936,7 +73936,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "コンポーネントプレビュー"
+            "value" : "プレビュー"
           }
         },
         "kk" : {
@@ -73948,7 +73948,7 @@
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಪೂರ್ವವೀಕ್ಷಣೆ"
+            "value" : "ನೋಟ"
           }
         },
         "ko" : {
@@ -73972,7 +73972,7 @@
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "पूर्वावलोकन"
+            "value" : "झलक"
           }
         },
         "ms" : {
@@ -73984,7 +73984,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Forhåndsvisning"
+            "value" : "Forhånd"
           }
         },
         "nl" : {
@@ -74044,13 +74044,13 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Förhandsvisning"
+            "value" : "Förhandsvy"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "முன்னோட்டம்"
+            "value" : "முன்பார்வு"
           }
         },
         "te" : {
@@ -89939,7 +89939,7 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Преки пътища"
+            "value" : "Клавиши"
           }
         },
         "bn" : {
@@ -89975,7 +89975,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Συντομεύσεις"
+            "value" : "Συντομ."
           }
         },
         "es" : {
@@ -89987,7 +89987,7 @@
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pikanäppäimet"
+            "value" : "Pikanäpp."
           }
         },
         "fr" : {
@@ -90035,7 +90035,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scorciatoie"
+            "value" : "Scorciat."
           }
         },
         "ja" : {
@@ -90047,7 +90047,7 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Төте жолдар"
+            "value" : "Жарлықтар"
           }
         },
         "kn" : {
@@ -90065,13 +90065,13 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spartieji kl."
+            "value" : "Klavišai"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ഷോർട്ട്കട്ട്"
+            "value" : "ഷോർട്ട്"
           }
         },
         "mr" : {
@@ -90095,7 +90095,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sneltoetsen"
+            "value" : "Sneltoets"
           }
         },
         "or" : {
@@ -90131,7 +90131,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Горячие кл."
+            "value" : "Клавиши"
           }
         },
         "sk" : {
@@ -90155,13 +90155,13 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "குறுக்குவழிகள்"
+            "value" : "குறுக்கு"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "షార్ట్‌కట్‌లు"
+            "value" : "షార్ట్‌కట్"
           }
         },
         "th" : {
@@ -101537,109 +101537,109 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "مكتبة الأيقونات"
+            "value" : "أيقونات"
           }
         },
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Библиотека с икони"
+            "value" : "Икони"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "আইকন লাইব্রেরি"
+            "value" : "আইকন"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biblioteca d’icones"
+            "value" : "Icones"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Knihovna ikon"
+            "value" : "Ikony"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ikonbibliotek"
+            "value" : "Ikoner"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Icon-Bibliothek"
+            "value" : "Icons"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Βιβλιοθήκη εικονιδίων"
+            "value" : "Εικονίδια"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biblioteca de iconos"
+            "value" : "Iconos"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kuvakekirjasto"
+            "value" : "Kuvakkeet"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bibliothèque d’icônes"
+            "value" : "Icônes"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "આઇકન લાઇબ્રેરી"
+            "value" : "આઇકન"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ספריית אייקונים"
+            "value" : "אייקונים"
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "आइकन लाइब्रेरी"
+            "value" : "आइकन"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biblioteka ikona"
+            "value" : "Ikone"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ikonkönyvtár"
+            "value" : "Ikonok"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pustaka ikon"
+            "value" : "Ikon"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Libreria icone"
+            "value" : "Icone"
           }
         },
         "ja" : {
@@ -101651,13 +101651,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Белгішелер кітапханасы"
+            "value" : "Белгілер"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಐಕಾನ್ ಗ್ರಂಥಾಲಯ"
+            "value" : "ಐಕಾನ್"
           }
         },
         "ko" : {
@@ -101669,103 +101669,103 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Piktogramų biblioteka"
+            "value" : "Ikonos"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ഐക്കൺ ലൈബ്രറി"
+            "value" : "ഐക്കൺ"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "आयकॉन लायब्ररी"
+            "value" : "आयकॉन"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pustaka ikon"
+            "value" : "Ikon"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ikonbibliotek"
+            "value" : "Ikoner"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Icoonbibliotheek"
+            "value" : "Iconen"
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ଆଇକନ ଲାଇବ୍ରେରି"
+            "value" : "ଆଇକନ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਆਈਕਨ ਲਾਇਬ੍ਰੇਰੀ"
+            "value" : "ਆਈਕਨ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biblioteka ikon"
+            "value" : "Ikony"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biblioteca de ícones"
+            "value" : "Ícones"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bibliotecă de pictograme"
+            "value" : "Pictograme"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Библиотека значков"
+            "value" : "Значки"
           }
         },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Knižnica ikon"
+            "value" : "Ikony"
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Knjižnica ikon"
+            "value" : "Ikone"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ikonbibliotek"
+            "value" : "Ikoner"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ஐகான் நூலகம்"
+            "value" : "ஐகான்கள்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ఐకాన్ లైబ్రరీ"
+            "value" : "ఐకాన్లు"
           }
         },
         "th" : {
@@ -101777,25 +101777,25 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Simge kitaplığı"
+            "value" : "Simgeler"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Бібліотека значків"
+            "value" : "Значки"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "آئیکن لائبریری"
+            "value" : "آئیکنز"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Thư viện biểu tượng"
+            "value" : "Biểu tượng"
           }
         },
         "zh-Hans" : {
@@ -101812,7 +101812,7 @@
         }
       }
     },
-    "System & Semantic" : {
+    "System" : {
       "comment" : "系统与语义色",
       "extractionState" : "manual",
       "localizations" : {
@@ -101825,67 +101825,67 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Система и семантика"
+            "value" : "Система"
           }
         },
         "bn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "সিস্টেম ও সেমান্টিক"
+            "value" : "সিস্টেম"
           }
         },
         "ca" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistema i semàntica"
+            "value" : "Sistema"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Systém a sémantika"
+            "value" : "Systém"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System og semantik"
+            "value" : "System"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System und Semantik"
+            "value" : "System"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Σύστημα και σημασιολογία"
+            "value" : "Σύστημα"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistema y semántica"
+            "value" : "Sistema"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Järjestelmä ja semantiikka"
+            "value" : "Järjestelmä"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Système et sémantique"
+            "value" : "Système"
           }
         },
         "gu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "સિસ્ટમ અને સેમેન્ટિક"
+            "value" : "સિસ્ટમ"
           }
         },
         "he" : {
@@ -101897,31 +101897,31 @@
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "सिस्टम और सिमैंटिक"
+            "value" : "सिस्टम"
           }
         },
         "hr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sustav i semantika"
+            "value" : "Sustav"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rendszer és szemantika"
+            "value" : "Rendszer"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistem & semantik"
+            "value" : "Sistem"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistema e semantica"
+            "value" : "Sistema"
           }
         },
         "ja" : {
@@ -101933,13 +101933,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Жүйе және семантика"
+            "value" : "Жүйе"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಸಿಸ್ಟಂ ಮತ್ತು ಸೆಮ್ಯಾಂಟಿಕ್"
+            "value" : "ಸಿಸ್ಟಂ"
           }
         },
         "ko" : {
@@ -101951,133 +101951,133 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistema ir semantika"
+            "value" : "Sistema"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "സിസ്റ്റവും സെമാന്റിക്കും"
+            "value" : "സിസ്റ്റം"
           }
         },
         "mr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "सिस्टम आणि सेमॅंटिक"
+            "value" : "सिस्टम"
           }
         },
         "ms" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistem & semantik"
+            "value" : "Sistem"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System og semantikk"
+            "value" : "System"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Systeem en semantiek"
+            "value" : "Systeem"
           }
         },
         "or" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ସିଷ୍ଟମ ଓ ସେମାଣ୍ଟିକ୍"
+            "value" : "ସିଷ୍ଟମ"
           }
         },
         "pa" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਸਿਸਟਮ ਅਤੇ ਸੇਮਾਂਟਿਕ"
+            "value" : "ਸਿਸਟਮ"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System i semantyka"
+            "value" : "System"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistema e semântica"
+            "value" : "Sistema"
           }
         },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistem și semantică"
+            "value" : "Sistem"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Система и семантика"
+            "value" : "Система"
           }
         },
         "sk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Systém a sémantika"
+            "value" : "Systém"
           }
         },
         "sl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistem in semantika"
+            "value" : "Sistem"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "System och semantik"
+            "value" : "System"
           }
         },
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "சிஸ்டம் மற்றும் செமாண்டிக்"
+            "value" : "சிஸ்டம்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "సిస్టమ్ & సేమాంటిక్"
+            "value" : "సిస్టమ్"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ระบบและเชิงความหมาย"
+            "value" : "ระบบ"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sistem ve anlamsal"
+            "value" : "Sistem"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Система й семантика"
+            "value" : "Система"
           }
         },
         "ur" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "سسٹم اور سیمینٹک"
+            "value" : "سسٹم"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hệ thống & ngữ nghĩa"
+            "value" : "Hệ thống"
           }
         },
         "zh-Hans" : {
@@ -107699,7 +107699,7 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "UI கட்டுப்பாடுகள்"
+            "value" : "UI கட்டுப்பாடு"
           }
         },
         "te" : {
@@ -112011,7 +112011,7 @@
         }
       }
     },
-    "Xcode Shortcuts" : {
+    "Xcode Keys" : {
       "comment" : "Xcode 快捷键",
       "extractionState" : "manual",
       "localizations" : {
@@ -112024,7 +112024,7 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode преки пътища"
+            "value" : "Xcode клавиши"
           }
         },
         "bn" : {
@@ -112060,7 +112060,7 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Συντομεύσεις Xcode"
+            "value" : "Πλήκτρα Xcode"
           }
         },
         "es" : {
@@ -112078,7 +112078,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Raccourcis Xcode"
+            "value" : "Touches Xcode"
           }
         },
         "gu" : {
@@ -112108,7 +112108,7 @@
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode gyorsbill."
+            "value" : "Xcode bill."
           }
         },
         "id" : {
@@ -112120,7 +112120,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scorciatoie Xcode"
+            "value" : "Tasti Xcode"
           }
         },
         "ja" : {
@@ -112132,13 +112132,13 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode төте жолдары"
+            "value" : "Xcode пернелері"
           }
         },
         "kn" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode ಶಾರ್ಟ್‌ಕಟ್"
+            "value" : "Xcode ಕೀಗಳು"
           }
         },
         "ko" : {
@@ -112150,13 +112150,13 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode spartieji kl."
+            "value" : "Xcode klav."
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode ഷോർട്ട്കട്ട്"
+            "value" : "Xcode കീകൾ"
           }
         },
         "mr" : {
@@ -112180,7 +112180,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode-sneltoetsen"
+            "value" : "Xcode-toetsen"
           }
         },
         "or" : {
@@ -112210,13 +112210,13 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scurtături Xcode"
+            "value" : "Taste Xcode"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Горячие кл. Xcode"
+            "value" : "Клавиши Xcode"
           }
         },
         "sk" : {
@@ -112240,13 +112240,13 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode குறுக்குவழிகள்"
+            "value" : "Xcode விசைகள்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode షార్ట్‌కట్‌లు"
+            "value" : "Xcode కీలు"
           }
         },
         "th" : {
@@ -112258,13 +112258,13 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Xcode Kısayolları"
+            "value" : "Xcode tuşları"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Скорочення Xcode"
+            "value" : "Клавіші Xcode"
           }
         },
         "ur" : {
