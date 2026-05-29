@@ -20,13 +20,13 @@ enum contentType: Int, CaseIterable {
         case .home:
             "Home"
         case .courses:
-            "Courses"
+            "Learn"
         case .tools:
             "Tools"
         case .settings:
-            "Settings"
+            "Set"
         case .notifications:
-            "Notifications"
+            "Alerts"
         case .pro:
             "Pro"
         }
