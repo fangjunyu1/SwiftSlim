@@ -32801,7 +32801,7 @@
         "bg" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ежедневни съвети"
+            "value" : "Дневни съвети"
           }
         },
         "bn" : {
@@ -32837,19 +32837,19 @@
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Καθημερινές συμβουλές"
+            "value" : "Συμβουλές"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consejos diarios"
+            "value" : "Tips diarios"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Päivittäiset vinkit"
+            "value" : "Päivävinkit"
           }
         },
         "fr" : {
@@ -32897,7 +32897,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suggerimenti giornalieri"
+            "value" : "Consigli"
           }
         },
         "ja" : {
@@ -32909,7 +32909,7 @@
         "kk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Күнделікті кеңестер"
+            "value" : "Күн кеңесі"
           }
         },
         "kn" : {
@@ -32927,13 +32927,13 @@
         "lt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dienos patarimai"
+            "value" : "Dienos tipsai"
           }
         },
         "ml" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ദൈനംദിന ടിപ്പുകൾ"
+            "value" : "ദിന ടിപ്പുകൾ"
           }
         },
         "mr" : {
@@ -32975,7 +32975,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Codzienne wskazówki"
+            "value" : "Tipy dnia"
           }
         },
         "pt" : {
@@ -32993,7 +32993,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ежедневные советы"
+            "value" : "Советы дня"
           }
         },
         "sk" : {
@@ -33017,19 +33017,19 @@
         "ta" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "தினசரி குறிப்புகள்"
+            "value" : "தின டிப்ஸ்"
           }
         },
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "రోజువారీ చిట్కాలు"
+            "value" : "రోజు టిప్స్"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "เคล็ดลับประจำวัน"
+            "value" : "ทิปประจำวัน"
           }
         },
         "tr" : {
