@@ -6053,7 +6053,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アニメーション効果プレビュー"
+            "value" : "動きを確認"
           }
         },
         "kk" : {
@@ -6209,13 +6209,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "动画曲线效果预览"
+            "value" : "动画效果预览"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "動畫曲線效果預覽"
+            "value" : "動畫效果預覽"
           }
         }
       }
