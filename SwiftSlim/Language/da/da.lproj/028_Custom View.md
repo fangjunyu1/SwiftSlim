@@ -1,4 +1,4 @@
-# Brugerdefinerede views
+# Brugerdefineret visning
 
 I denne lektion lærer vi en meget vigtig SwiftUI-skrivemåde: **brugerdefinerede views**.
 

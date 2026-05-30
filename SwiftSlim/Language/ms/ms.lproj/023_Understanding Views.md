@@ -1,4 +1,4 @@
-# Memahami View
+# Memahami paparan
 
 Dalam pelajaran ini, kita kembali semula ke `ContentView` yang paling awal.
 

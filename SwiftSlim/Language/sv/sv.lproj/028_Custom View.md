@@ -1,4 +1,4 @@
-# Anpassad View
+# Anpassad vy
 
 I den här lektionen ska vi lära oss ett mycket viktigt sätt att skriva SwiftUI: **anpassad View**.
 

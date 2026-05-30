@@ -1,4 +1,4 @@
-# Tinkintas View
+# Tinkintas rodinys
 
 Šioje pamokoje išmoksime labai svarbų SwiftUI rašymo būdą: **tinkintas View**.
 

@@ -1,4 +1,4 @@
-# Views verstehen
+# Ansichten verstehen
 
 In dieser Lektion kehren wir wieder zum ursprünglichen `ContentView` zurück.
 

@@ -1,4 +1,4 @@
-# Razumevanje views
+# Razumevanje pogledov
 
 V tej lekciji se vrnemo k prvotnemu `ContentView`.
 

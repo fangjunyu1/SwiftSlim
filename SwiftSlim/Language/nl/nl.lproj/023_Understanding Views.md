@@ -1,4 +1,4 @@
-# Views begrijpen
+# Weergaven begrijpen
 
 In deze les keren we terug naar de oorspronkelijke `ContentView`.
 

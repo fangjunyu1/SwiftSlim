@@ -1,4 +1,4 @@
-# Özel View
+# Özel görünüm
 
 Bu derste, SwiftUI’de çok önemli bir yazım şeklini öğreneceğiz: **özel View**.
 

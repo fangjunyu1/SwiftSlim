@@ -1,4 +1,4 @@
-# Forstå views
+# Forstå visninger
 
 I denne leksjonen vender vi tilbake til den opprinnelige `ContentView`.
 

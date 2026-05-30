@@ -1,4 +1,4 @@
-# Benutzerdefinierte View
+# Benutzerdefinierte Ansicht
 
 In dieser Lektion lernen wir eine sehr wichtige SwiftUI-Schreibweise: **benutzerdefinierte Views**.
 

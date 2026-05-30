@@ -1,4 +1,4 @@
-# Förstå views
+# Förstå vyer
 
 I den här lektionen återvänder vi till det ursprungliga `ContentView`.
 

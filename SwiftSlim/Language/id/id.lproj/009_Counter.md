@@ -1,4 +1,4 @@
-# Counter
+# Penghitung
 
 Di dua pelajaran sebelumnya, kita sudah mempelajari variabel, konstanta, tombol, dan fungsi.
 

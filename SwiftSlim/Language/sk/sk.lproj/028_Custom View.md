@@ -1,4 +1,4 @@
-# Vlastný View
+# Vlastné zobrazenie
 
 V tejto lekcii sa naučíme veľmi dôležitý spôsob písania v SwiftUI: **vlastný View**.
 

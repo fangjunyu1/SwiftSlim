@@ -1,4 +1,4 @@
-# Hiểu về Views
+# Hiểu về chế độ xem
 
 Trong bài học này, chúng ta quay lại `ContentView` ban đầu.
 

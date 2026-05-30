@@ -1,4 +1,4 @@
-# View tersuai
+# Paparan tersuai
 
 Dalam pelajaran ini, kita akan mempelajari satu cara penulisan SwiftUI yang sangat penting: **View tersuai**.
 

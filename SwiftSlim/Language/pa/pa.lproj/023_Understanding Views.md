@@ -1,4 +1,4 @@
-# Views ਨੂੰ ਸਮਝਣਾ
+# ਦ੍ਰਿਸ਼ਾਂ ਨੂੰ ਸਮਝਣਾ
 
 In this lesson, we return to the original `ContentView`.
 

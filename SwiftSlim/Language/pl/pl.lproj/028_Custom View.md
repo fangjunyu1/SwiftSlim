@@ -1,4 +1,4 @@
-# Niestandardowy View
+# Widok niestandardowy
 
 W tej lekcji nauczymy się bardzo ważnego sposobu pisania w SwiftUI: **niestandardowy View**.
 

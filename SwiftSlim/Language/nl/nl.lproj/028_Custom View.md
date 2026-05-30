@@ -1,4 +1,4 @@
-# Aangepaste View
+# Aangepaste weergave
 
 In deze les leren we een zeer belangrijke SwiftUI-schrijfwijze: **aangepaste View**.
 

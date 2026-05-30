@@ -1,4 +1,4 @@
-# Pochopenie views
+# Pochopenie zobrazení
 
 V tejto lekcii sa vraciame k pôvodnému `ContentView`.
 

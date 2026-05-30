@@ -1,4 +1,4 @@
-# Capire le view
+# Capire le viste
 
 In questa lezione torniamo al `ContentView` dell'inizio.
 

@@ -1,4 +1,4 @@
-# View supratimas
+# Rodinių supratimas
 
 Šioje pamokoje vėl grįžtame prie paties pirmojo `ContentView`.
 

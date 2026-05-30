@@ -1,4 +1,4 @@
-# Mukautettu View
+# Mukautettu näkymä
 
 Tässä oppitunnissa opimme erittäin tärkeän SwiftUI-kirjoitustavan: **mukautettu View**.
 

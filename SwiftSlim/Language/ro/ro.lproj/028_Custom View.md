@@ -1,4 +1,4 @@
-# View personalizat
+# Vizualizare personalizată
 
 În această lecție, vom învăța un mod foarte important de scriere în SwiftUI: **View personalizat**.
 

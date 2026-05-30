@@ -1,4 +1,4 @@
-# Entendendo Views
+# Entendendo visualizações
 
 Nesta aula, voltamos ao `ContentView` original.
 

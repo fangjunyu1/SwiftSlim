@@ -1,4 +1,4 @@
-# Prilagođeni View
+# Prilagođeni prikaz
 
 U ovoj lekciji naučit ćemo vrlo važan način pisanja u SwiftUI-ju: **prilagođeni View**.
 

@@ -1,4 +1,4 @@
-# Egyéni View
+# Egyéni nézet
 
 Ebben a leckében egy nagyon fontos SwiftUI-írásmódot tanulunk meg: **egyéni View**.
 

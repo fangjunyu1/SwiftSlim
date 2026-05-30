@@ -1,4 +1,4 @@
-# Înțelegerea view-urilor
+# Înțelegerea vizualizărilor
 
 În această lecție, revenim la `ContentView` de la început.
 

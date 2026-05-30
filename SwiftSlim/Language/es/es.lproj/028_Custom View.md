@@ -1,4 +1,4 @@
-# View personalizada
+# Vista personalizada
 
 En esta lección, aprenderemos una forma muy importante de escribir en SwiftUI: **View personalizada**.
 

@@ -1,4 +1,4 @@
-# View Kustom
+# Tampilan kustom
 
 Dalam pelajaran ini, kita akan mempelajari salah satu cara penulisan SwiftUI yang sangat penting: **View kustom**.
 
