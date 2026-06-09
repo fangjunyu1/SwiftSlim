@@ -22,10 +22,6 @@ struct ProView: View {
     // 年度会员 ID
     private let yearlyProductID = "com.fangjunyu.Qinote.yearly"
     
-    private var expirationDateString: String {
-        Self.formatExpirationDate(appStorage.expirationDate)
-    }
-    
     // 已选择的产品
     private var selectedProduct: Product? {
         iapManager.displayProducts
@@ -49,12 +45,6 @@ struct ProView: View {
         selectedProductID =
         products.first(where: { $0.product.id == yearlyProductID })?.product.id
         ?? products.first?.product.id
-    }
-    
-    // 格式化显示日期
-    private static func formatExpirationDate(_ timestamp: TimeInterval) -> String {
-        Date(timeIntervalSince1970: timestamp)
-            .formatted(date: .abbreviated, time: .omitted)
     }
     
     var body: some View {
@@ -179,7 +169,6 @@ struct ProView: View {
     
     // 选择方案
     var chooseAPlan: some View {
-        // 如果不为空
         VStack {
             // 选择方案
             HStack {

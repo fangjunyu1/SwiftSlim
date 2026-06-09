@@ -61,7 +61,9 @@ struct SettingsProfileView: View {
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .padding(.horizontal, 10)
-            TextField("", text: $draftName)
+            TextField(text: $draftName) {
+                Text(verbatim: "")
+            }
                 .padding(.horizontal, 20)
                 .frame(height: 50)
                 .overlay {
