@@ -255,7 +255,8 @@ struct HomeView: View {
             }
             // 开发者工具（前四个）
             LazyVGrid(columns: columns, alignment: .leading, spacing: 20) {
-                ForEach(ToolType.allCases.prefix(4)) { tool in
+                // 1.0.9 中不显示 JSON转模型 工具
+                ForEach(ToolType.allCases.filter{ $0 != .Models }.prefix(4)) { tool in
                     DevToolsView(tool: tool)
                 }
             }

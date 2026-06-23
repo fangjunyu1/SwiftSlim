@@ -50,7 +50,8 @@ struct ToolsView: View {
                 Spacer()
             }
             LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
-                ForEach(ToolType.allCases.filter { $0.category == .LearningTool }) { item in
+                // 1.0.9 中不显示 JSON转模型 工具
+                ForEach(ToolType.allCases.filter { $0.category == .LearningTool && $0 != .Models }) { item in
                         DevToolsView(tool: item)
                 }
             }

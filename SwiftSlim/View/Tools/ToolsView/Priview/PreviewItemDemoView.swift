@@ -393,7 +393,7 @@ struct PreviewItemDemoView: View {
                     label: {
                         EmptyView()
                     })
-                .frame(width: 160)
+                .frame(maxWidth: 160)
                 .offset(x: -15)
                 
                 Text(dateFormatter.string(from: selectedDate))
