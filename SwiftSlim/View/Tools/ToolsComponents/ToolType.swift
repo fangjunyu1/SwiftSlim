@@ -14,13 +14,16 @@ enum ToolCategory {
 
 enum ToolType: String, Identifiable, CaseIterable {
     
-    case Shortcuts
     case Preview
-    case Curves
-    case Colors
+    case Models
     case Symbols
+    case Maps
+    case Colors
+    case Curves
+    case Shortcuts
 //    case API_Dictionary
 //    case Errors
+    
     
     var id: String {
         rawValue
@@ -42,15 +45,19 @@ enum ToolType: String, Identifiable, CaseIterable {
             "Colors"
         case .Symbols:
             "Symbols"
+        case .Models:
+            "Models"
+        case .Maps:
+            "Maps"
         }
     }
     
     
     var category: ToolCategory {
         switch self {
-        case .Shortcuts:
+        case .Shortcuts, .Models:
                 .LearningTool
-        case .Symbols,.Preview,.Curves, .Colors:
+        case .Symbols,.Preview,.Curves, .Colors, .Maps:
                 .DesignTools
         }
     }
@@ -71,6 +78,10 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            Color(hex:"4EAE54")
 //        case .Errors:
 //            Color(hex: "CA3A32")
+        case .Models:
+                    Color(hex: "2563EB")
+        case .Maps:
+                    Color(hex: "16A34A")
         }
     }
     
@@ -90,6 +101,10 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            Color(hex:"4EAE54")
 //        case .Errors:
 //            Color(hex: "CA3A32")
+        case .Models:
+            Color(hex: "3B82F6")
+        case .Maps:
+            Color(hex: "22C55E")
         }
     }
     
@@ -109,6 +124,10 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            "book"
 //        case .Errors:
 //            "danger"
+        case .Models:
+            "json"
+        case .Maps:
+            "map"
         }
     }
     
@@ -128,6 +147,10 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            "API Docs"
 //        case .Errors:
 //            "Common Fixes"
+        case .Models:
+            "JSON Codable"
+        case .Maps:
+            "Map Preview"
         }
     }
     
@@ -147,6 +170,10 @@ enum ToolType: String, Identifiable, CaseIterable {
 //            APIView()
 //        case .Errors:
 //            ErrorsView()
+        case .Models:
+            CodableGeneratorView()
+        case .Maps:
+            MapsToolView()
         }
     }
 }

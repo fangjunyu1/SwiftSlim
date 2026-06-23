@@ -105,6 +105,25 @@ Label("Favorites", systemImage: "star.fill")
 """
         ),
         
+        // LabeledContent
+        .init(
+            category: .display,
+            name: "LabeledContent",
+            subtitle: "Label & Value",
+            description: "Displays a label and its associated value.",
+            demo: .labeledContent,
+            code: """
+            LabeledContent("Storage", value: "64 GB")
+            
+            LabeledContent {
+                Text("Online")
+                    .foregroundStyle(.green)
+            } label: {
+                Label("Status", systemImage: "wifi")
+            }
+            """
+        ),
+        
         // ProgressView
         .init(
             category: .display,
@@ -167,6 +186,22 @@ ProgressView(value: 0.3)
             description: Text("Try another keyword.")
         )
         """
+        ),
+        
+        // EmptyView
+        .init(
+            category: .display,
+            name: "EmptyView",
+            subtitle: "Invisible View",
+            description: "Creates an invisible view.",
+            demo: .emptyView,
+            code: """
+            VStack {
+                Text("Before")
+                EmptyView()
+                Text("After")
+            }
+            """
         ),
         
         //  MARK: 交互
@@ -766,6 +801,96 @@ DisclosureGroup("Show Details") {
             """
         ),
         
+        // ScrollViewReader
+        .init(
+            category: .container,
+            name: "ScrollViewReader",
+            subtitle: "Programmatic Scrolling",
+            description: "Scrolls to a specific item inside a ScrollView.",
+            demo: .scrollViewReader,
+            code: """
+            ScrollViewReader { proxy in
+                VStack {
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(0..<20, id: \\.self) { index in
+                                Text("\\(index)")
+                                    .frame(width: 50, height: 50)
+                                    .id(index)
+                            }
+                        }
+                    }
+                    
+                    Button("Scroll to 10") {
+                        withAnimation {
+                            proxy.scrollTo(10, anchor: .center)
+                        }
+                    }
+                }
+            }
+            """
+        ),
+        
+        // MARK: - 数据展示
+        
+            .init(
+                category: .data,
+                name: "Table",
+                subtitle: "Table",
+                description: "Displays data in rows and columns.",
+                demo: .table,
+                code: """
+        struct Person: Identifiable {
+            let id = UUID()
+            let name: String
+            let role: String
+        }
+        
+        let people = [
+            Person(name: "Junyu", role: "Developer"),
+            Person(name: "Ming", role: "Designer"),
+            Person(name: "Luna", role: "Product")
+        ]
+        
+        Table(people) {
+            TableColumn("Name", value: \\.name)
+            TableColumn("Role", value: \\.role)
+        }
+        """
+            ),
+        
+            .init(
+                category: .data,
+                name: "Chart",
+                subtitle: "Chart",
+                description: "Displays data as charts using Swift Charts.",
+                demo: .chart,
+                code: """
+        import Charts
+        
+        struct Sales: Identifiable {
+            let id = UUID()
+            let month: String
+            let value: Int
+        }
+        
+        let sales = [
+            Sales(month: "Jan", value: 20),
+            Sales(month: "Feb", value: 35),
+            Sales(month: "Mar", value: 28),
+            Sales(month: "Apr", value: 45)
+        ]
+        
+        Chart(sales) { item in
+            BarMark(
+                x: .value("Month", item.month),
+                y: .value("Value", item.value)
+            )
+        }
+        .frame(height: 180)
+        """
+            ),
+        
         // MARK: 导航
         //  TabView
             .init(
@@ -864,6 +989,33 @@ TabView {
         """
         ),
         
+        // FullScreenCover
+        .init(
+            category: .presentation,
+            name: "FullScreenCover",
+            subtitle: "Full Screen Modal",
+            description: "Presents a modal view that covers the entire screen.",
+            demo: .fullScreenCover,
+            code: """
+            @State private var showFullScreenCover = false
+            
+            Button("Show Full Screen") {
+                showFullScreenCover = true
+            }
+            .fullScreenCover(isPresented: $showFullScreenCover) {
+                NavigationStack {
+                    VStack(spacing: 16) {
+                        Text("Full Screen Cover")
+                        Button("Close") {
+                            showFullScreenCover = false
+                        } 
+                    }
+                    .navigationTitle("Cover")
+                }
+            }
+            """
+        ),
+        
         //  Popover
         .init(
             category: .presentation,
@@ -909,6 +1061,114 @@ TabView {
         }
         """
         ),
+        
+        // MARK: - 媒体 / 系统能力
+        
+            .init(
+                category: .media,
+                name: "Map",
+                subtitle: "Map",
+                description: "Displays an interactive map with markers.",
+                demo: .map,
+                code: """
+        import MapKit
+        
+        let coordinate = CLLocationCoordinate2D(
+            latitude: 37.3349,
+            longitude: -122.00902
+        )
+        
+        Map(initialPosition: .region(
+            MKCoordinateRegion(
+                center: coordinate,
+                span: MKCoordinateSpan(
+                    latitudeDelta: 0.02,
+                    longitudeDelta: 0.02
+                )
+            )
+        )) {
+            Marker("Apple Park", coordinate: coordinate)
+        }
+        .frame(height: 220)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+        """
+            ),
+        
+            .init(
+                category: .media,
+                name: "PhotosPicker",
+                subtitle: "Photo Selection",
+                description: "Presents the system photo picker.",
+                demo: .photosPicker,
+                code: """
+        import PhotosUI
+        
+        @State private var pickerItem: PhotosPickerItem?
+        @State private var selectedImage: Image?
+        
+        VStack(spacing: 12) {
+            if let selectedImage {
+                selectedImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+            } else {
+                Text("No photo selected")
+            }
+
+            PhotosPicker(selection: $pickerItem, matching: .images) {
+                Label("Select Photo", systemImage: "photo.on.rectangle")
+            }
+        }
+        .task(id: pickerItem) {
+            selectedImage = try? await pickerItem?.loadTransferable(type: Image.self)
+        }
+        """
+            ),
+        
+            .init(
+                category: .media,
+                name: "VideoPlayer",
+                subtitle: "Video Playback",
+                description: "Plays video content with system controls.",
+                demo: .videoPlayer,
+                code: """
+        import AVKit
+        
+        if let url = Bundle.main.url(forResource: "demo", withExtension: "mp4") {
+            VideoPlayer(player: AVPlayer(url: url))
+                .frame(height: 220)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+        }
+        """
+            ),
+        
+        // MARK: - 绘图
+        
+            .init(
+                category: .drawing,
+                name: "Canvas",
+                subtitle: "Canvas",
+                description: "Draws custom 2D graphics.",
+                demo: .canvas,
+                code: """
+        Canvas { context, size in
+            let rect = CGRect(
+                x: 20,
+                y: 20,
+                width: size.width - 40,
+                height: size.height - 40
+            )
+            
+            context.stroke(
+                Path(ellipseIn: rect),
+                with: .color(.blue),
+                lineWidth: 4
+            )
+        }
+        .frame(height: 160)
+        """
+            ),
         
         // MARK: 形状
         //  Circle

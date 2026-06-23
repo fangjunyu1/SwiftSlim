@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import MapKit
+import Charts
+import PhotosUI
+import AVKit
 
 struct PreviewItemDemoView: View {
     @State private var buttonCount = 0  // Button
@@ -28,7 +32,7 @@ struct PreviewItemDemoView: View {
     @State private var showAlert = false    //  Alert
     @State private var showAlert1 = false    //  Alert
     @State private var showConfirmationDialog = false   //  ConfirmationDialog
-    
+    @State private var showFullScreenCover = false  // fullScreenCover
     let item: PreviewComponent
     
     // Demo 中的 TabView 使用的页面视图组件
@@ -132,6 +136,10 @@ struct PreviewItemDemoView: View {
             }
             .foregroundColor(.primary)
             
+            // LabeledContent
+        case .labeledContent:
+            LabeledContentFallbackDemo()
+            
             // ProgressView
         case .progressView:
             VStack(alignment: .leading, spacing: 12) {
@@ -175,11 +183,15 @@ struct PreviewItemDemoView: View {
             //  ContentUnavailableView
         case .contentUnavailableView:
             if #available(iOS 17.0, *) {
-                ContentUnavailableView(
-                    "No Results",
-                    systemImage: "magnifyingglass",
-                    description: Text(verbatim: "Try another keyword.")
-                )
+                ContentUnavailableView {
+                    Label {
+                        Text(verbatim: "No Results")
+                    } icon: {
+                        Image(systemName: "magnifyingglass")
+                    }
+                } description: {
+                    Text(verbatim: "Try another keyword.")
+                }
             } else {
                 VStack(spacing: 10) {
                     Image(systemName: "magnifyingglass")
@@ -196,6 +208,18 @@ struct PreviewItemDemoView: View {
                             .foregroundStyle(Color.gray)
                     }
                 }
+            }
+            
+            // EmptyView
+        case .emptyView:
+            VStack(spacing: 10) {
+                Text(verbatim: "Before EmptyView")
+                    .font(.headline)
+                
+                EmptyView()
+                
+                Text(verbatim: "After EmptyView")
+                    .font(.headline)
             }
             
             // MARK: 交互
@@ -369,6 +393,7 @@ struct PreviewItemDemoView: View {
                     label: {
                         EmptyView()
                     })
+                .frame(width: 160)
                 .offset(x: -15)
                 
                 Text(dateFormatter.string(from: selectedDate))
@@ -400,7 +425,7 @@ struct PreviewItemDemoView: View {
                     .frame(height: 44)
             }
             
-            //  MAKR: 布局
+            //  MARK: 布局
             //  VStack
         case .vStack:
             VStack(spacing: 12) {
@@ -711,6 +736,19 @@ struct PreviewItemDemoView: View {
             }
             .labelStyle(.iconOnly)
             
+            // ScrollViewReader
+        case .scrollViewReader:
+            scrollViewReaderFallbackDemo()
+            
+            // MARK: 数据展示
+            // Table
+        case .table:
+            TableFallbackDemo()
+            
+            // Chart
+        case .chart:
+            ChartFallbackDemo()
+            
             // MARK: 导航
             // TabView
         case .tabView:
@@ -736,7 +774,7 @@ struct PreviewItemDemoView: View {
                             Image(systemName: "arrow.right.circle")
                         }
                     }
-                    .navigationTitle("Stack")
+                    .navigationTitle(Text(verbatim: "Stack"))
                 }
                 .frame(height: 180)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -753,7 +791,7 @@ struct PreviewItemDemoView: View {
                                 Image(systemName: "arrow.right.circle")
                             }
                         }
-                        .navigationTitle("Stack")
+                        .navigationTitle(Text(verbatim: "Stack"))
                     }
                 }
                 .frame(height: 180)
@@ -767,7 +805,7 @@ struct PreviewItemDemoView: View {
                     List(["Home", "Tools", "Settings"], id: \.self) { item in
                         Text(verbatim: item)
                     }
-                    .navigationTitle("Sidebar")
+                    .navigationTitle(Text(verbatim: "Sidebar"))
                 } detail: {
                     VStack(spacing: 10) {
                         Image(systemName: "sidebar.left")
@@ -784,7 +822,7 @@ struct PreviewItemDemoView: View {
                     List(["Home", "Tools", "Settings"], id: \.self) { item in
                         Text(verbatim: item)
                     }
-                    .navigationTitle("Sidebar")
+                    .navigationTitle(Text(verbatim: "Sidebar"))
                     .navigationBarTitleDisplayMode(.automatic)
                     VStack(spacing: 10) {
                         Image(systemName: "sidebar.left")
@@ -891,6 +929,48 @@ struct PreviewItemDemoView: View {
                 Text(verbatim: "This action cannot be undone.")
             }
             
+            // FullScreenCover
+        case .fullScreenCover:
+            Button(action: {
+                showFullScreenCover = true
+            }, label: {
+                Label {
+                    Text(verbatim: "Show Full Screen Cover")
+                } icon: {
+                    Image(systemName: "arrow.up.square")
+                }
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(Color.indigo)
+                .padding(.horizontal, 18)
+                .padding(.vertical, 10)
+                .background(.indigo.opacity(0.14))
+                .clipShape(Capsule())
+            })
+            .fullScreenCover(isPresented: $showFullScreenCover) {
+                NavigationView {
+                    VStack(spacing: 16) {
+                        Image(systemName: "rectangle.fill.on.rectangle.fill")
+                            .font(.system(size: 48))
+                            .foregroundStyle(.blue)
+                        
+                        Text(verbatim: "Full Screen Cover")
+                            .font(.title.bold())
+                        
+                        Text(verbatim: "This view covers the entire screen.")
+                            .foregroundStyle(.secondary)
+                        
+                        Button(action: {
+                            showFullScreenCover = false
+                        }, label: {
+                            Text(verbatim: "Close")
+                        })
+                        .buttonStyle(.borderedProminent)
+                    }
+                    .padding()
+                    .navigationTitle("Cover")
+                }
+            }
+            
             //  Popover
         case .popover:
             Button {
@@ -963,6 +1043,83 @@ struct PreviewItemDemoView: View {
             } message: {
                 Text(verbatim: "Select one operation to continue.")
             }
+            
+            // MARK: 媒体 / 系统能力
+            // Map
+        case .map:
+            MapFallbackDemo()
+            
+            // PhotosPicker
+        case .photosPicker:
+            if #available(iOS 16.0, *) {
+                PhotosPickerFallbackDemo()
+            } else {
+                PhotosPickerFallbackDemo2()
+            }
+            
+            // VideoPlayer
+        case .videoPlayer:
+            if let url = Bundle.main.url(forResource: "demo", withExtension: "mp4") {
+                VideoPlayer(player: AVPlayer(url: url))
+                    .frame(height: 220)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            } else {
+                if #available(iOS 17.0, *) {
+                    ContentUnavailableView {
+                        Label {
+                            Text(verbatim: "Add demo.mp4")
+                        } icon: {
+                            Image(systemName: "play.rectangle")
+                        }
+                    } description: {
+                        Text(verbatim: "Add a demo.mp4 file to the app bundle.")
+                    }
+                } else {
+                    VStack(spacing: 10) {
+                        Image(systemName: "play.rectangle")
+                            .font(.system(size: 46))
+                            .foregroundStyle(Color.secondary)
+                        
+                        VStack {
+                            Text(verbatim: "Add demo.mp4")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                            
+                            Text(verbatim: "Add a demo.mp4 file to the app bundle.")
+                                .font(.subheadline)
+                                .foregroundStyle(Color.gray)
+                        }
+                    }
+                }
+            }
+            
+            // MARK: 绘画
+            // Canvas
+        case .canvas:
+            Canvas { context, size in
+                let outerRect = CGRect(
+                    x: 20,
+                    y: 20,
+                    width: size.width - 40,
+                    height: size.height - 40
+                )
+                
+                let innerRect = outerRect.insetBy(dx: 28, dy: 28)
+                
+                context.stroke(
+                    Path(ellipseIn: outerRect),
+                    with: .color(.blue),
+                    lineWidth: 4
+                )
+                
+                context.fill(
+                    Path(roundedRect: innerRect, cornerRadius: 18),
+                    with: .color(.orange.opacity(0.25))
+                )
+            }
+            .frame(height: 160)
+            .background(.thinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
             
             // MARK: 形状
             // Circle
@@ -1060,7 +1217,70 @@ struct PreviewItemDemoView: View {
     }
 }
 
-import SwiftUI
+@available(iOS 16.0, *)
+struct PhotosPickerFallbackDemo: View {
+    @State private var pickerItem: PhotosPickerItem?    // photoPicker
+    @State private var selectedImage: Image?    // 选择的图片
+    var body: some View {
+        VStack(spacing: 12) {
+            if let selectedImage = selectedImage {
+                selectedImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            } else {
+                Text("No photo selected")
+            }
+            
+            PhotosPicker(selection: $pickerItem, matching: .images) {
+                Label(title: {
+                    Text(verbatim: "Select Photo")
+                }, icon: {
+                    Image(systemName: "photo.on.rectangle")
+                })
+                .font(.headline)
+            }
+        }
+        .task(id: pickerItem) {
+            selectedImage = try? await pickerItem?.loadTransferable(type: Image.self)
+        }
+    }
+}
+
+// 适配 iOS 16 以下版本的 PhotosPicker
+struct PhotosPickerFallbackDemo2: View {
+    @State private var selectedImage: UIImage?  // UIImagePickerController
+    @State private var isImagePickerPresented = false   // UIImagePickerController - 弹出选择窗口
+    var body: some View {
+        VStack(spacing: 12) {
+            if let selectedImage = selectedImage {
+                Image(uiImage: selectedImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            } else {
+                Text("No photo selected")
+            }
+            Button(action: {
+                isImagePickerPresented.toggle()
+            }, label: {
+                Label(title: {
+                    Text(verbatim: "Select Photo")
+                }, icon: {
+                    Image(systemName: "photo.on.rectangle")
+                })
+                .font(.headline)
+            })
+        }
+        .sheet(isPresented: $isImagePickerPresented) {
+            ImagePickerViewController(selectedImage: $selectedImage)  // 显示图片选择器
+                .ignoresSafeArea()
+        }
+    }
+}
+
 
 struct TextEditorFallbackDemo: View {
     @Binding var editorText: String
@@ -1094,6 +1314,11 @@ struct TextEditorFallbackDemo: View {
             }
         }
     }
+}
+
+struct MarkerItem: Identifiable {
+    var id = UUID()
+    var coordinate: CLLocationCoordinate2D
 }
 
 #Preview {

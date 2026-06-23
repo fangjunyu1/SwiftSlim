@@ -13,10 +13,12 @@ enum PreviewDemo {
     case divider
     case spacer
     case label
+    case labeledContent
     case progressView
     case asyncImage
     case gauge
     case contentUnavailableView
+    case emptyView
     
     // 交互
     case button
@@ -61,6 +63,11 @@ enum PreviewDemo {
     case groupBox
     case disclosureGroup
     case controlGroup
+    case scrollViewReader
+    
+    // 数据展示
+    case table
+    case chart
     
     // 导航
     case tabView
@@ -70,8 +77,17 @@ enum PreviewDemo {
     // 呈现
     case sheet
     case alert
+    case fullScreenCover
     case popover
     case confirmationDialog
+    
+    // 媒体 / 系统能力
+    case map
+    case photosPicker
+    case videoPlayer
+    
+    // 绘图
+    case canvas
     
     // 形状
     case circle
