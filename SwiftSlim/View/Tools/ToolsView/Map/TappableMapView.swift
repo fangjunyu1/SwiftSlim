@@ -41,7 +41,7 @@ struct TappableMapView: UIViewRepresentable {
         
         if let selectedCoordinate {
             let annotation = MKPointAnnotation()
-            annotation.title = "Selected"
+//            annotation.title = "Selected"
             annotation.coordinate = selectedCoordinate
             mapView.addAnnotation(annotation)
         }

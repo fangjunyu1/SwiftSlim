@@ -36,6 +36,17 @@ struct MapsToolView: View {
 
     private let geocoder = CLGeocoder()
     
+    // 地图定位
+    @StateObject private var locationFetcher = LocationFetcher()
+    
+    // 更新地图中的用户位置
+    private func updateMapToUserLocation(_ coordinate: CLLocationCoordinate2D) {
+        region.center = coordinate
+        selectedCoordinate = coordinate
+
+        print("Latitude: \(coordinate.latitude), Longitude: \(coordinate.longitude)")
+    }
+    
     var body: some View {
         ZStack {
             // MKMapView 地图
@@ -57,6 +68,15 @@ struct MapsToolView: View {
         }
         .navigationTitle("Maps")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            print("启动定位服务")
+            locationFetcher.requestLocation()
+        }
+        // 当获取用户定位时，更新当前位置
+        .onReceive(locationFetcher.$coordinate.compactMap { $0 }) { coordinate in
+            print("获取当前位置:\(coordinate)")
+            updateMapToUserLocation(coordinate)
+        }
         .onDisappear {
             print("关闭课程")
             print("检测是否满足打开评分窗口")
